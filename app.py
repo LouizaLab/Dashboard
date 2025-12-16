@@ -86,22 +86,6 @@ data = load_cached_data()
 st.title("📊 Behavioral Simulation Dashboard")
 st.markdown("**Synthetic Data Demo** - Visualizing behavioral intent modeling across segments, contexts, and time")
 
-# Demo script expander
-with st.expander("📝 Demo Script - Talking Points"):
-    st.markdown("""
-    **5 Key Talking Points:**
-    
-    1. **Taste Embedding Model**: Our Phase 1 model learns dense representations of products, contexts, and segments from preference data, enabling accurate intent prediction.
-    
-    2. **Behavioral Dynamics**: Phase 2 models how intent evolves over time using latent state transitions, capturing habit formation, novelty seeking, and context-dependent preferences.
-    
-    3. **Large Population Simulation**: Phase 3 scales to millions of agents with dynamic features including social influence, macro context (season, inflation), and product launches.
-    
-    4. **Ground Truth Anchoring**: Phase 4 calibrates simulations to real data, achieving 15-18% error reduction through iterative parameter optimization.
-    
-    5. **Actionable Signals**: The system generates hedge-fund-ready signals including momentum indices, demand forecasts, substitution matrices, and price elasticity estimates.
-    """)
-
 # Sidebar
 st.sidebar.header("Controls")
 
