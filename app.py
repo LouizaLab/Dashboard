@@ -34,6 +34,7 @@ from datetime import datetime, timedelta
 import sys
 import os
 from pathlib import Path
+import networkx as nx
 
 # Add src to path
 sys.path.insert(0, str(Path(__file__).parent / 'src'))
@@ -61,14 +62,21 @@ st.markdown("""
     <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
     
-    /* Global black background - force on everything */
+    /* Global black background with subtle gradient */
     html, body, #root, .stApp, [data-testid="stAppViewContainer"] {
+        background: linear-gradient(135deg, #000000 0%, #0a0a0a 50%, #000000 100%) !important;
         background-color: #000000 !important;
+        min-height: 100vh;
     }
     
     /* Apply Inter font to all elements */
     * {
         font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
+    }
+    
+    /* Smooth transitions for interactive elements */
+    * {
+        transition: all 0.3s ease !important;
     }
     
     /* Main background - multiple selectors to catch all */
@@ -81,8 +89,13 @@ st.markdown("""
         background-color: #0A0A0A !important;
     }
     
-    /* Main content area - all containers */
-    .main .block-container,
+    /* Main content area - all containers with subtle glassmorphism */
+    .main .block-container {
+        padding-top: 3rem !important;
+        padding-bottom: 3rem !important;
+        max-width: 1400px !important;
+    }
+    
     .main .block-container > div,
     .element-container,
     .element-container > div,
@@ -91,8 +104,20 @@ st.markdown("""
     [data-testid="column"],
     .stColumn,
     div[data-testid="stVerticalBlock"] > div {
-        background-color: #000000 !important;
-        background: #000000 !important;
+        background-color: transparent !important;
+        background: transparent !important;
+    }
+    
+    /* Glassmorphism cards for sections */
+    [data-testid="stVerticalBlock"] > div:has(h3),
+    .element-container:has(h3) {
+        background: rgba(10, 10, 10, 0.4) !important;
+        backdrop-filter: blur(10px) !important;
+        border: 1px solid rgba(91, 155, 213, 0.1) !important;
+        border-radius: 12px !important;
+        padding: 2rem !important;
+        margin-bottom: 2rem !important;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3) !important;
     }
     
     /* Force all divs to be transparent or black */
@@ -235,21 +260,22 @@ st.markdown("""
     }
     
     .section-divider {
-        border-top: 1px solid #333333 !important;
-        margin: 2.5rem 0 !important;
+        border-top: 1px solid rgba(91, 155, 213, 0.2) !important;
+        margin: 3rem 0 !important;
         padding-top: 2rem !important;
         display: block !important;
     }
     
-    /* Minimalistic section headers - ensure blue color */
+    /* Minimalistic section headers - ensure blue color with enhanced styling */
     h3 {
         margin-top: 0 !important;
-        margin-bottom: 0.5rem !important;
-        font-size: 1.1rem !important;
-        font-weight: 400 !important;
-        letter-spacing: 0.5px !important;
+        margin-bottom: 1rem !important;
+        font-size: 1.15rem !important;
+        font-weight: 500 !important;
+        letter-spacing: 1px !important;
         text-transform: uppercase !important;
         color: #5B9BD5 !important;
+        text-shadow: 0 0 20px rgba(91, 155, 213, 0.3) !important;
     }
     
     /* Insight card titles (h4) - match h3 styling exactly */
@@ -338,25 +364,32 @@ st.markdown("""
         margin-bottom: 1rem;
     }
     
-    /* Buttons */
+    /* Buttons - Enhanced 3D style */
     .stButton > button {
-        background-color: #1A1A1A !important;
+        background: linear-gradient(135deg, rgba(26, 26, 26, 0.9) 0%, rgba(10, 10, 10, 0.9) 100%) !important;
         color: #5B9BD5 !important;
-        border: 1px solid #333333 !important;
+        border: 1px solid rgba(91, 155, 213, 0.3) !important;
         font-family: 'Inter', sans-serif !important;
         font-weight: 500;
-        border-radius: 4px !important;
-        transition: all 0.2s ease !important;
+        border-radius: 8px !important;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
         white-space: nowrap !important;
         min-width: 120px !important;
-        padding: 0.5rem 1rem !important;
+        padding: 0.6rem 1.2rem !important;
+        box-shadow: 
+            0 4px 12px rgba(0, 0, 0, 0.3),
+            inset 0 1px 0 rgba(255, 255, 255, 0.05) !important;
     }
     
     .stButton > button:hover {
-        background-color: #2A2A2A !important;
+        background: linear-gradient(135deg, rgba(91, 155, 213, 0.15) 0%, rgba(91, 155, 213, 0.05) 100%) !important;
         border-color: #5B9BD5 !important;
-        color: #5B9BD5 !important;
-        transform: translateY(-1px) !important;
+        color: #FFFFFF !important;
+        transform: translateY(-2px) !important;
+        box-shadow: 
+            0 8px 24px rgba(91, 155, 213, 0.2),
+            0 0 20px rgba(91, 155, 213, 0.1),
+            inset 0 1px 0 rgba(255, 255, 255, 0.1) !important;
     }
     
     /* Select boxes and inputs */
@@ -374,42 +407,48 @@ st.markdown("""
         color: #E0E0E0 !important;
     }
     
-    /* Tabs - Menu Style */
+    /* Tabs - Enhanced Menu Style with 3D effect */
     .stTabs [data-baseweb="tab-list"] {
-        background-color: #000000 !important;
-        border-bottom: 1px solid #333333 !important;
+        background: linear-gradient(180deg, rgba(10, 10, 10, 0.8) 0%, rgba(0, 0, 0, 0.9) 100%) !important;
+        backdrop-filter: blur(10px) !important;
+        border-bottom: 1px solid rgba(91, 155, 213, 0.2) !important;
         gap: 0 !important;
+        padding: 0.5rem 0 !important;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5) !important;
     }
     
     .stTabs [data-baseweb="tab"] {
-        color: #B0B0B0 !important;
+        color: #888888 !important;
         font-family: 'Inter', sans-serif !important;
         background-color: transparent !important;
         border: none !important;
-        padding: 12px 24px !important;
+        padding: 14px 28px !important;
         font-weight: 500 !important;
-        font-size: 14px !important;
+        font-size: 13px !important;
         text-transform: uppercase !important;
-        letter-spacing: 0.5px !important;
-        border-bottom: 2px solid transparent !important;
-        transition: all 0.2s ease !important;
+        letter-spacing: 1px !important;
+        border-bottom: 3px solid transparent !important;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+        position: relative !important;
     }
     
     .stTabs [data-baseweb="tab"]:hover {
-        color: #FFFFFF !important;
-        background-color: #0A0A0A !important;
+        color: #5B9BD5 !important;
+        background: rgba(91, 155, 213, 0.05) !important;
+        transform: translateY(-2px) !important;
     }
     
     .stTabs [aria-selected="true"] {
-        color: #FFFFFF !important;
-        background-color: transparent !important;
-        border-bottom: 2px solid #00D4FF !important;
+        color: #5B9BD5 !important;
+        background: linear-gradient(180deg, rgba(91, 155, 213, 0.1) 0%, transparent 100%) !important;
+        border-bottom: 3px solid #5B9BD5 !important;
         font-weight: 600 !important;
+        text-shadow: 0 0 10px rgba(91, 155, 213, 0.5) !important;
     }
     
     .stTabs [data-baseweb="tab-panel"] {
-        background-color: #000000 !important;
-        padding: 0 !important;
+        background-color: transparent !important;
+        padding: 2rem 0 !important;
     }
     
     /* Chat input */
@@ -446,11 +485,33 @@ st.markdown("""
         color: #E0E0E0 !important;
     }
     
-    /* Plotly charts - ensure they have dark theme */
+    /* Plotly charts - ensure they have dark theme with 3D container effect */
     .js-plotly-plot,
     .plotly,
     [class*="plotly"] {
-        background-color: #000000 !important;
+        background-color: transparent !important;
+        border-radius: 16px !important;
+    }
+    
+    /* Network graph container with 3D effect */
+    [data-testid="stVerticalBlock"]:has([class*="plotly"]) {
+        background: linear-gradient(135deg, rgba(10, 10, 10, 0.6) 0%, rgba(0, 0, 0, 0.8) 100%) !important;
+        backdrop-filter: blur(20px) !important;
+        border: 1px solid rgba(91, 155, 213, 0.15) !important;
+        border-radius: 20px !important;
+        padding: 2rem !important;
+        margin: 2rem 0 !important;
+        box-shadow: 
+            0 20px 60px rgba(0, 0, 0, 0.5),
+            0 0 40px rgba(91, 155, 213, 0.1),
+            inset 0 1px 0 rgba(255, 255, 255, 0.05) !important;
+    }
+    
+    /* Enhanced plotly container */
+    div[data-testid="stPlotlyChart"] {
+        background: transparent !important;
+        padding: 1rem !important;
+        border-radius: 12px !important;
     }
     
     /* Remove any white backgrounds from Streamlit widgets */
@@ -617,6 +678,170 @@ dark_theme = {
         }
     }
 }
+
+def create_network_graph():
+    """Create an interactive 3D network graph of fast food restaurants"""
+    # Fast food restaurants
+    restaurants = [
+        "McDonald's", "Burger King", "Wendy's", "Taco Bell", "KFC",
+        "Subway", "Pizza Hut", "Domino's", "Chipotle", "Starbucks",
+        "Dunkin'", "Papa John's", "Arby's", "Jack in the Box", "Sonic"
+    ]
+    
+    # Create network graph
+    G = nx.Graph()
+    
+    # Add nodes
+    for restaurant in restaurants:
+        G.add_node(restaurant)
+    
+    # Add edges based on similarity (price range, cuisine type, market segment)
+    # Fast food burger chains
+    burger_chains = ["McDonald's", "Burger King", "Wendy's", "Jack in the Box", "Sonic"]
+    for i, r1 in enumerate(burger_chains):
+        for r2 in burger_chains[i+1:]:
+            G.add_edge(r1, r2, weight=0.8)
+    
+    # Pizza chains
+    pizza_chains = ["Pizza Hut", "Domino's", "Papa John's"]
+    for i, r1 in enumerate(pizza_chains):
+        for r2 in pizza_chains[i+1:]:
+            G.add_edge(r1, r2, weight=0.9)
+    
+    # Mexican fast food
+    mexican_chains = ["Taco Bell", "Chipotle"]
+    G.add_edge("Taco Bell", "Chipotle", weight=0.7)
+    
+    # Coffee chains
+    coffee_chains = ["Starbucks", "Dunkin'"]
+    G.add_edge("Starbucks", "Dunkin'", weight=0.8)
+    
+    # Cross-category connections (weaker)
+    G.add_edge("McDonald's", "Taco Bell", weight=0.4)
+    G.add_edge("Burger King", "KFC", weight=0.5)
+    G.add_edge("Subway", "Pizza Hut", weight=0.3)
+    G.add_edge("Chipotle", "Starbucks", weight=0.3)
+    G.add_edge("Taco Bell", "KFC", weight=0.4)
+    G.add_edge("McDonald's", "Starbucks", weight=0.3)
+    G.add_edge("Subway", "Chipotle", weight=0.3)
+    
+    # Use 3D spring layout for positioning with more spacing
+    pos = nx.spring_layout(G, k=4.0, iterations=150, seed=42, dim=3)
+    
+    # Extract node positions (x, y, z)
+    node_x = [pos[node][0] for node in G.nodes()]
+    node_y = [pos[node][1] for node in G.nodes()]
+    node_z = [pos[node][2] for node in G.nodes()]
+    
+    # Create edge traces in 3D
+    edge_traces = []
+    for edge in G.edges():
+        x0, y0, z0 = pos[edge[0]]
+        x1, y1, z1 = pos[edge[1]]
+        weight = G[edge[0]][edge[1]].get('weight', 0.5)
+        edge_traces.append(
+            go.Scatter3d(
+                x=[x0, x1, None],
+                y=[y0, y1, None],
+                z=[z0, z1, None],
+                mode='lines',
+                line=dict(
+                    width=weight*4 + 1,
+                    color=f'rgba(91, 155, 213, {0.2 + weight*0.3})'
+                ),
+                hoverinfo='none',
+                showlegend=False
+            )
+        )
+        # Add glow effect
+        edge_traces.append(
+            go.Scatter3d(
+                x=[x0, x1, None],
+                y=[y0, y1, None],
+                z=[z0, z1, None],
+                mode='lines',
+                line=dict(
+                    width=weight*6 + 3,
+                    color=f'rgba(91, 155, 213, {0.08 + weight*0.12})'
+                ),
+                hoverinfo='none',
+                showlegend=False
+            )
+        )
+    
+    # Create node trace in 3D with larger labels
+    node_trace = go.Scatter3d(
+        x=node_x,
+        y=node_y,
+        z=node_z,
+        mode='markers+text',
+        text=list(G.nodes()),
+        textposition="middle center",
+        textfont=dict(
+            size=16,
+            color='#FFFFFF',
+            family='Inter, sans-serif'
+        ),
+        hovertext=[f"<b>{node}</b><br>Drag to rotate, scroll to zoom" for node in G.nodes()],
+        hoverinfo='text',
+        marker=dict(
+            size=12,
+            color='#5B9BD5',
+            line=dict(width=2, color='rgba(255, 255, 255, 0.8)'),
+            showscale=False,
+            opacity=0.95
+        ),
+        showlegend=False
+    )
+    
+    # Create 3D figure
+    fig = go.Figure(
+        data=edge_traces + [node_trace],
+        layout=go.Layout(
+            title='',
+            showlegend=False,
+            hovermode='closest',
+            margin=dict(b=0, l=0, r=0, t=0),
+            scene=dict(
+                xaxis=dict(
+                    showgrid=False,
+                    showbackground=False,
+                    zeroline=False,
+                    showticklabels=False,
+                    showaxeslabels=False,
+                    range=[-2.5, 2.5]
+                ),
+                yaxis=dict(
+                    showgrid=False,
+                    showbackground=False,
+                    zeroline=False,
+                    showticklabels=False,
+                    showaxeslabels=False,
+                    range=[-2.5, 2.5]
+                ),
+                zaxis=dict(
+                    showgrid=False,
+                    showbackground=False,
+                    zeroline=False,
+                    showticklabels=False,
+                    showaxeslabels=False,
+                    range=[-2.5, 2.5]
+                ),
+                bgcolor='rgba(0,0,0,0)',
+                camera=dict(
+                    eye=dict(x=1.5, y=1.5, z=1.5),
+                    center=dict(x=0, y=0, z=0),
+                    up=dict(x=0, y=0, z=1)
+                )
+            ),
+            paper_bgcolor='rgba(0,0,0,0)',
+            plot_bgcolor='rgba(0,0,0,0)',
+            font=dict(color='#E0E0E0', family='Inter, sans-serif'),
+            height=750
+        )
+    )
+    
+    return fig
 
 def apply_dark_theme(fig):
     """Apply dark theme to a Plotly figure"""
@@ -981,12 +1206,62 @@ if st.session_state.sidebar_visible:
             st.sidebar.warning("No API key found. Set OPENAI_API_KEY or ANTHROPIC_API_KEY environment variable.")
 
 # Main content tabs
-tab1, tab2, tab3, tab4 = st.tabs([
+tab0, tab1, tab2, tab3, tab4 = st.tabs([
+    "Network Graph",
     "Taste Snapshot",
     "Behavioral Dynamics",
     "Insights",
     "What-If Simulation"
 ])
+
+# Panel: Network Graph
+with tab0:
+    st.markdown("### Network Graph")
+    st.markdown("Interactive network visualization showing connections between fast food restaurants based on similarity in price, cuisine type, and market segment. Click and drag nodes to explore connections.")
+    
+    # Create and display network graph
+    network_fig = create_network_graph()
+    st.plotly_chart(network_fig, use_container_width=True, config={
+        'displayModeBar': True,
+        'displaylogo': False,
+        'modeBarButtonsToRemove': ['lasso2d', 'select2d'],
+        'toImageButtonOptions': {
+            'format': 'png',
+            'filename': 'network_graph',
+            'height': 750,
+            'width': 1400,
+            'scale': 2
+        }
+    })
+    
+    st.markdown("<div class='section-divider'></div>", unsafe_allow_html=True)
+    
+    # Add information about edges with enhanced styling
+    st.markdown("""
+    <div style="
+        background: rgba(10, 10, 10, 0.4);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(91, 155, 213, 0.1);
+        border-radius: 12px;
+        padding: 2rem;
+        margin: 2rem 0;
+    ">
+    """, unsafe_allow_html=True)
+    
+    st.markdown("### About the Connections")
+    st.markdown("""
+    **Edge weights** represent similarity between restaurants:
+    - **Strong connections (thick lines)**: Similar cuisine type and market positioning
+    - **Medium connections**: Related categories or overlapping customer bases  
+    - **Weak connections (thin lines)**: Cross-category relationships
+    
+    **Node interactions**:
+    - Click on a node to see its connections highlighted
+    - Pan and zoom to explore the network
+    - Hover over nodes to see restaurant names
+    """)
+    
+    st.markdown("</div>", unsafe_allow_html=True)
 
 # Panel A: Taste Snapshot
 with tab1:
