@@ -12,7 +12,7 @@ import streamlit as st
 import plotly.graph_objects as go
 import networkx as nx
 from datetime import datetime
-import plotly.express as px
+import hashlib
 
 
 def create_louiza_network_graph(selected_restaurants, selected_regions, selected_ages, market_view):
@@ -207,12 +207,179 @@ def create_louiza_network_graph(selected_restaurants, selected_regions, selected
     return fig
 
 
-def create_simple_network_graph():
-    """Create a simple 2D network graph for background display"""
+def generate_persona_response(persona, user_message):
+    """Generate a response from the persona based on their characteristics"""
+    name = persona["name"]
+    job = persona["job"]
+    interest = persona["interest"]
+    age = persona["age"]
+    region = persona["region"]
+    income = persona["income"]
+    education = persona["education"]
+    gender = persona["gender"]
+
+    user_lower = user_message.lower()
+
+    # Contextual responses based on keywords and persona traits
+    if any(word in user_lower for word in ["hello", "hi", "hey", "greetings"]):
+        return f"Hi there! I'm {name}, a {age}-year-old {gender} from {region}. I work as a {job.lower()} and I'm really into {interest.lower()}. How can I help you?"
+
+    elif any(word in user_lower for word in ["preference", "like", "favorite", "enjoy", "love"]):
+        return f"As someone who works as a {job.lower()}, I tend to prefer things that are practical and efficient. I really enjoy {interest.lower()}, so anything related to that usually catches my attention. My {income} income level means I'm looking for good value, but I don't mind paying a bit more for quality."
+
+    elif any(word in user_lower for word in ["opinion", "think", "feel", "believe", "view"]):
+        return f"From my perspective as a {age}-year-old {job.lower()} in {region}, I'd say that's an interesting point. Given my {education.lower()} background, I tend to think about things from a practical angle. What specifically are you curious about?"
+
+    elif any(
+        word in user_lower
+        for word in ["habit", "routine", "usually", "typically", "often", "daily"]
+    ):
+        return f"My daily routine as a {job.lower()} is pretty busy, but I always make time for {interest.lower()}. I usually balance work responsibilities with my personal interests. Living in {region} means I have access to some great opportunities for {interest.lower()}. Is there something specific about my routine you'd like to know?"
+
+    elif any(
+        word in user_lower for word in ["buy", "purchase", "shopping", "spend", "money", "price"]
+    ):
+        income_context = (
+            "I'm careful with my spending"
+            if "Under" in income
+            else "I'm willing to invest in quality" if "Over" in income else "I look for good value"
+        )
+        return f"{income_context} given my {income} income level. As a {job.lower()}, I appreciate products and services that make my life easier. When it comes to {interest.lower()}, I don't mind spending a bit more if it's something I'll really use and enjoy."
+
+    elif any(word in user_lower for word in ["work", "job", "career", "profession"]):
+        return f"I work as a {job.lower()}, which keeps me pretty busy. My {education.lower()} education has been helpful in my career. I enjoy what I do, but I also value my time outside of work, especially for {interest.lower()}. What would you like to know about my work?"
+
+    elif any(word in user_lower for word in ["location", "region", "where", "area", "city"]):
+        return f"I'm from {region}, which is a great place to live. The area has a lot to offer, especially when it comes to {interest.lower()}. The local culture and opportunities here really influence my preferences and lifestyle choices."
+
+    else:
+        # Default contextual response
+        return f"That's a good question! As a {age}-year-old {gender} {job.lower()} from {region}, I'd say my perspective is shaped by my experience with {interest.lower()} and my {education.lower()} background. Could you tell me more about what you're looking to understand? I'm happy to share my thoughts based on my {income} lifestyle and interests."
+
+
+def generate_detailed_persona(node_id, age, gender, region, income, education):
+    """Generate a detailed customer persona for a specific node"""
+    # Names based on gender
+    names = {
+        "Male": ["Alex", "Jordan", "Michael", "David", "Chris", "Ryan", "James", "Daniel"],
+        "Female": ["Sarah", "Emma", "Jessica", "Emily", "Olivia", "Sophia", "Mia", "Ava"],
+        "Non-binary": ["Alex", "Jordan", "Taylor", "Casey", "Riley", "Quinn", "Avery", "Morgan"],
+        "All": ["Alex", "Jordan", "Taylor", "Casey", "Riley", "Quinn", "Avery", "Morgan"],
+    }
+
+    # Jobs based on income/education
+    jobs_by_income = {
+        "Under $25k": ["Retail Associate", "Food Service Worker", "Delivery Driver", "Cashier"],
+        "$25k-$50k": [
+            "Office Assistant",
+            "Customer Service Rep",
+            "Sales Associate",
+            "Administrative Assistant",
+        ],
+        "$50k-$75k": ["Marketing Coordinator", "Teacher", "Nurse", "Accountant"],
+        "$75k-$100k": ["Software Developer", "Project Manager", "Financial Analyst", "Engineer"],
+        "$100k-$150k": ["Senior Manager", "Consultant", "Director", "Senior Engineer"],
+        "$150k-$200k": ["VP", "Senior Director", "Principal Engineer", "Executive"],
+        "Over $200k": ["CEO", "CFO", "Partner", "C-Suite Executive"],
+        "All": ["Professional", "Worker", "Employee", "Manager"],
+    }
+
+    # Interests based on age
+    interests_by_age = {
+        "18-24": ["Social media", "Gaming", "Music festivals", "Fast fashion"],
+        "25-34": ["Fitness", "Travel", "Foodie culture", "Tech gadgets"],
+        "35-44": ["Family activities", "Home improvement", "Investing", "Health & wellness"],
+        "45-54": ["Real estate", "Retirement planning", "Golf", "Wine"],
+        "55-64": ["Travel", "Grandchildren", "Gardening", "Volunteering"],
+        "65+": ["Retirement", "Healthcare", "Hobbies", "Family time"],
+        "All": ["Various interests", "Hobbies", "Activities"],
+    }
+
+    # Select based on node_id for consistency
+    name_idx = hash(node_id) % len(names.get(gender, names["All"]))
+    name = names.get(gender, names["All"])[name_idx]
+
+    job_list = jobs_by_income.get(income, jobs_by_income["All"])
+    job_idx = hash(node_id + "job") % len(job_list)
+    job = job_list[job_idx]
+
+    interest_list = interests_by_age.get(age, interests_by_age["All"])
+    interest_idx = hash(node_id + "interest") % len(interest_list)
+    interest = interest_list[interest_idx]
+
+    # Build detailed persona
+    gender_str = gender.lower() if gender != "All" else "person"
+    age_str = f"{age}" if age != "All" else "various ages"
+    region_str = region if region != "All" else "various regions"
+
+    persona = {
+        "name": name,
+        "age": age_str,
+        "gender": gender_str,
+        "region": region_str,
+        "income": income if income != "All" else "varying income",
+        "education": education if education != "All" else "varying education",
+        "job": job,
+        "interest": interest,
+    }
+
+    return persona
+
+
+def generate_customer_persona(age, gender, region, income, education):
+    """Generate a customer persona description based on demographics"""
+    # Format the persona string
+    gender_str = gender.lower() if gender != "All" else "person"
+    age_str = f"age {age}" if age != "All" else "various ages"
+    region_str = f"in {region}" if region != "All" else "across regions"
+    income_str = f"with {income} income" if income != "All" else "with varying income"
+    education_str = (
+        f"with {education} education" if education != "All" else "with varying education"
+    )
+
+    # Build persona description
+    parts = [gender_str, age_str, region_str]
+    if income != "All":
+        parts.append(income_str)
+    if education != "All":
+        parts.append(education_str)
+
+    return " ".join(parts)
+
+
+def get_node_color_from_demographics(age, gender, region, income, education):
+    """Generate a color based on demographics - creates unique colors for different combinations"""
+    # Create a hash from demographics
+    demo_string = f"{age}_{gender}_{region}_{income}_{education}"
+    hash_obj = hashlib.md5(demo_string.encode())
+    hash_hex = hash_obj.hexdigest()
+
+    # Convert hash to RGB values (darker colors for better visibility on dark background)
+    r = int(hash_hex[0:2], 16) % 200 + 55  # 55-255 range, but cap at 200 for darker
+    g = int(hash_hex[2:4], 16) % 200 + 55
+    b = int(hash_hex[4:6], 16) % 200 + 55
+
+    # Ensure minimum brightness
+    if r + g + b < 300:
+        r = min(r + 50, 200)
+        g = min(g + 50, 200)
+        b = min(b + 50, 200)
+
+    return f"rgb({r}, {g}, {b})"
+
+
+def create_simple_network_graph(
+    selected_age="All",
+    selected_gender="All",
+    selected_region="All",
+    selected_income="All",
+    selected_education="All",
+):
+    """Create a simple 2D network graph with demographic-based node colors and personas"""
     # Create a simple network with nodes
     G = nx.Graph()
 
-    # Add nodes representing different segments/entities
+    # Add nodes representing different customer segments/entities
     nodes = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O"]
     for node in nodes:
         G.add_node(node)
@@ -249,6 +416,51 @@ def create_simple_network_graph():
     node_x = [pos[node][0] for node in G.nodes()]
     node_y = [pos[node][1] for node in G.nodes()]
 
+    # Generate node colors and personas based on demographics
+    node_colors = []
+    hover_texts = []
+    node_personas = {}  # Store personas for each node
+
+    # Get color for the selected demographics
+    base_color = get_node_color_from_demographics(
+        selected_age, selected_gender, selected_region, selected_income, selected_education
+    )
+
+    for node in G.nodes():
+        # Generate detailed persona for each node
+        persona = generate_detailed_persona(
+            node,
+            selected_age,
+            selected_gender,
+            selected_region,
+            selected_income,
+            selected_education,
+        )
+        node_personas[node] = persona
+
+        # Use the same color for all nodes based on selected demographics
+        node_colors.append(base_color)
+
+        # Create detailed hover text with persona card
+        # Note: Plotly hover templates support HTML but not interactive buttons
+        # So we'll show the card on hover and clicking the node will start chat
+        hover_texts.append(
+            f"<div style='background: rgba(26, 26, 26, 0.95); padding: 1rem; border-radius: 8px; border: 1px solid rgba(91, 155, 213, 0.3); min-width: 250px; max-width: 300px;'>"
+            f"<b style='color: #5B9BD5; font-size: 1.1rem; display: block; margin-bottom: 0.5rem;'>{persona['name']}</b>"
+            f"<div style='color: #E0E0E0; font-size: 0.85rem; line-height: 1.6;'>"
+            f"<div style='margin-bottom: 0.4rem;'><span style='color: #888888;'>Age:</span> {persona['age']} • {persona['gender'].capitalize()}</div>"
+            f"<div style='margin-bottom: 0.4rem;'><span style='color: #888888;'>Location:</span> {persona['region']}</div>"
+            f"<div style='margin-bottom: 0.4rem;'><span style='color: #888888;'>Job:</span> {persona['job']}</div>"
+            f"<div style='margin-bottom: 0.4rem;'><span style='color: #888888;'>Income:</span> {persona['income']}</div>"
+            f"<div style='margin-bottom: 0.4rem;'><span style='color: #888888;'>Education:</span> {persona['education']}</div>"
+            f"<div style='margin-bottom: 0.5rem;'><span style='color: #888888;'>Interest:</span> {persona['interest']}</div>"
+            f"</div>"
+            f"<div style='margin-top: 0.75rem; padding: 0.5rem; background: rgba(91, 155, 213, 0.2); border-radius: 6px; text-align: center; color: #5B9BD5; font-size: 0.85rem; font-weight: 500;'>"
+            f"Click node to chat with {persona['name']}"
+            f"</div>"
+            f"</div>"
+        )
+
     # Create edge traces
     edge_traces = []
     for edge in G.edges():
@@ -265,17 +477,21 @@ def create_simple_network_graph():
             )
         )
 
-    # Create node trace
+    # Create node trace with colors and hover text
+    # Add customdata with node IDs for potential click handling
+    node_ids = list(G.nodes())
     node_trace = go.Scatter(
         x=node_x,
         y=node_y,
         mode="markers",
-        hoverinfo="none",
+        hovertext=hover_texts,
+        hoverinfo="text",
+        customdata=node_ids,  # Store node IDs for click handling
         marker=dict(
-            size=8,
-            color="#5B9BD5",
-            line=dict(width=1, color="rgba(255, 255, 255, 0.3)"),
-            opacity=0.6,
+            size=14,
+            color=node_colors,
+            line=dict(width=2, color="rgba(255, 255, 255, 0.6)"),
+            opacity=0.85,
         ),
         showlegend=False,
     )
@@ -293,10 +509,11 @@ def create_simple_network_graph():
             paper_bgcolor="rgba(0,0,0,0)",
             plot_bgcolor="rgba(0,0,0,0)",
             height=400,
+            clickmode="event+select",
         ),
     )
 
-    return fig
+    return fig, node_personas
 
 
 def render_test_hypothesis_page():
@@ -431,6 +648,34 @@ def render_test_hypothesis_page():
         [data-baseweb="menu"] li:hover,
         [data-baseweb="menu"] [role="option"]:hover {
         background-color: #2A2A2A !important;
+        }
+
+        /* Override any white backgrounds on selectboxes in main content */
+        [data-testid="column"]:last-child [data-testid="stSelectbox"],
+        [data-testid="column"]:last-child [data-baseweb="select"],
+        [data-testid="column"]:last-child [data-baseweb="select"] button,
+        [data-testid="column"]:last-child [data-baseweb="select"] button > div,
+        [data-testid="column"]:last-child [data-baseweb="select"] button > span {
+        background-color: #1A1A1A !important;
+        background: #1A1A1A !important;
+        color: #888888 !important;
+        }
+
+        /* Ensure dropdown popover is dark */
+        [data-testid="column"]:last-child [data-baseweb="popover"],
+        [data-testid="column"]:last-child [data-baseweb="popover"] > div {
+        background-color: #1A1A1A !important;
+        background: #1A1A1A !important;
+        border-color: rgba(255, 255, 255, 0.1) !important;
+        }
+
+        /* Ensure dropdown menu items are dark */
+        [data-testid="column"]:last-child [data-baseweb="menu"],
+        [data-testid="column"]:last-child [data-baseweb="menu"] li,
+        [data-testid="column"]:last-child [data-baseweb="menu"] [role="option"] {
+        background-color: #1A1A1A !important;
+        background: #1A1A1A !important;
+        color: #888888 !important;
         }
 
         /* Remove box styling from network graph container */
@@ -677,7 +922,7 @@ def render_test_hypothesis_page():
         max_year = current_year + 5
 
         st.markdown('<div class="sidebar-section-title">Year</div>', unsafe_allow_html=True)
-        selected_year = st.slider(
+        st.slider(
             "",
             min_value=min_year,
             max_value=max_year,
@@ -700,12 +945,10 @@ def render_test_hypothesis_page():
         # Age filter - dropdown
         age_groups = ["All", "18-24", "25-34", "35-44", "45-54", "55-64", "65+"]
         selected_age = st.selectbox("", age_groups, key="louiza_age")
-        selected_ages = age_groups[1:] if selected_age == "All" else [selected_age]
 
         # Gender filter - dropdown
         gender_options = ["All", "Male", "Female", "Non-binary", "Prefer not to say"]
         selected_gender = st.selectbox("", gender_options, key="louiza_gender")
-        selected_genders = gender_options[1:] if selected_gender == "All" else [selected_gender]
 
         # Location/Region filter - dropdown
         us_regions = [
@@ -720,7 +963,6 @@ def render_test_hypothesis_page():
             "New England",
         ]
         selected_region = st.selectbox("", us_regions, key="louiza_region")
-        selected_regions = us_regions[1:] if selected_region == "All" else [selected_region]
 
         # Income filter - dropdown
         income_levels = [
@@ -734,7 +976,6 @@ def render_test_hypothesis_page():
             "Over $200k",
         ]
         selected_income = st.selectbox("", income_levels, key="louiza_income")
-        selected_incomes = income_levels[1:] if selected_income == "All" else [selected_income]
 
         # Education filter - dropdown
         education_levels = [
@@ -748,9 +989,6 @@ def render_test_hypothesis_page():
             "Professional",
         ]
         selected_education = st.selectbox("", education_levels, key="louiza_education")
-        selected_educations = (
-            education_levels[1:] if selected_education == "All" else [selected_education]
-        )
 
         st.markdown('<hr style="margin: 0.25rem 0 !important;">', unsafe_allow_html=True)
 
@@ -778,22 +1016,99 @@ def render_test_hypothesis_page():
             "Sonic",
         ]
 
-        selected_restaurant = st.selectbox(
-            "Fast Food Restaurant", fast_food_restaurants, key="louiza_restaurant"
-        )
-        selected_restaurants = (
-            fast_food_restaurants[1:] if selected_restaurant == "All" else [selected_restaurant]
-        )
+        st.selectbox("Fast Food Restaurant", fast_food_restaurants, key="louiza_restaurant")
 
     with col_main:
-        # Display network graph first
-        network_fig = create_simple_network_graph()
-        st.plotly_chart(
+        # Initialize selected persona in session state
+        if "selected_persona" not in st.session_state:
+            st.session_state.selected_persona = None
+        if "persona_chat_history" not in st.session_state:
+            st.session_state.persona_chat_history = {}
+
+        # Display network graph first with demographics
+        network_fig, node_personas = create_simple_network_graph(
+            selected_age=selected_age,
+            selected_gender=selected_gender,
+            selected_region=selected_region,
+            selected_income=selected_income,
+            selected_education=selected_education,
+        )
+
+        # Store personas in session state for access
+        st.session_state.node_personas = node_personas
+
+        # Display graph with click handling
+        event_data = st.plotly_chart(
             network_fig,
             use_container_width=True,
             key="test_hypothesis_network_graph",
-            config={"displayModeBar": False, "staticPlot": True},
+            config={"displayModeBar": False, "staticPlot": False},
+            on_select="rerun",
         )
+
+        # Handle node clicks to start chatting with personas
+        if event_data and "points" in event_data and len(event_data["points"]) > 0:
+            clicked_point = event_data["points"][0]
+            if "pointIndex" in clicked_point:
+                point_index = clicked_point["pointIndex"]
+                node_list = list(node_personas.keys())
+                if point_index < len(node_list):
+                    selected_node = node_list[point_index]
+                    st.session_state.selected_persona = node_personas[selected_node]
+                    st.rerun()
+
+        # Show persona chat if one is selected
+        if st.session_state.selected_persona:
+            persona = st.session_state.selected_persona
+            persona_key = f"{persona['name']}_{persona['age']}_{persona['region']}"
+
+            # Initialize chat history for this persona
+            if persona_key not in st.session_state.persona_chat_history:
+                st.session_state.persona_chat_history[persona_key] = []
+
+            # Persona header with close button
+            col_persona, col_close = st.columns([4, 1])
+            with col_persona:
+                st.markdown(
+                    f"""
+                    <div style="background: rgba(26, 26, 26, 0.8); padding: 1rem; border-radius: 8px; margin: 1rem 0;">
+                        <h4 style="color: #5B9BD5; margin: 0;">Chatting with {persona['name']}</h4>
+                        <p style="color: #888888; margin: 0.5rem 0 0 0; font-size: 0.85rem;">
+                            {persona['age']} • {persona['gender'].capitalize()} • {persona['region']} • {persona['job']}
+                        </p>
+                    </div>
+                    """,
+                    unsafe_allow_html=True,
+                )
+            with col_close:
+                if st.button("✕", key="close_persona", use_container_width=True):
+                    st.session_state.selected_persona = None
+                    st.rerun()
+
+            # Display chat history
+            if st.session_state.persona_chat_history[persona_key]:
+                for message in st.session_state.persona_chat_history[persona_key]:
+                    with st.chat_message(message["role"]):
+                        st.markdown(message["content"])
+
+            # Chat input
+            user_input = st.chat_input(
+                f"Ask {persona['name']} about their preferences, habits, or opinions..."
+            )
+            if user_input:
+                # Add user message
+                st.session_state.persona_chat_history[persona_key].append(
+                    {"role": "user", "content": user_input}
+                )
+
+                # Generate persona response (simulated - you can enhance this with AI)
+                response = generate_persona_response(persona, user_input)
+
+                st.session_state.persona_chat_history[persona_key].append(
+                    {"role": "assistant", "content": response}
+                )
+
+                st.rerun()
 
         # Initialize session state for selected simulation option and chat
         if "selected_simulation_option" not in st.session_state:
@@ -844,12 +1159,97 @@ def render_test_hypothesis_page():
                     letter-spacing: 0.5px !important;
                     margin-bottom: 0.5rem !important;
                 }
+                /* Style simulation dropdowns - dark background, grey text, smaller */
+                .simulation-modal-container [data-testid="stSelectbox"],
+                .simulation-modal-container [data-baseweb="select"] {
+                    background-color: #1A1A1A !important;
+                }
+                .simulation-modal-container [data-baseweb="select"] button {
+                    background-color: #1A1A1A !important;
+                    color: #888888 !important;
+                    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+                    border-radius: 6px !important;
+                    font-size: 0.75rem !important;
+                    padding: 0.4rem 0.6rem !important;
+                }
+                /* Target ALL possible child elements inside the button to override global E0E0E0 */
+                .simulation-modal-container [data-baseweb="select"] button *,
+                .simulation-modal-container [data-baseweb="select"] button span,
+                .simulation-modal-container [data-baseweb="select"] button div,
+                .simulation-modal-container [data-baseweb="select"] button p,
+                .simulation-modal-container [data-baseweb="select"] button > *,
+                .simulation-modal-container [data-baseweb="select"] button > div > *,
+                .simulation-modal-container [data-baseweb="select"] button > span > * {
+                    color: #888888 !important;
+                    font-size: 0.75rem !important;
+                }
+                /* Style dropdown menu popover */
+                .simulation-modal-container [data-baseweb="popover"] {
+                    background-color: #1A1A1A !important;
+                    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+                }
+                .simulation-modal-container [data-baseweb="menu"] {
+                    background-color: #1A1A1A !important;
+                }
+                .simulation-modal-container [data-baseweb="menu"] li,
+                .simulation-modal-container [data-baseweb="menu"] [role="option"] {
+                    background-color: #1A1A1A !important;
+                    color: #888888 !important;
+                    font-size: 0.75rem !important;
+                }
+                .simulation-modal-container [data-baseweb="menu"] li:hover,
+                .simulation-modal-container [data-baseweb="menu"] [role="option"]:hover {
+                    background-color: #2A2A2A !important;
+                    color: #E0E0E0 !important;
+                }
                 </style>
                 """,
                     unsafe_allow_html=True,
                 )
 
                 st.markdown('<div class="simulation-modal-container">', unsafe_allow_html=True)
+                # Add inline style tag AFTER container opens to ensure highest priority
+                st.markdown(
+                    """
+                <style>
+                /* Force simulation dropdown styling - inline for highest priority */
+                .simulation-modal-container [data-baseweb="select"] button,
+                .simulation-modal-container [data-baseweb="select"] button *,
+                .simulation-modal-container [data-baseweb="select"] button div,
+                .simulation-modal-container [data-baseweb="select"] button span,
+                .simulation-modal-container [data-baseweb="select"] button div[value],
+                .simulation-modal-container [data-baseweb="select"] button div[class*="st-"] {
+                    color: #888888 !important;
+                    font-size: 0.75rem !important;
+                }
+                .simulation-modal-container [data-baseweb="select"] button {
+                    background-color: #1A1A1A !important;
+                    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+                }
+                </style>
+                <script>
+                (function() {
+                    function forceStyle() {
+                        const buttons = document.querySelectorAll('.simulation-modal-container [data-baseweb="select"] button');
+                        buttons.forEach(function(btn) {
+                            btn.style.setProperty('color', '#888888', 'important');
+                            btn.style.setProperty('font-size', '0.75rem', 'important');
+                            btn.style.setProperty('background-color', '#1A1A1A', 'important');
+                            const all = btn.querySelectorAll('*');
+                            all.forEach(function(el) {
+                                el.style.setProperty('color', '#888888', 'important');
+                                el.style.setProperty('font-size', '0.75rem', 'important');
+                            });
+                        });
+                    }
+                    forceStyle();
+                    setInterval(forceStyle, 100);
+                    new MutationObserver(forceStyle).observe(document.body, {childList: true, subtree: true});
+                })();
+                </script>
+                """,
+                    unsafe_allow_html=True,
+                )
                 st.markdown(
                     '<h3 class="simulation-title">What would you like to simulate?</h3>',
                     unsafe_allow_html=True,
@@ -914,18 +1314,6 @@ def render_test_hypothesis_page():
                 if chat_key not in st.session_state.simulation_chat_history:
                     st.session_state.simulation_chat_history[chat_key] = []
 
-                # Header with reset button
-                col_title, col_reset = st.columns([4, 1])
-                with col_title:
-                    st.markdown(
-                        f'<h3 style="color: #5B9BD5; text-align: left; margin-bottom: 1.5rem;">Simulating: {selected_opt} ({selected_cat})</h3>',
-                        unsafe_allow_html=True,
-                    )
-                with col_reset:
-                    if st.button("Reset", key="reset_simulation_market", use_container_width=True):
-                        st.session_state.selected_simulation_option = None
-                        st.rerun()
-
                 # Display chat history if there are messages
                 if st.session_state.simulation_chat_history[chat_key]:
                     for message in st.session_state.simulation_chat_history[chat_key]:
@@ -956,8 +1344,8 @@ def render_test_hypothesis_page():
             if not st.session_state.selected_simulation_option:
                 st.markdown(
                     """
-                <style>
-                .simulation-modal-container {
+                    <style>
+                    .simulation-modal-container {
                     background: transparent !important;
                     backdrop-filter: none !important;
                     border: none !important;
@@ -992,12 +1380,97 @@ def render_test_hypothesis_page():
                     letter-spacing: 0.5px !important;
                     margin-bottom: 0.5rem !important;
                 }
+                /* Style simulation dropdowns - dark background, grey text, smaller */
+                .simulation-modal-container [data-testid="stSelectbox"],
+                .simulation-modal-container [data-baseweb="select"] {
+                    background-color: #1A1A1A !important;
+                }
+                .simulation-modal-container [data-baseweb="select"] button {
+                    background-color: #1A1A1A !important;
+                    color: #888888 !important;
+                    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+                    border-radius: 6px !important;
+                    font-size: 0.75rem !important;
+                    padding: 0.4rem 0.6rem !important;
+                }
+                /* Target ALL possible child elements inside the button to override global E0E0E0 */
+                .simulation-modal-container [data-baseweb="select"] button *,
+                .simulation-modal-container [data-baseweb="select"] button span,
+                .simulation-modal-container [data-baseweb="select"] button div,
+                .simulation-modal-container [data-baseweb="select"] button p,
+                .simulation-modal-container [data-baseweb="select"] button > *,
+                .simulation-modal-container [data-baseweb="select"] button > div > *,
+                .simulation-modal-container [data-baseweb="select"] button > span > * {
+                    color: #888888 !important;
+                    font-size: 0.75rem !important;
+                }
+                /* Style dropdown menu popover */
+                .simulation-modal-container [data-baseweb="popover"] {
+                    background-color: #1A1A1A !important;
+                    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+                }
+                .simulation-modal-container [data-baseweb="menu"] {
+                    background-color: #1A1A1A !important;
+                }
+                .simulation-modal-container [data-baseweb="menu"] li,
+                .simulation-modal-container [data-baseweb="menu"] [role="option"] {
+                    background-color: #1A1A1A !important;
+                    color: #888888 !important;
+                    font-size: 0.75rem !important;
+                }
+                .simulation-modal-container [data-baseweb="menu"] li:hover,
+                .simulation-modal-container [data-baseweb="menu"] [role="option"]:hover {
+                    background-color: #2A2A2A !important;
+                    color: #E0E0E0 !important;
+                }
                 </style>
-            """,
+                    """,
                     unsafe_allow_html=True,
                 )
 
                 st.markdown('<div class="simulation-modal-container">', unsafe_allow_html=True)
+                # Add inline style tag AFTER container opens to ensure highest priority
+                st.markdown(
+                    """
+                <style>
+                /* Force simulation dropdown styling - inline for highest priority */
+                .simulation-modal-container [data-baseweb="select"] button,
+                .simulation-modal-container [data-baseweb="select"] button *,
+                .simulation-modal-container [data-baseweb="select"] button div,
+                .simulation-modal-container [data-baseweb="select"] button span,
+                .simulation-modal-container [data-baseweb="select"] button div[value],
+                .simulation-modal-container [data-baseweb="select"] button div[class*="st-"] {
+                    color: #888888 !important;
+                    font-size: 0.75rem !important;
+                }
+                .simulation-modal-container [data-baseweb="select"] button {
+                    background-color: #1A1A1A !important;
+                    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+                }
+                </style>
+                <script>
+                (function() {
+                    function forceStyle() {
+                        const buttons = document.querySelectorAll('.simulation-modal-container [data-baseweb="select"] button');
+                        buttons.forEach(function(btn) {
+                            btn.style.setProperty('color', '#888888', 'important');
+                            btn.style.setProperty('font-size', '0.75rem', 'important');
+                            btn.style.setProperty('background-color', '#1A1A1A', 'important');
+                            const all = btn.querySelectorAll('*');
+                            all.forEach(function(el) {
+                                el.style.setProperty('color', '#888888', 'important');
+                                el.style.setProperty('font-size', '0.75rem', 'important');
+                            });
+                        });
+                    }
+                    forceStyle();
+                    setInterval(forceStyle, 100);
+                    new MutationObserver(forceStyle).observe(document.body, {childList: true, subtree: true});
+                })();
+                </script>
+                """,
+                    unsafe_allow_html=True,
+                )
                 st.markdown(
                     '<h3 class="simulation-title">What would you like to simulate?</h3>',
                     unsafe_allow_html=True,
@@ -1055,18 +1528,6 @@ def render_test_hypothesis_page():
                 chat_key = f"{selected_cat}_{selected_opt}"
                 if chat_key not in st.session_state.simulation_chat_history:
                     st.session_state.simulation_chat_history[chat_key] = []
-
-                # Header with reset button
-                col_title, col_reset = st.columns([4, 1])
-                with col_title:
-                    st.markdown(
-                        f'<h3 style="color: #5B9BD5; text-align: left; margin-bottom: 1.5rem;">Simulating: {selected_opt} ({selected_cat})</h3>',
-                        unsafe_allow_html=True,
-                    )
-                with col_reset:
-                    if st.button("Reset", key="reset_simulation_hedge", use_container_width=True):
-                        st.session_state.selected_simulation_option = None
-                        st.rerun()
 
                 # Display chat history if there are messages
                 if st.session_state.simulation_chat_history[chat_key]:

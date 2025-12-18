@@ -396,7 +396,7 @@ st.markdown(
     .stSelectbox label, .stSlider label, .stTextInput label,
     [data-testid="stSelectbox"] label,
     [data-testid="stSlider"] label {
-        color: #E0E0E0 !important;
+        color: #5B9BD5 !important;
         font-family: 'Inter', sans-serif !important;
     }
 
@@ -404,7 +404,7 @@ st.markdown(
     [data-baseweb="select"] > div,
     [data-baseweb="popover"] {
         background-color: #1A1A1A !important;
-        color: #E0E0E0 !important;
+        /* Don't set text color here - let specific rules handle it */
     }
 
     /* Tabs - Enhanced Menu Style with 3D effect */
@@ -610,7 +610,58 @@ st.markdown(
     .hide-sidebar [data-testid="stSidebar"] ~ * {
         margin-left: 0 !important;
     }
+
+    /* Simulation dropdowns - grey text, smaller font - MUST be after global div rule */
+    .simulation-modal-container [data-baseweb="select"] button,
+    .simulation-modal-container [data-baseweb="select"] button *,
+    .simulation-modal-container [data-baseweb="select"] button div,
+    .simulation-modal-container [data-baseweb="select"] button span,
+    .simulation-modal-container [data-baseweb="select"] button div[value],
+    .simulation-modal-container [data-baseweb="select"] button div[class*="st-"] {
+        color: #888888 !important;
+        font-size: 0.75rem !important;
+    }
+    .simulation-modal-container [data-baseweb="select"] button {
+        background-color: #1A1A1A !important;
+        border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    }
     </style>
+    <script>
+    // Force style simulation dropdown text to grey - SIMPLIFIED AND RELIABLE
+    function styleSimulationDropdowns() {
+        const buttons = document.querySelectorAll('.simulation-modal-container [data-baseweb="select"] button');
+        buttons.forEach(function(button) {
+            // Set button styles
+            button.style.setProperty('background-color', '#1A1A1A', 'important');
+            button.style.setProperty('border', '1px solid rgba(255, 255, 255, 0.1)', 'important');
+            button.style.setProperty('color', '#888888', 'important');
+            button.style.setProperty('font-size', '0.75rem', 'important');
+
+            // Target ALL elements inside button
+            const allElements = button.querySelectorAll('*');
+            allElements.forEach(function(el) {
+                el.style.setProperty('color', '#888888', 'important');
+                el.style.setProperty('font-size', '0.75rem', 'important');
+            });
+        });
+    }
+    // Run when DOM is ready
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', styleSimulationDropdowns);
+    } else {
+        styleSimulationDropdowns();
+    }
+    // Run on intervals
+    setTimeout(styleSimulationDropdowns, 100);
+    setTimeout(styleSimulationDropdowns, 500);
+    setTimeout(styleSimulationDropdowns, 1000);
+    // Watch for DOM changes
+    const dropdownObserver = new MutationObserver(styleSimulationDropdowns);
+    dropdownObserver.observe(document.body, {
+        childList: true,
+        subtree: true
+    });
+    </script>
     <script>
     // Force dark background on tables - runs multiple times to catch all tables
     function styleAllTables() {
