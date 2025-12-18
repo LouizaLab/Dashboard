@@ -442,23 +442,17 @@ def create_simple_network_graph(
         node_colors.append(base_color)
 
         # Create detailed hover text with persona card
-        # Note: Plotly hover templates support HTML but not interactive buttons
-        # So we'll show the card on hover and clicking the node will start chat
+        # Note: Plotly hover templates support basic HTML (br, b, i, sub, sup, span)
+        # Using simpler formatting that Plotly can render properly
         hover_texts.append(
-            f"<div style='background: rgba(26, 26, 26, 0.95); padding: 1rem; border-radius: 8px; border: 1px solid rgba(91, 155, 213, 0.3); min-width: 250px; max-width: 300px;'>"
-            f"<b style='color: #5B9BD5; font-size: 1.1rem; display: block; margin-bottom: 0.5rem;'>{persona['name']}</b>"
-            f"<div style='color: #E0E0E0; font-size: 0.85rem; line-height: 1.6;'>"
-            f"<div style='margin-bottom: 0.4rem;'><span style='color: #888888;'>Age:</span> {persona['age']} • {persona['gender'].capitalize()}</div>"
-            f"<div style='margin-bottom: 0.4rem;'><span style='color: #888888;'>Location:</span> {persona['region']}</div>"
-            f"<div style='margin-bottom: 0.4rem;'><span style='color: #888888;'>Job:</span> {persona['job']}</div>"
-            f"<div style='margin-bottom: 0.4rem;'><span style='color: #888888;'>Income:</span> {persona['income']}</div>"
-            f"<div style='margin-bottom: 0.4rem;'><span style='color: #888888;'>Education:</span> {persona['education']}</div>"
-            f"<div style='margin-bottom: 0.5rem;'><span style='color: #888888;'>Interest:</span> {persona['interest']}</div>"
-            f"</div>"
-            f"<div style='margin-top: 0.75rem; padding: 0.5rem; background: rgba(91, 155, 213, 0.2); border-radius: 6px; text-align: center; color: #5B9BD5; font-size: 0.85rem; font-weight: 500;'>"
-            f"Click node to chat with {persona['name']}"
-            f"</div>"
-            f"</div>"
+            f"<b>{persona['name']}</b><br>"
+            f"Age: {persona['age']} • {persona['gender'].capitalize()}<br>"
+            f"Location: {persona['region']}<br>"
+            f"Job: {persona['job']}<br>"
+            f"Income: {persona['income']}<br>"
+            f"Education: {persona['education']}<br>"
+            f"Interest: {persona['interest']}<br>"
+            f"<br><i>Click node to chat</i>"
         )
 
     # Create edge traces
