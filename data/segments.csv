@@ -1,6 +1,0 @@
-segment_id,age_bucket,region,psychographic,segment_name
-seg_00,18-25,west,routine_lover,Segment_1
-seg_01,46-55,south,adventurous,Segment_2
-seg_02,56+,west,health_focused,Segment_3
-seg_03,56+,south,adventurous,Segment_4
-seg_04,56+,west,adventurous,Segment_5
