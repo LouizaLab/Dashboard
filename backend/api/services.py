@@ -1,0 +1,537 @@
+"""
+Services for GPT integration and mock responses.
+"""
+import os
+import json
+import random
+from typing import Dict, List, Optional
+from .sim_models import PersonaAgent
+
+try:
+    from openai import OpenAI
+    OPENAI_AVAILABLE = True
+except ImportError:
+    OPENAI_AVAILABLE = False
+
+try:
+    from decouple import config
+    # Try to load from .env file
+    OPENAI_API_KEY = config('OPENAI_API_KEY', default=None) or config('OPENAI_KEY', default=None)
+except ImportError:
+    # Fallback to environment variables if decouple not available
+    OPENAI_API_KEY = os.environ.get('OPENAI_API_KEY') or os.environ.get('OPENAI_KEY')
+
+# Initialize OpenAI client if API key is available
+client = None
+print(f"[DEBUG] OPENAI_AVAILABLE: {OPENAI_AVAILABLE}")
+print(f"[DEBUG] OPENAI_API_KEY present: {OPENAI_API_KEY is not None}")
+print(f"[DEBUG] OPENAI_API_KEY length: {len(OPENAI_API_KEY) if OPENAI_API_KEY else 0}")
+
+if OPENAI_AVAILABLE and OPENAI_API_KEY:
+    try:
+        client = OpenAI(api_key=OPENAI_API_KEY)
+        print(f"✓ OpenAI client initialized successfully (GPT-4o ready for agent chat)")
+    except Exception as e:
+        print(f"✗ Failed to initialize OpenAI client: {e}")
+        import traceback
+        traceback.print_exc()
+        client = None
+else:
+    if not OPENAI_AVAILABLE:
+        print("⚠ OpenAI package not installed. Install with: pip install openai")
+    elif not OPENAI_API_KEY:
+        print("⚠ OPENAI_API_KEY not set. Please set it in backend/.env file.")
+        print("   Example: OPENAI_API_KEY=sk-your-key-here")
+        print("   Then restart the Django server.")
+
+
+def generate_persona_response(
+    agent: PersonaAgent,
+    task_type: str,
+    payload: Dict,
+    mode: str = 'gpt'  # Default to GPT
+) -> Dict:
+    """
+    Generate a persona response using GPT or mock.
+    
+    Args:
+        agent: PersonaAgent instance
+        task_type: 'hypothesis', 'survey', 'taste_test', 'chat'
+        payload: Task-specific payload
+        mode: 'gpt' or 'mock'
+    
+    Returns:
+        Dict with 'text' and optionally 'structured' data
+    """
+    print(f"[generate_persona_response] Mode: {mode}, Client available: {client is not None}, Task: {task_type}, Agent: {agent.display_name}")
+    
+    if mode == 'gpt':
+        if not client:
+            error_msg = 'GPT client not available. Please set OPENAI_API_KEY in backend/.env file.'
+            print(f"ERROR: {error_msg}")
+            return {
+                'text': f"⚠️ {error_msg}",
+                'structured': {}
+            }
+        print(f"[generate_persona_response] Calling GPT for {agent.display_name} (task: {task_type})")
+        result = _generate_gpt_response(agent, task_type, payload)
+        print(f"[generate_persona_response] GPT returned: {result.get('text', '')[:100]}...")
+        return result
+    else:
+        # Only use mock if explicitly requested (should not happen now)
+        print(f"WARNING: Mock mode explicitly requested for {agent.display_name} - using mock")
+        return _generate_mock_response(agent, task_type, payload)
+
+
+def _build_default_system_prompt(agent: PersonaAgent) -> str:
+    """Build a default system prompt if agent doesn't have one."""
+    archetype_descriptions = {
+        'value_seeker': 'You prioritize getting the best value and deals. Price is your main concern, and you always look for promotions, discounts, and combo meals. You compare prices across brands and are willing to switch if you find a better deal.',
+        'health_optimizer': 'You focus on nutrition and healthy options. Ingredients, nutritional value, and freshness matter most to you. You read nutrition labels and prefer options with whole ingredients, lower calories, and better macro balance.',
+        'convenience_loyalist': 'You value speed, reliability, and consistency. You stick with brands you know work well and can deliver quickly. Convenience and predictability are more important than trying new things.',
+        'late_night_craver': 'You often order food late at night or during off-hours. Quick, satisfying, and available options are key. You know which places are open late and which items hit the spot when you\'re craving something.',
+        'trend_chaser': 'You like trying new things and keeping up with food trends. You\'re among the first to try limited-time offers, new menu items, and viral food trends. Novelty and social media buzz influence your choices.',
+        'family_bundle_buyer': 'You buy for a family, so value, variety, and family-friendly options matter. You look for deals that feed multiple people, kid-friendly options, and meals that everyone will enjoy.',
+        'protein_maximizer': 'You focus on protein content and fitness goals. High-protein options are your priority, and you often choose items based on protein-to-calorie ratios. You might be into fitness, bodybuilding, or just want to feel full longer.',
+    }
+    
+    archetype_desc = archetype_descriptions.get(agent.archetype, 'a typical consumer')
+    
+    return f"""You are {agent.display_name}, a {agent.age_bucket}-year-old {agent.gender.lower()} from {agent.region} with {agent.income} income.
+
+**Your Behavioral Profile:**
+You are {archetype_desc}.
+
+**Your Background:**
+- You live in {agent.region}
+- Your income level is {agent.income}
+- You're in the {agent.age_bucket} age range
+- Your taste preferences include: {', '.join(agent.taste_profile_json[:5]) if agent.taste_profile_json else 'varied tastes'}
+
+Respond naturally and authentically from this persona's perspective. Be specific about your preferences, habits, and decision-making process."""
+
+
+def _generate_gpt_response(agent: PersonaAgent, task_type: str, payload: Dict) -> Dict:
+    """Generate response using GPT."""
+    if not client:
+        return {
+            'text': 'GPT client not available. Please set OPENAI_API_KEY environment variable.',
+            'structured': {}
+        }
+    
+    try:
+        if task_type == 'chat':
+            messages = payload.get('messages', [])
+            
+            # Build comprehensive system prompt with all agent details
+            system_prompt = agent.system_prompt or _build_default_system_prompt(agent)
+            
+            # Enhance system prompt with additional context
+            taste_prefs = ', '.join(agent.taste_profile_json or []) if agent.taste_profile_json else 'varied tastes'
+            behavior_traits = json.dumps(agent.behavior_params_json, indent=2) if agent.behavior_params_json else '{}'
+            
+            enhanced_system_prompt = f"""{system_prompt}
+
+**Your Persona Details:**
+- Name: {agent.display_name}
+- Age: {agent.age_bucket}
+- Gender: {agent.gender}
+- Region: {agent.region}
+- Income: {agent.income}
+- Behavioral Archetype: {agent.get_archetype_display()}
+- Taste Preferences: {taste_prefs}
+- Behavior Traits: {behavior_traits}
+
+**Communication Style:**
+- Respond naturally and conversationally as this persona
+- Stay in character based on your archetype and demographics
+- Keep responses authentic to your background and preferences
+- Be specific about your preferences and behaviors
+- Use casual, natural language appropriate for your age and background
+- Reference your region, income level, and lifestyle when relevant
+
+**Context:**
+You're chatting with someone who wants to understand your preferences and behaviors regarding fast-food choices. Answer their questions authentically from your persona's perspective."""
+            
+            system_msg = {
+                'role': 'system',
+                'content': enhanced_system_prompt
+            }
+            
+            # Convert user messages to OpenAI format
+            gpt_messages = [system_msg]
+            for msg in messages[-15:]:  # Last 15 messages for better context
+                if isinstance(msg, dict):
+                    role = msg.get('role', 'user')
+                    content = msg.get('content', '')
+                    if content and role in ['user', 'assistant']:
+                        gpt_messages.append({
+                            'role': role,
+                            'content': content
+                        })
+                else:
+                    # Handle string messages
+                    gpt_messages.append({
+                        'role': 'user',
+                        'content': str(msg)
+                    })
+            
+            print(f"[GPT] Calling OpenAI API for {agent.display_name} - Chat")
+            print(f"[GPT] Messages count: {len(gpt_messages)}")
+            print(f"[GPT] System prompt length: {len(gpt_messages[0]['content']) if gpt_messages else 0}")
+            
+            response = client.chat.completions.create(
+                model="gpt-4o",
+                messages=gpt_messages,
+                temperature=0.9,  # Higher temperature for more natural, varied responses
+                max_tokens=400,   # More tokens for richer conversations
+                presence_penalty=0.6,  # Encourage diverse responses
+                frequency_penalty=0.3  # Reduce repetition
+            )
+            
+            response_text = response.choices[0].message.content.strip()
+            print(f"[GPT] Received response from OpenAI: {response_text[:100]}...")
+            
+            if not response_text:
+                response_text = "I'm not sure how to respond to that. Could you rephrase?"
+            
+            return {
+                'text': response_text,
+                'structured': {}
+            }
+        
+        elif task_type == 'hypothesis':
+            # Use agent's system prompt + hypothesis question
+            system_prompt = agent.system_prompt or f"""You are {agent.display_name}, a {agent.get_archetype_display()} from {agent.region}.
+Age: {agent.age_bucket}, Gender: {agent.gender}, Income: {agent.income}
+Behavioral traits: {json.dumps(agent.behavior_params_json)}
+Respond authentically from this persona's perspective."""
+            
+            user_prompt = f"""Respond to this hypothesis/question: {payload.get('input_text', '')}
+
+Provide a brief, authentic response (2-3 sentences) from your persona's perspective. Be specific about how this would affect your behavior or preferences."""
+            
+            response = client.chat.completions.create(
+                model="gpt-4o-mini",
+                messages=[
+                    {'role': 'system', 'content': system_prompt},
+                    {'role': 'user', 'content': user_prompt}
+                ],
+                temperature=0.8,
+                max_tokens=200
+            )
+            return {
+                'text': response.choices[0].message.content.strip(),
+                'structured': {}
+            }
+        
+        elif task_type == 'survey':
+            question = payload.get('question', '')
+            question_type = payload.get('question_type', 'open')
+            
+            system_prompt = agent.system_prompt or f"""You are {agent.display_name}, a {agent.get_archetype_display()} from {agent.region}.
+Age: {agent.age_bucket}, Gender: {agent.gender}, Income: {agent.income}
+Behavioral traits: {json.dumps(agent.behavior_params_json)}"""
+            
+            if question_type == 'likert':
+                user_prompt = f"""Answer this survey question on a scale of 1-5 (1=Strongly Disagree, 5=Strongly Agree):
+{question}
+
+Respond with just a number (1-5) and a brief explanation."""
+            elif question_type == 'multiple_choice':
+                user_prompt = f"""Answer this multiple choice question:
+{question}
+
+Provide your choice and a brief explanation."""
+            else:
+                user_prompt = f"""Answer this survey question:
+{question}
+
+Provide a brief, authentic response from your persona's perspective."""
+            
+            response = client.chat.completions.create(
+                model="gpt-4o-mini",
+                messages=[
+                    {'role': 'system', 'content': system_prompt},
+                    {'role': 'user', 'content': user_prompt}
+                ],
+                temperature=0.7,
+                max_tokens=150
+            )
+            return {
+                'text': response.choices[0].message.content.strip(),
+                'structured': {}
+            }
+        
+        else:
+            # Unknown task type - return error instead of mock
+            return {
+                'text': f"Unknown task type: {task_type}",
+                'structured': {}
+            }
+    
+    except Exception as e:
+        print(f"GPT error for {agent.display_name} ({task_type}): {e}")
+        import traceback
+        traceback.print_exc()
+        # Never fallback to mock - always return error message so user knows GPT failed
+        error_details = str(e)
+        if "API key" in error_details.lower() or "authentication" in error_details.lower():
+            error_msg = "OpenAI API key is invalid or missing. Please check your OPENAI_API_KEY in backend/.env"
+        elif "rate limit" in error_details.lower():
+            error_msg = "OpenAI API rate limit exceeded. Please try again in a moment."
+        elif "insufficient_quota" in error_details.lower():
+            error_msg = "OpenAI API quota exceeded. Please check your OpenAI account billing."
+        else:
+            error_msg = f"GPT API error: {error_details}. Please check server logs for details."
+        
+        return {
+            'text': f"⚠️ {error_msg}",
+            'structured': {}
+        }
+
+
+def _generate_mock_response(agent: PersonaAgent, task_type: str, payload: Dict) -> Dict:
+    """Generate deterministic mock response based on agent behavior params."""
+    print(f"⚠️ WARNING: _generate_mock_response called for {agent.display_name} (task: {task_type}) - This should not happen when mode='gpt'!")
+    params = agent.behavior_params_json
+    archetype = agent.archetype
+    
+    if task_type == 'chat':
+        user_message = payload.get('messages', [{}])[-1].get('content', '')
+        return {
+            'text': _mock_chat_response(agent, user_message),
+            'structured': {}
+        }
+    
+    elif task_type == 'hypothesis':
+        input_text = payload.get('input_text', '').lower()
+        return {
+            'text': _mock_hypothesis_response(agent, input_text),
+            'structured': {}
+        }
+    
+    elif task_type == 'survey':
+        question = payload.get('question', '')
+        question_type = payload.get('question_type', 'open')
+        return {
+            'text': _mock_survey_response(agent, question, question_type),
+            'structured': _mock_survey_structured(agent, question_type)
+        }
+    
+    elif task_type == 'taste_test':
+        items = payload.get('items', [])
+        return {
+            'text': _mock_taste_test_response(agent, items),
+            'structured': _mock_taste_test_structured(agent, items)
+        }
+    
+    return {'text': 'Mock response', 'structured': {}}
+
+
+def _mock_chat_response(agent: PersonaAgent, user_message: str) -> str:
+    """Generate mock chat response."""
+    archetype_responses = {
+        'value_seeker': "I'm always looking for the best deal. Price matters most to me.",
+        'health_optimizer': "I care about nutrition and ingredients. Quality over convenience.",
+        'convenience_loyalist': "I go with what's fast and reliable. Consistency is key.",
+        'late_night_craver': "I'm usually ordering late at night. Need something quick and satisfying.",
+        'trend_chaser': "I like trying new things and keeping up with trends.",
+        'family_bundle_buyer': "I'm feeding a family, so value and variety matter.",
+        'protein_maximizer': "I focus on protein content. That's my priority."
+    }
+    
+    base_response = archetype_responses.get(agent.archetype, "That's interesting.")
+    
+    if 'price' in user_message.lower() or 'cost' in user_message.lower():
+        if agent.archetype == 'value_seeker':
+            return "Absolutely! Price is everything. I compare deals constantly."
+        return base_response
+    
+    if 'health' in user_message.lower() or 'nutrition' in user_message.lower():
+        if agent.archetype == 'health_optimizer':
+            return "Yes, I always check nutrition facts. Ingredients matter to me."
+        return base_response
+    
+    return base_response
+
+
+def _mock_hypothesis_response(agent: PersonaAgent, input_text: str) -> str:
+    """Generate mock hypothesis response."""
+    params = agent.behavior_params_json
+    archetype = agent.archetype
+    
+    if 'protein' in input_text:
+        if archetype == 'protein_maximizer':
+            return f"As a {agent.get_archetype_display()}, I'd definitely respond positively to high-protein campaigns. That's exactly what I look for."
+        return f"I might notice it, but protein isn't my main concern."
+    
+    if 'gen z' in input_text or 'young' in input_text:
+        if agent.age_bucket == '18-24':
+            return f"As someone in Gen Z, I'd be interested if it feels authentic and relevant to my values."
+        return f"I'm not in that demographic, so it might not resonate as much."
+    
+    if 'late night' in input_text:
+        if archetype == 'late_night_craver':
+            return f"Late-night options are crucial for me. I'd definitely increase visits if there were better options."
+        return f"I don't usually eat late at night, so it wouldn't affect me much."
+    
+    # Default based on archetype
+    sentiment = params.get('sentiment_bias', 0.5)
+    if sentiment > 0.6:
+        return f"As a {agent.get_archetype_display()}, I'd likely respond positively to this."
+    elif sentiment < 0.4:
+        return f"I'm skeptical about this. Doesn't align with my preferences."
+    return f"I'd need to see more details, but it could be interesting."
+
+
+def _mock_survey_response(agent: PersonaAgent, question: str, question_type: str) -> str:
+    """Generate mock survey response."""
+    if question_type == 'likert':
+        params = agent.behavior_params_json
+        base_score = params.get('sentiment_bias', 0.5)
+        # Map to 1-5 scale
+        score = int(base_score * 4) + 1
+        return f"I'd rate it {score} out of 5."
+    
+    if question_type == 'multiple_choice':
+        # Deterministic choice based on archetype
+        choices = ['Option A', 'Option B', 'Option C']
+        idx = hash(agent.id) % len(choices)
+        return choices[idx]
+    
+    # Open ended
+    return _mock_chat_response(agent, question)
+
+
+def _mock_survey_structured(agent: PersonaAgent, question_type: str) -> Dict:
+    """Generate structured survey response."""
+    params = agent.behavior_params_json
+    
+    if question_type == 'likert':
+        base_score = params.get('sentiment_bias', 0.5)
+        score = int(base_score * 4) + 1
+        return {'likert_score': score}
+    
+    if question_type == 'multiple_choice':
+        choices = ['A', 'B', 'C']
+        idx = hash(agent.id) % len(choices)
+        return {'choice': choices[idx]}
+    
+    return {}
+
+
+def _mock_taste_test_response(agent: PersonaAgent, items: List[str]) -> str:
+    """Generate mock taste test response."""
+    params = agent.behavior_params_json
+    health_bias = params.get('health_bias', 0.5)
+    
+    # Prefer healthier options if health_optimizer
+    if agent.archetype == 'health_optimizer' and 'Chipotle' in str(items):
+        return "I'd prefer Chipotle - it feels fresher and healthier."
+    
+    # Prefer value options if value_seeker
+    if agent.archetype == 'value_seeker' and 'McDonald' in str(items):
+        return "McDonald's gives the best value for money."
+    
+    return f"I'd probably go with {items[0] if items else 'the first option'} based on my preferences."
+
+
+def _mock_taste_test_structured(agent: PersonaAgent, items: List[str]) -> Dict:
+    """Generate structured taste test ranking."""
+    params = agent.behavior_params_json
+    health_bias = params.get('health_bias', 0.5)
+    
+    # Create ranking based on archetype
+    rankings = []
+    for i, item in enumerate(items):
+        score = 0.5
+        if agent.archetype == 'health_optimizer' and 'Chipotle' in str(item):
+            score = 0.9
+        elif agent.archetype == 'value_seeker' and 'McDonald' in str(item):
+            score = 0.9
+        else:
+            score = 0.5 + (hash(str(agent.id) + item) % 30) / 100
+        
+        rankings.append({'item': item, 'score': score})
+    
+    rankings.sort(key=lambda x: x['score'], reverse=True)
+    return {'rankings': rankings}
+
+
+def aggregate_agent_responses(responses: List[Dict], task_type: str) -> Dict:
+    """Aggregate multiple agent responses into summary statistics."""
+    if not responses:
+        return {}
+    
+    if task_type == 'hypothesis':
+        sentiments = []
+        themes = {}
+        
+        for resp in responses:
+            text = resp.get('text', '').lower()
+            # Simple sentiment scoring
+            positive_words = ['yes', 'would', 'like', 'prefer', 'good', 'great', 'definitely']
+            negative_words = ['no', 'wouldn\'t', 'don\'t', 'not', 'bad', 'skeptical']
+            
+            pos_count = sum(1 for w in positive_words if w in text)
+            neg_count = sum(1 for w in negative_words if w in text)
+            
+            sentiment = 0.5
+            if pos_count > neg_count:
+                sentiment = 0.6 + (pos_count - neg_count) * 0.1
+            elif neg_count > pos_count:
+                sentiment = 0.4 - (neg_count - pos_count) * 0.1
+            
+            sentiments.append(sentiment)
+            
+            # Extract themes
+            if 'protein' in text:
+                themes['protein'] = themes.get('protein', 0) + 1
+            if 'price' in text or 'value' in text:
+                themes['value'] = themes.get('value', 0) + 1
+            if 'health' in text or 'nutrition' in text:
+                themes['health'] = themes.get('health', 0) + 1
+        
+        avg_sentiment = sum(sentiments) / len(sentiments) if sentiments else 0.5
+        
+        return {
+            'overall_sentiment': avg_sentiment,
+            'confidence': min(0.95, 0.6 + len(responses) / 200),
+            'top_themes': dict(sorted(themes.items(), key=lambda x: x[1], reverse=True)[:5]),
+            'response_count': len(responses),
+            'distribution': {
+                'positive': sum(1 for s in sentiments if s > 0.6),
+                'neutral': sum(1 for s in sentiments if 0.4 <= s <= 0.6),
+                'negative': sum(1 for s in sentiments if s < 0.4),
+            }
+        }
+    
+    elif task_type == 'survey':
+        # Aggregate survey responses
+        scores = []
+        choices = {}
+        
+        for resp in responses:
+            structured = resp.get('structured', {})
+            if 'likert_score' in structured:
+                scores.append(structured['likert_score'])
+            if 'choice' in structured:
+                choice = structured['choice']
+                choices[choice] = choices.get(choice, 0) + 1
+        
+        result = {
+            'response_count': len(responses),
+            'distribution': choices if choices else {},
+        }
+        
+        if scores:
+            result['average_score'] = sum(scores) / len(scores)
+            result['score_distribution'] = {
+                str(i): scores.count(i) for i in range(1, 6)
+            }
+        
+        return result
+    
+    return {'response_count': len(responses)}
+
