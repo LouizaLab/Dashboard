@@ -8,7 +8,7 @@ from rest_framework.response import Response
 from django.db.models import Q
 from .sim_models import PersonaAgent, SurveyQuestion, SurveyResponse, HypothesisRun, EvidenceSurveyDatum
 from .services import generate_persona_response, aggregate_agent_responses, generate_gpt4_report
-from .sim_serializers import PersonaAgentSerializer, SurveyQuestionSerializer
+from .sim_serializers import PersonaAgentSerializer, SurveyQuestionSerializer, HypothesisRunSerializer
 import random
 import math
 
@@ -166,6 +166,195 @@ def calculate_agent_similarity(agent1, agent2):
 
 class HypothesisViewSet(viewsets.ViewSet):
     """ViewSet for hypothesis testing."""
+    
+    def list(self, request):
+        """List all hypothesis runs."""
+        runs = HypothesisRun.objects.all()[:50]  # Limit to 50 most recent
+        serializer = HypothesisRunSerializer(runs, many=True)
+        return Response(serializer.data)
+    
+    def retrieve(self, request, pk=None):
+        """Retrieve a specific hypothesis run."""
+        try:
+            run = HypothesisRun.objects.get(id=pk)
+            serializer = HypothesisRunSerializer(run)
+            return Response(serializer.data)
+        except HypothesisRun.DoesNotExist:
+            return Response(
+                {'error': 'Hypothesis run not found'},
+                status=status.HTTP_404_NOT_FOUND
+            )
+    
+    @action(detail=True, methods=['post'])
+    def generate_report(self, request, pk=None):
+        """Generate or regenerate a report for an existing hypothesis run."""
+        try:
+            run = HypothesisRun.objects.get(id=pk)
+        except HypothesisRun.DoesNotExist:
+            return Response(
+                {'error': 'Hypothesis run not found'},
+                status=status.HTTP_404_NOT_FOUND
+            )
+        
+        # Re-run the hypothesis to get fresh responses
+        input_text = run.input_text
+        filters = run.filters_json
+        agent_count = run.agent_count
+        mode = run.mode
+        
+        # Filter agents
+        agents_query = PersonaAgent.objects.all()
+        
+        if filters.get('age_bucket'):
+            agents_query = agents_query.filter(age_bucket=filters['age_bucket'])
+        if filters.get('gender'):
+            agents_query = agents_query.filter(gender=filters['gender'])
+        if filters.get('region'):
+            agents_query = agents_query.filter(region=filters['region'])
+        if filters.get('income'):
+            agents_query = agents_query.filter(income=filters['income'])
+        if filters.get('archetype'):
+            agents_query = agents_query.filter(archetype=filters['archetype'])
+        
+        # Sample agents
+        agents_list = list(agents_query)
+        if len(agents_list) > agent_count:
+            agents_list = random.sample(agents_list, agent_count)
+        
+        # Generate responses
+        responses = []
+        agents_info = []
+        for agent in agents_list:
+            response = generate_persona_response(
+                agent,
+                'hypothesis',
+                {'input_text': input_text},
+                mode
+            )
+            responses.append({
+                'agent_id': str(agent.id),
+                'agent_name': agent.display_name,
+                'archetype': agent.archetype,
+                **response
+            })
+            agents_info.append({
+                'name': agent.display_name,
+                'archetype': agent.archetype,
+                'age_bucket': agent.age_bucket,
+                'region': agent.region,
+                'gender': agent.gender,
+                'income': agent.income,
+            })
+        
+        # Generate comprehensive GPT-4 report
+        gpt_report = generate_gpt4_report(input_text, responses, agents_info)
+        
+        # Update the run with new report
+        if 'error' not in gpt_report:
+            run.aggregated_result_json = gpt_report
+            run.save()
+        
+        # Get evidence
+        evidence = self._get_evidence(input_text, filters)
+        
+        # Generate segments breakdown
+        segments = self._generate_segments(responses)
+        
+        return Response({
+            'run_id': str(run.id),
+            'aggregated_result': gpt_report if 'error' not in gpt_report else run.aggregated_result_json,
+            'evidence': evidence,
+            'segments': segments,
+            'agent_count': len(agents_list),
+            'gpt_report': gpt_report if 'error' not in gpt_report else None,
+        })
+    
+    @action(detail=False, methods=['post'])
+    def generate_standalone_report(self, request):
+        """Generate a standalone report using backend hypothesis generation."""
+        input_text = request.data.get('input_text', '')
+        filters = request.data.get('filters', {})
+        agent_ids = request.data.get('agent_ids', [])
+        agent_count = int(request.data.get('agent_count', 100))
+        mode = request.data.get('mode', 'gpt')
+        
+        if not input_text:
+            return Response(
+                {'error': 'input_text is required'},
+                status=status.HTTP_400_BAD_REQUEST
+            )
+        
+        # Filter agents
+        agents_query = PersonaAgent.objects.all()
+        
+        if filters.get('age_bucket'):
+            agents_query = agents_query.filter(age_bucket=filters['age_bucket'])
+        if filters.get('gender'):
+            agents_query = agents_query.filter(gender=filters['gender'])
+        if filters.get('region'):
+            agents_query = agents_query.filter(region=filters['region'])
+        if filters.get('income'):
+            agents_query = agents_query.filter(income=filters['income'])
+        if filters.get('archetype'):
+            agents_query = agents_query.filter(archetype=filters['archetype'])
+        
+        # If specific agent IDs provided, use those
+        if agent_ids:
+            agents_query = agents_query.filter(id__in=agent_ids)
+        
+        # Sample agents
+        agents_list = list(agents_query)
+        if len(agents_list) > agent_count:
+            agents_list = random.sample(agents_list, agent_count)
+        
+        # Generate responses
+        responses = []
+        agents_info = []
+        for agent in agents_list:
+            response = generate_persona_response(
+                agent,
+                'hypothesis',
+                {'input_text': input_text},
+                mode
+            )
+            responses.append({
+                'agent_id': str(agent.id),
+                'agent_name': agent.display_name,
+                'archetype': agent.archetype,
+                **response
+            })
+            agents_info.append({
+                'name': agent.display_name,
+                'archetype': agent.archetype,
+                'age_bucket': agent.age_bucket,
+                'region': agent.region,
+                'gender': agent.gender,
+                'income': agent.income,
+            })
+        
+        # Generate comprehensive GPT-4 report using backend service
+        gpt_report = generate_gpt4_report(input_text, responses, agents_info)
+        
+        # If GPT report generation failed, fallback to basic aggregation
+        if 'error' in gpt_report:
+            aggregated = aggregate_agent_responses(responses, 'hypothesis')
+            aggregated['error'] = gpt_report['error']
+        else:
+            aggregated = gpt_report
+        
+        # Get evidence
+        evidence = self._get_evidence(input_text, filters)
+        
+        # Generate segments breakdown
+        segments = self._generate_segments(responses)
+        
+        return Response({
+            'aggregated_result': aggregated,
+            'evidence': evidence,
+            'segments': segments,
+            'agent_count': len(agents_list),
+            'gpt_report': gpt_report if 'error' not in gpt_report else None,
+        })
     
     @action(detail=False, methods=['post'])
     def run(self, request):
