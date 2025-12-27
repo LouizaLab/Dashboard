@@ -34,5 +34,12 @@ export const compareCompanies = (companyAId, companyBId, metric = 'foot_traffic'
   });
 };
 
+// Hypothesis and Report Generation APIs
+export const runHypothesis = (data) => api.post('/hypothesis/run/', data);
+export const listHypothesisRuns = () => api.get('/hypothesis/');
+export const getHypothesisRun = (runId) => api.get(`/hypothesis/${runId}/`);
+export const generateReportForRun = (runId) => api.post(`/hypothesis/${runId}/generate_report/`);
+export const generateStandaloneReport = (data) => api.post('/hypothesis/generate_standalone_report/', data);
+
 export default api;
 
