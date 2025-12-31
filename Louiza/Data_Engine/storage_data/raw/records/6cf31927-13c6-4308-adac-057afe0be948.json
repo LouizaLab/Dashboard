@@ -1,0 +1,39 @@
+{
+  "record_id": "6cf31927-13c6-4308-adac-057afe0be948",
+  "bucket_id": 1,
+  "source_name": "burger_king_menu",
+  "source_type": "csv",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2025-12-27T02:16:07.067159",
+  "raw_text": null,
+  "structured_fields": {
+    "Item": "Sausage Biscuit"
+  },
+  "numerical_fields": {
+    "Calories": 430.0,
+    "Fat Calories": 270.0,
+    "Fat (g)": 30.0,
+    "Saturated Fat (g)": 13.0,
+    "Trans Fat (g)": 0.0,
+    "Cholesterol (mg)": 35.0,
+    "Sodium (mg)": 1150.0,
+    "Total Carb (g)": 30.0,
+    "Dietary Fiber (g)": 1.0,
+    "Sugars (g)": 2.0,
+    "Protein (g)": 11.0
+  },
+  "categorical_fields": {
+    "Category": "Breakfast"
+  },
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "dataset_name": "burger_king_menu",
+    "row_index": 81,
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Phase_1_Taste_Embedding_Model/data/raw/burger-king-menu.csv"
+  },
+  "client_id": null,
+  "chunk_index": null,
+  "parent_record_id": null
+}

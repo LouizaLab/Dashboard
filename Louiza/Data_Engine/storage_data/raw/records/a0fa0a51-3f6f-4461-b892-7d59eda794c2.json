@@ -1,0 +1,39 @@
+{
+  "record_id": "a0fa0a51-3f6f-4461-b892-7d59eda794c2",
+  "bucket_id": 1,
+  "source_name": "wendys_menu",
+  "source_type": "csv",
+  "brand": "Spicy Chicken Sandwich",
+  "timestamp": null,
+  "ingestion_time": "2025-12-27T02:16:07.078083",
+  "raw_text": "Spicy Chicken Sandwich Chicken",
+  "structured_fields": {
+    "Item": "Spicy Chicken Sandwich"
+  },
+  "numerical_fields": {
+    "Calories": 510.0,
+    "Fat (g)": 20.0,
+    "Sat Fat (g)": 3.5,
+    "Trans Fat (g)": 0.0,
+    "Cholesterol (mg)": 65.0,
+    "Sodium (mg)": 1030.0,
+    "Total Carb (g)": 54.0,
+    "Dietary Fiber (g)": 4.0,
+    "Sugars (g)": 6.0,
+    "Protein (g)": 29.0,
+    "Weight Watchers": 491.0
+  },
+  "categorical_fields": {
+    "Category": "Chicken"
+  },
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "dataset_name": "wendys_menu",
+    "row_index": 24,
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Phase_1_Taste_Embedding_Model/data/raw/wendys-menu.csv"
+  },
+  "client_id": null,
+  "chunk_index": null,
+  "parent_record_id": null
+}

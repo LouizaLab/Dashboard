@@ -1,0 +1,39 @@
+{
+  "record_id": "3f5badab-73c7-4f7f-9b02-7b04b0bc200e",
+  "bucket_id": 1,
+  "source_name": "burger_king_menu",
+  "source_type": "csv",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2025-12-27T02:25:07.231102",
+  "raw_text": null,
+  "structured_fields": {
+    "Item": "American Cheese (slice)"
+  },
+  "numerical_fields": {
+    "Calories": 40.0,
+    "Fat Calories": 30.0,
+    "Fat (g)": 3.5,
+    "Saturated Fat (g)": 2.0,
+    "Trans Fat (g)": 0.0,
+    "Cholesterol (mg)": 10.0,
+    "Sodium (mg)": 180.0,
+    "Total Carb (g)": 1.0,
+    "Dietary Fiber (g)": 0.0,
+    "Sugars (g)": 0.0,
+    "Protein (g)": 2.0
+  },
+  "categorical_fields": {
+    "Category": "Additional Options"
+  },
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "dataset_name": "burger_king_menu",
+    "row_index": 0,
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Phase_1_Taste_Embedding_Model/data/raw/burger-king-menu.csv"
+  },
+  "client_id": null,
+  "chunk_index": null,
+  "parent_record_id": null
+}

@@ -1,0 +1,39 @@
+{
+  "record_id": "0f7062dc-d93f-48e9-bfa7-c03c69913f03",
+  "bucket_id": 1,
+  "source_name": "burger_king_menu",
+  "source_type": "csv",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2025-12-27T02:25:07.231857",
+  "raw_text": null,
+  "structured_fields": {
+    "Item": "Zesty Onion Ring Dipping Sauce- 1 oz"
+  },
+  "numerical_fields": {
+    "Calories": 150.0,
+    "Fat Calories": 140.0,
+    "Fat (g)": 16.0,
+    "Saturated Fat (g)": 2.5,
+    "Trans Fat (g)": 0.0,
+    "Cholesterol (mg)": 15.0,
+    "Sodium (mg)": 230.0,
+    "Total Carb (g)": 3.0,
+    "Dietary Fiber (g)": 0.0,
+    "Sugars (g)": 1.0,
+    "Protein (g)": 0.0
+  },
+  "categorical_fields": {
+    "Category": "Additional Options"
+  },
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "dataset_name": "burger_king_menu",
+    "row_index": 8,
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Phase_1_Taste_Embedding_Model/data/raw/burger-king-menu.csv"
+  },
+  "client_id": null,
+  "chunk_index": null,
+  "parent_record_id": null
+}

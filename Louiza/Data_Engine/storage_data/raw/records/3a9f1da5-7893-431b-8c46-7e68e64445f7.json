@@ -1,0 +1,42 @@
+{
+  "record_id": "3a9f1da5-7893-431b-8c46-7e68e64445f7",
+  "bucket_id": 1,
+  "source_name": "mcd_menu_alt",
+  "source_type": "csv",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2025-12-27T02:25:07.223134",
+  "raw_text": null,
+  "structured_fields": {
+    "name": "McVeggie\u00ae",
+    "serving_size": "168g",
+    "ingredients": "Quarter bun crown, Veg mayonnaise, Shredded lettuce, Vegetable patty, Quarter bun heel",
+    "tag": "Pure taste. Pure veg.",
+    "description": "A delectable patty made of green goodness, potatoes, peas, carrots and a selection of Indian spices. Topped with crispy lettuce, mayonnaise, and packed into sesame toasted buns."
+  },
+  "numerical_fields": {
+    "energy": 402.05,
+    "protein": 10.24,
+    "total_fat": 13.83,
+    "sat_fat": 5.34,
+    "trans_fat": 0.16,
+    "chol": 2.49,
+    "carbs": 56.54,
+    "total_sugar": 7.9,
+    "added_sugar": 4.49,
+    "sodium": 706.13
+  },
+  "categorical_fields": {
+    "allergy": "Cereal containing gluten, Milk, Soya"
+  },
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "dataset_name": "mcd_menu_alt",
+    "row_index": 26,
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Phase_1_Taste_Embedding_Model/data/raw/mcd.csv"
+  },
+  "client_id": null,
+  "chunk_index": null,
+  "parent_record_id": null
+}

@@ -1,0 +1,21 @@
+============================================================
+Phase 4: Calibration Report
+============================================================
+
+Comparison: Simulated vs Real Data
+
+Product Intent Mean Difference: -0.0353
+Category Intent Differences:
+  juice: -0.0306
+  soda: -0.0488
+  sports_drink: -0.0303
+  tea: -0.0662
+  energy_drink: -0.0525
+  coffee_drink: -0.0370
+  water_enhanced: -0.0321
+Trend Difference: -0.000137
+
+Calibration Recommendations:
+  - Adjust segment state initialization if segment differences are large
+  - Adjust transition model parameters if switching rates differ
+  - Add macro context if trend differences are significant

@@ -1,0 +1,39 @@
+{
+  "record_id": "b8324d0c-f052-4715-97e7-fe5758b3206b",
+  "bucket_id": 1,
+  "source_name": "burger_king_menu",
+  "source_type": "csv",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2025-12-27T02:25:07.236880",
+  "raw_text": null,
+  "structured_fields": {
+    "Item": "CROISSAN'WICH Egg & Cheese"
+  },
+  "numerical_fields": {
+    "Calories": 330.0,
+    "Fat Calories": 160.0,
+    "Fat (g)": 18.0,
+    "Saturated Fat (g)": 9.0,
+    "Trans Fat (g)": 1.0,
+    "Cholesterol (mg)": 240.0,
+    "Sodium (mg)": 660.0,
+    "Total Carb (g)": 30.0,
+    "Dietary Fiber (g)": 0.5,
+    "Sugars (g)": 4.0,
+    "Protein (g)": 13.0
+  },
+  "categorical_fields": {
+    "Category": "Breakfast"
+  },
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "dataset_name": "burger_king_menu",
+    "row_index": 69,
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Phase_1_Taste_Embedding_Model/data/raw/burger-king-menu.csv"
+  },
+  "client_id": null,
+  "chunk_index": null,
+  "parent_record_id": null
+}

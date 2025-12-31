@@ -1,0 +1,40 @@
+{
+  "record_id": "099e86ce-f332-4ce8-87fd-7bf597870d4b",
+  "bucket_id": 1,
+  "source_name": "mcdonalds_menu",
+  "source_type": "csv",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2025-12-27T02:16:06.332211",
+  "raw_text": null,
+  "structured_fields": {},
+  "numerical_fields": {
+    "Age": 64.0
+  },
+  "categorical_fields": {
+    "yummy": "Yes",
+    "convenient": "Yes",
+    "spicy": "No",
+    "fattening": "No",
+    "greasy": "No",
+    "fast": "Yes",
+    "cheap": "No",
+    "tasty": "Yes",
+    "expensive": "No",
+    "healthy": "No",
+    "disgusting": "No",
+    "Like": "+4",
+    "VisitFrequency": "Once a month",
+    "Gender": "Female"
+  },
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "dataset_name": "mcdonalds_menu",
+    "row_index": 214,
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Phase_1_Taste_Embedding_Model/data/raw/mcdonalds.csv"
+  },
+  "client_id": null,
+  "chunk_index": null,
+  "parent_record_id": null
+}

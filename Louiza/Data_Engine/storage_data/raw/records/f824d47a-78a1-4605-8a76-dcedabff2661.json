@@ -1,0 +1,39 @@
+{
+  "record_id": "f824d47a-78a1-4605-8a76-dcedabff2661",
+  "bucket_id": 1,
+  "source_name": "wendys_menu",
+  "source_type": "csv",
+  "brand": "Biggie Breakfast Sandwich",
+  "timestamp": null,
+  "ingestion_time": "2025-12-27T02:16:07.078444",
+  "raw_text": "Biggie Breakfast Sandwich Breakfast",
+  "structured_fields": {
+    "Item": "Biggie Breakfast Sandwich"
+  },
+  "numerical_fields": {
+    "Calories": 610.0,
+    "Fat (g)": 40.0,
+    "Sat Fat (g)": 15.0,
+    "Trans Fat (g)": 0.0,
+    "Cholesterol (mg)": 290.0,
+    "Sodium (mg)": 1400.0,
+    "Total Carb (g)": 37.0,
+    "Dietary Fiber (g)": 2.0,
+    "Sugars (g)": 7.0,
+    "Protein (g)": 27.0,
+    "Weight Watchers": 605.0
+  },
+  "categorical_fields": {
+    "Category": "Breakfast"
+  },
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "dataset_name": "wendys_menu",
+    "row_index": 29,
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Phase_1_Taste_Embedding_Model/data/raw/wendys-menu.csv"
+  },
+  "client_id": null,
+  "chunk_index": null,
+  "parent_record_id": null
+}

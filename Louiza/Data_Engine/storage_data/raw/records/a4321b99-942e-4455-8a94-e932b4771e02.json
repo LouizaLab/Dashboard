@@ -1,0 +1,42 @@
+{
+  "record_id": "a4321b99-942e-4455-8a94-e932b4771e02",
+  "bucket_id": 1,
+  "source_name": "mcd_menu_alt",
+  "source_type": "csv",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2025-12-27T02:25:07.220075",
+  "raw_text": null,
+  "structured_fields": {
+    "name": "Chicken Maharaja Mac\u00ae",
+    "serving_size": "296g",
+    "ingredients": "Maharaja bun crown, Haberno sauce, Shredded lettuce, Shredded onion, Jalapenos, Flame-grilled chicken patty, Sliced cheese, Maharaja bun heel",
+    "tag": "A royal treat.",
+    "description": "\n                                A double-decker toasted Maharaja bun sandwiched with one layer of flame-grilled chicken patty; crunchy iceberg lettuce; shredded onion; and a slice of cheese. Topped with another layer of flame-grilled\n                                chicken patty; tomato slices; and crunchy iceberg lettuce infused with harberno sauce.\n                            "
+  },
+  "numerical_fields": {
+    "energy": 689.12,
+    "protein": 34.0,
+    "total_fat": 36.69,
+    "sat_fat": 10.33,
+    "trans_fat": 0.25,
+    "chol": 81.49,
+    "carbs": 55.39,
+    "total_sugar": 8.92,
+    "added_sugar": 6.14,
+    "sodium": 1854.71
+  },
+  "categorical_fields": {
+    "allergy": "Cereal containing gluten, Milk, Soya"
+  },
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "dataset_name": "mcd_menu_alt",
+    "row_index": 4,
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Phase_1_Taste_Embedding_Model/data/raw/mcd.csv"
+  },
+  "client_id": null,
+  "chunk_index": null,
+  "parent_record_id": null
+}

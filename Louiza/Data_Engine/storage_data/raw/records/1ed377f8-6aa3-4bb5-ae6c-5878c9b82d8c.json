@@ -1,0 +1,39 @@
+{
+  "record_id": "1ed377f8-6aa3-4bb5-ae6c-5878c9b82d8c",
+  "bucket_id": 1,
+  "source_name": "wendys_menu",
+  "source_type": "csv",
+  "brand": "Dave\u2019s Double",
+  "timestamp": null,
+  "ingestion_time": "2025-12-27T02:25:07.244722",
+  "raw_text": "Dave\u2019s Double Burgers",
+  "structured_fields": {
+    "Item": "Dave\u2019s Double"
+  },
+  "numerical_fields": {
+    "Calories": 810.0,
+    "Fat (g)": 51.0,
+    "Sat Fat (g)": 20.0,
+    "Trans Fat (g)": 3.0,
+    "Cholesterol (mg)": 175.0,
+    "Sodium (mg)": 1280.0,
+    "Total Carb (g)": 41.0,
+    "Dietary Fiber (g)": 3.0,
+    "Sugars (g)": 8.0,
+    "Protein (g)": 49.0,
+    "Weight Watchers": 789.0
+  },
+  "categorical_fields": {
+    "Category": "Burgers"
+  },
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "dataset_name": "wendys_menu",
+    "row_index": 1,
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Phase_1_Taste_Embedding_Model/data/raw/wendys-menu.csv"
+  },
+  "client_id": null,
+  "chunk_index": null,
+  "parent_record_id": null
+}

@@ -1,0 +1,42 @@
+{
+  "record_id": "c144bcda-78ec-474b-8d83-e374453cb8e6",
+  "bucket_id": 1,
+  "source_name": "mcd_menu_alt",
+  "source_type": "csv",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2025-12-27T02:25:07.219906",
+  "raw_text": null,
+  "structured_fields": {
+    "name": "Cheesy Fries",
+    "serving_size": "150g",
+    "ingredients": "Salted Fries, Smoky Chipotle Sauce",
+    "tag": "Hi, it\u2019s cheese on this side!",
+    "description": "The all-time favourite fries with a generous dollop of cheesy yet smoky chipotle sauce."
+  },
+  "numerical_fields": {
+    "energy": 453.92,
+    "protein": 7.19,
+    "total_fat": 21.1,
+    "sat_fat": 10.64,
+    "trans_fat": 0.59,
+    "chol": 3.89,
+    "carbs": 41.94,
+    "total_sugar": 0.95,
+    "added_sugar": 0.4,
+    "sodium": 430.79
+  },
+  "categorical_fields": {
+    "allergy": "Milk"
+  },
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "dataset_name": "mcd_menu_alt",
+    "row_index": 3,
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Phase_1_Taste_Embedding_Model/data/raw/mcd.csv"
+  },
+  "client_id": null,
+  "chunk_index": null,
+  "parent_record_id": null
+}

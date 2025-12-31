@@ -1,0 +1,39 @@
+{
+  "record_id": "4c647437-ca00-4c22-877c-4fe41700eebf",
+  "bucket_id": 1,
+  "source_name": "burger_king_menu",
+  "source_type": "csv",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2025-12-27T02:25:07.238629",
+  "raw_text": null,
+  "structured_fields": {
+    "Item": "French Toast Sticks (5 piece) w/o Syrup"
+  },
+  "numerical_fields": {
+    "Calories": 380.0,
+    "Fat Calories": 140.0,
+    "Fat (g)": 16.0,
+    "Saturated Fat (g)": 3.5,
+    "Trans Fat (g)": 0.0,
+    "Cholesterol (mg)": 0.0,
+    "Sodium (mg)": 400.0,
+    "Total Carb (g)": 77.0,
+    "Dietary Fiber (g)": 3.0,
+    "Sugars (g)": 33.0,
+    "Protein (g)": 6.0
+  },
+  "categorical_fields": {
+    "Category": "Breakfast"
+  },
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "dataset_name": "burger_king_menu",
+    "row_index": 91,
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Phase_1_Taste_Embedding_Model/data/raw/burger-king-menu.csv"
+  },
+  "client_id": null,
+  "chunk_index": null,
+  "parent_record_id": null
+}

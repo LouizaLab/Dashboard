@@ -1,0 +1,36 @@
+{
+  "category_to_idx": {
+    "dessert": 0,
+    "fast_food": 1,
+    "healthy_food": 2,
+    "skip": 3
+  },
+  "brand_to_idx": {
+    "none": 0,
+    "Brand_A": 1,
+    "Brand_B": 2,
+    "Brand_C": 3
+  },
+  "context_to_idx": {
+    "time_of_day": {
+      "afternoon": 0,
+      "evening": 1,
+      "morning": 2,
+      "night": 3
+    },
+    "day_type": {
+      "weekday": 0,
+      "weekend": 1
+    },
+    "promo_exposure": {
+      "ad": 0,
+      "discount": 1,
+      "none": 2
+    },
+    "social_context": {
+      "alone": 0,
+      "family": 1,
+      "friends": 2
+    }
+  }
+}

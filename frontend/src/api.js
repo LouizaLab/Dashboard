@@ -41,5 +41,22 @@ export const getHypothesisRun = (runId) => api.get(`/hypothesis/${runId}/`);
 export const generateReportForRun = (runId) => api.post(`/hypothesis/${runId}/generate_report/`);
 export const generateStandaloneReport = (data) => api.post('/hypothesis/generate_standalone_report/', data);
 
+// Recipe Simulation APIs
+export const getRecipeVariants = () => api.get('/recipe/variants/');
+export const getRecipeVariant = (id) => api.get(`/recipe/variants/${id}/`);
+export const createRecipeVariant = (data) => api.post('/recipe/variants/', data);
+export const updateRecipeVariant = (id, data) => api.patch(`/recipe/variants/${id}/`, data);
+export const deleteRecipeVariant = (id) => api.delete(`/recipe/variants/${id}/`);
+
+export const getApprovalPersonas = () => api.get('/recipe/personas/');
+export const getApprovalPersona = (id) => api.get(`/recipe/personas/${id}/`);
+
+export const runSimulation = (data) => api.post('/recipe/simulations/run_simulation/', data);
+export const getSimulationResults = (simulationRunId) => api.get(`/recipe/simulations/${simulationRunId}/`);
+export const getSimulationRun = (simulationRunId) => api.get(`/recipe/simulations/${simulationRunId}/`);
+export const generateFocusGroup = (simulationRunId) => api.post(`/recipe/simulations/${simulationRunId}/generate_focus_group/`);
+export const generateSurvey = (simulationRunId) => api.post(`/recipe/simulations/${simulationRunId}/generate_survey/`);
+export const generateReadinessReport = (simulationRunId) => api.post(`/recipe/simulations/${simulationRunId}/generate_readiness_report/`);
+
 export default api;
 

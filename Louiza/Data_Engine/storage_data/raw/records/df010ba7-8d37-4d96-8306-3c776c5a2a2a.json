@@ -1,0 +1,39 @@
+{
+  "record_id": "df010ba7-8d37-4d96-8306-3c776c5a2a2a",
+  "bucket_id": 1,
+  "source_name": "burger_king_menu",
+  "source_type": "csv",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2025-12-27T02:25:07.233508",
+  "raw_text": null,
+  "structured_fields": {
+    "Item": "Dr. Pepper- 38 fl oz"
+  },
+  "numerical_fields": {
+    "Calories": 450.0,
+    "Fat Calories": 0.0,
+    "Fat (g)": 0.0,
+    "Saturated Fat (g)": 0.0,
+    "Trans Fat (g)": 0.0,
+    "Cholesterol (mg)": 0.0,
+    "Sodium (mg)": 140.0,
+    "Total Carb (g)": 124.0,
+    "Dietary Fiber (g)": 0.0,
+    "Sugars (g)": 121.0,
+    "Protein (g)": 0.0
+  },
+  "categorical_fields": {
+    "Category": "Beverage"
+  },
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "dataset_name": "burger_king_menu",
+    "row_index": 28,
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Phase_1_Taste_Embedding_Model/data/raw/burger-king-menu.csv"
+  },
+  "client_id": null,
+  "chunk_index": null,
+  "parent_record_id": null
+}

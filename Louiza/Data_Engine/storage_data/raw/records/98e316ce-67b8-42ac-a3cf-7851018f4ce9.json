@@ -1,0 +1,39 @@
+{
+  "record_id": "98e316ce-67b8-42ac-a3cf-7851018f4ce9",
+  "bucket_id": 1,
+  "source_name": "burger_king_menu",
+  "source_type": "csv",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2025-12-27T02:25:07.242315",
+  "raw_text": null,
+  "structured_fields": {
+    "Item": "Chicken Garden Salad w/o dressing"
+  },
+  "numerical_fields": {
+    "Calories": 550.0,
+    "Fat Calories": 260.0,
+    "Fat (g)": 29.0,
+    "Saturated Fat (g)": 9.0,
+    "Trans Fat (g)": 0.0,
+    "Cholesterol (mg)": 85.0,
+    "Sodium (mg)": 1120.0,
+    "Total Carb (g)": 81.0,
+    "Dietary Fiber (g)": 2.0,
+    "Sugars (g)": 3.0,
+    "Protein (g)": 36.0
+  },
+  "categorical_fields": {
+    "Category": "Salads & Sides"
+  },
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "dataset_name": "burger_king_menu",
+    "row_index": 139,
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Phase_1_Taste_Embedding_Model/data/raw/burger-king-menu.csv"
+  },
+  "client_id": null,
+  "chunk_index": null,
+  "parent_record_id": null
+}

@@ -1,0 +1,39 @@
+{
+  "record_id": "02d4fde4-3caf-4929-b9a0-d5e2d0d0a2ff",
+  "bucket_id": 1,
+  "source_name": "wendys_menu",
+  "source_type": "csv",
+  "brand": "Double Stack",
+  "timestamp": null,
+  "ingestion_time": "2025-12-27T02:25:07.244953",
+  "raw_text": "Double Stack Burgers",
+  "structured_fields": {
+    "Item": "Double Stack"
+  },
+  "numerical_fields": {
+    "Calories": 390.0,
+    "Fat (g)": 21.0,
+    "Sat Fat (g)": 9.0,
+    "Trans Fat (g)": 1.5,
+    "Cholesterol (mg)": 90.0,
+    "Sodium (mg)": 740.0,
+    "Total Carb (g)": 26.0,
+    "Dietary Fiber (g)": 1.0,
+    "Sugars (g)": 6.0,
+    "Protein (g)": 25.0,
+    "Weight Watchers": 380.0
+  },
+  "categorical_fields": {
+    "Category": "Burgers"
+  },
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "dataset_name": "wendys_menu",
+    "row_index": 4,
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Phase_1_Taste_Embedding_Model/data/raw/wendys-menu.csv"
+  },
+  "client_id": null,
+  "chunk_index": null,
+  "parent_record_id": null
+}

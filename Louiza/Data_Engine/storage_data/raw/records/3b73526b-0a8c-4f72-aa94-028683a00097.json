@@ -1,0 +1,39 @@
+{
+  "record_id": "3b73526b-0a8c-4f72-aa94-028683a00097",
+  "bucket_id": 1,
+  "source_name": "wendys_menu",
+  "source_type": "csv",
+  "brand": "4 Piece Chicken Nuggets",
+  "timestamp": null,
+  "ingestion_time": "2025-12-27T02:25:07.245399",
+  "raw_text": "4 Piece Chicken Nuggets Chicken",
+  "structured_fields": {
+    "Item": "4 Piece Chicken Nuggets"
+  },
+  "numerical_fields": {
+    "Calories": 170.0,
+    "Fat (g)": 11.0,
+    "Sat Fat (g)": 2.0,
+    "Trans Fat (g)": 0.0,
+    "Cholesterol (mg)": 35.0,
+    "Sodium (mg)": 340.0,
+    "Total Carb (g)": 10.0,
+    "Dietary Fiber (g)": 0.0,
+    "Sugars (g)": 0.0,
+    "Protein (g)": 9.0,
+    "Weight Watchers": 163.0
+  },
+  "categorical_fields": {
+    "Category": "Chicken"
+  },
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "dataset_name": "wendys_menu",
+    "row_index": 10,
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Phase_1_Taste_Embedding_Model/data/raw/wendys-menu.csv"
+  },
+  "client_id": null,
+  "chunk_index": null,
+  "parent_record_id": null
+}

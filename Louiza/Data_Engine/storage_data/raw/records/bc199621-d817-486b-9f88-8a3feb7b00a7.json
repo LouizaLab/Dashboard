@@ -1,0 +1,39 @@
+{
+  "record_id": "bc199621-d817-486b-9f88-8a3feb7b00a7",
+  "bucket_id": 1,
+  "source_name": "burger_king_menu",
+  "source_type": "csv",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2025-12-27T02:16:07.063869",
+  "raw_text": null,
+  "structured_fields": {
+    "Item": "MINUTE MAID Lemonade- 16 fl oz"
+  },
+  "numerical_fields": {
+    "Calories": 210.0,
+    "Fat Calories": 0.0,
+    "Fat (g)": 0.0,
+    "Saturated Fat (g)": 0.0,
+    "Trans Fat (g)": 0.0,
+    "Cholesterol (mg)": 0.0,
+    "Sodium (mg)": 90.0,
+    "Total Carb (g)": 54.0,
+    "Dietary Fiber (g)": 0.0,
+    "Sugars (g)": 54.0,
+    "Protein (g)": 0.0
+  },
+  "categorical_fields": {
+    "Category": "Beverage"
+  },
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "dataset_name": "burger_king_menu",
+    "row_index": 45,
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Phase_1_Taste_Embedding_Model/data/raw/burger-king-menu.csv"
+  },
+  "client_id": null,
+  "chunk_index": null,
+  "parent_record_id": null
+}

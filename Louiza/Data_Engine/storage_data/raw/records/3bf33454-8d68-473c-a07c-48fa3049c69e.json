@@ -1,0 +1,42 @@
+{
+  "record_id": "3bf33454-8d68-473c-a07c-48fa3049c69e",
+  "bucket_id": 1,
+  "source_name": "mcd_menu_alt",
+  "source_type": "csv",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2025-12-27T02:25:07.221810",
+  "raw_text": null,
+  "structured_fields": {
+    "name": "McAloo Tikki Burger\u00ae",
+    "serving_size": "146g",
+    "ingredients": "Regular bun crown, Tom-Mayo sauce, Sliced tomatoes, Shredded onion, Aloo tikki patty, Regular bun heel",
+    "tag": "The one that never goes out of f(l)avour.",
+    "description": "A golden fried vegetarian patty prepared with peas, potato and infused with aromatic spices. Clubbed with sliced tomatoes, shredded red onion, and tangy tomato mayonnaise. Served in a warm toasted bun."
+  },
+  "numerical_fields": {
+    "energy": 339.52,
+    "protein": 8.5,
+    "total_fat": 11.31,
+    "sat_fat": 4.27,
+    "trans_fat": 0.2,
+    "chol": 1.47,
+    "carbs": 50.27,
+    "total_sugar": 7.05,
+    "added_sugar": 4.07,
+    "sodium": 545.34
+  },
+  "categorical_fields": {
+    "allergy": "Cereal containing gluten, Milk, Soya"
+  },
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "dataset_name": "mcd_menu_alt",
+    "row_index": 16,
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Phase_1_Taste_Embedding_Model/data/raw/mcd.csv"
+  },
+  "client_id": null,
+  "chunk_index": null,
+  "parent_record_id": null
+}

@@ -1,0 +1,42 @@
+{
+  "record_id": "85fed7bc-8fd0-4fba-91a8-2b33f6806b95",
+  "bucket_id": 1,
+  "source_name": "mcd_menu_alt",
+  "source_type": "csv",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2025-12-27T02:25:07.223639",
+  "raw_text": null,
+  "structured_fields": {
+    "name": "Pizza McPuff\u00ae",
+    "serving_size": "87g",
+    "ingredients": "Assorted vegetables, Refined wheat flour, Pizza seasoning",
+    "tag": "Something different. Something delicious.",
+    "description": "A blend of assorted vegetables (carrot, beans,capsicum, onion & green peas); mozzarella cheese mixed with tomato sauce; and exotic spices stuffed in rectangle shaped savoury dough. Quick frozen."
+  },
+  "numerical_fields": {
+    "energy": 228.21,
+    "protein": 5.45,
+    "total_fat": 11.44,
+    "sat_fat": 5.72,
+    "trans_fat": 0.09,
+    "chol": 5.17,
+    "carbs": 24.79,
+    "total_sugar": 2.73,
+    "added_sugar": 0.35,
+    "sodium": 390.74
+  },
+  "categorical_fields": {
+    "allergy": "Cereal containing gluten, Milk, Soya"
+  },
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "dataset_name": "mcd_menu_alt",
+    "row_index": 30,
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Phase_1_Taste_Embedding_Model/data/raw/mcd.csv"
+  },
+  "client_id": null,
+  "chunk_index": null,
+  "parent_record_id": null
+}

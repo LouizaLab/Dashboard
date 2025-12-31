@@ -1,0 +1,40 @@
+{
+  "record_id": "bcf2ca08-53a5-4978-9492-f9852f16e260",
+  "bucket_id": 1,
+  "source_name": "mcd_menu_alt",
+  "source_type": "csv",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2025-12-27T02:25:07.221667",
+  "raw_text": null,
+  "structured_fields": {
+    "name": "Masala Chai\u00ae",
+    "serving_size": "90ml ",
+    "description": "Masala chai is a smooth and spicy blend of natural tea extract, milk solids, black pepper, fennel, clove and cinnamon."
+  },
+  "numerical_fields": {
+    "energy": 54.97,
+    "protein": 0.8,
+    "total_fat": 0.85,
+    "sat_fat": 0.51,
+    "trans_fat": 0.02,
+    "chol": 0.0,
+    "carbs": 11.02,
+    "total_sugar": 8.79,
+    "added_sugar": 7.98,
+    "sodium": 4.13
+  },
+  "categorical_fields": {
+    "allergy": "Milk"
+  },
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "dataset_name": "mcd_menu_alt",
+    "row_index": 15,
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Phase_1_Taste_Embedding_Model/data/raw/mcd.csv"
+  },
+  "client_id": null,
+  "chunk_index": null,
+  "parent_record_id": null
+}

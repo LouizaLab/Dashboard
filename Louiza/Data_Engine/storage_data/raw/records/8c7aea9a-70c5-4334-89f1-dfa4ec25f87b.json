@@ -1,0 +1,39 @@
+{
+  "record_id": "8c7aea9a-70c5-4334-89f1-dfa4ec25f87b",
+  "bucket_id": 1,
+  "source_name": "burger_king_menu",
+  "source_type": "csv",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2025-12-27T02:16:07.064676",
+  "raw_text": null,
+  "structured_fields": {
+    "Item": "Simply Orange Juice\u00a8- 11.5 oz."
+  },
+  "numerical_fields": {
+    "Calories": 160.0,
+    "Fat Calories": 0.0,
+    "Fat (g)": 0.0,
+    "Saturated Fat (g)": 0.0,
+    "Trans Fat (g)": 0.0,
+    "Cholesterol (mg)": 0.0,
+    "Sodium (mg)": 0.0,
+    "Total Carb (g)": 37.0,
+    "Dietary Fiber (g)": 0.0,
+    "Sugars (g)": 33.0,
+    "Protein (g)": 2.0
+  },
+  "categorical_fields": {
+    "Category": "Beverage"
+  },
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "dataset_name": "burger_king_menu",
+    "row_index": 55,
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Phase_1_Taste_Embedding_Model/data/raw/burger-king-menu.csv"
+  },
+  "client_id": null,
+  "chunk_index": null,
+  "parent_record_id": null
+}

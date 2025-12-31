@@ -1,0 +1,42 @@
+{
+  "record_id": "2e287649-bf49-4f06-83a1-0e4bcadd2cdf",
+  "bucket_id": 1,
+  "source_name": "mcd_menu_alt",
+  "source_type": "csv",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2025-12-27T02:25:07.224263",
+  "raw_text": null,
+  "structured_fields": {
+    "name": "Sundae (Chocolate Brownie)\u00ae",
+    "serving_size": " 155.08g",
+    "ingredients": "Soft serve mix (100% diary), Hazelnut brownie, Hot fudge topping",
+    "tag": "A global favourite.",
+    "description": "An iconic premium dessert option. Can be bought as an add-on to make it a \"full meal\" or simply as an indulgence."
+  },
+  "numerical_fields": {
+    "energy": 311.39,
+    "protein": 4.65,
+    "total_fat": 7.46,
+    "sat_fat": 4.71,
+    "trans_fat": 0.13,
+    "chol": 7.78,
+    "carbs": 55.24,
+    "total_sugar": 27.94,
+    "added_sugar": 20.28,
+    "sodium": 146.4
+  },
+  "categorical_fields": {
+    "allergy": "Cereal containing gluten, Milk, Nuts"
+  },
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "dataset_name": "mcd_menu_alt",
+    "row_index": 35,
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Phase_1_Taste_Embedding_Model/data/raw/mcd.csv"
+  },
+  "client_id": null,
+  "chunk_index": null,
+  "parent_record_id": null
+}

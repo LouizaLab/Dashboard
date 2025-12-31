@@ -1,0 +1,39 @@
+{
+  "record_id": "f7e86ba2-60c0-49f7-8ac9-ff0d7e6251f7",
+  "bucket_id": 1,
+  "source_name": "wendys_menu",
+  "source_type": "csv",
+  "brand": "6 Picece Chicken Nuggets",
+  "timestamp": null,
+  "ingestion_time": "2025-12-27T02:16:07.077233",
+  "raw_text": "6 Picece Chicken Nuggets Chicken",
+  "structured_fields": {
+    "Item": "6 Picece Chicken Nuggets"
+  },
+  "numerical_fields": {
+    "Calories": 250.0,
+    "Fat (g)": 16.0,
+    "Sat Fat (g)": 3.5,
+    "Trans Fat (g)": 0.0,
+    "Cholesterol (mg)": 50.0,
+    "Sodium (mg)": 510.0,
+    "Total Carb (g)": 14.0,
+    "Dietary Fiber (g)": 1.0,
+    "Sugars (g)": 0.0,
+    "Protein (g)": 13.0,
+    "Weight Watchers": 241.0
+  },
+  "categorical_fields": {
+    "Category": "Chicken"
+  },
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "dataset_name": "wendys_menu",
+    "row_index": 12,
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Phase_1_Taste_Embedding_Model/data/raw/wendys-menu.csv"
+  },
+  "client_id": null,
+  "chunk_index": null,
+  "parent_record_id": null
+}

@@ -1,0 +1,42 @@
+{
+  "record_id": "676f0edf-3d02-44b3-b5da-f3c530b061a6",
+  "bucket_id": 1,
+  "source_name": "mcd_menu_alt",
+  "source_type": "csv",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2025-12-27T02:25:07.224884",
+  "raw_text": null,
+  "structured_fields": {
+    "name": "Veg Maharaja Mac\u00ae",
+    "serving_size": "306g",
+    "ingredients": "Maharaja bun crown, Cocktail sauce, Shredded lettuce, Shredded onion, Jalepenos, Corn & cheese patty, club, Sliced cheese, Maharaja bun heel",
+    "tag": "A feast fit for kings (and queens).",
+    "description": "\n                                A double-decker toasted Maharaja bun sandwiched with one layer of corn & cheese patty; crunchy iceberg lettuce; shredded onion; and a slice of cheese. Topped with another layer of corn & cheese patty;\n                                tomato slices; and crunchy iceberg lettuce infused with harberno sauce.\n                            "
+  },
+  "numerical_fields": {
+    "energy": 832.67,
+    "protein": 24.17,
+    "total_fat": 37.94,
+    "sat_fat": 16.83,
+    "trans_fat": 0.28,
+    "chol": 36.19,
+    "carbs": 93.84,
+    "total_sugar": 11.52,
+    "added_sugar": 6.92,
+    "sodium": 1529.22
+  },
+  "categorical_fields": {
+    "allergy": "Cereal containing gluten, Milk, Soya"
+  },
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "dataset_name": "mcd_menu_alt",
+    "row_index": 40,
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Phase_1_Taste_Embedding_Model/data/raw/mcd.csv"
+  },
+  "client_id": null,
+  "chunk_index": null,
+  "parent_record_id": null
+}

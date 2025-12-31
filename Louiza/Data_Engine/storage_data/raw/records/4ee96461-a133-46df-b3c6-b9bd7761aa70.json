@@ -1,0 +1,39 @@
+{
+  "record_id": "4ee96461-a133-46df-b3c6-b9bd7761aa70",
+  "bucket_id": 1,
+  "source_name": "burger_king_menu",
+  "source_type": "csv",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2025-12-27T02:25:07.232571",
+  "raw_text": null,
+  "structured_fields": {
+    "Item": "Diet Coke-16 fl oz"
+  },
+  "numerical_fields": {
+    "Calories": 0.0,
+    "Fat Calories": 0.0,
+    "Fat (g)": 0.0,
+    "Saturated Fat (g)": 0.0,
+    "Trans Fat (g)": 0.0,
+    "Cholesterol (mg)": 0.0,
+    "Sodium (mg)": 70.0,
+    "Total Carb (g)": 0.0,
+    "Dietary Fiber (g)": 0.0,
+    "Sugars (g)": 0.0,
+    "Protein (g)": 0.0
+  },
+  "categorical_fields": {
+    "Category": "Beverage"
+  },
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "dataset_name": "burger_king_menu",
+    "row_index": 17,
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Phase_1_Taste_Embedding_Model/data/raw/burger-king-menu.csv"
+  },
+  "client_id": null,
+  "chunk_index": null,
+  "parent_record_id": null
+}

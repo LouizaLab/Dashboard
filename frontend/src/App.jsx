@@ -5,6 +5,7 @@ import NetworkGraph from './components/NetworkGraph';
 import DetailDrawer from './components/DetailDrawer';
 import SimulationPanel from './components/SimulationPanel';
 import HypothesisPage from './components/HypothesisPage';
+import RecipeSimulationPage from './components/RecipeSimulationPage';
 import { getNetwork, getCompany, getEdge } from './api';
 
 function App() {
@@ -155,6 +156,10 @@ function App() {
               <p className="text-gray-400">Simulation interface coming soon...</p>
             </div>
           </div>
+        )}
+        
+        {activeTab === 'RECIPE & LAUNCH SIMULATION' && (
+          <RecipeSimulationPage />
         )}
       </div>
     </div>

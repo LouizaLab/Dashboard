@@ -1,0 +1,39 @@
+{
+  "record_id": "03e89b37-ee08-4702-8bd0-265764d9c5d6",
+  "bucket_id": 1,
+  "source_name": "wendys_menu",
+  "source_type": "csv",
+  "brand": "Crispy Chicken BLT",
+  "timestamp": null,
+  "ingestion_time": "2025-12-27T02:16:07.077447",
+  "raw_text": "Crispy Chicken BLT Chicken",
+  "structured_fields": {
+    "Item": "Crispy Chicken BLT"
+  },
+  "numerical_fields": {
+    "Calories": 420.0,
+    "Fat (g)": 23.0,
+    "Sat Fat (g)": 6.0,
+    "Trans Fat (g)": 0.0,
+    "Cholesterol (mg)": 50.0,
+    "Sodium (mg)": 950.0,
+    "Total Carb (g)": 35.0,
+    "Dietary Fiber (g)": 2.0,
+    "Sugars (g)": 5.0,
+    "Protein (g)": 20.0,
+    "Weight Watchers": 411.0
+  },
+  "categorical_fields": {
+    "Category": "Chicken"
+  },
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "dataset_name": "wendys_menu",
+    "row_index": 15,
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Phase_1_Taste_Embedding_Model/data/raw/wendys-menu.csv"
+  },
+  "client_id": null,
+  "chunk_index": null,
+  "parent_record_id": null
+}

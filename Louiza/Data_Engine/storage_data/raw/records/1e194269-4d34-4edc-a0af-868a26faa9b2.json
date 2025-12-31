@@ -1,0 +1,39 @@
+{
+  "record_id": "1e194269-4d34-4edc-a0af-868a26faa9b2",
+  "bucket_id": 1,
+  "source_name": "wendys_menu",
+  "source_type": "csv",
+  "brand": "Sausage Breakfast Bowl",
+  "timestamp": null,
+  "ingestion_time": "2025-12-27T02:25:07.247353",
+  "raw_text": "Sausage Breakfast Bowl Breakfast",
+  "structured_fields": {
+    "Item": "Sausage Breakfast Bowl"
+  },
+  "numerical_fields": {
+    "Calories": 640.0,
+    "Fat (g)": 42.0,
+    "Sat Fat (g)": 14.0,
+    "Trans Fat (g)": 0.0,
+    "Cholesterol (mg)": 270.0,
+    "Sodium (mg)": 1540.0,
+    "Total Carb (g)": 46.0,
+    "Dietary Fiber (g)": 4.0,
+    "Sugars (g)": 3.0,
+    "Protein (g)": 21.0,
+    "Weight Watchers": 636.0
+  },
+  "categorical_fields": {
+    "Category": "Breakfast"
+  },
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "dataset_name": "wendys_menu",
+    "row_index": 37,
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Phase_1_Taste_Embedding_Model/data/raw/wendys-menu.csv"
+  },
+  "client_id": null,
+  "chunk_index": null,
+  "parent_record_id": null
+}

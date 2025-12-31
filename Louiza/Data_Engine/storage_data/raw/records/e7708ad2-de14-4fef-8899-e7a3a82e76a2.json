@@ -1,0 +1,40 @@
+{
+  "record_id": "e7708ad2-de14-4fef-8899-e7a3a82e76a2",
+  "bucket_id": 1,
+  "source_name": "mcd_menu_alt",
+  "source_type": "csv",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2025-12-27T02:25:07.221037",
+  "raw_text": null,
+  "structured_fields": {
+    "name": "Cold Coffee\u00ae",
+    "serving_size": "250ml",
+    "description": "A rich smooth creamy cold coffee made with coffee powder and milk."
+  },
+  "numerical_fields": {
+    "energy": 301.1,
+    "protein": 9.75,
+    "total_fat": 11.15,
+    "sat_fat": 7.45,
+    "trans_fat": 0.0,
+    "chol": 27.4,
+    "carbs": 40.2,
+    "total_sugar": 37.5,
+    "added_sugar": 21.25,
+    "sodium": 175.0
+  },
+  "categorical_fields": {
+    "allergy": "Milk"
+  },
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "dataset_name": "mcd_menu_alt",
+    "row_index": 10,
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Phase_1_Taste_Embedding_Model/data/raw/mcd.csv"
+  },
+  "client_id": null,
+  "chunk_index": null,
+  "parent_record_id": null
+}

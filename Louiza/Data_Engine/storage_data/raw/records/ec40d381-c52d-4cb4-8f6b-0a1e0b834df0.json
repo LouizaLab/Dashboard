@@ -1,0 +1,39 @@
+{
+  "record_id": "ec40d381-c52d-4cb4-8f6b-0a1e0b834df0",
+  "bucket_id": 1,
+  "source_name": "burger_king_menu",
+  "source_type": "csv",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2025-12-27T02:25:07.234739",
+  "raw_text": null,
+  "structured_fields": {
+    "Item": "Fruit Punch- 29 fl oz"
+  },
+  "numerical_fields": {
+    "Calories": 410.0,
+    "Fat Calories": 0.0,
+    "Fat (g)": 0.0,
+    "Saturated Fat (g)": 0.0,
+    "Trans Fat (g)": 0.0,
+    "Cholesterol (mg)": 0.0,
+    "Sodium (mg)": 135.0,
+    "Total Carb (g)": 111.0,
+    "Dietary Fiber (g)": 0.0,
+    "Sugars (g)": 109.0,
+    "Protein (g)": 0.0
+  },
+  "categorical_fields": {
+    "Category": "Beverage"
+  },
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "dataset_name": "burger_king_menu",
+    "row_index": 43,
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Phase_1_Taste_Embedding_Model/data/raw/burger-king-menu.csv"
+  },
+  "client_id": null,
+  "chunk_index": null,
+  "parent_record_id": null
+}

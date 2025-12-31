@@ -1,0 +1,39 @@
+{
+  "record_id": "75e0d4b6-b672-4863-86e0-9503089f22ab",
+  "bucket_id": 1,
+  "source_name": "wendys_menu",
+  "source_type": "csv",
+  "brand": "Jr. Cheeseburger Deluxe",
+  "timestamp": null,
+  "ingestion_time": "2025-12-27T02:25:07.245172",
+  "raw_text": "Jr. Cheeseburger Deluxe Burgers",
+  "structured_fields": {
+    "Item": "Jr. Cheeseburger Deluxe"
+  },
+  "numerical_fields": {
+    "Calories": 340.0,
+    "Fat (g)": 19.0,
+    "Sat Fat (g)": 7.0,
+    "Trans Fat (g)": 1.0,
+    "Cholesterol (mg)": 55.0,
+    "Sodium (mg)": 660.0,
+    "Total Carb (g)": 27.0,
+    "Dietary Fiber (g)": 2.0,
+    "Sugars (g)": 7.0,
+    "Protein (g)": 16.0,
+    "Weight Watchers": 338.0
+  },
+  "categorical_fields": {
+    "Category": "Burgers"
+  },
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "dataset_name": "wendys_menu",
+    "row_index": 7,
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Phase_1_Taste_Embedding_Model/data/raw/wendys-menu.csv"
+  },
+  "client_id": null,
+  "chunk_index": null,
+  "parent_record_id": null
+}

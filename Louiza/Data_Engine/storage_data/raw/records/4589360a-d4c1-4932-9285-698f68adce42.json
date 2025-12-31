@@ -1,0 +1,42 @@
+{
+  "record_id": "4589360a-d4c1-4932-9285-698f68adce42",
+  "bucket_id": 1,
+  "source_name": "mcd_menu_alt",
+  "source_type": "csv",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2025-12-27T02:25:07.222761",
+  "raw_text": null,
+  "structured_fields": {
+    "name": "McSpicy Chicken\u00ae",
+    "serving_size": "186g",
+    "ingredients": "Quarter pounder bun crown, Veg sauce, Shredded lettuce, McSpicy chicken patty, Quarter pounder bun heel",
+    "tag": "Hot. In more ways than one.",
+    "description": "\n                                Zesty and redolent whole muscle leg meat patty: Fried to perfect golden tan; quenched with creamy veg mayo and garden-fresh shredded iceberg lettuce. The sandwich is served in fresh, sesame-studded quarter\n                                pounder bun.\n                            "
+  },
+  "numerical_fields": {
+    "energy": 451.92,
+    "protein": 21.46,
+    "total_fat": 19.36,
+    "sat_fat": 7.63,
+    "trans_fat": 0.18,
+    "chol": 66.04,
+    "carbs": 46.08,
+    "total_sugar": 5.88,
+    "added_sugar": 4.49,
+    "sodium": 928.52
+  },
+  "categorical_fields": {
+    "allergy": "Cereal containing gluten, Milk, Egg, Soya"
+  },
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "dataset_name": "mcd_menu_alt",
+    "row_index": 23,
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Phase_1_Taste_Embedding_Model/data/raw/mcd.csv"
+  },
+  "client_id": null,
+  "chunk_index": null,
+  "parent_record_id": null
+}

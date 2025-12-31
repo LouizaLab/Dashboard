@@ -1,0 +1,39 @@
+{
+  "record_id": "1cbb4ae5-e0a0-47ba-9a32-3ed9349f22b7",
+  "bucket_id": 1,
+  "source_name": "wendys_menu",
+  "source_type": "csv",
+  "brand": "Homestyle Asiago Ranch Chicken Club",
+  "timestamp": null,
+  "ingestion_time": "2025-12-27T02:25:07.246115",
+  "raw_text": "Homestyle Asiago Ranch Chicken Club Chicken",
+  "structured_fields": {
+    "Item": "Homestyle Asiago Ranch Chicken Club"
+  },
+  "numerical_fields": {
+    "Calories": 660.0,
+    "Fat (g)": 34.0,
+    "Sat Fat (g)": 9.0,
+    "Trans Fat (g)": 0.0,
+    "Cholesterol (mg)": 100.0,
+    "Sodium (mg)": 1650.0,
+    "Total Carb (g)": 52.0,
+    "Dietary Fiber (g)": 3.0,
+    "Sugars (g)": 7.0,
+    "Protein (g)": 38.0,
+    "Weight Watchers": 638.0
+  },
+  "categorical_fields": {
+    "Category": "Chicken"
+  },
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "dataset_name": "wendys_menu",
+    "row_index": 20,
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Phase_1_Taste_Embedding_Model/data/raw/wendys-menu.csv"
+  },
+  "client_id": null,
+  "chunk_index": null,
+  "parent_record_id": null
+}

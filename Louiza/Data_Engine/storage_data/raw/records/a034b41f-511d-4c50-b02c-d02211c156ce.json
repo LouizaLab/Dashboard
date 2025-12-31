@@ -1,0 +1,39 @@
+{
+  "record_id": "a034b41f-511d-4c50-b02c-d02211c156ce",
+  "bucket_id": 1,
+  "source_name": "wendys_menu",
+  "source_type": "csv",
+  "brand": "Jr. Bacon Cheeseburger",
+  "timestamp": null,
+  "ingestion_time": "2025-12-27T02:25:07.245028",
+  "raw_text": "Jr. Bacon Cheeseburger Burgers",
+  "structured_fields": {
+    "Item": "Jr. Bacon Cheeseburger"
+  },
+  "numerical_fields": {
+    "Calories": 380.0,
+    "Fat (g)": 22.0,
+    "Sat Fat (g)": 8.0,
+    "Trans Fat (g)": 1.0,
+    "Cholesterol (mg)": 65.0,
+    "Sodium (mg)": 680.0,
+    "Total Carb (g)": 25.0,
+    "Dietary Fiber (g)": 1.0,
+    "Sugars (g)": 5.0,
+    "Protein (g)": 19.0,
+    "Weight Watchers": 374.0
+  },
+  "categorical_fields": {
+    "Category": "Burgers"
+  },
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "dataset_name": "wendys_menu",
+    "row_index": 5,
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Phase_1_Taste_Embedding_Model/data/raw/wendys-menu.csv"
+  },
+  "client_id": null,
+  "chunk_index": null,
+  "parent_record_id": null
+}

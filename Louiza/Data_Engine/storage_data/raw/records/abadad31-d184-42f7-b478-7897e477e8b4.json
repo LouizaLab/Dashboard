@@ -1,0 +1,39 @@
+{
+  "record_id": "abadad31-d184-42f7-b478-7897e477e8b4",
+  "bucket_id": 1,
+  "source_name": "burger_king_menu",
+  "source_type": "csv",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2025-12-27T02:16:07.071580",
+  "raw_text": null,
+  "structured_fields": {
+    "Item": "Classic Royal Crispy Chicken-Sandwich"
+  },
+  "numerical_fields": {
+    "Calories": 600.0,
+    "Fat Calories": 280.0,
+    "Fat (g)": 31.0,
+    "Saturated Fat (g)": 5.0,
+    "Trans Fat (g)": 0.0,
+    "Cholesterol (mg)": 80.0,
+    "Sodium (mg)": 1330.0,
+    "Total Carb (g)": 54.0,
+    "Dietary Fiber (g)": 9.0,
+    "Sugars (g)": 9.0,
+    "Protein (g)": 31.0
+  },
+  "categorical_fields": {
+    "Category": "Chicken & More"
+  },
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "dataset_name": "burger_king_menu",
+    "row_index": 113,
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Phase_1_Taste_Embedding_Model/data/raw/burger-king-menu.csv"
+  },
+  "client_id": null,
+  "chunk_index": null,
+  "parent_record_id": null
+}

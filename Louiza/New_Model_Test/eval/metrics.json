@@ -1,0 +1,22 @@
+{
+  "random_baseline": {
+    "accuracy": 0.07394,
+    "category_accuracy": 0.24899,
+    "nll": 2.3638066172109427,
+    "entropy": 3.584962500721156
+  },
+  "static_baseline": {
+    "accuracy": 0.12931,
+    "category_accuracy": 0.25927,
+    "nll": 2.234192699137986,
+    "entropy": 3.0029796749353164
+  },
+  "lem": {
+    "accuracy": 0.2613888888888889,
+    "category_accuracy": 0.3600111111111111,
+    "brand_accuracy": 0.6493444444444444,
+    "nll": 2.314065725084146,
+    "entropy": 3.355717216513176
+  },
+  "state_recovery": -0.0138824786919016
+}

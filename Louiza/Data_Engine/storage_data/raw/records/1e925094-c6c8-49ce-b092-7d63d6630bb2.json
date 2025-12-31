@@ -1,0 +1,39 @@
+{
+  "record_id": "1e925094-c6c8-49ce-b092-7d63d6630bb2",
+  "bucket_id": 1,
+  "source_name": "wendys_menu",
+  "source_type": "csv",
+  "brand": "4 Piece Chicken Tenders",
+  "timestamp": null,
+  "ingestion_time": "2025-12-27T02:25:07.245469",
+  "raw_text": "4 Piece Chicken Tenders Chicken",
+  "structured_fields": {
+    "Item": "4 Piece Chicken Tenders"
+  },
+  "numerical_fields": {
+    "Calories": 430.0,
+    "Fat (g)": 21.0,
+    "Sat Fat (g)": 3.5,
+    "Trans Fat (g)": 0.0,
+    "Cholesterol (mg)": 100.0,
+    "Sodium (mg)": 1350.0,
+    "Total Carb (g)": 29.0,
+    "Dietary Fiber (g)": 0.0,
+    "Sugars (g)": 1.0,
+    "Protein (g)": 32.0,
+    "Weight Watchers": 403.0
+  },
+  "categorical_fields": {
+    "Category": "Chicken"
+  },
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "dataset_name": "wendys_menu",
+    "row_index": 11,
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Phase_1_Taste_Embedding_Model/data/raw/wendys-menu.csv"
+  },
+  "client_id": null,
+  "chunk_index": null,
+  "parent_record_id": null
+}

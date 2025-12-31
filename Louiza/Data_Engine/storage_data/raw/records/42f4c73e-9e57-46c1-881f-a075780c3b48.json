@@ -1,0 +1,39 @@
+{
+  "record_id": "42f4c73e-9e57-46c1-881f-a075780c3b48",
+  "bucket_id": 1,
+  "source_name": "wendys_menu",
+  "source_type": "csv",
+  "brand": "Seasoned Home-Style Potatoes, Medium",
+  "timestamp": null,
+  "ingestion_time": "2025-12-27T02:16:07.079157",
+  "raw_text": "Seasoned Home-Style Potatoes, Medium Breakfast",
+  "structured_fields": {
+    "Item": "Seasoned Home-Style Potatoes, Medium"
+  },
+  "numerical_fields": {
+    "Calories": 250.0,
+    "Fat (g)": 9.0,
+    "Sat Fat (g)": 1.5,
+    "Trans Fat (g)": 0.0,
+    "Cholesterol (mg)": 0.0,
+    "Sodium (mg)": 750.0,
+    "Total Carb (g)": 39.0,
+    "Dietary Fiber (g)": 4.0,
+    "Sugars (g)": 1.0,
+    "Protein (g)": 4.0,
+    "Weight Watchers": 249.0
+  },
+  "categorical_fields": {
+    "Category": "Breakfast"
+  },
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "dataset_name": "wendys_menu",
+    "row_index": 39,
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Phase_1_Taste_Embedding_Model/data/raw/wendys-menu.csv"
+  },
+  "client_id": null,
+  "chunk_index": null,
+  "parent_record_id": null
+}

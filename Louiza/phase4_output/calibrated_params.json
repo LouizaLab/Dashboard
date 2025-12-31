@@ -1,0 +1,13 @@
+{
+  "agent_state_init_scale": 1.003534291677167,
+  "transition_momentum": 0.5,
+  "intent_noise_scale": 0.1,
+  "switching_rate_multiplier": 1.0,
+  "segment_bias_adjustments": {
+    "seg_00": 0.0031507737256464387,
+    "seg_01": 0.006146765944285948,
+    "seg_02": 0.006330591589562185,
+    "seg_03": 0.0048445551398086486,
+    "seg_04": 0.0020490170070992077
+  }
+}

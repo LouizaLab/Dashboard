@@ -1,0 +1,42 @@
+{
+  "record_id": "a2bac9e3-4882-49d0-9b36-91630f17f295",
+  "bucket_id": 1,
+  "source_name": "mcd_menu_alt",
+  "source_type": "csv",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2025-12-27T02:25:07.222510",
+  "raw_text": null,
+  "structured_fields": {
+    "name": "McFlurry (Oreo)\u00ae",
+    "serving_size": "86.79g ",
+    "ingredients": "Milk fat, Oreo",
+    "tag": "Burgers aren't the only things we're good at.",
+    "description": "Milk-based frozen dessert with oreo cookies."
+  },
+  "numerical_fields": {
+    "energy": 116.36,
+    "protein": 2.05,
+    "total_fat": 3.7,
+    "sat_fat": 2.25,
+    "trans_fat": 0.07,
+    "chol": 4.8,
+    "carbs": 18.69,
+    "total_sugar": 14.49,
+    "added_sugar": 10.8,
+    "sodium": 80.73
+  },
+  "categorical_fields": {
+    "allergy": "Cereal containing gluten, Milk, Soya, Sulphites"
+  },
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "dataset_name": "mcd_menu_alt",
+    "row_index": 21,
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Phase_1_Taste_Embedding_Model/data/raw/mcd.csv"
+  },
+  "client_id": null,
+  "chunk_index": null,
+  "parent_record_id": null
+}

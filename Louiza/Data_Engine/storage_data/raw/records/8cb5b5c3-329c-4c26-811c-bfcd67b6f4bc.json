@@ -1,0 +1,39 @@
+{
+  "record_id": "8cb5b5c3-329c-4c26-811c-bfcd67b6f4bc",
+  "bucket_id": 1,
+  "source_name": "wendys_menu",
+  "source_type": "csv",
+  "brand": "Spicy Asiago Ranch Club",
+  "timestamp": null,
+  "ingestion_time": "2025-12-27T02:16:07.078012",
+  "raw_text": "Spicy Asiago Ranch Club Chicken",
+  "structured_fields": {
+    "Item": "Spicy Asiago Ranch Club"
+  },
+  "numerical_fields": {
+    "Calories": 670.0,
+    "Fat (g)": 32.0,
+    "Sat Fat (g)": 9.0,
+    "Trans Fat (g)": 0.0,
+    "Cholesterol (mg)": 100.0,
+    "Sodium (mg)": 1530.0,
+    "Total Carb (g)": 55.0,
+    "Dietary Fiber (g)": 4.0,
+    "Sugars (g)": 6.0,
+    "Protein (g)": 38.0,
+    "Weight Watchers": 647.0
+  },
+  "categorical_fields": {
+    "Category": "Chicken"
+  },
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "dataset_name": "wendys_menu",
+    "row_index": 23,
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Phase_1_Taste_Embedding_Model/data/raw/wendys-menu.csv"
+  },
+  "client_id": null,
+  "chunk_index": null,
+  "parent_record_id": null
+}

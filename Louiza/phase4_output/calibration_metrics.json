@@ -1,0 +1,123 @@
+{
+  "simulated_metrics": {
+    "product_intent_mean": 0.6027766413973371,
+    "product_intent_std": 0.07922966033410792,
+    "product_coverage": 38,
+    "segment_intent_means": {
+      "seg_00": 0.5995601053748812,
+      "seg_01": 0.6044747792410128,
+      "seg_02": 0.6092221782604853,
+      "seg_03": 0.6039907312109357,
+      "seg_04": 0.6110169199605783
+    },
+    "segment_intent_stds": {
+      "seg_00": 0.07707021305962086,
+      "seg_01": 0.07543300265087427,
+      "seg_02": 0.08014205728985631,
+      "seg_03": 0.08158621675795619,
+      "seg_04": 0.08370124108406207
+    },
+    "category_intent_means": {
+      "coffee_drink": 0.6053244481401995,
+      "energy_drink": 0.60648423702546,
+      "juice": 0.5980977132206872,
+      "soda": 0.5711461355288824,
+      "sports_drink": 0.6090453050070108,
+      "tea": 0.6137284121633003,
+      "water_enhanced": 0.5969931883837587
+    },
+    "category_intent_stds": {
+      "coffee_drink": 0.06627697032310635,
+      "energy_drink": 0.08046496991290274,
+      "juice": 0.08654785241643392,
+      "soda": 0.08961833902143715,
+      "sports_drink": 0.0656978808280318,
+      "tea": 0.08768711083354175,
+      "water_enhanced": 0.08237168383615678
+    },
+    "category_counts": {
+      "coffee_drink": 121,
+      "energy_drink": 321,
+      "juice": 21,
+      "soda": 6,
+      "sports_drink": 287,
+      "tea": 279,
+      "water_enhanced": 465
+    },
+    "daily_trend": -0.00011143124408531718,
+    "daily_mean": 0.6050271261533101,
+    "daily_std": 0.012542010719256742,
+    "switching_rate": 0.9448275862068966
+  },
+  "real_metrics": {
+    "product_intent_mean": 0.6381195581690079,
+    "product_intent_std": 0.08050127674456523,
+    "product_coverage": 50,
+    "segment_intent_means": {
+      "seg_00": 0.6310678426313456,
+      "seg_01": 0.6659424386838723,
+      "seg_02": 0.6725280941561071,
+      "seg_03": 0.6524362826090222,
+      "seg_04": 0.6315070900315704
+    },
+    "segment_intent_stds": {
+      "seg_00": 0.08794236081712599,
+      "seg_01": 0.08576889997752912,
+      "seg_02": 0.10198417323742694,
+      "seg_03": 0.0922675250831594,
+      "seg_04": 0.0791580937844059
+    },
+    "category_intent_means": {
+      "coffee_drink": 0.6423140195894896,
+      "energy_drink": 0.6589628260779781,
+      "juice": 0.6286541653844249,
+      "soda": 0.6199254284659406,
+      "sports_drink": 0.6393028998751566,
+      "tea": 0.679936856876291,
+      "water_enhanced": 0.6291086315330429
+    },
+    "category_intent_stds": {
+      "coffee_drink": 0.07823887093193807,
+      "energy_drink": 0.09470648888908159,
+      "juice": 0.10355924207934843,
+      "soda": 0.07646975495747532,
+      "sports_drink": 0.08113701026314363,
+      "tea": 0.08808990707797605,
+      "water_enhanced": 0.09088743944993852
+    },
+    "category_counts": {
+      "coffee_drink": 56,
+      "energy_drink": 103,
+      "juice": 16,
+      "soda": 35,
+      "sports_drink": 91,
+      "tea": 110,
+      "water_enhanced": 89
+    },
+    "daily_trend": 2.5284549217167063e-05,
+    "daily_mean": 0.649155634407171,
+    "daily_std": 0.020291928242012102,
+    "switching_rate": 0.9474279629898824
+  },
+  "differences": {
+    "product_intent_mean_diff": -0.035342916771670785,
+    "segment_differences": {
+      "seg_00": -0.031507737256464385,
+      "seg_02": -0.06330591589562184,
+      "seg_04": -0.020490170070992075,
+      "seg_03": -0.048445551398086484,
+      "seg_01": -0.06146765944285948
+    },
+    "category_differences": {
+      "juice": -0.030556452163737702,
+      "soda": -0.04877929293705818,
+      "sports_drink": -0.030257594868145832,
+      "tea": -0.0662084447129907,
+      "energy_drink": -0.05247858905251812,
+      "coffee_drink": -0.03698957144929016,
+      "water_enhanced": -0.03211544314928416
+    },
+    "trend_difference": -0.00013671579330248423
+  },
+  "calibration_needed": true
+}

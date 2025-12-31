@@ -1,0 +1,39 @@
+{
+  "record_id": "59ac77f4-c9e5-41a8-abcb-c59c834612af",
+  "bucket_id": 1,
+  "source_name": "burger_king_menu",
+  "source_type": "csv",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2025-12-27T02:16:07.071491",
+  "raw_text": null,
+  "structured_fields": {
+    "Item": "Hamburger"
+  },
+  "numerical_fields": {
+    "Calories": 250.0,
+    "Fat Calories": 90.0,
+    "Fat (g)": 10.0,
+    "Saturated Fat (g)": 4.0,
+    "Trans Fat (g)": 0.0,
+    "Cholesterol (mg)": 30.0,
+    "Sodium (mg)": 560.0,
+    "Total Carb (g)": 29.0,
+    "Dietary Fiber (g)": 1.0,
+    "Sugars (g)": 7.0,
+    "Protein (g)": 13.0
+  },
+  "categorical_fields": {
+    "Category": "Burgers"
+  },
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "dataset_name": "burger_king_menu",
+    "row_index": 112,
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Phase_1_Taste_Embedding_Model/data/raw/burger-king-menu.csv"
+  },
+  "client_id": null,
+  "chunk_index": null,
+  "parent_record_id": null
+}

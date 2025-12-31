@@ -1,0 +1,39 @@
+{
+  "record_id": "f22790a2-81ce-4480-a09d-a59ecd294ba2",
+  "bucket_id": 1,
+  "source_name": "burger_king_menu",
+  "source_type": "csv",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2025-12-27T02:16:07.072458",
+  "raw_text": null,
+  "structured_fields": {
+    "Item": "Chicken Fries- 9 pc."
+  },
+  "numerical_fields": {
+    "Calories": 260.0,
+    "Fat Calories": 120.0,
+    "Fat (g)": 13.0,
+    "Saturated Fat (g)": 3.0,
+    "Trans Fat (g)": 0.0,
+    "Cholesterol (mg)": 35.0,
+    "Sodium (mg)": 780.0,
+    "Total Carb (g)": 20.0,
+    "Dietary Fiber (g)": 1.0,
+    "Sugars (g)": 0.0,
+    "Protein (g)": 15.0
+  },
+  "categorical_fields": {
+    "Category": "Chicken & More"
+  },
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "dataset_name": "burger_king_menu",
+    "row_index": 123,
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Phase_1_Taste_Embedding_Model/data/raw/burger-king-menu.csv"
+  },
+  "client_id": null,
+  "chunk_index": null,
+  "parent_record_id": null
+}

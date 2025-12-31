@@ -1,0 +1,39 @@
+{
+  "record_id": "e7938563-583c-4d59-92f7-5ef26d706b94",
+  "bucket_id": 1,
+  "source_name": "burger_king_menu",
+  "source_type": "csv",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2025-12-27T02:16:07.072122",
+  "raw_text": null,
+  "structured_fields": {
+    "Item": "Chicken Nuggets- 4pc"
+  },
+  "numerical_fields": {
+    "Calories": 190.0,
+    "Fat Calories": 110.0,
+    "Fat (g)": 12.0,
+    "Saturated Fat (g)": 2.5,
+    "Trans Fat (g)": 0.0,
+    "Cholesterol (mg)": 30.0,
+    "Sodium (mg)": 490.0,
+    "Total Carb (g)": 12.0,
+    "Dietary Fiber (g)": 0.5,
+    "Sugars (g)": 0.0,
+    "Protein (g)": 9.0
+  },
+  "categorical_fields": {
+    "Category": "Chicken & More"
+  },
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "dataset_name": "burger_king_menu",
+    "row_index": 119,
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Phase_1_Taste_Embedding_Model/data/raw/burger-king-menu.csv"
+  },
+  "client_id": null,
+  "chunk_index": null,
+  "parent_record_id": null
+}

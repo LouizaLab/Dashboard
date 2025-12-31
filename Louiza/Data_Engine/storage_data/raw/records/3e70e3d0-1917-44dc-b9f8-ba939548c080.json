@@ -1,0 +1,40 @@
+{
+  "record_id": "3e70e3d0-1917-44dc-b9f8-ba939548c080",
+  "bucket_id": 1,
+  "source_name": "mcd_menu_alt",
+  "source_type": "csv",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2025-12-27T02:25:07.221438",
+  "raw_text": null,
+  "structured_fields": {
+    "name": "Iced Tea\u00ae",
+    "serving_size": "400ml",
+    "description": "A blend of aromatic tea and the fruity flavour of lemon."
+  },
+  "numerical_fields": {
+    "energy": 242.52,
+    "protein": 1.08,
+    "total_fat": 0.12,
+    "sat_fat": 0.0,
+    "trans_fat": 0.0,
+    "chol": 0.0,
+    "carbs": 59.28,
+    "total_sugar": 58.08,
+    "added_sugar": 55.16,
+    "sodium": 16.68
+  },
+  "categorical_fields": {
+    "allergy": "No Allergens"
+  },
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "dataset_name": "mcd_menu_alt",
+    "row_index": 13,
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Phase_1_Taste_Embedding_Model/data/raw/mcd.csv"
+  },
+  "client_id": null,
+  "chunk_index": null,
+  "parent_record_id": null
+}

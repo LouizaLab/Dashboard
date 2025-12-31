@@ -1,0 +1,39 @@
+{
+  "record_id": "26cb3317-bad7-4f91-8e88-d5e1b89c3532",
+  "bucket_id": 1,
+  "source_name": "wendys_menu",
+  "source_type": "csv",
+  "brand": "Dave\u2019s Triple",
+  "timestamp": null,
+  "ingestion_time": "2025-12-27T02:25:07.244877",
+  "raw_text": "Dave\u2019s Triple Burgers",
+  "structured_fields": {
+    "Item": "Dave\u2019s Triple"
+  },
+  "numerical_fields": {
+    "Calories": 1090.0,
+    "Fat (g)": 72.0,
+    "Sat Fat (g)": 30.0,
+    "Trans Fat (g)": 4.0,
+    "Cholesterol (mg)": 260.0,
+    "Sodium (mg)": 1650.0,
+    "Total Carb (g)": 43.0,
+    "Dietary Fiber (g)": 3.0,
+    "Sugars (g)": 9.0,
+    "Protein (g)": 71.0,
+    "Weight Watchers": 1058.0
+  },
+  "categorical_fields": {
+    "Category": "Burgers"
+  },
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "dataset_name": "wendys_menu",
+    "row_index": 3,
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Phase_1_Taste_Embedding_Model/data/raw/wendys-menu.csv"
+  },
+  "client_id": null,
+  "chunk_index": null,
+  "parent_record_id": null
+}

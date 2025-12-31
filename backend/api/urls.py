@@ -6,6 +6,9 @@ from rest_framework.routers import DefaultRouter
 from .views import CompanyViewSet, EdgeViewSet, NetworkView, CompareView
 from .sim_views import PersonaAgentViewSet, HypothesisViewSet, SurveyViewSet, TasteTestViewSet, ChatViewSet
 from .survey_views import SurveyQuestionViewSet
+from .recipe_views import (
+    RecipeVariantViewSet, ApprovalPersonaViewSet, SimulationRunViewSet
+)
 
 router = DefaultRouter()
 router.register(r'companies', CompanyViewSet, basename='company')
@@ -18,6 +21,9 @@ router.register(r'survey', SurveyViewSet, basename='survey')
 router.register(r'survey/questions', SurveyQuestionViewSet, basename='survey-question')
 router.register(r'taste_test', TasteTestViewSet, basename='taste_test')
 router.register(r'chat', ChatViewSet, basename='chat')
+router.register(r'recipe/variants', RecipeVariantViewSet, basename='recipe-variant')
+router.register(r'recipe/personas', ApprovalPersonaViewSet, basename='approval-persona')
+router.register(r'recipe/simulations', SimulationRunViewSet, basename='simulation-run')
 
 urlpatterns = [
     path('', include(router.urls)),

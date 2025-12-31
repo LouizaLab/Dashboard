@@ -1,0 +1,39 @@
+{
+  "record_id": "68955c7d-0aa4-436f-8a7e-98726bc96c5e",
+  "bucket_id": 1,
+  "source_name": "burger_king_menu",
+  "source_type": "csv",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2025-12-27T02:16:07.072782",
+  "raw_text": null,
+  "structured_fields": {
+    "Item": "Spicy Chicken Nuggets- 20 pc"
+  },
+  "numerical_fields": {
+    "Calories": 1050.0,
+    "Fat Calories": 670.0,
+    "Fat (g)": 74.0,
+    "Saturated Fat (g)": 15.0,
+    "Trans Fat (g)": 0.0,
+    "Cholesterol (mg)": 110.0,
+    "Sodium (mg)": 2840.0,
+    "Total Carb (g)": 56.0,
+    "Dietary Fiber (g)": 9.0,
+    "Sugars (g)": 1.0,
+    "Protein (g)": 40.0
+  },
+  "categorical_fields": {
+    "Category": "Chicken & More"
+  },
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "dataset_name": "burger_king_menu",
+    "row_index": 127,
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Phase_1_Taste_Embedding_Model/data/raw/burger-king-menu.csv"
+  },
+  "client_id": null,
+  "chunk_index": null,
+  "parent_record_id": null
+}

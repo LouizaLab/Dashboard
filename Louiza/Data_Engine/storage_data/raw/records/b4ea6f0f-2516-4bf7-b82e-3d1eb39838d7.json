@@ -1,0 +1,39 @@
+{
+  "record_id": "b4ea6f0f-2516-4bf7-b82e-3d1eb39838d7",
+  "bucket_id": 1,
+  "source_name": "wendys_menu",
+  "source_type": "csv",
+  "brand": "Two Sausage Biscuits",
+  "timestamp": null,
+  "ingestion_time": "2025-12-27T02:16:07.079367",
+  "raw_text": "Two Sausage Biscuits Breakfast",
+  "structured_fields": {
+    "Item": "Two Sausage Biscuits"
+  },
+  "numerical_fields": {
+    "Calories": 960.0,
+    "Fat (g)": 65.0,
+    "Sat Fat (g)": 31.0,
+    "Trans Fat (g)": 0.0,
+    "Cholesterol (mg)": 95.0,
+    "Sodium (mg)": 2020.0,
+    "Total Carb (g)": 70.0,
+    "Dietary Fiber (g)": 3.0,
+    "Sugars (g)": 10.0,
+    "Protein (g)": 23.0,
+    "Weight Watchers": 978.0
+  },
+  "categorical_fields": {
+    "Category": "Breakfast"
+  },
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "dataset_name": "wendys_menu",
+    "row_index": 42,
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Phase_1_Taste_Embedding_Model/data/raw/wendys-menu.csv"
+  },
+  "client_id": null,
+  "chunk_index": null,
+  "parent_record_id": null
+}

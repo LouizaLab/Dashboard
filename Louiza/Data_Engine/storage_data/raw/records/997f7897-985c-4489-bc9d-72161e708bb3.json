@@ -1,0 +1,42 @@
+{
+  "record_id": "997f7897-985c-4489-bc9d-72161e708bb3",
+  "bucket_id": 1,
+  "source_name": "mcd_menu_alt",
+  "source_type": "csv",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2025-12-27T02:25:07.224761",
+  "raw_text": null,
+  "structured_fields": {
+    "name": "Sundae (Strawberry)\u00ae",
+    "serving_size": "91.79g ",
+    "ingredients": "Soft serve mix (100% diary), Strawberry topping",
+    "tag": "A little zing goes a long way.",
+    "description": "Creamy vanilla soft-serve with strawberry topping."
+  },
+  "numerical_fields": {
+    "energy": 100.99,
+    "protein": 1.54,
+    "total_fat": 1.77,
+    "sat_fat": 1.3,
+    "trans_fat": 0.06,
+    "chol": 4.85,
+    "carbs": 19.78,
+    "total_sugar": 17.66,
+    "added_sugar": 12.49,
+    "sodium": 34.51
+  },
+  "categorical_fields": {
+    "allergy": "Milk"
+  },
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "dataset_name": "mcd_menu_alt",
+    "row_index": 39,
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Phase_1_Taste_Embedding_Model/data/raw/mcd.csv"
+  },
+  "client_id": null,
+  "chunk_index": null,
+  "parent_record_id": null
+}

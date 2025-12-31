@@ -1,0 +1,42 @@
+{
+  "record_id": "e79fd1e9-41e6-4428-9804-ff4b2f12015a",
+  "bucket_id": 1,
+  "source_name": "mcd_menu_alt",
+  "source_type": "csv",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2025-12-27T02:25:07.223888",
+  "raw_text": null,
+  "structured_fields": {
+    "name": "Spicy Chicken Wrap\u00ae",
+    "serving_size": "257g",
+    "ingredients": "Whole wheat flat bread, Spicy chicken patty, Veg mayo, Lettuce, Onion, Tomato, Cheese",
+    "tag": "Familiar, yet different.",
+    "description": "Juicy chicken coated with hot and crispy batter; dressed with a fresh salad of lettuce, onions, tomatoes and seasonings. Served with creamy sauce and supple cheese slices."
+  },
+  "numerical_fields": {
+    "energy": 567.19,
+    "protein": 23.74,
+    "total_fat": 26.89,
+    "sat_fat": 12.54,
+    "trans_fat": 0.27,
+    "chol": 87.63,
+    "carbs": 57.06,
+    "total_sugar": 2.52,
+    "added_sugar": 1.08,
+    "sodium": 1152.38
+  },
+  "categorical_fields": {
+    "allergy": "Cereal containing gluten, Milk, Egg, Soya"
+  },
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "dataset_name": "mcd_menu_alt",
+    "row_index": 32,
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Phase_1_Taste_Embedding_Model/data/raw/mcd.csv"
+  },
+  "client_id": null,
+  "chunk_index": null,
+  "parent_record_id": null
+}

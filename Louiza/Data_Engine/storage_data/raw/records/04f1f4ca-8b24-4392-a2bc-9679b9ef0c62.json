@@ -1,0 +1,39 @@
+{
+  "record_id": "04f1f4ca-8b24-4392-a2bc-9679b9ef0c62",
+  "bucket_id": 1,
+  "source_name": "burger_king_menu",
+  "source_type": "csv",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2025-12-27T02:16:07.067597",
+  "raw_text": null,
+  "structured_fields": {
+    "Item": "Pancake and Sausage platter"
+  },
+  "numerical_fields": {
+    "Calories": 620.0,
+    "Fat Calories": 260.0,
+    "Fat (g)": 29.0,
+    "Saturated Fat (g)": 9.0,
+    "Trans Fat (g)": 0.0,
+    "Cholesterol (mg)": 75.0,
+    "Sodium (mg)": 1080.0,
+    "Total Carb (g)": 79.0,
+    "Dietary Fiber (g)": 1.0,
+    "Sugars (g)": 36.0,
+    "Protein (g)": 13.0
+  },
+  "categorical_fields": {
+    "Category": "Breakfast"
+  },
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "dataset_name": "burger_king_menu",
+    "row_index": 86,
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Phase_1_Taste_Embedding_Model/data/raw/burger-king-menu.csv"
+  },
+  "client_id": null,
+  "chunk_index": null,
+  "parent_record_id": null
+}
