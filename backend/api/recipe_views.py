@@ -215,7 +215,11 @@ class SimulationRunViewSet(viewsets.ModelViewSet):
                     print("Phase 3-4 simulator initialized successfully")
                     results = phase34_simulator.run_simulation(time_horizon_weeks)
                     results['simulator_type'] = 'phase34'
-                    results['simulator_message'] = 'Using Phase 3-4 LPM (Real Models)'
+                    # Check if simplified models were used
+                    if hasattr(phase34_simulator, 'use_simplified_models') and phase34_simulator.use_simplified_models:
+                        results['simulator_message'] = 'Using Phase 3-4 LPM (Simplified Models - Checkpoints Not Found)'
+                    else:
+                        results['simulator_message'] = 'Using Phase 3-4 LPM (Real Models)'
                     print("=" * 60)
                     print("PHASE 3-4 SIMULATION COMPLETED SUCCESSFULLY!")
                     print(f"Acceptance rate: {results.get('overall_acceptance_rate', 0):.2%}")

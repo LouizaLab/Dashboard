@@ -55,20 +55,52 @@ class Phase34RecipeSimulator:
         # Initialize agent_id_mapping before it's used
         self.agent_id_mapping = {}
         
-        # Load models
+        # Load models - REQUIRE real models, no fallback to simplified
+        print("=" * 60)
+        print("LOADING PHASE 1-2 MODELS FROM LOUIZA DIRECTORY")
+        print("=" * 60)
         try:
             self.model_loader = get_model_loader(device=device)
+            print(f"Model loader initialized. Checking checkpoints...")
+            print(f"  Phase 1 checkpoint: {self.model_loader.phase1_checkpoint}")
+            print(f"  Phase 2 checkpoint: {self.model_loader.phase2_checkpoint}")
+            print(f"  Data directory: {self.model_loader.data_dir}")
+            
             success, error = self.model_loader.load_models()
             if not success:
-                raise RuntimeError(f"Failed to load Phase 1-2 models: {error}")
+                error_msg = f"CRITICAL: Phase 1-2 models failed to load: {error}"
+                print("=" * 60)
+                print(error_msg)
+                print("=" * 60)
+                print("Please ensure:")
+                print("  1. Louiza directory exists")
+                print("  2. Phase 1 checkpoint exists at: Louiza/checkpoints/best_model.pt")
+                print("  3. Phase 2 checkpoint exists at: Louiza/checkpoints_phase2/best_model_phase2.pt")
+                print("  4. Data directory exists at: Louiza/data/")
+                print("=" * 60)
+                raise RuntimeError(error_msg)
             
             self.phase1_models = self.model_loader.get_phase1_models()
             self.phase2_model = self.model_loader.get_phase2_model()
+            self.use_simplified_models = False
+            
+            if self.phase1_models is None or self.phase2_model is None:
+                raise RuntimeError("Models loaded but phase1_models or phase2_model is None")
+            
+            print("=" * 60)
+            print("✓ PHASE 1-2 MODELS LOADED SUCCESSFULLY!")
+            print("=" * 60)
+            
+        except RuntimeError:
+            # Re-raise RuntimeError (our explicit errors)
+            raise
         except Exception as e:
             import traceback
-            error_msg = f"Model loading failed: {str(e)}\n{traceback.format_exc()}"
+            error_msg = f"CRITICAL: Model loading failed with exception: {str(e)}\n{traceback.format_exc()}"
+            print("=" * 60)
             print(error_msg)
-            raise RuntimeError(error_msg)
+            print("=" * 60)
+            raise RuntimeError(error_msg) from e
         
         # Initialize environment and simulator
         try:
@@ -182,19 +214,27 @@ class Phase34RecipeSimulator:
                 },
                 'description': product['description']
             }
-            product_embeddings[product['product_id']] = self.model_loader.encode_product(product_data)
+            if self.use_simplified_models:
+                # Use simplified embedding (hash-based)
+                product_embeddings[product['product_id']] = self._encode_product_simplified(product_data)
+            else:
+                product_embeddings[product['product_id']] = self.model_loader.encode_product(product_data)
         
-        # Encode contexts (simplified)
+        # Encode contexts
         for _, context in contexts_df.iterrows():
-            # Create context embedding manually
-            time_ids = torch.LongTensor([[time_of_days.index(context['time_of_day'])]]).to(self.device)
-            location_ids = torch.LongTensor([[locations.index(context['location'])]]).to(self.device)
-            occasion_ids = torch.LongTensor([[occasions.index(context['occasion'])]]).to(self.device)
-            price = torch.FloatTensor([[context['price_shown']]]).to(self.device)
-            
-            with torch.no_grad():
-                z_context = self.phase1_models['context'](time_ids, location_ids, occasion_ids, price)
-                context_embeddings[context['context_id']] = z_context.cpu().numpy()[0]
+            if self.use_simplified_models:
+                # Use simplified embedding
+                context_embeddings[context['context_id']] = self._encode_context_simplified(context)
+            else:
+                # Use Phase 1 context model
+                time_ids = torch.LongTensor([[time_of_days.index(context['time_of_day'])]]).to(self.device)
+                location_ids = torch.LongTensor([[locations.index(context['location'])]]).to(self.device)
+                occasion_ids = torch.LongTensor([[occasions.index(context['occasion'])]]).to(self.device)
+                price = torch.FloatTensor([[context['price_shown']]]).to(self.device)
+                
+                with torch.no_grad():
+                    z_context = self.phase1_models['context'](time_ids, location_ids, occasion_ids, price)
+                    context_embeddings[context['context_id']] = z_context.cpu().numpy()[0]
         
         # Create environment
         self.environment = Environment(
@@ -246,6 +286,172 @@ class Phase34RecipeSimulator:
         
         return ','.join(base_tags[:8])
     
+    def _encode_product_simplified(self, product_data: Dict) -> np.ndarray:
+        """Simplified product encoding when models aren't available."""
+        # Create deterministic embedding from product features
+        ingredients = product_data.get('ingredients', '')
+        tags = product_data.get('sensory_tags', '')
+        nutrition = product_data.get('nutrition', {})
+        
+        # Hash-based features
+        import hashlib
+        ingredient_hash = int(hashlib.md5(ingredients.encode()).hexdigest()[:8], 16) % 10000
+        tag_hash = int(hashlib.md5(tags.encode()).hexdigest()[:8], 16) % 10000
+        
+        # Combine features into 128-dim vector
+        embedding = np.zeros(128)
+        embedding[0:32] = np.sin(np.arange(32) * ingredient_hash / 10000)  # Ingredient features
+        embedding[32:64] = np.cos(np.arange(32) * tag_hash / 10000)  # Tag features
+        embedding[64:68] = [
+            nutrition.get('sugar', 0) / 100.0,
+            nutrition.get('caffeine', 0) / 500.0,
+            nutrition.get('calories', 0) / 1000.0,
+            nutrition.get('protein', 0) / 100.0
+        ]
+        # Clamp seed to valid range [0, 2**32 - 1]
+        seed_value = int(abs(ingredient_hash)) % (2**32)
+        embedding[68:128] = np.random.RandomState(seed=seed_value).randn(60) * 0.1
+        
+        return embedding.astype(np.float32)
+    
+    def _encode_segment_simplified(self, segment_data: Dict) -> np.ndarray:
+        """Simplified segment encoding when models aren't available."""
+        # Create deterministic embedding from segment features
+        age = segment_data.get('age_bucket', '25-34')
+        region = segment_data.get('region', 'West')
+        psychographic = segment_data.get('psychographic', 'value_seeker')
+        
+        # Hash-based features
+        import hashlib
+        age_hash = int(hashlib.md5(age.encode()).hexdigest()[:8], 16) % 1000
+        region_hash = int(hashlib.md5(region.encode()).hexdigest()[:8], 16) % 1000
+        psych_hash = int(hashlib.md5(psychographic.encode()).hexdigest()[:8], 16) % 1000
+        
+        # Combine into 64-dim vector
+        embedding = np.zeros(64)
+        embedding[0:21] = np.sin(np.arange(21) * age_hash / 1000)
+        embedding[21:42] = np.cos(np.arange(21) * region_hash / 1000)
+        embedding[42:64] = np.sin(np.arange(22) * psych_hash / 1000)
+        
+        return embedding.astype(np.float32)
+    
+    def _encode_context_simplified(self, context_data: Dict) -> np.ndarray:
+        """Simplified context encoding when models aren't available."""
+        time_of_day = context_data.get('time_of_day', 'morning')
+        location = context_data.get('location', 'home')
+        occasion = context_data.get('occasion', 'breakfast')
+        price = context_data.get('price_shown', 5.0)
+        
+        # Hash-based features
+        import hashlib
+        time_hash = int(hashlib.md5(time_of_day.encode()).hexdigest()[:8], 16) % 1000
+        loc_hash = int(hashlib.md5(location.encode()).hexdigest()[:8], 16) % 1000
+        occ_hash = int(hashlib.md5(occasion.encode()).hexdigest()[:8], 16) % 1000
+        
+        # Combine into 64-dim vector
+        embedding = np.zeros(64)
+        embedding[0:20] = np.sin(np.arange(20) * time_hash / 1000)
+        embedding[20:40] = np.cos(np.arange(20) * loc_hash / 1000)
+        embedding[40:60] = np.sin(np.arange(20) * occ_hash / 1000)
+        embedding[60:64] = [price / 20.0, price / 10.0, price / 5.0, price / 2.5]  # Price features
+        
+        return embedding.astype(np.float32)
+    
+    def _initialize_state_simplified(self, z_segment: torch.Tensor) -> torch.Tensor:
+        """Simplified state initialization when Phase 2 model isn't available."""
+        # Handle batched or single inputs
+        if z_segment.dim() == 2:
+            # Batch mode
+            segment_np = z_segment.cpu().numpy()
+            states = []
+            for seg in segment_np:
+                state = np.concatenate([seg[:64], seg[:64]])[:128]
+                # Clamp seed to valid range [0, 2**32 - 1]
+                seed_value = int(abs(seg.sum() * 1000)) % (2**32)
+                state += np.random.RandomState(seed=seed_value).randn(128) * 0.1
+                states.append(state)
+            # Convert list to numpy array first for better performance
+            return torch.FloatTensor(np.array(states))
+        else:
+            # Single input
+            segment_np = z_segment.cpu().numpy()[0]
+            state = np.concatenate([segment_np[:64], segment_np[:64]])[:128]
+            # Clamp seed to valid range [0, 2**32 - 1]
+            seed_value = int(abs(segment_np.sum() * 1000)) % (2**32)
+            state += np.random.RandomState(seed=seed_value).randn(128) * 0.1
+            return torch.FloatTensor(state)
+    
+    def _predict_intent_simplified(self, s_t: torch.Tensor, z_product: torch.Tensor, z_context: torch.Tensor) -> torch.Tensor:
+        """Simplified intent prediction when Phase 2 model isn't available."""
+        # Handle batched or single inputs
+        if s_t.dim() == 2:
+            s_np = s_t.cpu().numpy()
+            z_prod_np = z_product.cpu().numpy()
+            z_ctx_np = z_context.cpu().numpy()
+            
+            intents = []
+            for i in range(len(s_np)):
+                z_combined = np.concatenate([z_prod_np[i][:64], z_ctx_np[i][:64]])
+                similarity = np.dot(s_np[i][:128], np.pad(z_combined, (0, max(0, 128 - len(z_combined))))[:128])
+                intent = 1.0 / (1.0 + np.exp(-similarity * 0.1))
+                intents.append(intent)
+            return torch.FloatTensor(intents).unsqueeze(1)
+        else:
+            # Single input
+            s_np = s_t.cpu().numpy()[0]
+            z_prod_np = z_product.cpu().numpy()[0]
+            z_ctx_np = z_context.cpu().numpy()[0]
+            
+            z_combined = np.concatenate([z_prod_np[:64], z_ctx_np[:64]])
+            similarity = np.dot(s_np[:128], np.pad(z_combined, (0, max(0, 128 - len(z_combined))))[:128])
+            intent = 1.0 / (1.0 + np.exp(-similarity * 0.1))
+            return torch.FloatTensor([[intent]])
+    
+    def _update_state_simplified(self, s_t: torch.Tensor, z_product: torch.Tensor, z_context: torch.Tensor, intent: torch.Tensor) -> torch.Tensor:
+        """Simplified state update when Phase 2 model isn't available."""
+        # Handle batched inputs
+        if s_t.dim() == 2 and z_product.dim() == 2:
+            # Batch mode
+            z_combined = torch.cat([z_product[:, :64], z_context[:, :64]], dim=1)
+            z_padded = torch.nn.functional.pad(z_combined, (0, max(0, 128 - z_combined.shape[1])))[:, :128]
+            
+            # Update state: weighted average of current state and product/context
+            alpha = 0.1  # Learning rate
+            s_t_next = (1 - alpha) * s_t[:, :128] + alpha * z_padded
+        else:
+            # Single input
+            z_combined = torch.cat([z_product[:64], z_context[:64]])
+            z_padded = torch.nn.functional.pad(z_combined.unsqueeze(0), (0, max(0, 128 - len(z_combined))))[0, :128]
+            alpha = 0.1
+            s_t_next = (1 - alpha) * s_t[:128] + alpha * z_padded
+        
+        return s_t_next
+    
+    def _create_mock_phase2_model(self):
+        """Create a mock Phase 2 model that uses simplified functions."""
+        class MockPhase2Model:
+            def __init__(self, simulator_ref):
+                self.simulator_ref = simulator_ref
+                self.device = simulator_ref.device
+            
+            def to(self, device):
+                self.device = device
+                return self
+            
+            def eval(self):
+                return self
+            
+            def initialize_state(self, z_segment: torch.Tensor) -> torch.Tensor:
+                return self.simulator_ref._initialize_state_simplified(z_segment)
+            
+            def predict_intent(self, s_t: torch.Tensor, z_product: torch.Tensor, z_context: torch.Tensor) -> torch.Tensor:
+                return self.simulator_ref._predict_intent_simplified(s_t, z_product, z_context)
+            
+            def update_state(self, s_t: torch.Tensor, z_product: torch.Tensor, z_context: torch.Tensor, intent: torch.Tensor) -> torch.Tensor:
+                return self.simulator_ref._update_state_simplified(s_t, z_product, z_context, intent)
+        
+        return MockPhase2Model(self)
+    
     def _initialize_simulator(self):
         """Initialize Phase 3 PopulationSimulator"""
         if PopulationSimulator is None:
@@ -269,14 +475,27 @@ class Phase34RecipeSimulator:
         segments_df = pd.DataFrame(segments_data)
         
         # Create simulator
-        self.simulator = PopulationSimulator(
-            phase2_model=self.phase2_model,
-            phase1_models=self.phase1_models,
-            environment=self.environment,
-            device=self.device,
-            enable_social_influence=True,
-            state_init_noise=0.1
-        )
+        # If using simplified models, create a mock Phase 2 model wrapper
+        if self.use_simplified_models:
+            # Create a mock model that uses simplified functions
+            mock_phase2_model = self._create_mock_phase2_model()
+            self.simulator = PopulationSimulator(
+                phase2_model=mock_phase2_model,
+                phase1_models={},  # Empty dict, won't be used
+                environment=self.environment,
+                device=self.device,
+                enable_social_influence=True,
+                state_init_noise=0.1
+            )
+        else:
+            self.simulator = PopulationSimulator(
+                phase2_model=self.phase2_model,
+                phase1_models=self.phase1_models,
+                environment=self.environment,
+                device=self.device,
+                enable_social_influence=True,
+                state_init_noise=0.1
+            )
         
         # Initialize agents manually (Phase 3 style)
         # First, encode all segments
@@ -287,7 +506,10 @@ class Phase34RecipeSimulator:
                 'region': segment_row['region'],
                 'psychographic': segment_row['psychographic']
             }
-            z_segment_vec = self.model_loader.encode_segment(segment_data)
+            if self.use_simplified_models:
+                z_segment_vec = self._encode_segment_simplified(segment_data)
+            else:
+                z_segment_vec = self.model_loader.encode_segment(segment_data)
             segment_embeddings[segment_row['segment_id']] = z_segment_vec
         
         # Create agents with proper segment embeddings
@@ -307,14 +529,21 @@ class Phase34RecipeSimulator:
                     'region': agent_data.get('region', 'West'),
                     'psychographic': agent_data.get('archetype', 'value_seeker')
                 }
-                z_segment_vec = self.model_loader.encode_segment(segment_data)
+                if self.use_simplified_models:
+                    z_segment_vec = self._encode_segment_simplified(segment_data)
+                else:
+                    z_segment_vec = self.model_loader.encode_segment(segment_data)
             
             z_segment = torch.FloatTensor(z_segment_vec).to(self.device)
             
             # Initialize state
-            with torch.no_grad():
-                s_0 = self.phase2_model.initialize_state(z_segment.unsqueeze(0))
-                s_0 = s_0[0].cpu()
+            if self.use_simplified_models:
+                # Use simplified state initialization
+                s_0 = self._initialize_state_simplified(z_segment.unsqueeze(0))
+            else:
+                with torch.no_grad():
+                    s_0 = self.phase2_model.initialize_state(z_segment.unsqueeze(0))
+                    s_0 = s_0[0].cpu()
             
             # Create personality from behavior params
             behavior_params = agent_data.get('behavior_params_json', {})
@@ -372,7 +601,10 @@ class Phase34RecipeSimulator:
                 }
             
             # Encode segment
-            z_segment_vec = self.model_loader.encode_segment(segment_data)
+            if self.use_simplified_models:
+                z_segment_vec = self._encode_segment_simplified(segment_data)
+            else:
+                z_segment_vec = self.model_loader.encode_segment(segment_data)
             z_segment = torch.FloatTensor(z_segment_vec).unsqueeze(0).to(self.device)
             
             # Get base product embedding
@@ -387,21 +619,38 @@ class Phase34RecipeSimulator:
                 },
                 'description': self.base_product.get('name', 'Base Product')
             }
-            z_product_vec = self.model_loader.encode_product(base_product_data)
+            if self.use_simplified_models:
+                z_product_vec = self._encode_product_simplified(base_product_data)
+            else:
+                z_product_vec = self.model_loader.encode_product(base_product_data)
             z_product = torch.FloatTensor(z_product_vec).unsqueeze(0).to(self.device)
             
             # Get default context
-            time_ids = torch.LongTensor([[0]]).to(self.device)  # morning
-            location_ids = torch.LongTensor([[0]]).to(self.device)  # home
-            occasion_ids = torch.LongTensor([[0]]).to(self.device)  # breakfast
-            price = torch.FloatTensor([[5.0]]).to(self.device)
+            context_data = {
+                'time_of_day': 'morning',
+                'location': 'home',
+                'occasion': 'breakfast',
+                'price_shown': 5.0
+            }
+            if self.use_simplified_models:
+                z_context_vec = self._encode_context_simplified(context_data)
+                z_context = torch.FloatTensor(z_context_vec).unsqueeze(0)
+                s_0 = self._initialize_state_simplified(z_segment.unsqueeze(0))
+                s_0 = s_0.unsqueeze(0) if s_0.dim() == 1 else s_0
+                # Predict baseline intent using simplified function
+                baseline_intent = self._predict_intent_simplified(s_0, z_product, z_context)
+            else:
+                time_ids = torch.LongTensor([[0]]).to(self.device)  # morning
+                location_ids = torch.LongTensor([[0]]).to(self.device)  # home
+                occasion_ids = torch.LongTensor([[0]]).to(self.device)  # breakfast
+                price = torch.FloatTensor([[5.0]]).to(self.device)
+                with torch.no_grad():
+                    z_context = self.phase1_models['context'](time_ids, location_ids, occasion_ids, price)
+                    s_0 = self.phase2_model.initialize_state(z_segment)
+                    # Predict baseline intent
+                    baseline_intent = self.phase2_model.predict_intent(s_0, z_product, z_context)
             
-            with torch.no_grad():
-                z_context = self.phase1_models['context'](time_ids, location_ids, occasion_ids, price)
-                s_0 = self.phase2_model.initialize_state(z_segment)
-                # Predict baseline intent
-                baseline_intent = self.phase2_model.predict_intent(s_0, z_product, z_context)
-                baseline_preferences[agent.agent_id] = baseline_intent[0].item()
+            baseline_preferences[agent.agent_id] = baseline_intent[0].item() if isinstance(baseline_intent, torch.Tensor) else baseline_intent
         
         # Run simulation focusing on variant product
         # Modify environment to prioritize variant product
@@ -508,7 +757,10 @@ class Phase34RecipeSimulator:
                     },
                     'description': self.base_product.get('name', 'Base Product')
                 }
-                z_product_vec = self.model_loader.encode_product(base_product_data)
+                if self.use_simplified_models:
+                    z_product_vec = self._encode_product_simplified(base_product_data)
+                else:
+                    z_product_vec = self.model_loader.encode_product(base_product_data)
                 z_product = torch.FloatTensor(z_product_vec).unsqueeze(0).to(self.device)
                 
                 # Use initial agent state for baseline
