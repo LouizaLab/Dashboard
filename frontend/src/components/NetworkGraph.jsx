@@ -1,5 +1,5 @@
-import { useEffect, useRef } from 'react';
 import cytoscape from 'cytoscape';
+import { useEffect, useRef } from 'react';
 
 function NetworkGraph({ nodes, edges, onNodeClick, onEdgeClick, viewType }) {
   const containerRef = useRef(null);
@@ -31,7 +31,7 @@ function NetworkGraph({ nodes, edges, onNodeClick, onEdgeClick, viewType }) {
       cyRef.current = null;
     }
 
-    // Initialize Cytoscape
+    // Initialize Cytoscape WITHOUT layout - we'll run it manually
     const cy = cytoscape({
       container: containerRef.current,
       elements: elements,
@@ -41,24 +41,25 @@ function NetworkGraph({ nodes, edges, onNodeClick, onEdgeClick, viewType }) {
           style: {
             'background-color': '#6366f1',
             'label': 'data(label)',
-            'width': 50,
-            'height': 50,
-            'font-size': '11px',
+            'width': 80, // Increased from 50 for better visibility
+            'height': 80, // Increased from 50 for better visibility
+            'font-size': '16px', // Increased from 11px for readability
             'font-weight': 'bold',
             'color': '#ffffff',
-            'text-outline-width': 2,
+            'text-outline-width': 3, // Increased outline for better text visibility
             'text-outline-color': '#000000',
-            'text-outline-opacity': 0.8,
-            'text-wrap': 'none',
+            'text-outline-opacity': 0.9,
+            'text-wrap': 'wrap', // Allow text wrapping
+            'text-max-width': '100px', // Max width before wrapping
             'text-valign': 'bottom',
             'text-halign': 'center',
-            'text-margin-y': -8,
-            'border-width': 2,
+            'text-margin-y': -10, // Adjusted for larger nodes
+            'border-width': 3, // Thicker border for visibility
             'border-color': '#818cf8',
-            'border-opacity': 0.8,
-            'shadow-blur': 8,
+            'border-opacity': 0.9,
+            'shadow-blur': 10,
             'shadow-color': '#6366f1',
-            'shadow-opacity': 0.5,
+            'shadow-opacity': 0.6,
           },
         },
         {
@@ -92,50 +93,94 @@ function NetworkGraph({ nodes, edges, onNodeClick, onEdgeClick, viewType }) {
           },
         },
       ],
-      layout: {
-        name: 'cose',
-        idealEdgeLength: 300,
-        nodeOverlap: 10,
-        refresh: 20,
-        fit: true,
-        padding: 150,
-        randomize: true,
-        componentSpacing: 250,
-        nodeRepulsion: 12000,
-        edgeElasticity: 0.4,
-        nestingFactor: 0.05,
-        gravity: 0.05,
-        numIter: 3500,
-        initialTemp: 400,
-        coolingFactor: 0.97,
-        minTemp: 0.5,
-      },
+      // No initial layout - we'll run it manually
     });
 
     // Verify elements were added
     const nodeCount = cy.nodes().length;
     const edgeCount = cy.edges().length;
     console.log('Cytoscape initialized. Nodes:', nodeCount, 'Edges:', edgeCount);
-    
+
     if (nodeCount === 0) {
       console.error('No nodes found in Cytoscape instance!');
       console.error('Elements passed:', elements);
+      cyRef.current = cy;
+      return;
     }
-    
-    // Wait for layout to complete, then fit and resize
-    cy.ready(() => {
+
+    // Use grid layout with good spacing to prevent overlap
+    // Calculate optimal grid size for even distribution
+    const cols = Math.ceil(Math.sqrt(nodeCount));
+    const rows = Math.ceil(nodeCount / cols);
+
+    const gridLayout = cy.layout({
+      name: 'grid',
+      rows: rows,
+      cols: cols,
+      fit: false,
+      padding: 250, // Good padding to show all nodes
+      spacingFactor: 3.0, // Even spacing between nodes
+    });
+
+    // After grid layout completes, fit the view and ensure no overlap
+    gridLayout.one('layoutstop', () => {
+      console.log('Grid layout complete, verifying spacing...');
+
+      // Verify nodes are spaced properly
+      const nodes = cy.nodes();
+      let minDistance = Infinity;
+      nodes.forEach((node1, i) => {
+        nodes.slice(i + 1).forEach((node2) => {
+          const pos1 = node1.position();
+          const pos2 = node2.position();
+          const distance = Math.sqrt(
+            Math.pow(pos1.x - pos2.x, 2) + Math.pow(pos1.y - pos2.y, 2)
+          );
+          minDistance = Math.min(minDistance, distance);
+        });
+      });
+      console.log('Minimum distance between nodes:', minDistance);
+
       setTimeout(() => {
         cy.resize();
         // Fit with generous padding to ensure all nodes are visible
-        cy.fit(undefined, 100);
-        // Set zoom to show full graph - zoom out more for better overview
+        cy.fit(undefined, 200); // Increased padding to show all nodes
         const currentZoom = cy.zoom();
-        if (currentZoom > 0.8) {
-          cy.zoom(0.75);
+        // Ensure we're zoomed out enough to see everything
+        // If still too zoomed in, zoom out further
+        if (currentZoom > 0.6) {
+          cy.zoom(0.45); // Zoom out more to show all nodes
+        } else if (currentZoom < 0.3) {
+          cy.zoom(0.45); // Don't zoom out too much
         }
         cy.center();
-        console.log('Cytoscape resized and fitted at zoom:', cy.zoom());
-      }, 1000);
+        console.log('Final fit complete at zoom:', cy.zoom());
+
+        // Double-check: verify all nodes are within bounds
+        const extent = cy.extent();
+        const nodes = cy.nodes();
+        let allVisible = true;
+        nodes.forEach(node => {
+          const pos = node.position();
+          if (pos.x < extent.x1 || pos.x > extent.x2 ||
+              pos.y < extent.y1 || pos.y > extent.y2) {
+            allVisible = false;
+          }
+        });
+        if (!allVisible) {
+          // If nodes are outside bounds, fit again with even more padding
+          cy.fit(undefined, 250);
+          cy.zoom(0.4);
+          cy.center();
+          console.log('Adjusted fit to show all nodes');
+        }
+      }, 300);
+    });
+
+    // Ensure container is ready before running layout
+    cy.ready(() => {
+      cy.resize();
+      gridLayout.run();
     });
 
     cyRef.current = cy;
@@ -152,16 +197,16 @@ function NetworkGraph({ nodes, edges, onNodeClick, onEdgeClick, viewType }) {
     });
 
     let tooltip = null;
-    
+
     cy.on('mouseover', 'edge', (evt) => {
       const edge = evt.target;
       const weight = edge.data('weight') || edge.data('edge_weight') || 0;
       const topFactors = edge.data('top_factors') || {};
-      
+
       if (tooltip) {
         document.body.removeChild(tooltip);
       }
-      
+
       tooltip = document.createElement('div');
       tooltip.className = 'cytoscape-tooltip';
       tooltip.style.cssText = `
@@ -177,7 +222,7 @@ function NetworkGraph({ nodes, edges, onNodeClick, onEdgeClick, viewType }) {
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
         max-width: 200px;
       `;
-      
+
       const factorsText = Object.entries(topFactors)
         .slice(0, 2)
         .map(([key, val]) => {
@@ -186,25 +231,25 @@ function NetworkGraph({ nodes, edges, onNodeClick, onEdgeClick, viewType }) {
           return `${displayKey}: ${displayVal}`;
         })
         .join('<br/>');
-      
+
       tooltip.innerHTML = `
         <div style="font-weight: bold; margin-bottom: 4px;">Weight: ${weight.toFixed(2)}</div>
         <div style="font-size: 11px; color: #a0a0a0;">${factorsText || 'No factors'}</div>
       `;
-      
+
       document.body.appendChild(tooltip);
-      
+
       const updateTooltip = (e) => {
         if (tooltip) {
           tooltip.style.left = `${e.originalEvent.clientX + 10}px`;
           tooltip.style.top = `${e.originalEvent.clientY + 10}px`;
         }
       };
-      
+
       cy.on('mousemove', 'edge', updateTooltip);
       updateTooltip(evt);
     });
-    
+
     cy.on('mouseout', 'edge', () => {
       if (tooltip) {
         document.body.removeChild(tooltip);
@@ -226,11 +271,13 @@ function NetworkGraph({ nodes, edges, onNodeClick, onEdgeClick, viewType }) {
     if (cyRef.current && nodes.length > 0) {
       setTimeout(() => {
         cyRef.current.resize();
-        cyRef.current.fit(undefined, 100);
-        // Reset zoom to show full graph - zoom out for better spacing
+        cyRef.current.fit(undefined, 200); // Generous padding
+        // Set zoom to show all nodes clearly
         const currentZoom = cyRef.current.zoom();
-        if (currentZoom > 0.8) {
-          cyRef.current.zoom(0.75);
+        if (currentZoom > 0.6) {
+          cyRef.current.zoom(0.45); // Show all nodes
+        } else if (currentZoom < 0.3) {
+          cyRef.current.zoom(0.45);
         }
         cyRef.current.center();
       }, 500);
@@ -243,9 +290,9 @@ function NetworkGraph({ nodes, edges, onNodeClick, onEdgeClick, viewType }) {
         ref={containerRef}
         id="cytoscape-container"
         className="w-full h-full"
-        style={{ 
-          minHeight: '500px', 
-          width: '100%', 
+        style={{
+          minHeight: '500px',
+          width: '100%',
           height: '100%',
           position: 'absolute',
           top: 0,
@@ -262,8 +309,8 @@ function NetworkGraph({ nodes, edges, onNodeClick, onEdgeClick, viewType }) {
           <button
             onClick={() => {
               if (cyRef.current) {
-                cyRef.current.fit(undefined, 100);
-                cyRef.current.zoom(0.75);
+                cyRef.current.fit(undefined, 200); // Generous padding
+                cyRef.current.zoom(0.45); // Show all nodes clearly
                 cyRef.current.center();
               }
             }}
@@ -279,4 +326,3 @@ function NetworkGraph({ nodes, edges, onNodeClick, onEdgeClick, viewType }) {
 }
 
 export default NetworkGraph;
-
