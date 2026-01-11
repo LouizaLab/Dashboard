@@ -39,37 +39,36 @@ function NetworkGraph({ nodes, edges, onNodeClick, onEdgeClick, viewType }) {
         {
           selector: 'node',
           style: {
-            'background-color': '#6366f1',
+            'background-color': '#1f1f2e',
             'label': 'data(label)',
-            'width': 80, // Increased from 50 for better visibility
-            'height': 80, // Increased from 50 for better visibility
-            'font-size': '16px', // Increased from 11px for readability
-            'font-weight': 'bold',
+            'width': 120,
+            'height': 120,
+            'font-size': '28px',
+            'font-weight': '700',
+            'font-family': '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
             'color': '#ffffff',
-            'text-outline-width': 3, // Increased outline for better text visibility
-            'text-outline-color': '#000000',
-            'text-outline-opacity': 0.9,
-            'text-wrap': 'wrap', // Allow text wrapping
-            'text-max-width': '100px', // Max width before wrapping
+            'text-outline-width': 5,
+            'text-outline-color': '#0a0a0a',
+            'text-outline-opacity': 1,
+            'text-wrap': 'none',
             'text-valign': 'bottom',
             'text-halign': 'center',
-            'text-margin-y': -10, // Adjusted for larger nodes
-            'border-width': 3, // Thicker border for visibility
-            'border-color': '#818cf8',
-            'border-opacity': 0.9,
-            'shadow-blur': 10,
-            'shadow-color': '#6366f1',
-            'shadow-opacity': 0.6,
+            'text-margin-y': 24,
+            'text-transform': 'none',
+            'letter-spacing': '1px',
+            'border-width': 4,
+            'border-color': '#9ca3af',
+            'border-opacity': 0.8,
           },
         },
         {
           selector: 'edge',
           style: {
             'width': 'mapData(weight, 0, 1, 1.5, 3)',
-            'line-color': '#818cf8',
+            'line-color': '#9ca3af',
             'opacity': 'mapData(weight, 0, 1, 0.5, 0.8)',
             'curve-style': 'bezier',
-            'target-arrow-color': '#818cf8',
+            'target-arrow-color': '#9ca3af',
             'target-arrow-shape': 'triangle',
             'arrow-scale': 1.0,
             'source-endpoint': 'outside-to-node',
@@ -79,15 +78,18 @@ function NetworkGraph({ nodes, edges, onNodeClick, onEdgeClick, viewType }) {
         {
           selector: 'node:selected',
           style: {
-            'background-color': '#8b5cf6',
+            'background-color': '#6b7280',
             'border-width': 3,
-            'border-color': '#a78bfa',
+            'border-color': '#9ca3af',
+            'color': '#ffffff',
+            'text-outline-color': '#0a0a0a',
+            'font-weight': '700',
           },
         },
         {
           selector: 'edge:selected',
           style: {
-            'line-color': '#a78bfa',
+            'line-color': '#9ca3af',
             'opacity': 1,
             'width': 6,
           },
@@ -143,37 +145,11 @@ function NetworkGraph({ nodes, edges, onNodeClick, onEdgeClick, viewType }) {
 
       setTimeout(() => {
         cy.resize();
-        // Fit with generous padding to ensure all nodes are visible
-        cy.fit(undefined, 200); // Increased padding to show all nodes
-        const currentZoom = cy.zoom();
-        // Ensure we're zoomed out enough to see everything
-        // If still too zoomed in, zoom out further
-        if (currentZoom > 0.6) {
-          cy.zoom(0.45); // Zoom out more to show all nodes
-        } else if (currentZoom < 0.3) {
-          cy.zoom(0.45); // Don't zoom out too much
-        }
+        // Single fit operation with appropriate zoom - no multiple fit/zoom calls
+        cy.fit(undefined, 200); // Generous padding to show all nodes
+        cy.zoom(0.45); // Set zoom level directly
         cy.center();
-        console.log('Final fit complete at zoom:', cy.zoom());
-
-        // Double-check: verify all nodes are within bounds
-        const extent = cy.extent();
-        const nodes = cy.nodes();
-        let allVisible = true;
-        nodes.forEach(node => {
-          const pos = node.position();
-          if (pos.x < extent.x1 || pos.x > extent.x2 ||
-              pos.y < extent.y1 || pos.y > extent.y2) {
-            allVisible = false;
-          }
-        });
-        if (!allVisible) {
-          // If nodes are outside bounds, fit again with even more padding
-          cy.fit(undefined, 250);
-          cy.zoom(0.4);
-          cy.center();
-          console.log('Adjusted fit to show all nodes');
-        }
+        console.log('Layout complete at zoom:', cy.zoom());
       }, 300);
     });
 
@@ -266,23 +242,14 @@ function NetworkGraph({ nodes, edges, onNodeClick, onEdgeClick, viewType }) {
     };
   }, [nodes, edges, onNodeClick, onEdgeClick, viewType]);
 
-  // Refit when viewType changes
+  // Only resize when container size changes, don't refit/zoom
+  // The gridLayout callback handles initial fit/zoom, so we don't duplicate it here
   useEffect(() => {
-    if (cyRef.current && nodes.length > 0) {
-      setTimeout(() => {
-        cyRef.current.resize();
-        cyRef.current.fit(undefined, 200); // Generous padding
-        // Set zoom to show all nodes clearly
-        const currentZoom = cyRef.current.zoom();
-        if (currentZoom > 0.6) {
-          cyRef.current.zoom(0.45); // Show all nodes
-        } else if (currentZoom < 0.3) {
-          cyRef.current.zoom(0.45);
-        }
-        cyRef.current.center();
-      }, 500);
+    if (cyRef.current) {
+      // Just resize to handle container changes, preserve user's zoom/pan
+      cyRef.current.resize();
     }
-  }, [viewType, nodes.length]);
+  }, [nodes.length]); // Only resize when nodes change, don't refit/zoom
 
   return (
     <div className="w-full h-full bg-dark-bg relative" style={{ minHeight: '500px' }}>
@@ -314,7 +281,7 @@ function NetworkGraph({ nodes, edges, onNodeClick, onEdgeClick, viewType }) {
                 cyRef.current.center();
               }
             }}
-            className="bg-dark-surface border border-dark-border rounded-lg px-3 py-2 text-sm text-gray-300 hover:bg-dark-hover hover:border-accent-primary transition-colors"
+            className="bg-dark-surface/80 border border-dark-border rounded-lg px-3 py-2 text-sm text-gray-300 hover:bg-dark-hover/80 backdrop-blur-sm transition-colors"
             title="Fit all nodes"
           >
             🔍 Fit View

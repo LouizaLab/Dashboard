@@ -16,7 +16,7 @@ function HypothesisPage() {
     archetype: '',
     agent_count: 100,
   });
-  
+
   const [agents, setAgents] = useState([]);
   const [selectedAgent, setSelectedAgent] = useState(null);
   const [selectedAgentIds, setSelectedAgentIds] = useState([]);
@@ -38,7 +38,7 @@ function HypothesisPage() {
       if (filters.income) params.append('income', filters.income);
       if (filters.archetype) params.append('archetype', filters.archetype);
       params.append('limit', filters.agent_count.toString());
-      
+
       const response = await fetch(`http://localhost:8000/api/agents/?${params}`);
       if (!response.ok) {
         throw new Error(`HTTP ${response.status}: ${response.statusText}`);
@@ -62,7 +62,7 @@ function HypothesisPage() {
     try {
       console.log('Loading agent with ID:', agentId);
       const response = await fetch(`http://localhost:8000/api/agents/${agentId}/`);
-      
+
       if (!response.ok) {
         if (response.status === 404) {
           console.error(`Agent ${agentId} not found (404)`);
@@ -77,18 +77,18 @@ function HypothesisPage() {
         }
         throw new Error(`HTTP ${response.status}: ${response.statusText}`);
       }
-      
+
       const data = await response.json();
       console.log('Loaded agent data:', data);
-      
+
       if (!data.id) {
         console.warn('Agent data missing id field:', data);
         data.id = agentId; // Set id from the URL parameter
       }
-      
+
       setSelectedAgent(data);
       setDrawerOpen(true);
-      
+
       // Toggle selection (add if not selected, remove if selected)
       if (selectedAgentIds.includes(agentId)) {
         setSelectedAgentIds(selectedAgentIds.filter(id => id !== agentId));
@@ -133,10 +133,10 @@ function HypothesisPage() {
           mode: 'gpt', // Always use GPT
         }),
       });
-      
+
       const data = await response.json();
       setResults(data);
-      
+
       // Update selected agent IDs from results
       if (data.agent_ids) {
         setSelectedAgentIds(data.agent_ids);
@@ -160,18 +160,16 @@ function HypothesisPage() {
   return (
     <div className="flex flex-1 overflow-hidden relative">
       <LeftFilters filters={filters} setFilters={setFilters} />
-      
+
       <div className={`flex-1 flex flex-col relative ${results ? 'mr-0' : ''}`}>
         {/* Hypothesis Input */}
         <div className="p-6 border-b border-dark-border">
-          <div className="max-w-4xl mx-auto">
-            <HypothesisInput
-              onRun={handleRunHypothesis}
-              loading={loading}
-            />
-          </div>
+          <HypothesisInput
+            onRun={handleRunHypothesis}
+            loading={loading}
+          />
         </div>
-        
+
         {/* Agent Grid */}
         <div className="flex-1 overflow-hidden p-6">
           <div className="h-full">
@@ -184,7 +182,7 @@ function HypothesisPage() {
           </div>
         </div>
       </div>
-      
+
       {/* Results Panel - Right Sidebar */}
       {results && (
         <div className="w-1/3 border-l border-dark-border bg-dark-bg flex flex-col overflow-hidden">
@@ -198,7 +196,7 @@ function HypothesisPage() {
           </div>
         </div>
       )}
-      
+
       <AgentDrawer
         isOpen={drawerOpen}
         onClose={() => setDrawerOpen(false)}
@@ -210,4 +208,3 @@ function HypothesisPage() {
 }
 
 export default HypothesisPage;
-

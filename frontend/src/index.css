@@ -14,7 +14,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #0a0a0f;
+  background: #0a0a0a;
   color: #e0e0e0;
   overflow: hidden;
 }
@@ -31,16 +31,16 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: #151520;
+  background: #151515;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #2a2a3a;
+  background: #2a2a2a;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #3a3a4a;
+  background: #3a3a3a;
 }
 
 @keyframes fade-in {
@@ -57,4 +57,3 @@ body {
 .animate-fade-in {
   animation: fade-in 0.3s ease-out;
 }
-

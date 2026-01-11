@@ -8,10 +8,10 @@ export default {
     extend: {
       colors: {
         dark: {
-          bg: '#0a0a0f',
-          surface: '#151520',
-          border: '#2a2a3a',
-          hover: '#1f1f2e',
+          bg: '#0a0a0a',
+          surface: '#151515',
+          border: '#2a2a2a',
+          hover: '#1f1f1f',
         },
         accent: {
           primary: '#6366f1',
@@ -23,4 +23,3 @@ export default {
   },
   plugins: [],
 }
-
