@@ -3,7 +3,6 @@ import TopNavigation from './components/TopNavigation';
 import Sidebar from './components/Sidebar';
 import NetworkGraph from './components/NetworkGraph';
 import DetailDrawer from './components/DetailDrawer';
-import SimulationPanel from './components/SimulationPanel';
 import HypothesisPage from './components/HypothesisPage';
 import RecipeSimulationPage from './components/RecipeSimulationPage';
 import { getNetwork, getCompany, getEdge } from './api';
@@ -104,8 +103,6 @@ function App() {
                   />
                 )}
               </div>
-
-              <SimulationPanel />
             </div>
 
             <DetailDrawer

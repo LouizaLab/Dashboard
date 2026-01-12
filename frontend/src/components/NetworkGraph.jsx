@@ -4,6 +4,15 @@ import { useEffect, useRef } from 'react';
 function NetworkGraph({ nodes, edges, onNodeClick, onEdgeClick, viewType }) {
   const containerRef = useRef(null);
   const cyRef = useRef(null);
+  const onNodeClickRef = useRef(onNodeClick);
+  const onEdgeClickRef = useRef(onEdgeClick);
+  const hasInitialFitRef = useRef(false);
+
+  // Keep callbacks refs up to date
+  useEffect(() => {
+    onNodeClickRef.current = onNodeClick;
+    onEdgeClickRef.current = onEdgeClick;
+  }, [onNodeClick, onEdgeClick]);
 
   useEffect(() => {
     if (!containerRef.current) return;
@@ -25,10 +34,19 @@ function NetworkGraph({ nodes, edges, onNodeClick, onEdgeClick, viewType }) {
     const elements = [...nodes, ...edges];
     console.log('NetworkGraph - elements to render:', elements);
 
+    // Remove any existing tooltips before destroying
+    const existingTooltips = document.querySelectorAll('.cytoscape-tooltip');
+    existingTooltips.forEach(tooltip => {
+      if (tooltip.parentNode) {
+        tooltip.parentNode.removeChild(tooltip);
+      }
+    });
+
     // Destroy existing instance if any
     if (cyRef.current) {
       cyRef.current.destroy();
       cyRef.current = null;
+      hasInitialFitRef.current = false; // Reset flag when destroying
     }
 
     // Initialize Cytoscape WITHOUT layout - we'll run it manually
@@ -43,19 +61,19 @@ function NetworkGraph({ nodes, edges, onNodeClick, onEdgeClick, viewType }) {
             'label': 'data(label)',
             'width': 120,
             'height': 120,
-            'font-size': '28px',
-            'font-weight': '700',
-            'font-family': '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
+            'font-size': 20,
+            'font-weight': 600,
+            'font-family': '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif',
             'color': '#ffffff',
-            'text-outline-width': 5,
+            'text-outline-width': 3,
             'text-outline-color': '#0a0a0a',
-            'text-outline-opacity': 1,
+            'text-outline-opacity': 0.9,
             'text-wrap': 'none',
             'text-valign': 'bottom',
             'text-halign': 'center',
-            'text-margin-y': 24,
+            'text-margin-y': 22,
             'text-transform': 'none',
-            'letter-spacing': '1px',
+            'letter-spacing': '0',
             'border-width': 4,
             'border-color': '#9ca3af',
             'border-opacity': 0.8,
@@ -83,7 +101,7 @@ function NetworkGraph({ nodes, edges, onNodeClick, onEdgeClick, viewType }) {
             'border-color': '#9ca3af',
             'color': '#ffffff',
             'text-outline-color': '#0a0a0a',
-            'font-weight': '700',
+            'font-weight': 600,
           },
         },
         {
@@ -119,12 +137,14 @@ function NetworkGraph({ nodes, edges, onNodeClick, onEdgeClick, viewType }) {
       name: 'grid',
       rows: rows,
       cols: cols,
-      fit: false,
+      fit: false, // Don't let layout auto-fit
       padding: 250, // Good padding to show all nodes
       spacingFactor: 3.0, // Even spacing between nodes
+      animate: false, // Disable layout animation to prevent glitches
     });
 
     // After grid layout completes, fit the view and ensure no overlap
+    // Use 'one' to ensure this only fires once
     gridLayout.one('layoutstop', () => {
       console.log('Grid layout complete, verifying spacing...');
 
@@ -143,33 +163,76 @@ function NetworkGraph({ nodes, edges, onNodeClick, onEdgeClick, viewType }) {
       });
       console.log('Minimum distance between nodes:', minDistance);
 
-      setTimeout(() => {
+      // Only fit/zoom on initial load, not on subsequent layouts
+      if (!hasInitialFitRef.current) {
+        // Use requestAnimationFrame to ensure layout is fully complete before fitting
+        requestAnimationFrame(() => {
+          cy.resize();
+          // Calculate and set viewport in one go to avoid double animation
+          const padding = 200;
+          const boundingBox = cy.elements().boundingBox();
+          const width = cy.width();
+          const height = cy.height();
+
+          // Calculate zoom to fit with padding, capped at 0.75 for more zoomed in view
+          const scaleX = (width - padding * 2) / boundingBox.w;
+          const scaleY = (height - padding * 2) / boundingBox.h;
+          const targetZoom = Math.min(scaleX, scaleY, 0.75);
+
+          // Set zoom and pan in one operation without animation
+          cy.stop(); // Stop any ongoing animations
+          cy.zoom(targetZoom);
+          const centerX = boundingBox.x1 + boundingBox.w / 2;
+          const centerY = boundingBox.y1 + boundingBox.h / 2;
+          cy.pan({
+            x: width / 2 - centerX * targetZoom,
+            y: height / 2 - centerY * targetZoom
+          });
+
+          hasInitialFitRef.current = true;
+          console.log('Initial fit/zoom complete at zoom:', cy.zoom());
+        });
+      } else {
+        // Preserve user's zoom/pan on subsequent layouts - just resize
         cy.resize();
-        // Single fit operation with appropriate zoom - no multiple fit/zoom calls
-        cy.fit(undefined, 200); // Generous padding to show all nodes
-        cy.zoom(0.45); // Set zoom level directly
-        cy.center();
-        console.log('Layout complete at zoom:', cy.zoom());
-      }, 300);
+        console.log('Layout complete, preserving zoom:', cy.zoom());
+      }
     });
 
     // Ensure container is ready before running layout
     cy.ready(() => {
       cy.resize();
-      gridLayout.run();
+      // Only run layout if we haven't done initial fit yet
+      if (!hasInitialFitRef.current) {
+        gridLayout.run();
+      }
     });
 
     cyRef.current = cy;
 
-    // Event handlers
+    // Event handlers - use refs to avoid re-initialization
     cy.on('tap', 'node', (evt) => {
       const node = evt.target;
-      onNodeClick(node.data('id'));
+      // Remove any visible tooltip when node is clicked
+      const existingTooltip = document.querySelector('.cytoscape-tooltip');
+      if (existingTooltip) {
+        document.body.removeChild(existingTooltip);
+      }
+      if (onNodeClickRef.current) {
+        onNodeClickRef.current(node.data('id'));
+      }
     });
 
     cy.on('tap', 'edge', (evt) => {
       const edge = evt.target;
-      onEdgeClick(edge.data());
+      // Remove any visible tooltip when edge is clicked
+      const existingTooltip = document.querySelector('.cytoscape-tooltip');
+      if (existingTooltip) {
+        document.body.removeChild(existingTooltip);
+      }
+      if (onEdgeClickRef.current) {
+        onEdgeClickRef.current(edge.data());
+      }
     });
 
     let tooltip = null;
@@ -235,12 +298,20 @@ function NetworkGraph({ nodes, edges, onNodeClick, onEdgeClick, viewType }) {
 
     // Cleanup
     return () => {
+      // Remove any visible tooltips
+      const existingTooltips = document.querySelectorAll('.cytoscape-tooltip');
+      existingTooltips.forEach(tooltip => {
+        if (tooltip.parentNode) {
+          tooltip.parentNode.removeChild(tooltip);
+        }
+      });
+
       if (cyRef.current) {
         cyRef.current.destroy();
         cyRef.current = null;
       }
     };
-  }, [nodes, edges, onNodeClick, onEdgeClick, viewType]);
+  }, [nodes, edges, viewType]); // Removed onNodeClick and onEdgeClick from deps to prevent re-initialization on click
 
   // Only resize when container size changes, don't refit/zoom
   // The gridLayout callback handles initial fit/zoom, so we don't duplicate it here
@@ -277,7 +348,7 @@ function NetworkGraph({ nodes, edges, onNodeClick, onEdgeClick, viewType }) {
             onClick={() => {
               if (cyRef.current) {
                 cyRef.current.fit(undefined, 200); // Generous padding
-                cyRef.current.zoom(0.45); // Show all nodes clearly
+                cyRef.current.zoom(0.75); // Show all nodes clearly, more zoomed in
                 cyRef.current.center();
               }
             }}
