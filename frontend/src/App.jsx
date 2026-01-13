@@ -8,7 +8,7 @@ import RecipeSimulationPage from './components/RecipeSimulationPage';
 import { getNetwork, getCompany, getEdge } from './api';
 
 function App() {
-  const [activeTab, setActiveTab] = useState('NETWORK GRAPH');
+  const [activeTab, setActiveTab] = useState('TEST HYPOTHESIS');
   const [viewType, setViewType] = useState('Market Insight');
   const [filters, setFilters] = useState({
     age_bucket: '',
