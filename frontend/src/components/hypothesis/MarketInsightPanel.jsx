@@ -1,228 +1,139 @@
 import { useState, useEffect } from 'react';
-import { Line, Pie, Bar } from 'react-chartjs-2';
-import {
-  Chart as ChartJS,
-  CategoryScale,
-  LinearScale,
-  PointElement,
-  LineElement,
-  BarElement,
-  ArcElement,
-  Title,
-  Tooltip,
-  Legend
-} from 'chart.js';
-
-ChartJS.register(
-  CategoryScale,
-  LinearScale,
-  PointElement,
-  LineElement,
-  BarElement,
-  ArcElement,
-  Title,
-  Tooltip,
-  Legend
-);
+import MarketManifold3D from '../market-insight/MarketManifold3D';
+import InsightWorkspace from '../market-insight/InsightWorkspace';
 
 function MarketInsightPanel({ filters }) {
-  const [insights, setInsights] = useState(null);
-  const [graphs, setGraphs] = useState([]);
-  const [summary, setSummary] = useState('');
-  const [loading, setLoading] = useState(true);
+  const [selectedNode, setSelectedNode] = useState(null);
+  const [pinnedNodes, setPinnedNodes] = useState([]);
+  const [nodeDetails, setNodeDetails] = useState(null);
+  const [vertical, setVertical] = useState('beauty');
+  const [region, setRegion] = useState('US');
+  const [scenarioResults, setScenarioResults] = useState(null);
 
-  useEffect(() => {
-    loadMarketInsights();
-  }, [filters]);
-
-  const loadMarketInsights = async () => {
-    setLoading(true);
+  const handleNodeClick = async (node) => {
+    setSelectedNode(node);
+    
+    // Load node details
     try {
-      const response = await fetch('http://localhost:8000/api/market-insight/generate/', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          days_back: 30,
-          limit: 20,
-          filters: {
-            region: filters.region || null,
-            archetype: filters.archetype || null,
-          }
-        }),
-      });
-
-      if (!response.ok) {
-        throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+      const response = await fetch(
+        `http://localhost:8000/api/market-insight-new/node/${node.type}/${node.id}/`
+      );
+      if (response.ok) {
+        const data = await response.json();
+        setNodeDetails(data);
       }
-
-      const data = await response.json();
-      setInsights(data.insights || []);
-      setGraphs(data.graphs || []);
-      setSummary(data.summary || 'No insights available');
     } catch (error) {
-      console.error('Failed to load market insights:', error);
-      setSummary('Failed to load market insights. Please try again.');
-    } finally {
-      setLoading(false);
+      console.error('Failed to load node details:', error);
     }
   };
 
-  const renderGraph = (graph) => {
-    if (!graph || !graph.data) return null;
-
-    const chartOptions = {
-      responsive: true,
-      maintainAspectRatio: false,
-      plugins: {
-        legend: {
-          labels: {
-            color: '#e5e7eb'
-          }
-        },
-        title: {
-          display: true,
-          text: graph.title,
-          color: '#e5e7eb',
-          font: {
-            size: 16,
-            weight: 'bold'
-          }
-        }
-      },
-      scales: graph.type !== 'pie' ? {
-        x: {
-          ticks: { color: '#9ca3af' },
-          grid: { color: '#374151' }
-        },
-        y: {
-          ticks: { color: '#9ca3af' },
-          grid: { color: '#374151' }
-        }
-      } : {}
-    };
-
-    switch (graph.type) {
-      case 'line':
-        return (
-          <div key={graph.title} className="bg-dark-surface rounded-lg p-6 mb-6">
-            <div style={{ height: '300px' }}>
-              <Line data={graph.data} options={chartOptions} />
-            </div>
-          </div>
-        );
-      case 'pie':
-        return (
-          <div key={graph.title} className="bg-dark-surface rounded-lg p-6 mb-6">
-            <div style={{ height: '300px' }}>
-              <Pie data={graph.data} options={chartOptions} />
-            </div>
-          </div>
-        );
-      case 'bar':
-        return (
-          <div key={graph.title} className="bg-dark-surface rounded-lg p-6 mb-6">
-            <div style={{ height: '300px' }}>
-              <Bar data={graph.data} options={chartOptions} />
-            </div>
-          </div>
-        );
-      default:
-        return null;
+  const handlePinNode = (node) => {
+    if (!pinnedNodes.find(n => n.id === node.id)) {
+      setPinnedNodes([...pinnedNodes, node]);
     }
   };
-
-  if (loading) {
-    return (
-      <div className="flex-1 flex items-center justify-center p-8">
-        <div className="text-center">
-          <div className="text-accent-primary text-xl mb-4">Loading Market Insights...</div>
-          <div className="text-gray-400">Analyzing consultant questions...</div>
-        </div>
-      </div>
-    );
-  }
 
   return (
-    <div className="flex-1 overflow-y-auto p-6">
-      <div className="max-w-7xl mx-auto">
-        {/* Summary Section */}
-        <div className="bg-dark-surface rounded-lg p-6 mb-6 border border-dark-border">
-          <h2 className="text-2xl font-bold text-gray-200 mb-4">Market Insight Summary</h2>
-          <div className="text-gray-300 whitespace-pre-line">{summary}</div>
+    <div className="flex flex-1 overflow-hidden">
+      {/* Left Panel: Market Manifold Map (40%) */}
+      <div className="w-[40%] flex flex-col border-r border-dark-border bg-dark-bg">
+        <div className="p-4 border-b border-dark-border bg-dark-surface">
+          <div className="flex items-center justify-between mb-2">
+            <h2 className="text-xl font-bold text-gray-200">Market Manifold</h2>
+            <div className="flex items-center gap-4">
+              <select
+                className="bg-dark-bg border border-dark-border rounded px-2 py-1 text-sm text-gray-300"
+                value={vertical}
+                onChange={(e) => setVertical(e.target.value)}
+              >
+                <option value="beauty">Beauty</option>
+                <option value="food">Food</option>
+              </select>
+              <select
+                className="bg-dark-bg border border-dark-border rounded px-2 py-1 text-sm text-gray-300"
+                value={region}
+                onChange={(e) => setRegion(e.target.value)}
+              >
+                <option value="US">US</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        
+        <div className="flex-1 overflow-hidden">
+          <MarketManifold3D
+            vertical={vertical}
+            region={region}
+            onNodeClick={handleNodeClick}
+            selectedNodes={selectedNode ? [selectedNode.id] : []}
+            scenarioResults={scenarioResults}
+          />
         </div>
 
-        {/* Insights Cards */}
-        {insights && insights.length > 0 && (
-          <div className="mb-6">
-            <h2 className="text-2xl font-bold text-gray-200 mb-4">Key Insights</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-              {insights.map((insight, index) => (
-                <div key={index} className="bg-dark-surface rounded-lg p-4 border border-dark-border">
-                  <div className="text-sm font-semibold text-accent-primary mb-2 uppercase">
-                    {insight.category || 'General'}
-                  </div>
-                  <div className="text-gray-300 mb-2">
-                    {insight.question_count} questions analyzed
-                  </div>
-                  {insight.average_sentiment !== undefined && (
-                    <div className="text-sm text-gray-400 mb-2">
-                      Avg Sentiment: {insight.average_sentiment}
-                    </div>
-                  )}
-                  {insight.top_themes && insight.top_themes.length > 0 && (
-                    <div className="mt-2">
-                      <div className="text-xs text-gray-400 mb-1">Top Themes:</div>
-                      {insight.top_themes.slice(0, 3).map((theme, i) => (
-                        <div key={i} className="text-sm text-gray-300">
-                          • {theme.theme} ({theme.mentions} mentions)
-                        </div>
-                      ))}
-                    </div>
-                  )}
-                  {insight.key_findings && insight.key_findings.length > 0 && (
-                    <div className="mt-2 pt-2 border-t border-dark-border">
-                      <div className="text-xs text-gray-400 mb-1">Key Findings:</div>
-                      {insight.key_findings.map((finding, i) => (
-                        <div key={i} className="text-sm text-gray-300">
-                          • {finding}
-                        </div>
-                      ))}
-                    </div>
-                  )}
+        {/* Node Detail Drawer */}
+        {nodeDetails && (
+          <div className="border-t border-dark-border bg-dark-surface p-4 max-h-[300px] overflow-y-auto">
+            <div className="flex items-center justify-between mb-2">
+              <h3 className="text-lg font-semibold text-gray-200">{nodeDetails.name}</h3>
+              <button
+                onClick={() => {
+                  setNodeDetails(null);
+                  setSelectedNode(null);
+                }}
+                className="text-gray-400 hover:text-gray-200"
+              >
+                ✕
+              </button>
+            </div>
+            
+            <div className="space-y-2 text-sm text-gray-300">
+              {nodeDetails.category && (
+                <div>
+                  <span className="text-gray-400">Category:</span> {nodeDetails.category}
+                  {nodeDetails.sub_category && ` / ${nodeDetails.sub_category}`}
                 </div>
-              ))}
-            </div>
-          </div>
-        )}
-
-        {/* Graphs Section */}
-        {graphs && graphs.length > 0 && (
-          <div>
-            <h2 className="text-2xl font-bold text-gray-200 mb-4">Visualizations</h2>
-            <div className="space-y-6">
-              {graphs.map((graph, index) => (
-                <div key={index}>
-                  {renderGraph(graph)}
+              )}
+              {nodeDetails.price_tier && (
+                <div>
+                  <span className="text-gray-400">Price Tier:</span> {nodeDetails.price_tier}
                 </div>
-              ))}
+              )}
+              {nodeDetails.brand_type && (
+                <div>
+                  <span className="text-gray-400">Brand Type:</span> {nodeDetails.brand_type}
+                </div>
+              )}
+              {nodeDetails.signals && nodeDetails.signals.length > 0 && (
+                <div>
+                  <span className="text-gray-400">Recent Momentum:</span>{' '}
+                  {nodeDetails.signals[0]?.trend_momentum?.toFixed(2) || 'N/A'}
+                </div>
+              )}
+              {nodeDetails.innovation_events && nodeDetails.innovation_events.length > 0 && (
+                <div>
+                  <span className="text-gray-400">Recent Innovation:</span>{' '}
+                  {nodeDetails.innovation_events[0]?.event_type} ({nodeDetails.innovation_events.length} total)
+                </div>
+              )}
             </div>
           </div>
         )}
+      </div>
 
-        {(!insights || insights.length === 0) && (!graphs || graphs.length === 0) && (
-          <div className="text-center py-12">
-            <div className="text-gray-400 text-lg mb-2">No insights available</div>
-            <div className="text-gray-500 text-sm">
-              Run some hypothesis tests to generate market insights
-            </div>
-          </div>
-        )}
+      {/* Right Panel: Insight Workspace (60%) */}
+      <div className="w-[60%] flex flex-col bg-dark-bg">
+        <InsightWorkspace
+          pinnedNodes={pinnedNodes}
+          onAsk={(results) => {
+            console.log('Insight results:', results);
+          }}
+          onScenarioResults={(scenarioResults) => {
+            setScenarioResults(scenarioResults);
+          }}
+        />
       </div>
     </div>
   );
 }
 
 export default MarketInsightPanel;
-

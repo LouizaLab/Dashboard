@@ -162,7 +162,6 @@ function HypothesisPage() {
   if (filters.view === 'Market Insight') {
     return (
       <div className="flex flex-1 overflow-hidden relative">
-        <LeftFilters filters={filters} setFilters={setFilters} />
         <MarketInsightPanel filters={filters} />
       </div>
     );

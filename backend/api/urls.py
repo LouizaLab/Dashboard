@@ -7,6 +7,7 @@ from .views import CompanyViewSet, EdgeViewSet, NetworkView, CompareView
 from .sim_views import PersonaAgentViewSet, HypothesisViewSet, SurveyViewSet, TasteTestViewSet, ChatViewSet, MarketInsightViewSet
 from .survey_views import SurveyQuestionViewSet
 from .agent_tron_views import AgentTronViewSet
+from .market_insight_views import MarketInsightViewSet as MarketInsightNewViewSet
 from .recipe_views import (
     RecipeVariantViewSet, ApprovalPersonaViewSet, SimulationRunViewSet
 )
@@ -23,6 +24,7 @@ router.register(r'survey/questions', SurveyQuestionViewSet, basename='survey-que
 router.register(r'taste_test', TasteTestViewSet, basename='taste_test')
 router.register(r'chat', ChatViewSet, basename='chat')
 router.register(r'market-insight', MarketInsightViewSet, basename='market-insight')
+router.register(r'market-insight-new', MarketInsightNewViewSet, basename='market-insight-new')
 router.register(r'recipe/variants', RecipeVariantViewSet, basename='recipe-variant')
 router.register(r'recipe/personas', ApprovalPersonaViewSet, basename='approval-persona')
 router.register(r'recipe/simulations', SimulationRunViewSet, basename='simulation-run')
