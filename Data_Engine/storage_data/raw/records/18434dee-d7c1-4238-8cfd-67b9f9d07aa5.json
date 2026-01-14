@@ -1,0 +1,24 @@
+{
+  "record_id": "18434dee-d7c1-4238-8cfd-67b9f9d07aa5",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.823436",
+  "raw_text": "User: My son typically has to have McDonald's when we go out to eat, so if he's in the vehicle, then we're usually in McDonald's. We have a McDonald's like two minutes down the road, so we can eat it pretty much any time we want fast food. And if we're out or we're running low on cash, McDonald's is usually the choice too because it's more cost efficient most times.\nAgent: That's very helpful context. How does price change your choice? For example, if your Big Mac cost two dollars more, what would you do?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "32",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/32.txt",
+    "total_chunks": 32,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 14,
+  "parent_record_id": "67c11aa1-d698-4af6-bfc4-5f5b3dd28134"
+}

@@ -1,0 +1,23 @@
+{
+  "record_id": "8765e18e-7d08-422c-b44a-c307128fa75c",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.867131",
+  "raw_text": "s much because that would make it, you know, it might make it out of my price range. Agent: And if there was a deal on the Mexican Pizza, what would you do differently? User: I probably wouldn't do anything differently. If it was... If there was a deal, maybe I would buy two so I could have one and then have another for a snack later or like the next day I could have it again if I wanted. So I guess the only thing it would change is I might buy an extra one. Agent: That's a good strategy. Now, thinking about the past two weeks, what have been your most common fast-food patterns? This includes when you eat it, what you usually order, and what typically triggers it. User: I usually just get, I use, I stick to what I, you know, my favorites mostly. I don't really go out and try a lot of different things. And I usually get something that is not very expensive. So I stick to things that I've always liked usually. Agent: Thank you for sharing that. What does \"good value\" mean to you in fast",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview18.txt",
+    "total_chunks": 10
+  },
+  "client_id": null,
+  "chunk_index": 7,
+  "parent_record_id": "cc9495dc-30ce-4277-b912-e84e4662cd15"
+}

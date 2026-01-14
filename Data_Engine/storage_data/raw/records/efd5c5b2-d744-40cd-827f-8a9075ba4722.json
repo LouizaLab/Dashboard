@@ -1,0 +1,24 @@
+{
+  "record_id": "efd5c5b2-d744-40cd-827f-8a9075ba4722",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.836513",
+  "raw_text": "User: No, there is not.\nAgent: Understood. So, the In-N-Out cheeseburger truly stands alone for you.\n\nWhat do you usually pair with your In-N-Out cheeseburger? This could include drinks, sides, or sauces. And what would you never pair it with, and why?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "31",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/31.txt",
+    "total_chunks": 36,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 8,
+  "parent_record_id": "b8eed46d-a364-478a-a2e3-13621c355a9d"
+}

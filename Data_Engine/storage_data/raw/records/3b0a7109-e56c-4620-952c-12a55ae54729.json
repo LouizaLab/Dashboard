@@ -1,0 +1,39 @@
+{
+  "record_id": "3b0a7109-e56c-4620-952c-12a55ae54729",
+  "bucket_id": 1,
+  "source_name": "burger_king_menu",
+  "source_type": "csv",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2025-12-27T02:25:07.239243",
+  "raw_text": null,
+  "structured_fields": {
+    "Item": "BACON KingTM Sandwich"
+  },
+  "numerical_fields": {
+    "Calories": 1200.0,
+    "Fat Calories": 730.0,
+    "Fat (g)": 81.0,
+    "Saturated Fat (g)": 32.0,
+    "Trans Fat (g)": 1.0,
+    "Cholesterol (mg)": 215.0,
+    "Sodium (mg)": 2270.0,
+    "Total Carb (g)": 55.0,
+    "Dietary Fiber (g)": 2.0,
+    "Sugars (g)": 14.0,
+    "Protein (g)": 66.0
+  },
+  "categorical_fields": {
+    "Category": "Burgers"
+  },
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "dataset_name": "burger_king_menu",
+    "row_index": 99,
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Phase_1_Taste_Embedding_Model/data/raw/burger-king-menu.csv"
+  },
+  "client_id": null,
+  "chunk_index": null,
+  "parent_record_id": null
+}

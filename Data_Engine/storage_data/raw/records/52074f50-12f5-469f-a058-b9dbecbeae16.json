@@ -1,0 +1,39 @@
+{
+  "record_id": "52074f50-12f5-469f-a058-b9dbecbeae16",
+  "bucket_id": 1,
+  "source_name": "wendys_menu",
+  "source_type": "csv",
+  "brand": "Spicy Chicken Wrap",
+  "timestamp": null,
+  "ingestion_time": "2025-12-27T02:16:07.078153",
+  "raw_text": "Spicy Chicken Wrap Chicken",
+  "structured_fields": {
+    "Item": "Spicy Chicken Wrap"
+  },
+  "numerical_fields": {
+    "Calories": 370.0,
+    "Fat (g)": 20.0,
+    "Sat Fat (g)": 5.0,
+    "Trans Fat (g)": 0.0,
+    "Cholesterol (mg)": 50.0,
+    "Sodium (mg)": 850.0,
+    "Total Carb (g)": 30.0,
+    "Dietary Fiber (g)": 2.0,
+    "Sugars (g)": 2.0,
+    "Protein (g)": 18.0,
+    "Weight Watchers": 359.0
+  },
+  "categorical_fields": {
+    "Category": "Chicken"
+  },
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "dataset_name": "wendys_menu",
+    "row_index": 25,
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Phase_1_Taste_Embedding_Model/data/raw/wendys-menu.csv"
+  },
+  "client_id": null,
+  "chunk_index": null,
+  "parent_record_id": null
+}

@@ -1,0 +1,39 @@
+{
+  "record_id": "ed36ceaf-b3db-4844-95f3-7dc70eb418a3",
+  "bucket_id": 1,
+  "source_name": "burger_king_menu",
+  "source_type": "csv",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2025-12-27T02:16:07.068504",
+  "raw_text": null,
+  "structured_fields": {
+    "Item": "WHOPPER Sandwich with Cheese"
+  },
+  "numerical_fields": {
+    "Calories": 760.0,
+    "Fat Calories": 420.0,
+    "Fat (g)": 46.0,
+    "Saturated Fat (g)": 16.0,
+    "Trans Fat (g)": 0.5,
+    "Cholesterol (mg)": 105.0,
+    "Sodium (mg)": 1600.0,
+    "Total Carb (g)": 56.0,
+    "Dietary Fiber (g)": 3.0,
+    "Sugars (g)": 14.0,
+    "Protein (g)": 36.0
+  },
+  "categorical_fields": {
+    "Category": "Burgers"
+  },
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "dataset_name": "burger_king_menu",
+    "row_index": 93,
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Phase_1_Taste_Embedding_Model/data/raw/burger-king-menu.csv"
+  },
+  "client_id": null,
+  "chunk_index": null,
+  "parent_record_id": null
+}

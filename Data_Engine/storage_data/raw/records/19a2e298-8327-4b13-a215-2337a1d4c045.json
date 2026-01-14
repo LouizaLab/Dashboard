@@ -1,0 +1,39 @@
+{
+  "record_id": "19a2e298-8327-4b13-a215-2337a1d4c045",
+  "bucket_id": 1,
+  "source_name": "burger_king_menu",
+  "source_type": "csv",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2025-12-27T02:16:07.073555",
+  "raw_text": null,
+  "structured_fields": {
+    "Item": "Vanilla Shake"
+  },
+  "numerical_fields": {
+    "Calories": 600.0,
+    "Fat Calories": 150.0,
+    "Fat (g)": 16.0,
+    "Saturated Fat (g)": 11.0,
+    "Trans Fat (g)": 0.5,
+    "Cholesterol (mg)": 65.0,
+    "Sodium (mg)": 410.0,
+    "Total Carb (g)": 98.0,
+    "Dietary Fiber (g)": 0.0,
+    "Sugars (g)": 81.0,
+    "Protein (g)": 13.0
+  },
+  "categorical_fields": {
+    "Category": "Desserts"
+  },
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "dataset_name": "burger_king_menu",
+    "row_index": 136,
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Phase_1_Taste_Embedding_Model/data/raw/burger-king-menu.csv"
+  },
+  "client_id": null,
+  "chunk_index": null,
+  "parent_record_id": null
+}

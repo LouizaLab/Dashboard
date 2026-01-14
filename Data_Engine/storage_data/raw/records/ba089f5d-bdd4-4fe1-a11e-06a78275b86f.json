@@ -1,0 +1,23 @@
+{
+  "record_id": "ba089f5d-bdd4-4fe1-a11e-06a78275b86f",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.869793",
+  "raw_text": "ou describe the flavor, texture, temperature, smell, and aftertaste of a Big Mac that you enjoy so much? User: Um...it has a lot of different textures...a soft bun and the cheese...it doesn't really have much of a smell. It has a very salty taste mixed with the lettuce which is kind of fresh and then the secret sauce which is kind of tangy. All those flavor combinations combined make it really good. The cheese is probably my favorite part. It smells like McDonald's. Agent: That's a great description. It sounds like the combination of textures and flavors, especially the tangy sauce and salty taste, really stands out for you. What are the top two or three things that make a Big Mac \"perfect\" in your opinion? For example, is it a crunchy coating, a specific sauce balance, the heat level, or the bun texture? User: I would say the right amount of sauce. Too much is too sloppy and too little is not enough. So you need the right amount of sauce and a nice fresh bun with the sesame seeds. Ag",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview3.txt",
+    "total_chunks": 11
+  },
+  "client_id": null,
+  "chunk_index": 1,
+  "parent_record_id": "763b6b14-78e3-4d1d-9738-7fff2af6b166"
+}

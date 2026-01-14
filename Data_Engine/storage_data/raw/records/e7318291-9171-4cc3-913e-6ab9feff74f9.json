@@ -1,0 +1,23 @@
+{
+  "record_id": "e7318291-9171-4cc3-913e-6ab9feff74f9",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.866047",
+  "raw_text": "Call Transcript: User: ... Agent: I'm here to collect information about your food preferences to complete the onboarding so you can get rewarded. To start, please say your name or Prolific ID. User: My name is Carl, and my prolific ID is 653581671571D347299832D7. Agent: Thank you, Carl. Now, let's talk about your food preferences. What is your favorite fast-food item, including the chain and the exact item? And could you tell me why you like it? User: Panda Express, orange chicken with white rice, a side of crab rangoon. And why do I like it? Because it's different than having to order a cheeseburger or something. It tastes good. I like the tang to it along with just the flavor of the chicken along with since it's a breaded chicken that's dipped in sauce, like that all together, just the texture is nice. And then the orange tang, I like orange. So then that kind of works. And then with the side of rice, that helps to kind of offset too much tang and gives it a little bit of a differen",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview12.txt",
+    "total_chunks": 8
+  },
+  "client_id": null,
+  "chunk_index": 0,
+  "parent_record_id": null
+}

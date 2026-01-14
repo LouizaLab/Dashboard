@@ -1,0 +1,24 @@
+{
+  "record_id": "0b404540-b8e7-4cad-b42c-85de54734853",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.786650",
+  "raw_text": "User: Not that I can think of.\nAgent: No problem at all. What do you usually pair with your Big Mac, such as drinks, sides, or sauces?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview14",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview14.txt",
+    "total_chunks": 32,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 11,
+  "parent_record_id": "2c7f125d-33ba-4a41-8126-d80942115ee4"
+}

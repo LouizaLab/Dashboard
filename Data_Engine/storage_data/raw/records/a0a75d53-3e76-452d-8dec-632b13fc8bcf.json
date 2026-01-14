@@ -1,0 +1,24 @@
+{
+  "record_id": "a0a75d53-3e76-452d-8dec-632b13fc8bcf",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.756624",
+  "raw_text": "User: None. None at all.\nAgent: Understood, no deal influenced your choice today. What kind of deal actually changes your behavior? For example, is it buy one get one free, a percentage...",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "41",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/41.txt",
+    "total_chunks": 39,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 30,
+  "parent_record_id": "3a86faee-b265-401f-89c3-2956bf68e535"
+}

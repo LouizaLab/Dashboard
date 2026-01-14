@@ -1,0 +1,42 @@
+{
+  "record_id": "67929795-55f8-4150-a795-c56a1f5f7508",
+  "bucket_id": 1,
+  "source_name": "mcd_menu_alt",
+  "source_type": "csv",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2025-12-27T02:25:07.223764",
+  "raw_text": null,
+  "structured_fields": {
+    "name": "Soft Serve Cone\u00ae",
+    "serving_size": "81.29g",
+    "ingredients": "Soft serve mix (100% diary product)",
+    "tag": "Delightfully basic.",
+    "description": "Creamy vanilla soft-serve on a cone."
+  },
+  "numerical_fields": {
+    "energy": 85.73,
+    "protein": 1.99,
+    "total_fat": 1.82,
+    "sat_fat": 1.31,
+    "trans_fat": 0.05,
+    "chol": 4.75,
+    "carbs": 15.23,
+    "total_sugar": 10.68,
+    "added_sugar": 6.99,
+    "sodium": 40.78
+  },
+  "categorical_fields": {
+    "allergy": "Cereal containing gluten, Milk, Soya"
+  },
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "dataset_name": "mcd_menu_alt",
+    "row_index": 31,
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Phase_1_Taste_Embedding_Model/data/raw/mcd.csv"
+  },
+  "client_id": null,
+  "chunk_index": null,
+  "parent_record_id": null
+}

@@ -1,0 +1,23 @@
+{
+  "record_id": "1a5ebc7d-36e2-41f3-9369-16fca2fd20ea",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.870602",
+  "raw_text": "fulfills that McDonald's craving for you. Can you name two to three similar items you also like from any chain? And for each one, what's better or worse compared to your favorite forty-piece nuggets? User: I'll name two other ones. We got the Wendy's Dayz Triple Burger. I would love to, I just checked it down recently over here where I'm at. It's a pretzel bun burger, the pretzel buns. Those are the best. I got those with the crinkled onions on it on a Dayz burger, the triple. It's a beast, huge, huge burger. It's like the size of my hand. I'm a pretty big guy, weigh 380, so my hand's huge. And it's like the size of my hand, and it's awesome. It's very scrumptious. I love the french fries. One thing it doesn't compare though, the french fries in Wendy's is not the same large quantity as eating a 40-piece nuggets does the satisfaction too. They don't really equivalent in the satisfaction level to each other. Wendy's puts a little less french fries, I feel like, when I feel like they sh",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview7.txt",
+    "total_chunks": 11
+  },
+  "client_id": null,
+  "chunk_index": 4,
+  "parent_record_id": "4a332a06-4576-4f21-9c79-a49e233ddeb4"
+}

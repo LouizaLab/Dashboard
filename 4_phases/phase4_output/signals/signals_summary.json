@@ -1,0 +1,26 @@
+{
+  "signals_generated": [
+    "intent_index",
+    "momentum_7d",
+    "momentum_30d",
+    "trend_acceleration",
+    "forecast_30d",
+    "forecast_90d",
+    "substitution_matrix",
+    "price_elasticity"
+  ],
+  "date_range": {
+    "start": "2024-01-01",
+    "end": "2024-01-30"
+  },
+  "categories": [
+    "coffee_drink",
+    "energy_drink",
+    "juice",
+    "soda",
+    "sports_drink",
+    "tea",
+    "water_enhanced"
+  ],
+  "total_data_points": 145
+}

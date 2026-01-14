@@ -1,0 +1,24 @@
+{
+  "record_id": "e234b496-7c70-4fde-aad3-664ae78b435f",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.797504",
+  "raw_text": "User: I always ignore it because I literally couldn't care less.\nAgent: Okay, I understand. Your interview is now complete. Thank you for participating!",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview28",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview28.txt",
+    "total_chunks": 43,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 42,
+  "parent_record_id": "1940e73c-7457-4f0e-96e6-ebd8700cb728"
+}

@@ -1,0 +1,24 @@
+{
+  "record_id": "23fc3be6-22dd-4032-9a1d-7c9c8f33a0b3",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.813620",
+  "raw_text": "User: I'd say the flavor is the best. It's a little bit spicy, but it's also salty.\nAgent: That's great to hear about the flavor. What are the top two or three things that make the Chick-fil-A Spicy Deluxe \"perfect\" for you? For example, is it a crunchy coating, a specific sauce balance, or the bun texture?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview17",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview17.txt",
+    "total_chunks": 33,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 3,
+  "parent_record_id": "88d4a69e-5a62-47c8-8b20-22b88f242475"
+}

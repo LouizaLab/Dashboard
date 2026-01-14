@@ -1,0 +1,24 @@
+{
+  "record_id": "da7467fa-2539-46f9-9e1c-97b540bb4734",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.664220",
+  "raw_text": "User: It's usually I order when I'm hungry and I'm on the go in between like going to work or going to running errands or something. So it could be any time of day, honestly, but it's definitely something like when I get hungry.\nAgent: Thank you. What does \"good value\" mean to you in fast food?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview21",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview21.txt",
+    "total_chunks": 34,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 24,
+  "parent_record_id": "f688d581-35a0-4caf-a59e-da7bf685c87c"
+}

@@ -1,0 +1,24 @@
+{
+  "record_id": "c4e36b92-9247-462d-9404-9f817956d193",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.730687",
+  "raw_text": "User: Oh they were dry or cold I'll be pretty upset but I'll still be happy because I know I'm buying McDonald's nuggets.\nAgent: Okay, so dry or cold would be disappointing. If the forty-piece nuggets were unavailable, what would you order instead, including the chain and the item?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview7",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview7.txt",
+    "total_chunks": 11,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 6,
+  "parent_record_id": "3a954e63-b718-482c-b02d-9509cae55cd7"
+}

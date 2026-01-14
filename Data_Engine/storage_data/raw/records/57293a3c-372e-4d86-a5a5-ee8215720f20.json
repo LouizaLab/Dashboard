@@ -1,0 +1,24 @@
+{
+  "record_id": "57293a3c-372e-4d86-a5a5-ee8215720f20",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.820507",
+  "raw_text": "User: Time pressure and convenience.\nAgent: Thank you. So, time pressure and convenience were the triggers. Was this order planned or spontaneous?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "36",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/36.txt",
+    "total_chunks": 29,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 22,
+  "parent_record_id": "4c0b766b-108c-463c-ac1b-84504ef7b9d6"
+}

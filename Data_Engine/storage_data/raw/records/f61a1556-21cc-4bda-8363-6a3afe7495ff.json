@@ -1,0 +1,23 @@
+{
+  "record_id": "f61a1556-21cc-4bda-8363-6a3afe7495ff",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.868053",
+  "raw_text": "e going to work or going to running errands or something. So it could be any time of day, honestly, but it's definitely something like when I get hungry. Agent: Thank you. What does \"good value\" mean to you in fast food? User: A good price for the right amount of food, I guess, or like, you know, you're getting a lot of bang for your buck, we'll call it. Agent: That's a clear definition. Could you pick your top two or three factors from taste, portion size, speed, nutrition, consistency, and price, and explain how you judge if something is \"worth it\"? User: The price like if it's a reasonable price for what you're getting and the quality you're going to pay higher price for or pay more for you expect to pay more for a higher quality of food so but you should be able to taste that and like see the difference and Agent: You've mentioned... User: those are like the most Agent: So price and quality are important. Do you have a third factor, or are those your top two? User: I'm going to tal",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview21.txt",
+    "total_chunks": 10
+  },
+  "client_id": null,
+  "chunk_index": 7,
+  "parent_record_id": "08071a2d-f19f-4ddf-8b32-c6b6250cf6ad"
+}

@@ -1,0 +1,23 @@
+{
+  "record_id": "433e8e59-cd2c-4abb-8fa7-bbeb9432ad3b",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.870400",
+  "raw_text": "he burrito. Agent: That makes perfect sense. So, sogginess and a cold temperature are definitely deal-breakers. Is there one more thing that would make your... User: Yes. Agent: Okay, what would be that one more thing? User: If it was just messy and just overly just leaky out everywhere, I think that would be that would upset me. Agent: I understand. A messy or leaky burrito would certainly be frustrating. Now, if your favorite Chipotle burrito was unavailable, what would you order instead, including the chain and the specific item? User: The Chipotle asada bowl. Agent: And why is the Chipotle asada bowl the closest replacement for your favorite burrito? User: It's pretty much like the burrito, except for it's like in a bowl. I can still customize it like I would a burrito. So I'm not giving up a ton of, you know, stuff to... I'm not compromising a ton just to get the asada bowl instead of the burrito. Agent: That's a clear explanation of why it's a good alternative. Can you name two",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview6.txt",
+    "total_chunks": 11
+  },
+  "client_id": null,
+  "chunk_index": 3,
+  "parent_record_id": "7bbdd4cb-ea9f-41c4-ad88-c8cc6f12ea7d"
+}

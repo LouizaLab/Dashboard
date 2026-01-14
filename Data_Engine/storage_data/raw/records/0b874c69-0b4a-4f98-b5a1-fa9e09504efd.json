@@ -1,0 +1,23 @@
+{
+  "record_id": "0b874c69-0b4a-4f98-b5a1-fa9e09504efd",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.867959",
+  "raw_text": "change your \"default\" order? User: if a new fast food restaurant was built by me Agent: So, if a new fast-food restaurant was built near you, that could change your default. What would you need to see happen repeatedly, such as taste, consistency, price, or convenience, for you to permanently change your default order? User: quality better taste probably Agent: So, better taste and quality would be the main reasons for you to switch your default order. Let's talk about deals. How much did a deal influence this choice today? User: Not at all. Agent: Understood, so a deal did not influence your choice today. What kind of deal actually changes your behavior? For example, is it buy one get one free, a...",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview20.txt",
+    "total_chunks": 11
+  },
+  "client_id": null,
+  "chunk_index": 10,
+  "parent_record_id": "2b6b0470-bd75-4f9b-98bd-8b5aed0e9f50"
+}

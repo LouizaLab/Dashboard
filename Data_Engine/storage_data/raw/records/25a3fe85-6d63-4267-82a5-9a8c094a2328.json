@@ -1,0 +1,24 @@
+{
+  "record_id": "25a3fe85-6d63-4267-82a5-9a8c094a2328",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.772691",
+  "raw_text": "User: Probably ice cream because it just wouldn't go good together.\nAgent: That makes sense; ice cream and a Big Mac might not be the best combination.\n\nNow, moving on to the next section. In what situations do you choose a Big Mac most often? Please include details like time pressure, location such as home, work, or commute, the ordering channel like drive-thru or delivery, and who you're with.",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "44",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/44.txt",
+    "total_chunks": 33,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 20,
+  "parent_record_id": "694c9af7-c584-49a2-a404-743a61005dd2"
+}

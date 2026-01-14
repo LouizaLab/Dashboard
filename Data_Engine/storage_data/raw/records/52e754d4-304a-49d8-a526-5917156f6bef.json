@@ -1,0 +1,24 @@
+{
+  "record_id": "52e754d4-304a-49d8-a526-5917156f6bef",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.744212",
+  "raw_text": "User: 6-3-D-7-B-7-7-6-A-9-9-2-3-F-E-2-A 6 9 D 3 6 B D\nAgent: ...",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "40",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/40.txt",
+    "total_chunks": 24,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 2,
+  "parent_record_id": "692d79ab-a3ba-476a-990b-bf66f61e7646"
+}

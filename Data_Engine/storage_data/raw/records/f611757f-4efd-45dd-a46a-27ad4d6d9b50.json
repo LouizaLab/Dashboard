@@ -1,0 +1,23 @@
+{
+  "record_id": "f611757f-4efd-45dd-a46a-27ad4d6d9b50",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.866068",
+  "raw_text": "definitely things that would make the experience less enjoyable. If your favorite Panda Express orange chicken meal was unavailable, what would you order instead, and from which chain? User: Um... Agent: Please take your time. User: Okay, good, because I need a sec. Um, well, I would probably go to Taco Bell and grab some crunchy tacos and a crunch wrap. Agent: Thank you, Carl. So, Taco Bell for crunchy tacos and a crunch wrap. Why do you consider that the closest replacement for your Panda Express orange chicken meal? User: Um, it's not necessarily a closest like replacement as far as trying to achieve the same goal or the same flavor and texture. But since I'm really not that much for fast food, I'm kind of picky as far as what I get and where. And honestly, I usually get the same or either the same things or I've got a list of the same or of things that are acceptable for me. And I like tacos just period. I really like Mexican food, but that's kind of a sit down meal. But since lik",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview12.txt",
+    "total_chunks": 8
+  },
+  "client_id": null,
+  "chunk_index": 4,
+  "parent_record_id": "e7318291-9171-4cc3-913e-6ab9feff74f9"
+}

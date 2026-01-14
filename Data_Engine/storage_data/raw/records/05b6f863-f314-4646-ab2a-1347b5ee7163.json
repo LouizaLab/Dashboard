@@ -1,0 +1,24 @@
+{
+  "record_id": "05b6f863-f314-4646-ab2a-1347b5ee7163",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.678728",
+  "raw_text": "User: In-N-Out Burger, cheeseburgers because they are good.\nAgent: Okay, In-N-Out Burger cheeseburgers. Could you tell me a bit more about what makes them good for you? I'm interested in details like the flavor, texture, temperature, smell, and even the aftertaste.",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview25",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview25.txt",
+    "total_chunks": 36,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 2,
+  "parent_record_id": "a063913f-2f38-4288-8391-282e73daa401"
+}

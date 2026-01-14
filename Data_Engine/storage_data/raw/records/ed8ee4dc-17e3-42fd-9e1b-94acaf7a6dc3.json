@@ -1,0 +1,23 @@
+{
+  "record_id": "ed8ee4dc-17e3-42fd-9e1b-94acaf7a6dc3",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.867006",
+  "raw_text": "-fil-A Spicy Deluxe cost two dollars more, what would you do? User: I would still buy it. Agent: Okay, so a two-dollar increase wouldn't deter you. What if there was a deal available? How would that change what you do or what you order? User: I would consider it depending on the deal and what the deal is for. Agent: Understood. Now, let's talk about your fast-food patterns. Over the past two weeks, what have been your most common fast-food patterns? This includes when you eat it, what you usually order, and what typically triggers it. User: Usually a sandwich with fries for lunch, Agent: Thank you. What does... User: I'd say just wanting something salty Agent: Okay, so a salty craving often triggers your lunch orders. Now, what does \"good value\" mean to you in fast food? Please pick your top two or three factors, such as taste, portion size, speed, nutrition, consistency, or price, and explain how you judge whether something is \"worth it.\" User: Let's say quality to price ratio. Agent",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview17.txt",
+    "total_chunks": 11
+  },
+  "client_id": null,
+  "chunk_index": 4,
+  "parent_record_id": "f5c69c84-f91a-4dd6-8cf5-c2c95cae4a75"
+}

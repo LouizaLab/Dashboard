@@ -1,0 +1,24 @@
+{
+  "record_id": "97fdeecd-b37b-4005-a95f-7485102858cb",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.791876",
+  "raw_text": "User: Um I have not gotten fast food in the past two weeks\nAgent: Thank you for that information. In your opinion, what does \"good value\" mean to you in fast food?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview28",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview28.txt",
+    "total_chunks": 43,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 15,
+  "parent_record_id": "1940e73c-7457-4f0e-96e6-ebd8700cb728"
+}

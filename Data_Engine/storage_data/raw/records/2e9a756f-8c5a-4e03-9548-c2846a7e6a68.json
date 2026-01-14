@@ -1,0 +1,24 @@
+{
+  "record_id": "2e9a756f-8c5a-4e03-9548-c2846a7e6a68",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.733091",
+  "raw_text": "User: It's pretty much like the burrito, except for it's like in a bowl. I can still customize it like I would a burrito. So I'm not giving up a ton of, you know, stuff to... I'm not compromising a ton just to get the asada bowl instead of the burrito.\nAgent: That's a clear explanation of why it's a good alternative.\n\nCan you name two or three similar items you also like from any chain? And for each one, what's better or worse compared to your favorite Chipotle burrito?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview6",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview6.txt",
+    "total_chunks": 31,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 13,
+  "parent_record_id": "a48d5c67-b799-4d11-942f-3b6236827fe4"
+}

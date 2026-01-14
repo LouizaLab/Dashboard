@@ -1,0 +1,23 @@
+{
+  "record_id": "eacc0d75-35f6-42ae-b2d8-9c95477fab88",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.870614",
+  "raw_text": "to make sure that we have enough flavor in our food. You can also get the freezies from like the Baja Blast freezies. They got those too. Those are awesome. They go great with it. They give you a brain freeze. They make you want to take another bite into the Crunchwrap. So the winner out of Taco Bell and McDonald's, the winner will be Taco Bell. Agent: That's a very detailed comparison of your other favorites. It sounds like you have some strong preferences for both the Wendy's Dayz Triple Burger and the Taco Bell Crunchwrap. Now, what do you usually pair with your favorite forty-piece nuggets, in terms of drinks, sides, or sauces? And what would you never pair it with, and why? User: All right, so I'll pair the nuggets with everything. I got the last question out of the way. I'll pair the nuggets with everything. I'll eat it with everything. It just tastes great with everything. I'm a big guy. I love the nuggets. Nuggets taste awesome. Give them a triple gold star, three star rating,",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview7.txt",
+    "total_chunks": 11
+  },
+  "client_id": null,
+  "chunk_index": 7,
+  "parent_record_id": "4a332a06-4576-4f21-9c79-a49e233ddeb4"
+}

@@ -1,0 +1,24 @@
+{
+  "record_id": "915a7a59-dfc1-4fea-81f9-dcddcfcd1f95",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.762897",
+  "raw_text": "User: Like I said, I like to eat, a lot of times I like to eat pizza and wings in conjunction. Pizza is one of my top favorite foods. So yeah, that's why it would be on the top of my list. As far as Domino's, Domino's, I guess, has improved over the years. You know, they're in competition with Little Caesars, Pizza Hut, Papa John's, you know, main chains. But they've done pretty well in their pizza in the last several years and improvement. So I tend to go to them more often.\nAgent: That's interesting to hear about Domino's improvements. Can you name two or three similar items you also like, from any chain? For each one, please tell me what's better or worse compared to your favorite Wingstop Buffalo wings.",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "45",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/45.txt",
+    "total_chunks": 22,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 9,
+  "parent_record_id": "94dc8ad1-54d4-42c6-baca-2b6d6e488033"
+}

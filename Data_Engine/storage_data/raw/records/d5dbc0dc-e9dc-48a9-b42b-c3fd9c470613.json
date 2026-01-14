@@ -1,0 +1,23 @@
+{
+  "record_id": "d5dbc0dc-e9dc-48a9-b42b-c3fd9c470613",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.870311",
+  "raw_text": ", for you to consider changing your default order? User: If the price went up really high, or if the food quality went down, Agent: Thank you for clarifying that. How much did a deal influence this choice today? User: it didn't influence it. Agent: Okay. Could you explain what kind of deal actually changes your behavior? For example, is it buy one get one free, a percentage off, app points, or free delivery? User: Usually it's some of all of those, but generally buy one, get one free. Agent: Has your price sensitivity changed in the last two to four weeks? And if so, why? User: No, not really. Agent: What changed in your life or in prices or fees, and how did it change what you order? User: Nothing really. We just order the same thing every time. Agent: Are you trying to eat healthier than two to four weeks ago? Why or why not? User: I am sometimes. I tried. Not always, but I try Agent: When you are trying to eat healthier, what specific rule are you following? For example, less fried",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview5.txt",
+    "total_chunks": 10
+  },
+  "client_id": null,
+  "chunk_index": 8,
+  "parent_record_id": "9d0a0a1b-b297-4a62-8430-2af72da9793c"
+}

@@ -1,0 +1,24 @@
+{
+  "record_id": "1283e996-506b-4f42-baa1-db1aea3a3d13",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.666795",
+  "raw_text": "User: It usually fries and then drink like a Pepsi and a large fry. Maybe get some honey mustard sauce or creamy, some creamy sriracha sauce. What I wouldn't pair it with is anything like a fruit drink or anything of that nature.\nAgent: Okay, so you usually pair it with large fries and a Pepsi, perhaps with honey mustard or creamy sriracha sauce. And you'd never pair it with a fruit drink.\n\nNow, let's talk about when you choose this item. In what situations do you choose your Double Quarter Pounder with Cheese most often? Please consider factors like time pressure, your location such as home, work, or during a commute, the ordering channel like drive-thru or delivery, and who you're with.",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview23",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview23.txt",
+    "total_chunks": 22,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 9,
+  "parent_record_id": "9226c320-dfb2-47d8-87a1-ed9e447a8705"
+}

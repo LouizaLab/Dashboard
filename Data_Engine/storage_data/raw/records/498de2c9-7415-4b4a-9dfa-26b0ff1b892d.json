@@ -1,0 +1,24 @@
+{
+  "record_id": "498de2c9-7415-4b4a-9dfa-26b0ff1b892d",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.695082",
+  "raw_text": "User: My prolific ID is 5-D-C-1-E-B-8-3-8-A-8-4-4-6-1-5-1-1 B3CD73.\nAgent: Thank you for that. Now, could you please tell me what your favorite fast-food item is, including the chain and the exact item? And why do you like it?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview18",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview18.txt",
+    "total_chunks": 19,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 1,
+  "parent_record_id": "68950778-79ab-467c-ba48-e8d70a851473"
+}

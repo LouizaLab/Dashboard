@@ -1,0 +1,24 @@
+{
+  "record_id": "f60cd6f5-6e5c-4375-bcb7-8ff2f3658c72",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.779045",
+  "raw_text": "User: It's basically the same answer, but they just add too much extra stuff to their burgers that make it, like, almost unedible or at least you can't eat it all in one bite or not, you know, like all the items that they put on their burgers and it's just not what I'm into, I guess.\nAgent: I understand that the extra toppings on the Jack in the...",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "34",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/34.txt",
+    "total_chunks": 23,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 13,
+  "parent_record_id": "e45fb1d7-d025-48e7-9f73-0ae6be217425"
+}

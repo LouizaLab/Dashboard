@@ -1,0 +1,24 @@
+{
+  "record_id": "0cd77c00-923f-4040-b260-7f000b943755",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.776516",
+  "raw_text": "User: Well, I think good value in fast food means I feel satisfied when I'm done, not just full but content. I think the food should taste fresh and be consistent and feel fairly priced for what I get. You know, I judge it if it's worth it by asking a really simple question would I order this again at the same price if the quality matches the cost and the experience feels reliable, then it's definitely worth it. If you're rushed, sloppy or overpriced, it's not. And that's the line for me.\nAgent: That's a very clear way to define good value. Thank you.\n\nNow, let's move on to your recent fast-food experiences. Compared to your last fast-food order, what changed today, if anything?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "46",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/46.txt",
+    "total_chunks": 19,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 12,
+  "parent_record_id": "42485974-cee0-43b1-bfcd-159fb131da89"
+}

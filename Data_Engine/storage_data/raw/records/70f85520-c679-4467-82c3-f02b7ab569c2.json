@@ -1,0 +1,24 @@
+{
+  "record_id": "70f85520-c679-4467-82c3-f02b7ab569c2",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.724026",
+  "raw_text": "User: ...\nAgent: I'm here to collect information about your food preferences to complete the onboarding so you can get rewarded. To start, please say your name or Prolific ID.",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview5",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview5.txt",
+    "total_chunks": 37,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 0,
+  "parent_record_id": null
+}

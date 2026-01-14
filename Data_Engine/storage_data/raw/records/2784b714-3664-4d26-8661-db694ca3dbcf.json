@@ -1,0 +1,24 @@
+{
+  "record_id": "2784b714-3664-4d26-8661-db694ca3dbcf",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.713218",
+  "raw_text": "User: Budget mode for sure.\nAgent: Understood, budget mode it is.\n\nWhen you're in budget mode, what's the first thing that changes in your fast-food order?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview3",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview3.txt",
+    "total_chunks": 22,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 20,
+  "parent_record_id": "fc77d1e2-9777-4dca-a844-42568cda327f"
+}

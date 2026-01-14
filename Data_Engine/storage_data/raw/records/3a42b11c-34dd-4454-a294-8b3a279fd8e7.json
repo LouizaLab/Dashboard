@@ -1,0 +1,24 @@
+{
+  "record_id": "3a42b11c-34dd-4454-a294-8b3a279fd8e7",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.666063",
+  "raw_text": "User: I think the bun texture and also the sauce balance really make for it, but also the mix with the cheese and the meat is just a good combination.\nAgent: Understood. So, the bun texture, sauce balance, and the combination of cheese and meat are key to its perfection.\n\nOn the flip side, what are the top two or three things that would make that Double Quarter Pounder with Cheese \"bad\" for you? For instance, if it were soggy, dry, cold, under-salted, too greasy, or stale?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview23",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview23.txt",
+    "total_chunks": 22,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 3,
+  "parent_record_id": "9226c320-dfb2-47d8-87a1-ed9e447a8705"
+}

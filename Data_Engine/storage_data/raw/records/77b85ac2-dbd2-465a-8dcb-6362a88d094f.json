@@ -1,0 +1,23 @@
+{
+  "record_id": "77b85ac2-dbd2-465a-8dcb-6362a88d094f",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.868239",
+  "raw_text": "Call Transcript: User: Starting the interview. Agent: I'm here to collect information about your food preferences to complete the onboarding so you can get rewarded. To start, could you please tell me your name or Prolific ID? User: My name, my prolific ID is 664-63E4EFB99FBA5A67A010A. My name is Justin. Agent: Okay, Justin. Thank you for that. Now, let's talk about your food preferences. What is your favorite fast-food item, including the chain and the exact item, and why do you like it? Please tell me about its flavor, texture, temperature, smell, and aftertaste. User: My favorite fast food item is probably maybe a quarter pounder, double quarter pounder from McDonald's. Just because with cheese is just because I like the kind of char grilled taste to it. I like how it's full with the sauces and the mayonnaise. And I'm also like when I get a lot of cheese on it. Agent: That's a great choice. What are the top two or three things that make that Double Quarter Pounder with Cheese \"per",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview23.txt",
+    "total_chunks": 12
+  },
+  "client_id": null,
+  "chunk_index": 0,
+  "parent_record_id": null
+}

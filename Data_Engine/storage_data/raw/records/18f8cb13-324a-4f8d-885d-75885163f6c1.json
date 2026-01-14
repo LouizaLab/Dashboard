@@ -1,0 +1,24 @@
+{
+  "record_id": "18f8cb13-324a-4f8d-885d-75885163f6c1",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.790359",
+  "raw_text": "User: The bun texture and the heat level.\nAgent: Understood. And on the flip side, what are the top two or three things that would make that Chick-fil-A chicken sandwich \"bad\" for you? For example, if it were soggy, dry, cold, under-salted, too greasy, or stale?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview28",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview28.txt",
+    "total_chunks": 43,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 4,
+  "parent_record_id": "1940e73c-7457-4f0e-96e6-ebd8700cb728"
+}

@@ -1,0 +1,24 @@
+{
+  "record_id": "9f828d7d-8e9e-497f-8356-19abda263ae9",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.832996",
+  "raw_text": "User: Cold definitely if it was um stale or undercooked. Maybe a little too soggy on the bun would definitely ruin it\nAgent: I see. Cold, stale, undercooked, or a soggy bun would definitely make it a bad experience.\n\nIf your Double Quarter Pounder with Cheese was unavailable, what would you order instead, including the chain and the specific item?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "33",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/33.txt",
+    "total_chunks": 22,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 4,
+  "parent_record_id": "aa98a079-d75e-4bbe-84c1-8fdbe78a1de3"
+}

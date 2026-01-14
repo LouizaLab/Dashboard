@@ -1,0 +1,24 @@
+{
+  "record_id": "c36e54e5-7009-43a6-95c8-eb12f26c659f",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.722316",
+  "raw_text": "User: I usually go drive-thru with my husband. It's not that far from our house so location is good. Typically around dinner time is when I order.\nAgent: Thank you. So, drive-thru with your husband, close to home, usually around dinner time.\n\nHow does price change your choice? For example, if it cost two dollars more, what would you do?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview4",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview4.txt",
+    "total_chunks": 33,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 20,
+  "parent_record_id": "2bf06f63-1970-4fb8-9751-bc4c59483394"
+}

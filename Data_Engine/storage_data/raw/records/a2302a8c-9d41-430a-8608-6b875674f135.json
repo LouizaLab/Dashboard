@@ -1,0 +1,23 @@
+{
+  "record_id": "a2302a8c-9d41-430a-8608-6b875674f135",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.870292",
+  "raw_text": "r or worse about them compared to your favorite pizza? User: Sometimes they're very greasy. Usually they're good. Agent: Thank you. What do you usually pair with your Papa John's pepperoni pizza? This could include drinks, sides, or sauces. User: Usually cheese sticks, breadsticks. Agent: And what would you never pair your pizza with, and why? User: I'd probably never pair it with fruit salad because when I have pizza, I want pizza. I don't want healthy food. Agent: That makes sense. Moving on, in what situations do you choose your Papa John's pepperoni pizza most often? Please consider factors like time pressure, location such as home or work, the ordering channel like drive-thru or delivery, and who you're with. User: Usually it's just when I'm with my family and we just have it delivered. Agent: Okay, so it's typically a family meal delivered. How does price change your choice? For example, if it cost two dollars more, what would you do? User: I would probably pay it because we like",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview5.txt",
+    "total_chunks": 10
+  },
+  "client_id": null,
+  "chunk_index": 3,
+  "parent_record_id": "9d0a0a1b-b297-4a62-8430-2af72da9793c"
+}

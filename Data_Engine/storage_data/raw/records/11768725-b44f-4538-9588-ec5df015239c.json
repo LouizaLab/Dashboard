@@ -1,0 +1,23 @@
+{
+  "record_id": "11768725-b44f-4538-9588-ec5df015239c",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.867441",
+  "raw_text": "might even be better. Why do you consider... Agent: Why do you consider Wingstop fries the... User: Your Wingstop fries the closest... That's because like, you know, their fries are so seasoned and good. And what else? Their wings are nice too. Agent: Okay, so the seasoning and taste of Wingstop fries make them a good replacement. Now, thinking about other similar items, can you name two or three other fries or similar items you also like from any chain?... User: Fries or similar items you also like from any chain? Agent: Yes, can you name two or three similar items you also... User: Or three similar items you also like... Agent: Yes, can you name two or three other fries or similar... User: I don't really go to any other chains. Agent: Okay, I understand you don't frequently visit other chains for similar items. Moving on, what do you usually pair with your McDonald's fries? This could... User: For similar items moving on what Agent: What do you... User: ... I usually pair like a bu",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview19.txt",
+    "total_chunks": 14
+  },
+  "client_id": null,
+  "chunk_index": 10,
+  "parent_record_id": "1f988804-b2a4-40bf-a212-66fa038b6fde"
+}

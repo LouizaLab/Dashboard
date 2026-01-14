@@ -1,0 +1,24 @@
+{
+  "record_id": "c951c65a-7fe4-4633-a5db-9ed52b4f1934",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.745062",
+  "raw_text": "User: McDonald's cheeseburger, single cheeseburger, worse, but it's a very solid sandwich. I eat those frequently. Popeye's ghost pepper chicken sandwich, it's not as good as Wendy's, but it's a very solid choice. Good amount of meat, quality dressings, good bun.\nAgent: Thank you for those examples. For the McDonald's cheeseburger and the Popeye's Ghost Pepper Chicken Sandwich, could you tell me a bit more about what's better or worse about them specifically when compared to your favorite Wendy's Classic Triple?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "40",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/40.txt",
+    "total_chunks": 24,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 8,
+  "parent_record_id": "692d79ab-a3ba-476a-990b-bf66f61e7646"
+}

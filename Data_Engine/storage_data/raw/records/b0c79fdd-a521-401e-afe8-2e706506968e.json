@@ -1,0 +1,24 @@
+{
+  "record_id": "b0c79fdd-a521-401e-afe8-2e706506968e",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.836071",
+  "raw_text": "User: Having extra sauce, bun crisp and extra cheese.\nAgent: Understood, so extra sauce, a crisp bun, and extra cheese are key to a perfect In-N-Out cheeseburger for you. On the flip side, what are the top two or three things that would make that cheeseburger \"bad\"? For instance, if it were soggy, dry, cold, under-salted, too greasy, or stale?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "31",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/31.txt",
+    "total_chunks": 36,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 4,
+  "parent_record_id": "b8eed46d-a364-478a-a2e3-13621c355a9d"
+}

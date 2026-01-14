@@ -116,3 +116,11 @@ CORS_ALLOWED_ORIGINS = [
 
 CORS_ALLOW_ALL_ORIGINS = True  # For demo only
 
+# Agent-Tron Integration
+# 🚨 CRITICAL: Set to False ONLY for testing/debugging
+# When True, ALL agent responses MUST go through Agent-Tron first
+# Agent-Tron FastAPI Configuration
+AGENT_TRON_ENABLED = True  # Enable/disable Agent-Tron integration
+AGENT_TRON_URL = 'http://localhost:8001'  # FastAPI server URL
+AGENT_TRON_TIMEOUT = 30  # Request timeout in seconds
+

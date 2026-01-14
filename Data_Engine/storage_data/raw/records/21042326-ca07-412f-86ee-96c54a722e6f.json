@@ -1,0 +1,23 @@
+{
+  "record_id": "21042326-ca07-412f-86ee-96c54a722e6f",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.865376",
+  "raw_text": "it just tastes good. Agent: That's very descriptive. What are the top two or three things that make that Arby's brisket sandwich \"perfect\" for you? User: The way they slice it really thin and the seasoning that they use to cook with it. Agent: Okay, I understand. On the flip side, what are the top two or three things that would make that brisket sandwich \"bad\" for you? For example, if it were soggy, dry, or cold? User: If it was overcooked. Agent: Understood. What else would make it bad, besides being overcooked? User: If they put too much seasoning on it and if they slice it, could they slice it really thin? If they sliced it too thick, I think that would take away from the texture of it. Agent: Thank you for... User: don't... Agent: Thank you for clarifying. If the Arby's brisket sandwich was unavailable, what would you order instead, including the chain and the specific item? User: Probably the roast beef. Agent: And why is the roast beef the closest replacement for you? User: Beca",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview1.txt",
+    "total_chunks": 8
+  },
+  "client_id": null,
+  "chunk_index": 1,
+  "parent_record_id": "ce681e47-af5e-424a-9db6-a230fd8e80cd"
+}

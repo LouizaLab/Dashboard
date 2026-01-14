@@ -1,0 +1,24 @@
+{
+  "record_id": "7e6777c9-8e34-4cf6-a41f-93f76cc0f7bf",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.810835",
+  "raw_text": "User: The size of the sandwich is a very hearty sandwich. If I eat one sandwich, I won't need to eat another one. Also, the ability to add mustard to the sandwich. I like mustard on my hamburgers, so it makes it better. And if you get the combo, the burger pairs well with the fries, and a small order of spicy chicken nuggets won't hurt either.\nAgent: Okay, I understand. On the flip side, what are the top two or three things that would make the Wendy's Classic Triple \"bad\" for you? For example, if it were soggy, dry, cold, under-salted, too greasy, or stale?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview16",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview16.txt",
+    "total_chunks": 24,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 5,
+  "parent_record_id": "073b5ea8-26dc-4e34-ab4d-47aa68550d3c"
+}

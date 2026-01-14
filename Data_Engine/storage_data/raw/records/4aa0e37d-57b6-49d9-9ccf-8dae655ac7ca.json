@@ -1,0 +1,24 @@
+{
+  "record_id": "4aa0e37d-57b6-49d9-9ccf-8dae655ac7ca",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.699847",
+  "raw_text": "User: a small fry and a Dr. Pepper\nAgent: And what would you never pair it with, and why?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview24",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview24.txt",
+    "total_chunks": 32,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 12,
+  "parent_record_id": "cfe6dba6-be54-476b-a6c7-e75d0a58bbec"
+}

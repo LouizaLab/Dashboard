@@ -1,0 +1,24 @@
+{
+  "record_id": "a5f7dfe7-acbe-487f-abef-51bc8c67cd7d",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.771720",
+  "raw_text": "User: No.\nAgent: Understood. Now, could you name two or three other similar items you also like from any chain? And for each one, what's better or worse compared to your favorite Big Mac?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "44",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/44.txt",
+    "total_chunks": 33,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 12,
+  "parent_record_id": "694c9af7-c584-49a2-a404-743a61005dd2"
+}

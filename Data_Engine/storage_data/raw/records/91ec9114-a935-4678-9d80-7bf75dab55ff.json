@@ -1,0 +1,24 @@
+{
+  "record_id": "91ec9114-a935-4678-9d80-7bf75dab55ff",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.748006",
+  "raw_text": "User: I like McDonald's chicken nuggets. I think they're also fried chicken. And I like that they're smaller, they're bite-sized, and I can have a lot of them with barbecue sauce.\nAgent: That's a great alternative, Sean, especially with the barbecue sauce.\n\nNow, thinking beyond just replacements, can you name two or three other similar items you also like from any chain? And for each of those, what's better or worse about them compared to your favorite Popeye's chicken sandwich?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview8",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview8.txt",
+    "total_chunks": 19,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 5,
+  "parent_record_id": "1f511bb6-4266-4aca-8ca1-8692fc9731e7"
+}

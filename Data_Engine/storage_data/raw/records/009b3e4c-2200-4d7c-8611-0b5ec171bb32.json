@@ -1,0 +1,24 @@
+{
+  "record_id": "009b3e4c-2200-4d7c-8611-0b5ec171bb32",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.666540",
+  "raw_text": "User: I think I would say Chick-fil-A sandwich, chicken sandwich, crispy or spicy Chick-fil-A sandwich. I like how it's chicken. I like how it just has a really consistent taste. The only thing I don't like better is I like the sides and stuff you might get from the McDonald's, sometimes a little better. Sometimes I'd rather have the fries, but even though I do really like Chick-fil-A fries, it's kind of really almost a tie. And my second one would have to be maybe like something, maybe like breakfast from Chick-fil-A, I would have to say. So like one of those wraps, chicken wraps.\nAgent: Okay, so a Chick-fil-A crispy or spicy chicken sandwich is one. You appreciate its consistent chicken taste, though you sometimes prefer McDonald's sides and fries.\n\nAnd for the Chick-fil-A chicken wrap, how does that compare to your favorite Double Quarter Pounder with Cheese, in terms of what's better or worse?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview23",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview23.txt",
+    "total_chunks": 22,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 7,
+  "parent_record_id": "9226c320-dfb2-47d8-87a1-ed9e447a8705"
+}

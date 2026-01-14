@@ -1,0 +1,23 @@
+{
+  "record_id": "252cb138-31de-4033-a0ca-36a08613d73d",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.866390",
+  "raw_text": "a deal influence this choice today? User: Extremely. Agent: Please explain what kind of deal actually changes your behavior. For example, is it buy one get one free, a percentage off, app points, or free delivery? User: Probably all the above except for free delivery because I don't order delivery. Agent: Has your price sensitivity...",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview14.txt",
+    "total_chunks": 9
+  },
+  "client_id": null,
+  "chunk_index": 8,
+  "parent_record_id": "08afa934-6295-42cc-95ab-8c19f8d505dd"
+}

@@ -1,0 +1,23 @@
+{
+  "record_id": "85b829bd-c60f-42d0-9c4f-8acfd6ac057e",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.870625",
+  "raw_text": "se it's quenching, it's good but you just need that last kicker to kick it off. You know you got the football right there in the middle, you got the player, you got the football in the middle which is a good thing. But I think that's what we're going to be looking at. And I think that's what we're going to be looking at. And then you just need the energy or the activation device to activate the whole game and the whole scenery or like universe universe universe would be water juice soda anything with that mix. Agent: That's a very comprehensive list of pairings, and it sounds like you truly enjoy your nuggets with a wide variety of things, especially with plenty of sauces and a Frappe. Now, let's move on to the context of your choices. In what situations do you choose these forty-piece nuggets most often? Please include details like time pressure, location, ordering channel, and who you're with.",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview7.txt",
+    "total_chunks": 11
+  },
+  "client_id": null,
+  "chunk_index": 10,
+  "parent_record_id": "4a332a06-4576-4f21-9c79-a49e233ddeb4"
+}

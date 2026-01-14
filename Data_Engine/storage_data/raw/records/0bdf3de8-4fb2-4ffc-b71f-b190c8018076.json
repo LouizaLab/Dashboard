@@ -1,0 +1,23 @@
+{
+  "record_id": "0bdf3de8-4fb2-4ffc-b71f-b190c8018076",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.865832",
+  "raw_text": "e. What else? I like the tang from the sauce that they put on it, so sometimes what I've meant to do actually was try to order a double cheeseburger with that sauce on it, because I guess you get more meat, but either way it's still a Big Mac. I like just kind of how it all mushes together too. Agent: That's interesting about the sauce and how it all comes together. What are the top two or three things that make the Big Mac \"perfect\" for you? For example, is it a crunchy coating, a specific sauce balance, the heat level, or the bun texture? User: I would say it would be the sauce level and the tank from the sauce. And then the second thing would be the texture overall. Agent: Understood, the sauce level and tang, and the overall texture are key for you. Now, on the flip side, what are the top two or three things that would make a Big Mac \"bad\" for you? For instance, if it were soggy, dry, cold, under-salted, too greasy, or stale? User: If it was cold, for sure. That's really yucky. And",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview11.txt",
+    "total_chunks": 11
+  },
+  "client_id": null,
+  "chunk_index": 1,
+  "parent_record_id": "44b252ef-4792-43c3-9a3f-f1c78eb31a4e"
+}

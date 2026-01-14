@@ -1,0 +1,23 @@
+{
+  "record_id": "ace045dd-3d8a-4fdd-a14d-d89838869aa1",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.870877",
+  "raw_text": "probably usually go with either chicken strips or chicken sandwich. The chicken sandwich I prefer if it has some vegetables such as tomato and lettuce. So honestly, for chicken sandwich, I think a McChicken I prefer over a over Chick-fil-A because Chick-fil-A doesn't have any vegetables and stuff. It's just kind of like a plain chicken piece and then maybe a pickle. In terms of my chicken strips, to be honest, I don't know if fast food restaurants have that amazing chicken strips. Chicken strips, honestly, is more something I get from the hot food aisle of a grocery store or even a cafeteria or like, yeah, something like that, I think. Although, I mean, Popeye's has good chicken strips, I think. Is it Popeye's? It might be Popeye's. Agent: Thank you for those examples, William. So you mentioned the McDonald's McChicken, Chick-fil-A's chicken sandwich, and chicken strips, possibly from Popeye's or a grocery store. Could you elaborate on what's better or worse about these items compared",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview9.txt",
+    "total_chunks": 11
+  },
+  "client_id": null,
+  "chunk_index": 5,
+  "parent_record_id": "b6abb3dc-02c0-4403-832f-3101e8d6267b"
+}

@@ -1,0 +1,23 @@
+{
+  "record_id": "aa2f97cc-c31c-47cd-93d7-a7ae66fd4f49",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.868254",
+  "raw_text": "ense. You enjoy the Mexican fast-food feel and the choice of fillings. Now, could you name two or three similar items you also like from any chain? For each one, please tell me what's better or worse compared to your favorite Double Quarter Pounder with Cheese. User: I think I would say Chick-fil-A sandwich, chicken sandwich, crispy or spicy Chick-fil-A sandwich. I like how it's chicken. I like how it just has a really consistent taste. The only thing I don't like better is I like the sides and stuff you might get from the McDonald's, sometimes a little better. Sometimes I'd rather have the fries, but even though I do really like Chick-fil-A fries, it's kind of really almost a tie. And my second one would have to be maybe like something, maybe like breakfast from Chick-fil-A, I would have to say. So like one of those wraps, chicken wraps. Agent: Okay, so a Chick-fil-A crispy or spicy chicken sandwich is one. You appreciate its consistent chicken taste, though you sometimes prefer McDo",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview23.txt",
+    "total_chunks": 12
+  },
+  "client_id": null,
+  "chunk_index": 3,
+  "parent_record_id": "77b85ac2-dbd2-465a-8dcb-6362a88d094f"
+}

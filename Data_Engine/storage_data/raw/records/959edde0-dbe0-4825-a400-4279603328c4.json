@@ -1,0 +1,24 @@
+{
+  "record_id": "959edde0-dbe0-4825-a400-4279603328c4",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.811704",
+  "raw_text": "User: I order sandwiches. Sometimes the sandwiches have hamburger meat on them. Sometimes they have deli meat. But I like sandwiches, so I usually order sandwiches for dinner, and I'll eat the sandwich.\nAgent: Thank you for sharing that. Focusing on fast food specifically, what does \"good value\" mean to you? Could you pick your top two or three factors, such as taste, portion size, speed, nutrition, consistency, or price, and explain how you judge if something is \"worth it\"?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview16",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview16.txt",
+    "total_chunks": 24,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 13,
+  "parent_record_id": "073b5ea8-26dc-4e34-ab4d-47aa68550d3c"
+}

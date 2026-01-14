@@ -1,0 +1,24 @@
+{
+  "record_id": "d877000f-460c-4b48-af53-1d98659731e3",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.820961",
+  "raw_text": "User: if a new fast food restaurant was built by me\nAgent: So, if a new fast-food restaurant was built near you, that could change your default. What would you need to see happen repeatedly, such as taste, consistency, price, or convenience, for you to permanently change your default order?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "36",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/36.txt",
+    "total_chunks": 29,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 26,
+  "parent_record_id": "4c0b766b-108c-463c-ac1b-84504ef7b9d6"
+}

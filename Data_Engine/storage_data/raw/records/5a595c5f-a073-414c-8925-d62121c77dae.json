@@ -1,0 +1,24 @@
+{
+  "record_id": "5a595c5f-a073-414c-8925-d62121c77dae",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.737156",
+  "raw_text": "User: Well, let's see. I think first, if the freshness slips, I think if the bun feels stale, or maybe the lettuce is kind of limp, or the burger isn't right off, hot off the grill, I think the whole thing falls apart pretty quickly. You know, freshness to me is the foundation that makes it an out what it is, other than its customer service, lose that and you kind of lose that magic. Second, if the balance is off, too much sauce over salty patties or cheese that melts into a greasy mess can really overwhelm everything. When one note gets too loud, the burger stops working. Third, if the consistency breaks, if one visit is great and the next feels rushed and sloppy, that kind of trust erodes. I think with a classic like this, you kind of have to expect the same quality every single time you go.\nAgent: Thank you for those detailed insights. It sounds like freshness, balance, and consistency are truly critical for your experience.\n\nNow, if your In-N-Out Double Double was unavailable, what would you order instead, including the chain and the specific item?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "43",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/43.txt",
+    "total_chunks": 21,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 17,
+  "parent_record_id": "62ea0a62-30c7-451c-a40e-12d65a3a1963"
+}

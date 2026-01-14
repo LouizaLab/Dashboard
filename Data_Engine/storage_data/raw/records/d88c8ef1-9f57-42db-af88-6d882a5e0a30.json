@@ -1,0 +1,24 @@
+{
+  "record_id": "d88c8ef1-9f57-42db-af88-6d882a5e0a30",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.798013",
+  "raw_text": "User: 5CEA73210B209700001ACEE5F\nAgent: Thank you. What is your favorite fast-food item, including the chain and the exact item? And could you tell me why you like it?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "35",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/35.txt",
+    "total_chunks": 34,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 1,
+  "parent_record_id": "e5c79867-15fb-4539-91e6-0af0a124ad06"
+}

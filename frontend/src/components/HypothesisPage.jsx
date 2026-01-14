@@ -4,6 +4,7 @@ import HypothesisInput from './hypothesis/HypothesisInput';
 import ResultsPanel from './hypothesis/ResultsPanel';
 import AgentDrawer from './hypothesis/AgentDrawer';
 import AgentGrid from './hypothesis/AgentGrid';
+import MarketInsightPanel from './hypothesis/MarketInsightPanel';
 
 function HypothesisPage() {
   const [filters, setFilters] = useState({
@@ -156,6 +157,16 @@ function HypothesisPage() {
       setSelectedAgentIds([...selectedAgentIds, agent.id]);
     }
   };
+
+  // Show Market Insight Panel when Market Insight is selected
+  if (filters.view === 'Market Insight') {
+    return (
+      <div className="flex flex-1 overflow-hidden relative">
+        <LeftFilters filters={filters} setFilters={setFilters} />
+        <MarketInsightPanel filters={filters} />
+      </div>
+    );
+  }
 
   return (
     <div className="flex flex-1 overflow-hidden relative">

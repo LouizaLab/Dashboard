@@ -1,0 +1,24 @@
+{
+  "record_id": "c9cdcb0b-d3f8-4292-bc5c-5f70806036ef",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.662687",
+  "raw_text": "User: I would get the Doritos Locos Tacos at Taco Bell.\nAgent: Thank you. Why is the Doritos Locos Tacos the closest replacement for you?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview21",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview21.txt",
+    "total_chunks": 34,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 11,
+  "parent_record_id": "f688d581-35a0-4caf-a59e-da7bf685c87c"
+}

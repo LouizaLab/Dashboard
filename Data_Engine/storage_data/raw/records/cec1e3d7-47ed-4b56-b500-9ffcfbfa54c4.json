@@ -1,0 +1,24 @@
+{
+  "record_id": "cec1e3d7-47ed-4b56-b500-9ffcfbfa54c4",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.846384",
+  "raw_text": "User: Yeah, yeah, actually, they, and I haven't been to Burger King for a couple months, but they used to sell, basically, it was really similar to the Big Mac. It was kind of their version. The sauce wasn't quite as tangy, but it kind of had its own taste to it that was still good. So it was really close to the original Big Mac, although I do have to admit it had more meat on it than what they sell at McDonald's. So I mean, that was a really close second. If not, kind of, I mean, I'd be perfectly fine with that if I couldn't get the other. And then another one would be when I go to Wendy's, I'll get the triple cheeseburger, but in this case, I get it plain because the way they make it is different than at McDonald's. At McDonald's, I think they preheat the meat, whereas at a restaurant you have to wait until it gets cold and then you can get the double cheeseburger. So at Wendy's they make it more fresh so there's a little more grease to it. So if you add too much sauce, then it kind of throws everything off. So I'll get it plain and that seems to work fine. It's just really expensive there. That's the only problem.\nAgent: That's very helpful. So, for the Burger King burger that's similar to the Big Mac, what aspects of it were better or worse compared to your McDonald's Big Mac? And for the Wendy's Triple Cheeseburger, what makes it better or worse than your favorite Big Mac, aside from the price?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview11",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview11.txt",
+    "total_chunks": 14,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 10,
+  "parent_record_id": "4d36d5b4-cfbd-45d5-b60e-c0beaeaa52ce"
+}

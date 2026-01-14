@@ -1,0 +1,24 @@
+{
+  "record_id": "45d7fc8a-9e9e-4db4-93b5-f3a900afb9a9",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.724463",
+  "raw_text": "User: The smell is just kind of, um... It's kind of a savory smell. It smells like pepperoni. It tastes really good. It's spicy. The pizza crust is soft and the cheese is gooey.\nAgent: Thank you for that detailed description. What are the top two or three things that make that Papa John's pepperoni pizza \"perfect\" for you?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview5",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview5.txt",
+    "total_chunks": 37,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 3,
+  "parent_record_id": "70f85520-c679-4467-82c3-f02b7ab569c2"
+}

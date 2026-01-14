@@ -1,0 +1,24 @@
+{
+  "record_id": "c2044b06-35c6-4ed9-ae5d-7213856edac3",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.842891",
+  "raw_text": "User: Just being hungry and needing to eat something and being nearby a restaurant.\nAgent: Thank you for clarifying. So, when you're hungry and near a restaurant, would that order be planned or more spontaneous?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview10",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview10.txt",
+    "total_chunks": 43,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 23,
+  "parent_record_id": "7855d946-010e-4b12-b478-072329d70cb1"
+}

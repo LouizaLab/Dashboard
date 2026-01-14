@@ -1,0 +1,23 @@
+{
+  "record_id": "5d26656f-a638-410f-ac08-55d6158473f7",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.868590",
+  "raw_text": "trying to eat healthier than two to four weeks ago? Why or why not? User: No I am not. Agent: Understood, you are not trying to eat healthier than two to four weeks ago. What specific rule are you following, if any, regarding your food choices? For example, less fried food, fewer calories,... User: 80-20. 80-20 rule Agent: Okay, you're following the 80-20 rule. What recent change, if any, has affected your eating? For example, a new gym routine, a diet plan, travel, stress, a change in schedule, or medication? And what did it change in your fast-food choices? User: Nothing recent. Agent: Understood, so nothing recent has affected your eating habits or fast-food choices. When do you try new items versus sticking to your usual? Could you give one recent example of each and explain why? User: Not at the moment Agent: Okay, I understand you don't have an example at the moment. If a new item were to become repeat-worthy for you, what would usually be the reason? For example, would it ta",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview25.txt",
+    "total_chunks": 12
+  },
+  "client_id": null,
+  "chunk_index": 9,
+  "parent_record_id": "930845f1-0918-42cc-a70f-caea6918e705"
+}

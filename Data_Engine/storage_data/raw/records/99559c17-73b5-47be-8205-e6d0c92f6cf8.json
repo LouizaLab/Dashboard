@@ -1,0 +1,24 @@
+{
+  "record_id": "99559c17-73b5-47be-8205-e6d0c92f6cf8",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.779810",
+  "raw_text": "User: I use the rewards program or whatever so I get discounts and I get points to add to future purchases. It works out pretty well.\nAgent: That's smart to use the rewards program.\n\nSo, if your usual McDonald's cheeseburger meal, even with your rewards, cost two dollars more than it typically does, what would you do? Would you still order it, or would you choose something else?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "34",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/34.txt",
+    "total_chunks": 23,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 20,
+  "parent_record_id": "e45fb1d7-d025-48e7-9f73-0ae6be217425"
+}

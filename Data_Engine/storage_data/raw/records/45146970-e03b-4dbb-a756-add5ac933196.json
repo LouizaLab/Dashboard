@@ -1,0 +1,24 @@
+{
+  "record_id": "45146970-e03b-4dbb-a756-add5ac933196",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.696967",
+  "raw_text": "User: I probably wouldn't do anything differently. If it was... If there was a deal, maybe I would buy two so I could have one and then have another for a snack later or like the next day I could have it again if I wanted. So I guess the only thing it would change is I might buy an extra one.\nAgent: That's a good strategy. Now, thinking about the past two weeks, what have been your most common fast-food patterns? This includes when you eat it, what you usually order, and what typically triggers it.",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview18",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview18.txt",
+    "total_chunks": 19,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 15,
+  "parent_record_id": "68950778-79ab-467c-ba48-e8d70a851473"
+}

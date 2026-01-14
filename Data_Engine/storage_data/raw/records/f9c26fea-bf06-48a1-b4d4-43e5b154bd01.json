@@ -1,0 +1,24 @@
+{
+  "record_id": "f9c26fea-bf06-48a1-b4d4-43e5b154bd01",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.748110",
+  "raw_text": "User: I have tried Raisin Cane's before and they have a really interesting concept where they give you two fried chicken tenders, but they also give you toast and this kind of spicy sauce as well. And usually you make a sandwich with the toast and fried chicken. So on occasion that can be great, but I would say accessibility of canes can be a little tough. They're not that many stores. And usually the lines are pretty long, at least where I go. So that's the only obstacle.\nAgent: That's interesting how you create a sandwich with the toast and tenders at Raising Cane's, Sean. It sounds like a unique experience, even with the accessibility challenges.\n\nMoving on, what do you usually pair with your favorite Popeye's chicken sandwich, such as drinks, sides, or sauces? And on the flip side, what would you absolutely never pair it with, and why?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview8",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview8.txt",
+    "total_chunks": 19,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 6,
+  "parent_record_id": "1f511bb6-4266-4aca-8ca1-8692fc9731e7"
+}

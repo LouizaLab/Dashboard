@@ -1,0 +1,23 @@
+{
+  "record_id": "5927db2d-cb6d-4da0-a395-c5f0542a157f",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.865648",
+  "raw_text": "uld have had to change for you to not get fast food today? User: I would have had to not have enough time, probably. Agent: Did you switch from your usual chain or usual item today? User: No. Agent: Understood. What would make you permanently change your \"default\" order? User: If they completely changed the recipe... Agent: And what would you need to see happen repeatedly, such as changes in taste, consistency, price, or convenience, that would make you permanently change your default order? User: I don't think that anything would make me permanently change my default order. Agent: Okay, I understand. How much does a deal typically influence your choice when you're deciding what to order? User: A decent amount kind of. I mean if I find a deal that I would use, I'm pretty happy but I won't change my order just because there's a deal for it. Agent: That's helpful to know. What kind of deal actually changes your behavior? For example, is it a buy-one-get-one offer, a... User: A buy one ge",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview10.txt",
+    "total_chunks": 12
+  },
+  "client_id": null,
+  "chunk_index": 7,
+  "parent_record_id": "7a5e9228-50a7-40b1-9372-4affd4e9d5b6"
+}

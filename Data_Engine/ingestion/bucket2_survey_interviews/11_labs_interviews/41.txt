@@ -1,0 +1,95 @@
+Call Transcript:
+
+User: Hello?
+Agent: I'm here to collect information about your food preferences to complete the onboarding so you can get rewarded. To start, please say your name or Prolific ID.
+User: 6-3-D-7-B-7-7-6-A-9-9-2-3-F-E-2-A-6-9-D-3-6-B-D.
+Agent: Thank you. What is your favorite fast-food item, including the chain and the exact item? And could you tell me why you like it?
+User: I like the Big Mac from McDonald's.
+Agent: Okay, the Big Mac from McDonald's. Could you tell me more about why you like it? I'm interested in details about its flavor, texture,...
+User: Because it is the flagship sandwich for McDonald's, which is the best restaurant in the entire world.
+Agent: I understand you enjoy the Big Mac and consider McDonald's the best. To help me understand your preferences better, could you describe what specifically makes the Big Mac perfect for you? I'm curious about its flavor, texture, temperature, smell, or even the...
+User: Beef patties, special sauce, lettuce cheese pickles onions on a sesame seed bun.
+Agent: Thank you for listing the ingredients. Now, thinking about those elements, what are the top two or three things that make the Big Mac "perfect" for you? For example,...
+User: The Big Mac sauce and the pickles.
+Agent: Great, the Big Mac sauce and the pickles. On the flip side, what are the top two or three things that could make a Big Mac "bad" for you? For instance, if it were soggy, dry, or cold?
+User: Stale bread, undercooked meat and tomatoes that aren't fresh.
+Agent: Thank you for sharing that. If the Big Mac was unavailable, what would you order instead, including the chain and the specific item? And why would that be the closest...
+User: I'd get a number two meal from McDonald's because that is the second best item on their menu.
+Agent: Okay, so a number two meal from McDonald's. Could you explain why that particular item is the closest replacement for the Big Mac in your opinion?
+User: Because it is the second menu item on their menu. Big Mac is the number one. The number two is the second best item on their menu.
+Agent: I understand that the number two meal is the second item on the menu. To clarify, what specific qualities or characteristics of the number two meal make it the closest replacement...
+User: It's two cheeseburgers. I don't have to get one cheeseburger. I can get two cheeseburgers, fries, and a drink. That's Philly.
+Agent: Thank you for that explanation. Now, thinking beyond McDonald's, can you name two or three similar items you also like from any other fast-food chains? And for each of those, could you...
+User: I don't eat McDonald's. I do not eat any other fast food, just McDonald's.
+Agent: Understood, you only eat McDonald's. So, sticking with McDonald's, what do you usually pair with your Big Mac? This could be drinks, sides,...
+User: I get fries and a drink. That's it. Just fries and a drink, no chicken nuggets
+Agent: Okay, fries and a drink. And what would you never pair your Big Mac with, and why?
+User: . I can't say never because I like all McDonald's items. So I would get a Big Mac with anything.
+Agent: I understand you enjoy all McDonald's items and would pair a Big Mac with anything on their menu.
+
+Moving on, in what situations do you choose the Big Mac most often? Please consider factors like time...
+User: I choose the Big Mac whenever I get food from McDonald's whether it's lunch or dinner. It's Big Mac.
+Agent: Thank you. How does price change your choice? For example, if the Big Mac cost two...
+User: McDonald's recently went up on their prices. I stay with them because they're the best. But if McDonald's go up like two, three more dollars, I'm probably going to switch.
+Agent: I understand that a significant price increase might make you consider switching. What if there was a deal on the Big Mac or another McDonald's item? What would you do differently then?
+User: Whenever they have deals on Big Macs, I definitely buy the deal. But if they got a deal on another thing, I may not get it. But any deals on Big Macs, I'm there.
+Agent: Thank you for that insight. Over the past two weeks, what have been your most common fast-food patterns? This includes when you eat it, what you usually order, and what...
+User: The past two weeks, all I get is a Big Mac meal. If I'm feeling extra spicy, I might get two Big Macs for only one meal and then one sandwich.
+Agent: Thank you. What does "good value" mean to you in fast food? Could you pick your top two or three...
+User: Good value is anything from McDonald's because it tastes delicious and is relatively affordable so anything from McDonald's is good value.
+Agent: I understand that for you, anything from McDonald's represents good value because of its taste and affordability. From the options of taste, portion size, speed, nutrition, consistency, and price, could you pick your top two or three factors that define "good value" for you, and explain how you judge if something is "worth it" based on those?
+User: If it's from McDonald's, it's worth it to me. If it's a Big Mac, it's worth it. McDonald's is Big Macs to me. McDonald's is value.
+Agent: I understand that McDonald's and the Big Mac represent good value to you. When you think about why they are good value, which of these factors are most important: taste, portion...
+User: Taste, quality, portion size.
+Agent: Thank you. So, taste, quality, and portion size are your top factors for good value. Could you explain how you judge if something is "worth it" based on those three things?
+User: If it is a Big Mac, it's worth it. I compare all the items to a Big Mac. That's why I get the Big Mac because it's the best.
+Agent: I understand that the Big Mac is your benchmark for worth and value.
+
+Now, let's move on to some other aspects of your fast-food choices. Compared to your last fast-food order, what changed today, if anything?
+User: I ordered a McGriddle today cause it was the breakfast, but nothing else changed.
+Agent: Okay, so you ordered a McGriddle today because it was breakfast. Thinking about that, what was the biggest driver for that change? Was it your mood,...
+User: I was hungry. It was morning time. I needed to eat. So I just got that and it was good. I'll probably get another one later.
+Agent: I understand you were hungry and it was morning, leading you to choose the McGriddle. What "mode" would you say you were in today when you made that choice? For...
+User: I was in a McDonald's mode. I wanted McDonald's so I went and got McDonald's.
+Agent: Okay, you were in a McDonald's mode. When you're in that specific mode, what's the first thing that typically changes in your order?
+User: Nothing. Nothing changes. Today was a change. I guess that's why talking to you now because it was special had him at griddle and i liked it but i'm more than a big mac but it was good.
+Agent: I see. So today's McGriddle was a bit of a special occasion. What specifically triggered that order today? Was it a craving, a deal, an...
+User: Couldn't get up Big Mac at the morning time so I got a McGriddle.
+Agent: I understand you couldn't get a Big Mac in the morning, so you chose the McGriddle. Was that decision planned or spontaneous? And what would have had to change for you...
+User: That's it nothing would have changed I would have got a Big Mac if they didn't have breakfast time.
+Agent: So, if Big Macs were available, you would have gotten one. Did you switch...
+User: Yes.
+Agent: Okay, you switched. What exactly caused that switch today? Was it a deal, a new item, boredom, a bad experience, health, price,...
+User: None of that. I just couldn't get a Big Mac that's all.
+Agent: I understand the switch was solely because the Big Mac wasn't available during breakfast hours.
+
+What would make you permanently change your "default" order, which is the Big Mac? What would you need to see...
+User: If I could get like four McGriddles for four dollars
+Agent: So, a deal like four McGriddles for four dollars would make you consider a permanent change.
+
+How much did a deal influence your choice today, specifically for the McGriddle?
+User: None. None at all.
+Agent: Understood, no deal influenced your choice today. What kind of deal actually changes your behavior? For example, is it buy one get one free, a percentage...
+User: No deals. No deals can change me. It's just a Big Mac sometimes they need two for one on Wednesday
+Agent: I understand that generally, deals don't sway you, but a two-for-one Big Mac on Wednesday definitely catches your attention.
+
+Has your price sensitivity changed in the last two to four weeks? If so, why? What...
+User: None of that has changed.
+Agent: Okay, thank you. Are you trying to eat healthier than two to four weeks ago? Why or why not?
+User: No I'm not, no I'm not because I like Big Macs. I'm gonna keep eating Big Macs.
+Agent: I understand you're happy with your Big Mac choices.
+
+When do you usually try new items versus sticking to your usual Big Mac? Could you give one recent example...
+User: I don't usually try new items. Today was just super special.
+Agent: Okay, so today was a rare exception. If a new item, like the McGriddle today, were to become repeat-worthy for you, what would usually be the reason? For example, would it be because it...
+User: It was four for four.
+Agent: So, a "four for four" deal would make a new item repeat-worthy for you.
+
+What is your "autopilot" order and why is it your default? Is it taste, consistency, speed, price,...
+User: That's all I eat is just Big Macs man.
+Agent: I understand your autopilot order is the Big Mac. If you were to get bored of your usual Big Mac, what would you switch to? Would it be a new flavor, a new chain, a different format like a wrap versus a...
+User: If I get tired of eating Big Macs I'm going to just not eat fast food no more.
+Agent: I understand that your loyalty to the Big Mac is very strong.
+
+How do other people influence your order, if at all? For example, does a group choice,...
+User: They don't. People don't even know I eat McDonald's. I go hard.

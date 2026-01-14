@@ -1,0 +1,24 @@
+{
+  "record_id": "58d973e7-fc6d-4167-a1c1-c3efab76d3d2",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.820626",
+  "raw_text": "User: Spontaneous.\nAgent: Okay, spontaneous. What would have had to change for you to not get fast food today?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "36",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/36.txt",
+    "total_chunks": 29,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 23,
+  "parent_record_id": "4c0b766b-108c-463c-ac1b-84504ef7b9d6"
+}

@@ -1,0 +1,24 @@
+{
+  "record_id": "44d51cda-3686-4530-8ecb-62346ca35e31",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.761652",
+  "raw_text": "User: Okay, temp is usually hot. I like them fresh and hot. Aftertaste, like I said, it gives a little kick, you know, with the spice to it. As far as the smell, the aroma is lovely. One of my favorites.\nAgent: That's a great description. Now, what are the top two or three things that make those Wingstop Buffalo wings \"perfect\" for you?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "45",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/45.txt",
+    "total_chunks": 22,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 4,
+  "parent_record_id": "94dc8ad1-54d4-42c6-baca-2b6d6e488033"
+}

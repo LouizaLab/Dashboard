@@ -1,0 +1,23 @@
+{
+  "record_id": "26bc9765-d81b-4092-b288-ce8bedcd9563",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.865391",
+  "raw_text": "arbecue rib compare to your favorite Arby's brisket sandwich? What's better or worse about it? User: I like the way it's cooked. It has a little sauce on it. I'm not a big on sauce on my meat. I like to add sauce as I need it when I'm eating. I don't really care for it to be on my meat, but the way they cook the ribs are very tender, and it's just the way they cook it. Agent: That sounds delicious. Do you have one more similar item you like from any chain, and how does it compare to your favorite Arby's brisket sandwich? User: Let me see. I like... Agent: No problem, take your time. User: Okay. I'm trying to decide because, like I said, I have... I like chicken nuggets or McDonald's. I like their chicken nuggets. And what I like about it is that it's individual pieces and they taste like real meat. So I like them compared to the brisket. It's not better than the brisket for me, but if I had to have a choice, I would choose the brisket over the McDonald's chicken nuggets. Agent: Thank y",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview1.txt",
+    "total_chunks": 8
+  },
+  "client_id": null,
+  "chunk_index": 4,
+  "parent_record_id": "ce681e47-af5e-424a-9db6-a230fd8e80cd"
+}

@@ -1,0 +1,24 @@
+{
+  "record_id": "e943e084-b9c1-4b87-98fb-eb254554fb6e",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.771603",
+  "raw_text": "User: The meat, the cheese...\nAgent: Thank you. So, the presence of meat and cheese makes it a close replacement. Is there anything else that makes the five-layer burrito the closest replacement for you?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "44",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/44.txt",
+    "total_chunks": 33,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 11,
+  "parent_record_id": "694c9af7-c584-49a2-a404-743a61005dd2"
+}

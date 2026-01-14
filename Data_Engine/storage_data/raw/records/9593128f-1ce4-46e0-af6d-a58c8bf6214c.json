@@ -1,0 +1,24 @@
+{
+  "record_id": "9593128f-1ce4-46e0-af6d-a58c8bf6214c",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.846289",
+  "raw_text": "User: It wouldn't be similar but one other one, one other fast food chain that I go to that I like is Panda Express and usually I get the orange chicken with white rice with the side of the cheese rangoon.\nAgent: Thank you for sharing your preference for Panda Express. While orange chicken is a great choice, I was hoping you could tell me about two or three similar items to the Big Mac that you also enjoy, perhaps other burgers or sandwiches from different fast-food chains. For each, what do you find...",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview11",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview11.txt",
+    "total_chunks": 14,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 9,
+  "parent_record_id": "4d36d5b4-cfbd-45d5-b60e-c0beaeaa52ce"
+}

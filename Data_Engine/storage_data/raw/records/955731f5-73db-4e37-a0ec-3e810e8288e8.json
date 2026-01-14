@@ -1,0 +1,23 @@
+{
+  "record_id": "955731f5-73db-4e37-a0ec-3e810e8288e8",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.867118",
+  "raw_text": "za, but it would be my second favorite option. Agent: I understand that they aren't close replacements, but rather your next preferred options. Thank you for clarifying. Now, could you name two or three similar items you also like from any chain? And for each one, what's better or worse compared to your favorite Mexican Pizza? User: I can't really think of anything that's similar. Maybe just a typical regular type of pizza would be similar, like a cheese pizza. And maybe if you had a little bit of sausage on it or some type of meat, that could be a good second. Agent: Okay, so a regular cheese pizza, perhaps with sausage. What aspects of a regular pizza are better or worse compared to your favorite Mexican Pizza from Taco Bell? User: It's better, I guess, because you get more of it. If you order a large pizza, it's going to be much bigger than the Mexican pizza from Taco Bell. What's worse is, I guess, it doesn't hit the spot as much as a Mexican pizza for me. They're good, but not my",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview18.txt",
+    "total_chunks": 10
+  },
+  "client_id": null,
+  "chunk_index": 4,
+  "parent_record_id": "cc9495dc-30ce-4277-b912-e84e4662cd15"
+}

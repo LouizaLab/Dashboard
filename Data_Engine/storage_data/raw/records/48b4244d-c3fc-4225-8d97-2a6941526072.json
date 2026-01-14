@@ -1,0 +1,39 @@
+{
+  "record_id": "48b4244d-c3fc-4225-8d97-2a6941526072",
+  "bucket_id": 1,
+  "source_name": "burger_king_menu",
+  "source_type": "csv",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2025-12-27T02:16:07.070572",
+  "raw_text": null,
+  "structured_fields": {
+    "Item": "Double Quarter Pound King Sandwich"
+  },
+  "numerical_fields": {
+    "Calories": 740.0,
+    "Fat Calories": 380.0,
+    "Fat (g)": 43.0,
+    "Saturated Fat (g)": 16.0,
+    "Trans Fat (g)": 0.5,
+    "Cholesterol (mg)": 110.0,
+    "Sodium (mg)": 1440.0,
+    "Total Carb (g)": 53.0,
+    "Dietary Fiber (g)": 2.0,
+    "Sugars (g)": 13.0,
+    "Protein (g)": 37.0
+  },
+  "categorical_fields": {
+    "Category": "Burgers"
+  },
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "dataset_name": "burger_king_menu",
+    "row_index": 102,
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Phase_1_Taste_Embedding_Model/data/raw/burger-king-menu.csv"
+  },
+  "client_id": null,
+  "chunk_index": null,
+  "parent_record_id": null
+}

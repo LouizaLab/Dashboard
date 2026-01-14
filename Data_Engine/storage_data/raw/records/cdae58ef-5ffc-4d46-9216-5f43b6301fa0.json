@@ -1,0 +1,24 @@
+{
+  "record_id": "cdae58ef-5ffc-4d46-9216-5f43b6301fa0",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.816154",
+  "raw_text": "User: I'd say price.\nAgent: So, price would be the main factor that would make you permanently change your default order.\n\nNow, let's talk about deals. How much did a deal influence this choice today?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview17",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview17.txt",
+    "total_chunks": 33,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 24,
+  "parent_record_id": "88d4a69e-5a62-47c8-8b20-22b88f242475"
+}

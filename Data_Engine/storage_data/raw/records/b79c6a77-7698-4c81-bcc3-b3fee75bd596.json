@@ -1,0 +1,24 @@
+{
+  "record_id": "b79c6a77-7698-4c81-bcc3-b3fee75bd596",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.707177",
+  "raw_text": "User: Probably if it were too saucy and if the bun was smashed.\nAgent: I see, so too much sauce or a smashed bun would definitely detract from the experience.\n\nIf a Big Mac were unavailable, what would you order instead, including the chain and the specific item? And why would that be the closest replacement for you?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview2",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview2.txt",
+    "total_chunks": 31,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 5,
+  "parent_record_id": "89414df8-139e-4b72-9450-a29a8a41b846"
+}

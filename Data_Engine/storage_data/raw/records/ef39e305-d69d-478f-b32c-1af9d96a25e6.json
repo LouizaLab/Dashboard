@@ -1,0 +1,23 @@
+{
+  "record_id": "ef39e305-d69d-478f-b32c-1af9d96a25e6",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.867646",
+  "raw_text": "would you order instead, including the chain and the specific item? And why would that be the closest replacement for you? User: Probably Burger King's Whopper because that's my second favorite burger. Agent: Okay, the Burger King Whopper. That makes sense as a second choice. Could you name two or three similar items you also like from any chain? And for each one, what's better or worse compared to your favorite Big Mac? User: I like Wendy's Mushroom Swiss Burger and I like Taco Bell's Grilled Cheese Burrito. I like them. They're, you know, they're just a little bit more expensive. Agent: Thank you for sharing those, Sarah. It's interesting to hear your preferences across different chains. What do you usually pair with your favorite Big Mac, such as drinks, sides, sauces, or dessert? And what would you never pair it with, and why? User: I usually pair it with a Diet Coke and some fries. I'd probably not pair it with a salad because if you're eating a Big Mac, you're not going to want",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview2.txt",
+    "total_chunks": 12
+  },
+  "client_id": null,
+  "chunk_index": 2,
+  "parent_record_id": "6cb1c839-9316-444a-b7a9-1e6f04a47cad"
+}

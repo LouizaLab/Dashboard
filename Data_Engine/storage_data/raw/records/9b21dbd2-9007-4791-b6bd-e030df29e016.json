@@ -1,0 +1,24 @@
+{
+  "record_id": "9b21dbd2-9007-4791-b6bd-e030df29e016",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.705955",
+  "raw_text": "User: Nothing.\nAgent: Okay, so no recent changes have affected your eating habits or fast-food choices.\n\nNow, let's talk about novelty versus routine. When do you try new items versus sticking to your usual?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "39",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/39.txt",
+    "total_chunks": 33,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 30,
+  "parent_record_id": "95c43eb4-c8d6-4cf1-a795-e16d4e88afc0"
+}

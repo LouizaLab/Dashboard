@@ -1,0 +1,23 @@
+{
+  "record_id": "bb134b06-391f-4d07-8b89-30c377b31865",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.870621",
+  "raw_text": "le nugget into the BBQ sauce, which is a really awesome because when you dip the nugget and you put that much BBQ sauce in it, you still taste the nugget like if it didn't have BBQ sauce. So it's a constant drenching thirst going through your mouth. For the drink, my favorite drink I would love to match your wish is The Sprite but it would not be the number one winner. I love to match it with The Sprite but the number one winner to match it with would probably be a Frappe. A Frappe, Mocha, Caramel, any flavor would be the winner because that milk just does something with that oil that comes I guess from the nuggets and it tends to break it up more and you need to have, oh also with The Frappe a bottle of water or some type of water or Hawaiian Punch or any other type of drink with it because it's quenching, it's good but you just need that last kicker to kick it off. You know you got the football right there in the middle, you got the player, you got the football in the middle which is",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview7.txt",
+    "total_chunks": 11
+  },
+  "client_id": null,
+  "chunk_index": 9,
+  "parent_record_id": "4a332a06-4576-4f21-9c79-a49e233ddeb4"
+}

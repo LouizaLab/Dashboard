@@ -1,0 +1,23 @@
+{
+  "record_id": "ff31cfb2-9fde-4be0-a966-a97b408f54d0",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.870870",
+  "raw_text": "cold, small, or lacks that fresh, flaky outer layer. Now, if your favorite fried chicken from Church's was unavailable, what would you order instead? Please include the chain and the specific item, and explain why that would be the closest replacement for you. User: I think that if I can't find a Church's chicken, then Popeye's or Jollibee. Jollibee is not as common. Popeye's, I think, is a little more common in most big U.S. cities. Yeah, I think those are my favorite because I actually, I really like bone-in chicken where possible. And I also like, you know, larger chunks of kind of like not uniform chicken in the sandwiches if it's possible. Agent: Okay, so Popeye's or Jollibee fried chicken would be your go-to alternatives, especially since you prefer bone-in chicken and larger, non-uniform pieces. Now, thinking beyond just replacements, can you name two or three other similar items you also like from any chain? And for each of those, could you tell me what's better or worse abou",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview9.txt",
+    "total_chunks": 11
+  },
+  "client_id": null,
+  "chunk_index": 3,
+  "parent_record_id": "b6abb3dc-02c0-4403-832f-3101e8d6267b"
+}

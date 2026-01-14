@@ -1,0 +1,24 @@
+{
+  "record_id": "9340d06f-e336-4578-9061-48a103a5326d",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.711569",
+  "raw_text": "User: I like, I like the Wendy's mushroom and Swiss burger a lot. The only thing that is worse is that the price Wendy's is really expensive. And I also like the Taco Bell grilled cheese burrito.\nAgent: Thank you for those examples. You mentioned the Wendy's Mushroom and Swiss burger is good, but the price is worse compared to the Big Mac.\n\nFor the Taco Bell grilled cheese burrito, what's better or worse about it compared to your favorite Big Mac?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview3",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview3.txt",
+    "total_chunks": 22,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 9,
+  "parent_record_id": "fc77d1e2-9777-4dca-a844-42568cda327f"
+}

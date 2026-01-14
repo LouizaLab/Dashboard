@@ -1,0 +1,24 @@
+{
+  "record_id": "9ff6121e-d38d-44fe-b51d-e450beda67e8",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.711307",
+  "raw_text": "User: I would probably go to Burger King and get a Whopper.\nAgent: Okay, a Whopper from Burger King. Why do you consider that the closest replacement for a Big Mac?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview3",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview3.txt",
+    "total_chunks": 22,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 7,
+  "parent_record_id": "fc77d1e2-9777-4dca-a844-42568cda327f"
+}

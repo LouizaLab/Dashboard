@@ -1,0 +1,24 @@
+{
+  "record_id": "85075d90-cbfa-4f15-8bb6-d1db1932280d",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.725765",
+  "raw_text": "User: I'd probably never pair it with fruit salad because when I have pizza, I want pizza. I don't want healthy food.\nAgent: That makes sense. Moving on, in what situations do you choose your Papa John's pepperoni pizza most often? Please consider factors like time pressure, location such as home or work, the ordering channel like drive-thru or delivery, and who you're with.",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview5",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview5.txt",
+    "total_chunks": 37,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 12,
+  "parent_record_id": "70f85520-c679-4467-82c3-f02b7ab569c2"
+}

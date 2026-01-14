@@ -1,0 +1,24 @@
+{
+  "record_id": "e72ecc51-495e-4341-a438-5312a839e29e",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.812080",
+  "raw_text": "User: Normal mode trying to fill up my stomach without breaking the bank.\nAgent: Understood. When you're in that \"normal mode\" of trying to fill up your stomach without breaking the bank, what's the first thing that changes in your order?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview16",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview16.txt",
+    "total_chunks": 24,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 16,
+  "parent_record_id": "073b5ea8-26dc-4e34-ab4d-47aa68550d3c"
+}

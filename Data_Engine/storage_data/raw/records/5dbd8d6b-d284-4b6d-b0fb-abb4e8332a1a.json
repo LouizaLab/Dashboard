@@ -1,0 +1,23 @@
+{
+  "record_id": "5dbd8d6b-d284-4b6d-b0fb-abb4e8332a1a",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.870590",
+  "raw_text": "o each box is always filled to your delight. Agent: That sounds like a very satisfying meal. What are the top two to three things that make those forty-piece nuggets \"perfect\" for you? User: Oh, man, the sauces. The sauces are the best. You got barbecue, sweet and sour, buffalo, ranch. But I don't really use the buffalo and the ranch. I only really use the barbecue and the sweet and sour. I always kind of dip one and eat half of it in the barbecue and then dip it again in the sweet and sour and eat it in that one. And then I'll grab another one and dip that one in both and then eat that one whole with both of them dipped on it. And I'll repeat that process all the way until I'm full. Agent: That's a very specific and enjoyable dipping strategy. On the flip side, what are the top two to three things that would make those nuggets \"bad\" for you? User: Oh, I guess they could be a little unhealthy sometimes, but to me, I believe you should eat what you want to eat. You know, don't restrict",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview7.txt",
+    "total_chunks": 11
+  },
+  "client_id": null,
+  "chunk_index": 1,
+  "parent_record_id": "4a332a06-4576-4f21-9c79-a49e233ddeb4"
+}

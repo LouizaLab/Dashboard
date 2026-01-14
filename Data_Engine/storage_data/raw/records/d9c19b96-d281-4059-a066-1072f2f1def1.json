@@ -1,0 +1,24 @@
+{
+  "record_id": "d9c19b96-d281-4059-a066-1072f2f1def1",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.680308",
+  "raw_text": "User: Whether or not I ate healthy through the week.\nAgent: That makes sense. So, if you've eaten healthy throughout the week, it influences your decision.\n\nNow, what triggered this order today? Please be specific. Was it a craving, a deal, an ad, someone suggested it, you were nearby, time pressure, you wanted something lighter, or you wanted a treat?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview25",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview25.txt",
+    "total_chunks": 36,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 17,
+  "parent_record_id": "a063913f-2f38-4288-8391-282e73daa401"
+}

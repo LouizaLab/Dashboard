@@ -1,0 +1,24 @@
+{
+  "record_id": "1e894a8f-8799-46d2-955b-6277dd054bb9",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.833737",
+  "raw_text": "User: Usually at night, probably by myself, maybe after all my work's done. No time pressure usually, just kind of after relaxing after the work's over.\nAgent: That's helpful to know. So, typically at night, by yourself, after work, and without time pressure.\n\nHow does price change your choice? For example, if your Double Quarter Pounder with Cheese cost two dollars more, what would you do?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "33",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/33.txt",
+    "total_chunks": 22,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 10,
+  "parent_record_id": "aa98a079-d75e-4bbe-84c1-8fdbe78a1de3"
+}

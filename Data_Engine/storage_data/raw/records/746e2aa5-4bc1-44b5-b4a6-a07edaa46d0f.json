@@ -1,0 +1,23 @@
+{
+  "record_id": "746e2aa5-4bc1-44b5-b4a6-a07edaa46d0f",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.866191",
+  "raw_text": "t cheeseburger truly stands alone for you. What do you usually pair with your In-N-Out cheeseburger? This could include drinks, sides, or sauces. And what would you never pair it with, and why? User: I would pair it with a natural lemonade, fries and extra sauce and there isn't anything that I would never pair it with. Agent: Okay, a natural lemonade, fries, and extra sauce sound like a great combination. Now, thinking about the situations when you choose this item most often, could you tell me about that? For example, does it depend on time pressure, your location like home or work, the ordering channel such as drive-thru or delivery, or who you're with? User: No, it's pretty the same throughout. Agent: Understood, so your choice of the In-N-Out cheeseburger is consistent across different situations. How does price change your choice? For example, if it cost two dollars more, what would you do? And if there was a deal, what would you do differently? User: If it cost more I would st",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview13.txt",
+    "total_chunks": 12
+  },
+  "client_id": null,
+  "chunk_index": 3,
+  "parent_record_id": "fbb27c4a-b6d1-47bb-9e12-15bb07aa4fc0"
+}

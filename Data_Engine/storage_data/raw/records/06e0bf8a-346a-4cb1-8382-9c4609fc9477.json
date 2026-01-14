@@ -1,0 +1,23 @@
+{
+  "record_id": "06e0bf8a-346a-4cb1-8382-9c4609fc9477",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.866492",
+  "raw_text": "u made that choice? For... User: I was in a McDonald's mode. I wanted McDonald's so I went and got McDonald's. Agent: Okay, you were in a McDonald's mode. When you're in that specific mode, what's the first thing that typically changes in your order? User: Nothing. Nothing changes. Today was a change. I guess that's why talking to you now because it was special had him at griddle and i liked it but i'm more than a big mac but it was good. Agent: I see. So today's McGriddle was a bit of a special occasion. What specifically triggered that order today? Was it a craving, a deal, an... User: Couldn't get up Big Mac at the morning time so I got a McGriddle. Agent: I understand you couldn't get a Big Mac in the morning, so you chose the McGriddle. Was that decision planned or spontaneous? And what would have had to change for you... User: That's it nothing would have changed I would have got a Big Mac if they didn't have breakfast time. Agent: So, if Big Macs were available, you would have g",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview15.txt",
+    "total_chunks": 13
+  },
+  "client_id": null,
+  "chunk_index": 8,
+  "parent_record_id": "f1fd0055-5ec4-40f3-bc6a-48afb005f6d4"
+}

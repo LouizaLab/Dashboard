@@ -1,0 +1,24 @@
+{
+  "record_id": "c63091f6-8e55-4196-8505-1df15a6def77",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.793340",
+  "raw_text": "User: I'm sorry, I don't know what you're talking about today. I don't know what you're referring to.\nAgent: My apologies for the confusion. I'm asking hypothetically, if you were to place a fast-food order, what would typically trigger it? For example, would it be a craving, seeing a deal...",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview28",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview28.txt",
+    "total_chunks": 43,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 22,
+  "parent_record_id": "1940e73c-7457-4f0e-96e6-ebd8700cb728"
+}

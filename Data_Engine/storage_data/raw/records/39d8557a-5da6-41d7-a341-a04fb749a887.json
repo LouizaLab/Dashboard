@@ -1,0 +1,24 @@
+{
+  "record_id": "39d8557a-5da6-41d7-a341-a04fb749a887",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.670258",
+  "raw_text": "User: It's just not as good because they add a lot of extra stuff to it that I don't like. But I will eat it if that's my only alternative. And another thing would be maybe a burger from Carl's Jr., but those ones are too much over the top usually.\nAgent: Thank you for sharing those. So, burgers from...",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview22",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview22.txt",
+    "total_chunks": 23,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 11,
+  "parent_record_id": "deed2ad4-16c9-4967-b168-fdfd906b9174"
+}

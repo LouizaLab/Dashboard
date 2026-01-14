@@ -1,0 +1,24 @@
+{
+  "record_id": "cc3e9a57-1273-4291-9027-b2e49a46db6d",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.681309",
+  "raw_text": "User: 80-20. 80-20 rule\nAgent: Okay, you're following the 80-20 rule.\n\nWhat recent change, if any, has affected your eating? For example, a new gym routine, a diet plan, travel, stress, a change in schedule, or medication? And what did it change in your fast-food choices?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview25",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview25.txt",
+    "total_chunks": 36,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 26,
+  "parent_record_id": "a063913f-2f38-4288-8391-282e73daa401"
+}

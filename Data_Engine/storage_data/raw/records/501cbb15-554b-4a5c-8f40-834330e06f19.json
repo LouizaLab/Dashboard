@@ -1,0 +1,39 @@
+{
+  "record_id": "501cbb15-554b-4a5c-8f40-834330e06f19",
+  "bucket_id": 1,
+  "source_name": "burger_king_menu",
+  "source_type": "csv",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2025-12-27T02:16:07.070782",
+  "raw_text": null,
+  "structured_fields": {
+    "Item": "Double Stacker King"
+  },
+  "numerical_fields": {
+    "Calories": 630.0,
+    "Fat Calories": 290.0,
+    "Fat (g)": 32.0,
+    "Saturated Fat (g)": 10.0,
+    "Trans Fat (g)": 0.0,
+    "Cholesterol (mg)": 15.0,
+    "Sodium (mg)": 1350.0,
+    "Total Carb (g)": 62.0,
+    "Dietary Fiber (g)": 6.0,
+    "Sugars (g)": 13.0,
+    "Protein (g)": 28.0
+  },
+  "categorical_fields": {
+    "Category": "Burgers"
+  },
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "dataset_name": "burger_king_menu",
+    "row_index": 104,
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Phase_1_Taste_Embedding_Model/data/raw/burger-king-menu.csv"
+  },
+  "client_id": null,
+  "chunk_index": null,
+  "parent_record_id": null
+}

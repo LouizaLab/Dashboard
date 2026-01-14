@@ -1,0 +1,751 @@
+{
+  "summary": {
+    "total_posts": 40,
+    "total_comments": 0,
+    "subreddits": [
+      "SkincareAddiction",
+      "AsianBeauty"
+    ],
+    "generated_at": "2025-12-29T14:08:27.322296"
+  },
+  "trends": {
+    "emerging_products": [
+      {
+        "entity": "medicube",
+        "category": "products",
+        "recent_mentions": 3,
+        "mid_mentions": 0,
+        "older_mentions": 0,
+        "growth_rate": 3.0,
+        "momentum": 9.0,
+        "avg_score": 4.0,
+        "quotes": [
+          "[Routine Help] tretinoin cleared my acne, but not my texture - advice? hi everyone! i’ve been lurking here for a while and i feel like my routine is pretty solid, but i still can’t seem to achieve tha",
+          "[Routine Help] tretinoin cleared my acne, but not my texture - advice? hi everyone! i’ve been lurking here for a while and i feel like my routine is pretty solid, but i still can’t seem to achieve tha",
+          "[Routine Help] tretinoin cleared my acne, but not my texture - advice? hi everyone! i’ve been lurking here for a while and i feel like my routine is pretty solid, but i still can’t seem to achieve tha"
+        ],
+        "scores": {
+          "growth_velocity": 0.6,
+          "cross_subreddit": 0.1,
+          "engagement": 0.004,
+          "novelty": 1.0,
+          "momentum": 0.09
+        },
+        "total_score": 0.46340000000000003
+      }
+    ],
+    "emerging_ingredients": [
+      {
+        "entity": "retinol",
+        "category": "ingredients",
+        "recent_mentions": 5,
+        "mid_mentions": 0,
+        "older_mentions": 0,
+        "growth_rate": 5.0,
+        "momentum": 25.0,
+        "avg_score": 50.8,
+        "quotes": [
+          "[Product Question] My skin reacts to Cetaphil (?) and idk why Hii\n\nIm from the uk.\n\nI need help figuring out what these bumps could be and why my skin reacts differently, please explain like I’m 5 tha",
+          "[Routine Help] Thinning Eye Skin Hello, I am 28 and I’ve noticed the skin under my eye is getting thinner, revealing more veins and wrinkles (as you can see in the photos).\n\nI’ve been using Medik8 Int",
+          "Solution for dairy acne- spearmint tea!!! [Acne] So a friend of mine got me on drinking spearmint tea several years ago after telling me about some research published on it's effects on hormonal acne "
+        ],
+        "scores": {
+          "growth_velocity": 0.6,
+          "cross_subreddit": 0.2,
+          "engagement": 0.0508,
+          "novelty": 1.0,
+          "momentum": 0.25
+        },
+        "total_score": 0.51508,
+        "boosted_score": 0.51508
+      },
+      {
+        "entity": "aha",
+        "category": "ingredients",
+        "recent_mentions": 4,
+        "mid_mentions": 0,
+        "older_mentions": 0,
+        "growth_rate": 4.0,
+        "momentum": 16.0,
+        "avg_score": 5.75,
+        "quotes": [
+          "[Routine Help] tretinoin cleared my acne, but not my texture - advice? hi everyone! i’ve been lurking here for a while and i feel like my routine is pretty solid, but i still can’t seem to achieve tha",
+          "Purging or irritation? (Panoxyl benzoyl peroxide 10%) [Product Question] I recently got this product not knowing it came in lower percentages until a little bit later. Ive been using it every night fo",
+          "[Routine Help] Rate my first routine Background: 30-year-old female, dry skin not acne prone, new to skin care but pretty religious about daily SPF (I currently use the daily facial SPF40 by Trader Jo"
+        ],
+        "scores": {
+          "growth_velocity": 0.6,
+          "cross_subreddit": 0.2,
+          "engagement": 0.00575,
+          "novelty": 1.0,
+          "momentum": 0.16
+        },
+        "total_score": 0.492575
+      },
+      {
+        "entity": "bha",
+        "category": "ingredients",
+        "recent_mentions": 3,
+        "mid_mentions": 0,
+        "older_mentions": 0,
+        "growth_rate": 3.0,
+        "momentum": 9.0,
+        "avg_score": 7.0,
+        "quotes": [
+          "[Routine Help] tretinoin cleared my acne, but not my texture - advice? hi everyone! i’ve been lurking here for a while and i feel like my routine is pretty solid, but i still can’t seem to achieve tha",
+          "Purging or irritation? (Panoxyl benzoyl peroxide 10%) [Product Question] I recently got this product not knowing it came in lower percentages until a little bit later. Ive been using it every night fo",
+          "Does skincare sometimes create problems instead of solving them? Lately there’s been a lot of discussion around the idea that skincare can actually make skin worse rather than better. The pattern ofte"
+        ],
+        "scores": {
+          "growth_velocity": 0.6,
+          "cross_subreddit": 0.2,
+          "engagement": 0.007,
+          "novelty": 1.0,
+          "momentum": 0.09
+        },
+        "total_score": 0.47869999999999996
+      }
+    ],
+    "emerging_routines": [
+      {
+        "entity": "serum",
+        "category": "routines",
+        "recent_mentions": 6,
+        "mid_mentions": 0,
+        "older_mentions": 0,
+        "growth_rate": 6.0,
+        "momentum": 36.0,
+        "avg_score": 34.0,
+        "quotes": [
+          "Purging or irritation? (Panoxyl benzoyl peroxide 10%) [Product Question] I recently got this product not knowing it came in lower percentages until a little bit later. Ive been using it every night fo",
+          "[Routine Help] Rate my first routine Background: 30-year-old female, dry skin not acne prone, new to skin care but pretty religious about daily SPF (I currently use the daily facial SPF40 by Trader Jo",
+          "[Acne] Help, I have tried everything Hi! I have been dealing with oily skin, skin texture and acne for 7+ years, I was 1 year in accutene and lymecycline for 3 months, i have seen 3 different dermatol"
+        ],
+        "scores": {
+          "growth_velocity": 0.8,
+          "cross_subreddit": 0.2,
+          "engagement": 0.034,
+          "novelty": 1.0,
+          "momentum": 0.36
+        },
+        "total_score": 0.5953999999999999,
+        "boosted_score": 0.5953999999999999
+      },
+      {
+        "entity": "toner",
+        "category": "routines",
+        "recent_mentions": 4,
+        "mid_mentions": 0,
+        "older_mentions": 0,
+        "growth_rate": 4.0,
+        "momentum": 16.0,
+        "avg_score": 5.5,
+        "quotes": [
+          "[Routine Help] tretinoin cleared my acne, but not my texture - advice? hi everyone! i’ve been lurking here for a while and i feel like my routine is pretty solid, but i still can’t seem to achieve tha",
+          "Review: Illiyoon Ceramide Ato Lotion? &lt;Personal Info&gt;\n\nSkin type: Dry\n\nSkin concerns: Very dry patches that get flaky if I scratch or rub too much, occasional irritation/redness, barrier issues ",
+          "Still using watery toners amidst the milky toner trend and seasonal changes? I’ll start - Etude soonjung 5.5 toner. Simple lightweight hydration + less breakout risk + I’m not fond of thick products a"
+        ],
+        "scores": {
+          "growth_velocity": 0.6,
+          "cross_subreddit": 0.2,
+          "engagement": 0.0055,
+          "novelty": 1.0,
+          "momentum": 0.16
+        },
+        "total_score": 0.49255
+      }
+    ],
+    "pain_points": [
+      {
+        "entity": "redness",
+        "category": "concerns",
+        "recent_mentions": 6,
+        "mid_mentions": 0,
+        "older_mentions": 0,
+        "growth_rate": 6.0,
+        "momentum": 36.0,
+        "avg_score": 31.833333333333332,
+        "quotes": [
+          "[Routine Help] tretinoin cleared my acne, but not my texture - advice? hi everyone! i’ve been lurking here for a while and i feel like my routine is pretty solid, but i still can’t seem to achieve tha",
+          "[Routine Help] tretinoin cleared my acne, but not my texture - advice? hi everyone! i’ve been lurking here for a while and i feel like my routine is pretty solid, but i still can’t seem to achieve tha",
+          "Why Korean skincare worked for my acne when Western products didn’t For years, I treated my acne like an enemy. I used strong cleansers, harsh spot treatments, and anything that promised to “dry out” "
+        ],
+        "scores": {
+          "growth_velocity": 0.8,
+          "cross_subreddit": 0.2,
+          "engagement": 0.03183333333333333,
+          "novelty": 1.0,
+          "momentum": 0.36
+        },
+        "total_score": 0.5951833333333333,
+        "boosted_score": 0.5951833333333333
+      },
+      {
+        "entity": "breakout",
+        "category": "concerns",
+        "recent_mentions": 6,
+        "mid_mentions": 0,
+        "older_mentions": 0,
+        "growth_rate": 6.0,
+        "momentum": 36.0,
+        "avg_score": 20.333333333333332,
+        "quotes": [
+          "Solution for dairy acne- spearmint tea!!! [Acne] So a friend of mine got me on drinking spearmint tea several years ago after telling me about some research published on it's effects on hormonal acne ",
+          "Solution for dairy acne- spearmint tea!!! [Acne] So a friend of mine got me on drinking spearmint tea several years ago after telling me about some research published on it's effects on hormonal acne ",
+          "Solution for dairy acne- spearmint tea!!! [Acne] So a friend of mine got me on drinking spearmint tea several years ago after telling me about some research published on it's effects on hormonal acne "
+        ],
+        "scores": {
+          "growth_velocity": 0.8,
+          "cross_subreddit": 0.2,
+          "engagement": 0.02033333333333333,
+          "novelty": 1.0,
+          "momentum": 0.36
+        },
+        "total_score": 0.5940333333333333,
+        "boosted_score": 0.5940333333333333
+      },
+      {
+        "entity": "irritation",
+        "category": "concerns",
+        "recent_mentions": 5,
+        "mid_mentions": 0,
+        "older_mentions": 0,
+        "growth_rate": 5.0,
+        "momentum": 25.0,
+        "avg_score": 9.4,
+        "quotes": [
+          "Purging or irritation? (Panoxyl benzoyl peroxide 10%) [Product Question] I recently got this product not knowing it came in lower percentages until a little bit later. Ive been using it every night fo",
+          "What are your skincare/beauty INs and OUTs for the year? My IN has been discovering vitamin C sheet masks (specifically Banobagi) and seeing a huge difference in my skin after thinking it was all down",
+          "Review: Illiyoon Ceramide Ato Lotion? &lt;Personal Info&gt;\n\nSkin type: Dry\n\nSkin concerns: Very dry patches that get flaky if I scratch or rub too much, occasional irritation/redness, barrier issues "
+        ],
+        "scores": {
+          "growth_velocity": 0.6,
+          "cross_subreddit": 0.2,
+          "engagement": 0.0094,
+          "novelty": 1.0,
+          "momentum": 0.25
+        },
+        "total_score": 0.5109400000000001,
+        "boosted_score": 0.5109400000000001
+      },
+      {
+        "entity": "burning",
+        "category": "concerns",
+        "recent_mentions": 3,
+        "mid_mentions": 0,
+        "older_mentions": 0,
+        "growth_rate": 3.0,
+        "momentum": 9.0,
+        "avg_score": 6.333333333333333,
+        "quotes": [
+          "[Product Question] My skin reacts to Cetaphil (?) and idk why Hii\n\nIm from the uk.\n\nI need help figuring out what these bumps could be and why my skin reacts differently, please explain like I’m 5 tha",
+          "[Routine Help] tretinoin cleared my acne, but not my texture - advice? hi everyone! i’ve been lurking here for a while and i feel like my routine is pretty solid, but i still can’t seem to achieve tha",
+          "[Acne] Major Breakout 24F never gone through a breakout like this, it started out with red patches like shown in the first 2 images, 2nd day it broke out into pimples with pus all over my face with th"
+        ],
+        "scores": {
+          "growth_velocity": 0.6,
+          "cross_subreddit": 0.1,
+          "engagement": 0.006333333333333333,
+          "novelty": 1.0,
+          "momentum": 0.09
+        },
+        "total_score": 0.46363333333333334
+      }
+    ]
+  },
+  "ranked_trends": {
+    "accelerating": [
+      {
+        "entity": "serum",
+        "category": "routines",
+        "recent_mentions": 6,
+        "mid_mentions": 0,
+        "older_mentions": 0,
+        "growth_rate": 6.0,
+        "momentum": 36.0,
+        "avg_score": 34.0,
+        "quotes": [
+          "Purging or irritation? (Panoxyl benzoyl peroxide 10%) [Product Question] I recently got this product not knowing it came in lower percentages until a little bit later. Ive been using it every night fo",
+          "[Routine Help] Rate my first routine Background: 30-year-old female, dry skin not acne prone, new to skin care but pretty religious about daily SPF (I currently use the daily facial SPF40 by Trader Jo",
+          "[Acne] Help, I have tried everything Hi! I have been dealing with oily skin, skin texture and acne for 7+ years, I was 1 year in accutene and lymecycline for 3 months, i have seen 3 different dermatol"
+        ],
+        "scores": {
+          "growth_velocity": 0.8,
+          "cross_subreddit": 0.2,
+          "engagement": 0.034,
+          "novelty": 1.0,
+          "momentum": 0.36
+        },
+        "total_score": 0.5953999999999999,
+        "boosted_score": 0.5953999999999999
+      },
+      {
+        "entity": "redness",
+        "category": "concerns",
+        "recent_mentions": 6,
+        "mid_mentions": 0,
+        "older_mentions": 0,
+        "growth_rate": 6.0,
+        "momentum": 36.0,
+        "avg_score": 31.833333333333332,
+        "quotes": [
+          "[Routine Help] tretinoin cleared my acne, but not my texture - advice? hi everyone! i’ve been lurking here for a while and i feel like my routine is pretty solid, but i still can’t seem to achieve tha",
+          "[Routine Help] tretinoin cleared my acne, but not my texture - advice? hi everyone! i’ve been lurking here for a while and i feel like my routine is pretty solid, but i still can’t seem to achieve tha",
+          "Why Korean skincare worked for my acne when Western products didn’t For years, I treated my acne like an enemy. I used strong cleansers, harsh spot treatments, and anything that promised to “dry out” "
+        ],
+        "scores": {
+          "growth_velocity": 0.8,
+          "cross_subreddit": 0.2,
+          "engagement": 0.03183333333333333,
+          "novelty": 1.0,
+          "momentum": 0.36
+        },
+        "total_score": 0.5951833333333333,
+        "boosted_score": 0.5951833333333333
+      },
+      {
+        "entity": "breakout",
+        "category": "concerns",
+        "recent_mentions": 6,
+        "mid_mentions": 0,
+        "older_mentions": 0,
+        "growth_rate": 6.0,
+        "momentum": 36.0,
+        "avg_score": 20.333333333333332,
+        "quotes": [
+          "Solution for dairy acne- spearmint tea!!! [Acne] So a friend of mine got me on drinking spearmint tea several years ago after telling me about some research published on it's effects on hormonal acne ",
+          "Solution for dairy acne- spearmint tea!!! [Acne] So a friend of mine got me on drinking spearmint tea several years ago after telling me about some research published on it's effects on hormonal acne ",
+          "Solution for dairy acne- spearmint tea!!! [Acne] So a friend of mine got me on drinking spearmint tea several years ago after telling me about some research published on it's effects on hormonal acne "
+        ],
+        "scores": {
+          "growth_velocity": 0.8,
+          "cross_subreddit": 0.2,
+          "engagement": 0.02033333333333333,
+          "novelty": 1.0,
+          "momentum": 0.36
+        },
+        "total_score": 0.5940333333333333,
+        "boosted_score": 0.5940333333333333
+      },
+      {
+        "entity": "retinol",
+        "category": "ingredients",
+        "recent_mentions": 5,
+        "mid_mentions": 0,
+        "older_mentions": 0,
+        "growth_rate": 5.0,
+        "momentum": 25.0,
+        "avg_score": 50.8,
+        "quotes": [
+          "[Product Question] My skin reacts to Cetaphil (?) and idk why Hii\n\nIm from the uk.\n\nI need help figuring out what these bumps could be and why my skin reacts differently, please explain like I’m 5 tha",
+          "[Routine Help] Thinning Eye Skin Hello, I am 28 and I’ve noticed the skin under my eye is getting thinner, revealing more veins and wrinkles (as you can see in the photos).\n\nI’ve been using Medik8 Int",
+          "Solution for dairy acne- spearmint tea!!! [Acne] So a friend of mine got me on drinking spearmint tea several years ago after telling me about some research published on it's effects on hormonal acne "
+        ],
+        "scores": {
+          "growth_velocity": 0.6,
+          "cross_subreddit": 0.2,
+          "engagement": 0.0508,
+          "novelty": 1.0,
+          "momentum": 0.25
+        },
+        "total_score": 0.51508,
+        "boosted_score": 0.51508
+      },
+      {
+        "entity": "irritation",
+        "category": "concerns",
+        "recent_mentions": 5,
+        "mid_mentions": 0,
+        "older_mentions": 0,
+        "growth_rate": 5.0,
+        "momentum": 25.0,
+        "avg_score": 9.4,
+        "quotes": [
+          "Purging or irritation? (Panoxyl benzoyl peroxide 10%) [Product Question] I recently got this product not knowing it came in lower percentages until a little bit later. Ive been using it every night fo",
+          "What are your skincare/beauty INs and OUTs for the year? My IN has been discovering vitamin C sheet masks (specifically Banobagi) and seeing a huge difference in my skin after thinking it was all down",
+          "Review: Illiyoon Ceramide Ato Lotion? &lt;Personal Info&gt;\n\nSkin type: Dry\n\nSkin concerns: Very dry patches that get flaky if I scratch or rub too much, occasional irritation/redness, barrier issues "
+        ],
+        "scores": {
+          "growth_velocity": 0.6,
+          "cross_subreddit": 0.2,
+          "engagement": 0.0094,
+          "novelty": 1.0,
+          "momentum": 0.25
+        },
+        "total_score": 0.5109400000000001,
+        "boosted_score": 0.5109400000000001
+      }
+    ],
+    "emerging": [
+      {
+        "entity": "toner",
+        "category": "routines",
+        "recent_mentions": 4,
+        "mid_mentions": 0,
+        "older_mentions": 0,
+        "growth_rate": 4.0,
+        "momentum": 16.0,
+        "avg_score": 5.5,
+        "quotes": [
+          "[Routine Help] tretinoin cleared my acne, but not my texture - advice? hi everyone! i’ve been lurking here for a while and i feel like my routine is pretty solid, but i still can’t seem to achieve tha",
+          "Review: Illiyoon Ceramide Ato Lotion? &lt;Personal Info&gt;\n\nSkin type: Dry\n\nSkin concerns: Very dry patches that get flaky if I scratch or rub too much, occasional irritation/redness, barrier issues ",
+          "Still using watery toners amidst the milky toner trend and seasonal changes? I’ll start - Etude soonjung 5.5 toner. Simple lightweight hydration + less breakout risk + I’m not fond of thick products a"
+        ],
+        "scores": {
+          "growth_velocity": 0.6,
+          "cross_subreddit": 0.2,
+          "engagement": 0.0055,
+          "novelty": 1.0,
+          "momentum": 0.16
+        },
+        "total_score": 0.49255
+      },
+      {
+        "entity": "burning",
+        "category": "concerns",
+        "recent_mentions": 3,
+        "mid_mentions": 0,
+        "older_mentions": 0,
+        "growth_rate": 3.0,
+        "momentum": 9.0,
+        "avg_score": 6.333333333333333,
+        "quotes": [
+          "[Product Question] My skin reacts to Cetaphil (?) and idk why Hii\n\nIm from the uk.\n\nI need help figuring out what these bumps could be and why my skin reacts differently, please explain like I’m 5 tha",
+          "[Routine Help] tretinoin cleared my acne, but not my texture - advice? hi everyone! i’ve been lurking here for a while and i feel like my routine is pretty solid, but i still can’t seem to achieve tha",
+          "[Acne] Major Breakout 24F never gone through a breakout like this, it started out with red patches like shown in the first 2 images, 2nd day it broke out into pimples with pus all over my face with th"
+        ],
+        "scores": {
+          "growth_velocity": 0.6,
+          "cross_subreddit": 0.1,
+          "engagement": 0.006333333333333333,
+          "novelty": 1.0,
+          "momentum": 0.09
+        },
+        "total_score": 0.46363333333333334
+      },
+      {
+        "entity": "medicube",
+        "category": "products",
+        "recent_mentions": 3,
+        "mid_mentions": 0,
+        "older_mentions": 0,
+        "growth_rate": 3.0,
+        "momentum": 9.0,
+        "avg_score": 4.0,
+        "quotes": [
+          "[Routine Help] tretinoin cleared my acne, but not my texture - advice? hi everyone! i’ve been lurking here for a while and i feel like my routine is pretty solid, but i still can’t seem to achieve tha",
+          "[Routine Help] tretinoin cleared my acne, but not my texture - advice? hi everyone! i’ve been lurking here for a while and i feel like my routine is pretty solid, but i still can’t seem to achieve tha",
+          "[Routine Help] tretinoin cleared my acne, but not my texture - advice? hi everyone! i’ve been lurking here for a while and i feel like my routine is pretty solid, but i still can’t seem to achieve tha"
+        ],
+        "scores": {
+          "growth_velocity": 0.6,
+          "cross_subreddit": 0.1,
+          "engagement": 0.004,
+          "novelty": 1.0,
+          "momentum": 0.09
+        },
+        "total_score": 0.46340000000000003
+      }
+    ],
+    "plateauing": []
+  },
+  "language_shifts": {
+    "shifts": [
+      {
+        "phrase": "routine help",
+        "type": "new",
+        "recent_mentions": 7,
+        "older_mentions": 0,
+        "growth_rate": Infinity
+      },
+      {
+        "phrase": "daughter wnrp",
+        "type": "new",
+        "recent_mentions": 7,
+        "older_mentions": 0,
+        "growth_rate": Infinity
+      },
+      {
+        "phrase": "skin type",
+        "type": "new",
+        "recent_mentions": 6,
+        "older_mentions": 0,
+        "growth_rate": Infinity
+      },
+      {
+        "phrase": "dry skin",
+        "type": "new",
+        "recent_mentions": 5,
+        "older_mentions": 0,
+        "growth_rate": Infinity
+      },
+      {
+        "phrase": "spearmint tea",
+        "type": "new",
+        "recent_mentions": 5,
+        "older_mentions": 0,
+        "growth_rate": Infinity
+      },
+      {
+        "phrase": "product product",
+        "type": "new",
+        "recent_mentions": 5,
+        "older_mentions": 0,
+        "growth_rate": Infinity
+      },
+      {
+        "phrase": "current routine",
+        "type": "new",
+        "recent_mentions": 4,
+        "older_mentions": 0,
+        "growth_rate": Infinity
+      },
+      {
+        "phrase": "product question",
+        "type": "new",
+        "recent_mentions": 4,
+        "older_mentions": 0,
+        "growth_rate": Infinity
+      },
+      {
+        "phrase": "active acne",
+        "type": "new",
+        "recent_mentions": 4,
+        "older_mentions": 0,
+        "growth_rate": Infinity
+      },
+      {
+        "phrase": "skin concerns",
+        "type": "new",
+        "recent_mentions": 4,
+        "older_mentions": 0,
+        "growth_rate": Infinity
+      },
+      {
+        "phrase": "acne prone",
+        "type": "new",
+        "recent_mentions": 4,
+        "older_mentions": 0,
+        "growth_rate": Infinity
+      },
+      {
+        "phrase": "product product product",
+        "type": "new",
+        "recent_mentions": 4,
+        "older_mentions": 0,
+        "growth_rate": Infinity
+      },
+      {
+        "phrase": "13n tirtir",
+        "type": "new",
+        "recent_mentions": 4,
+        "older_mentions": 0,
+        "growth_rate": Infinity
+      },
+      {
+        "phrase": "tone daughter",
+        "type": "new",
+        "recent_mentions": 4,
+        "older_mentions": 0,
+        "growth_rate": Infinity
+      },
+      {
+        "phrase": "husband wnrp",
+        "type": "new",
+        "recent_mentions": 4,
+        "older_mentions": 0,
+        "growth_rate": Infinity
+      },
+      {
+        "phrase": "about skincare",
+        "type": "new",
+        "recent_mentions": 3,
+        "older_mentions": 0,
+        "growth_rate": Infinity
+      },
+      {
+        "phrase": "closed comedones",
+        "type": "new",
+        "recent_mentions": 3,
+        "older_mentions": 0,
+        "growth_rate": Infinity
+      },
+      {
+        "phrase": "skin reacts",
+        "type": "new",
+        "recent_mentions": 3,
+        "older_mentions": 0,
+        "growth_rate": Infinity
+      },
+      {
+        "phrase": "red bumps",
+        "type": "new",
+        "recent_mentions": 3,
+        "older_mentions": 0,
+        "growth_rate": Infinity
+      },
+      {
+        "phrase": "any advice",
+        "type": "new",
+        "recent_mentions": 3,
+        "older_mentions": 0,
+        "growth_rate": Infinity
+      },
+      {
+        "phrase": "medicube toner",
+        "type": "new",
+        "recent_mentions": 3,
+        "older_mentions": 0,
+        "growth_rate": Infinity
+      },
+      {
+        "phrase": "vanicream daily",
+        "type": "new",
+        "recent_mentions": 3,
+        "older_mentions": 0,
+        "growth_rate": Infinity
+      },
+      {
+        "phrase": "months ago",
+        "type": "new",
+        "recent_mentions": 3,
+        "older_mentions": 0,
+        "growth_rate": Infinity
+      },
+      {
+        "phrase": "skin care",
+        "type": "new",
+        "recent_mentions": 3,
+        "older_mentions": 0,
+        "growth_rate": Infinity
+      },
+      {
+        "phrase": "skin concern",
+        "type": "new",
+        "recent_mentions": 3,
+        "older_mentions": 0,
+        "growth_rate": Infinity
+      },
+      {
+        "phrase": "countryclimate top",
+        "type": "new",
+        "recent_mentions": 3,
+        "older_mentions": 0,
+        "growth_rate": Infinity
+      },
+      {
+        "phrase": "countryclimate top skin",
+        "type": "new",
+        "recent_mentions": 3,
+        "older_mentions": 0,
+        "growth_rate": Infinity
+      },
+      {
+        "phrase": "top skin",
+        "type": "new",
+        "recent_mentions": 3,
+        "older_mentions": 0,
+        "growth_rate": Infinity
+      },
+      {
+        "phrase": "asian beauty",
+        "type": "new",
+        "recent_mentions": 3,
+        "older_mentions": 0,
+        "growth_rate": Infinity
+      },
+      {
+        "phrase": "sheet masks",
+        "type": "new",
+        "recent_mentions": 3,
+        "older_mentions": 0,
+        "growth_rate": Infinity
+      },
+      {
+        "phrase": "korean skincare",
+        "type": "new",
+        "recent_mentions": 3,
+        "older_mentions": 0,
+        "growth_rate": Infinity
+      },
+      {
+        "phrase": "illiyoon ceramide",
+        "type": "new",
+        "recent_mentions": 3,
+        "older_mentions": 0,
+        "growth_rate": Infinity
+      },
+      {
+        "phrase": "illiyoon ceramide ato",
+        "type": "new",
+        "recent_mentions": 3,
+        "older_mentions": 0,
+        "growth_rate": Infinity
+      },
+      {
+        "phrase": "ceramide ato",
+        "type": "new",
+        "recent_mentions": 3,
+        "older_mentions": 0,
+        "growth_rate": Infinity
+      },
+      {
+        "phrase": "ceramide ato lotion",
+        "type": "new",
+        "recent_mentions": 3,
+        "older_mentions": 0,
+        "growth_rate": Infinity
+      },
+      {
+        "phrase": "ato lotion",
+        "type": "new",
+        "recent_mentions": 3,
+        "older_mentions": 0,
+        "growth_rate": Infinity
+      },
+      {
+        "phrase": "first step",
+        "type": "new",
+        "recent_mentions": 3,
+        "older_mentions": 0,
+        "growth_rate": Infinity
+      },
+      {
+        "phrase": "social media",
+        "type": "new",
+        "recent_mentions": 3,
+        "older_mentions": 0,
+        "growth_rate": Infinity
+      },
+      {
+        "phrase": "hera protector",
+        "type": "new",
+        "recent_mentions": 3,
+        "older_mentions": 0,
+        "growth_rate": Infinity
+      },
+      {
+        "phrase": "tone daughter wnrp",
+        "type": "new",
+        "recent_mentions": 3,
+        "older_mentions": 0,
+        "growth_rate": Infinity
+      },
+      {
+        "phrase": "favorite sunscreen",
+        "type": "new",
+        "recent_mentions": 3,
+        "older_mentions": 0,
+        "growth_rate": Infinity
+      },
+      {
+        "phrase": "mask husband",
+        "type": "new",
+        "recent_mentions": 3,
+        "older_mentions": 0,
+        "growth_rate": Infinity
+      }
+    ]
+  },
+  "pain_points": []
+}

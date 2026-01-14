@@ -1,0 +1,24 @@
+{
+  "record_id": "e6270e42-1783-424f-8a73-42d82ac302b4",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.683728",
+  "raw_text": "User: My favorite fast food item would have to be McDonald's fries, and I like it because their fries are, like, crisp and nice, you know what I mean?\nAgent: That's a great choice, Wellio. You mentioned they are crisp and nice. Could you tell me a bit more about the flavor, temperature, smell, and aftertaste of those McDonald's fries?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview19",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview19.txt",
+    "total_chunks": 60,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 7,
+  "parent_record_id": "a3e1d684-9ae6-4af5-abed-bbda00d0d1d0"
+}

@@ -1,0 +1,24 @@
+{
+  "record_id": "ffc66f5b-f932-4024-89fe-b58f3150c83b",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.846088",
+  "raw_text": "User: Because it's really close to the same thing. I would have to add some lettuce though but I mean it's really similar except it doesn't have that third bun on it so that's kind of a let down. Can we do this with the stone bun?\nAgent: I apologize, I'm not familiar with a \"stone bun.\" Could you please clarify what you mean by that?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview11",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview11.txt",
+    "total_chunks": 14,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 7,
+  "parent_record_id": "4d36d5b4-cfbd-45d5-b60e-c0beaeaa52ce"
+}

@@ -1,0 +1,24 @@
+{
+  "record_id": "0d8b2401-44ad-4938-b5cb-97dbed23622a",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.676988",
+  "raw_text": "User: If I was ordering from Taco Bell, I would probably just get one of their soft-shell tacos or maybe like one of their rice and bean burritos.\nAgent: And why would a soft-shell taco or a rice and bean burrito be the closest replacement for the Mexican Pizza for you?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "38",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/38.txt",
+    "total_chunks": 19,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 8,
+  "parent_record_id": "04f316d3-be87-4e71-bf48-81915dfb54b0"
+}

@@ -1,0 +1,24 @@
+{
+  "record_id": "64bae1b2-61d5-4829-8756-57a9d95213c9",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.838192",
+  "raw_text": "User: There was nothing that influenced my decision.\nAgent: Understood, so no deal influenced your decision today.\n\nHas your price sensitivity changed in the last two to four weeks? If so, why? What changed in your life or in prices or fees, and how did it change what you order?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "31",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/31.txt",
+    "total_chunks": 36,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 23,
+  "parent_record_id": "b8eed46d-a364-478a-a2e3-13621c355a9d"
+}

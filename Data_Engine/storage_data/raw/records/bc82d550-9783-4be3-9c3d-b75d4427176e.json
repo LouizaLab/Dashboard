@@ -1,0 +1,24 @@
+{
+  "record_id": "bc82d550-9783-4be3-9c3d-b75d4427176e",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.795855",
+  "raw_text": "User: A decent amount kind of. I mean if I find a deal that I would use, I'm pretty happy but I won't change my order just because there's a deal for it.\nAgent: That's helpful to know. What kind of deal actually changes your behavior? For example, is it a buy-one-get-one offer, a...",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview28",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview28.txt",
+    "total_chunks": 43,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 29,
+  "parent_record_id": "1940e73c-7457-4f0e-96e6-ebd8700cb728"
+}

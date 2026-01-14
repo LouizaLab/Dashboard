@@ -1,0 +1,24 @@
+{
+  "record_id": "266bfe8b-0ef2-4801-8548-e3a2f8e52bea",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.745921",
+  "raw_text": "User: No change. If I can get a bunch of food for $20, I'm there.\nAgent: Okay, I understand that consistency in value is a key driver for you. So, what \"mode\" are you in today? Are you in a budget, health, treat, convenience, explore, or stressed mode?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "40",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/40.txt",
+    "total_chunks": 24,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 15,
+  "parent_record_id": "692d79ab-a3ba-476a-990b-bf66f61e7646"
+}

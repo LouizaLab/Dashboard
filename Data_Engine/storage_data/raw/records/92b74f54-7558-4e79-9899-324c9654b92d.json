@@ -1,0 +1,23 @@
+{
+  "record_id": "92b74f54-7558-4e79-9899-324c9654b92d",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.870411",
+  "raw_text": "e. Agent: That's true, they are very different items. Could you tell me what you find better or worse about the Whopper's flavor, texture, or overall experience when you compare it to your Chipotle burrito? User: I feel like the Chipotle burrito is better than the Whopper, but if I do opt for a burger, then I kind of want to go to Burger King because I feel like they taste good. Agent: I understand that the Chipotle burrito is your top choice. When you choose a Whopper, what specifically do you like about its taste or texture that makes it your preferred burger, even if it's not as good as your burrito? User: The fresh crisp lettuce, the mayo and ketchup, the pickles. It's pretty big in size so it's pretty filling just like the burrito at Chipotle. Agent: That's a good description of what makes the Whopper appealing. Now, what do you usually pair with your Chipotle burrito? This could include drinks, sides, or sauces. User: Usually just a Sprite. Agent: Just a Sprite, got it. And what",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview6.txt",
+    "total_chunks": 11
+  },
+  "client_id": null,
+  "chunk_index": 6,
+  "parent_record_id": "7bbdd4cb-ea9f-41c4-ad88-c8cc6f12ea7d"
+}

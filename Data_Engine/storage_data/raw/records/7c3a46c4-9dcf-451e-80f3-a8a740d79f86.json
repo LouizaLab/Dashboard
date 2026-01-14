@@ -1,0 +1,24 @@
+{
+  "record_id": "7c3a46c4-9dcf-451e-80f3-a8a740d79f86",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.711734",
+  "raw_text": "User: I think it's just as good as the Big Mac. It's delicious, but I have to be in the right mood for a burrito. I'm always in the right mood for a Big Mac, but I only occasionally want a burrito.\nAgent: That's interesting how mood plays a role in your choice between them.\n\nWhat do you usually pair with your Big Mac, such as drinks, sides, or sauces? And what would you never pair it with, and why?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview3",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview3.txt",
+    "total_chunks": 22,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 10,
+  "parent_record_id": "fc77d1e2-9777-4dca-a844-42568cda327f"
+}

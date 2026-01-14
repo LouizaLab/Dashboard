@@ -1,0 +1,24 @@
+{
+  "record_id": "98ebc2ba-5645-4200-a2a0-b36eeab5637f",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.819093",
+  "raw_text": "User: The meat has an aftertaste and the produce is not as much. They don't have the quantity, good quantity like Wendy's.\nAgent: I see. So, with the McDonald's crispy chicken sandwich, you find the meat has an aftertaste and the produce quantity isn't as generous as Wendy's.\n\nWhat do you usually pair with your favorite Wendy's single? This could include drinks, sides, or sauces. And what would you never pair it with, and why?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "36",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/36.txt",
+    "total_chunks": 29,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 11,
+  "parent_record_id": "4c0b766b-108c-463c-ac1b-84504ef7b9d6"
+}

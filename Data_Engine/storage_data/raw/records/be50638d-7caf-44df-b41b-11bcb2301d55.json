@@ -1,0 +1,24 @@
+{
+  "record_id": "be50638d-7caf-44df-b41b-11bcb2301d55",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.712189",
+  "raw_text": "User: I use the app on my phone and order and then I pull up and then they bring it out to me.\nAgent: Thank you for clarifying that you use the app and pick it up.\n\nHow does price change your choice? For example, if a Big Mac cost two dollars more, what would you do?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview3",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview3.txt",
+    "total_chunks": 22,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 13,
+  "parent_record_id": "fc77d1e2-9777-4dca-a844-42568cda327f"
+}

@@ -1,0 +1,23 @@
+{
+  "record_id": "30c799eb-1e6a-437c-90b9-945003b57ea0",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.870034",
+  "raw_text": "from Tams. Why would that be the closest replacement for you? User: Just because it's still a salty snack. Agent: I see, so the salty snack aspect is key. Now, could you name two or three similar items you also like, from any chain? And for each one, what's better or worse compared to your favorite chili cheese fries? User: In-N-Out animal style fries. They use grilled onions, no chili though. And their fries are a little different. And also, let's see. Carne asada fries from Alberto's. They're okay, but that's not the best toppings. Agent: Thank you. For the In-N-Out animal style fries, what aspects are better or worse compared to your favorite chili cheese fries from Tams? User: Better the grilled onions with the spread. Worse, the fries are not as good. Agent: Okay, I... User: no chili taste. Agent: I understand. So the grilled onions and spread are better, but the fries themselves and the lack of chili are worse. And how about the Carne Asada fries from Alberto's? What's better o",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview4.txt",
+    "total_chunks": 10
+  },
+  "client_id": null,
+  "chunk_index": 3,
+  "parent_record_id": "a8a3a49c-aace-4ba8-a37f-209b4e4dfac4"
+}

@@ -1,0 +1,23 @@
+{
+  "record_id": "e85c81c0-6ddc-4baa-b9cd-730ce49dc1c4",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.866996",
+  "raw_text": "f the Chick-fil-A Spicy Deluxe was unavailable, what would you order instead, including the chain and the specific item? User: Probably the chicken strips Agent: And why do you consider the chicken strips to be the closest replacement for your favorite Spicy Deluxe? User: . I just don't really like the other sandwiches so I prefer to get strips if I was unable to get that. Agent: I understand. Now, could you name two or three similar items you also like from any chain? For each one, please tell me what's better or worse compared to your favorite Chick-fil-A Spicy Deluxe. User: The quarter pounder with cheese, it's a little bit more filling but not as good. The McChicken which is a little bit more affordable but not as good either. Agent: Thank you for sharing those comparisons. What do you usually pair with your Chick-fil-A Spicy Deluxe, such as drinks, sides, or sauces? And what would you never pair it with, and why? User: Sprite and Chick-fil-A sauce. Agent: Okay, Sprite and Chick-fi",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview17.txt",
+    "total_chunks": 11
+  },
+  "client_id": null,
+  "chunk_index": 2,
+  "parent_record_id": "f5c69c84-f91a-4dd6-8cf5-c2c95cae4a75"
+}

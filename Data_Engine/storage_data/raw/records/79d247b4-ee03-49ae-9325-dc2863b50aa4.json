@@ -1,0 +1,24 @@
+{
+  "record_id": "79d247b4-ee03-49ae-9325-dc2863b50aa4",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.671480",
+  "raw_text": "User: I mean if it's just like overnight change, $2 more, I probably would, depends on if I had the money to have the $2 extra to afford it, I guess. But I would probably change my order if I didn't have, if I had like a set amount and that wasn't, that $2 extra wasn't going to be able to be covered in my purchase then I would get something else.\nAgent: I understand. So, your decision would depend on your budget at that moment.\n\nNow, if there was a deal, what would you do differently?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview22",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview22.txt",
+    "total_chunks": 23,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 21,
+  "parent_record_id": "deed2ad4-16c9-4967-b168-fdfd906b9174"
+}

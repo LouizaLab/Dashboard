@@ -1,0 +1,23 @@
+{
+  "record_id": "d6c9744f-4084-42b1-8e87-8e09fd63458b",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.867429",
+  "raw_text": ".. You mentioned the fries are crisp and... Agent: You mentioned the fries are crisp and a bit salty. What are the... User: You mentioned the fries are crisp and a bit salty. What are the top... What are the top what? Agent: What are the top two or three things that make these McDonald's fries... User: These McDonald's fries perfect for you. Agent: Yes, exactly. What are the top... User: I would say like the texture and what else? Just the taste. Agent: Okay, so the texture and the taste are the top two things that make... User: The top two things that make... Agent: Thank you. So, the texture and taste are what make them perfect for you. Now, on the other hand, what are the top two or three things that would make these McDonald's fries... User: and taste are what make them would make these mcdonald's from Agent: What are the top two or three things that would make these McDonald's... User: things that would make these mcdonald's fries i mean more condiments and you know just um just",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview19.txt",
+    "total_chunks": 14
+  },
+  "client_id": null,
+  "chunk_index": 7,
+  "parent_record_id": "1f988804-b2a4-40bf-a212-66fa038b6fde"
+}

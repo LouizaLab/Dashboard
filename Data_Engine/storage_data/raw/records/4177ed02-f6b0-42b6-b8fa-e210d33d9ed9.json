@@ -1,0 +1,39 @@
+{
+  "record_id": "4177ed02-f6b0-42b6-b8fa-e210d33d9ed9",
+  "bucket_id": 1,
+  "source_name": "burger_king_menu",
+  "source_type": "csv",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2025-12-27T02:25:07.243149",
+  "raw_text": null,
+  "structured_fields": {
+    "Item": "French Fries- value*"
+  },
+  "numerical_fields": {
+    "Calories": 230.0,
+    "Fat Calories": 90.0,
+    "Fat (g)": 10.0,
+    "Saturated Fat (g)": 1.0,
+    "Trans Fat (g)": 0.0,
+    "Cholesterol (mg)": 0.0,
+    "Sodium (mg)": 170.0,
+    "Total Carb (g)": 33.0,
+    "Dietary Fiber (g)": 2.0,
+    "Sugars (g)": 0.5,
+    "Protein (g)": 3.0
+  },
+  "categorical_fields": {
+    "Category": "Salads & Sides"
+  },
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "dataset_name": "burger_king_menu",
+    "row_index": 150,
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Phase_1_Taste_Embedding_Model/data/raw/burger-king-menu.csv"
+  },
+  "client_id": null,
+  "chunk_index": null,
+  "parent_record_id": null
+}

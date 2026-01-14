@@ -1,0 +1,24 @@
+{
+  "record_id": "75a6f572-0972-4af7-8289-b18c26da23a0",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.778027",
+  "raw_text": "User: It's a simple burger and it has like those little chopped onions in it. And just like basic condiments. And isn't like super fancy. Like I don't like all the other stuff that they put on the burgers that you get at other fast food restaurants. So I like it simple. And yeah, I just like those burgers. I don't know.\nAgent: That's a great description. So, what are the top two or three things that make that McDonald's cheeseburger \"perfect\" for you?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "34",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/34.txt",
+    "total_chunks": 23,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 4,
+  "parent_record_id": "e45fb1d7-d025-48e7-9f73-0ae6be217425"
+}

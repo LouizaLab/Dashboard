@@ -1,0 +1,23 @@
+{
+  "record_id": "139c4835-28f6-41e1-9735-f3e6cb8ed07f",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.870282",
+  "raw_text": "he cheese is gooey. Agent: Thank you for that detailed description. What are the top two or three things that make that Papa John's pepperoni pizza \"perfect\" for you? User: Just that it's cooked well, the dough's not soggy, there's the right amount of sauce, the right amount of cheese. Agent: I understand. And what are the top two or three things that would make that same pizza \"bad\" for you? For example, if it were soggy, dry, or cold. User: If it was cold, if it was undercooked and the bottom was not cooked well enough, if the cheese was, if there was not enough cheese or if there was too much cheese, if there was too much pepperoni. Agent: Thank you for sharing that. If your favorite Papa John's pepperoni pizza was unavailable, what would you order instead, including the chain and item? User: I would order a McDonald's Big Mac. Agent: And why do you consider the McDonald's Big Mac to be the closest replacement for your favorite pizza? User: It's not really a replacement but it's jus",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview5.txt",
+    "total_chunks": 10
+  },
+  "client_id": null,
+  "chunk_index": 1,
+  "parent_record_id": "9d0a0a1b-b297-4a62-8430-2af72da9793c"
+}

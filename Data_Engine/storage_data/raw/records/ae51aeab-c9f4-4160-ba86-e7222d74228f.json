@@ -1,0 +1,24 @@
+{
+  "record_id": "ae51aeab-c9f4-4160-ba86-e7222d74228f",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.728453",
+  "raw_text": "User: it didn't influence it.\nAgent: Okay. Could you explain what kind of deal actually changes your behavior? For example, is it buy one get one free, a percentage off, app points, or free delivery?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview5",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview5.txt",
+    "total_chunks": 37,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 30,
+  "parent_record_id": "70f85520-c679-4467-82c3-f02b7ab569c2"
+}

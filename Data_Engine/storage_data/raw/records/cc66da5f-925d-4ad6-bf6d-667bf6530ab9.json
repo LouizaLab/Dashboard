@@ -1,0 +1,23 @@
+{
+  "record_id": "cc66da5f-925d-4ad6-bf6d-667bf6530ab9",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.867923",
+  "raw_text": "rtaste? User: I like the taste of the beef used in Wendy's singles. I've heard they do not freeze their meat. I like the lettuce and tomato. It's always fresh and the cheese is real cheese. It's not processed. I believe the assembly of the burger is always good and the attention to quality is always high. Agent: Thank you for sharing those details, Nicole. It sounds like the freshness and quality of the ingredients are very important to you. What are the top two or three things that make the Wendy's single \"perfect\" for you? User: Nice soft bun, fresh hot burger, Agent: ... User: and crispy lettuce. Crispy lettuce. Agent: Thank you, Nicole. A nice soft bun, a fresh hot burger, and crispy lettuce are key for you. Now, what are the top two or three things that would make a Wendy's single \"bad\" for you? User: If the burger was assembled messy or flattened, if it was too greasy, or if the lettuce and tomato or the produce was not fresh. Agent: I understand. Messy assembly, being too greasy",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview20.txt",
+    "total_chunks": 11
+  },
+  "client_id": null,
+  "chunk_index": 1,
+  "parent_record_id": "2b6b0470-bd75-4f9b-98bd-8b5aed0e9f50"
+}

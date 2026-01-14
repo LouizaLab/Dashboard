@@ -1,0 +1,23 @@
+{
+  "record_id": "c0c0e73d-d5db-4093-839b-c9b92316b0e1",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.870606",
+  "raw_text": "ating a 40-piece nuggets does the satisfaction too. They don't really equivalent in the satisfaction level to each other. Wendy's puts a little less french fries, I feel like, when I feel like they should overstuff it always. But that's okay. So it's still a winner for Wendy's and we're going to keep going with this one because we're getting close to our final winner. The winner will be nuggets. Second spot will be Taco Bell. Taco Bell with the crunch wrap is the number one king of tacos, a fast food I've ever tried and still I see out there as of today. How would I compare the 40 piece nuggets? It can indeed beat the 40 piece nuggets. I'll give it the spot that it could beat the 40 piece nuggets on occasions though. Occasions meaning every two weeks to four weeks I can have or every two to three weeks I can have a crunch wrap instead of some nuggets always. That crunch wrap I can have probably two days back to back to even five days back to back. Nuggets I can go for about maybe 14 da",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview7.txt",
+    "total_chunks": 11
+  },
+  "client_id": null,
+  "chunk_index": 5,
+  "parent_record_id": "4a332a06-4576-4f21-9c79-a49e233ddeb4"
+}

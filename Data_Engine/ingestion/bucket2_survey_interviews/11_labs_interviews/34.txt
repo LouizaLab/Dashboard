@@ -1,0 +1,76 @@
+Call Transcript:
+
+User: ...
+Agent: I'm here to collect information about your food preferences to complete the onboarding so you can get rewarded. To start, please say your name or Prolific ID.
+User: with five students, sorry, hold on a second. It's five CEA 73210B20970001ACE, all lowercase and then five and the letter F, lowercase. And that is it.
+Agent: Thank you for providing...
+User: Thank you.
+Agent: Thank you for providing your Prolific ID.
+
+Now, let's move on to your food preferences. What is your favorite fast-food item, including the chain and the exact item?
+User: I like cheeseburgers from McDonald's.
+Agent: Okay, a McDonald's cheeseburger. Why do you like it? Please include details about its flavor, texture, temperature, smell, and aftertaste.
+User: It's a simple burger and it has like those little chopped onions in it. And just like basic condiments. And isn't like super fancy. Like I don't like all the other stuff that they put on the burgers that you get at other fast food restaurants. So I like it simple. And yeah, I just like those burgers. I don't know.
+Agent: That's a great description. So, what are the top two or three things that make that McDonald's cheeseburger "perfect" for you?
+User: The simple condiments, the lack of embellishments like lettuce and tomato, and it's just easy on the appetite, I guess.
+Agent: I understand. And what are the top two or three things that would make that McDonald's cheeseburger "bad" for you? For example, if it were soggy, dry, cold, or too greasy?
+User: If it was too cold doesn't really bother me, but soggy or greasy, that would be gross.
+Agent: Understood, soggy or greasy would definitely make it less enjoyable.
+
+If your favorite McDonald's cheeseburger was unavailable, what would you order instead, including the chain and item?
+User: ...
+Agent: Please let me know...
+User: I would probably get a chalupa from Taco Bell.
+Agent: A Chalupa from Taco Bell, interesting...
+User: I don't know.
+Agent: No problem at all. Why is the Chalupa from Taco Bell the closest replacement for your McDonald's cheeseburger?
+User: It's just another thing that I like to eat. I don't press food.
+Agent: Okay, I understand.
+
+Now, could you name two or three similar items you also like from any chain? And for each one, what's better or worse compared to your favorite McDonald's cheeseburger?
+User: Oh God, I guess like compared to like the a burger from like Jack in the Box maybe or
+Agent: ...
+User: burger from...
+Agent: Please continue.
+User: It's just not as good because they add a lot of extra stuff to it that I don't like. But I will eat it if that's my only alternative. And another thing would be maybe a burger from Carl's Jr., but those ones are too much over the top usually.
+Agent: Thank you for sharing those. So, burgers from...
+User: I don't know if I'm
+Agent: Thank you for sharing those. So, burgers from Jack in the Box and Carl's Jr. are similar.
+
+Could you tell me what's better or worse about the Jack in the Box burger compared to your McDonald's cheeseburger? And then the same for the Carl's Jr. burger?
+User: It's basically the same answer, but they just add too much extra stuff to their burgers that make it, like, almost unedible or at least you can't eat it all in one bite or not, you know, like all the items that they put on their burgers and it's just not what I'm into, I guess.
+Agent: I understand that the extra toppings on the Jack in the...
+User: I don't think that's true. Okay.
+Agent: Could you clarify what you mean by "I don't think that's true"? Are you referring to my understanding of your previous answer, or something else?
+User: Oh, I didn't say that.
+Agent: My apologies if I misunderstood. I was trying to summarize your point about the extra toppings.
+
+Let's rephrase. For the Jack in the Box burger and the Carl's Jr. burger, what specifically is better or worse about them compared to your favorite McDonald's cheeseburger?
+User: For the Jack in the Box burger, they've had lettuce and tomato and I'm not a fan of the lettuce and tomato. They just put too much on. And then for Carl's Jr burgers, they just add extras of all kinds of stuff to their burgers that are almost like too big to eat.
+Agent: Thank you for clarifying. So, the extra lettuce and tomato on the Jack in the Box burger, and the excessive size and toppings on the Carl's Jr. burgers, make them less ideal than your McDonald's cheeseburger.
+
+What do you usually pair with your McDonald's cheeseburger, such as drinks, sides, or sauces? And what would you never pair it with, and why?
+User: I always get the meals of the large french fries and the large soda and the Dr. Pepper that I always drink. No ice. But I would not pair it with like the chicken wraps or like the, I don't know, just like really anything other than the fries and the drink. And I have to have ketchup with my fries. But yeah, if I got anything other than that, I would feel like it would be too much to eat.
+Agent: Thank you for that detailed explanation of your pairings.
+
+Now, let's talk about the situations in which you choose your McDonald's cheeseburger most often. Could you tell me about the circumstances, such as time pressure, location like home, work, or commute, the ordering channel like drive-thru or delivery, and who you're with?
+User: I always order on the go. I order from the app, but I always order like in the parking lot of the establishment of McDonald's before I get into the drive-thru. And then I always get from the drive-thru and generally get the same thing every time I go, which is a two cheeseburger meal.
+Agent: Thank you for explaining your ordering routine.
+
+How does price change your choice?...
+User: Thank you.
+Agent: You're welcome.
+
+How does price change your choice? For example, if your McDonald's cheeseburger meal cost two dollars more, what would you do?
+User: I use the rewards program or whatever so I get discounts and I get points to add to future purchases. It works out pretty well.
+Agent: That's smart to use the rewards program.
+
+So, if your usual McDonald's cheeseburger meal, even with your rewards, cost two dollars more than it typically does, what would you do? Would you still order it, or would you choose something else?
+User: I mean if it's just like overnight change, $2 more, I probably would, depends on if I had the money to have the $2 extra to afford it, I guess. But I would probably change my order if I didn't have, if I had like a set amount and that wasn't, that $2 extra wasn't going to be able to be covered in my purchase then I would get something else.
+Agent: I understand. So, your decision would depend on your budget at that moment.
+
+Now, if there was a deal, what would you do differently?
+User: Get the things associated with the deal.
+Agent: Understood. You would adjust your order to take advantage of the deal.
+
+Moving on, over the past two weeks, what are your most common fast-food patterns? This includes when you eat it, what you usually order, and what typically triggers it.

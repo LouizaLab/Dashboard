@@ -1,0 +1,23 @@
+{
+  "record_id": "4070d9e7-b2cd-48ec-81a2-8cd7efb56150",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.865855",
+  "raw_text": "if you add too much sauce, then it kind of throws everything off. So I'll get it plain and that seems to work fine. It's just really expensive there. That's the only problem. Agent: That's very helpful. So, for the Burger King burger that's similar to the Big Mac, what aspects of it were better or worse compared to your McDonald's Big Mac? And for the Wendy's Triple Cheeseburger, what makes it better or worse than your favorite Big Mac, aside from the price? User: Okay. On the Burger King one, I think it's kind of better because you get more sandwich for your dollar. And plus, it's still really pretty good. The drawback, though, that I've noticed is that they don't always keep it on the menu because I remember I got it not too long ago but then before that I asked about it and they said they didn't have it. So I guess it's not a consistent thing that they have on the menu or maybe it's just at certain restaurants. I don't know. But that's a big problem because, I mean, if you're not g",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview11.txt",
+    "total_chunks": 11
+  },
+  "client_id": null,
+  "chunk_index": 6,
+  "parent_record_id": "44b252ef-4792-43c3-9a3f-f1c78eb31a4e"
+}

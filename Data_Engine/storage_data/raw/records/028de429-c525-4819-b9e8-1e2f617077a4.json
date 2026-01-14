@@ -1,0 +1,24 @@
+{
+  "record_id": "028de429-c525-4819-b9e8-1e2f617077a4",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.755967",
+  "raw_text": "User: Nothing. Nothing changes. Today was a change. I guess that's why talking to you now because it was special had him at griddle and i liked it but i'm more than a big mac but it was good.\nAgent: I see. So today's McGriddle was a bit of a special occasion. What specifically triggered that order today? Was it a craving, a deal, an...",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "41",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/41.txt",
+    "total_chunks": 39,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 24,
+  "parent_record_id": "3a86faee-b265-401f-89c3-2956bf68e535"
+}

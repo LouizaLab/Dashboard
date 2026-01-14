@@ -1,0 +1,23 @@
+{
+  "record_id": "4f84a65d-4f2f-4b31-9415-cc1c8e55f199",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.866182",
+  "raw_text": "a big part of the appeal. What are the top two or three things that make that In-N-Out cheeseburger \"perfect\" for you? For example, is it a crunchy coating, a specific sauce balance, the heat level, or the bun texture? User: Having extra sauce, bun crisp and extra cheese. Agent: Understood, so extra sauce, a crisp bun, and extra cheese are key to a perfect In-N-Out cheeseburger for you. On the flip side, what are the top two or three things that would make that cheeseburger \"bad\"? For instance, if it were soggy, dry, cold, under-salted, too greasy, or stale? User: If the burger was dry and undone. Agent: So, a dry or undone burger would definitely make it a bad experience. If your favorite In-N-Out cheeseburger was unavailable, what would you order instead, and from which chain? User: I don't have another preference. Agent: Okay, I understand you don't have another preference if your favorite is unavailable. Moving on, can you name two or three similar items you also like from any cha",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview13.txt",
+    "total_chunks": 12
+  },
+  "client_id": null,
+  "chunk_index": 1,
+  "parent_record_id": "fbb27c4a-b6d1-47bb-9e12-15bb07aa4fc0"
+}

@@ -1,0 +1,24 @@
+{
+  "record_id": "2ca5f431-8465-410d-b5b7-6d669caed62a",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.832734",
+  "raw_text": "User: My favorite fast food item is probably maybe a quarter pounder, double quarter pounder from McDonald's. Just because with cheese is just because I like the kind of char grilled taste to it. I like how it's full with the sauces and the mayonnaise. And I'm also like when I get a lot of cheese on it.\nAgent: That's a great choice. What are the top two or three things that make that Double Quarter Pounder with Cheese \"perfect\" for you? For example, is it a crunchy coating, a specific sauce balance, the heat level, or the bun texture?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "33",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/33.txt",
+    "total_chunks": 22,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 2,
+  "parent_record_id": "aa98a079-d75e-4bbe-84c1-8fdbe78a1de3"
+}

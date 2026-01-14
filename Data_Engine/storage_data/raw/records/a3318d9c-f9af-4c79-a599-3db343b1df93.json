@@ -1,0 +1,23 @@
+{
+  "record_id": "a3318d9c-f9af-4c79-a599-3db343b1df93",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.870722",
+  "raw_text": "Call Transcript: User: Hello? Agent: I'm here to collect information about your food preferences to complete the onboarding so you can get... User: Thank you. Agent: You're welcome. To start, could you please tell me your name or Prolific ID? User: Sean. Agent: Thanks, Sean. It's great to meet you. Now, let's dive into your food preferences. What is your favorite fast-food item, including the chain and the exact item? And could you tell me why you like it, specifically touching on its flavor, texture, temperature, smell, and aftertaste? User: Popeye's chicken sandwich. I like the spicy mayo. I like the bun. I like the pickles and it tastes great. And there's a spicy kick. That's about it. Agent: Thanks, Sean. You mentioned the spicy mayo, the bun, the pickles, and the spicy kick. Could you tell me a bit more about the texture of the chicken, the temperature of the sandwich, its smell, and the aftertaste? Also, what are the top two or three things that make this Popeye's chicken sandw",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview8.txt",
+    "total_chunks": 11
+  },
+  "client_id": null,
+  "chunk_index": 0,
+  "parent_record_id": null
+}

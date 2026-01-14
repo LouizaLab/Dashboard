@@ -1,0 +1,39 @@
+{
+  "record_id": "ad6b6606-c30d-4bad-a576-c9707b984d15",
+  "bucket_id": 1,
+  "source_name": "burger_king_menu",
+  "source_type": "csv",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2025-12-27T02:16:07.072034",
+  "raw_text": null,
+  "structured_fields": {
+    "Item": "Spicy Chicken Jr."
+  },
+  "numerical_fields": {
+    "Calories": 380.0,
+    "Fat Calories": 170.0,
+    "Fat (g)": 19.0,
+    "Saturated Fat (g)": 3.5,
+    "Trans Fat (g)": 0.0,
+    "Cholesterol (mg)": 30.0,
+    "Sodium (mg)": 680.0,
+    "Total Carb (g)": 42.0,
+    "Dietary Fiber (g)": 2.0,
+    "Sugars (g)": 6.0,
+    "Protein (g)": 12.0
+  },
+  "categorical_fields": {
+    "Category": "Chicken & More"
+  },
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "dataset_name": "burger_king_menu",
+    "row_index": 118,
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Phase_1_Taste_Embedding_Model/data/raw/burger-king-menu.csv"
+  },
+  "client_id": null,
+  "chunk_index": null,
+  "parent_record_id": null
+}

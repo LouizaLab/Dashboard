@@ -1,0 +1,23 @@
+{
+  "record_id": "e6152cdd-f8f3-4bc4-910e-337377bf8c12",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.870425",
+  "raw_text": "good deal would definitely increase your frequency of ordering. Now, thinking about the past two weeks, what are your most common fast-food patterns? This includes when you eat it, what you usually order, and what typically triggers it.",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview6.txt",
+    "total_chunks": 11
+  },
+  "client_id": null,
+  "chunk_index": 10,
+  "parent_record_id": "7bbdd4cb-ea9f-41c4-ad88-c8cc6f12ea7d"
+}

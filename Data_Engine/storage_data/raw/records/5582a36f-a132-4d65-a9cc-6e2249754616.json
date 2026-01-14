@@ -1,0 +1,24 @@
+{
+  "record_id": "5582a36f-a132-4d65-a9cc-6e2249754616",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.773973",
+  "raw_text": "User: Price.\nAgent: Okay, so price is one of your top factors. What are one or two other factors from the list—taste, portion size, speed, nutrition, or consistency—that are most important to you for \"good value\" in fast food?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "44",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/44.txt",
+    "total_chunks": 33,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 31,
+  "parent_record_id": "694c9af7-c584-49a2-a404-743a61005dd2"
+}

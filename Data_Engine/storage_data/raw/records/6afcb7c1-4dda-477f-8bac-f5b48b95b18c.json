@@ -1,0 +1,24 @@
+{
+  "record_id": "6afcb7c1-4dda-477f-8bac-f5b48b95b18c",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.678144",
+  "raw_text": "User: Nothing changed that I can think of. The last time I got something, I got the same thing that I usually get and it was good and I paid about the same price, I believe.\nAgent: Okay, so nothing significant...",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "38",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/38.txt",
+    "total_chunks": 19,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 18,
+  "parent_record_id": "04f316d3-be87-4e71-bf48-81915dfb54b0"
+}

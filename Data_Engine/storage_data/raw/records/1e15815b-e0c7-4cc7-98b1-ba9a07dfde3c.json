@@ -1,0 +1,24 @@
+{
+  "record_id": "1e15815b-e0c7-4cc7-98b1-ba9a07dfde3c",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.836198",
+  "raw_text": "User: If the burger was dry and undone.\nAgent: So, a dry or undone burger would definitely make it a bad experience. If your favorite In-N-Out cheeseburger was unavailable, what would you order instead, and from which chain?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "31",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/31.txt",
+    "total_chunks": 36,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 5,
+  "parent_record_id": "b8eed46d-a364-478a-a2e3-13621c355a9d"
+}

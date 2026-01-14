@@ -1,0 +1,24 @@
+{
+  "record_id": "a02d1daa-17ed-424d-900d-96b3305b2cde",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.748470",
+  "raw_text": "User: Usually it's late night delivery after I go out to a party or whatever. Then I come home at 2, 3 a.m. and I'm starving and then I just have to get it\nAgent: Thanks for sharing that, Sean. It sounds like a perfect late-night, post-party craving solution.\n\nNow, let's consider price. How does price influence your choice when ordering fast food? For example, if your Popeye's chicken sandwich cost two dollars more, what would you do? And if there was a deal available, what might you do differently?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview8",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview8.txt",
+    "total_chunks": 19,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 9,
+  "parent_record_id": "1f511bb6-4266-4aca-8ca1-8692fc9731e7"
+}

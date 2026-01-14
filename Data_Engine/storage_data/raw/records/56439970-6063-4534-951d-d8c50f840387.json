@@ -1,0 +1,24 @@
+{
+  "record_id": "56439970-6063-4534-951d-d8c50f840387",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.814343",
+  "raw_text": "User: The quarter pounder with cheese, it's a little bit more filling but not as good. The McChicken which is a little bit more affordable but not as good either.\nAgent: Thank you for sharing those comparisons. What do you usually pair with your Chick-fil-A Spicy Deluxe, such as drinks, sides, or sauces? And what would you never pair it with, and why?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview17",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview17.txt",
+    "total_chunks": 33,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 9,
+  "parent_record_id": "88d4a69e-5a62-47c8-8b20-22b88f242475"
+}

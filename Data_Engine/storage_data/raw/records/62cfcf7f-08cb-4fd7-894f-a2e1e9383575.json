@@ -1,0 +1,24 @@
+{
+  "record_id": "62cfcf7f-08cb-4fd7-894f-a2e1e9383575",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.727560",
+  "raw_text": "User: It was a craving and I wanted a treat.\nAgent: Was this order planned or spontaneous?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview5",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview5.txt",
+    "total_chunks": 37,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 24,
+  "parent_record_id": "70f85520-c679-4467-82c3-f02b7ab569c2"
+}

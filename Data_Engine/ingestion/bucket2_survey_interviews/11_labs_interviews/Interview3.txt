@@ -1,0 +1,77 @@
+Call Transcript:
+
+User: Hello?
+Agent: I'm here to collect information about your food preferences to complete the onboarding so you can get rewarded. To start, please say your name or Prolific ID.
+User: Which would you prefer?
+Agent: Either is perfectly fine. I just need one of them to get started with the onboarding process.
+User: My prolific ID is 6746C680672C3AB45F25EFB7.
+Agent: Thank you. Now, let's dive into your food preferences. What is your favorite fast-food item, including the chain and the exact item? And could you tell me why you like it?
+User: I'm going to say a Big Mac from McDonald's. It's my favorite burger. I've loved it all my life. I don't know why. It just is my favorite.
+Agent: That's a classic choice. To understand a bit more about what makes it your favorite, could you describe the flavor, texture, temperature, smell, and aftertaste of a Big Mac that you enjoy so much?
+User: Um...it has a lot of different textures...a soft bun and the cheese...it doesn't really have much of a smell. It has a very salty taste mixed with the lettuce which is kind of fresh and then the secret sauce which is kind of tangy. All those flavor combinations combined make it really good. The cheese is probably my favorite part. It smells like McDonald's.
+Agent: That's a great description. It sounds like the combination of textures and flavors, especially the tangy sauce and salty taste, really stands out for you.
+
+What are the top two or three things that make a Big Mac "perfect" in your opinion? For example, is it a crunchy coating, a specific sauce balance, the heat level, or the bun texture?
+User: I would say the right amount of sauce. Too much is too sloppy and too little is not enough. So you need the right amount of sauce and a nice fresh bun with the sesame seeds.
+Agent: That makes perfect sense. The sauce balance and bun freshness are definitely key.
+
+On the flip side, what are the top two or three things that would make a Big Mac "bad" for you? For instance, if it were soggy, dry, cold, under-salted, too greasy, or stale?
+User: I would say if they forgot to put the cheese on it and it didn't have cheese and if it was way too saucy and messy.
+Agent: Missing the cheese and being too saucy would definitely be disappointing.
+
+If a Big Mac was unavailable, what would you order instead, including the chain and the specific item?
+User: I would probably go to Burger King and get a Whopper.
+Agent: Okay, a Whopper from Burger King. Why do you consider that the closest replacement for a Big Mac?
+User: It's kind of like the Big Mac sister, it's the competitor burger. I really like the Whopper too. It's nice and fresh, it has the tomato which the Big Mac doesn't. I would say it's my second favorite fast food item.
+Agent: That's a clear connection, being the competitor burger and your second favorite.
+
+Can you name two or three other similar items you also like from any chain? And for each one, what's better or worse compared to your favorite Big Mac?
+User: ...
+Agent: Please let me know if you're...
+User: I like, I like the Wendy's mushroom and Swiss burger a lot. The only thing that is worse is that the price Wendy's is really expensive. And I also like the Taco Bell grilled cheese burrito.
+Agent: Thank you for those examples. You mentioned the Wendy's Mushroom and Swiss burger is good, but the price is worse compared to the Big Mac.
+
+For the Taco Bell grilled cheese burrito, what's better or worse about it compared to your favorite Big Mac?
+User: I think it's just as good as the Big Mac. It's delicious, but I have to be in the right mood for a burrito. I'm always in the right mood for a Big Mac, but I only occasionally want a burrito.
+Agent: That's interesting how mood plays a role in your choice between them.
+
+What do you usually pair with your Big Mac, such as drinks, sides, or sauces? And what would you never pair it with, and why?
+User: I usually get a medium fry and a large Diet Coke and I would never pair it with like a regular Coke because regular soda is just too sweet tasting to me. I don't like it and I probably wouldn't pair it with a salad because if you're eating a Big Mac, you're not going to want a salad too.
+Agent: That's a clear preference for Diet Coke over regular soda due to sweetness, and a practical point about not pairing a Big Mac with a salad.
+
+Now, let's talk about the context of your choices. In what situations do you choose a Big Mac most often? Please include details like time pressure, location (home, work, commute), ordering channel (drive-thru, delivery), and who you're with.
+User: Um usually I will go when I'm by myself and um during like lunchtime between noon and like four. When I don't have my kids and I'm in town running errands and I get hungry, that's usually like I'll go through McDonald's and get some lunch.
+Agent: That's a very clear picture of when you typically choose a Big Mac. So, when you're running errands by yourself during lunchtime, do you usually feel time pressure, and what ordering channel do you use, like drive-thru or delivery?
+User: I use the app on my phone and order and then I pull up and then they bring it out to me.
+Agent: Thank you for clarifying that you use the app and pick it up.
+
+How does price change your choice? For example, if a Big Mac cost two dollars more, what would you do?
+User: Oh, I'd probably start looking for something else that was reasonable. McDonald's prices have already gone up so much that it's kind of hit the max that I'm willing to spend now. That's why I use the app because there's usually coupons and free stuff and you can like, you know, save up points and get free product. So that's kind of how I justify it.
+Agent: That's very insightful. It sounds like you're already quite price-sensitive with fast food.
+
+If there was a deal on the Big Mac, what would you do differently?
+User: If there was a deal, I would probably get it a little bit more expensive
+Agent: Could you clarify what you mean by "a little bit more expensive" in that context? Do you mean you would be more likely to buy it, or perhaps buy more of it, if there was a deal?
+User: . I would probably buy it more often if there was a deal and they lowered prices.
+Agent: Thank you for clarifying. So, a deal or lower prices would encourage you to buy it more often.
+
+Now, let's shift to what "good value" means to you in fast food. Could you pick your top two or three factors, such as taste, portion size, speed, nutrition, consistency, or price, and explain how you judge if something is "worth it"?
+User: I would say if it fills me up and it's a reasonable price, it's a good value. McDonald's has a value meal now where it's a double cheeseburger and nuggets and fries and a drink for $5. And I think that's a really good value because $5 is pretty cheap these days for a whole meal.
+Agent: That's a very clear definition of good value for you: feeling full for a reasonable price, and you've given a great example with the five-dollar meal.
+
+Now, thinking about the past two weeks, what have been your most common fast-food patterns? This includes when you eat it, what you usually order, and what typically triggers those choices.
+User: I've actually cut back a lot on eating fast food just because the prices keep going up. And, I mean, not just with fast food, with everything, so we have less money. So I haven't been going to fast food as much as I used to. I've probably, you know, I used to go maybe twice a week and now I'm down to once every two weeks.
+Agent: Thank you for sharing that. It sounds like rising prices have significantly impacted your fast-food habits, leading you to reduce how often you go.
+
+Compared to your last fast-food order, what changed today, if anything? Could you pick the biggest driver and explain if it was your mood, cravings, schedule, budget, health goals, social plans, or convenience?
+User: I would say it was probably my budget. I just don't have the budget to eat it as much as I used to.
+Agent: Thank you for clarifying that budget is the biggest driver for you right now.
+
+What "mode" are you in today when it comes to fast food? Are you in a budget, health, treat, convenience, explore, or stressed mode?
+User: Budget mode for sure.
+Agent: Understood, budget mode it is.
+
+When you're in budget mode, what's the first thing that changes in your fast-food order?
+User: Um, when I'm in budget mode, I usually don't get fast food as much or maybe I'll get something very small if I have a really bad craving and I, I want it really bad. Instead of getting a big Mac meal, I'll get like a happy meal or something small that's like half the cost.
+Agent: That's a practical approach to managing cravings while staying within your budget.
+...

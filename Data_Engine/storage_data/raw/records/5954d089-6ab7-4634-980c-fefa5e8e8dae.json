@@ -1,0 +1,42 @@
+{
+  "record_id": "5954d089-6ab7-4634-980c-fefa5e8e8dae",
+  "bucket_id": 1,
+  "source_name": "mcd_menu_alt",
+  "source_type": "csv",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2025-12-27T02:25:07.221183",
+  "raw_text": null,
+  "structured_fields": {
+    "name": "Dosa Masala Burger\u00ae",
+    "serving_size": "138g",
+    "ingredients": "Whole wheat bun, Rasam mayo, Dosa masala aloo patty",
+    "tag": "A new taste of India.",
+    "description": "Turmeric-spiced mashed potato filling topped with fresh peas. Grilled and placed inside a soft whole wheat bun with a spicy molagapodi chutney mayo."
+  },
+  "numerical_fields": {
+    "energy": 340.23,
+    "protein": 5.66,
+    "total_fat": 12.39,
+    "sat_fat": 4.22,
+    "trans_fat": 0.0,
+    "chol": 0.0,
+    "carbs": 51.52,
+    "total_sugar": 12.68,
+    "added_sugar": 6.4,
+    "sodium": 710.54
+  },
+  "categorical_fields": {
+    "allergy": "Cereal containing gluten, Milk, Soya"
+  },
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "dataset_name": "mcd_menu_alt",
+    "row_index": 11,
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Phase_1_Taste_Embedding_Model/data/raw/mcd.csv"
+  },
+  "client_id": null,
+  "chunk_index": null,
+  "parent_record_id": null
+}

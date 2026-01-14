@@ -1,0 +1,23 @@
+{
+  "record_id": "e39fd593-0fd9-4d1e-91c2-82ea896e8fe1",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.866863",
+  "raw_text": "Call Transcript: User: Hello? Agent: I'm here to collect information about your food preferences to complete the onboarding so you can get rewarded. To start, please say your name or Prolific ID. User: ... Agent: Please tell me your name or Prolific ID so we can begin. User: 6-3-D-7-B-7-7-6-A-9-9-2-3-F-E-2-A 6 9 D 3 6 B D Agent: ... User: Hello? Agent: Thank you. Now, what is your favorite fast-food item, including the chain and the exact item? Could you also tell me why you like it, focusing on its flavor, texture, temperature, smell, and aftertaste? User: Wendy's classic triple has the best meat patties in the game paired with the mayonnaise and the crispy lettuce fresh tomatoes and onions that are always out of this world the textures fuse together with the squared meat it creates happiness I can only explain the taste of a Wendy's classic triple as happiness texture is very firm reminds you that you're eating a piece of meat the buns are very soft the lettuce is crispy the tomatoe",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview16.txt",
+    "total_chunks": 10
+  },
+  "client_id": null,
+  "chunk_index": 0,
+  "parent_record_id": null
+}

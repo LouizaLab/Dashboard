@@ -1,0 +1,24 @@
+{
+  "record_id": "54ab31f8-6d62-442c-805d-b822ced9ca88",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.722076",
+  "raw_text": "User: Usually a regular hamburger and a Pepsi.\nAgent: Okay, a regular hamburger and a Pepsi.\n\nAnd what would you never pair your chili cheese fries with? And why not?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview4",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview4.txt",
+    "total_chunks": 33,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 18,
+  "parent_record_id": "2bf06f63-1970-4fb8-9751-bc4c59483394"
+}

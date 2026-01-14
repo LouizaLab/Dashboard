@@ -1,0 +1,23 @@
+{
+  "record_id": "6e25a495-e3cf-4ca3-ad02-43ad2d24864d",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.866383",
+  "raw_text": "e, are you in a budget, health, treat, convenience, explore, or stressed mode? User: Budget. Agent: When you're in a budget mode, what's the first thing that changes in your order? User: Typically dessert. If we can't afford it at the time, we typically don't get a dessert or a coffee. Agent: Okay, that makes sense. What triggered this order today? Please be specific, for example, was it a craving, a deal, an ad, someone suggested it, you were nearby, time pressure, or did you want something lighter or a treat? User: An ad Agent: Was this order planned or spontaneous? User: . Spontaneous. Agent: What would have had to change for you to not get fast food today? User: Nothing. It was just spontaneous. Agent: Understood. Did you switch from your usual chain or usual item today? User: Usual item. Agent: Okay, since you switched from your usual item, what exactly caused that switch? Was it a deal, a new item, boredom, a bad experience, health, price, convenience, social reasons, or limited",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview14.txt",
+    "total_chunks": 9
+  },
+  "client_id": null,
+  "chunk_index": 6,
+  "parent_record_id": "08afa934-6295-42cc-95ab-8c19f8d505dd"
+}

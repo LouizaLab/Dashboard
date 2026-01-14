@@ -1,0 +1,23 @@
+{
+  "record_id": "a858ad0b-9828-426e-aab4-077b2121bd46",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.867950",
+  "raw_text": "ould you pick the biggest driver and explain if it was your mood, cravings, schedule, budget, health goals, social plans, or convenience? User: My last fast-food visit was in another location I wasn't familiar with. It was McDonald's. The food was terrible. It was location driven. Agent: Thank you for explaining that your last experience was location-driven and not positive. Considering today, what \"mode\" are you in? For example, are you in a budget, health, treat, convenience, explore, or stressed mode? User: treat and convenience Agent: Okay, \"treat and convenience\" mode. What's the first thing that changes in your order when you're in that mode? User: I would probably order a shake or a dessert Agent: Ordering a shake or dessert definitely fits the \"treat\" aspect. Now, what triggered this order today? Please be specific, for example, was it a craving, a deal, an ad, someone suggested it, you were nearby, time pressure, you wanted something lighter, or you wanted a treat? User: Tim",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview20.txt",
+    "total_chunks": 11
+  },
+  "client_id": null,
+  "chunk_index": 8,
+  "parent_record_id": "2b6b0470-bd75-4f9b-98bd-8b5aed0e9f50"
+}

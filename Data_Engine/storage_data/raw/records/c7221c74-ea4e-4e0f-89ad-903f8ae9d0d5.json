@@ -1,0 +1,24 @@
+{
+  "record_id": "c7221c74-ea4e-4e0f-89ad-903f8ae9d0d5",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.749147",
+  "raw_text": "User: ...\nAgent: Are you still there, Sean? Please let me know if you're still with me.",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview8",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview8.txt",
+    "total_chunks": 19,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 14,
+  "parent_record_id": "1f511bb6-4266-4aca-8ca1-8692fc9731e7"
+}

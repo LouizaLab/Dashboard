@@ -1,0 +1,24 @@
+{
+  "record_id": "44540190-d38a-40cc-8216-b045e6fdf31d",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.679268",
+  "raw_text": "User: I don't have any other options. The cheeseburgers are typically the only options they have available at in-and-out.\nAgent: Thank you for clarifying that you're focused on the In-N-Out cheeseburger. My apologies, I might not have been clear. I was actually asking if there are any other similar items you like from other fast-food chains, not just In-N-Out. For example, another type of cheeseburger from a different restaurant.",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview25",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview25.txt",
+    "total_chunks": 36,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 7,
+  "parent_record_id": "a063913f-2f38-4288-8391-282e73daa401"
+}

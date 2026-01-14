@@ -1,0 +1,24 @@
+{
+  "record_id": "0a62f1ce-67ad-455b-942d-c004c4e8b123",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.723285",
+  "raw_text": "User: Just location\nAgent: Okay, so the location changed.\n\nThinking about that change, what was the biggest driver for it? Was it your mood, cravings, schedule, budget, health goals, social plans, or convenience? Please explain.",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview4",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview4.txt",
+    "total_chunks": 33,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 28,
+  "parent_record_id": "2bf06f63-1970-4fb8-9751-bc4c59483394"
+}

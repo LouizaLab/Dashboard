@@ -1,0 +1,24 @@
+{
+  "record_id": "f2460fec-795a-4249-9dd7-d0cd189ab53b",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.705002",
+  "raw_text": "User: I think if it was very inconvenient like late, I probably wouldn't get it.\nAgent: I understand that inconvenience, like a late delivery, would deter you.\n\nCould you also tell me what specifically triggered this order today? Was it a craving, a deal, an ad, someone's suggestion, being nearby, time pressure, wanting something lighter, or a treat? And was this order planned or spontaneous?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "39",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/39.txt",
+    "total_chunks": 33,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 21,
+  "parent_record_id": "95c43eb4-c8d6-4cf1-a795-e16d4e88afc0"
+}

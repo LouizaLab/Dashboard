@@ -1,0 +1,23 @@
+{
+  "record_id": "0497a856-a3ae-4c97-b3a1-d029070ceeb6",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.869157",
+  "raw_text": "uble cheeseburger and then have them add the sauce. Agent: Okay, so a double cheeseburger with the Big Mac sauce. Why do you consider that the closest replacement for your favorite Big Mac? User: Because it's really close to the same thing. I would have to add some lettuce though but I mean it's really similar except it doesn't have that third bun on it so that's kind of a let down. Can we do this with the stone bun? Agent: I apologize, I'm not familiar with a \"stone bun.\" Could you please clarify what you mean by that? User: I meant the third part of the bun. It usually has three, a three piece bun so like it's got the top then the bottom and then one in the middle. Agent: Ah, I understand now, you mean the middle bun. Thank you for clarifying that. Moving on, could you name two or three similar items you also like from any chain? For each one, please tell me what's better or worse compared to your favorite Big Mac. User: It wouldn't be similar but one other one, one other fast food",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview27.txt",
+    "total_chunks": 11
+  },
+  "client_id": null,
+  "chunk_index": 3,
+  "parent_record_id": "94ab779c-d721-4d41-8de2-10941e8d4497"
+}

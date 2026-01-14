@@ -1,0 +1,23 @@
+{
+  "record_id": "d41ce45a-89e4-4bad-9df3-e7d3f11eff86",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.870287",
+  "raw_text": "User: I would order a McDonald's Big Mac. Agent: And why do you consider the McDonald's Big Mac to be the closest replacement for your favorite pizza? User: It's not really a replacement but it's just something I also like. Agent: I see. So it's another favorite of yours. Can you name two or three other similar items you also like, from any chain? User: Uh, I like Italian subs from Papa John's, uh Jimmy John's. I like garlic wings from Wingstop. Agent: Okay, you mentioned Italian subs from Jimmy John's. Compared to your favorite Papa John's pepperoni pizza, what's better or worse about the Italian sub? User: Um, it's not really better or worse. The sub is cold, the pizza's hot. They taste a little bit different. Agent: Understood. And how about the garlic wings from Wingstop? What's better or worse about them compared to your favorite pizza? User: Sometimes they're very greasy. Usually they're good. Agent: Thank you. What do you usually pair with your Papa John's pepperoni pizza? This",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview5.txt",
+    "total_chunks": 10
+  },
+  "client_id": null,
+  "chunk_index": 2,
+  "parent_record_id": "9d0a0a1b-b297-4a62-8430-2af72da9793c"
+}

@@ -1,0 +1,24 @@
+{
+  "record_id": "fee79eb8-9c2c-4336-9020-638bec9a91ba",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.750877",
+  "raw_text": "User: Thank you.\nAgent: You're welcome. Could you please tell me what are the top two or three things that make your favorite fried chicken from Church's absolutely perfect? And on the other hand, what are the top two or three things that would make it bad, like if it were soggy, dry, or cold?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview9",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview9.txt",
+    "total_chunks": 15,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 4,
+  "parent_record_id": "1bc8a08c-2dc5-435d-be32-44c66ef19022"
+}

@@ -1,0 +1,23 @@
+{
+  "record_id": "8db3563e-32b8-4794-8f46-c7686bd6a4b8",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.867414",
+  "raw_text": "mell. So, they have a good, not-overly-salty aftertaste and not much of a distinct smell. What about the flavor itself?... User: Not much of a distinct smell. What about the flavor itself? Agent: Yes, what about the flavor of the... User: The flavor itself is sort of like bland but salty. Eat it as a dip it in some ketchup or some barbecue sauce and then you're good. You know what I mean? Agent: I understand. So, the flavor is somewhat bland but salty on its own, and you... User: ...somewhat bland but salty on its own, and you inhale... Agent: Thank you for explaining the flavor. Considering the flavor, texture, temperature, smell, and aftertaste, what are the top two or three things that make these McDonald's fries \"perfect\" for you? User: ...aftertaste, what are the top two or three things that make these McDonald's fries perfect for you? Agent: Yes, exactly. Based on what you've... User: Um... Yes, exactly. I'm not sure, honestly. I would say, like, the wait time for, like, getting",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview19.txt",
+    "total_chunks": 14
+  },
+  "client_id": null,
+  "chunk_index": 3,
+  "parent_record_id": "1f988804-b2a4-40bf-a212-66fa038b6fde"
+}

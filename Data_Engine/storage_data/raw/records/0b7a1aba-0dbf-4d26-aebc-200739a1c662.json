@@ -1,0 +1,39 @@
+{
+  "record_id": "0b7a1aba-0dbf-4d26-aebc-200739a1c662",
+  "bucket_id": 1,
+  "source_name": "burger_king_menu",
+  "source_type": "csv",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2025-12-27T02:25:07.241002",
+  "raw_text": null,
+  "structured_fields": {
+    "Item": "Chicken Nuggets- 20pc"
+  },
+  "numerical_fields": {
+    "Calories": 970.0,
+    "Fat Calories": 560.0,
+    "Fat (g)": 62.0,
+    "Saturated Fat (g)": 12.0,
+    "Trans Fat (g)": 0.0,
+    "Cholesterol (mg)": 140.0,
+    "Sodium (mg)": 2440.0,
+    "Total Carb (g)": 60.0,
+    "Dietary Fiber (g)": 5.0,
+    "Sugars (g)": 0.0,
+    "Protein (g)": 45.0
+  },
+  "categorical_fields": {
+    "Category": "Chicken & More"
+  },
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "dataset_name": "burger_king_menu",
+    "row_index": 122,
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Phase_1_Taste_Embedding_Model/data/raw/burger-king-menu.csv"
+  },
+  "client_id": null,
+  "chunk_index": null,
+  "parent_record_id": null
+}

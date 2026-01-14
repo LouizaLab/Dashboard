@@ -1,0 +1,23 @@
+{
+  "record_id": "cc9495dc-30ce-4277-b912-e84e4662cd15",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.867103",
+  "raw_text": "Call Transcript: User: ... Agent: I'm here to collect information about your food preferences to complete the onboarding so you can get rewarded. To start, please say your name or Prolific ID. User: My prolific ID is 5-D-C-1-E-B-8-3-8-A-8-4-4-6-1-5-1-1 B3CD73. Agent: Thank you for that. Now, could you please tell me what your favorite fast-food item is, including the chain and the exact item? And why do you like it? User: At the moment, my favorite would be the Mexican pizza from Taco Bell. It's because one thing, it's a little bit less expensive than a bunch of the other stuff you can get. And I just really love how you can get it made up almost any way you want to. And it's very flavorful. Agent: That sounds delicious. Could you describe the flavor, texture, temperature, smell, and aftertaste of the Mexican Pizza? User: It's, I guess however you, it kind of just tastes like a regular taco, but in a pizza form. And it depends on how you get it made up. It could be spicy or it can be",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview18.txt",
+    "total_chunks": 10
+  },
+  "client_id": null,
+  "chunk_index": 0,
+  "parent_record_id": null
+}

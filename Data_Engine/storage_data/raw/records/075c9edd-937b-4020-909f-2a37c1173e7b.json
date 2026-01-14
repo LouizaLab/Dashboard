@@ -1,0 +1,24 @@
+{
+  "record_id": "075c9edd-937b-4020-909f-2a37c1173e7b",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.749545",
+  "raw_text": "User: Yep\nAgent: Great, thanks for letting me know, Sean.\n\nWhen you're in this \"health mode,\" what's the first thing that changes in your fast-food order?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview8",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview8.txt",
+    "total_chunks": 19,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 17,
+  "parent_record_id": "1f511bb6-4266-4aca-8ca1-8692fc9731e7"
+}

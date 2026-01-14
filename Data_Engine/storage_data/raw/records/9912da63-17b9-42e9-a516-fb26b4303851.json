@@ -1,0 +1,24 @@
+{
+  "record_id": "9912da63-17b9-42e9-a516-fb26b4303851",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.723395",
+  "raw_text": "User: Social plans and convenience.\nAgent: Could you explain how social plans and convenience specifically influenced the change in location for your fast-food order today?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview4",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview4.txt",
+    "total_chunks": 33,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 29,
+  "parent_record_id": "2bf06f63-1970-4fb8-9751-bc4c59483394"
+}

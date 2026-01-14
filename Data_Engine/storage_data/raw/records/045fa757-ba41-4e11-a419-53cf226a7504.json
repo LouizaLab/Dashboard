@@ -1,0 +1,24 @@
+{
+  "record_id": "045fa757-ba41-4e11-a419-53cf226a7504",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.704392",
+  "raw_text": "User: I'd say just wanting something salty\nAgent: Okay, so a salty craving often triggers your lunch orders.\n\nNow, what does \"good value\" mean to you in fast food? Please pick your top two or three factors, such as taste, portion size, speed, nutrition, consistency, or price, and explain how you judge whether something is \"worth it.\"",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "39",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/39.txt",
+    "total_chunks": 33,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 16,
+  "parent_record_id": "95c43eb4-c8d6-4cf1-a795-e16d4e88afc0"
+}

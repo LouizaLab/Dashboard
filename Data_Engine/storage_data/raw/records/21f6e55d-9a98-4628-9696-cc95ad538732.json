@@ -1,0 +1,40 @@
+{
+  "record_id": "21f6e55d-9a98-4628-9696-cc95ad538732",
+  "bucket_id": 1,
+  "source_name": "mcd_menu_alt",
+  "source_type": "csv",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2025-12-27T02:25:07.220913",
+  "raw_text": null,
+  "structured_fields": {
+    "name": "Cold Coffee Mcfloat\u00ae",
+    "serving_size": "270ml",
+    "description": "Rich smooth creamy cold coffee along with sweet vanilla flavoured soft serve mix."
+  },
+  "numerical_fields": {
+    "energy": 270.05,
+    "protein": 5.91,
+    "total_fat": 7.18,
+    "sat_fat": 4.89,
+    "trans_fat": 0.0,
+    "chol": 15.81,
+    "carbs": 45.44,
+    "total_sugar": 36.18,
+    "added_sugar": 19.98,
+    "sodium": 173.59
+  },
+  "categorical_fields": {
+    "allergy": "Milk"
+  },
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "dataset_name": "mcd_menu_alt",
+    "row_index": 9,
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Phase_1_Taste_Embedding_Model/data/raw/mcd.csv"
+  },
+  "client_id": null,
+  "chunk_index": null,
+  "parent_record_id": null
+}

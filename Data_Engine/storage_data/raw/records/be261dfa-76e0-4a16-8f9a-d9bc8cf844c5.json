@@ -1,0 +1,24 @@
+{
+  "record_id": "be261dfa-76e0-4a16-8f9a-d9bc8cf844c5",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.847309",
+  "raw_text": "User: If it's fresh, that's one thing. I don't like the, like when they let it sit, which is very rare because usually they sell out pretty quick. So as long as it's fresh, that's really good. And if the rice isn't like stale and sat around for a while. And then the other thing too is I don't mind the fried rice. So if it ends up getting mixed up with the white rice, that's not a bad thing unless it's really gotten mixed up because then the fried rice has peas in it. And I've tried to eat peas and they're just nasty. I can't eat them. I don't like the flavor of them whatsoever. So if that happens, that really sets things off and then they have to redo the order.\nAgent: Thank you for sharing those details, Carl. You mentioned that stale rice and peas in the fried rice can make it less enjoyable. Are there any other top two or three things that would make your favorite Panda Express meal \"bad\" for you?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "30",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/30.txt",
+    "total_chunks": 9,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 3,
+  "parent_record_id": "e3a359e5-9ab8-4514-8b75-bf5e72249abb"
+}

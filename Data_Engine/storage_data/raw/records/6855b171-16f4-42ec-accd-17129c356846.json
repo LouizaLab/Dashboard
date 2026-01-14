@@ -1,0 +1,23 @@
+{
+  "record_id": "6855b171-16f4-42ec-accd-17129c356846",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.868249",
+  "raw_text": "old definitely if it was um stale or undercooked. Maybe a little too soggy on the bun would definitely ruin it Agent: I see. Cold, stale, undercooked, or a soggy bun would definitely make it a bad experience. If your Double Quarter Pounder with Cheese was unavailable, what would you order instead, including the chain and the specific item? User: I think I'd probably rather go to Taco Bell if that happened get maybe a chalupa meal Agent: Okay, a Chalupa meal from Taco Bell. Why do you consider that the closest replacement for your Double Quarter Pounder with Cheese? User: I really like the taco taste. I like being able to have, you know, that sort of Mexican but fast food feel. Really something I like being able to choose between the chicken and steak, things like that. Agent: That makes sense. You enjoy the Mexican fast-food feel and the choice of fillings. Now, could you name two or three similar items you also like from any chain? For each one, please tell me what's better or worse",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview23.txt",
+    "total_chunks": 12
+  },
+  "client_id": null,
+  "chunk_index": 2,
+  "parent_record_id": "77b85ac2-dbd2-465a-8dcb-6362a88d094f"
+}

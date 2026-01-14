@@ -1,0 +1,23 @@
+{
+  "record_id": "d7961550-ca82-4c91-9eec-ab3e7565bf69",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.867026",
+  "raw_text": "User: Not really Agent: Okay, so your price sensitivity hasn't really changed. Are you trying to eat healthier than two to four weeks ago? Why or why not? User: Yeah because New Year's coming up and I'd like to consider that Agent: I understand. Since you're looking ahead to the New Year, what specific rule are you following to eat healthier? For example, are you focusing on less fried food, fewer calories, more protein, or no soda? User: Mostly just eating or cooking at home more. Agent: That's a clear goal. What recent change affected your eating, and what did it change in your fast-food choices? For example, a new gym routine, a diet plan, travel, stress, or a change in your schedule. User: Nothing. Agent: Okay, so no recent changes have affected your eating habits or fast-food choices. Now, let's talk about novelty versus routine. When do you try new items versus sticking to your usual? User: If I'm really hungry I usually stick to my usual if I'm somewhere new or if I want some",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview17.txt",
+    "total_chunks": 11
+  },
+  "client_id": null,
+  "chunk_index": 9,
+  "parent_record_id": "f5c69c84-f91a-4dd6-8cf5-c2c95cae4a75"
+}

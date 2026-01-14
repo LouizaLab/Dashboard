@@ -1,0 +1,24 @@
+{
+  "record_id": "c36f499d-1381-4d26-8acb-a1ef69718f35",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.820012",
+  "raw_text": "User: Size is often a good deal for me because I like smaller portions. Cost savings would be the second choice. And healthy food with lower saturated fat would be my third choice.\nAgent: Thank you, Nicole. So, for you, good value means smaller portions, cost savings, and healthier food with lower saturated fat.\n\nNow, let's move on to some other aspects. Compared to your last fast-food order, what changed today, if anything? Could you pick the biggest driver and explain if it was your mood, cravings, schedule, budget, health goals, social plans, or convenience?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "36",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/36.txt",
+    "total_chunks": 29,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 18,
+  "parent_record_id": "4c0b766b-108c-463c-ac1b-84504ef7b9d6"
+}

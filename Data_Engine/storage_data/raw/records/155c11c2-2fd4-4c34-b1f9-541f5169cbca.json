@@ -1,0 +1,24 @@
+{
+  "record_id": "155c11c2-2fd4-4c34-b1f9-541f5169cbca",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.815067",
+  "raw_text": "User: Usually a sandwich with fries for lunch,\nAgent: Thank you. What does...",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview17",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview17.txt",
+    "total_chunks": 33,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 15,
+  "parent_record_id": "88d4a69e-5a62-47c8-8b20-22b88f242475"
+}

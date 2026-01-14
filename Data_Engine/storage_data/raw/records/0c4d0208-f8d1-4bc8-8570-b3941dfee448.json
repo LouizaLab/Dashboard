@@ -1,0 +1,24 @@
+{
+  "record_id": "0c4d0208-f8d1-4bc8-8570-b3941dfee448",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.752212",
+  "raw_text": "User: So fried chicken, I tend to order it after a week or so of eating pretty healthy. And there's a few different types of occasions. One is like if I go home, so church's chicken is more common in some cities than others. I will order it if I'm at home because I'm familiar with the different locations. And so when I return home, which is only a couple of times a year because I live pretty far away from where I currently work, that's when I'll go once or twice. And then some other times include if I, you know, am on a trip in a new place, I'm very hungry and I'm just trying to get a quick meal. I don't want to pay a lot of money. That's when I'll oftentimes opt for fried chicken for dinner or something like that. But it's not always the same thing. It can be different from what you're used to eating at home or your family's.",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview9",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview9.txt",
+    "total_chunks": 15,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 14,
+  "parent_record_id": "1bc8a08c-2dc5-435d-be32-44c66ef19022"
+}

@@ -1,0 +1,24 @@
+{
+  "record_id": "62a66c54-6e5e-4862-8346-dd31be0bd15d",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.699411",
+  "raw_text": "User: Go to many other burger places. Maybe the regular Wendy's burger and\nAgent: Okay, so a regular Wendy's burger. What's better or worse about that compared to your Big Mac?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview24",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview24.txt",
+    "total_chunks": 32,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 9,
+  "parent_record_id": "cfe6dba6-be54-476b-a6c7-e75d0a58bbec"
+}

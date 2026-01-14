@@ -1,0 +1,24 @@
+{
+  "record_id": "51577cb3-6e10-4765-bb8f-234f03c5db2c",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.835047",
+  "raw_text": "User: Something new I dislike will make me change it but probably not for too long unless it was just a new like flagship product.\nAgent: So, a new dislike of your current default, or a compelling new flagship product, would be the main reasons for a permanent change.\n\nHow much did a deal influence your choice today? Could you explain what kind of deal actually changes your behavior, such as buy-one-get-one, a percentage off, app points, or free delivery?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "33",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/33.txt",
+    "total_chunks": 22,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 19,
+  "parent_record_id": "aa98a079-d75e-4bbe-84c1-8fdbe78a1de3"
+}

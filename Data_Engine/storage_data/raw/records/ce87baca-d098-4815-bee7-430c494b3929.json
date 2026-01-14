@@ -1,0 +1,23 @@
+{
+  "record_id": "ce87baca-d098-4815-bee7-430c494b3929",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.869813",
+  "raw_text": "McDonald's and get some lunch. Agent: That's a very clear picture of when you typically choose a Big Mac. So, when you're running errands by yourself during lunchtime, do you usually feel time pressure, and what ordering channel do you use, like drive-thru or delivery? User: I use the app on my phone and order and then I pull up and then they bring it out to me. Agent: Thank you for clarifying that you use the app and pick it up. How does price change your choice? For example, if a Big Mac cost two dollars more, what would you do? User: Oh, I'd probably start looking for something else that was reasonable. McDonald's prices have already gone up so much that it's kind of hit the max that I'm willing to spend now. That's why I use the app because there's usually coupons and free stuff and you can like, you know, save up points and get free product. So that's kind of how I justify it. Agent: That's very insightful. It sounds like you're already quite price-sensitive with fast food. If",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview3.txt",
+    "total_chunks": 11
+  },
+  "client_id": null,
+  "chunk_index": 6,
+  "parent_record_id": "763b6b14-78e3-4d1d-9738-7fff2af6b166"
+}

@@ -1,0 +1,24 @@
+{
+  "record_id": "ab3ba334-bde2-45c5-878c-368e607ae50e",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.704765",
+  "raw_text": "User: Explore\nAgent: Okay, you're in \"Explore\" mode. What's the first thing that changes in your order when you're in that mode?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "39",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/39.txt",
+    "total_chunks": 33,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 19,
+  "parent_record_id": "95c43eb4-c8d6-4cf1-a795-e16d4e88afc0"
+}

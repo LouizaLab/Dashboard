@@ -1,0 +1,23 @@
+{
+  "record_id": "9adb9264-265e-4869-8bbb-c972ac6cfaeb",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.869480",
+  "raw_text": "know. What are the top two or three things that make that Chick-fil-A chicken sandwich \"perfect\" for you? For instance, is it a crunchy coating, a specific sauce balance, the heat level, or the bun texture? User: The bun texture and the heat level. Agent: Understood. And on the flip side, what are the top two or three things that would make that Chick-fil-A chicken sandwich \"bad\" for you? For example, if it were soggy, dry, cold, under-salted, too greasy, or stale? User: If it were too greasy or cold. Agent: I see. If the Chick-fil-A chicken sandwich was unavailable, what would you order instead, and from which chain? User: I would probably get the nuggets from Chick-fil-A. Agent: And why do you consider the Chick-fil-A nuggets to be the closest replacement for the chicken sandwich? User: Because it's literally the same chicken just in nugget form Agent: That makes perfect sense. Can you name two or three similar items you also like, from any chain? And for each one, could you tell me",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview28.txt",
+    "total_chunks": 12
+  },
+  "client_id": null,
+  "chunk_index": 1,
+  "parent_record_id": "28bd9b1c-9686-4e84-8a5f-49c46c8084fd"
+}

@@ -1,0 +1,23 @@
+{
+  "record_id": "4807e05b-cf00-46e2-80fa-895e71ed141a",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.866473",
+  "raw_text": "y. Agent: Thank you for that explanation. Now, thinking beyond McDonald's, can you name two or three similar items you also like from any other fast-food chains? And for each of those, could you... User: I don't eat McDonald's. I do not eat any other fast food, just McDonald's. Agent: Understood, you only eat McDonald's. So, sticking with McDonald's, what do you usually pair with your Big Mac? This could be drinks, sides,... User: I get fries and a drink. That's it. Just fries and a drink, no chicken nuggets Agent: Okay, fries and a drink. And what would you never pair your Big Mac with, and why? User: . I can't say never because I like all McDonald's items. So I would get a Big Mac with anything. Agent: I understand you enjoy all McDonald's items and would pair a Big Mac with anything on their menu. Moving on, in what situations do you choose the Big Mac most often? Please consider factors like time... User: I choose the Big Mac whenever I get food from McDonald's whether it's lunch",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview15.txt",
+    "total_chunks": 13
+  },
+  "client_id": null,
+  "chunk_index": 3,
+  "parent_record_id": "f1fd0055-5ec4-40f3-bc6a-48afb005f6d4"
+}

@@ -1,0 +1,24 @@
+{
+  "record_id": "cc2147fb-5beb-4349-b91c-66d4fb0da32b",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.687096",
+  "raw_text": "User: Um... Yes, exactly. I'm not sure, honestly. I would say, like, the wait time for, like, getting them is, like, pretty short because they always, like, I mean, mostly when I'm there they always, like, already have them made and then they just heat them up or something.\nAgent: I understand that the short wait time is a positive aspect of getting them. However, focusing on the fries themselves, what are the top two or three qualities of the fries—like their crispness,...",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview19",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview19.txt",
+    "total_chunks": 60,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 15,
+  "parent_record_id": "a3e1d684-9ae6-4af5-abed-bbda00d0d1d0"
+}

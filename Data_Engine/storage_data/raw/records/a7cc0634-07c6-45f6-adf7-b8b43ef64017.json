@@ -1,0 +1,24 @@
+{
+  "record_id": "a7cc0634-07c6-45f6-adf7-b8b43ef64017",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.769039",
+  "raw_text": "User: Well, when you go to Taco Bell, they're either here to miss whether it's hot or fresh or how well it's prepared, that kind of thing. It's fast food.\nAgent: So, when you compare a Taco Bell taco or chicken quesadilla to your Wingstop Buffalo wings, what aspects of the Taco Bell items are better, and what aspects are worse for you?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "45",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/45.txt",
+    "total_chunks": 22,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 15,
+  "parent_record_id": "94dc8ad1-54d4-42c6-baca-2b6d6e488033"
+}

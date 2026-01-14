@@ -1,0 +1,24 @@
+{
+  "record_id": "74f11b10-069e-4292-8fa8-af252e3c42af",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.727854",
+  "raw_text": "User: If I had felt like cooking or if I had gone out to eat, to my family's house to eat,\nAgent: Thank you. Did you switch from your usual chain or usual item today?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview5",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview5.txt",
+    "total_chunks": 37,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 26,
+  "parent_record_id": "70f85520-c679-4467-82c3-f02b7ab569c2"
+}

@@ -1,0 +1,23 @@
+{
+  "record_id": "48526c94-5dd6-48a3-aa35-f46d7354e862",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.867676",
+  "raw_text": "ago? Why or why not? User: I'm not really trying. It's just kind of, you know, a byproduct of not being able to go out. Agent: I understand. So, while not a conscious effort, eating less fast food due to budget constraints has naturally led to a change. Are there any specific rules you find yourself following, even unintentionally, such as less fried food, fewer calories, more protein, or no soda? User: Not really, no. Agent: Okay, thank you. What recent change affected your eating? For example, a gym routine, a diet plan, travel, stress, or schedule, and what did it change in your fast-food choices? User: The only thing that's changed is less money so I don't eat fast food as often. Agent: Understood. So, the main change affecting your fast-food choices is having less money, which means you're eating it less frequently. Now, let's talk about novelty versus routine. When do you try new items versus sticking to your usual? User: I'm a creature of habit I usually stick to my usual. Ag",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview2.txt",
+    "total_chunks": 12
+  },
+  "client_id": null,
+  "chunk_index": 10,
+  "parent_record_id": "6cb1c839-9316-444a-b7a9-1e6f04a47cad"
+}

@@ -1,0 +1,23 @@
+{
+  "record_id": "cad99447-eb95-4f3b-9c94-3a7c66a6189e",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.866875",
+  "raw_text": "ame two or three similar items you also like from any chain? For each one, please tell me what's better or worse compared to your favorite Wendy's Classic Triple. User: McDonald's cheeseburger, single cheeseburger, worse, but it's a very solid sandwich. I eat those frequently. Popeye's ghost pepper chicken sandwich, it's not as good as Wendy's, but it's a very solid choice. Good amount of meat, quality dressings, good bun. Agent: Thank you for those examples. For the McDonald's cheeseburger and the Popeye's Ghost Pepper Chicken Sandwich, could you tell me a bit more about what's better or worse about them specifically when compared to your favorite Wendy's Classic Triple? User: Well, the chicken sandwich is very good, but it's not beef, so you can't really compare them. Although you can compare them for being sandwiches. Popeye's makes chicken, so the fact that they make a chicken sandwich is impressive. But I still may prefer a Wendy's chicken sandwich on the right day. And with the M",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview16.txt",
+    "total_chunks": 10
+  },
+  "client_id": null,
+  "chunk_index": 3,
+  "parent_record_id": "e39fd593-0fd9-4d1e-91c2-82ea896e8fe1"
+}

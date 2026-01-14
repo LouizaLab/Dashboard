@@ -1,0 +1,24 @@
+{
+  "record_id": "2684299a-0d2e-4ec6-81d9-f3856a31a8c5",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.826400",
+  "raw_text": "User: I enjoy the flavor of the Thousand Island sauce that is put on the burgers\nAgent: That's interesting. So the Thousand Island sauce is a big part of the appeal. What are the top two or three things that make that In-N-Out cheeseburger \"perfect\" for you? For example, is it a crunchy coating, a specific sauce balance, the heat level, or the bun texture?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview13",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview13.txt",
+    "total_chunks": 36,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 3,
+  "parent_record_id": "5a72e79a-a0c4-42b9-8b20-54e1486b68fc"
+}

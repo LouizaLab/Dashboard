@@ -1,0 +1,23 @@
+{
+  "record_id": "586dc7a1-236b-4134-9288-d335a025adbe",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.869809",
+  "raw_text": "Coke because regular soda is just too sweet tasting to me. I don't like it and I probably wouldn't pair it with a salad because if you're eating a Big Mac, you're not going to want a salad too. Agent: That's a clear preference for Diet Coke over regular soda due to sweetness, and a practical point about not pairing a Big Mac with a salad. Now, let's talk about the context of your choices. In what situations do you choose a Big Mac most often? Please include details like time pressure, location (home, work, commute), ordering channel (drive-thru, delivery), and who you're with. User: Um usually I will go when I'm by myself and um during like lunchtime between noon and like four. When I don't have my kids and I'm in town running errands and I get hungry, that's usually like I'll go through McDonald's and get some lunch. Agent: That's a very clear picture of when you typically choose a Big Mac. So, when you're running errands by yourself during lunchtime, do you usually feel time pressu",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview3.txt",
+    "total_chunks": 11
+  },
+  "client_id": null,
+  "chunk_index": 5,
+  "parent_record_id": "763b6b14-78e3-4d1d-9738-7fff2af6b166"
+}

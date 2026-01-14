@@ -1,0 +1,24 @@
+{
+  "record_id": "6baa14d9-e078-4d7b-b0fc-5ec36a6cee9e",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.712350",
+  "raw_text": "User: Oh, I'd probably start looking for something else that was reasonable. McDonald's prices have already gone up so much that it's kind of hit the max that I'm willing to spend now. That's why I use the app because there's usually coupons and free stuff and you can like, you know, save up points and get free product. So that's kind of how I justify it.\nAgent: That's very insightful. It sounds like you're already quite price-sensitive with fast food.\n\nIf there was a deal on the Big Mac, what would you do differently?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview3",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview3.txt",
+    "total_chunks": 22,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 14,
+  "parent_record_id": "fc77d1e2-9777-4dca-a844-42568cda327f"
+}

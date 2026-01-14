@@ -1,0 +1,23 @@
+{
+  "record_id": "b9009263-a577-44ac-a5b6-07b75c4bb132",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.870078",
+  "raw_text": "nience. What \"mode\" are you in today? For example, are you in a budget, health, treat, convenience, explore, or stressed mode? User: Explore. Agent: Okay, you're in \"explore\" mode. What's the first thing that changes in your order when you're in that mode? User: Variety. Choose something different. Agent: Okay, so you look for variety and choose something different when you're in explore mode. What triggered this order today? Please be specific...",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview4.txt",
+    "total_chunks": 10
+  },
+  "client_id": null,
+  "chunk_index": 9,
+  "parent_record_id": "a8a3a49c-aace-4ba8-a37f-209b4e4dfac4"
+}

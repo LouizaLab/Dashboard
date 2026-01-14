@@ -1,0 +1,24 @@
+{
+  "record_id": "51e226e2-99db-47f9-88f5-b80d9f7a25c5",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.779146",
+  "raw_text": "User: I don't think that's true. Okay.\nAgent: Could you clarify what you mean by \"I don't think that's true\"? Are you referring to my understanding of your previous answer, or something else?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "34",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/34.txt",
+    "total_chunks": 23,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 14,
+  "parent_record_id": "e45fb1d7-d025-48e7-9f73-0ae6be217425"
+}

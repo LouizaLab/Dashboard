@@ -1,0 +1,23 @@
+{
+  "record_id": "96afacbf-09f3-4fb7-8e1e-eede823bd38c",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.865403",
+  "raw_text": "s perfect for me. So I wouldn't do anything differently. Agent: Understood. So, a deal wouldn't necessarily change your order for that specific item. ... User: No, it wouldn't. Agent: Thank you for clarifying. Over the past two weeks, what are your most common fast-food patterns? This includes when you eat it, what you usually order, and what typically triggers it. User: Usually I will order, uh, I have two grown children that I'm in the house with. And usually if they're going to work and I'm not in a cooking mode, but I'm, I don't do a lot of cooking now. So if it's something quick, that's convenient for my dinner time, I'll get that. Agent: Thank you. What does \"good value\" mean to you in fast food? Could you pick your top two or three factors, such as taste, portion size, speed, nutrition, consistency, or price, and explain how you judge if something is \"worth it\"?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview1.txt",
+    "total_chunks": 8
+  },
+  "client_id": null,
+  "chunk_index": 7,
+  "parent_record_id": "ce681e47-af5e-424a-9db6-a230fd8e80cd"
+}

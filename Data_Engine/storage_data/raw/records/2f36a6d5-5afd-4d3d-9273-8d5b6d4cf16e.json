@@ -1,0 +1,24 @@
+{
+  "record_id": "2f36a6d5-5afd-4d3d-9273-8d5b6d4cf16e",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.775128",
+  "raw_text": "User: I think most often it comes down to convenience and timing. I usually get it when I'm ready on the road or running errands. I know the location. I know the drive-thru will move pretty fast and I don't have to think too hard about the order. It's also a go-to when I'm short on time, but kind of still want something that feels fresh and satisfying, not necessarily rushed or sloppy. I think location matters a lot. If I'm nearing in and out, that choice becomes a lot easier.\nAgent: That makes perfect sense. How does price influence your choice? For example, if the double-double cost two dollars more, what would you do? And if there was a deal, what would you do differently?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "46",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/46.txt",
+    "total_chunks": 19,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 5,
+  "parent_record_id": "42485974-cee0-43b1-bfcd-159fb131da89"
+}

@@ -1,11 +1,18 @@
 """
 Services for GPT integration and mock responses.
+
+Direct GPT-4 hypothesis generation (Agent-Tron/LPM/Data Engine unhooked for now).
 """
 import os
 import json
 import random
+import logging
 from typing import Dict, List, Optional
 from .sim_models import PersonaAgent
+
+logger = logging.getLogger(__name__)
+
+# Agent-Tron/LPM/Data Engine are unhooked - using direct GPT-4
 
 try:
     from openai import OpenAI
@@ -49,16 +56,21 @@ def generate_persona_response(
     agent: PersonaAgent,
     task_type: str,
     payload: Dict,
-    mode: str = 'gpt'  # Default to GPT
+    mode: str = 'gpt',  # Default to GPT
+    agent_tron_context: Optional[Dict] = None  # Not used (Agent-Tron unhooked)
 ) -> Dict:
     """
     Generate a persona response using GPT or mock.
+    
+    Direct GPT-4 hypothesis generation (Agent-Tron/LPM/Data Engine unhooked).
+    Enhanced prompts provide unique insights for beauty, food, and AITANA questions.
     
     Args:
         agent: PersonaAgent instance
         task_type: 'hypothesis', 'survey', 'taste_test', 'chat'
         payload: Task-specific payload
         mode: 'gpt' or 'mock'
+        agent_tron_context: Not used (kept for compatibility)
     
     Returns:
         Dict with 'text' and optionally 'structured' data
@@ -74,11 +86,11 @@ def generate_persona_response(
                 'structured': {}
             }
         print(f"[generate_persona_response] Calling GPT for {agent.display_name} (task: {task_type})")
-        result = _generate_gpt_response(agent, task_type, payload)
+        result = _generate_gpt_response(agent, task_type, payload, agent_tron_context=None)
         print(f"[generate_persona_response] GPT returned: {result.get('text', '')[:100]}...")
         return result
     else:
-        # Only use mock if explicitly requested (should not happen now)
+        # Only use mock if explicitly requested
         print(f"WARNING: Mock mode explicitly requested for {agent.display_name} - using mock")
         return _generate_mock_response(agent, task_type, payload)
 
@@ -111,8 +123,171 @@ You are {archetype_desc}.
 Respond naturally and authentically from this persona's perspective. Be specific about your preferences, habits, and decision-making process."""
 
 
-def _generate_gpt_response(agent: PersonaAgent, task_type: str, payload: Dict) -> Dict:
-    """Generate response using GPT."""
+def _categorize_hypothesis_question(hypothesis_text: str) -> str:
+    """Categorize hypothesis question to provide appropriate prompts."""
+    text_lower = hypothesis_text.lower()
+    
+    # Beauty questions
+    if 'sephora' in text_lower or ('discover' in text_lower and 'beauty' in text_lower):
+        return 'beauty_sephora'
+    if 'virtual' in text_lower and 'beauty' in text_lower:
+        return 'beauty_virtual'
+    if 'fashion' in text_lower and ('cash back' in text_lower or 'app' in text_lower):
+        return 'beauty_virtual'
+    if 'beautify' in text_lower:
+        return 'beauty_virtual'
+    
+    # Food questions
+    if 'pricing' in text_lower and ('fast food' in text_lower or 'menu' in text_lower):
+        return 'food_pricing'
+    if 'price-sensitive' in text_lower or ('price' in text_lower and 'segment' in text_lower):
+        return 'food_sensitivity'
+    if 'cookie' in text_lower or ('cookie' in text_lower and 'preference' in text_lower):
+        return 'food_cookie'
+    if 'mcdonalds' in text_lower or 'burger king' in text_lower:
+        return 'food_pricing'
+    
+    # AITANA questions
+    if 'functional' in text_lower and ('food' in text_lower or 'snack' in text_lower):
+        return 'aitana_food'
+    if 'beauty' in text_lower and ('category' in text_lower or 'portfolio' in text_lower):
+        return 'aitana_beauty'
+    if 'prestige' in text_lower and 'beauty' in text_lower:
+        return 'aitana_beauty'
+    
+    return 'generic'
+
+
+def _build_enhanced_system_prompt(agent: PersonaAgent, question_category: str) -> str:
+    """Build enhanced system prompt based on question category."""
+    base_prompt = f"""You are a simulated consumer agent named {agent.display_name}.
+
+Your persona:
+- Archetype: {agent.get_archetype_display()}
+- Age: {agent.age_bucket}
+- Gender: {agent.gender}
+- Region: {agent.region}
+- Income: {agent.income}
+- Behavioral traits: {json.dumps(agent.behavior_params_json, indent=2) if agent.behavior_params_json else '{}'}"""
+    
+    category_guidance = {
+        'beauty_sephora': """
+You are responding to questions about beauty product discovery and purchase decisions.
+Consider: How you discover products (social media, in-store, reviews), what influences your purchases,
+the importance of personalization, and factors that cause purchase delays or abandonment.
+Be specific about your beauty shopping behaviors and preferences.""",
+        
+        'beauty_virtual': """
+You are responding to questions about shifting from in-store to virtual beauty experiences.
+Consider: What features would make you switch to virtual consultations, the importance of
+AI matching, video consultations, AR try-on, and how your shopping habits would change.
+Be specific about your preferences for in-store vs. virtual experiences.""",
+        
+        'food_pricing': """
+You are responding to questions about fast-food pricing and menu structure.
+Consider: Your price sensitivity, perception of value, preferences for combo meals vs. a la carte,
+how pricing affects your purchase frequency, and what price points feel fair.
+Be specific about your spending habits and price thresholds.""",
+        
+        'food_sensitivity': """
+You are responding to questions about price sensitivity across customer segments.
+Consider: How price changes affect your behavior, your willingness to pay premiums,
+price thresholds that cause you to switch brands or reduce frequency, and how this varies
+by occasion or time of day. Be specific about your price sensitivity.""",
+        
+        'food_cookie': """
+You are responding to questions about cookie and packaged food preferences.
+Consider: How your preferences are shifting (taste vs. health vs. price vs. convenience),
+whether you're switching brands or changing consumption behavior, and how you perceive
+different brands. Be specific about what attributes matter most to you.""",
+        
+        'aitana_food': """
+You are responding to questions about emerging functional food needs and snacking trends.
+Consider: New functional jobs you're hiring food for (mood, focus, sleep, gut health, social moments),
+which ingredients/formats/rituals appeal to you, and how trends differ by your cohort.
+Be specific about your functional food needs and usage occasions.""",
+        
+        'aitana_beauty': """
+You are responding to questions about beauty category strategy and portfolio decisions.
+Consider: Which beauty categories matter most to you, how demand is evolving across price tiers,
+where you're trading up or down, competitor positioning, and latest innovation trends.
+Be specific about your category preferences and price tier behaviors.""",
+        
+        'generic': """
+Respond authentically to the hypothesis question based on your persona.
+Be specific about your preferences, behaviors, and decision-making factors."""
+    }
+    
+    guidance = category_guidance.get(question_category, category_guidance['generic'])
+    return base_prompt + guidance
+
+
+def _build_enhanced_user_prompt(agent: PersonaAgent, hypothesis_text: str, question_category: str) -> str:
+    """Build enhanced user prompt with category-specific guidance."""
+    base_prompt = f"""HYPOTHESIS QUESTION:
+{hypothesis_text}
+
+Based on your persona as {agent.display_name} ({agent.get_archetype_display()}, {agent.age_bucket}, {agent.region}),
+provide a detailed, authentic response to this question.
+
+IMPORTANT: Provide unique insights specific to your persona. Different agents should have different perspectives
+based on their demographics, archetype, and behavioral traits. Be specific with examples, numbers, and concrete behaviors.
+
+Respond in JSON format:
+{{
+  "agent_id": "{agent.id}",
+  "decision": "your decision/preference/answer",
+  "reasons": ["specific reason 1 with details", "specific reason 2 with details", "specific reason 3 with details"],
+  "confidence": 0.75,
+  "specific_examples": ["concrete example 1", "concrete example 2"],
+  "data_points": {{"metric": "value", "another_metric": "value"}}
+}}"""
+    
+    category_specific = {
+        'beauty_sephora': """
+Focus on: Discovery channels (TikTok, Instagram, in-store), influence factors (consultants vs. reviews vs. influencers),
+personalization importance, abandonment reasons (price, availability, indecision). Include specific percentages or frequencies.""",
+        
+        'beauty_virtual': """
+Focus on: Required features for virtual switch (AI matching accuracy, video quality, AR capabilities),
+deal-breakers, price expectations, return policies. Be specific about what would make you switch.""",
+        
+        'food_pricing': """
+Focus on: Price perception (too high/just right), value perception, preferred price ranges,
+how pricing affects frequency, willingness to pay premiums. Include specific price points.""",
+        
+        'food_sensitivity': """
+Focus on: Price sensitivity level, reaction to price changes, switching behavior,
+frequency reduction, trade-down behavior. Include specific percentages or thresholds.""",
+        
+        'food_cookie': """
+Focus on: Attribute importance (taste, health, price, convenience), brand switching,
+consumption changes, brand perception vs. competitors. Be specific about trade-offs.""",
+        
+        'aitana_food': """
+Focus on: Functional needs (mood, focus, sleep, gut health), preferred ingredients/formats,
+usage occasions, cohort differences (Gen Z vs. Millennials). Include specific examples.""",
+        
+        'aitana_beauty': """
+Focus on: Category priorities, price tier preferences, trading behavior, innovation interests,
+competitor comparisons. Include specific categories and price points."""
+    }
+    
+    additional = category_specific.get(question_category, "")
+    return base_prompt + additional if additional else base_prompt
+
+
+def _generate_gpt_response(
+    agent: PersonaAgent,
+    task_type: str,
+    payload: Dict,
+    agent_tron_context: Optional[Dict] = None
+) -> Dict:
+    """
+    Generate response using GPT.
+    
+    Direct GPT-4 hypothesis generation (Agent-Tron/LPM/Data Engine unhooked).
+    """
     if not client:
         return {
             'text': 'GPT client not available. Please set OPENAI_API_KEY environment variable.',
@@ -201,15 +376,18 @@ You're chatting with someone who wants to understand your preferences and behavi
             }
         
         elif task_type == 'hypothesis':
-            # Use agent's system prompt + hypothesis question
-            system_prompt = agent.system_prompt or f"""You are {agent.display_name}, a {agent.get_archetype_display()} from {agent.region}.
-Age: {agent.age_bucket}, Gender: {agent.gender}, Income: {agent.income}
-Behavioral traits: {json.dumps(agent.behavior_params_json)}
-Respond authentically from this persona's perspective."""
+            # Direct GPT-4 hypothesis generation (Agent-Tron/LPM/Data Engine unhooked)
             
-            user_prompt = f"""Respond to this hypothesis/question: {payload.get('input_text', '')}
-
-Provide a brief, authentic response (2-3 sentences) from your persona's perspective. Be specific about how this would affect your behavior or preferences."""
+            hypothesis_text = payload.get('input_text', '')
+            question_category = _categorize_hypothesis_question(hypothesis_text)
+            
+            # Build enhanced system prompt based on question category
+            system_prompt = _build_enhanced_system_prompt(agent, question_category)
+            
+            # Build enhanced user prompt based on question category
+            user_prompt = _build_enhanced_user_prompt(
+                agent, hypothesis_text, question_category
+            )
             
             response = client.chat.completions.create(
                 model="gpt-4o-mini",
@@ -217,13 +395,45 @@ Provide a brief, authentic response (2-3 sentences) from your persona's perspect
                     {'role': 'system', 'content': system_prompt},
                     {'role': 'user', 'content': user_prompt}
                 ],
-                temperature=0.8,
-                max_tokens=200
+                temperature=0.8,  # Higher temperature for more diverse, persona-specific responses
+                max_tokens=500,  # Increased for more detailed responses
+                response_format={"type": "json_object"}  # Force JSON output
             )
-            return {
-                'text': response.choices[0].message.content.strip(),
-                'structured': {}
-            }
+            
+            response_text = response.choices[0].message.content.strip()
+            
+            # Parse JSON response
+            try:
+                structured_response = json.loads(response_text)
+                
+                # Ensure required fields exist
+                if 'decision' not in structured_response:
+                    structured_response['decision'] = 'Neutral'
+                if 'reasons' not in structured_response:
+                    structured_response['reasons'] = []
+                if 'confidence' not in structured_response:
+                    structured_response['confidence'] = 0.7
+                
+                # Build text response from structured data
+                decision = structured_response.get('decision', 'Neutral')
+                reasons = structured_response.get('reasons', [])
+                text_response = f"{decision}: {'; '.join(reasons) if reasons else 'No specific reasons provided.'}"
+                
+                return {
+                    'text': text_response,
+                    'structured': structured_response,
+                }
+            except json.JSONDecodeError:
+                # Fallback: return text response if JSON parsing fails
+                logger.warning(f"Failed to parse JSON response from GPT-4 for agent {agent.id}")
+                return {
+                    'text': response_text,
+                    'structured': {
+                        'decision': 'Neutral',
+                        'reasons': [response_text],
+                        'confidence': 0.5
+                    },
+                }
         
         elif task_type == 'survey':
             question = payload.get('question', '')
@@ -559,50 +769,125 @@ Include segment-level insights showing how different archetypes, age groups, and
 
 
 def aggregate_agent_responses(responses: List[Dict], task_type: str) -> Dict:
-    """Aggregate multiple agent responses into summary statistics."""
+    """
+    Aggregate multiple agent responses into summary statistics.
+    
+    🚨 For hypothesis tasks, uses Agent-Tron confidence metrics for weighting.
+    """
     if not responses:
         return {}
     
     if task_type == 'hypothesis':
         sentiments = []
         themes = {}
+        preferences = {}  # Track brand preferences
+        confidences = []
+        evidence_refs_all = []
         
         for resp in responses:
-            text = resp.get('text', '').lower()
-            # Simple sentiment scoring
-            positive_words = ['yes', 'would', 'like', 'prefer', 'good', 'great', 'definitely']
-            negative_words = ['no', 'wouldn\'t', 'don\'t', 'not', 'bad', 'skeptical']
+            # Use GPT confidence from structured response, or default to 0.7
+            structured = resp.get('structured', {})
+            confidence = structured.get('confidence', 0.7) if structured else 0.7
+            confidences.append(confidence)
             
-            pos_count = sum(1 for w in positive_words if w in text)
-            neg_count = sum(1 for w in negative_words if w in text)
-            
-            sentiment = 0.5
-            if pos_count > neg_count:
-                sentiment = 0.6 + (pos_count - neg_count) * 0.1
-            elif neg_count > pos_count:
-                sentiment = 0.4 - (neg_count - pos_count) * 0.1
-            
-            sentiments.append(sentiment)
-            
-            # Extract themes
-            if 'protein' in text:
-                themes['protein'] = themes.get('protein', 0) + 1
-            if 'price' in text or 'value' in text:
-                themes['value'] = themes.get('value', 0) + 1
-            if 'health' in text or 'nutrition' in text:
-                themes['health'] = themes.get('health', 0) + 1
+            if structured:
+                # Use structured decision and confidence
+                decision = structured.get('decision', '').lower()
+                
+                # Track brand preferences
+                if 'mcdonalds' in decision or 'mcdonald' in decision:
+                    preferences['mcdonalds'] = preferences.get('mcdonalds', 0) + 1
+                    sentiment = 0.7
+                elif 'burger king' in decision or 'bk' in decision:
+                    preferences['burger_king'] = preferences.get('burger_king', 0) + 1
+                    sentiment = 0.3
+                elif 'neutral' in decision:
+                    preferences['neutral'] = preferences.get('neutral', 0) + 1
+                    sentiment = 0.5
+                else:
+                    # Fallback to text analysis
+                    text = resp.get('text', '').lower()
+                    if 'mcdonalds' in text or 'mcdonald' in text:
+                        preferences['mcdonalds'] = preferences.get('mcdonalds', 0) + 1
+                        sentiment = 0.7
+                    elif 'burger king' in text or 'bk' in text:
+                        preferences['burger_king'] = preferences.get('burger_king', 0) + 1
+                        sentiment = 0.3
+                    else:
+                        preferences['neutral'] = preferences.get('neutral', 0) + 1
+                        sentiment = 0.5
+                
+                sentiments.append(sentiment)
+                
+                # Collect evidence refs for traceability
+                evidence_refs = structured.get('evidence_refs', [])
+                evidence_refs_all.extend(evidence_refs)
+                
+                # Extract themes from reasons
+                reasons = structured.get('reasons', [])
+                for reason in reasons:
+                    reason_lower = reason.lower()
+                    if 'protein' in reason_lower:
+                        themes['protein'] = themes.get('protein', 0) + 1
+                    if 'price' in reason_lower or 'value' in reason_lower:
+                        themes['value'] = themes.get('value', 0) + 1
+                    if 'health' in reason_lower or 'nutrition' in reason_lower:
+                        themes['health'] = themes.get('health', 0) + 1
+            else:
+                # Fallback to text analysis
+                text = resp.get('text', '').lower()
+                if 'mcdonalds' in text or 'mcdonald' in text:
+                    preferences['mcdonalds'] = preferences.get('mcdonalds', 0) + 1
+                    sentiment = 0.7
+                elif 'burger king' in text or 'bk' in text:
+                    preferences['burger_king'] = preferences.get('burger_king', 0) + 1
+                    sentiment = 0.3
+                else:
+                    preferences['neutral'] = preferences.get('neutral', 0) + 1
+                    sentiment = 0.5
+                
+                sentiments.append(sentiment)
+                
+                # Extract themes
+                if 'protein' in text:
+                    themes['protein'] = themes.get('protein', 0) + 1
+                if 'price' in text or 'value' in text:
+                    themes['value'] = themes.get('value', 0) + 1
+                if 'health' in text or 'nutrition' in text:
+                    themes['health'] = themes.get('health', 0) + 1
         
+        # Calculate average sentiment
         avg_sentiment = sum(sentiments) / len(sentiments) if sentiments else 0.5
+        
+        # Calculate average confidence
+        avg_confidence = sum(confidences) / len(confidences) if confidences else 0.7
+        
+        # Calculate preference breakdown percentages
+        total_responses = len(responses)
+        preference_breakdown = {}
+        if total_responses > 0:
+            for brand, count in preferences.items():
+                percentage = round((count / total_responses) * 100)
+                preference_breakdown[brand] = {
+                    'percentage': percentage,
+                    'count': count,
+                    'reasons': []  # Could extract from reasons if needed
+                }
         
         return {
             'overall_sentiment': avg_sentiment,
-            'confidence': min(0.95, 0.6 + len(responses) / 200),
+            'confidence': avg_confidence,
+            'preference_breakdown': preference_breakdown,  # Add preference breakdown
             'top_themes': dict(sorted(themes.items(), key=lambda x: x[1], reverse=True)[:5]),
             'response_count': len(responses),
             'distribution': {
                 'positive': sum(1 for s in sentiments if s > 0.6),
                 'neutral': sum(1 for s in sentiments if 0.4 <= s <= 0.6),
                 'negative': sum(1 for s in sentiments if s < 0.4),
+            },
+            'evidence_traceability': {
+                'unique_evidence_refs': len(set(evidence_refs_all)),
+                'total_evidence_refs': len(evidence_refs_all),
             }
         }
     

@@ -1,0 +1,23 @@
+{
+  "record_id": "9e786835-ed98-4adc-874a-1626819044bf",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.865382",
+  "raw_text": "ch was unavailable, what would you order instead, including the chain and the specific item? User: Probably the roast beef. Agent: And why is the roast beef the closest replacement for you? User: Because of the way it is cooked, slow roasted and it is also sliced thin. Agent: That makes sense. Can you name two or three similar items you also like from any chain? And for each one, what's better or worse compared to your favorite brisket sandwich? User: I like... Is this from any place? Agent: Yes, from any chain. User: I like the... I like McDonald's Double Cheeseburger. Agent: Okay, you like the... User: like it. Mm-hmm. Agent: Okay, you like the McDonald's Double Cheeseburger. What's better or worse about that compared to your favorite Arby's brisket sandwich? User: It is... Agent: It is... User: It's good. I still like the brisket better because, like I say, it's sliced really thin, and the Double Cheeseburger is a burger. So I like that they don't put any mayo on it. So I like that.",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview1.txt",
+    "total_chunks": 8
+  },
+  "client_id": null,
+  "chunk_index": 2,
+  "parent_record_id": "ce681e47-af5e-424a-9db6-a230fd8e80cd"
+}

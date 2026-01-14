@@ -1,0 +1,23 @@
+{
+  "record_id": "bf47ef12-8b59-4d66-a427-36928ca19c8f",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.868031",
+  "raw_text": "Supreme? User: Yeah, it has to be... Well, you have to eat the shell, especially the shell. It gets soggy if you don't eat it fairly quickly so you can't have that leftover or something. You have to eat it when it's prepared otherwise it's not really as good. But, yeah, you don't want it to be warm because it would be kind of weird, but you want the chicken to be cooked obviously, so it just tastes fresh. The ingredients should be fresh and the chalaza should be fresh. So Agent: Thank you for that detailed description. Based on what you've said, what are the top two or three things that make the Chicken Chalupa Supreme \"perfect\" for you? User: I really like the chicken that they use. I get weird about the texture of meat sometimes, but I like their chicken. It's good. And I like that it just is fresh. I like the tomatoes and the lettuce and the sour cream and stuff. It's just a good blend of flavors. Agent: That's helpful. On the flip side, what are the top two or three things that wo",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview21.txt",
+    "total_chunks": 10
+  },
+  "client_id": null,
+  "chunk_index": 1,
+  "parent_record_id": "08071a2d-f19f-4ddf-8b32-c6b6250cf6ad"
+}

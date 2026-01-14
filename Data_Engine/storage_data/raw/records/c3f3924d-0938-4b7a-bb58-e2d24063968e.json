@@ -1,0 +1,23 @@
+{
+  "record_id": "c3f3924d-0938-4b7a-bb58-e2d24063968e",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.867030",
+  "raw_text": "s. Now, let's talk about novelty versus routine. When do you try new items versus sticking to your usual? User: If I'm really hungry I usually stick to my usual if I'm somewhere new or if I want something else I might try a new item. Agent: That makes sense. Could you give me one recent example of when you tried a new item and explain why, and then one recent example of when you stuck to your usual and explain why? User: I tried the McDonald's I think they had a hot buffalo sandwich which I didn't like too much it just looked good on the ad and I just decided to get it. Agent: Thank you for that example of trying the McDonald's hot buffalo sandwich because it looked good in the ad. Now, could you give me a recent example of when you stuck to your usual order and explain why you chose to do so?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview17.txt",
+    "total_chunks": 11
+  },
+  "client_id": null,
+  "chunk_index": 10,
+  "parent_record_id": "f5c69c84-f91a-4dd6-8cf5-c2c95cae4a75"
+}

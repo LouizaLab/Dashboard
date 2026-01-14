@@ -1,0 +1,24 @@
+{
+  "record_id": "7cb402d0-1324-4a2b-9700-647407004c64",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.656945",
+  "raw_text": "User: Hi, my name is Nicole.\nAgent: Thank you, Nicole. Let's begin. What is your favorite fast-food item, including the chain and the exact item? And could you tell me why you like it?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview20",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview20.txt",
+    "total_chunks": 29,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 1,
+  "parent_record_id": "1dae9cf3-0d08-4ac6-9faa-09346c1ea83e"
+}

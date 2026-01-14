@@ -1,0 +1,24 @@
+{
+  "record_id": "fad8dd76-40b2-4bf6-9e64-7004c3b22a4d",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.666675",
+  "raw_text": "User: I think it compares to, from what's better from worse, it compares really just, I think if anything better probably because I do like the breakfast the best. Maybe that might even be my top really. Okay.\nAgent: That's interesting that the Chick-fil-A breakfast wrap might even be your top choice.\n\nMoving on, what do you usually pair with your Double Quarter Pounder with Cheese? This could include drinks, sides, or sauces. And what would you never pair it with, and why?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview23",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview23.txt",
+    "total_chunks": 22,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 8,
+  "parent_record_id": "9226c320-dfb2-47d8-87a1-ed9e447a8705"
+}

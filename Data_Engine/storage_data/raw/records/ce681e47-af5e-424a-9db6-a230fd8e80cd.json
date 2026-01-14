@@ -1,0 +1,23 @@
+{
+  "record_id": "ce681e47-af5e-424a-9db6-a230fd8e80cd",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.865363",
+  "raw_text": "Call Transcript: User: ... Agent: I'm here to collect information about your food preferences to complete the onboarding so you can get rewarded. To start, please say your name or Prolific ID. User: Marilyn Malone. Agent: Thank you, Marilyn. What is your favorite fast-food item, including the chain and the exact item? And could you tell me why you like it? User: I like the brisket from Arby's. It's just the way they cook it is just good. I like it. Agent: That sounds delicious. Could you tell me a bit more about what you like about it? For example, what do you enjoy about its flavor, texture, temperature, smell, and aftertaste? User: I like the way it's roasted. They roast it and then they slice it really thin so that it's almost not shredded but in slices. The seasoning that they use and it just tastes good. Agent: That's very descriptive. What are the top two or three things that make that Arby's brisket sandwich \"perfect\" for you? User: The way they slice it really thin and the sea",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview1.txt",
+    "total_chunks": 8
+  },
+  "client_id": null,
+  "chunk_index": 0,
+  "parent_record_id": null
+}

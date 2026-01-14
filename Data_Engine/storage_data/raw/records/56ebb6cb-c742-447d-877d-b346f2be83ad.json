@@ -1,0 +1,24 @@
+{
+  "record_id": "56ebb6cb-c742-447d-877d-b346f2be83ad",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.757158",
+  "raw_text": "User: It was four for four.\nAgent: So, a \"four for four\" deal would make a new item repeat-worthy for you.\n\nWhat is your \"autopilot\" order and why is it your default? Is it taste, consistency, speed, price,...",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "41",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/41.txt",
+    "total_chunks": 39,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 35,
+  "parent_record_id": "3a86faee-b265-401f-89c3-2956bf68e535"
+}

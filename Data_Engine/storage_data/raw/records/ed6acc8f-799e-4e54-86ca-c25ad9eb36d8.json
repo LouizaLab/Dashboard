@@ -1,0 +1,24 @@
+{
+  "record_id": "ed6acc8f-799e-4e54-86ca-c25ad9eb36d8",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.687331",
+  "raw_text": "User: Three things about the fries themselves. I mean, I can't say too much. I mean, they're fries. You know what I mean? It's not like it's some kind of delicacy. These are like just crisp and a bit salty. I mean, what else can you add to fries? You know what I mean?\nAgent: I understand they are fries, and you've mentioned they are crisp and a bit salty. You...",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview19",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview19.txt",
+    "total_chunks": 60,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 17,
+  "parent_record_id": "a3e1d684-9ae6-4af5-abed-bbda00d0d1d0"
+}

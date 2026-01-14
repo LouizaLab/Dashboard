@@ -1,0 +1,24 @@
+{
+  "record_id": "1cf53a8e-b0af-45ae-a00e-1a69f5939240",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.707444",
+  "raw_text": "User: I like Wendy's Mushroom Swiss Burger and I like Taco Bell's Grilled Cheese Burrito. I like them. They're, you know, they're just a little bit more expensive.\nAgent: Thank you for sharing those, Sarah. It's interesting to hear your preferences across different chains.\n\nWhat do you usually pair with your favorite Big Mac, such as drinks, sides, sauces, or dessert? And what would you never pair it with, and why?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview2",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview2.txt",
+    "total_chunks": 31,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 7,
+  "parent_record_id": "89414df8-139e-4b72-9450-a29a8a41b846"
+}

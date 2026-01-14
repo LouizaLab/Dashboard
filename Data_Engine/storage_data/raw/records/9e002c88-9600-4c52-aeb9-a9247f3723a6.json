@@ -1,0 +1,24 @@
+{
+  "record_id": "9e002c88-9600-4c52-aeb9-a9247f3723a6",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.747050",
+  "raw_text": "User: . If they released a new menu item,\nAgent: So, if a new menu item was released, what would you need to see happen repeatedly, such as taste, consistency, price, or convenience, for it to...",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "40",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/40.txt",
+    "total_chunks": 24,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 23,
+  "parent_record_id": "692d79ab-a3ba-476a-990b-bf66f61e7646"
+}

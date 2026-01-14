@@ -1,0 +1,24 @@
+{
+  "record_id": "c9992705-c823-40ce-8ef7-08ee1e5c457a",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.673217",
+  "raw_text": "User: had a nice breading to where it was really crispy instead of crunchy and then the piece of chicken was usually pretty good mostly all white meat and pretty juicy and then with the lettuce on there in the mail because I can't have a chicken sandwich unless I have like lettuce and mayo it's those are really important so that's when other alternative plus it's something that's different than cheese but you know what I mean I like cheeseburgers a lot but I get kind of sick of them since a lot of places that's what they sell so I do like to have some different alternatives\nAgent: Okay, so a chicken sandwich with lettuce and mayo is another item you like. What are one or two more similar items you enjoy? And for each of these, including the chicken sandwich, could you tell me what's better or worse compared to your favorite Panda Express orange chicken?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview26",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview26.txt",
+    "total_chunks": 9,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 7,
+  "parent_record_id": "73d5100f-a717-4039-8c93-04757b621ced"
+}

@@ -1,0 +1,24 @@
+{
+  "record_id": "a3cfbf85-542d-4e82-9202-ad93fce05d04",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.714224",
+  "raw_text": "User: I like the way it's roasted. They roast it and then they slice it really thin so that it's almost not shredded but in slices. The seasoning that they use and it just tastes good.\nAgent: That's very descriptive. What are the top two or three things that make that Arby's brisket sandwich \"perfect\" for you?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview1",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview1.txt",
+    "total_chunks": 28,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 3,
+  "parent_record_id": "24c315c5-82df-4a16-b34d-f6b42b080750"
+}

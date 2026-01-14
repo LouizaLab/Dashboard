@@ -1,0 +1,24 @@
+{
+  "record_id": "53eab3d0-6519-4331-a3d9-808f87d5fffa",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.677095",
+  "raw_text": "User: To me, it wouldn't be a replacement because it's not close. I don't think it's very close to those items, to the pizza, but it would be my second favorite option.\nAgent: I understand that they aren't close replacements, but rather your next preferred options. Thank you for clarifying.\n\nNow, could you name two or three similar items you also like from any chain? And for each one, what's better or worse compared to your favorite Mexican Pizza?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "38",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/38.txt",
+    "total_chunks": 19,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 9,
+  "parent_record_id": "04f316d3-be87-4e71-bf48-81915dfb54b0"
+}

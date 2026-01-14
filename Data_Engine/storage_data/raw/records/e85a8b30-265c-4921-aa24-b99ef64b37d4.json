@@ -1,0 +1,24 @@
+{
+  "record_id": "e85a8b30-265c-4921-aa24-b99ef64b37d4",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.708585",
+  "raw_text": "User: I usually order less or if I'm going I'll order a smaller meal.\nAgent: Okay, so in budget mode, you tend to order less or a smaller meal.\n\nNow, what triggered this order today? Please be specific. Was it a craving, a deal, an ad, someone suggested it, you were nearby, time pressure, you wanted something lighter, or you wanted a treat?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview2",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview2.txt",
+    "total_chunks": 31,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 16,
+  "parent_record_id": "89414df8-139e-4b72-9450-a29a8a41b846"
+}

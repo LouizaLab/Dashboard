@@ -1,0 +1,24 @@
+{
+  "record_id": "a88a2ec6-b3c2-4d9c-b410-ded1bdbe30f7",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.800399",
+  "raw_text": "User: Depends on my budget if I could afford the two dollars but so sometimes I would just get the higher priced one or sometimes I would just have to switch it with something else.\nAgent: Understood. If there was a deal, what would you do differently?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "35",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/35.txt",
+    "total_chunks": 34,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 22,
+  "parent_record_id": "e5c79867-15fb-4539-91e6-0af0a124ad06"
+}

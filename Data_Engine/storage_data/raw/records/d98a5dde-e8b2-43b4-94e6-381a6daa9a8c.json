@@ -1,0 +1,24 @@
+{
+  "record_id": "d98a5dde-e8b2-43b4-94e6-381a6daa9a8c",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.739415",
+  "raw_text": "User: I think if it cost $2 more, I wouldn't necessarily. I'd probably go for a cheaper option unless it was paired with something else. It was like a deal.\nAgent: And if there was a deal, what would you do differently?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "42",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/42.txt",
+    "total_chunks": 34,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 12,
+  "parent_record_id": "bce10b3b-9632-4b3a-a34a-f84fa18e9006"
+}

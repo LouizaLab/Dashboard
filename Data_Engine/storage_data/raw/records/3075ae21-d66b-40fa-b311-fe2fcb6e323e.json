@@ -1,0 +1,23 @@
+{
+  "record_id": "3075ae21-d66b-40fa-b311-fe2fcb6e323e",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.866208",
+  "raw_text": "something lighter, or you wanted a treat? User: Just basic cravings. Agent: Okay, so basic cravings were the trigger today. Was this order planned or spontaneous? User: Spontaneous. Agent: Understood, it was a spontaneous order. What would have had to change for you to not get fast food today? User: More time. Agent: So, if you had more time, you might not have chosen fast food today. Did you switch from your usual chain or usual item today? If yes, what exactly caused the switch? Was it a deal, a new item, boredom, a bad experience, health, price, convenience, social reasons, or limited options? User: Nothing Agent: Understood, so there was no switch from your usual chain or item today. What would make you permanently change your \"default\" order? What would you need to see happen repeatedly, such as taste, consistency, price, or convenience? User: The quality of the food would have to be really bad. Agent: So, a significant and consistent drop in food quality would be the main rea",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview13.txt",
+    "total_chunks": 12
+  },
+  "client_id": null,
+  "chunk_index": 7,
+  "parent_record_id": "fbb27c4a-b6d1-47bb-9e12-15bb07aa4fc0"
+}

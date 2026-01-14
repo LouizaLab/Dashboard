@@ -1,0 +1,24 @@
+{
+  "record_id": "e5d6a192-e4c2-42c8-84b0-e62d4060eccc",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.734214",
+  "raw_text": "User: Um usually with friends um so it's usually like a social thing um every once in a while if I have a craving for it um convenience if I'm in the area I'll pick some up.\nAgent: That's helpful. So, it's often a social choice with friends, or when you have a craving, or for convenience if you're nearby.\n\nCould you also tell me about time pressure, the specific location like home, work, or commute, and the ordering channel you typically use, such as drive-thru or delivery, when you choose this item?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview6",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview6.txt",
+    "total_chunks": 31,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 24,
+  "parent_record_id": "a48d5c67-b799-4d11-942f-3b6236827fe4"
+}

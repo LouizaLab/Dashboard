@@ -1,0 +1,24 @@
+{
+  "record_id": "eb247a0d-39cc-45b8-acdd-aac8e40e2733",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.842293",
+  "raw_text": "User: No, there's nothing different.\nAgent: Okay. What \"mode\" are you in today? Are you in a budget, health, treat, convenience, explore, or stressed mode?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview10",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview10.txt",
+    "total_chunks": 43,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 19,
+  "parent_record_id": "7855d946-010e-4b12-b478-072329d70cb1"
+}

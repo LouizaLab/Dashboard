@@ -1,0 +1,23 @@
+{
+  "record_id": "f5c69c84-f91a-4dd6-8cf5-c2c95cae4a75",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.866987",
+  "raw_text": "Call Transcript: User: ... Agent: I'm here to collect information about your food preferences to complete the onboarding so you can get rewarded. To start, please say your name or Prolific ID. User: Juan Bueno. Agent: Thank you, Juan. Now, could you please tell me what your favorite fast-food item is, including the chain and the exact item? Also, why do you like it? User: I would say the Chick-fil-A Spicy Deluxe. I just feel like it's a pretty savory meal. It's delicious. It goes very well with the sides Agent: That sounds delicious. Could you tell me a bit more about what makes the Chick-fil-A Spicy Deluxe so good to you? I'm interested in details like its flavor, texture, temperature, smell, and aftertaste. User: I'd say the flavor is the best. It's a little bit spicy, but it's also salty. Agent: That's great to hear about the flavor. What are the top two or three things that make the Chick-fil-A Spicy Deluxe \"perfect\" for you? For example, is it a crunchy coating, a specific sauce",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview17.txt",
+    "total_chunks": 11
+  },
+  "client_id": null,
+  "chunk_index": 0,
+  "parent_record_id": null
+}

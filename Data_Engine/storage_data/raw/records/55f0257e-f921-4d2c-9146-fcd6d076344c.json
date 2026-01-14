@@ -1,0 +1,23 @@
+{
+  "record_id": "55f0257e-f921-4d2c-9146-fcd6d076344c",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.869828",
+  "raw_text": "hank you for clarifying that budget is the biggest driver for you right now. What \"mode\" are you in today when it comes to fast food? Are you in a budget, health, treat, convenience, explore, or stressed mode? User: Budget mode for sure. Agent: Understood, budget mode it is. When you're in budget mode, what's the first thing that changes in your fast-food order? User: Um, when I'm in budget mode, I usually don't get fast food as much or maybe I'll get something very small if I have a really bad craving and I, I want it really bad. Instead of getting a big Mac meal, I'll get like a happy meal or something small that's like half the cost. Agent: That's a practical approach to managing cravings while staying within your budget. ...",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview3.txt",
+    "total_chunks": 11
+  },
+  "client_id": null,
+  "chunk_index": 10,
+  "parent_record_id": "763b6b14-78e3-4d1d-9738-7fff2af6b166"
+}

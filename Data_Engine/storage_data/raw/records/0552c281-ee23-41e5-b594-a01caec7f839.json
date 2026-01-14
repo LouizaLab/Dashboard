@@ -1,0 +1,23 @@
+{
+  "record_id": "0552c281-ee23-41e5-b594-a01caec7f839",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.865870",
+  "raw_text": "y hits the back of my tongue, it's like, I just, it's almost like the taste of blood, like that kind of taste, like that, like metallic taste, but sour. And so to me, it just tastes awful. I do not like onions whatsoever. That's why I cannot eat one if they put the onions on it, because that's how it's made. Usually",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview11.txt",
+    "total_chunks": 11
+  },
+  "client_id": null,
+  "chunk_index": 10,
+  "parent_record_id": "44b252ef-4792-43c3-9a3f-f1c78eb31a4e"
+}

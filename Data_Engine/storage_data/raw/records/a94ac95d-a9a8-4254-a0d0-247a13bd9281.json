@@ -1,0 +1,24 @@
+{
+  "record_id": "a94ac95d-a9a8-4254-a0d0-247a13bd9281",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.730834",
+  "raw_text": "User: I would change it to the Big Mac meal large with a large Coca-Cola or a large Sprite ideally Coca-Cola because that's the iconic normal thing that you see on advertisements. Number one advertisement when it first came out. It was Coca-Cola with a Big Mac. So I would go with that\nAgent: And why is that Big Mac meal the closest replacement for your favorite forty-piece nuggets?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview7",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview7.txt",
+    "total_chunks": 11,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 7,
+  "parent_record_id": "3a954e63-b718-482c-b02d-9509cae55cd7"
+}

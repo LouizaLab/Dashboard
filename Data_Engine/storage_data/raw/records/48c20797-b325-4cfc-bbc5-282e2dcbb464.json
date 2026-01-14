@@ -1,0 +1,24 @@
+{
+  "record_id": "48c20797-b325-4cfc-bbc5-282e2dcbb464",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.819875",
+  "raw_text": "User: I usually drive through for breakfast, it's convenient on the way to work and sometimes if I have a short lunch and a fast food restaurant is convenient to running errands I will use that.\nAgent: Thank you for sharing your typical fast-food patterns, Nicole.\n\nNow, what does \"good value\" mean to you in fast food? Could you pick your top two or three factors, such as taste, portion size, speed, nutrition, consistency, or price, and explain how you judge what is \"worth it\"?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "36",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/36.txt",
+    "total_chunks": 29,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 17,
+  "parent_record_id": "4c0b766b-108c-463c-ac1b-84504ef7b9d6"
+}

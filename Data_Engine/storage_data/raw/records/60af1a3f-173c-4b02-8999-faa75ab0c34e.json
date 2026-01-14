@@ -1,0 +1,23 @@
+{
+  "record_id": "60af1a3f-173c-4b02-8999-faa75ab0c34e",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.867943",
+  "raw_text": "n you have time constraints and are usually alone. How does price change your choice? For example, if your Wendy's single cost two dollars more, what would you do? User: I would pay the two dollars more because that is worth it. Agent: Understood. You would pay the two dollars more because you feel it's worth it. Now, if there was a deal, what would you do differently? User: If there was a deal I would probably order it to save money. Agent: Okay, you'd order it to save money if there was a deal. Let's shift gears a bit. Over the past two weeks, what are your most common fast-food patterns? This includes when you eat it, what you usually order, and what typically triggers it. User: I usually drive through for breakfast, it's convenient on the way to work and sometimes if I have a short lunch and a fast food restaurant is convenient to running errands I will use that. Agent: Thank you for sharing your typical fast-food patterns, Nicole. Now, what does \"good value\" mean to you in fas",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview20.txt",
+    "total_chunks": 11
+  },
+  "client_id": null,
+  "chunk_index": 6,
+  "parent_record_id": "2b6b0470-bd75-4f9b-98bd-8b5aed0e9f50"
+}

@@ -1,0 +1,24 @@
+{
+  "record_id": "e086e904-4747-4142-8807-be49f719ed79",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.711885",
+  "raw_text": "User: I usually get a medium fry and a large Diet Coke and I would never pair it with like a regular Coke because regular soda is just too sweet tasting to me. I don't like it and I probably wouldn't pair it with a salad because if you're eating a Big Mac, you're not going to want a salad too.\nAgent: That's a clear preference for Diet Coke over regular soda due to sweetness, and a practical point about not pairing a Big Mac with a salad.\n\nNow, let's talk about the context of your choices. In what situations do you choose a Big Mac most often? Please include details like time pressure, location (home, work, commute), ordering channel (drive-thru, delivery), and who you're with.",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview3",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview3.txt",
+    "total_chunks": 22,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 11,
+  "parent_record_id": "fc77d1e2-9777-4dca-a844-42568cda327f"
+}

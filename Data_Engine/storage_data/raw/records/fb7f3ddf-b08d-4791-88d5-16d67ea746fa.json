@@ -1,0 +1,39 @@
+{
+  "record_id": "fb7f3ddf-b08d-4791-88d5-16d67ea746fa",
+  "bucket_id": 1,
+  "source_name": "wendys_menu",
+  "source_type": "csv",
+  "brand": "Grilled Asiago Ranch Club",
+  "timestamp": null,
+  "ingestion_time": "2025-12-27T02:16:07.077591",
+  "raw_text": "Grilled Asiago Ranch Club Chicken",
+  "structured_fields": {
+    "Item": "Grilled Asiago Ranch Club"
+  },
+  "numerical_fields": {
+    "Calories": 530.0,
+    "Fat (g)": 23.0,
+    "Sat Fat (g)": 7.0,
+    "Trans Fat (g)": 0.0,
+    "Cholesterol (mg)": 120.0,
+    "Sodium (mg)": 1220.0,
+    "Total Carb (g)": 36.0,
+    "Dietary Fiber (g)": 3.0,
+    "Sugars (g)": 6.0,
+    "Protein (g)": 43.0,
+    "Weight Watchers": 500.0
+  },
+  "categorical_fields": {
+    "Category": "Chicken"
+  },
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "dataset_name": "wendys_menu",
+    "row_index": 17,
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Phase_1_Taste_Embedding_Model/data/raw/wendys-menu.csv"
+  },
+  "client_id": null,
+  "chunk_index": null,
+  "parent_record_id": null
+}

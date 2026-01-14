@@ -1,0 +1,39 @@
+{
+  "record_id": "8177406b-b8bb-4845-afdf-b7e61088388a",
+  "bucket_id": 1,
+  "source_name": "burger_king_menu",
+  "source_type": "csv",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2025-12-27T02:16:07.063001",
+  "raw_text": null,
+  "structured_fields": {
+    "Item": "Cherry Coke- 20 fl oz"
+  },
+  "numerical_fields": {
+    "Calories": 260.0,
+    "Fat Calories": 0.0,
+    "Fat (g)": 0.0,
+    "Saturated Fat (g)": 0.0,
+    "Trans Fat (g)": 0.0,
+    "Cholesterol (mg)": 0.0,
+    "Sodium (mg)": 70.0,
+    "Total Carb (g)": 76.0,
+    "Dietary Fiber (g)": 0.0,
+    "Sugars (g)": 76.0,
+    "Protein (g)": 0.0
+  },
+  "categorical_fields": {
+    "Category": "Beverage"
+  },
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "dataset_name": "burger_king_menu",
+    "row_index": 34,
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Phase_1_Taste_Embedding_Model/data/raw/burger-king-menu.csv"
+  },
+  "client_id": null,
+  "chunk_index": null,
+  "parent_record_id": null
+}

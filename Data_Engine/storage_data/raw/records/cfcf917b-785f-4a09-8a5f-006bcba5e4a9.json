@@ -1,0 +1,23 @@
+{
+  "record_id": "cfcf917b-785f-4a09-8a5f-006bcba5e4a9",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.870610",
+  "raw_text": "o three weeks I can have a crunch wrap instead of some nuggets always. That crunch wrap I can have probably two days back to back to even five days back to back. Nuggets I can go for about maybe 14 days and then I'll stop. But the winner we'll be talking about because that crunch wrap really hits the great spot of a traditional fat soup taco. So if you're looking for something that's a little bit more spicy, it's got some of those different flavors in it, but it's also got some of the different flavors in there as well. So if you're looking for something that has a lot more flavor than just one or two different flavors, then this is what you need to get into. And I think this is really important because when we talk about the flavor and how much flavor we want to have in our food, we want to make sure that we have enough flavor in our food. You can also get the freezies from like the Baja Blast freezies. They got those too. Those are awesome. They go great with it. They give you a brai",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview7.txt",
+    "total_chunks": 11
+  },
+  "client_id": null,
+  "chunk_index": 6,
+  "parent_record_id": "4a332a06-4576-4f21-9c79-a49e233ddeb4"
+}

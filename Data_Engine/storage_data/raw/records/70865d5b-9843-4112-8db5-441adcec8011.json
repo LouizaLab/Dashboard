@@ -1,0 +1,24 @@
+{
+  "record_id": "70865d5b-9843-4112-8db5-441adcec8011",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.662890",
+  "raw_text": "User: I like the cheeseburger from McDonald's.\nAgent: Okay, you like the cheeseburger from McDonald's. What's better or worse about it compared to your favorite Chicken Chalupa Supreme?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview21",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview21.txt",
+    "total_chunks": 34,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 13,
+  "parent_record_id": "f688d581-35a0-4caf-a59e-da7bf685c87c"
+}

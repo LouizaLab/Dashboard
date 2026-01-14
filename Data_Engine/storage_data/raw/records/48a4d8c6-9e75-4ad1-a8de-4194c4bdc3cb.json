@@ -1,0 +1,23 @@
+{
+  "record_id": "48a4d8c6-9e75-4ad1-a8de-4194c4bdc3cb",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.866871",
+  "raw_text": "at would make the Wendy's Classic Triple \"bad\" for you? For example, if it were soggy, dry, cold, under-salted, too greasy, or stale? User: Stale buns. Tomatoes that are old. Wilted lettuce. But I don't expect these things to happen because Wendy's uses fresh ingredients. If the ingredients weren't fresh and the bread was stale, it would not be a good sandwich. Agent: I see. If the Wendy's Classic Triple was unavailable, what would you order instead, including the chain and the specific item? And why would that be the closest replacement for you? User: I would probably get a double Whopper from Burger King. The Whopper is also a very hearty sandwich. It packs a punch. Flame broiling from Burger King is very distinct. Gives it a very crispy taste. Agent: That's a good alternative. Can you name two or three similar items you also like from any chain? For each one, please tell me what's better or worse compared to your favorite Wendy's Classic Triple. User: McDonald's cheeseburger, single",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview16.txt",
+    "total_chunks": 10
+  },
+  "client_id": null,
+  "chunk_index": 2,
+  "parent_record_id": "e39fd593-0fd9-4d1e-91c2-82ea896e8fe1"
+}

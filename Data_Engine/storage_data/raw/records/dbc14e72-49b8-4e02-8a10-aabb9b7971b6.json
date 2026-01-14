@@ -1,0 +1,23 @@
+{
+  "record_id": "dbc14e72-49b8-4e02-8a10-aabb9b7971b6",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.867418",
+  "raw_text": "gs that make these McDonald's fries perfect for you? Agent: Yes, exactly. Based on what you've... User: Um... Yes, exactly. I'm not sure, honestly. I would say, like, the wait time for, like, getting them is, like, pretty short because they always, like, I mean, mostly when I'm there they always, like, already have them made and then they just heat them up or something. Agent: I understand that the short wait time is a positive aspect of getting them. However, focusing on the fries themselves, what are the top two or three qualities of the fries\u2014like their crispness,... User: What are the top two or three qualities of the fries like their Christmas? Agent: Yes, exactly. What are the top two or three things about the fries... User: Three things about the fries themselves. I mean, I can't say too much. I mean, they're fries. You know what I mean? It's not like it's some kind of delicacy. These are like just crisp and a bit salty. I mean, what else can you add to fries? You know what I me",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview19.txt",
+    "total_chunks": 14
+  },
+  "client_id": null,
+  "chunk_index": 4,
+  "parent_record_id": "1f988804-b2a4-40bf-a212-66fa038b6fde"
+}

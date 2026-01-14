@@ -1,0 +1,39 @@
+{
+  "record_id": "0b30e992-fb86-4183-b014-7815258d3462",
+  "bucket_id": 1,
+  "source_name": "burger_king_menu",
+  "source_type": "csv",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2025-12-27T02:16:07.072861",
+  "raw_text": null,
+  "structured_fields": {
+    "Item": "Crispy Taco"
+  },
+  "numerical_fields": {
+    "Calories": 170.0,
+    "Fat Calories": 80.0,
+    "Fat (g)": 9.0,
+    "Saturated Fat (g)": 3.0,
+    "Trans Fat (g)": 0.0,
+    "Cholesterol (mg)": 10.0,
+    "Sodium (mg)": 410.0,
+    "Total Carb (g)": 19.0,
+    "Dietary Fiber (g)": 2.0,
+    "Sugars (g)": 1.0,
+    "Protein (g)": 5.0
+  },
+  "categorical_fields": {
+    "Category": "Chicken & More"
+  },
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "dataset_name": "burger_king_menu",
+    "row_index": 128,
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Phase_1_Taste_Embedding_Model/data/raw/burger-king-menu.csv"
+  },
+  "client_id": null,
+  "chunk_index": null,
+  "parent_record_id": null
+}

@@ -1,0 +1,24 @@
+{
+  "record_id": "5b40ea34-a71b-4f49-8e17-9e33173efae9",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.739640",
+  "raw_text": "User: I think what I usually order in the past two weeks is probably like Chick-fil-A. What usually would trigger it is just me. I'm just wanting something that's not... Maybe I don't have anything left over or something like that.\nAgent: What does \"good value\" mean to you in fast food? Could you pick your top two or three factors, such as taste, portion size, speed, nutrition, consistency, or price, and explain how you judge if something is \"worth it\"?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "42",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/42.txt",
+    "total_chunks": 34,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 14,
+  "parent_record_id": "bce10b3b-9632-4b3a-a34a-f84fa18e9006"
+}

@@ -1,0 +1,24 @@
+{
+  "record_id": "676f5985-3633-4986-877a-e991b6ddf774",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.776859",
+  "raw_text": "User: Today I'm in the convenience mode and that means speed and certainty come first. The first thing that changes is I simply simplify the order. I skip the extras, don't customize much and go with what I know will be fast and consistent.\nAgent: Okay, that makes sense. What triggered this order today? Was it a craving, a deal, an ad, someone suggested it, you were nearby, time pressure, wanting something lighter, or wanting a treat?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "46",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/46.txt",
+    "total_chunks": 19,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 15,
+  "parent_record_id": "42485974-cee0-43b1-bfcd-159fb131da89"
+}

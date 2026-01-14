@@ -1,0 +1,24 @@
+{
+  "record_id": "033735f3-76fc-46f8-a7b7-c7c24c40f7f0",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.756719",
+  "raw_text": "User: No deals. No deals can change me. It's just a Big Mac sometimes they need two for one on Wednesday\nAgent: I understand that generally, deals don't sway you, but a two-for-one Big Mac on Wednesday definitely catches your attention.\n\nHas your price sensitivity changed in the last two to four weeks? If so, why? What...",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "41",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/41.txt",
+    "total_chunks": 39,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 31,
+  "parent_record_id": "3a86faee-b265-401f-89c3-2956bf68e535"
+}

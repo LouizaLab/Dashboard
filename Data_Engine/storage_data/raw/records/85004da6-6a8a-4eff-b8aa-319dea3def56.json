@@ -1,0 +1,24 @@
+{
+  "record_id": "85004da6-6a8a-4eff-b8aa-319dea3def56",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.674258",
+  "raw_text": "User: I would say it would be the sauce level and the tank from the sauce. And then the second thing would be the texture overall.\nAgent: Understood, the sauce level and tang, and the overall texture are key for you. Now, on the flip side, what are the top two or three things that would make a Big Mac \"bad\" for you? For instance, if it were soggy, dry, cold, under-salted, too greasy, or stale?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview27",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview27.txt",
+    "total_chunks": 14,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 4,
+  "parent_record_id": "99278a16-fe01-4968-b4c4-38b0d04049cc"
+}

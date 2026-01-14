@@ -1,0 +1,24 @@
+{
+  "record_id": "12db337c-6be1-494f-82b9-84c264dbc74c",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.697273",
+  "raw_text": "User: I like if you go and you get to the fast food restaurant and you get something that is a whole meal. You get the main meal and you get a drink. That's good value. And so that's important. And if you look for set deals, it's like they have buy one, get the other free. That might be something that you look for as well.\nAgent: That's a clear definition of good value. Now, compared to your last fast-food order, what changed today, if anything?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview18",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview18.txt",
+    "total_chunks": 19,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 17,
+  "parent_record_id": "68950778-79ab-467c-ba48-e8d70a851473"
+}

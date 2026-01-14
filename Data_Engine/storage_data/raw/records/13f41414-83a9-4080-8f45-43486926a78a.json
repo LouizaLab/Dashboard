@@ -1,0 +1,23 @@
+{
+  "record_id": "13f41414-83a9-4080-8f45-43486926a78a",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.867449",
+  "raw_text": "tions do you choose these McDonald's fries most... Agent: In what situations do you choose these McDonald's fries most often? Please include details like time pressure, location... User: Time pressure, location... Say that again, you're still cutting up. Agent: I apologize again... User: I apologize again for the audio. Agent: I apologize again for the audio issues. In what... User: I apologize again for the audio issues. In what situations... Agent: In what situations do you choose these McDonald's fries... User: Use these McDonald's fries. Agent: In what situations do you choose these McDonald's... User: What situations do you choose these McDonald's fries? How long do we have left in this interview? Agent: We have about five to seven minutes left in the interview. To continue,... User: Five to seven minutes left in the interview. To continue... Agent: Thank you for asking. We have about five to seven minutes left... User: Thank you for asking. We have about five to seven minutes l",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview19.txt",
+    "total_chunks": 14
+  },
+  "client_id": null,
+  "chunk_index": 12,
+  "parent_record_id": "1f988804-b2a4-40bf-a212-66fa038b6fde"
+}

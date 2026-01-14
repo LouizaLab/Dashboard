@@ -1,0 +1,23 @@
+{
+  "record_id": "345fff6e-1cdc-4aaa-bb55-fdf2cac9074d",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.868163",
+  "raw_text": "I would probably change my order if I didn't have, if I had like a set amount and that wasn't, that $2 extra wasn't going to be able to be covered in my purchase then I would get something else. Agent: I understand. So, your decision would depend on your budget at that moment. Now, if there was a deal, what would you do differently? User: Get the things associated with the deal. Agent: Understood. You would adjust your order to take advantage of the deal. Moving on, over the past two weeks, what are your most common fast-food patterns? This includes when you eat it, what you usually order, and what typically triggers it.",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview22.txt",
+    "total_chunks": 9
+  },
+  "client_id": null,
+  "chunk_index": 8,
+  "parent_record_id": "b95dda0c-75c4-494a-a620-a8fecb1eb5e0"
+}

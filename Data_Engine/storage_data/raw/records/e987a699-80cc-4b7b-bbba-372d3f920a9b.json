@@ -1,0 +1,24 @@
+{
+  "record_id": "e987a699-80cc-4b7b-bbba-372d3f920a9b",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.752873",
+  "raw_text": "User: I like the Big Mac from McDonald's.\nAgent: Okay, the Big Mac from McDonald's. Could you tell me more about why you like it? I'm interested in details about its flavor, texture,...",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "41",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/41.txt",
+    "total_chunks": 39,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 2,
+  "parent_record_id": "3a86faee-b265-401f-89c3-2956bf68e535"
+}

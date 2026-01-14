@@ -1,0 +1,24 @@
+{
+  "record_id": "6d653268-933d-42d1-836f-0bd39dc1c84f",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.727216",
+  "raw_text": "User: I think today I'm just kind of in convenience mode it's just something that I didn't feel like cooking and it's just easy to order a pizza.\nAgent: Okay, so convenience is the mode today. When you're in convenience mode, what's the first thing that changes in your order?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview5",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview5.txt",
+    "total_chunks": 37,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 22,
+  "parent_record_id": "70f85520-c679-4467-82c3-f02b7ab569c2"
+}

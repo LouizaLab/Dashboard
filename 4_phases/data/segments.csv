@@ -1,0 +1,11 @@
+segment_id,age_bucket,region,psychographic,segment_name
+seg_00,18-25,east,budget_sensitive,Segment_1
+seg_01,56+,west,adventurous,Segment_2
+seg_02,46-55,west,budget_sensitive,Segment_3
+seg_03,46-55,north,budget_sensitive,Segment_4
+seg_04,18-25,south,budget_sensitive,Segment_5
+seg_05,26-35,east,routine_lover,Segment_6
+seg_06,46-55,central,adventurous,Segment_7
+seg_07,46-55,east,premium_seeker,Segment_8
+seg_08,18-25,west,health_focused,Segment_9
+seg_09,46-55,north,adventurous,Segment_10

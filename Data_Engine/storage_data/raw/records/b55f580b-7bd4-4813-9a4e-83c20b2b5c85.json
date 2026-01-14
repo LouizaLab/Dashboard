@@ -1,0 +1,24 @@
+{
+  "record_id": "b55f580b-7bd4-4813-9a4e-83c20b2b5c85",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.831290",
+  "raw_text": "User: Panda Express, orange chicken with white rice, a side of crab rangoon. And why do I like it? Because it's different than having to order a cheeseburger or something. It tastes good. I like the tang to it along with just the flavor of the chicken along with since it's a breaded chicken that's dipped in sauce, like that all together, just the texture is nice. And then the orange tang, I like orange. So then that kind of works. And then with the side of rice, that helps to kind of offset too much tang and gives it a little bit of a different kind of texture with it. I don't know how to describe the texture exactly. It's kind of like a crunch, like it's like a soggy crunch with a little bit of cushion, I guess. And then the crab rangoon, it's like soft, smushy cheese with a fried outside. So that's really nice.\nAgent: That's a great description, Carl. It sounds like you really enjoy the combination of flavors and textures. What are the top two to three things that make that Panda Express orange chicken meal \"perfect\" for you?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview12",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview12.txt",
+    "total_chunks": 9,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 2,
+  "parent_record_id": "4f234616-8c13-43be-8b81-07fd08049cc1"
+}

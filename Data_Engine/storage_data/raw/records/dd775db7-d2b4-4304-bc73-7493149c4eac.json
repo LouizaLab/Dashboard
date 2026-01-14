@@ -1,0 +1,23 @@
+{
+  "record_id": "dd775db7-d2b4-4304-bc73-7493149c4eac",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.867650",
+  "raw_text": "what would you never pair it with, and why? User: I usually pair it with a Diet Coke and some fries. I'd probably not pair it with a salad because if you're eating a Big Mac, you're not going to want to have it with a salad. Agent: That's a very clear distinction, Sarah. It makes sense that a salad wouldn't fit with the Big Mac experience. Now, let's talk about when you choose this item. In what situations do you choose the Big Mac most often? Please include details like if you're under time pressure, your location like home or work, how you order it such as drive-thru or delivery, and who you're with. User: I'm usually by myself when my kids are at school and it's during lunchtime and I go through the drive-thru. I use my app to order and they bring it out to me. Agent: Thank you for those details, Sarah. It sounds like a convenient and solo lunch ritual. How does price change your choice? For example, if the Big Mac cost two dollars more, what would you do? User: I would order som",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview2.txt",
+    "total_chunks": 12
+  },
+  "client_id": null,
+  "chunk_index": 3,
+  "parent_record_id": "6cb1c839-9316-444a-b7a9-1e6f04a47cad"
+}

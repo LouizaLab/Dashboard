@@ -1,0 +1,23 @@
+{
+  "record_id": "72701271-b995-4f63-8ba4-930fbfd80dba",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.867927",
+  "raw_text": "d\" for you? User: If the burger was assembled messy or flattened, if it was too greasy, or if the lettuce and tomato or the produce was not fresh. Agent: I understand. Messy assembly, being too greasy, or having un-fresh produce would definitely make it a bad experience. If the Wendy's single was unavailable, what would you order instead, including the chain and the specific item? And why would that be the closest replacement for you? User: I would order a Wendy's chicken sandwich. Agent: Okay, Nicole. You would order a Wendy's chicken sandwich instead. Could you tell me why that would be the closest replacement for you? User: That's my second best choice to the Wendy's single. Agent: Thank you. So, it's your second best choice. Could you explain what makes it the closest replacement to the single in terms of what you like about it? User: Same as the burger with the fresh bun, fresh lettuce and tomato and condiments. And I really like Wendy's chicken breast. It doesn't taste processed",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview20.txt",
+    "total_chunks": 11
+  },
+  "client_id": null,
+  "chunk_index": 2,
+  "parent_record_id": "2b6b0470-bd75-4f9b-98bd-8b5aed0e9f50"
+}

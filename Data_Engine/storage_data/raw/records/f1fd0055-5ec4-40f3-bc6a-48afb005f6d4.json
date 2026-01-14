@@ -1,0 +1,23 @@
+{
+  "record_id": "f1fd0055-5ec4-40f3-bc6a-48afb005f6d4",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.866458",
+  "raw_text": "Call Transcript: User: Hello? Agent: I'm here to collect information about your food preferences to complete the onboarding so you can get rewarded. To start, please say your name or Prolific ID. User: 6-3-D-7-B-7-7-6-A-9-9-2-3-F-E-2-A-6-9-D-3-6-B-D. Agent: Thank you. What is your favorite fast-food item, including the chain and the exact item? And could you tell me why you like it? User: I like the Big Mac from McDonald's. Agent: Okay, the Big Mac from McDonald's. Could you tell me more about why you like it? I'm interested in details about its flavor, texture,... User: Because it is the flagship sandwich for McDonald's, which is the best restaurant in the entire world. Agent: I understand you enjoy the Big Mac and consider McDonald's the best. To help me understand your preferences better, could you describe what specifically makes the Big Mac perfect for you? I'm curious about its flavor, texture, temperature, smell, or even the... User: Beef patties, special sauce, lettuce cheese",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview15.txt",
+    "total_chunks": 13
+  },
+  "client_id": null,
+  "chunk_index": 0,
+  "parent_record_id": null
+}

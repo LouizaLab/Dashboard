@@ -1,0 +1,23 @@
+{
+  "record_id": "4fade4ce-4c53-45ae-9000-1600d218a1e0",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.866364",
+  "raw_text": "p two or three things that would make a Big Mac \"bad\" for you? User: If it wasn't seasoned correctly, if there wasn't enough cheese, Agent: And what would be the third thing that would make it bad? User: or just a regular bun, not sesame seed. Agent: Understood. If a Big Mac was unavailable, what would you order instead, including the chain and the specific item? User: Probably a McDonald's Daily Double. Agent: And why do you consider the Daily Double to be the closest replacement for your favorite Big Mac? User: I like the amount of vegetables. Agent: That's interesting. Can you name two or three similar items you also like from any chain? For each one, please tell me what's better or worse compared to your favorite Big Mac. User: Go to many other burger places. Maybe the regular Wendy's burger and Agent: Okay, so a regular Wendy's burger. What's better or worse about that compared to your Big Mac? User: the price is about equivalent. Similar, the meat is better. Wendy's has better me",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview14.txt",
+    "total_chunks": 9
+  },
+  "client_id": null,
+  "chunk_index": 1,
+  "parent_record_id": "08afa934-6295-42cc-95ab-8c19f8d505dd"
+}

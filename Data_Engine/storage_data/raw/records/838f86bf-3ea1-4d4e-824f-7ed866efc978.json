@@ -1,0 +1,24 @@
+{
+  "record_id": "838f86bf-3ea1-4d4e-824f-7ed866efc978",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.719060",
+  "raw_text": "User: It's not too far from my house. So I, and I usually have it around dinner time, evening, if I'm going to, if I'm out or even have it ordered in. Mostly I have it for dinner.\nAgent: Thank you. How does price change your choice? For example, if it cost two dollars more, what would you do?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview1",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview1.txt",
+    "total_chunks": 28,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 23,
+  "parent_record_id": "24c315c5-82df-4a16-b34d-f6b42b080750"
+}

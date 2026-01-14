@@ -1,0 +1,24 @@
+{
+  "record_id": "ee45e40a-b372-4d0a-ab64-bd05228b16cc",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.778362",
+  "raw_text": "User: I would probably get a chalupa from Taco Bell.\nAgent: A Chalupa from Taco Bell, interesting...",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "34",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/34.txt",
+    "total_chunks": 23,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 7,
+  "parent_record_id": "e45fb1d7-d025-48e7-9f73-0ae6be217425"
+}

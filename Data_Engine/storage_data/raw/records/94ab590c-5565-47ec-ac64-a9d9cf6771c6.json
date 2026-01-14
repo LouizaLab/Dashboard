@@ -1,0 +1,24 @@
+{
+  "record_id": "94ab590c-5565-47ec-ac64-a9d9cf6771c6",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.771373",
+  "raw_text": "User: Because it's one of my top favorite fast food items.\nAgent: I understand it's a favorite. Could you tell me what makes it the closest replacement for a Big Mac specifically? What similarities do they share that make it your go-to alternative?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "44",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/44.txt",
+    "total_chunks": 33,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 9,
+  "parent_record_id": "694c9af7-c584-49a2-a404-743a61005dd2"
+}

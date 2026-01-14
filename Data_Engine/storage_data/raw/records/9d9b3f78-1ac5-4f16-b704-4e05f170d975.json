@@ -1,0 +1,24 @@
+{
+  "record_id": "9d9b3f78-1ac5-4f16-b704-4e05f170d975",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.807226",
+  "raw_text": "User: What would make these McDonald's fries bad for you? For example, if they were soggy, dry, cold, Yeah, definitely if they were like soggy or like not that many and like number.\nAgent: Okay, so soggy fries and a small portion size would definitely make them bad for you.\n\nIf these McDonald's fries were...",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "37",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/37.txt",
+    "total_chunks": 60,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 36,
+  "parent_record_id": "bd9a4494-3a92-4fcb-bb36-575404a64316"
+}

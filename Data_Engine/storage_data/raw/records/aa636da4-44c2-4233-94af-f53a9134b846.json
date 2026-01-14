@@ -1,0 +1,24 @@
+{
+  "record_id": "aa636da4-44c2-4233-94af-f53a9134b846",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.668044",
+  "raw_text": "User: Spontaneous. I think I also had a deal on the app I was using and what would change is just already having food prepared or having leftovers from yesterday\nAgent: So, it was spontaneous, triggered by a deal on the app, and having food prepared or leftovers would have prevented it.\n\nDid you switch from your usual chain or usual item today? If yes, what exactly caused the switch? Was it a deal, a new item, boredom, a bad experience, health, price, convenience, social reasons, or limited options?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview23",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview23.txt",
+    "total_chunks": 22,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 17,
+  "parent_record_id": "9226c320-dfb2-47d8-87a1-ed9e447a8705"
+}

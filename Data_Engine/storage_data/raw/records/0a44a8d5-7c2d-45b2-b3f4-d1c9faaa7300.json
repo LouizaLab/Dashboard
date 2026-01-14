@@ -1,0 +1,23 @@
+{
+  "record_id": "0a44a8d5-7c2d-45b2-b3f4-d1c9faaa7300",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.866372",
+  "raw_text": "Thank you for sharing that. In what situations do you choose your Big Mac most often? Please include details like time pressure, location, ordering channel, and who you're with. User: My son typically has to have McDonald's when we go out to eat, so if he's in the vehicle, then we're usually in McDonald's. We have a McDonald's like two minutes down the road, so we can eat it pretty much any time we want fast food. And if we're out or we're running low on cash, McDonald's is usually the choice too because it's more cost efficient most times. Agent: That's very helpful context. How does price change your choice? For example, if your Big Mac cost two dollars more, what would you do? User: I would probably order something cheaper but similar. Agent: And if there was a deal, what would you do differently? User: Maybe get an extra item or a dessert. Agent: Over the past two weeks, what are your most common fast-food patterns? This includes when you eat it, what you usually order, and what ty",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview14.txt",
+    "total_chunks": 9
+  },
+  "client_id": null,
+  "chunk_index": 3,
+  "parent_record_id": "08afa934-6295-42cc-95ab-8c19f8d505dd"
+}

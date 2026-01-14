@@ -1,0 +1,24 @@
+{
+  "record_id": "e817f1ad-075c-41d1-baa0-4744aa849204",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.779264",
+  "raw_text": "User: Oh, I didn't say that.\nAgent: My apologies if I misunderstood. I was trying to summarize your point about the extra toppings.\n\nLet's rephrase. For the Jack in the Box burger and the Carl's Jr. burger, what specifically is better or worse about them compared to your favorite McDonald's cheeseburger?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "34",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/34.txt",
+    "total_chunks": 23,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 15,
+  "parent_record_id": "e45fb1d7-d025-48e7-9f73-0ae6be217425"
+}

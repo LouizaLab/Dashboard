@@ -1,0 +1,24 @@
+{
+  "record_id": "bef286c4-b84f-43ce-ad0f-df92c62c446a",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.723038",
+  "raw_text": "User: Portion size and consistency... if it's worth... It's good if it's worth it. I mean, it's worth it if it's good.\nAgent: Thank you. So, portion size and consistency are your top factors. Could you explain a bit more about how you judge if something is \"worth it\" based on those two factors?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview4",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview4.txt",
+    "total_chunks": 33,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 26,
+  "parent_record_id": "2bf06f63-1970-4fb8-9751-bc4c59483394"
+}

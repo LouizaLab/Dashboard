@@ -1,0 +1,24 @@
+{
+  "record_id": "93e08f3f-7bb0-4fbb-b9c3-19da24e2a7d2",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.815694",
+  "raw_text": "User: wanting to try something new. Being curious.\nAgent: Thank you. So, when you're in \"Explore\" mode, you're looking to try something new and are driven by curiosity.\n\nNow, what triggered this order today? Please be specific. Was it a craving, a deal, an ad, did someone suggest it, were you nearby, was there time pressure, did you want something lighter, or did you want a treat? Also, was it planned or spontaneous? And what would have had to change for you to not get fast food today?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview17",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview17.txt",
+    "total_chunks": 33,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 20,
+  "parent_record_id": "88d4a69e-5a62-47c8-8b20-22b88f242475"
+}

@@ -1,0 +1,24 @@
+{
+  "record_id": "3cf436b0-67c2-403c-913e-fcfb2761204b",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.812300",
+  "raw_text": "User: going to sustain me a sandwich that's going to sustain me\nAgent: Thank you for clarifying.\n\nNow, what triggered this order today? Please be specific. Was it a craving, a deal, an ad, someone suggested it, you were nearby, time pressure, you wanted something lighter, or you wanted a treat?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview16",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview16.txt",
+    "total_chunks": 24,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 18,
+  "parent_record_id": "073b5ea8-26dc-4e34-ab4d-47aa68550d3c"
+}

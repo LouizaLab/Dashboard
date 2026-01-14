@@ -1,0 +1,24 @@
+{
+  "record_id": "06f0e288-5653-4d4a-b934-41f46d77f39f",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.725885",
+  "raw_text": "User: Usually it's just when I'm with my family and we just have it delivered.\nAgent: Okay, so it's typically a family meal delivered. How does price change your choice? For example, if it cost two dollars more, what would you do?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview5",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview5.txt",
+    "total_chunks": 37,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 13,
+  "parent_record_id": "70f85520-c679-4467-82c3-f02b7ab569c2"
+}

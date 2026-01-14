@@ -1,0 +1,24 @@
+{
+  "record_id": "9b3cb99c-88eb-43a8-985b-28da2efd44b6",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.712842",
+  "raw_text": "User: I've actually cut back a lot on eating fast food just because the prices keep going up. And, I mean, not just with fast food, with everything, so we have less money. So I haven't been going to fast food as much as I used to. I've probably, you know, I used to go maybe twice a week and now I'm down to once every two weeks.\nAgent: Thank you for sharing that. It sounds like rising prices have significantly impacted your fast-food habits, leading you to reduce how often you go.\n\nCompared to your last fast-food order, what changed today, if anything? Could you pick the biggest driver and explain if it was your mood, cravings, schedule, budget, health goals, social plans, or convenience?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview3",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview3.txt",
+    "total_chunks": 22,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 18,
+  "parent_record_id": "fc77d1e2-9777-4dca-a844-42568cda327f"
+}

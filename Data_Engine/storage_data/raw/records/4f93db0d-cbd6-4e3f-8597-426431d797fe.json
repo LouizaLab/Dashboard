@@ -1,0 +1,24 @@
+{
+  "record_id": "4f93db0d-cbd6-4e3f-8597-426431d797fe",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.667782",
+  "raw_text": "User: I'd say I'm in convenience mode today.\nAgent: Okay, you're in convenience mode today. What's the first thing that changes in your order when you're in that mode?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview23",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview23.txt",
+    "total_chunks": 22,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 15,
+  "parent_record_id": "9226c320-dfb2-47d8-87a1-ed9e447a8705"
+}

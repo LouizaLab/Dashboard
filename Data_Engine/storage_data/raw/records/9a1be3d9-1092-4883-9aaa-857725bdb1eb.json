@@ -1,0 +1,42 @@
+{
+  "record_id": "9a1be3d9-1092-4883-9aaa-857725bdb1eb",
+  "bucket_id": 1,
+  "source_name": "mcd_menu_alt",
+  "source_type": "csv",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2025-12-27T02:25:07.222235",
+  "raw_text": null,
+  "structured_fields": {
+    "name": "McFlurry (Choco Crunch)\u00ae",
+    "serving_size": " 167.38g",
+    "ingredients": "Milk fat, Chocolate",
+    "tag": "Burgers aren't the only things we're good at.",
+    "description": "Milk-based frozen dessert with chocolate crispies and chocolate dip."
+  },
+  "numerical_fields": {
+    "energy": 703.17,
+    "protein": 10.99,
+    "total_fat": 19.68,
+    "sat_fat": 13.8,
+    "trans_fat": 0.21,
+    "chol": 11.06,
+    "carbs": 117.78,
+    "total_sugar": 66.93,
+    "added_sugar": 54.51,
+    "sodium": 295.89
+  },
+  "categorical_fields": {
+    "allergy": "Milk, Soya"
+  },
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "dataset_name": "mcd_menu_alt",
+    "row_index": 19,
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Phase_1_Taste_Embedding_Model/data/raw/mcd.csv"
+  },
+  "client_id": null,
+  "chunk_index": null,
+  "parent_record_id": null
+}

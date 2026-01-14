@@ -1,0 +1,24 @@
+{
+  "record_id": "447a129d-e0e6-4cc7-94c2-88861bb64f5c",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.754190",
+  "raw_text": "User: I get fries and a drink. That's it. Just fries and a drink, no chicken nuggets\nAgent: Okay, fries and a drink. And what would you never pair your Big Mac with, and why?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "41",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/41.txt",
+    "total_chunks": 39,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 11,
+  "parent_record_id": "3a86faee-b265-401f-89c3-2956bf68e535"
+}

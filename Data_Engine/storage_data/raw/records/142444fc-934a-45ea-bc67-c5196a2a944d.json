@@ -1,0 +1,23 @@
+{
+  "record_id": "142444fc-934a-45ea-bc67-c5196a2a944d",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.870769",
+  "raw_text": "rely. That's a clear change. Now, let's think about a time when you do order fast food. What typically triggers that order? Could you be specific, like a craving, a deal, an ad, someone suggested it, you were nearby, time pressure, wanting something lighter, or...",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview8.txt",
+    "total_chunks": 11
+  },
+  "client_id": null,
+  "chunk_index": 10,
+  "parent_record_id": "a3318d9c-f9af-4c79-a599-3db343b1df93"
+}

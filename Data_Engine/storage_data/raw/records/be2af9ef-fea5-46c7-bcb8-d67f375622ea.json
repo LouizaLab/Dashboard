@@ -1,0 +1,24 @@
+{
+  "record_id": "be2af9ef-fea5-46c7-bcb8-d67f375622ea",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.779599",
+  "raw_text": "User: I always order on the go. I order from the app, but I always order like in the parking lot of the establishment of McDonald's before I get into the drive-thru. And then I always get from the drive-thru and generally get the same thing every time I go, which is a two cheeseburger meal.\nAgent: Thank you for explaining your ordering routine.\n\nHow does price change your choice?...",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "34",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/34.txt",
+    "total_chunks": 23,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 18,
+  "parent_record_id": "e45fb1d7-d025-48e7-9f73-0ae6be217425"
+}

@@ -1,0 +1,23 @@
+{
+  "record_id": "3626babf-a809-4cd1-9824-074dea4f714c",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.870407",
+  "raw_text": "vor, texture, or other aspects of the taco truck burrito compared to your Chipotle burrito? Is anything better or worse? User: I think one tastes more authentic than the other. I feel like Chipotle is pretty on point with their ingredients and it tastes pretty fresh to me. Agent: So, you feel Chipotle offers a fresher and more authentic taste compared to some taco trucks. That's interesting. Do you have another similar item you like from any chain, and what's better or worse about it compared to your favorite Chipotle... User: Yes. Agent: Please tell me about it. User: Burger King Whoppers, definitely. Agent: Okay, a Burger King Whopper. What's better or worse about a Whopper compared to your favorite Chipotle burrito? User: It's a burger, so it's going to have different tastes and texture. Agent: That's true, they are very different items. Could you tell me what you find better or worse about the Whopper's flavor, texture, or overall experience when you compare it to your Chipotle bu",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview6.txt",
+    "total_chunks": 11
+  },
+  "client_id": null,
+  "chunk_index": 5,
+  "parent_record_id": "7bbdd4cb-ea9f-41c4-ad88-c8cc6f12ea7d"
+}

@@ -1,0 +1,23 @@
+{
+  "record_id": "99d20a19-119e-4bba-b640-bf144516a3e1",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.868281",
+  "raw_text": "hat exactly caused the switch? Was it a deal, a new item, boredom, a bad experience, health, price, convenience, social reasons, or limited options? User: No I stuck to the same stuff I usually do. Agent: Okay, you stuck to your usual. What would make you permanently change your \"default\" order? What would you need to see happen repeatedly, such as taste, consistency, price, or convenience? User: Something new I dislike will make me change it but probably not for too long unless it was just a new like flagship product. Agent: So, a new dislike of your current default, or a compelling new flagship product, would be the main reasons for a permanent change. How much did a deal influence your choice today? Could you explain what kind of deal actually changes your behavior, such as buy-one-get-one, a percentage off, app points, or free delivery? User: Buy one get one and the percent off are usually the main things especially like half off. Agent: So, buy-one-get-one offers and percentage-",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview23.txt",
+    "total_chunks": 12
+  },
+  "client_id": null,
+  "chunk_index": 10,
+  "parent_record_id": "77b85ac2-dbd2-465a-8dcb-6362a88d094f"
+}

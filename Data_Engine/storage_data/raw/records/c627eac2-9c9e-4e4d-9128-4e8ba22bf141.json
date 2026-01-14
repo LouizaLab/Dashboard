@@ -1,0 +1,23 @@
+{
+  "record_id": "c627eac2-9c9e-4e4d-9128-4e8ba22bf141",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.870734",
+  "raw_text": "make a sandwich with the toast and fried chicken. So on occasion that can be great, but I would say accessibility of canes can be a little tough. They're not that many stores. And usually the lines are pretty long, at least where I go. So that's the only obstacle. Agent: That's interesting how you create a sandwich with the toast and tenders at Raising Cane's, Sean. It sounds like a unique experience, even with the accessibility challenges. Moving on, what do you usually pair with your favorite Popeye's chicken sandwich, such as drinks, sides, or sauces? And on the flip side, what would you absolutely never pair it with, and why? User: I usually pair it with fries because that's usually easy and it comes in a combo. I'm not usually one for like soft drinks and sodas just because I find them pretty sugary and fattening. And yeah, I try and avoid that. Yeah, I would say fries is what I would normally go with. Agent: Okay, so fries are your go-to pairing. That makes sense, as they often",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview8.txt",
+    "total_chunks": 11
+  },
+  "client_id": null,
+  "chunk_index": 3,
+  "parent_record_id": "a3318d9c-f9af-4c79-a599-3db343b1df93"
+}

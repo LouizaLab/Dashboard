@@ -1,0 +1,23 @@
+{
+  "record_id": "08071a2d-f19f-4ddf-8b32-c6b6250cf6ad",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.868027",
+  "raw_text": "Call Transcript: User: Okay. Agent: I'm here to collect information about your food preferences to complete the onboarding so you can get rewarded. To start, please say your name or Prolific ID. User: 5CEA73210B209700001ACEE5F Agent: Thank you. What is your favorite fast-food item, including the chain and the exact item? And could you tell me why you like it? User: Chicken Chalupa Supreme at Taco Bell. Agent: ... User: I like it because it's got... Agent: Please continue. What is it about the Chicken Chalupa Supreme that you like? User: I like the ingredients because they're fresh and that it has the same flavor and hasn't changed. And I really like the shell of the chalupa. Agent: That's great. Could you tell me a bit more about the flavor, texture, and temperature of the Chicken Chalupa Supreme? User: Yeah, it has to be... Well, you have to eat the shell, especially the shell. It gets soggy if you don't eat it fairly quickly so you can't have that leftover or something. You have to",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview21.txt",
+    "total_chunks": 10
+  },
+  "client_id": null,
+  "chunk_index": 0,
+  "parent_record_id": null
+}

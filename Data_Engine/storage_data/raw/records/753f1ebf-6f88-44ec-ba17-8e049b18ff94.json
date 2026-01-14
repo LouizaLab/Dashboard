@@ -1,0 +1,24 @@
+{
+  "record_id": "753f1ebf-6f88-44ec-ba17-8e049b18ff94",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.756938",
+  "raw_text": "User: No I'm not, no I'm not because I like Big Macs. I'm gonna keep eating Big Macs.\nAgent: I understand you're happy with your Big Mac choices.\n\nWhen do you usually try new items versus sticking to your usual Big Mac? Could you give one recent example...",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "41",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/41.txt",
+    "total_chunks": 39,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 33,
+  "parent_record_id": "3a86faee-b265-401f-89c3-2956bf68e535"
+}

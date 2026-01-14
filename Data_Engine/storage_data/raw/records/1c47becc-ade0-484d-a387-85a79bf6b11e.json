@@ -1,0 +1,39 @@
+{
+  "record_id": "1c47becc-ade0-484d-a387-85a79bf6b11e",
+  "bucket_id": 1,
+  "source_name": "burger_king_menu",
+  "source_type": "csv",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2025-12-27T02:16:07.068763",
+  "raw_text": null,
+  "structured_fields": {
+    "Item": "DOUBLE WHOPPER Sandwich"
+  },
+  "numerical_fields": {
+    "Calories": 920.0,
+    "Fat Calories": 520.0,
+    "Fat (g)": 58.0,
+    "Saturated Fat (g)": 20.0,
+    "Trans Fat (g)": 0.5,
+    "Cholesterol (mg)": 150.0,
+    "Sodium (mg)": 1240.0,
+    "Total Carb (g)": 54.0,
+    "Dietary Fiber (g)": 3.0,
+    "Sugars (g)": 13.0,
+    "Protein (g)": 52.0
+  },
+  "categorical_fields": {
+    "Category": "Burgers"
+  },
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "dataset_name": "burger_king_menu",
+    "row_index": 95,
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Phase_1_Taste_Embedding_Model/data/raw/burger-king-menu.csv"
+  },
+  "client_id": null,
+  "chunk_index": null,
+  "parent_record_id": null
+}

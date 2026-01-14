@@ -1,0 +1,23 @@
+{
+  "record_id": "46a0cfed-2606-4ff9-99d7-e91bebb28c3e",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.867665",
+  "raw_text": "omeone suggested it, you were nearby, time pressure, you wanted something lighter, or you wanted a treat? User: I'm gonna say it was a craving for sure. Agent: So, a craving was the trigger today. Was this order planned or spontaneous? User: Spontaneous. Agent: Understood. It was a spontaneous decision driven by a craving. What would have had to change for you to not get fast food today? User: I would have um the only thing that would have changed is if I didn't have the extra cash. Agent: So, if you hadn't had the extra cash, you wouldn't have gotten fast food today. That makes sense. Did you switch from your usual chain or usual item today? User: No, I didn't. I had a coupon for free fries so I got a Big Mac with it. Agent: Okay, so you stuck with your usual Big Mac, and the free fries coupon was a nice bonus. What would make you permanently change your \"default\" order? What would you need to see happen repeatedly, such as taste, consistency, price, or convenience? User: If the p",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview2.txt",
+    "total_chunks": 12
+  },
+  "client_id": null,
+  "chunk_index": 7,
+  "parent_record_id": "6cb1c839-9316-444a-b7a9-1e6f04a47cad"
+}

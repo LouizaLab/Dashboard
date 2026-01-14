@@ -1,0 +1,23 @@
+{
+  "record_id": "78748aef-94eb-440e-b36b-383a52e2432a",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.866477",
+  "raw_text": "their menu. Moving on, in what situations do you choose the Big Mac most often? Please consider factors like time... User: I choose the Big Mac whenever I get food from McDonald's whether it's lunch or dinner. It's Big Mac. Agent: Thank you. How does price change your choice? For example, if the Big Mac cost two... User: McDonald's recently went up on their prices. I stay with them because they're the best. But if McDonald's go up like two, three more dollars, I'm probably going to switch. Agent: I understand that a significant price increase might make you consider switching. What if there was a deal on the Big Mac or another McDonald's item? What would you do differently then? User: Whenever they have deals on Big Macs, I definitely buy the deal. But if they got a deal on another thing, I may not get it. But any deals on Big Macs, I'm there. Agent: Thank you for that insight. Over the past two weeks, what have been your most common fast-food patterns? This includes when you eat it,",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview15.txt",
+    "total_chunks": 13
+  },
+  "client_id": null,
+  "chunk_index": 4,
+  "parent_record_id": "f1fd0055-5ec4-40f3-bc6a-48afb005f6d4"
+}

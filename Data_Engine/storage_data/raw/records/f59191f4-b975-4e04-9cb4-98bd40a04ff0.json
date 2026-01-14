@@ -1,0 +1,24 @@
+{
+  "record_id": "f59191f4-b975-4e04-9cb4-98bd40a04ff0",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.750539",
+  "raw_text": "User: Sure um my favorite fast food item is probably fried chicken or sometimes fried chicken sandwich um favorite chain I like a restaurant called Church's Chicken.\nAgent: Thank you for sharing, William. So, Church's Chicken fried chicken or a fried chicken sandwich. Could you tell me more about why you like it so much? I'm interested in hearing about its flavor, texture, temperature, smell, and even the aftertaste.",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview9",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview9.txt",
+    "total_chunks": 15,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 2,
+  "parent_record_id": "1bc8a08c-2dc5-435d-be32-44c66ef19022"
+}

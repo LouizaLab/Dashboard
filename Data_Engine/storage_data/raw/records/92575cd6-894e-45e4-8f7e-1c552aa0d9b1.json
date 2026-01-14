@@ -1,0 +1,23 @@
+{
+  "record_id": "92575cd6-894e-45e4-8f7e-1c552aa0d9b1",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.865838",
+  "raw_text": "top two or three things that would make a Big Mac \"bad\" for you? For instance, if it were soggy, dry, cold, under-salted, too greasy, or stale? User: If it was cold, for sure. That's really yucky. And then stale is really bad because I've had some where the bun was stale and it was quite nasty. And also if they don't make it to order because I don't like it the way they sell it, I have to order it. I'm special without pickles or onions. And then usually I add extra cheese. Agent: I understand that coldness, a stale bun, and not being made to your specific order can really impact your enjoyment. If the Big Mac was unavailable, what would you order instead, including the chain and the specific item? And why would that be the closest replacement for you? User: I would probably order like a double cheeseburger and then have them add the sauce. Agent: Okay, so a double cheeseburger with the Big Mac sauce. Why do you consider that the closest replacement for your favorite Big Mac? User: Beca",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview11.txt",
+    "total_chunks": 11
+  },
+  "client_id": null,
+  "chunk_index": 2,
+  "parent_record_id": "44b252ef-4792-43c3-9a3f-f1c78eb31a4e"
+}

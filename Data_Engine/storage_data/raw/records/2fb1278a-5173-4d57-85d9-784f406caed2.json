@@ -1,0 +1,42 @@
+{
+  "record_id": "2fb1278a-5173-4d57-85d9-784f406caed2",
+  "bucket_id": 1,
+  "source_name": "mcd_menu_alt",
+  "source_type": "csv",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2025-12-27T02:25:07.221952",
+  "raw_text": null,
+  "structured_fields": {
+    "name": "McChicken\u00ae",
+    "serving_size": "173g",
+    "ingredients": "Quarter bun crown, Veg mayonnaise, Shredded lettuce, McChicken patty, Quarter bun heel",
+    "tag": "Familiarity breeds confidence.",
+    "description": "Batter & breaded chicken patty containing green peas, carrots, green beans, onion, potatoes, rice and spices, served in a bun with eggless mayonnaise and lettuce."
+  },
+  "numerical_fields": {
+    "energy": 400.8,
+    "protein": 15.66,
+    "total_fat": 15.7,
+    "sat_fat": 5.47,
+    "trans_fat": 0.16,
+    "chol": 31.17,
+    "carbs": 47.98,
+    "total_sugar": 5.53,
+    "added_sugar": 4.49,
+    "sodium": 766.33
+  },
+  "categorical_fields": {
+    "allergy": "Cereal containing gluten, Milk, Soya"
+  },
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "dataset_name": "mcd_menu_alt",
+    "row_index": 17,
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Phase_1_Taste_Embedding_Model/data/raw/mcd.csv"
+  },
+  "client_id": null,
+  "chunk_index": null,
+  "parent_record_id": null
+}

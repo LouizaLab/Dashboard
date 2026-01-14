@@ -1,0 +1,23 @@
+{
+  "record_id": "711846b3-5b24-4e67-8a03-ef7c17465b23",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.870594",
+  "raw_text": "ee things that would make those nuggets \"bad\" for you? User: Oh, I guess they could be a little unhealthy sometimes, but to me, I believe you should eat what you want to eat. You know, don't restrict yourself because that's pretty upsetting to restrict yourself in my point of view. If you want to eat some nuggets, I think you should still order six-piece nuggets and if you can't afford both, but really want the nuggets, you should get the nuggets. Agent: I understand your perspective on enjoying what you eat. When thinking about the nuggets themselves, what physical qualities would make them \"bad\" for you? For example, if they were soggy, dry, or cold? User: Oh they were dry or cold I'll be pretty upset but I'll still be happy because I know I'm buying McDonald's nuggets. Agent: Okay, so dry or cold would be disappointing. If the forty-piece nuggets were unavailable, what would you order instead, including the chain and the item? User: I would change it to the Big Mac meal large with a",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview7.txt",
+    "total_chunks": 11
+  },
+  "client_id": null,
+  "chunk_index": 2,
+  "parent_record_id": "4a332a06-4576-4f21-9c79-a49e233ddeb4"
+}

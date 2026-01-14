@@ -1,0 +1,23 @@
+{
+  "record_id": "95db2025-d327-4009-a8c6-9c06bceb2352",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.870866",
+  "raw_text": "ct? And on the other hand, what are the top two or three things that would make it bad, like if it were soggy, dry, or cold? User: Yeah, so basically I think at church is right that the portion size is big. I also think the level of crunch or like the, you know, the covering that's fried is perfect compared to someplace like not sure like KFC or random chains. What made it make it bad? Yeah, I think if it was like fried a long time ago and a little bit cold or if it was like small and just didn't taste as fresh because, you know, when it's fresh, the outer layer is flaky. If it wasn't like that, then it would be worse. Agent: That's very clear, William. So, the generous portion size and the perfect crunch of the fried coating are key to its perfection, and it's definitely not good if it's cold, small, or lacks that fresh, flaky outer layer. Now, if your favorite fried chicken from Church's was unavailable, what would you order instead? Please include the chain and the specific item, a",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview9.txt",
+    "total_chunks": 11
+  },
+  "client_id": null,
+  "chunk_index": 2,
+  "parent_record_id": "b6abb3dc-02c0-4403-832f-3101e8d6267b"
+}

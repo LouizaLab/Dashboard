@@ -1,0 +1,24 @@
+{
+  "record_id": "c79a5cb2-3b97-40f5-900b-8e9445305ed8",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.753617",
+  "raw_text": "User: I'd get a number two meal from McDonald's because that is the second best item on their menu.\nAgent: Okay, so a number two meal from McDonald's. Could you explain why that particular item is the closest replacement for the Big Mac in your opinion?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "41",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/41.txt",
+    "total_chunks": 39,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 7,
+  "parent_record_id": "3a86faee-b265-401f-89c3-2956bf68e535"
+}

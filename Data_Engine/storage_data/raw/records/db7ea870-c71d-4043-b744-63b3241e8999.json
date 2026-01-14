@@ -1,0 +1,24 @@
+{
+  "record_id": "db7ea870-c71d-4043-b744-63b3241e8999",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.791762",
+  "raw_text": "User: Um if there was a deal that made it the same price it is now or cheaper than I would get it.\nAgent: Okay, that makes sense. Over the past two weeks, what are your most common fast-food patterns? This includes when you eat it, what you usually order, and what typically triggers it.",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview28",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview28.txt",
+    "total_chunks": 43,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 14,
+  "parent_record_id": "1940e73c-7457-4f0e-96e6-ebd8700cb728"
+}

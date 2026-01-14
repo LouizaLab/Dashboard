@@ -1,0 +1,23 @@
+{
+  "record_id": "4d1fcf2f-3489-4611-a20e-71428934b2d8",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.870418",
+  "raw_text": "e with friends, or when you have a craving, or for convenience if you're nearby. Could you also tell me about time pressure, the specific location like home, work, or commute, and the ordering channel you typically use, such as drive-thru or delivery, when you choose this item? User: Time pressure is never really an issue. Ordering would be through DoorDash. So, if I need it quick, then I will do DoorDash. So it will be delivered Agent: So, DoorDash for quick delivery. And what about the location? Do you usually order it to your home, work, or perhaps when you're commuting? And do you ever use the drive-thru or order inside the restaurant? User: Home, I have it delivered to home and then if I do pick it up then I do the drive-through. Agent: Thank you for clarifying. So, typically delivered to your home via DoorDash, or picked up via drive-thru, often with friends, and time pressure isn't usually a factor. Now, how does price change your choice? For example, if your Chipotle burrito",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview6.txt",
+    "total_chunks": 11
+  },
+  "client_id": null,
+  "chunk_index": 8,
+  "parent_record_id": "7bbdd4cb-ea9f-41c4-ad88-c8cc6f12ea7d"
+}

@@ -1,0 +1,24 @@
+{
+  "record_id": "a363ba5e-080c-4218-bc75-02a6b8eedeb8",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.814453",
+  "raw_text": "User: Sprite and Chick-fil-A sauce.\nAgent: Okay, Sprite and Chick-fil-A sauce. And what would you never pair the Spicy Deluxe with, and why?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview17",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview17.txt",
+    "total_chunks": 33,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 10,
+  "parent_record_id": "88d4a69e-5a62-47c8-8b20-22b88f242475"
+}

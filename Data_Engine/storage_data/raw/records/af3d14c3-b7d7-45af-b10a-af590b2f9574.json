@@ -1,0 +1,24 @@
+{
+  "record_id": "af3d14c3-b7d7-45af-b10a-af590b2f9574",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.666398",
+  "raw_text": "User: I really like the taco taste. I like being able to have, you know, that sort of Mexican but fast food feel. Really something I like being able to choose between the chicken and steak, things like that.\nAgent: That makes sense. You enjoy the Mexican fast-food feel and the choice of fillings.\n\nNow, could you name two or three similar items you also like from any chain? For each one, please tell me what's better or worse compared to your favorite Double Quarter Pounder with Cheese.",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview23",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview23.txt",
+    "total_chunks": 22,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 6,
+  "parent_record_id": "9226c320-dfb2-47d8-87a1-ed9e447a8705"
+}

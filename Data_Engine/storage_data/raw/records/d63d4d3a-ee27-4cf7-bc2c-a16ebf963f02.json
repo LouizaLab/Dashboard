@@ -1,0 +1,23 @@
+{
+  "record_id": "d63d4d3a-ee27-4cf7-bc2c-a16ebf963f02",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.865387",
+  "raw_text": ".. User: It's good. I still like the brisket better because, like I say, it's sliced really thin, and the Double Cheeseburger is a burger. So I like that they don't put any mayo on it. So I like that. Agent: Thank you for that comparison. Do you have another similar item you like from any chain? User: Compared to what? The roast beef? Agent: Yes, another item you like from any chain. And then, how does it compare, better or worse, to your favorite Arby's brisket sandwich? User: Um... Agent: No problem, take your time. User: I like, okay. I'm trying to see, because I love to, I'm not a foodie, but I'm close. So I like a different variety, too. I like the seafood. I like, you know what I like? Longhorn has a barbecue rib, and I like that. Agent: That's a great choice. How does the Longhorn barbecue rib compare to your favorite Arby's brisket sandwich? What's better or worse about it? User: I like the way it's cooked. It has a little sauce on it. I'm not a big on sauce on my meat. I like",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview1.txt",
+    "total_chunks": 8
+  },
+  "client_id": null,
+  "chunk_index": 3,
+  "parent_record_id": "ce681e47-af5e-424a-9db6-a230fd8e80cd"
+}

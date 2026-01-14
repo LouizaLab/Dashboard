@@ -1,0 +1,23 @@
+{
+  "record_id": "72526995-ff1b-4a99-9514-0fe3af4cbadd",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.869485",
+  "raw_text": "Because it's literally the same chicken just in nugget form Agent: That makes perfect sense. Can you name two or three similar items you also like, from any chain? And for each one, could you tell me what's better or worse compared to your favorite Chick-fil-A chicken sandwich? User: Honestly, I don't have any other items from fast food chains that would compare. Agent: Okay, I understand. So, sticking with your favorite Chick-fil-A chicken sandwich, what do you usually pair with it? This could be drinks, sides, or sauces. User: I always get Chick-fil-A sauce Agent: And what would you never pair your Chick-fil-A chicken sandwich with, and why not? User: . Oh! Agent: Please take your time. User: ...I don't know...um maybe meat? I'm not sure um...I would probably pair it with anything Agent: No worries at all. Let's move on to the next question. In what situations do you choose your Chick-fil-A chicken sandwich most often? Please include details like time pressure, location such as home,",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview28.txt",
+    "total_chunks": 12
+  },
+  "client_id": null,
+  "chunk_index": 2,
+  "parent_record_id": "28bd9b1c-9686-4e84-8a5f-49c46c8084fd"
+}

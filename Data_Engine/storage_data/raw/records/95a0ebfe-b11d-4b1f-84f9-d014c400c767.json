@@ -1,0 +1,24 @@
+{
+  "record_id": "95a0ebfe-b11d-4b1f-84f9-d014c400c767",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.846192",
+  "raw_text": "User: I meant the third part of the bun. It usually has three, a three piece bun so like it's got the top then the bottom and then one in the middle.\nAgent: Ah, I understand now, you mean the middle bun. Thank you for clarifying that.\n\nMoving on, could you name two or three similar items you also like from any chain? For each one, please tell me what's better or worse compared to your favorite Big Mac.",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview11",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview11.txt",
+    "total_chunks": 14,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 8,
+  "parent_record_id": "4d36d5b4-cfbd-45d5-b60e-c0beaeaa52ce"
+}

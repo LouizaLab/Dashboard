@@ -1,0 +1,23 @@
+{
+  "record_id": "c905d8e9-5a52-47ed-bbb8-3ce26532d3e8",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.870030",
+  "raw_text": "ing else comes to mind. User: Just feels very comforting, like a comfort food. Agent: That's a great point, comfort food is definitely a strong factor. Now, on the flip side, what are the top two or three things that would make those chili cheese fries \"bad\" for you? For example, if they were soggy, dry, cold, or too greasy? User: Yeah, so if the fries were cold and soggy it would make it terrible. Agent: I understand. So, cold and soggy fries would definitely make them bad. Are there any other things that would make them less than perfect for you? User: No. Agent: Okay, thank you. If the chili cheese fries from Tams were unavailable, what would you order instead, and from which chain? User: Just regular French fries from the same Tam's Burgers. Agent: Okay, so just regular French fries from Tams. Why would that be the closest replacement for you? User: Just because it's still a salty snack. Agent: I see, so the salty snack aspect is key. Now, could you name two or three similar ite",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview4.txt",
+    "total_chunks": 10
+  },
+  "client_id": null,
+  "chunk_index": 2,
+  "parent_record_id": "a8a3a49c-aace-4ba8-a37f-209b4e4dfac4"
+}

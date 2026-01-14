@@ -1,0 +1,24 @@
+{
+  "record_id": "c1048996-fe2e-44ac-80e9-9f09da0f63ac",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.799227",
+  "raw_text": "User: I'm just going to go back to the pen time. It's just another thing that I really like to eat from Taco Bell.\nAgent: Understood. Can you name two or three similar items you also like from any chain? For each one, please tell me what's better or worse compared to your favorite Chicken Chalupa Supreme.",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "35",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/35.txt",
+    "total_chunks": 34,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 12,
+  "parent_record_id": "e5c79867-15fb-4539-91e6-0af0a124ad06"
+}

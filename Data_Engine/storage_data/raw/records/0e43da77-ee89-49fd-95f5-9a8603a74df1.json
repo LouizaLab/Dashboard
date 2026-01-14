@@ -1,0 +1,23 @@
+{
+  "record_id": "0e43da77-ee89-49fd-95f5-9a8603a74df1",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.870891",
+  "raw_text": "now, I'm not going to have fried chicken with a fancier meal like, I don't know, some sort of nice pasta or ribs or something like that. So, yeah, if it's fried chicken, then I usually go full out in a fast food kind of style. Agent: That makes sense; you tend to stick to a fast-food style when enjoying fried chicken and wouldn't pair it with a more elaborate meal. Moving on, in what situations do you choose your favorite fried chicken most often? Could you tell me about factors like time pressure, your location such as home, work, or during a commute, how you order it like drive-thru or delivery, and who you're usually with? User: So fried chicken, I tend to order it after a week or so of eating pretty healthy. And there's a few different types of occasions. One is like if I go home, so church's chicken is more common in some cities than others. I will order it if I'm at home because I'm familiar with the different locations. And so when I return home, which is only a couple of times",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview9.txt",
+    "total_chunks": 11
+  },
+  "client_id": null,
+  "chunk_index": 9,
+  "parent_record_id": "b6abb3dc-02c0-4403-832f-3101e8d6267b"
+}

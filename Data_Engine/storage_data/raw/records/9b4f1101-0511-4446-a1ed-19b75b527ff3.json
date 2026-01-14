@@ -1,0 +1,23 @@
+{
+  "record_id": "9b4f1101-0511-4446-a1ed-19b75b527ff3",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.866894",
+  "raw_text": "So, what \"mode\" are you in today? Are you in a budget, health, treat, convenience, explore, or stressed mode? User: Normal mode trying to fill up my stomach without breaking the bank. Agent: Understood. When you're in that \"normal mode\" of trying to fill up your stomach without breaking the bank, what's the first thing that changes in your order? User: I try to get a sandwich that's Agent: Could you please complete that... User: going to sustain me a sandwich that's going to sustain me Agent: Thank you for clarifying. Now, what triggered this order today? Please be specific. Was it a craving, a deal, an ad, someone suggested it, you were nearby, time pressure, you wanted something lighter, or you wanted a treat? User: Well, I'm a loyal customer so I try to throw Wendy's business whenever I can Agent: I see, so loyalty to Wendy's is a significant trigger for you. Was this particular order planned or spontaneous? User: . Spontaneous. Spontaneous. Agent: Okay, spontaneous. What would hav",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview16.txt",
+    "total_chunks": 10
+  },
+  "client_id": null,
+  "chunk_index": 8,
+  "parent_record_id": "e39fd593-0fd9-4d1e-91c2-82ea896e8fe1"
+}

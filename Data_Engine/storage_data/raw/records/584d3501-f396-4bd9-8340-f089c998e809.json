@@ -1,0 +1,24 @@
+{
+  "record_id": "584d3501-f396-4bd9-8340-f089c998e809",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.753757",
+  "raw_text": "User: Because it is the second menu item on their menu. Big Mac is the number one. The number two is the second best item on their menu.\nAgent: I understand that the number two meal is the second item on the menu. To clarify, what specific qualities or characteristics of the number two meal make it the closest replacement...",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "41",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/41.txt",
+    "total_chunks": 39,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 8,
+  "parent_record_id": "3a86faee-b265-401f-89c3-2956bf68e535"
+}

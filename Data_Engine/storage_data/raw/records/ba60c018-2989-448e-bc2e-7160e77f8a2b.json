@@ -1,0 +1,23 @@
+{
+  "record_id": "ba60c018-2989-448e-bc2e-7160e77f8a2b",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.870598",
+  "raw_text": "ry or cold would be disappointing. If the forty-piece nuggets were unavailable, what would you order instead, including the chain and the item? User: I would change it to the Big Mac meal large with a large Coca-Cola or a large Sprite ideally Coca-Cola because that's the iconic normal thing that you see on advertisements. Number one advertisement when it first came out. It was Coca-Cola with a Big Mac. So I would go with that Agent: And why is that Big Mac meal the closest replacement for your favorite forty-piece nuggets? User: . It kind of feels like I'm biting into the 40 piece nuggets almost ideally or completely. So it really hits that nice spot to get something from McDonald's knowing I still accomplished my goal to get something from McDonald's. Agent: I see. It sounds like it still fulfills that McDonald's craving for you. Can you name two to three similar items you also like from any chain? And for each one, what's better or worse compared to your favorite forty-piece nuggets?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview7.txt",
+    "total_chunks": 11
+  },
+  "client_id": null,
+  "chunk_index": 3,
+  "parent_record_id": "4a332a06-4576-4f21-9c79-a49e233ddeb4"
+}

@@ -1,0 +1,24 @@
+{
+  "record_id": "9b359516-28e8-4caa-a2f2-a1185b118a10",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.822656",
+  "raw_text": "User: I like the amount of vegetables.\nAgent: That's interesting. Can you name two or three similar items you also like from any chain? For each one, please tell me what's better or worse compared to your favorite Big Mac.",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "32",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/32.txt",
+    "total_chunks": 32,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 8,
+  "parent_record_id": "67c11aa1-d698-4af6-bfc4-5f5b3dd28134"
+}

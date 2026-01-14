@@ -1,0 +1,24 @@
+{
+  "record_id": "c8e7d7c1-4b0b-4246-bb21-9c5a5f9a98bb",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.709157",
+  "raw_text": "User: If the price continued to rise.\nAgent: So, a continued rise in price would be the main factor that would make you permanently change your default order. That's very clear.\n\nHow much did a deal influence this choice today?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview2",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview2.txt",
+    "total_chunks": 31,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 21,
+  "parent_record_id": "89414df8-139e-4b72-9450-a29a8a41b846"
+}

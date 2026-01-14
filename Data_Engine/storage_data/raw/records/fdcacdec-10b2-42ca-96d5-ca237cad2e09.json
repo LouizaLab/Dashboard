@@ -1,0 +1,39 @@
+{
+  "record_id": "fdcacdec-10b2-42ca-96d5-ca237cad2e09",
+  "bucket_id": 1,
+  "source_name": "wendys_menu",
+  "source_type": "csv",
+  "brand": "Sausage and Egg Burrito",
+  "timestamp": null,
+  "ingestion_time": "2025-12-27T02:25:07.247137",
+  "raw_text": "Sausage and Egg Burrito Breakfast",
+  "structured_fields": {
+    "Item": "Sausage and Egg Burrito"
+  },
+  "numerical_fields": {
+    "Calories": 360.0,
+    "Fat (g)": 20.0,
+    "Sat Fat (g)": 8.0,
+    "Trans Fat (g)": 0.0,
+    "Cholesterol (mg)": 210.0,
+    "Sodium (mg)": 920.0,
+    "Total Carb (g)": 29.0,
+    "Dietary Fiber (g)": 1.0,
+    "Sugars (g)": 2.0,
+    "Protein (g)": 17.0,
+    "Weight Watchers": 353.0
+  },
+  "categorical_fields": {
+    "Category": "Breakfast"
+  },
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "dataset_name": "wendys_menu",
+    "row_index": 34,
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Phase_1_Taste_Embedding_Model/data/raw/wendys-menu.csv"
+  },
+  "client_id": null,
+  "chunk_index": null,
+  "parent_record_id": null
+}

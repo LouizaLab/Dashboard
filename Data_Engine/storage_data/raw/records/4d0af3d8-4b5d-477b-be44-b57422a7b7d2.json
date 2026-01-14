@@ -1,0 +1,39 @@
+{
+  "record_id": "4d0af3d8-4b5d-477b-be44-b57422a7b7d2",
+  "bucket_id": 1,
+  "source_name": "burger_king_menu",
+  "source_type": "csv",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2025-12-27T02:16:07.073469",
+  "raw_text": null,
+  "structured_fields": {
+    "Item": "OREOCookie Chocolate Shake"
+  },
+  "numerical_fields": {
+    "Calories": 710.0,
+    "Fat Calories": 180.0,
+    "Fat (g)": 20.0,
+    "Saturated Fat (g)": 12.0,
+    "Trans Fat (g)": 0.5,
+    "Cholesterol (mg)": 65.0,
+    "Sodium (mg)": 480.0,
+    "Total Carb (g)": 118.0,
+    "Dietary Fiber (g)": 2.0,
+    "Sugars (g)": 93.0,
+    "Protein (g)": 14.0
+  },
+  "categorical_fields": {
+    "Category": "Desserts"
+  },
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "dataset_name": "burger_king_menu",
+    "row_index": 135,
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Phase_1_Taste_Embedding_Model/data/raw/burger-king-menu.csv"
+  },
+  "client_id": null,
+  "chunk_index": null,
+  "parent_record_id": null
+}

@@ -1,0 +1,24 @@
+{
+  "record_id": "b7505a9a-68b1-4531-a75a-8b2519c98adf",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.662335",
+  "raw_text": "User: Oh, if it was... If I waited too long to eat it and it got soggy, Michelle. And then... Yeah, if I tried to do it like leftover or whatever, if I tried to eat it the next day or something. Same thing basically, I guess. But it would be two different sogginess levels.\nAgent: I understand. If the Chicken Chalupa Supreme was unavailable, what would you order instead, including the chain and item?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview21",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview21.txt",
+    "total_chunks": 34,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 8,
+  "parent_record_id": "f688d581-35a0-4caf-a59e-da7bf685c87c"
+}

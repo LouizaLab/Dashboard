@@ -1,0 +1,23 @@
+{
+  "record_id": "4a332a06-4576-4f21-9c79-a49e233ddeb4",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.870509",
+  "raw_text": "Call Transcript: User: ... Agent: I'm here to collect information about your... User: I'm here to collect information about Agent: I'm here to collect information about your food preferences to complete the onboarding so you can get rewarded. To start, please say your name and/or Prolific ID. User: Hello, my prolific ID is 66D0E8813C0A69291C362CBA. Agent: Thank you. Now, let's talk about your food preferences. What is your favorite fast-food item, including the chain and the exact item? And could you tell me why you like it? User: McDonald's, the 40-piece nuggets meal. I like it because you get 40 nuggets for $15 and they're huge. They're fried to the crisp, awesome extent where you kind of taste the oil inside of them. They put them in these cool little boxes. There are 20 in each box, so each box is always filled to your delight. Agent: That sounds like a very satisfying meal. What are the top two to three things that make those forty-piece nuggets \"perfect\" for you? User: Oh, man,",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview7.txt",
+    "total_chunks": 11
+  },
+  "client_id": null,
+  "chunk_index": 0,
+  "parent_record_id": null
+}

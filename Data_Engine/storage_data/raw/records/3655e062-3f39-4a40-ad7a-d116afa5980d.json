@@ -1,0 +1,23 @@
+{
+  "record_id": "3655e062-3f39-4a40-ad7a-d116afa5980d",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.869500",
+  "raw_text": "st thing that changes in your fast-food order? User: I wouldn't say that anything changes necessarily. Agent: Okay. What triggered this order today? Please be specific. Was it a craving, a deal, an ad, someone suggested it, you were nearby, time... User: I'm sorry, I don't know what you're talking about today. I don't know what you're referring to. Agent: My apologies for the confusion. I'm asking hypothetically, if you were to place a fast-food order, what would typically trigger it? For example, would it be a craving, seeing a deal... User: Just being hungry and needing to eat something and being nearby a restaurant. Agent: Thank you for clarifying. So, when you're hungry and near a restaurant, would that order be planned or more spontaneous? User: It would be spontaneous. Agent: What would have had to change for you to not get fast food today? User: I would have had to not have enough time, probably. Agent: Did you switch from your usual chain or usual item today? User: No. Agent: U",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview28.txt",
+    "total_chunks": 12
+  },
+  "client_id": null,
+  "chunk_index": 6,
+  "parent_record_id": "28bd9b1c-9686-4e84-8a5f-49c46c8084fd"
+}

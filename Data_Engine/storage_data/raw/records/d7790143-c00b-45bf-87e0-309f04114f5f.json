@@ -1,0 +1,24 @@
+{
+  "record_id": "d7790143-c00b-45bf-87e0-309f04114f5f",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.823996",
+  "raw_text": "User: Price and taste. And if it's not cheap, I'm probably not going to get it anyways, because I can cook it at the house for around the same amount, then I'm probably just going to do that because I make a better burger anyways. And if it doesn't taste good, I'm not going to buy it.\nAgent: Understood. Thinking about the last time you did have a fast-food order, what changed that day, if anything, compared to a typical order? Please pick the biggest driver and explain if it was mood, cravings, schedule, budget, health goals, social plans, or convenience.",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "32",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/32.txt",
+    "total_chunks": 32,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 19,
+  "parent_record_id": "67c11aa1-d698-4af6-bfc4-5f5b3dd28134"
+}

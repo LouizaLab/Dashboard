@@ -1,0 +1,24 @@
+{
+  "record_id": "37d86547-0288-46cf-aa20-4ca99b6634cb",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.843961",
+  "raw_text": "User: Not really.\nAgent: Okay. What specific rule are you following, such as less fried,...",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview10",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview10.txt",
+    "total_chunks": 43,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 33,
+  "parent_record_id": "7855d946-010e-4b12-b478-072329d70cb1"
+}

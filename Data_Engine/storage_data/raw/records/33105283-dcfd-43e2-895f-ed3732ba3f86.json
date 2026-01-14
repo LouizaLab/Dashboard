@@ -1,0 +1,24 @@
+{
+  "record_id": "33105283-dcfd-43e2-895f-ed3732ba3f86",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.832091",
+  "raw_text": "User: Okay, let me think. Well, I mean, I would eat a Big Mac from McDonald's, and I would say it's worse than my orange chicken.",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview12",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview12.txt",
+    "total_chunks": 9,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 8,
+  "parent_record_id": "4f234616-8c13-43be-8b81-07fd08049cc1"
+}

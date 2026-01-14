@@ -1,0 +1,23 @@
+{
+  "record_id": "e7a4c853-53c6-4e49-8068-bb3fbd04c43f",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.870874",
+  "raw_text": "niform pieces. Now, thinking beyond just replacements, can you name two or three other similar items you also like from any chain? And for each of those, could you tell me what's better or worse about them compared to your absolute favorite from Church's? User: Some replacement items? Agent: Yes, that's right. Besides your favorite Church's fried chicken and the replacements you mentioned, can you name two or three other similar fried chicken items you enjoy from any chain? And for each one, please tell me what you find better or worse... User: Yeah. Agent: Great... User: I mean, yeah, sure. So, you know, I do order, like, a chicken burger from McDonald's or sometimes I go to Chick-fil-A and stuff. To be honest for me, I think that when it comes to, you know, non bone in chicken, I would probably usually go with either chicken strips or chicken sandwich. The chicken sandwich I prefer if it has some vegetables such as tomato and lettuce. So honestly, for chicken sandwich, I think a McC",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview9.txt",
+    "total_chunks": 11
+  },
+  "client_id": null,
+  "chunk_index": 4,
+  "parent_record_id": "b6abb3dc-02c0-4403-832f-3101e8d6267b"
+}

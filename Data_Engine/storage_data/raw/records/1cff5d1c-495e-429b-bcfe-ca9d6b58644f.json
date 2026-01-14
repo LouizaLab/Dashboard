@@ -1,0 +1,24 @@
+{
+  "record_id": "1cff5d1c-495e-429b-bcfe-ca9d6b58644f",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.792227",
+  "raw_text": "User: What do you mean?\nAgent: I'm asking if there's anything different about your current situation or preferences compared to the last time you ordered fast food. For...",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview28",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview28.txt",
+    "total_chunks": 43,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 18,
+  "parent_record_id": "1940e73c-7457-4f0e-96e6-ebd8700cb728"
+}

@@ -1,0 +1,24 @@
+{
+  "record_id": "63bd8c6c-35a2-4b0e-9883-e55091a22f70",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.661880",
+  "raw_text": "User: I like the ingredients because they're fresh and that it has the same flavor and hasn't changed. And I really like the shell of the chalupa.\nAgent: That's great. Could you tell me a bit more about the flavor, texture, and temperature of the Chicken Chalupa Supreme?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview21",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview21.txt",
+    "total_chunks": 34,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 4,
+  "parent_record_id": "f688d581-35a0-4caf-a59e-da7bf685c87c"
+}

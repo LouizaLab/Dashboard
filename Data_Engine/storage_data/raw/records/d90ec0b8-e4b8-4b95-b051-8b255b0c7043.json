@@ -1,0 +1,24 @@
+{
+  "record_id": "d90ec0b8-e4b8-4b95-b051-8b255b0c7043",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.703287",
+  "raw_text": "User: Any of those. They needed to be fresh.\nAgent: I see, so freshness is key, and things like being soggy, dry, or cold would definitely make it a bad experience.\n\nIf the Chick-fil-A Spicy Deluxe was unavailable, what would you order instead, including the chain and the specific item?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "39",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/39.txt",
+    "total_chunks": 33,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 6,
+  "parent_record_id": "95c43eb4-c8d6-4cf1-a795-e16d4e88afc0"
+}

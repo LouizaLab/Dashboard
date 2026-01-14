@@ -1,0 +1,23 @@
+{
+  "record_id": "b6abb3dc-02c0-4403-832f-3101e8d6267b",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.870858",
+  "raw_text": "Call Transcript: User: Hello? Agent: I'm here to collect information about your food preferences to complete the onboarding so you can get rewarded. To start, please say your name and/or Prolific ID. User: Okay, uh, William Shen. Agent: Thank you, William. To begin, what is your favorite fast-food item? Please tell me the chain and the exact item. Also, could you describe why you like it, focusing on its flavor, texture, temperature, smell, and aftertaste? User: Sure um my favorite fast food item is probably fried chicken or sometimes fried chicken sandwich um favorite chain I like a restaurant called Church's Chicken. Agent: Thank you for sharing, William. So, Church's Chicken fried chicken or a fried chicken sandwich. Could you tell me more about why you like it so much? I'm interested in hearing about its flavor, texture, temperature, smell, and even the aftertaste. User: Well I just really like fried chicken I think it's tender it's juicy it's more just feels more fulfilling than",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview9.txt",
+    "total_chunks": 11
+  },
+  "client_id": null,
+  "chunk_index": 0,
+  "parent_record_id": null
+}

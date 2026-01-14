@@ -1,0 +1,23 @@
+{
+  "record_id": "37952cb7-d522-461a-9b95-9e8c6813d4cb",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.870881",
+  "raw_text": "ioned the McDonald's McChicken, Chick-fil-A's chicken sandwich, and chicken strips, possibly from Popeye's or a grocery store. Could you elaborate on what's better or worse about these items compared to your favorite Church's fried chicken? For instance, with the McChicken, you mentioned the vegetables, but how does it compare in terms of flavor, texture, or overall satisfaction to Church's? User: Yeah overall satisfaction is a bit worse with all these because, you know, if fried chicken is not very healthy so I would prefer it to be exactly what I want and the bonin I think makes it really tender and just like a unique experience. Agent: I understand that the overall satisfaction is generally lower with these other options because they don't quite match the unique, tender experience of bone-in fried chicken. Now, what do you usually pair with your favorite fried chicken from Church's? This could include drinks, sides, sauces, or even dessert. And on the flip side, what would you abs",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview9.txt",
+    "total_chunks": 11
+  },
+  "client_id": null,
+  "chunk_index": 6,
+  "parent_record_id": "b6abb3dc-02c0-4403-832f-3101e8d6267b"
+}

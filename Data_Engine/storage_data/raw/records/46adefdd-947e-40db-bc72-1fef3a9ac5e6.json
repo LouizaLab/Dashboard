@@ -1,0 +1,42 @@
+{
+  "record_id": "46adefdd-947e-40db-bc72-1fef3a9ac5e6",
+  "bucket_id": 1,
+  "source_name": "mcd_menu_alt",
+  "source_type": "csv",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2025-12-27T02:25:07.225008",
+  "raw_text": null,
+  "structured_fields": {
+    "name": "Veg Surprise Burger",
+    "serving_size": "132g",
+    "ingredients": "Regular Bun, Italian mayo, Shredded onion, Herb Chilli Potato patty",
+    "tag": "A surprise that will leave you wide-eyed.",
+    "description": "A scrumptious potato patty topped with a delectable Italian herb sauce and shredded onions placed between perfectly toasted buns."
+  },
+  "numerical_fields": {
+    "energy": 313.44,
+    "protein": 5.71,
+    "total_fat": 14.95,
+    "sat_fat": 3.73,
+    "trans_fat": 0.14,
+    "chol": 0.0,
+    "carbs": 39.84,
+    "total_sugar": 5.66,
+    "added_sugar": 1.64,
+    "sodium": 504.19
+  },
+  "categorical_fields": {
+    "allergy": "Cereal containing gluten, Milk, Soya"
+  },
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "dataset_name": "mcd_menu_alt",
+    "row_index": 41,
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Phase_1_Taste_Embedding_Model/data/raw/mcd.csv"
+  },
+  "client_id": null,
+  "chunk_index": null,
+  "parent_record_id": null
+}

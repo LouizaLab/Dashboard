@@ -1,0 +1,23 @@
+{
+  "record_id": "69a03460-3925-4d2c-9b37-e2efd832ee33",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.866212",
+  "raw_text": "atedly, such as taste, consistency, price, or convenience? User: The quality of the food would have to be really bad. Agent: So, a significant and consistent drop in food quality would be the main reason for you to change your default order. How much did a deal influence this choice today? Could you explain what kind of deal actually changes your behavior, such as buy one get one free, a percentage off, app points, or free delivery? User: There was nothing that influenced my decision. Agent: Understood, so no deal influenced your decision today. Has your price sensitivity changed in the last two to four weeks? If so, why? What changed in your life or in prices or fees, and how did it change what you order? User: No it has not. Agent: Okay, your price sensitivity hasn't changed. Are you trying to eat healthier than two to four weeks ago? Why or why not? User: No I am not. Agent: Understood, you are not trying to eat healthier than two to four weeks ago. What specific rule are you fo",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview13.txt",
+    "total_chunks": 12
+  },
+  "client_id": null,
+  "chunk_index": 8,
+  "parent_record_id": "fbb27c4a-b6d1-47bb-9e12-15bb07aa4fc0"
+}

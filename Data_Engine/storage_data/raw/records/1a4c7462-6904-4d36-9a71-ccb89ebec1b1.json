@@ -1,0 +1,24 @@
+{
+  "record_id": "1a4c7462-6904-4d36-9a71-ccb89ebec1b1",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.681425",
+  "raw_text": "User: Nothing recent.\nAgent: Understood, so nothing recent has affected your eating habits or fast-food choices.\n\nWhen do you try new items versus sticking to your usual? Could you give one recent example of each and explain why?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview25",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview25.txt",
+    "total_chunks": 36,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 27,
+  "parent_record_id": "a063913f-2f38-4288-8391-282e73daa401"
+}

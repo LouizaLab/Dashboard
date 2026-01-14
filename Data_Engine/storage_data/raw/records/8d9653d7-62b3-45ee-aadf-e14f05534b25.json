@@ -1,0 +1,24 @@
+{
+  "record_id": "8d9653d7-62b3-45ee-aadf-e14f05534b25",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.703189",
+  "raw_text": "User: It looks terrible.\nAgent: Okay, I understand. What are the top two or three things that would make the Chick-fil-A Spicy Deluxe \"bad\" for you? For instance, if it were soggy, dry, cold, or too greasy?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "39",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/39.txt",
+    "total_chunks": 33,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 5,
+  "parent_record_id": "95c43eb4-c8d6-4cf1-a795-e16d4e88afc0"
+}

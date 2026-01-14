@@ -1,0 +1,24 @@
+{
+  "record_id": "57543d6f-80ec-46ee-8241-6ea8f5607c02",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.732641",
+  "raw_text": "User: if it was like cold I wouldn't want to eat it just because I feel like some of the ingredients in there need to be at a certain temperature for it to taste good in combination with all the other things that are inside of the burrito.\nAgent: That makes perfect sense. So, sogginess and a cold temperature are definitely deal-breakers. Is there one more thing that would make your...",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview6",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview6.txt",
+    "total_chunks": 31,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 9,
+  "parent_record_id": "a48d5c67-b799-4d11-942f-3b6236827fe4"
+}

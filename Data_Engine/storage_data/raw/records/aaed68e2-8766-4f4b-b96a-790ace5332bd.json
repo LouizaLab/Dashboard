@@ -1,0 +1,24 @@
+{
+  "record_id": "aaed68e2-8766-4f4b-b96a-790ace5332bd",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.751815",
+  "raw_text": "User: I would usually pair it with something like if it's spicy, then I don't really need any sauce. If it's not spicy, to be honest, if it's just fried chicken like bone-in chicken, I don't oftentimes have a sauce. Maybe occasionally some buffalo sauce or so. I do like having fries, although fries adds additional calories. So sometimes I might opt just for more chicken as opposed to having fries. And I usually do get a soft drink. And soft drink, I would get like a Diet Coke or a Diet Pepsi.\nAgent: Thank you for sharing your usual pairings: buffalo sauce if it's not spicy, fries (though sometimes you prefer more chicken), and a diet soft drink.\n\nNow, thinking about the opposite, what would you absolutely never pair with your favorite fried chicken, and why?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview9",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview9.txt",
+    "total_chunks": 15,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 11,
+  "parent_record_id": "1bc8a08c-2dc5-435d-be32-44c66ef19022"
+}

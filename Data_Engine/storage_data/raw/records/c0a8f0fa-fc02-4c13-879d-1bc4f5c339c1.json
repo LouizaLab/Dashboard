@@ -1,0 +1,24 @@
+{
+  "record_id": "c0a8f0fa-fc02-4c13-879d-1bc4f5c339c1",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.799834",
+  "raw_text": "User: Sometimes I get their box thing and so it comes with like the option like the spicy potatoes and carrots or whatever. I always get the spicy potatoes and I think it comes with like a burrito option which I usually go with the bean and cheese and rice one and I can't think of what else that one comes with but yeah I like the box the build your own box option because it's just a way to save money.\nAgent: That's a good way to get a full meal. And what would you never pair your Chicken...",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "35",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/35.txt",
+    "total_chunks": 34,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 17,
+  "parent_record_id": "e5c79867-15fb-4539-91e6-0af0a124ad06"
+}

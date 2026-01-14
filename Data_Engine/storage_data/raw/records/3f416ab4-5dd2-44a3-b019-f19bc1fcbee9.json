@@ -1,0 +1,23 @@
+{
+  "record_id": "3f416ab4-5dd2-44a3-b019-f19bc1fcbee9",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.870739",
+  "raw_text": "em pretty sugary and fattening. And yeah, I try and avoid that. Yeah, I would say fries is what I would normally go with. Agent: Okay, so fries are your go-to pairing. That makes sense, as they often come in a combo. You mentioned avoiding sodas. Is there anything else you would absolutely never pair with your Popeye's chicken sandwich, and if so, why not? User: That's probably it. Agent: Understood. Thanks for clarifying, Sean. Now, let's talk about when you choose your favorite Popeye's chicken sandwich. In what situations do you find yourself ordering it most often? Please consider things like if you're under time pressure, your location like home, work, or during a commute, how you order it\u2014whether it's drive-thru or delivery\u2014and who you might be with at the time. User: Usually it's late night delivery after I go out to a party or whatever. Then I come home at 2, 3 a.m. and I'm starving and then I just have to get it Agent: Thanks for sharing that, Sean. It sounds like a perfect",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview8.txt",
+    "total_chunks": 11
+  },
+  "client_id": null,
+  "chunk_index": 4,
+  "parent_record_id": "a3318d9c-f9af-4c79-a599-3db343b1df93"
+}

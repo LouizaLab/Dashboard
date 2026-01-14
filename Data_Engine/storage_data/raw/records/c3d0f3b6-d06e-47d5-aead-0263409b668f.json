@@ -1,0 +1,24 @@
+{
+  "record_id": "c3d0f3b6-d06e-47d5-aead-0263409b668f",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.813747",
+  "raw_text": "User: I'd say pairing it with Chick-fil-A sauce, the way that it's fried and all of other stuff on a sandwich.\nAgent: Thank you for sharing those details. On the flip side, what are the top two...",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview17",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview17.txt",
+    "total_chunks": 33,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 4,
+  "parent_record_id": "88d4a69e-5a62-47c8-8b20-22b88f242475"
+}

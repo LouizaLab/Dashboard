@@ -1,0 +1,24 @@
+{
+  "record_id": "bc8c27ce-692f-4486-8d78-71306b1111e3",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.722776",
+  "raw_text": "User: Usually hamburgers, fries.\nAgent: Thank you.\n\nWhat does \"good value\" mean to you in fast food? Please pick your top two or three factors from taste, portion size, speed, nutrition, consistency, or price, and explain how you judge if something is \"worth it.\"",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview4",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview4.txt",
+    "total_chunks": 33,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 24,
+  "parent_record_id": "2bf06f63-1970-4fb8-9751-bc4c59483394"
+}

@@ -1,0 +1,23 @@
+{
+  "record_id": "ba6c4069-61ee-4e81-a4ba-8b7de985898c",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.868035",
+  "raw_text": "ust is fresh. I like the tomatoes and the lettuce and the sour cream and stuff. It's just a good blend of flavors. Agent: That's helpful. On the flip side, what are the top two or three things that would make the Chicken... User: It would be dry. Agent: You mentioned it would be dry. What are the top two or three things that would make the Chicken Chalupa Supreme \"bad\" for you? User: Oh, if it was... If I waited too long to eat it and it got soggy, Michelle. And then... Yeah, if I tried to do it like leftover or whatever, if I tried to eat it the next day or something. Same thing basically, I guess. But it would be two different sogginess levels. Agent: I understand. If the Chicken Chalupa Supreme was unavailable, what would you order instead, including the chain and item? User: I would get... Agent: Please take your time. User: the Doritos Locos Tacos. Agent: Okay, the Doritos Locos... User: I would get the Doritos Locos Tacos at Taco Bell. Agent: Thank you. Why is the Doritos Locos T",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview21.txt",
+    "total_chunks": 10
+  },
+  "client_id": null,
+  "chunk_index": 2,
+  "parent_record_id": "08071a2d-f19f-4ddf-8b32-c6b6250cf6ad"
+}

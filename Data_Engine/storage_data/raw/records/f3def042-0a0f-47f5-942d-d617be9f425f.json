@@ -1,0 +1,23 @@
+{
+  "record_id": "f3def042-0a0f-47f5-942d-d617be9f425f",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.866883",
+  "raw_text": "t: That's a clear picture. In what situations do you choose the Wendy's Classic Triple most often? Please include details like time pressure, location such as home, work, or commute, the ordering channel like drive-thru or delivery, and who you're with. User: I use the app. I'm usually alone. I eat Wendy's Sunday through Sunday. I usually go during the evening. I eat before bed. But I've had ordered for breakfast before. Breakfast is also good Agent: Thank you for sharing your routine. How does price change your choice? For example, if the Wendy's Classic Triple cost two dollars more, what would you do? And if there was a deal, what would you do differently? User: Wendy's increased their prices probably wouldn't shop there anymore because they would be like the rest of the restaurant industry. I purchased from Wendy's because Wendy's has the best deals and offers and they give you a great amount of money for the food that you buy, a great amount of food for the money that you spend. Ag",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview16.txt",
+    "total_chunks": 10
+  },
+  "client_id": null,
+  "chunk_index": 5,
+  "parent_record_id": "e39fd593-0fd9-4d1e-91c2-82ea896e8fe1"
+}

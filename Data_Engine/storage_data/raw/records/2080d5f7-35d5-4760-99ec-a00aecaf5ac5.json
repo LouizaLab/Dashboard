@@ -1,0 +1,39 @@
+{
+  "record_id": "2080d5f7-35d5-4760-99ec-a00aecaf5ac5",
+  "bucket_id": 1,
+  "source_name": "burger_king_menu",
+  "source_type": "csv",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2025-12-27T02:16:07.067071",
+  "raw_text": null,
+  "structured_fields": {
+    "Item": "Bacon, Egg & Cheese Biscuit"
+  },
+  "numerical_fields": {
+    "Calories": 410.0,
+    "Fat Calories": 230.0,
+    "Fat (g)": 26.0,
+    "Saturated Fat (g)": 12.0,
+    "Trans Fat (g)": 1.0,
+    "Cholesterol (mg)": 225.0,
+    "Sodium (mg)": 1370.0,
+    "Total Carb (g)": 32.0,
+    "Dietary Fiber (g)": 1.0,
+    "Sugars (g)": 3.0,
+    "Protein (g)": 15.0
+  },
+  "categorical_fields": {
+    "Category": "Breakfast"
+  },
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "dataset_name": "burger_king_menu",
+    "row_index": 80,
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Phase_1_Taste_Embedding_Model/data/raw/burger-king-menu.csv"
+  },
+  "client_id": null,
+  "chunk_index": null,
+  "parent_record_id": null
+}

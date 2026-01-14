@@ -1,0 +1,24 @@
+{
+  "record_id": "0c270e13-d1cb-498f-8762-8bb92213a68a",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.779480",
+  "raw_text": "User: I always get the meals of the large french fries and the large soda and the Dr. Pepper that I always drink. No ice. But I would not pair it with like the chicken wraps or like the, I don't know, just like really anything other than the fries and the drink. And I have to have ketchup with my fries. But yeah, if I got anything other than that, I would feel like it would be too much to eat.\nAgent: Thank you for that detailed explanation of your pairings.\n\nNow, let's talk about the situations in which you choose your McDonald's cheeseburger most often. Could you tell me about the circumstances, such as time pressure, location like home, work, or commute, the ordering channel like drive-thru or delivery, and who you're with?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "34",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/34.txt",
+    "total_chunks": 23,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 17,
+  "parent_record_id": "e45fb1d7-d025-48e7-9f73-0ae6be217425"
+}

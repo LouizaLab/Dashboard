@@ -1,0 +1,24 @@
+{
+  "record_id": "cf9060f6-233a-413f-a530-af7430d1c151",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.738987",
+  "raw_text": "User: I think two or three similar items I'll name too would probably be the Chick-fil-A sandwich from Chick-fil-A, and even just the burrito from Chick-fil-A. I think Chick-fil-A would be fully my next two options.\nAgent: Okay, so the Chick-fil-A sandwich and the Chick-fil-A burrito. For each of those, could you tell me what's better or worse about them compared to your favorite McDonald's Quarter Pounder with cheese?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "42",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/42.txt",
+    "total_chunks": 34,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 8,
+  "parent_record_id": "bce10b3b-9632-4b3a-a34a-f84fa18e9006"
+}

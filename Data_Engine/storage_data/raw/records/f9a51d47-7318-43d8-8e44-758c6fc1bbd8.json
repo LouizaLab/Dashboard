@@ -1,0 +1,23 @@
+{
+  "record_id": "f9a51d47-7318-43d8-8e44-758c6fc1bbd8",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.869515",
+  "raw_text": "old you what my autopilot order was. Agent: You're right, you mentioned the Chick-fil-A chicken sandwich. Could you tell me why that specific item is your default or \"autopilot\" order? Is it because... User: Because it's really good and it's always fairly fresh and I know what it tastes like and it's ready quickly. Agent: Thank you. If you get bored of your usual Chick-fil-A chicken sandwich, what do you switch to? Is it a new flavor, a new chain, a different format like a wrap versus a burger, or a different side or drink? What scratches that itch for something different? User: Usually if I want something else I'll just make something at home Agent: That makes sense. How do other people influence your order, if at all? For example, does group choice, recommendations, convenience for others, or not wanting judgment play a role? Could you give one example? User: It doesn't really ever influence my order unless maybe I'm with someone who specifically doesn't like Chick-fil-A. Agent: Unde",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview28.txt",
+    "total_chunks": 12
+  },
+  "client_id": null,
+  "chunk_index": 10,
+  "parent_record_id": "28bd9b1c-9686-4e84-8a5f-49c46c8084fd"
+}

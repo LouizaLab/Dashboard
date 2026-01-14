@@ -1,0 +1,24 @@
+{
+  "record_id": "b7a99d8b-fe7b-40e2-a1b8-24b31f88171b",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.715129",
+  "raw_text": "User: Because of the way it is cooked, slow roasted and it is also sliced thin.\nAgent: That makes sense. Can you name two or three similar items you also like from any chain? And for each one, what's better or worse compared to your favorite brisket sandwich?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview1",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview1.txt",
+    "total_chunks": 28,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 9,
+  "parent_record_id": "24c315c5-82df-4a16-b34d-f6b42b080750"
+}

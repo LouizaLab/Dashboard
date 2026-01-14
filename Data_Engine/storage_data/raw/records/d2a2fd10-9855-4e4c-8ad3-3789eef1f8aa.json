@@ -1,0 +1,24 @@
+{
+  "record_id": "d2a2fd10-9855-4e4c-8ad3-3789eef1f8aa",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.810730",
+  "raw_text": "User: Wendy's classic triple has the best meat patties in the game paired with the mayonnaise and the crispy lettuce fresh tomatoes and onions that are always out of this world the textures fuse together with the squared meat it creates happiness I can only explain the taste of a Wendy's classic triple as happiness texture is very firm reminds you that you're eating a piece of meat the buns are very soft the lettuce is crispy the tomatoes aren't soggy and the onions taste like onion\nAgent: That sounds delicious. What are the top two or three things that make the Wendy's Classic Triple \"perfect\" for you?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview16",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview16.txt",
+    "total_chunks": 24,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 4,
+  "parent_record_id": "073b5ea8-26dc-4e34-ab4d-47aa68550d3c"
+}

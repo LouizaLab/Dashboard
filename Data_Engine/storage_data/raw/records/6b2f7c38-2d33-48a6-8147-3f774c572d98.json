@@ -1,0 +1,23 @@
+{
+  "record_id": "6b2f7c38-2d33-48a6-8147-3f774c572d98",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.867658",
+  "raw_text": "riggers it. User: I don't eat it as much lately because we're on a budget and I'm trying not to spend money. If I get a craving, usually during the lunchtime, I'll go once every two weeks. Agent: Thank you for sharing that, Sarah. It's helpful to understand how your budget influences your choices. Now, what does \"good value\" mean to you in fast food? Please pick your top two or three factors from taste, portion size, speed, nutrition, consistency, or price, and explain how you judge if something is \"worth it.\" User: Usually if it fills you up and it's under $10 Agent: So, for you, good value means a satisfying portion size that fills you up, and a price point under ten dollars. That's very clear. Now, let's shift a bit. Compared to your last fast-food order, what changed today, if anything? And if something did change, what was the biggest driver? Was it your mood, cravings, schedule, budget, health goals, social plans, or convenience? User: I'm going to go with budget. I have less m",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview2.txt",
+    "total_chunks": 12
+  },
+  "client_id": null,
+  "chunk_index": 5,
+  "parent_record_id": "6cb1c839-9316-444a-b7a9-1e6f04a47cad"
+}

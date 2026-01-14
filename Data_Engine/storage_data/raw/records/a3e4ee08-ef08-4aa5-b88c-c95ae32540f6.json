@@ -1,0 +1,24 @@
+{
+  "record_id": "a3e4ee08-ef08-4aa5-b88c-c95ae32540f6",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.798243",
+  "raw_text": "User: I like it because it's got...\nAgent: Please continue. What is it about the Chicken Chalupa Supreme that you like?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "35",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/35.txt",
+    "total_chunks": 34,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 3,
+  "parent_record_id": "e5c79867-15fb-4539-91e6-0af0a124ad06"
+}

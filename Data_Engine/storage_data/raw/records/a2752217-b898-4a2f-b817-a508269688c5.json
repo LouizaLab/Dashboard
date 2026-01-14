@@ -1,0 +1,24 @@
+{
+  "record_id": "a2752217-b898-4a2f-b817-a508269688c5",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.686162",
+  "raw_text": "User: Aftertaste of those McDonald's fries... also what are the top two or three things that make them perfect for you? I would say the fact that they come warm and um like I think they're like deep fried or something like that. I'm not too sure about the specifics you know what I mean, I'm not the one behind a counter but\nAgent: I understand that the warmth and the deep-fried aspect contribute to their perfection. Beyond that, could you describe the flavor, smell, and...",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview19",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview19.txt",
+    "total_chunks": 60,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 9,
+  "parent_record_id": "a3e1d684-9ae6-4af5-abed-bbda00d0d1d0"
+}

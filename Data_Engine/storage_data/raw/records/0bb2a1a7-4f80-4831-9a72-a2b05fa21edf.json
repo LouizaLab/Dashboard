@@ -1,0 +1,24 @@
+{
+  "record_id": "0bb2a1a7-4f80-4831-9a72-a2b05fa21edf",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.660563",
+  "raw_text": "User: No\nAgent: Understood. You stuck with your usual.\n\nWhat would make you permanently change your \"default\" order?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview20",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview20.txt",
+    "total_chunks": 29,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 25,
+  "parent_record_id": "1dae9cf3-0d08-4ac6-9faa-09346c1ea83e"
+}

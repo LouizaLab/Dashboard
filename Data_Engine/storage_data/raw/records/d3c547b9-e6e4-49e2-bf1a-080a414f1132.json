@@ -1,0 +1,23 @@
+{
+  "record_id": "d3c547b9-e6e4-49e2-bf1a-080a414f1132",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.866075",
+  "raw_text": "got a little bit of spice to it. So that's kind of nice. Agent: That's a very clear explanation, Carl. It sounds like you appreciate the variety and distinct flavors Taco Bell offers. Can you name two to three similar items you also like, from any chain, and for each, tell me what's better or worse compared to your favorite Panda Express orange chicken? User: had a nice breading to where it was really crispy instead of crunchy and then the piece of chicken was usually pretty good mostly all white meat and pretty juicy and then with the lettuce on there in the mail because I can't have a chicken sandwich unless I have like lettuce and mayo it's those are really important so that's when other alternative plus it's something that's different than cheese but you know what I mean I like cheeseburgers a lot but I get kind of sick of them since a lot of places that's what they sell so I do like to have some different alternatives Agent: Okay, so a chicken sandwich with lettuce and mayo is ano",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview12.txt",
+    "total_chunks": 8
+  },
+  "client_id": null,
+  "chunk_index": 6,
+  "parent_record_id": "e7318291-9171-4cc3-913e-6ab9feff74f9"
+}

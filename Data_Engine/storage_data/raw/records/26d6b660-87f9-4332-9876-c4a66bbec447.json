@@ -1,0 +1,42 @@
+{
+  "record_id": "26d6b660-87f9-4332-9876-c4a66bbec447",
+  "bucket_id": 1,
+  "source_name": "mcd_menu_alt",
+  "source_type": "csv",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2025-12-27T02:25:07.219574",
+  "raw_text": null,
+  "structured_fields": {
+    "name": "Butter Chicken Grilled Burger",
+    "serving_size": "153g",
+    "ingredients": "Premium grilled chicken patty, Shredded onion, Sesame seeded buns",
+    "tag": "Dil se makhani burger.",
+    "description": "Premium grilled chicken patty topped with makhani sauce and shredded onions placed between freshly toasted sesame seeded buns."
+  },
+  "numerical_fields": {
+    "energy": 357.01,
+    "protein": 17.06,
+    "total_fat": 14.41,
+    "sat_fat": 4.65,
+    "trans_fat": 0.0,
+    "chol": 31.93,
+    "carbs": 39.76,
+    "total_sugar": 6.55,
+    "added_sugar": 4.71,
+    "sodium": 919.59
+  },
+  "categorical_fields": {
+    "allergy": "Cereal containing gluten, Milk, Soya"
+  },
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "dataset_name": "mcd_menu_alt",
+    "row_index": 1,
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Phase_1_Taste_Embedding_Model/data/raw/mcd.csv"
+  },
+  "client_id": null,
+  "chunk_index": null,
+  "parent_record_id": null
+}

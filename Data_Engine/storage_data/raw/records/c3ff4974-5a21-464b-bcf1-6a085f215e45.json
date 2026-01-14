@@ -1,0 +1,23 @@
+{
+  "record_id": "c3ff4974-5a21-464b-bcf1-6a085f215e45",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.867022",
+  "raw_text": "you permanently change your \"default\" order? What would you need to see happen repeatedly, such as taste, consistency, price, or convenience? User: I'd say price. Agent: So, price would be the main factor that would make you permanently change your default order. Now, let's talk about deals. How much did a deal influence this choice today? User: Very much. Agent: That's good to know. Could you explain what kind of deal actually changes your behavior? For example, is it a buy one get one free offer, a percentage off, app points, or free delivery? User: Depends usually a certain amount of discount buy one get one it depends Agent: So, it varies depending on the type of discount or if it's a buy one get one offer. Has your price sensitivity changed in the last two to four weeks? If so, why? User: Not really Agent: Okay, so your price sensitivity hasn't really changed. Are you trying to eat healthier than two to four weeks ago? Why or why not? User: Yeah because New Year's coming up and",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview17.txt",
+    "total_chunks": 11
+  },
+  "client_id": null,
+  "chunk_index": 8,
+  "parent_record_id": "f5c69c84-f91a-4dd6-8cf5-c2c95cae4a75"
+}

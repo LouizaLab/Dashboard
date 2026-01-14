@@ -1,0 +1,39 @@
+{
+  "record_id": "b51cf37e-5484-4b63-a2fe-55b6c48a8ff7",
+  "bucket_id": 1,
+  "source_name": "burger_king_menu",
+  "source_type": "csv",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2025-12-27T02:25:07.242163",
+  "raw_text": null,
+  "structured_fields": {
+    "Item": "HERSHEY'S Chocolate Shake"
+  },
+  "numerical_fields": {
+    "Calories": 630.0,
+    "Fat Calories": 150.0,
+    "Fat (g)": 17.0,
+    "Saturated Fat (g)": 11.0,
+    "Trans Fat (g)": 0.5,
+    "Cholesterol (mg)": 65.0,
+    "Sodium (mg)": 420.0,
+    "Total Carb (g)": 105.0,
+    "Dietary Fiber (g)": 1.0,
+    "Sugars (g)": 86.0,
+    "Protein (g)": 13.0
+  },
+  "categorical_fields": {
+    "Category": "Desserts"
+  },
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "dataset_name": "burger_king_menu",
+    "row_index": 137,
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Phase_1_Taste_Embedding_Model/data/raw/burger-king-menu.csv"
+  },
+  "client_id": null,
+  "chunk_index": null,
+  "parent_record_id": null
+}

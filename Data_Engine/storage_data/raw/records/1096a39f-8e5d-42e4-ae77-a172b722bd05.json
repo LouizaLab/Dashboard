@@ -1,0 +1,23 @@
+{
+  "record_id": "1096a39f-8e5d-42e4-ae77-a172b722bd05",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.869171",
+  "raw_text": "hey didn't have it. So I guess it's not a consistent thing that they have on the menu or maybe it's just at certain restaurants. I don't know. But that's a big problem because, I mean, if you're not going to keep it on the menu all the time, how am I supposed to order it? Other than that, I mean, it's great. So that's the only really, like, drawback. For Wendy's, besides the price, first of all, it's really good because, I mean, you do get a big sandwich. You know? Yeah. It's expensive. But you can't just go and buy one at a time. Right? And so we're going to have to make sure that we're getting as many people as possible. But you do kind of get your money's worth. However, on the other hand, though, to be honest with you, it is pretty big and so when I was looking for something that was going to be in my bag or something like that, I didn't see any of them. So I'm not sure if they were going to sell anything but they were selling some things. So when you eat it, you kind of have to ta",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview27.txt",
+    "total_chunks": 11
+  },
+  "client_id": null,
+  "chunk_index": 7,
+  "parent_record_id": "94ab779c-d721-4d41-8de2-10941e8d4497"
+}

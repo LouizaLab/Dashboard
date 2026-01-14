@@ -1,0 +1,24 @@
+{
+  "record_id": "65690829-c50a-4caf-8c8f-0be7f5cc2069",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.803584",
+  "raw_text": "User: They're just crunchy. You know they're the best fries I've ever had, besides, like, Wingstop or something.\nAgent: I understand they're crunchy and among the best you've had. Could you describe the flavor, temperature, smell, and aftertaste of those McDonald's fries? Also, what are the top two or three things that make them \"perfect\" for you?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "37",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/37.txt",
+    "total_chunks": 60,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 8,
+  "parent_record_id": "bd9a4494-3a92-4fcb-bb36-575404a64316"
+}

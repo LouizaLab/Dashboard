@@ -1,0 +1,23 @@
+{
+  "record_id": "4fbb371c-19c6-4271-a604-f45e7695f88e",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.867107",
+  "raw_text": "rtaste of the Mexican Pizza? User: It's, I guess however you, it kind of just tastes like a regular taco, but in a pizza form. And it depends on how you get it made up. It could be spicy or it can be mild. It could be salty. You can get all kinds of different textures on it. I don't really know about an aftertaste. I don't think it leaves much of an aftertaste, but it's very delicious. Agent: Thank you for that detailed description. You mentioned the flavor and texture, and that it doesn't leave much of an aftertaste. Could you also tell me about its typical temperature and smell? User: It's very warm as soon as you get it, and then maybe if you don't eat at all, you can take it home and warm it up, and then it's hot then too, so you want to eat it hot. But I'm sure it would taste fine cold. What was the second part of the question? Agent: You're right, I also asked about the smell. What does the Mexican Pizza typically smell like to you? User: It smells pretty much like a taco. It sme",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview18.txt",
+    "total_chunks": 10
+  },
+  "client_id": null,
+  "chunk_index": 1,
+  "parent_record_id": "cc9495dc-30ce-4277-b912-e84e4662cd15"
+}

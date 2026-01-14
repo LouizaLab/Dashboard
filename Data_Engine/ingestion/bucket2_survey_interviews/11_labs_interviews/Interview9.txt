@@ -1,0 +1,47 @@
+Call Transcript:
+
+User: Hello?
+Agent: I'm here to collect information about your food preferences to complete the onboarding so you can get rewarded. To start, please say your name and/or Prolific ID.
+User: Okay, uh, William Shen.
+Agent: Thank you, William. To begin, what is your favorite fast-food item? Please tell me the chain and the exact item. Also, could you describe why you like it, focusing on its flavor, texture, temperature, smell, and aftertaste?
+User: Sure um my favorite fast food item is probably fried chicken or sometimes fried chicken sandwich um favorite chain I like a restaurant called Church's Chicken.
+Agent: Thank you for sharing, William. So, Church's Chicken fried chicken or a fried chicken sandwich. Could you tell me more about why you like it so much? I'm interested in hearing about its flavor, texture, temperature, smell, and even the aftertaste.
+User: Well I just really like fried chicken I think it's tender it's juicy it's more just feels more fulfilling than a normal hamburger, I guess. I also like spicy fried chicken in particular.
+Agent: That's great to know you enjoy the tenderness, juiciness, and fulfilling nature of fried chicken, especially when it's spicy. Now, thinking about your favorite fried chicken from Church's, what are the top two or three things that make it absolutely perfect for you? And conversely, what are the top two or three things that would make it bad?...
+User: Thank you.
+Agent: You're welcome. Could you please tell me what are the top two or three things that make your favorite fried chicken from Church's absolutely perfect? And on the other hand, what are the top two or three things that would make it bad, like if it were soggy, dry, or cold?
+User: Yeah, so basically I think at church is right that the portion size is big. I also think the level of crunch or like the, you know, the covering that's fried is perfect compared to someplace like not sure like KFC or random chains. What made it make it bad? Yeah, I think if it was like fried a long time ago and a little bit cold or if it was like small and just didn't taste as fresh because, you know, when it's fresh, the outer layer is flaky. If it wasn't like that, then it would be worse.
+Agent: That's very clear, William. So, the generous portion size and the perfect crunch of the fried coating are key to its perfection, and it's definitely not good if it's cold, small, or lacks that fresh, flaky outer layer.
+
+Now, if your favorite fried chicken from Church's was unavailable, what would you order instead? Please include the chain and the specific item, and explain why that would be the closest replacement for you.
+User: I think that if I can't find a Church's chicken, then Popeye's or Jollibee. Jollibee is not as common. Popeye's, I think, is a little more common in most big U.S. cities. Yeah, I think those are my favorite because I actually, I really like bone-in chicken where possible. And I also like, you know, larger chunks of kind of like not uniform chicken in the sandwiches if it's possible.
+Agent: Okay, so Popeye's or Jollibee fried chicken would be your go-to alternatives, especially since you prefer bone-in chicken and larger, non-uniform pieces.
+
+Now, thinking beyond just replacements, can you name two or three other similar items you also like from any chain? And for each of those, could you tell me what's better or worse about them compared to your absolute favorite from Church's?
+User: Some replacement items?
+Agent: Yes, that's right. Besides your favorite Church's fried chicken and the replacements you mentioned, can you name two or three other similar fried chicken items you enjoy from any chain? And for each one, please tell me what you find better or worse...
+User: Yeah.
+Agent: Great...
+User: I mean, yeah, sure. So, you know, I do order, like, a chicken burger from McDonald's or sometimes I go to Chick-fil-A and stuff. To be honest for me, I think that when it comes to, you know, non bone in chicken, I would probably usually go with either chicken strips or chicken sandwich. The chicken sandwich I prefer if it has some vegetables such as tomato and lettuce. So honestly, for chicken sandwich, I think a McChicken I prefer over a over Chick-fil-A because Chick-fil-A doesn't have any vegetables and stuff. It's just kind of like a plain chicken piece and then maybe a pickle. In terms of my chicken strips, to be honest, I don't know if fast food restaurants have that amazing chicken strips. Chicken strips, honestly, is more something I get from the hot food aisle of a grocery store or even a cafeteria or like, yeah, something like that, I think. Although, I mean, Popeye's has good chicken strips, I think. Is it Popeye's? It might be Popeye's.
+Agent: Thank you for those examples, William. So you mentioned the McDonald's McChicken, Chick-fil-A's chicken sandwich, and chicken strips, possibly from Popeye's or a grocery store.
+
+Could you elaborate on what's better or worse about these items compared to your favorite Church's fried chicken? For instance, with the McChicken, you mentioned the vegetables, but how does it compare in terms of flavor, texture, or overall satisfaction to Church's?
+User: Yeah overall satisfaction is a bit worse with all these because, you know, if fried chicken is not very healthy so I would prefer it to be exactly what I want and the bonin I think makes it really tender and just like a unique experience.
+Agent: I understand that the overall satisfaction is generally lower with these other options because they don't quite match the unique, tender experience of bone-in fried chicken.
+
+Now, what do you usually pair with your favorite fried chicken from Church's? This could include drinks, sides, sauces, or even dessert. And on the flip side, what would you absolutely never pair it with, and why?
+User: Sorry, can you repeat that?
+Agent: Certainly. What do you usually pair with your favorite fried chicken from Church's? Think about drinks, sides, sauces, or even dessert. And what would you never pair it with, and why?
+User: I would usually pair it with something like if it's spicy, then I don't really need any sauce. If it's not spicy, to be honest, if it's just fried chicken like bone-in chicken, I don't oftentimes have a sauce. Maybe occasionally some buffalo sauce or so. I do like having fries, although fries adds additional calories. So sometimes I might opt just for more chicken as opposed to having fries. And I usually do get a soft drink. And soft drink, I would get like a Diet Coke or a Diet Pepsi.
+Agent: Thank you for sharing your usual pairings: buffalo sauce if it's not spicy, fries (though sometimes you prefer more chicken), and a diet soft drink.
+
+Now, thinking about the opposite, what would you absolutely never pair with your favorite fried chicken, and why?
+User: What would I never pair with my fried chicken? I think...
+Agent: Please take your time.
+User: ...
+Agent: Please speak when you're ready.
+User: I'm honestly not too sure what I would never pair with my fried chicken because I think that, you know, I sort of sometimes do all sorts of things. I might add a sandwich. Might add a salad. I mean, I suppose that, you know, I'm not going to have fried chicken with a fancier meal like, I don't know, some sort of nice pasta or ribs or something like that. So, yeah, if it's fried chicken, then I usually go full out in a fast food kind of style.
+Agent: That makes sense; you tend to stick to a fast-food style when enjoying fried chicken and wouldn't pair it with a more elaborate meal.
+
+Moving on, in what situations do you choose your favorite fried chicken most often? Could you tell me about factors like time pressure, your location such as home, work, or during a commute, how you order it like drive-thru or delivery, and who you're usually with?
+User: So fried chicken, I tend to order it after a week or so of eating pretty healthy. And there's a few different types of occasions. One is like if I go home, so church's chicken is more common in some cities than others. I will order it if I'm at home because I'm familiar with the different locations. And so when I return home, which is only a couple of times a year because I live pretty far away from where I currently work, that's when I'll go once or twice. And then some other times include if I, you know, am on a trip in a new place, I'm very hungry and I'm just trying to get a quick meal. I don't want to pay a lot of money. That's when I'll oftentimes opt for fried chicken for dinner or something like that. But it's not always the same thing. It can be different from what you're used to eating at home or your family's.

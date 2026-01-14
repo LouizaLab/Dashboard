@@ -1,0 +1,23 @@
+{
+  "record_id": "a6da75ca-7bbf-4471-b7f7-98e289d419fc",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.866500",
+  "raw_text": "rmanent change. How much did a deal influence your choice today, specifically for the McGriddle? User: None. None at all. Agent: Understood, no deal influenced your choice today. What kind of deal actually changes your behavior? For example, is it buy one get one free, a percentage... User: No deals. No deals can change me. It's just a Big Mac sometimes they need two for one on Wednesday Agent: I understand that generally, deals don't sway you, but a two-for-one Big Mac on Wednesday definitely catches your attention. Has your price sensitivity changed in the last two to four weeks? If so, why? What... User: None of that has changed. Agent: Okay, thank you. Are you trying to eat healthier than two to four weeks ago? Why or why not? User: No I'm not, no I'm not because I like Big Macs. I'm gonna keep eating Big Macs. Agent: I understand you're happy with your Big Mac choices. When do you usually try new items versus sticking to your usual Big Mac? Could you give one recent example...",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview15.txt",
+    "total_chunks": 13
+  },
+  "client_id": null,
+  "chunk_index": 10,
+  "parent_record_id": "f1fd0055-5ec4-40f3-bc6a-48afb005f6d4"
+}

@@ -1,0 +1,24 @@
+{
+  "record_id": "6a4d5873-1d08-4f10-9bd4-a635d29cf657",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.681533",
+  "raw_text": "User: Not at the moment\nAgent: Okay, I understand you don't have an example at the moment.\n\nIf a new item were to become repeat-worthy for you, what would usually be the reason? For example, would it taste...",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview25",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview25.txt",
+    "total_chunks": 36,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 28,
+  "parent_record_id": "a063913f-2f38-4288-8391-282e73daa401"
+}

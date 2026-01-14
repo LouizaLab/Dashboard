@@ -1,0 +1,24 @@
+{
+  "record_id": "3c805bf7-c691-400b-9a5d-16f71bcb4f78",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.755572",
+  "raw_text": "User: I was hungry. It was morning time. I needed to eat. So I just got that and it was good. I'll probably get another one later.\nAgent: I understand you were hungry and it was morning, leading you to choose the McGriddle. What \"mode\" would you say you were in today when you made that choice? For...",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "41",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/41.txt",
+    "total_chunks": 39,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 22,
+  "parent_record_id": "3a86faee-b265-401f-89c3-2956bf68e535"
+}

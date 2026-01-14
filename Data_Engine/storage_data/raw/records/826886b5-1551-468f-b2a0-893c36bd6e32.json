@@ -1,0 +1,39 @@
+{
+  "record_id": "826886b5-1551-468f-b2a0-893c36bd6e32",
+  "bucket_id": 1,
+  "source_name": "burger_king_menu",
+  "source_type": "csv",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2025-12-27T02:16:07.071319",
+  "raw_text": null,
+  "structured_fields": {
+    "Item": "Bacon Cheeseburger"
+  },
+  "numerical_fields": {
+    "Calories": 340.0,
+    "Fat Calories": 150.0,
+    "Fat (g)": 16.0,
+    "Saturated Fat (g)": 7.0,
+    "Trans Fat (g)": 0.0,
+    "Cholesterol (mg)": 45.0,
+    "Sodium (mg)": 940.0,
+    "Total Carb (g)": 30.0,
+    "Dietary Fiber (g)": 1.0,
+    "Sugars (g)": 7.0,
+    "Protein (g)": 18.0
+  },
+  "categorical_fields": {
+    "Category": "Burgers"
+  },
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "dataset_name": "burger_king_menu",
+    "row_index": 110,
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Phase_1_Taste_Embedding_Model/data/raw/burger-king-menu.csv"
+  },
+  "client_id": null,
+  "chunk_index": null,
+  "parent_record_id": null
+}

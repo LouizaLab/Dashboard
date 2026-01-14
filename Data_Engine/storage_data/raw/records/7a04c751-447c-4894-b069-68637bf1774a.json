@@ -1,0 +1,24 @@
+{
+  "record_id": "7a04c751-447c-4894-b069-68637bf1774a",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.778708",
+  "raw_text": "User: Oh God, I guess like compared to like the a burger from like Jack in the Box maybe or\nAgent: ...",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "34",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/34.txt",
+    "total_chunks": 23,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 10,
+  "parent_record_id": "e45fb1d7-d025-48e7-9f73-0ae6be217425"
+}

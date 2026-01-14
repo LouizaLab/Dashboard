@@ -1,0 +1,90 @@
+Call Transcript:
+
+User: ...
+Agent: I'm here to collect information about your food preferences to complete the onboarding so you can get rewarded. To start, please say your name or Prolific ID.
+User: 662-7722-F249E56-FCEFD07B8C
+Agent: Thank you. What is your favorite fast-food item, including the chain and the exact item? And could you tell me why you like it?
+User: Probably a Chick-fil-A chicken sandwich because I just really like how it tastes.
+Agent: Okay, that's a great choice. Could you tell me a bit more about what you like about the taste? For example, what about its flavor, texture, temperature, smell, or even the aftertaste makes it your favorite?
+User: I would say all of the above. It just tastes fresh and it's always usually hot and I like the breading.
+Agent: That's helpful to know. What are the top two or three things that make that Chick-fil-A chicken sandwich "perfect" for you? For instance, is it a crunchy coating, a specific sauce balance, the heat level, or the bun texture?
+User: The bun texture and the heat level.
+Agent: Understood. And on the flip side, what are the top two or three things that would make that Chick-fil-A chicken sandwich "bad" for you? For example, if it were soggy, dry, cold, under-salted, too greasy, or stale?
+User: If it were too greasy or cold.
+Agent: I see. If the Chick-fil-A chicken sandwich was unavailable, what would you order instead, and from which chain?
+User: I would probably get the nuggets from Chick-fil-A.
+Agent: And why do you consider the Chick-fil-A nuggets to be the closest replacement for the chicken sandwich?
+User: Because it's literally the same chicken just in nugget form
+Agent: That makes perfect sense. Can you name two or three similar items you also like, from any chain? And for each one, could you tell me what's better or worse compared to your favorite Chick-fil-A chicken sandwich?
+User: Honestly, I don't have any other items from fast food chains that would compare.
+Agent: Okay, I understand. So, sticking with your favorite Chick-fil-A chicken sandwich, what do you usually pair with it? This could be drinks, sides, or sauces.
+User: I always get Chick-fil-A sauce
+Agent: And what would you never pair your Chick-fil-A chicken sandwich with, and why not?
+User: . Oh!
+Agent: Please take your time.
+User: ...I don't know...um maybe meat? I'm not sure um...I would probably pair it with anything
+Agent: No worries at all. Let's move on to the next question. In what situations do you choose your Chick-fil-A chicken sandwich most often? Please include details like time pressure, location such as home, work, or commute, the ordering channel like drive-thru or delivery, and who you're with.
+User: Um I'm usually either by myself or with my boyfriend and I always use the app to order um and I get it through the drive thru and it's usually when we're on the go somewhere.
+Agent: Thank you for sharing that. How does price change your choice? For example, if your favorite item cost two dollars more, what would you do?
+User: I probably wouldn't buy it anymore because it's already pretty expensive.
+Agent: Understood. And if there was a deal on the Chick-fil-A chicken sandwich, what would you do differently?
+User: Sorry can you repeat that?
+Agent: Certainly. If there was a deal on the Chick-fil-A chicken sandwich, what would you do differently?
+User: Um if there was a deal that made it the same price it is now or cheaper than I would get it.
+Agent: Okay, that makes sense. Over the past two weeks, what are your most common fast-food patterns? This includes when you eat it, what you usually order, and what typically triggers it.
+User: Um I have not gotten fast food in the past two weeks
+Agent: Thank you for that information. In your opinion, what does "good value" mean to you in fast food?
+User: . Um, It means you're able to get fresh hot and fairly inexpensive food quickly.
+Agent: Based on that, could you pick your top two or three factors from taste, portion size, speed, nutrition, consistency, and price, and explain how you judge if something is "worth it"?
+User: Taste is definitely the top one because if I don't like how it tastes I'm not going to get it. And price is the second. Typically I'm not looking to spend more than $10 on a meal.
+Agent: Thank you for explaining that. Now, compared to your last fast-food order, what changed today, if anything?
+User: What do you mean?
+Agent: I'm asking if there's anything different about your current situation or preferences compared to the last time you ordered fast food. For...
+User: No, there's nothing different.
+Agent: Okay. What "mode" are you in today? Are you in a budget, health, treat, convenience, explore, or stressed mode?
+User: I don't know, stressed.
+Agent: Understood. When you're in a stressed mode, what's the first thing that changes in your fast-food order?
+User: I wouldn't say that anything changes necessarily.
+Agent: Okay. What triggered this order today? Please be specific. Was it a craving, a deal, an ad, someone suggested it, you were nearby, time...
+User: I'm sorry, I don't know what you're talking about today. I don't know what you're referring to.
+Agent: My apologies for the confusion. I'm asking hypothetically, if you were to place a fast-food order, what would typically trigger it? For example, would it be a craving, seeing a deal...
+User: Just being hungry and needing to eat something and being nearby a restaurant.
+Agent: Thank you for clarifying. So, when you're hungry and near a restaurant, would that order be planned or more spontaneous?
+User: It would be spontaneous.
+Agent: What would have had to change for you to not get fast food today?
+User: I would have had to not have enough time, probably.
+Agent: Did you switch from your usual chain or usual item today?
+User: No.
+Agent: Understood. What would make you permanently change your "default" order?
+User: If they completely changed the recipe...
+Agent: And what would you need to see happen repeatedly, such as changes in taste, consistency, price, or convenience, that would make you permanently change your default order?
+User: I don't think that anything would make me permanently change my default order.
+Agent: Okay, I understand. How much does a deal typically influence your choice when you're deciding what to order?
+User: A decent amount kind of. I mean if I find a deal that I would use, I'm pretty happy but I won't change my order just because there's a deal for it.
+Agent: That's helpful to know. What kind of deal actually changes your behavior? For example, is it a buy-one-get-one offer, a...
+User: A buy one get one free for sure.
+Agent: Has your price sensitivity changed in the last two to four weeks? And if...
+User: No, I don't think so.
+Agent: What changed in your life or in prices or fees, and how did it change what you order?
+User: Nothing changed.
+Agent: Are you trying to eat healthier than two to four weeks ago? Why or...
+User: Not really.
+Agent: Okay. What specific rule are you following, such as less fried,...
+User: I'm not following any rules.
+Agent: Understood. What recent change affected your eating, such as a gym routine, diet plan, travel, stress, or schedule, and what did it change in your fast-food choices?
+User: I haven't had any changes
+Agent: When do you try new items versus stick to your usual? Could you give one recent example of each and explain why?
+User: . I always usually stick to my usual because it's just familiar but sometimes I'll randomly try something like i tried a different shake from Arby's recently because it sounded good.
+Agent: That's a good example. If a new item becomes repeat-worthy for you, what is usually the reason? For instance, does it taste better than your default, feel like a treat, fit your goals, offer good value, or is it more convenient?
+User: I wouldn't say that i have ever really done that
+Agent: Okay, I understand. What is your "autopilot" order and why is it your default? Is it because of taste, consistency,...
+User: I already told you what my autopilot order was.
+Agent: You're right, you mentioned the Chick-fil-A chicken sandwich. Could you tell me why that specific item is your default or "autopilot" order? Is it because...
+User: Because it's really good and it's always fairly fresh and I know what it tastes like and it's ready quickly.
+Agent: Thank you. If you get bored of your usual Chick-fil-A chicken sandwich, what do you switch to? Is it a new flavor, a new chain, a different format like a wrap versus a burger, or a different side or drink? What scratches that itch for something different?
+User: Usually if I want something else I'll just make something at home
+Agent: That makes sense. How do other people influence your order, if at all? For example, does group choice, recommendations, convenience for others, or not wanting judgment play a role? Could you give one example?
+User: It doesn't really ever influence my order unless maybe I'm with someone who specifically doesn't like Chick-fil-A.
+Agent: Understood. How does social media or hype influence you? What makes you try a trending item versus ignore it?
+User: I always ignore it because I literally couldn't care less.
+Agent: Okay, I understand. Your interview is now complete. Thank you for participating!

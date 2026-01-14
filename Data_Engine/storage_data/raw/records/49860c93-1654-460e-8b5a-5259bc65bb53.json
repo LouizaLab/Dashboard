@@ -1,0 +1,24 @@
+{
+  "record_id": "49860c93-1654-460e-8b5a-5259bc65bb53",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.751188",
+  "raw_text": "User: I think that if I can't find a Church's chicken, then Popeye's or Jollibee. Jollibee is not as common. Popeye's, I think, is a little more common in most big U.S. cities. Yeah, I think those are my favorite because I actually, I really like bone-in chicken where possible. And I also like, you know, larger chunks of kind of like not uniform chicken in the sandwiches if it's possible.\nAgent: Okay, so Popeye's or Jollibee fried chicken would be your go-to alternatives, especially since you prefer bone-in chicken and larger, non-uniform pieces.\n\nNow, thinking beyond just replacements, can you name two or three other similar items you also like from any chain? And for each of those, could you tell me what's better or worse about them compared to your absolute favorite from Church's?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview9",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview9.txt",
+    "total_chunks": 15,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 6,
+  "parent_record_id": "1bc8a08c-2dc5-435d-be32-44c66ef19022"
+}

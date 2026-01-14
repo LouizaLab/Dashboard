@@ -1,0 +1,24 @@
+{
+  "record_id": "822ce515-33bd-4d5f-8c28-fb39908616de",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.775251",
+  "raw_text": "User: I think price matters, but it's not the main driver. If the double-double costs $2 more, I'd probably pause, but I'd still probably order it. The value has always been part of the appeal, and even with a small increase, it would still feel fair compared to what other chains were charging for smaller burger. I might just order it a little less often. On the other hand, if there was a deal or a bundle I'd lean in, I'd be more likely to add fries or a shake or choose In-N-Out or another option, even if it wasn't the most convenient stop.\nAgent: That's interesting to hear how price affects your decision. Now, thinking about the past two weeks, what have been your most common fast-food patterns? What do you usually order, and what typically triggers those orders?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "46",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/46.txt",
+    "total_chunks": 19,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 6,
+  "parent_record_id": "42485974-cee0-43b1-bfcd-159fb131da89"
+}

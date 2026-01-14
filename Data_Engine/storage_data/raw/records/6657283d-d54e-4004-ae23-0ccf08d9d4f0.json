@@ -1,0 +1,24 @@
+{
+  "record_id": "6657283d-d54e-4004-ae23-0ccf08d9d4f0",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.837887",
+  "raw_text": "User: More time.\nAgent: So, if you had more time, you might not have chosen fast food today.\n\nDid you switch from your usual chain or usual item today? If yes, what exactly caused the switch? Was it a deal, a new item, boredom, a bad experience, health, price, convenience, social reasons, or limited options?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "31",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/31.txt",
+    "total_chunks": 36,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 20,
+  "parent_record_id": "b8eed46d-a364-478a-a2e3-13621c355a9d"
+}

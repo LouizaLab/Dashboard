@@ -1,0 +1,24 @@
+{
+  "record_id": "b9c70fe6-51f2-4214-b9aa-3aad79cef50d",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.805060",
+  "raw_text": "User: They're crisp and a bit salty. You all...\nAgent: You're right, they are fries! But even with fries, there can be specific details that make them stand out. For...",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "37",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/37.txt",
+    "total_chunks": 60,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 18,
+  "parent_record_id": "bd9a4494-3a92-4fcb-bb36-575404a64316"
+}

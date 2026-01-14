@@ -1,0 +1,23 @@
+{
+  "record_id": "3bf7084e-a07b-4552-a00c-f2ebdeb6d5da",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.867935",
+  "raw_text": "sounds like you find the quality there to be less consistent than at Wendy's. Could you name a specific item you like from McDonald's or another chain that is similar to the Wendy's single? And for that item, what's better or worse about it compared to your favorite Wendy's single? User: McDonald's crispy chicken sandwich is similar. Agent: Okay, the McDonald's crispy chicken sandwich. What's better or worse about that item compared to your favorite Wendy's single? User: The meat has an aftertaste and the produce is not as much. They don't have the quantity, good quantity like Wendy's. Agent: I see. So, with the McDonald's crispy chicken sandwich, you find the meat has an aftertaste and the produce quantity isn't as generous as Wendy's. What do you usually pair with your favorite Wendy's single? This could include drinks, sides, or sauces. And what would you never pair it with, and why? User: Wendy's fries are great. They taste really fresh and I usually pair it with an iced tea. Age",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview20.txt",
+    "total_chunks": 11
+  },
+  "client_id": null,
+  "chunk_index": 4,
+  "parent_record_id": "2b6b0470-bd75-4f9b-98bd-8b5aed0e9f50"
+}

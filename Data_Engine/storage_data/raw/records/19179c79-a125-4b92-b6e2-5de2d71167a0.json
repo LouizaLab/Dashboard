@@ -1,0 +1,23 @@
+{
+  "record_id": "19179c79-a125-4b92-b6e2-5de2d71167a0",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.870396",
+  "raw_text": "what are the top two or three things that would make your Chipotle burrito \"bad\"? For example, if it were soggy, dry, or cold? User: Absolutely if it were soggy I would not want to eat it. I feel like once a tortilla shall get soggy it's absolutely disgusting so that would make me not want to eat it. Agent: Sogginess is definitely a common issue. Are there one or two other things that would make your Chipotle burrito bad, like if it were... User: The temperature. Agent: So,... User: If it wasn't Agent: Please continue. What about the temperature would make it bad? User: if it was like cold I wouldn't want to eat it just because I feel like some of the ingredients in there need to be at a certain temperature for it to taste good in combination with all the other things that are inside of the burrito. Agent: That makes perfect sense. So, sogginess and a cold temperature are definitely deal-breakers. Is there one more thing that would make your... User: Yes. Agent: Okay, what would be th",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview6.txt",
+    "total_chunks": 11
+  },
+  "client_id": null,
+  "chunk_index": 2,
+  "parent_record_id": "7bbdd4cb-ea9f-41c4-ad88-c8cc6f12ea7d"
+}

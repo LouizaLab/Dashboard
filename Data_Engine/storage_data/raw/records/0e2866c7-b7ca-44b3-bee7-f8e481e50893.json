@@ -1,0 +1,24 @@
+{
+  "record_id": "0e2866c7-b7ca-44b3-bee7-f8e481e50893",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.686485",
+  "raw_text": "User: Beyond that could you describe the flavor smell and aftertaste? I mean they don't really smell like nothing but the aftertaste is like you know like a bit salty in a good way it's not like overly salty.\nAgent: Thank you for clarifying the aftertaste and smell. So, they have a good, not-overly-salty aftertaste and not much of a distinct smell. What about the flavor itself?...",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview19",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview19.txt",
+    "total_chunks": 60,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 10,
+  "parent_record_id": "a3e1d684-9ae6-4af5-abed-bbda00d0d1d0"
+}

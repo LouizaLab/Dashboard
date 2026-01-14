@@ -1,0 +1,24 @@
+{
+  "record_id": "85080dfb-3b20-4e8b-9b69-5afbe16bdbe1",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.677315",
+  "raw_text": "User: It's better, I guess, because you get more of it. If you order a large pizza, it's going to be much bigger than the Mexican pizza from Taco Bell. What's worse is, I guess, it doesn't hit the spot as much as a Mexican pizza for me. They're good, but not my favorite.\nAgent: That makes sense. Now, what do you usually pair with your Mexican Pizza? This could include drinks, sides, or sauces. And what would you never pair it with, and why?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "38",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/38.txt",
+    "total_chunks": 19,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 11,
+  "parent_record_id": "04f316d3-be87-4e71-bf48-81915dfb54b0"
+}

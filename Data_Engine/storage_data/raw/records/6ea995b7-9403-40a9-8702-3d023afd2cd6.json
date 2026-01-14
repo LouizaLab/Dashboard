@@ -1,0 +1,24 @@
+{
+  "record_id": "6ea995b7-9403-40a9-8702-3d023afd2cd6",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.670373",
+  "raw_text": "User: I don't know if I'm\nAgent: Thank you for sharing those. So, burgers from Jack in the Box and Carl's Jr. are similar.\n\nCould you tell me what's better or worse about the Jack in the Box burger compared to your McDonald's cheeseburger? And then the same for the Carl's Jr. burger?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview22",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview22.txt",
+    "total_chunks": 23,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 12,
+  "parent_record_id": "deed2ad4-16c9-4967-b168-fdfd906b9174"
+}

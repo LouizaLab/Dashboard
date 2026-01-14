@@ -1,0 +1,24 @@
+{
+  "record_id": "ee167751-a5a8-4fba-98ee-bfd72cfc7bd1",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.736640",
+  "raw_text": "User: so my favorite fast food item is the In-N-Out Double Double. I like it because it's simple and honest. Two fresh beef patties, real cheese, crisp lettuce, tomato and that special sauce everyone knows. It's almost tastes like a Thousand Island nothing feels processed or overdone um it tastes the same every single time I go and it feels like real food uh made with care. I think that consistency and freshness are what keep me coming back every single time.\nAgent: That's a great description of the In-N-Out Double Double. It sounds like the consistency and freshness are really key for you.\n\nNow, what are the top two or three things that make this Double Double \"perfect\" for you?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "43",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/43.txt",
+    "total_chunks": 21,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 12,
+  "parent_record_id": "62ea0a62-30c7-451c-a40e-12d65a3a1963"
+}

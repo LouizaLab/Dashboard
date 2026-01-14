@@ -1,0 +1,24 @@
+{
+  "record_id": "d59818eb-6b3a-4387-ad34-03b21093eede",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.734421",
+  "raw_text": "User: Home, I have it delivered to home and then if I do pick it up then I do the drive-through.\nAgent: Thank you for clarifying. So, typically delivered to your home via DoorDash, or picked up via drive-thru, often with friends, and time pressure isn't usually a factor.\n\nNow, how does price change your choice? For example, if your Chipotle burrito cost two dollars more, what...",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview6",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview6.txt",
+    "total_chunks": 31,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 26,
+  "parent_record_id": "a48d5c67-b799-4d11-942f-3b6236827fe4"
+}

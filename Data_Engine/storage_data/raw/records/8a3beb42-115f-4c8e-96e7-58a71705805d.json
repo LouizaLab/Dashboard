@@ -1,0 +1,24 @@
+{
+  "record_id": "8a3beb42-115f-4c8e-96e7-58a71705805d",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.730969",
+  "raw_text": "User: . It kind of feels like I'm biting into the 40 piece nuggets almost ideally or completely. So it really hits that nice spot to get something from McDonald's knowing I still accomplished my goal to get something from McDonald's.\nAgent: I see. It sounds like it still fulfills that McDonald's craving for you. Can you name two to three similar items you also like from any chain? And for each one, what's better or worse compared to your favorite forty-piece nuggets?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview7",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview7.txt",
+    "total_chunks": 11,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 8,
+  "parent_record_id": "3a954e63-b718-482c-b02d-9509cae55cd7"
+}

@@ -1,0 +1,23 @@
+{
+  "record_id": "edce968a-8bf1-4ec4-9d7b-a7e8608aed2f",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.869805",
+  "raw_text": "ike the Taco Bell grilled cheese burrito. Agent: Thank you for those examples. You mentioned the Wendy's Mushroom and Swiss burger is good, but the price is worse compared to the Big Mac. For the Taco Bell grilled cheese burrito, what's better or worse about it compared to your favorite Big Mac? User: I think it's just as good as the Big Mac. It's delicious, but I have to be in the right mood for a burrito. I'm always in the right mood for a Big Mac, but I only occasionally want a burrito. Agent: That's interesting how mood plays a role in your choice between them. What do you usually pair with your Big Mac, such as drinks, sides, or sauces? And what would you never pair it with, and why? User: I usually get a medium fry and a large Diet Coke and I would never pair it with like a regular Coke because regular soda is just too sweet tasting to me. I don't like it and I probably wouldn't pair it with a salad because if you're eating a Big Mac, you're not going to want a salad too. Agent",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview3.txt",
+    "total_chunks": 11
+  },
+  "client_id": null,
+  "chunk_index": 4,
+  "parent_record_id": "763b6b14-78e3-4d1d-9738-7fff2af6b166"
+}

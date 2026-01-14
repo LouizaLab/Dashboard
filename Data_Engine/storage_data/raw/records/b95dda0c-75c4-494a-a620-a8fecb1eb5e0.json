@@ -1,0 +1,23 @@
+{
+  "record_id": "b95dda0c-75c4-494a-a620-a8fecb1eb5e0",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.868133",
+  "raw_text": "Call Transcript: User: ... Agent: I'm here to collect information about your food preferences to complete the onboarding so you can get rewarded. To start, please say your name or Prolific ID. User: with five students, sorry, hold on a second. It's five CEA 73210B20970001ACE, all lowercase and then five and the letter F, lowercase. And that is it. Agent: Thank you for providing... User: Thank you. Agent: Thank you for providing your Prolific ID. Now, let's move on to your food preferences. What is your favorite fast-food item, including the chain and the exact item? User: I like cheeseburgers from McDonald's. Agent: Okay, a McDonald's cheeseburger. Why do you like it? Please include details about its flavor, texture, temperature, smell, and aftertaste. User: It's a simple burger and it has like those little chopped onions in it. And just like basic condiments. And isn't like super fancy. Like I don't like all the other stuff that they put on the burgers that you get at other fast foo",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview22.txt",
+    "total_chunks": 9
+  },
+  "client_id": null,
+  "chunk_index": 0,
+  "parent_record_id": null
+}

@@ -1,0 +1,24 @@
+{
+  "record_id": "f4bb6d74-38da-4af9-8477-ee36a81a60b2",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.791522",
+  "raw_text": "User: I probably wouldn't buy it anymore because it's already pretty expensive.\nAgent: Understood. And if there was a deal on the Chick-fil-A chicken sandwich, what would you do differently?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview28",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview28.txt",
+    "total_chunks": 43,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 12,
+  "parent_record_id": "1940e73c-7457-4f0e-96e6-ebd8700cb728"
+}

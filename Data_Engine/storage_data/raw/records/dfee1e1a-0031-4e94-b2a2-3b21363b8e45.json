@@ -1,0 +1,23 @@
+{
+  "record_id": "dfee1e1a-0031-4e94-b2a2-3b21363b8e45",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.866375",
+  "raw_text": "ifferently? User: Maybe get an extra item or a dessert. Agent: Over the past two weeks, what are your most common fast-food patterns? This includes when you eat it, what you usually order, and what typically triggers it. User: We haven't had fast food in the past two weeks. Agent: Okay, thank you for letting me know. Then, what does \"good value\" mean to you in fast food? User: I want to be able to pay under $10 for a meal for myself and not be hungry an hour after eating. Agent: That's a clear definition of good value. From factors like taste, portion size, speed, nutrition, consistency, and price, which two or three are your top factors, and how do you judge if something is \"worth it\" based on those? User: Price and taste. And if it's not cheap, I'm probably not going to get it anyways, because I can cook it at the house for around the same amount, then I'm probably just going to do that because I make a better burger anyways. And if it doesn't taste good, I'm not going to buy it. Age",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview14.txt",
+    "total_chunks": 9
+  },
+  "client_id": null,
+  "chunk_index": 4,
+  "parent_record_id": "08afa934-6295-42cc-95ab-8c19f8d505dd"
+}

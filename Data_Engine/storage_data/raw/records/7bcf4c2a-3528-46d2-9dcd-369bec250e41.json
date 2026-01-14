@@ -1,0 +1,24 @@
+{
+  "record_id": "7bcf4c2a-3528-46d2-9dcd-369bec250e41",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.778143",
+  "raw_text": "User: The simple condiments, the lack of embellishments like lettuce and tomato, and it's just easy on the appetite, I guess.\nAgent: I understand. And what are the top two or three things that would make that McDonald's cheeseburger \"bad\" for you? For example, if it were soggy, dry, cold, or too greasy?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "34",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/34.txt",
+    "total_chunks": 23,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 5,
+  "parent_record_id": "e45fb1d7-d025-48e7-9f73-0ae6be217425"
+}

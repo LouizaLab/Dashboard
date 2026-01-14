@@ -1,0 +1,24 @@
+{
+  "record_id": "fa6037dd-fa7a-4988-bb06-40be4d77ee72",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.714072",
+  "raw_text": "User: I like the brisket from Arby's. It's just the way they cook it is just good. I like it.\nAgent: That sounds delicious. Could you tell me a bit more about what you like about it? For example, what do you enjoy about its flavor, texture, temperature, smell, and aftertaste?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview1",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview1.txt",
+    "total_chunks": 28,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 2,
+  "parent_record_id": "24c315c5-82df-4a16-b34d-f6b42b080750"
+}

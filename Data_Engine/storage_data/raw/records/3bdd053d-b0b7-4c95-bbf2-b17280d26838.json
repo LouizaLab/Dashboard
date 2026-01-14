@@ -1,0 +1,39 @@
+{
+  "record_id": "3bdd053d-b0b7-4c95-bbf2-b17280d26838",
+  "bucket_id": 1,
+  "source_name": "burger_king_menu",
+  "source_type": "csv",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2025-12-27T02:25:07.236548",
+  "raw_text": null,
+  "structured_fields": {
+    "Item": "BK Cafe Iced Vanilla Coffee- 20 fl oz"
+  },
+  "numerical_fields": {
+    "Calories": 260.0,
+    "Fat Calories": 110.0,
+    "Fat (g)": 13.0,
+    "Saturated Fat (g)": 7.0,
+    "Trans Fat (g)": 0.0,
+    "Cholesterol (mg)": 40.0,
+    "Sodium (mg)": 50.0,
+    "Total Carb (g)": 34.0,
+    "Dietary Fiber (g)": 0.0,
+    "Sugars (g)": 34.0,
+    "Protein (g)": 2.0
+  },
+  "categorical_fields": {
+    "Category": "BK Cafe"
+  },
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "dataset_name": "burger_king_menu",
+    "row_index": 65,
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Phase_1_Taste_Embedding_Model/data/raw/burger-king-menu.csv"
+  },
+  "client_id": null,
+  "chunk_index": null,
+  "parent_record_id": null
+}

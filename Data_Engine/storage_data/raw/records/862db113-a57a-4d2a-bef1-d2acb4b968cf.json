@@ -1,0 +1,24 @@
+{
+  "record_id": "862db113-a57a-4d2a-bef1-d2acb4b968cf",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.677909",
+  "raw_text": "User: I usually just get, I use, I stick to what I, you know, my favorites mostly. I don't really go out and try a lot of different things. And I usually get something that is not very expensive. So I stick to things that I've always liked usually.\nAgent: Thank you for sharing that. What does \"good value\" mean to you in fast food? Could you pick your top two or three factors, such as taste, portion size, speed, nutrition, consistency, or price, and explain how you judge if something is \"worth it\"?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "38",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/38.txt",
+    "total_chunks": 19,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 16,
+  "parent_record_id": "04f316d3-be87-4e71-bf48-81915dfb54b0"
+}

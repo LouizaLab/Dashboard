@@ -1,0 +1,24 @@
+{
+  "record_id": "a3485e9b-700b-401a-a20b-4e3505426e4b",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.657213",
+  "raw_text": "User: I like the taste of the beef used in Wendy's singles. I've heard they do not freeze their meat. I like the lettuce and tomato. It's always fresh and the cheese is real cheese. It's not processed. I believe the assembly of the burger is always good and the attention to quality is always high.\nAgent: Thank you for sharing those details, Nicole. It sounds like the freshness and quality of the ingredients are very important to you. What are the top two or three things that make the Wendy's single \"perfect\" for you?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview20",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview20.txt",
+    "total_chunks": 29,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 3,
+  "parent_record_id": "1dae9cf3-0d08-4ac6-9faa-09346c1ea83e"
+}

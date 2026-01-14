@@ -1,0 +1,24 @@
+{
+  "record_id": "89c34f91-6dbb-444a-8654-049fa855a56a",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.725137",
+  "raw_text": "User: Uh, I like Italian subs from Papa John's, uh Jimmy John's. I like garlic wings from Wingstop.\nAgent: Okay, you mentioned Italian subs from Jimmy John's. Compared to your favorite Papa John's pepperoni pizza, what's better or worse about the Italian sub?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview5",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview5.txt",
+    "total_chunks": 37,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 8,
+  "parent_record_id": "70f85520-c679-4467-82c3-f02b7ab569c2"
+}

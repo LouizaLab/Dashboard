@@ -1,0 +1,23 @@
+{
+  "record_id": "7ffed685-2426-47f9-b58f-08cabda6ca6c",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.867378",
+  "raw_text": "et... Agent: Now, let's move on to your food preferences. What is your favorite fast-food item, including the chain and the exact item? And could you tell me why you like it? User: My favorite fast food item would have to be McDonald's fries, and I like it because their fries are, like, crisp and nice, you know what I mean? Agent: That's a great choice, Wellio. You mentioned they are crisp and nice. Could you tell me a bit more about the flavor, temperature, smell, and aftertaste of those McDonald's fries? User: They're just crunchy. You know they're the best fries I've ever had, besides, like, Wingstop or something. Agent: I understand they're crunchy and among the best you've had. Could you describe the flavor, temperature, smell, and aftertaste of those McDonald's fries? Also, what are the top two or three things that make them \"perfect\" for you? User: Aftertaste of those McDonald's fries... also what are the top two or three things that make them perfect for you? I would say the fa",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview19.txt",
+    "total_chunks": 14
+  },
+  "client_id": null,
+  "chunk_index": 1,
+  "parent_record_id": "1f988804-b2a4-40bf-a212-66fa038b6fde"
+}

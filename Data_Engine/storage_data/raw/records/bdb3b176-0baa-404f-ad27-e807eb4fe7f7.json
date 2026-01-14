@@ -1,0 +1,23 @@
+{
+  "record_id": "bdb3b176-0baa-404f-ad27-e807eb4fe7f7",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.867452",
+  "raw_text": ": Five to seven minutes left in the interview. To continue... Agent: Thank you for asking. We have about five to seven minutes left... User: Thank you for asking. We have about five to seven minutes left. I want a, like, real estimate. Agent: I understand you'd like a precise... User: I understand you'd like a precise estimate. Agent: Based on our current progress and the... User: Based on our current progress and the remaining... Agent: Based on our current progress and the... User: Based on our current progress and the remaining...",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview19.txt",
+    "total_chunks": 14
+  },
+  "client_id": null,
+  "chunk_index": 13,
+  "parent_record_id": "1f988804-b2a4-40bf-a212-66fa038b6fde"
+}

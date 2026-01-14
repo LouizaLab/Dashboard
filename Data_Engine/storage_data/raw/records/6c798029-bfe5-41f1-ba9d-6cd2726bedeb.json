@@ -1,0 +1,24 @@
+{
+  "record_id": "6c798029-bfe5-41f1-ba9d-6cd2726bedeb",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.703845",
+  "raw_text": "User: Barbecue sauce, I don't really want it to be sweet.\nAgent: Understood, so no barbecue sauce because you prefer not to have it sweet.\n\nMoving on, in what situations do you choose the Chick-fil-A Spicy Deluxe most often? Please include details like time pressure, location such as home, work, or commute, the ordering channel like drive-thru or delivery, and who you are with.",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "39",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/39.txt",
+    "total_chunks": 33,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 11,
+  "parent_record_id": "95c43eb4-c8d6-4cf1-a795-e16d4e88afc0"
+}

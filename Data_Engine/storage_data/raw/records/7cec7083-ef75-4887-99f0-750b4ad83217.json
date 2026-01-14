@@ -1,0 +1,24 @@
+{
+  "record_id": "7cec7083-ef75-4887-99f0-750b4ad83217",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.816610",
+  "raw_text": "User: Yeah because New Year's coming up and I'd like to consider that\nAgent: I understand. Since you're looking ahead to the New Year, what specific rule are you following to eat healthier? For example, are you focusing on less fried food, fewer calories, more protein, or no soda?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview17",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview17.txt",
+    "total_chunks": 33,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 28,
+  "parent_record_id": "88d4a69e-5a62-47c8-8b20-22b88f242475"
+}

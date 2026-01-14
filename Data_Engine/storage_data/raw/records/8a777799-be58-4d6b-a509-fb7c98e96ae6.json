@@ -1,0 +1,24 @@
+{
+  "record_id": "8a777799-be58-4d6b-a509-fb7c98e96ae6",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.735728",
+  "raw_text": "User: I want to make sure that you got the prolific ID correct. Can you please repeat the prolific ID?\nAgent: Yes, I have it noted as 64 lowercase d 6 3 lowercase b 117 lowercase d 0 lowercase f lowercase c lowercase f lowercase c 1 lowercase c lowercase d 8 lowercase d 69 34.\n\nNow, to continue with our questions, what is your favorite fast-food item, including the chain and the exact item? And what is it about this item that you like?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "43",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/43.txt",
+    "total_chunks": 21,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 4,
+  "parent_record_id": "62ea0a62-30c7-451c-a40e-12d65a3a1963"
+}

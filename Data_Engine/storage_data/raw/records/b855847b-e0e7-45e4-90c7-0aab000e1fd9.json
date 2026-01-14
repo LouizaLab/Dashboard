@@ -1,0 +1,24 @@
+{
+  "record_id": "b855847b-e0e7-45e4-90c7-0aab000e1fd9",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.843111",
+  "raw_text": "User: I would have had to not have enough time, probably.\nAgent: Did you switch from your usual chain or usual item today?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview10",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview10.txt",
+    "total_chunks": 43,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 25,
+  "parent_record_id": "7855d946-010e-4b12-b478-072329d70cb1"
+}

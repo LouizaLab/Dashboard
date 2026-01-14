@@ -1,0 +1,24 @@
+{
+  "record_id": "6390ea54-bd98-4272-9531-4f62e46bef5d",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.712011",
+  "raw_text": "User: Um usually I will go when I'm by myself and um during like lunchtime between noon and like four. When I don't have my kids and I'm in town running errands and I get hungry, that's usually like I'll go through McDonald's and get some lunch.\nAgent: That's a very clear picture of when you typically choose a Big Mac. So, when you're running errands by yourself during lunchtime, do you usually feel time pressure, and what ordering channel do you use, like drive-thru or delivery?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview3",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview3.txt",
+    "total_chunks": 22,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 12,
+  "parent_record_id": "fc77d1e2-9777-4dca-a844-42568cda327f"
+}

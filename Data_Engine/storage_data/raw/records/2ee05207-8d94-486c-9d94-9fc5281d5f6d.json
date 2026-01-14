@@ -1,0 +1,24 @@
+{
+  "record_id": "2ee05207-8d94-486c-9d94-9fc5281d5f6d",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.702875",
+  "raw_text": "User: I would say the Chick-fil-A Spicy Deluxe. I just feel like it's a pretty savory meal. It's delicious. It goes very well with the sides\nAgent: That sounds delicious. Could you tell me a bit more about what makes the Chick-fil-A Spicy Deluxe so good to you? I'm interested in details like its flavor, texture, temperature, smell, and aftertaste.",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "39",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/39.txt",
+    "total_chunks": 33,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 2,
+  "parent_record_id": "95c43eb4-c8d6-4cf1-a795-e16d4e88afc0"
+}

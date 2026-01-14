@@ -1,0 +1,24 @@
+{
+  "record_id": "f73107a7-50ed-44a5-94da-a922072d55a2",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.668547",
+  "raw_text": "User: Not too much now I wouldn't say that.\nAgent: ...",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview23",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview23.txt",
+    "total_chunks": 22,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 21,
+  "parent_record_id": "9226c320-dfb2-47d8-87a1-ed9e447a8705"
+}

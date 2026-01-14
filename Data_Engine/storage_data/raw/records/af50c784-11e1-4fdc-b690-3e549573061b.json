@@ -1,0 +1,24 @@
+{
+  "record_id": "af50c784-11e1-4fdc-b690-3e549573061b",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.837671",
+  "raw_text": "User: Just basic cravings.\nAgent: Okay, so basic cravings were the trigger today.\n\nWas this order planned or spontaneous?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "31",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/31.txt",
+    "total_chunks": 36,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 18,
+  "parent_record_id": "b8eed46d-a364-478a-a2e3-13621c355a9d"
+}

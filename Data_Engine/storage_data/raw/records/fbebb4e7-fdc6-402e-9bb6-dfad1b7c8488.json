@@ -1,0 +1,24 @@
+{
+  "record_id": "fbebb4e7-fdc6-402e-9bb6-dfad1b7c8488",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.732355",
+  "raw_text": "User: Absolutely if it were soggy I would not want to eat it. I feel like once a tortilla shall get soggy it's absolutely disgusting so that would make me not want to eat it.\nAgent: Sogginess is definitely a common issue. Are there one or two other things that would make your Chipotle burrito bad, like if it were...",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview6",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview6.txt",
+    "total_chunks": 31,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 7,
+  "parent_record_id": "a48d5c67-b799-4d11-942f-3b6236827fe4"
+}

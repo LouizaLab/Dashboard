@@ -1,0 +1,23 @@
+{
+  "record_id": "75f63330-b2bf-4f52-b0f6-ba2dee9e4ab7",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.868038",
+  "raw_text": "t... Agent: Please take your time. User: the Doritos Locos Tacos. Agent: Okay, the Doritos Locos... User: I would get the Doritos Locos Tacos at Taco Bell. Agent: Thank you. Why is the Doritos Locos Tacos the closest replacement for you? User: I'm just going to go back to the pen time. It's just another thing that I really like to eat from Taco Bell. Agent: Understood. Can you name two or three similar items you also like from any chain? For each one, please tell me what's better or worse compared to your favorite Chicken Chalupa Supreme. User: I like the cheeseburger from McDonald's. Agent: Okay, you like the cheeseburger from McDonald's. What's better or worse about it compared to your favorite Chicken Chalupa Supreme? User: Maybe not as fresh tasting and it's just a lot more simple, I guess, so it doesn't have a lot of flavor as opposed to the Chalupa which has more flavor especially if I put hot sauce in it. Agent: Thank you. Do you have another similar item you like? User: Not rea",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview21.txt",
+    "total_chunks": 10
+  },
+  "client_id": null,
+  "chunk_index": 3,
+  "parent_record_id": "08071a2d-f19f-4ddf-8b32-c6b6250cf6ad"
+}

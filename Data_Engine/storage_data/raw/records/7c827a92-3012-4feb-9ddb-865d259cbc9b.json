@@ -1,0 +1,24 @@
+{
+  "record_id": "7c827a92-3012-4feb-9ddb-865d259cbc9b",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.734008",
+  "raw_text": "User: Usually just a Sprite.\nAgent: Just a Sprite, got it. And what would you never pair with your Chipotle burrito, and why?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview6",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview6.txt",
+    "total_chunks": 31,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 22,
+  "parent_record_id": "a48d5c67-b799-4d11-942f-3b6236827fe4"
+}

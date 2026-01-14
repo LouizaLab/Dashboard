@@ -1,0 +1,24 @@
+{
+  "record_id": "e16c69d9-1585-4291-b060-60f3a085be2c",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.723170",
+  "raw_text": "User: If a portion size is large, I feel like I'm getting a better deal so I could have like a second question for another time and consistency if it's made right the same every time it's more worth my time\nAgent: That's very clear, thank you. Getting a larger portion for a potential second meal and knowing it will be consistently good every time definitely adds to the value.\n\nNow, let's move on to some other aspects. Compared to your last fast-food order, what changed today, if anything?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview4",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview4.txt",
+    "total_chunks": 33,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 27,
+  "parent_record_id": "2bf06f63-1970-4fb8-9751-bc4c59483394"
+}

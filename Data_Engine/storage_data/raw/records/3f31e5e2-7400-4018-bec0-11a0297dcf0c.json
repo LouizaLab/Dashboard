@@ -1,0 +1,24 @@
+{
+  "record_id": "3f31e5e2-7400-4018-bec0-11a0297dcf0c",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.786114",
+  "raw_text": "User: or just a regular bun, not sesame seed.\nAgent: Understood. If a Big Mac was unavailable, what would you order instead, including the chain and the specific item?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview14",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview14.txt",
+    "total_chunks": 32,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 6,
+  "parent_record_id": "2c7f125d-33ba-4a41-8126-d80942115ee4"
+}

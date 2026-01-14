@@ -1,0 +1,24 @@
+{
+  "record_id": "b975c831-8412-46e1-b9e5-8a053f587fdc",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.824593",
+  "raw_text": "User: Typically dessert. If we can't afford it at the time, we typically don't get a dessert or a coffee.\nAgent: Okay, that makes sense. What triggered this order today? Please be specific, for example, was it a craving, a deal, an ad, someone suggested it, you were nearby, time pressure, or did you want something lighter or a treat?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "32",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/32.txt",
+    "total_chunks": 32,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 22,
+  "parent_record_id": "67c11aa1-d698-4af6-bfc4-5f5b3dd28134"
+}

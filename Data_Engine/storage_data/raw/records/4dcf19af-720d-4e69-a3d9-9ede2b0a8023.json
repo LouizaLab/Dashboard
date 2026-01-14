@@ -1,0 +1,24 @@
+{
+  "record_id": "4dcf19af-720d-4e69-a3d9-9ede2b0a8023",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.831692",
+  "raw_text": "User: Okay, good, because I need a sec. Um, well, I would probably go to Taco Bell and grab some crunchy tacos and a crunch wrap.\nAgent: Thank you, Carl. So, Taco Bell for crunchy tacos and a crunch wrap. Why do you consider that the closest replacement for your Panda Express orange chicken meal?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview12",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview12.txt",
+    "total_chunks": 9,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 5,
+  "parent_record_id": "4f234616-8c13-43be-8b81-07fd08049cc1"
+}

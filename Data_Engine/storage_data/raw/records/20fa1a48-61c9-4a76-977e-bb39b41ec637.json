@@ -1,0 +1,24 @@
+{
+  "record_id": "20fa1a48-61c9-4a76-977e-bb39b41ec637",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.773850",
+  "raw_text": "User: To be honest if I'm craving something or if my go-to order has increased in price I'd probably still get it. I like, but if I ever go through the drive-thru and the food is nasty I probably won't go back through that drive-thru again.\nAgent: Thank you for sharing that perspective. It sounds like taste and satisfying a craving are very important to you, and consistency in quality prevents you from returning.\n\nFrom the list of factors: taste, portion size, speed, nutrition, consistency, and price, which two or three are your absolute top factors for what \"good value\" means to you in fast food, and how do you judge if something is \"worth it\" based on those?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "44",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/44.txt",
+    "total_chunks": 33,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 30,
+  "parent_record_id": "694c9af7-c584-49a2-a404-743a61005dd2"
+}

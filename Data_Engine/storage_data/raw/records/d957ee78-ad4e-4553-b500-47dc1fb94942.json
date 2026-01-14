@@ -1,0 +1,39 @@
+{
+  "record_id": "d957ee78-ad4e-4553-b500-47dc1fb94942",
+  "bucket_id": 1,
+  "source_name": "wendys_menu",
+  "source_type": "csv",
+  "brand": "Fresh Baked Biscuit with Natural Sausage",
+  "timestamp": null,
+  "ingestion_time": "2025-12-27T02:16:07.078587",
+  "raw_text": "Fresh Baked Biscuit with Natural Sausage Breakfast",
+  "structured_fields": {
+    "Item": "Fresh Baked Biscuit with Natural Sausage"
+  },
+  "numerical_fields": {
+    "Calories": 590.0,
+    "Fat (g)": 41.0,
+    "Sat Fat (g)": 19.0,
+    "Trans Fat (g)": 0.0,
+    "Cholesterol (mg)": 270.0,
+    "Sodium (mg)": 1270.0,
+    "Total Carb (g)": 36.0,
+    "Dietary Fiber (g)": 1.0,
+    "Sugars (g)": 6.0,
+    "Protein (g)": 20.0,
+    "Weight Watchers": 595.0
+  },
+  "categorical_fields": {
+    "Category": "Breakfast"
+  },
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "dataset_name": "wendys_menu",
+    "row_index": 31,
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Phase_1_Taste_Embedding_Model/data/raw/wendys-menu.csv"
+  },
+  "client_id": null,
+  "chunk_index": null,
+  "parent_record_id": null
+}

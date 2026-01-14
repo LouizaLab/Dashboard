@@ -1,0 +1,24 @@
+{
+  "record_id": "7d36ccb8-6367-4b5c-a351-f7e7f697c13f",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.706803",
+  "raw_text": "User: Um, I like the sauce, the tangy sauce on it. I like the salty cheese, the fresh lettuce, um, the sesame seed bun, and it smells like McDonald's.\nAgent: That's a great description, Sarah. It sounds like you really enjoy the combination of flavors and textures.\n\nWhat are the top two or three things that make the Big Mac \"perfect\" for you? For example,...",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview2",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview2.txt",
+    "total_chunks": 31,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 3,
+  "parent_record_id": "89414df8-139e-4b72-9450-a29a8a41b846"
+}

@@ -1,0 +1,24 @@
+{
+  "record_id": "7d77730a-7731-4908-a575-bc49eda1464a",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.831825",
+  "raw_text": "User: Um, it's not necessarily a closest like replacement as far as trying to achieve the same goal or the same flavor and texture. But since I'm really not that much for fast food, I'm kind of picky as far as what I get and where. And honestly, I usually get the same or either the same things or I've got a list of the same or of things that are acceptable for me. And I like tacos just period. I really like Mexican food, but that's kind of a sit down meal. But since like Taco Bell isn't extremely far off, I mean, it's it's not the same as authentic, but it's still very different from what you're used to in the US and other countries. So yeah, definitely not bad. So on the so on their menu, I can deal with the tacos just fine. And usually they're pretty cheap and they have and as long as they're fresh, they have a nice crunch to them. The crunch wrap, it just it has a nice texture with the tostada shell on the inside, along with the flour tortilla that's been not burnt, but toasted on each side. And then since they add in that that cheese sauce and then it's got a little bit of spice to it. So that's kind of nice.\nAgent: That's a very clear explanation, Carl. It sounds like you appreciate the variety and distinct flavors Taco Bell offers. Can you name two to three similar items you also like, from any chain, and for each, tell me what's better or worse compared to your favorite Panda Express orange chicken?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview12",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview12.txt",
+    "total_chunks": 9,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 6,
+  "parent_record_id": "4f234616-8c13-43be-8b81-07fd08049cc1"
+}

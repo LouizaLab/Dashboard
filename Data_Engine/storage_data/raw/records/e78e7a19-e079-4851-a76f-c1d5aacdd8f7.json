@@ -1,0 +1,23 @@
+{
+  "record_id": "e78e7a19-e079-4851-a76f-c1d5aacdd8f7",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.867001",
+  "raw_text": "usually pair with your Chick-fil-A Spicy Deluxe, such as drinks, sides, or sauces? And what would you never pair it with, and why? User: Sprite and Chick-fil-A sauce. Agent: Okay, Sprite and Chick-fil-A sauce. And what would you never pair the Spicy Deluxe with, and why? User: Barbecue sauce, I don't really want it to be sweet. Agent: Understood, so no barbecue sauce because you prefer not to have it sweet. Moving on, in what situations do you choose the Chick-fil-A Spicy Deluxe most often? Please include details like time pressure, location such as home, work, or commute, the ordering channel like drive-thru or delivery, and who you are with. User: Usually for dinner with my kids on the way home. Agent: That's helpful to know. How does price change your choice? For example, if the Chick-fil-A Spicy Deluxe cost two dollars more, what would you do? User: I would still buy it. Agent: Okay, so a two-dollar increase wouldn't deter you. What if there was a deal available? How would that c",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview17.txt",
+    "total_chunks": 11
+  },
+  "client_id": null,
+  "chunk_index": 3,
+  "parent_record_id": "f5c69c84-f91a-4dd6-8cf5-c2c95cae4a75"
+}

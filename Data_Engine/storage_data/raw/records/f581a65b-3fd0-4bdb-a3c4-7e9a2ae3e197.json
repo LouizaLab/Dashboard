@@ -1,0 +1,24 @@
+{
+  "record_id": "f581a65b-3fd0-4bdb-a3c4-7e9a2ae3e197",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.774584",
+  "raw_text": "User: Prolific ID is 64 lowercase d, 63 lowercase b, 117 lowercase d, 0 lowercase f, lowercase c, lowercase f, lowercase c, 1 lowercase c, lowercase d 8. Lower case D 69 34\nAgent: Thank you for providing that. Now, let's talk about your food preferences. What is your favorite fast-food item, including the chain and the exact item? And could you tell me why you like it?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "46",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/46.txt",
+    "total_chunks": 19,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 1,
+  "parent_record_id": "42485974-cee0-43b1-bfcd-159fb131da89"
+}

@@ -1,0 +1,24 @@
+{
+  "record_id": "6f5c7731-5097-4fdb-8dc2-a1f3b8d4ac2c",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.739197",
+  "raw_text": "User: I always usually have something like a Coke or Pepsi with it. That's usually my taste when it comes to it. I wouldn't pair with any juice drinks. I like to have nice, nice soda with it\nAgent: Understood. In what situations do you choose the McDonald's Quarter Pounder with cheese most often? Please include details like time pressure, location such as home, work, or commute, the ordering channel like drive-thru or delivery, and who you're with.",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "42",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/42.txt",
+    "total_chunks": 34,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 10,
+  "parent_record_id": "bce10b3b-9632-4b3a-a34a-f84fa18e9006"
+}

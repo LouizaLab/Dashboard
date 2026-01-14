@@ -1,0 +1,23 @@
+{
+  "record_id": "468b16bc-6427-4629-98a5-058622191443",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.867640",
+  "raw_text": "t. I like the salty cheese, the fresh lettuce, um, the sesame seed bun, and it smells like McDonald's. Agent: That's a great description, Sarah. It sounds like you really enjoy the combination of flavors and textures. What are the top two or three things that make the Big Mac \"perfect\" for you? For example,... User: Probably the sauce and then the sesame seed bun. Agent: Understood. The sauce and the sesame seed bun are key to its perfection for you. Now, on the flip side, what are the top two or three things that would make a Big Mac \"bad\" for you? For instance, if it were soggy, dry, or cold? User: Probably if it were too saucy and if the bun was smashed. Agent: I see, so too much sauce or a smashed bun would definitely detract from the experience. If a Big Mac were unavailable, what would you order instead, including the chain and the specific item? And why would that be the closest replacement for you? User: Probably Burger King's Whopper because that's my second favorite burger",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview2.txt",
+    "total_chunks": 12
+  },
+  "client_id": null,
+  "chunk_index": 1,
+  "parent_record_id": "6cb1c839-9316-444a-b7a9-1e6f04a47cad"
+}

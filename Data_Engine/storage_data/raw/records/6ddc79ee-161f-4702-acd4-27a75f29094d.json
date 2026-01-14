@@ -1,0 +1,24 @@
+{
+  "record_id": "6ddc79ee-161f-4702-acd4-27a75f29094d",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.745442",
+  "raw_text": "User: I use the app. I'm usually alone. I eat Wendy's Sunday through Sunday. I usually go during the evening. I eat before bed. But I've had ordered for breakfast before. Breakfast is also good\nAgent: Thank you for sharing your routine. How does price change your choice? For example, if the Wendy's Classic Triple cost two dollars more, what would you do? And if there was a deal, what would you do differently?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "40",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/40.txt",
+    "total_chunks": 24,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 11,
+  "parent_record_id": "692d79ab-a3ba-476a-990b-bf66f61e7646"
+}

@@ -1,0 +1,23 @@
+{
+  "record_id": "8e5e87e8-ea55-49e2-af99-f93133abfdd2",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.865399",
+  "raw_text": "ce to it, I don't, I wouldn't like that. Agent: ... User: Is that, is that answering? Agent: Yes, that answers the question perfectly. Thank you. Now, moving on to the next section. In what situations do you choose this Arby's brisket sandwich most often? Please include details like time pressure, location, ordering channel, and who you're with. User: It's not too far from my house. So I, and I usually have it around dinner time, evening, if I'm going to, if I'm out or even have it ordered in. Mostly I have it for dinner. Agent: Thank you. How does price change your choice? For example, if it cost two dollars more, what would you do? User: I would still get it. It's worth $2 more. Agent: And if there was a deal, what would you do differently? User: Nothing, because the way they do it, it's perfect for me. So I wouldn't do anything differently. Agent: Understood. So, a deal wouldn't necessarily change your order for that specific item. ... User: No, it wouldn't. Agent: Thank you for cl",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview1.txt",
+    "total_chunks": 8
+  },
+  "client_id": null,
+  "chunk_index": 6,
+  "parent_record_id": "ce681e47-af5e-424a-9db6-a230fd8e80cd"
+}

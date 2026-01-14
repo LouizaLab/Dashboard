@@ -1,0 +1,24 @@
+{
+  "record_id": "cf1a83db-8e52-4ef3-bf01-14ee1b4c71af",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.677202",
+  "raw_text": "User: I can't really think of anything that's similar. Maybe just a typical regular type of pizza would be similar, like a cheese pizza. And maybe if you had a little bit of sausage on it or some type of meat, that could be a good second.\nAgent: Okay, so a regular cheese pizza, perhaps with sausage. What aspects of a regular pizza are better or worse compared to your favorite Mexican Pizza from Taco Bell?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "38",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/38.txt",
+    "total_chunks": 19,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 10,
+  "parent_record_id": "04f316d3-be87-4e71-bf48-81915dfb54b0"
+}

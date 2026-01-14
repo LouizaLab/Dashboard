@@ -1,0 +1,24 @@
+{
+  "record_id": "d1f000ac-f06d-4646-870c-cc924e5f91c0",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.750691",
+  "raw_text": "User: Well I just really like fried chicken I think it's tender it's juicy it's more just feels more fulfilling than a normal hamburger, I guess. I also like spicy fried chicken in particular.\nAgent: That's great to know you enjoy the tenderness, juiciness, and fulfilling nature of fried chicken, especially when it's spicy. Now, thinking about your favorite fried chicken from Church's, what are the top two or three things that make it absolutely perfect for you? And conversely, what are the top two or three things that would make it bad?...",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview9",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview9.txt",
+    "total_chunks": 15,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 3,
+  "parent_record_id": "1bc8a08c-2dc5-435d-be32-44c66ef19022"
+}

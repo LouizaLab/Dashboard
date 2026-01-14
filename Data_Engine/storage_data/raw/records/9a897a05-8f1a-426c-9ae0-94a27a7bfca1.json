@@ -1,0 +1,24 @@
+{
+  "record_id": "9a897a05-8f1a-426c-9ae0-94a27a7bfca1",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.755353",
+  "raw_text": "User: If it is a Big Mac, it's worth it. I compare all the items to a Big Mac. That's why I get the Big Mac because it's the best.\nAgent: I understand that the Big Mac is your benchmark for worth and value.\n\nNow, let's move on to some other aspects of your fast-food choices. Compared to your last fast-food order, what changed today, if anything?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "41",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/41.txt",
+    "total_chunks": 39,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 20,
+  "parent_record_id": "3a86faee-b265-401f-89c3-2956bf68e535"
+}

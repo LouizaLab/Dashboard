@@ -1,0 +1,23 @@
+{
+  "record_id": "3a2ea301-3a02-4597-a2d8-5cab68c9d2f9",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.868045",
+  "raw_text": "s a good way to get a full meal. And what would you never pair your Chicken... User: I want to get Dr. Pepper if they have it. Agent: Okay, Dr. Pepper. And what would you... User: I would never pair it with the... Agent: What would you never pair your Chicken Chalupa Supreme with, and why? User: Donatos? Donatos because it would be too much food. Agent: Thank you. So, you would never pair it with Donatos because it would be too much food. Now, moving on to the next section. In what situations do you choose the Chicken Chalupa Supreme most often? Please include details like time pressure, location, ordering channel, and who you're with. User: I usually order it, sometimes I order it from home, sometimes I order it when I'm on the go. Usually for like lunch or dinner and so it's usually a full meal that I'm getting from there. And I half the time order by myself half the time ordered with my partner. Agent: Thank you. How does price change your choice? For example, if it cost two dollar",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview21.txt",
+    "total_chunks": 10
+  },
+  "client_id": null,
+  "chunk_index": 5,
+  "parent_record_id": "08071a2d-f19f-4ddf-8b32-c6b6250cf6ad"
+}

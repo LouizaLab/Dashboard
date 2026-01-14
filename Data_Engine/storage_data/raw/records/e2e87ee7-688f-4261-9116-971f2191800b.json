@@ -1,0 +1,23 @@
+{
+  "record_id": "e2e87ee7-688f-4261-9116-971f2191800b",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.867939",
+  "raw_text": "single? This could include drinks, sides, or sauces. And what would you never pair it with, and why? User: Wendy's fries are great. They taste really fresh and I usually pair it with an iced tea. Agent: That sounds like a classic pairing. Now, what would you never pair your Wendy's single with, and why? User: I don't know of anything that I would not pair it with. Agent: Okay, that's perfectly fine. Moving on, in what situations do you choose your favorite Wendy's single most often? Please include details like time pressure, location (home, work, commute), ordering channel (drive-thru, delivery), and who you're with. User: I usually do drive-through for convenience when I have time restraints and I'm usually alone. Agent: Thank you, Nicole. So, it's often a drive-thru for convenience when you have time constraints and are usually alone. How does price change your choice? For example, if your Wendy's single cost two dollars more, what would you do? User: I would pay the two dollars m",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview20.txt",
+    "total_chunks": 11
+  },
+  "client_id": null,
+  "chunk_index": 5,
+  "parent_record_id": "2b6b0470-bd75-4f9b-98bd-8b5aed0e9f50"
+}

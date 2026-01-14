@@ -1,0 +1,23 @@
+{
+  "record_id": "7261eaf0-55f1-4d21-8181-59fb7b1b1d43",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.867426",
+  "raw_text": "ser: So focusing on the fries themselves Agent: Yes, focusing on the fries themselves,... User: ... Focusing on the fries themselves... Agent: Yes, focusing on the fries themselves,... User: Focusing on the fries themselves... Fuckin' hell, man, you keep cutting up! Agent: I sincerely apologize for the persistent audio... User: ...apologize for persistent audio issues. Agent: I sincerely apologize again for the... User: Apologize again for the audio issue. I know you apologized like ten times already. Agent: I understand your frustration, and I truly apologize. Let's try to move forward... User: Let's try to move forward. Agent: Thank you for your patience. Let's try this again. You... User: Let's try this again. You mentioned Agent: Thank you. You mentioned the fries are crisp... User: ... You mentioned the fries are crisp and... Agent: You mentioned the fries are crisp and a bit salty. What are the... User: You mentioned the fries are crisp and a bit salty. What are the top... What",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview19.txt",
+    "total_chunks": 14
+  },
+  "client_id": null,
+  "chunk_index": 6,
+  "parent_record_id": "1f988804-b2a4-40bf-a212-66fa038b6fde"
+}

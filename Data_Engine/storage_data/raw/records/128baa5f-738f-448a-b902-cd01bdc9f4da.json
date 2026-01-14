@@ -1,0 +1,23 @@
+{
+  "record_id": "128baa5f-738f-448a-b902-cd01bdc9f4da",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.870295",
+  "raw_text": "d. Agent: Okay, so it's typically a family meal delivered. How does price change your choice? For example, if it cost two dollars more, what would you do? User: I would probably pay it because we like the pizza Agent: And if there was a deal, what would you do differently? User: . I would probably buy an extra pizza depending on what the deal was. Agent: That's good to know. Over the past two weeks, what have been your most common fast-food patterns? This includes when you eat it, what you usually order, and what typically triggers those choices. User: Usually it's just whenever I am Agent: Please continue. User: working late. Agent: Okay, so working late often triggers your fast-food choices. What does \"good value\" mean to you in fast food? User: Just that I'm able to get a lot of food or what I pay that I can maybe eat two meals of it. Agent: Thank you. From the factors of taste, portion size, speed, nutrition, consistency, and price, which are your top two or three for judging \"wort",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview5.txt",
+    "total_chunks": 10
+  },
+  "client_id": null,
+  "chunk_index": 4,
+  "parent_record_id": "9d0a0a1b-b297-4a62-8430-2af72da9793c"
+}

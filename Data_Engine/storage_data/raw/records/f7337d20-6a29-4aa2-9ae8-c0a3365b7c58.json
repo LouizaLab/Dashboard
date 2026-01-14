@@ -1,0 +1,42 @@
+{
+  "record_id": "f7337d20-6a29-4aa2-9ae8-c0a3365b7c58",
+  "bucket_id": 1,
+  "source_name": "mcd_menu_alt",
+  "source_type": "csv",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2025-12-27T02:25:07.223384",
+  "raw_text": null,
+  "structured_fields": {
+    "name": "Our World Famous Fries\u00ae",
+    "serving_size": " 154g",
+    "ingredients": "Potato and salt",
+    "tag": "The legend among legends.",
+    "description": "The crisp, craveable, fan favourite: our World Famous Fries\u00ae. These epic fries are crispy and golden on the outside and fluffy on the inside."
+  },
+  "numerical_fields": {
+    "energy": 449.17,
+    "protein": 6.76,
+    "total_fat": 20.77,
+    "sat_fat": 9.95,
+    "trans_fat": 0.15,
+    "chol": 1.54,
+    "carbs": 54.16,
+    "total_sugar": 0.77,
+    "added_sugar": 0.0,
+    "sodium": 306.29
+  },
+  "categorical_fields": {
+    "allergy": "No Allergens"
+  },
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "dataset_name": "mcd_menu_alt",
+    "row_index": 28,
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Phase_1_Taste_Embedding_Model/data/raw/mcd.csv"
+  },
+  "client_id": null,
+  "chunk_index": null,
+  "parent_record_id": null
+}

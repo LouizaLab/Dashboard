@@ -1,0 +1,24 @@
+{
+  "record_id": "431dc5e4-759c-47e9-afb6-648ec98c607d",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.822012",
+  "raw_text": "User: . I'm probably a McDonald's Big Mac and I just like the Big Mac sauce and it's the perfect amount of vegetables to meat and cheese ratio.\nAgent: That's great to hear. What are the top two or three things that make the Big Mac \"perfect\" for you?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "32",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/32.txt",
+    "total_chunks": 32,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 3,
+  "parent_record_id": "67c11aa1-d698-4af6-bfc4-5f5b3dd28134"
+}

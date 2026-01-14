@@ -1,0 +1,24 @@
+{
+  "record_id": "267886c5-df5d-4ba0-acea-5237a71402e5",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.782278",
+  "raw_text": "User: Good value is anything from McDonald's because it tastes delicious and is relatively affordable so anything from McDonald's is good value.\nAgent: I understand that for you, anything from McDonald's represents good value because of its taste and affordability. From the options of taste, portion size, speed, nutrition, consistency, and price, could you pick your top two or three factors that define \"good value\" for you, and explain how you judge if something is \"worth it\" based on those?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview15",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview15.txt",
+    "total_chunks": 39,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 17,
+  "parent_record_id": "d8dbb6de-ad03-467b-8826-23382ceb27d5"
+}

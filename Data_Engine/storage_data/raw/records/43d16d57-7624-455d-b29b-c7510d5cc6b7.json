@@ -1,0 +1,24 @@
+{
+  "record_id": "43d16d57-7624-455d-b29b-c7510d5cc6b7",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.756089",
+  "raw_text": "User: Couldn't get up Big Mac at the morning time so I got a McGriddle.\nAgent: I understand you couldn't get a Big Mac in the morning, so you chose the McGriddle. Was that decision planned or spontaneous? And what would have had to change for you...",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "41",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/41.txt",
+    "total_chunks": 39,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 25,
+  "parent_record_id": "3a86faee-b265-401f-89c3-2956bf68e535"
+}

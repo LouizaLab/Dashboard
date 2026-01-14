@@ -1,0 +1,48 @@
+Call Transcript:
+
+User: Hello.
+Agent: I'm here to collect information about your food preferences to complete the onboarding so you can get rewarded. To start, please tell me your name or Prolific ID.
+User: Prolific ID is 64 lowercase d, 63 lowercase b, 117 lowercase d, 0 lowercase f, lowercase c, lowercase f, lowercase c, 1 lowercase c, lowercase d 8. Lower case D 69 34
+Agent: Thank you for providing that. Now, let's talk about your food preferences. What is your favorite fast-food item, including the chain and the exact item? And could you tell me why you like it?
+User: I already went through this already. For some reason, you got disconnected and they asked me what I thought about the quality of this call. I left off with, I believe it was asking me to compare the double-double what I would pair it with and what I would not pair it with.
+Agent: Got it, thanks for letting me know. Let's pick up from there. What do you usually pair with a double-double, like drinks, sides, sauces, or dessert? And is there anything you would never pair it with? Why?
+User: So basically I would pair it with the fries. You know, I think fries add that warm, salty crunch and the milkshake balances everything out with something cold and sweet. And let's see what else. I wouldn't pair it with soda just because I find their soda to be overly sweet. It fights the burger instead of complimenting it. Definitely too much sugar and too much fizz. I would maybe take the lemonade. The lemonade is pretty good.
+Agent: That's very clear, thank you. Moving on, in what situations do you choose this double-double most often? Could you tell me about the circumstances, like if it's due to time pressure, your location, how you order it, or who you're with?
+User: That's a good question.
+Agent: ...
+User: Let me think about that.
+Agent: Take your time.
+User: I think most often it comes down to convenience and timing. I usually get it when I'm ready on the road or running errands. I know the location. I know the drive-thru will move pretty fast and I don't have to think too hard about the order. It's also a go-to when I'm short on time, but kind of still want something that feels fresh and satisfying, not necessarily rushed or sloppy. I think location matters a lot. If I'm nearing in and out, that choice becomes a lot easier.
+Agent: That makes perfect sense. How does price influence your choice? For example, if the double-double cost two dollars more, what would you do? And if there was a deal, what would you do differently?
+User: I think price matters, but it's not the main driver. If the double-double costs $2 more, I'd probably pause, but I'd still probably order it. The value has always been part of the appeal, and even with a small increase, it would still feel fair compared to what other chains were charging for smaller burger. I might just order it a little less often. On the other hand, if there was a deal or a bundle I'd lean in, I'd be more likely to add fries or a shake or choose In-N-Out or another option, even if it wasn't the most convenient stop.
+Agent: That's interesting to hear how price affects your decision. Now, thinking about the past two weeks, what have been your most common fast-food patterns? What do you usually order, and what typically triggers those orders?
+User: ...
+Agent: Please feel free to share your thoughts when you're ready.
+User: Thank you.
+Agent: You're welcome. To reiterate, thinking about the past two weeks, what have been your most common fast-food patterns? What do you usually order, and what typically triggers those orders?
+User: I think my fast food pattern has been pretty consistent this past week. When I do order, it's usually a burger-based meal, most often something familiar like an in-and-out double-double or a five guys cheeseburger, usually a burger, fries, sometimes a shake. I don't deviate very much when I'm short on time. I think what triggers those orders is usually time pressure and location, long days, running errands, driving between commitments or getting home later than I planned.
+Agent: Thank you for sharing that. Now, what does "good value" mean to you in fast food? Could you pick your top two or three factors, such as taste, portion size, speed, nutrition, consistency, or price, and explain how you judge if something is "worth it"?
+User: I'm thinking about it.
+Agent: No problem, take your time.
+User: ...
+Agent: Are you still there?
+User: Mm-hmm.
+Agent: Great. So, what does "good value" mean to you in fast food? Could you pick your top two or three factors, such as taste, portion size, speed, nutrition, consistency, or price, and explain how you judge if something is "worth it"?
+User: Well, I think good value in fast food means I feel satisfied when I'm done, not just full but content. I think the food should taste fresh and be consistent and feel fairly priced for what I get. You know, I judge it if it's worth it by asking a really simple question would I order this again at the same price if the quality matches the cost and the experience feels reliable, then it's definitely worth it. If you're rushed, sloppy or overpriced, it's not. And that's the line for me.
+Agent: That's a very clear way to define good value. Thank you.
+
+Now, let's move on to your recent fast-food experiences. Compared to your last fast-food order, what changed today, if anything?
+User: Let me think of that.
+Agent: Take your time.
+User: I think compared to my last fast food order, not really much has changed today and I think the situation was similar it was short on time already out and needed something quick and reliable or the same kind of meal and because I knew exactly what I was getting. The main difference today was just the timing fit into my schedule a little better so decision felt a lot easier when the conditions stay the same at order usually does too.
+Agent: That's helpful to know. So, what "mode" are you in today? Are you in a budget, health, treat, convenience, explore, or stressed mode? And what's the first thing that changes in your order when you're in that particular mode?
+User: Today I'm in the convenience mode and that means speed and certainty come first. The first thing that changes is I simply simplify the order. I skip the extras, don't customize much and go with what I know will be fast and consistent.
+Agent: Okay, that makes sense. What triggered this order today? Was it a craving, a deal, an ad, someone suggested it, you were nearby, time pressure, wanting something lighter, or wanting a treat?
+User: I think it was mostly time pressure being nearby. I was already out. The location was convenient and I didn't have the time or energy to think through other options. There wasn't necessarily craving or an ad pushing me and no one suggested it. It was really about efficiency, wanting something dependable that wouldn't slow me down.
+Agent: Thank you for clarifying that. Was this order planned or spontaneous? And what would have had to change for you to not get fast food today?
+User: It was spontaneous, not planned. What would have changed? That decision is time and access. If I definitely had more time or if I had been closer to home with food already prepared, I wouldn't have gotten fast food. Even a short pause in the day to reset would have shifted the choice. Fast food for me fills the gap when the day moves faster than I really expected.
+Agent: That's very insightful. Did you switch from your usual chain or usual item today? If so, what exactly caused that switch?
+User: ...
+Agent: ...
+User: no, I didn't switch today. I stayed with my usual chain and my usual item. That's because the conditions didn't change. Same time pressure, same location, same expectations.
+Agent: Okay, thank you for clarifying that. What would make you permanently change your "default" order? What would you need to see happen repeatedly, such as taste, consistency, price, or convenience, for you to make that...

@@ -1,0 +1,24 @@
+{
+  "record_id": "4dcf2dbf-7677-4912-80ac-47494356cf49",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.721277",
+  "raw_text": "User: Just regular French fries from the same Tam's Burgers.\nAgent: Okay, so just regular French fries from Tams. Why would that be the closest replacement for you?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview4",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview4.txt",
+    "total_chunks": 33,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 12,
+  "parent_record_id": "2bf06f63-1970-4fb8-9751-bc4c59483394"
+}

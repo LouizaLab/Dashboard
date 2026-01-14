@@ -1,0 +1,39 @@
+{
+  "record_id": "4d4b3a2a-b9b8-4fee-99c5-ea48a00d205d",
+  "bucket_id": 1,
+  "source_name": "wendys_menu",
+  "source_type": "csv",
+  "brand": "Crispy Chicken Sandwich",
+  "timestamp": null,
+  "ingestion_time": "2025-12-27T02:25:07.245823",
+  "raw_text": "Crispy Chicken Sandwich Chicken",
+  "structured_fields": {
+    "Item": "Crispy Chicken Sandwich"
+  },
+  "numerical_fields": {
+    "Calories": 330.0,
+    "Fat (g)": 16.0,
+    "Sat Fat (g)": 3.0,
+    "Trans Fat (g)": 0.0,
+    "Cholesterol (mg)": 30.0,
+    "Sodium (mg)": 600.0,
+    "Total Carb (g)": 33.0,
+    "Dietary Fiber (g)": 2.0,
+    "Sugars (g)": 4.0,
+    "Protein (g)": 14.0,
+    "Weight Watchers": 323.0
+  },
+  "categorical_fields": {
+    "Category": "Chicken"
+  },
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "dataset_name": "wendys_menu",
+    "row_index": 16,
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Phase_1_Taste_Embedding_Model/data/raw/wendys-menu.csv"
+  },
+  "client_id": null,
+  "chunk_index": null,
+  "parent_record_id": null
+}

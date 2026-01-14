@@ -1,0 +1,24 @@
+{
+  "record_id": "5997259c-e99d-4e10-9bd8-8361de2107db",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.811803",
+  "raw_text": "User: Portion size. It's all about portion size when it comes to fast food. I want to be able to get a quality amount of food because I know that your restaurant produces quality food. Besides quantity, if I get rewards for purchasing at the restaurant, I consider that value.\nAgent: That's very clear. Now, compared to your last fast-food order, what changed today, if anything? Please pick the biggest driver and explain it, whether it was your mood, cravings, schedule, budget, health goals, social plans, or convenience.",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview16",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview16.txt",
+    "total_chunks": 24,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 14,
+  "parent_record_id": "073b5ea8-26dc-4e34-ab4d-47aa68550d3c"
+}

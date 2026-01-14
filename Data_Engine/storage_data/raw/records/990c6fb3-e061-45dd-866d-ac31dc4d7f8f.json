@@ -1,0 +1,23 @@
+{
+  "record_id": "990c6fb3-e061-45dd-866d-ac31dc4d7f8f",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.866867",
+  "raw_text": "iness I can only explain the taste of a Wendy's classic triple as happiness texture is very firm reminds you that you're eating a piece of meat the buns are very soft the lettuce is crispy the tomatoes aren't soggy and the onions taste like onion Agent: That sounds delicious. What are the top two or three things that make the Wendy's Classic Triple \"perfect\" for you? User: The size of the sandwich is a very hearty sandwich. If I eat one sandwich, I won't need to eat another one. Also, the ability to add mustard to the sandwich. I like mustard on my hamburgers, so it makes it better. And if you get the combo, the burger pairs well with the fries, and a small order of spicy chicken nuggets won't hurt either. Agent: Okay, I understand. On the flip side, what are the top two or three things that would make the Wendy's Classic Triple \"bad\" for you? For example, if it were soggy, dry, cold, under-salted, too greasy, or stale? User: Stale buns. Tomatoes that are old. Wilted lettuce. But I don",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview16.txt",
+    "total_chunks": 10
+  },
+  "client_id": null,
+  "chunk_index": 1,
+  "parent_record_id": "e39fd593-0fd9-4d1e-91c2-82ea896e8fe1"
+}

@@ -1,0 +1,24 @@
+{
+  "record_id": "123c3d36-da1c-428f-b6c7-966fb20079a6",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.677419",
+  "raw_text": "User: I usually pair it with a soda or a sweet tea. I think something that I would never pair it with is maybe a juice because I don't think the flavors would meld together really well.\nAgent: Thank you. In what situations do you choose the Mexican Pizza most often? Please include details like time pressure, location such as home, work, or commute, the ordering channel like drive-thru or delivery, and who you're with.",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "38",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/38.txt",
+    "total_chunks": 19,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 12,
+  "parent_record_id": "04f316d3-be87-4e71-bf48-81915dfb54b0"
+}

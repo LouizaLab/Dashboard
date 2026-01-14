@@ -1,0 +1,24 @@
+{
+  "record_id": "2151f4a3-bae1-4ece-95f8-6dc37371d3fc",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.818710",
+  "raw_text": "User: Same as the burger with the fresh bun, fresh lettuce and tomato and condiments. And I really like Wendy's chicken breast. It doesn't taste processed and it's always fresh and crispy.\nAgent: That makes sense. The consistent quality of the fresh ingredients and the chicken breast itself are important to you. Now, could you name two or three similar items you also like from any chain? And for each one, please tell me what's better or worse compared to your favorite Wendy's single.",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "36",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/36.txt",
+    "total_chunks": 29,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 8,
+  "parent_record_id": "4c0b766b-108c-463c-ac1b-84504ef7b9d6"
+}

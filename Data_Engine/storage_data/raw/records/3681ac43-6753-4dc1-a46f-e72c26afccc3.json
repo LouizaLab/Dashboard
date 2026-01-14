@@ -1,0 +1,24 @@
+{
+  "record_id": "3681ac43-6753-4dc1-a46f-e72c26afccc3",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.772354",
+  "raw_text": "User: Um, a Coke and french fries?\nAgent: A Coke and french fries, got it. And what would you never pair with a Big Mac, and why?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "44",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/44.txt",
+    "total_chunks": 33,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 17,
+  "parent_record_id": "694c9af7-c584-49a2-a404-743a61005dd2"
+}

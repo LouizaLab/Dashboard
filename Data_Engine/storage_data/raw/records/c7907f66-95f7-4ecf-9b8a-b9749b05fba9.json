@@ -1,0 +1,40 @@
+{
+  "record_id": "c7907f66-95f7-4ecf-9b8a-b9749b05fba9",
+  "bucket_id": 1,
+  "source_name": "mcd_menu_alt",
+  "source_type": "csv",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2025-12-27T02:25:07.219165",
+  "raw_text": null,
+  "structured_fields": {
+    "name": "Black Coffee\u00ae",
+    "serving_size": "200ml",
+    "description": "Perfectly brewed for any time of the day."
+  },
+  "numerical_fields": {
+    "energy": 6.8,
+    "protein": 0.0,
+    "total_fat": 0.0,
+    "sat_fat": 0.0,
+    "trans_fat": 0.0,
+    "chol": 0.0,
+    "carbs": 1.7,
+    "total_sugar": 0.0,
+    "added_sugar": 0.0,
+    "sodium": 0.0
+  },
+  "categorical_fields": {
+    "allergy": "No Allergens"
+  },
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "dataset_name": "mcd_menu_alt",
+    "row_index": 0,
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Phase_1_Taste_Embedding_Model/data/raw/mcd.csv"
+  },
+  "client_id": null,
+  "chunk_index": null,
+  "parent_record_id": null
+}

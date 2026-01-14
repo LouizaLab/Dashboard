@@ -1,0 +1,24 @@
+{
+  "record_id": "81099056-cc7e-45c0-9a3c-2553f858f3ec",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.724876",
+  "raw_text": "User: I would order a McDonald's Big Mac.\nAgent: And why do you consider the McDonald's Big Mac to be the closest replacement for your favorite pizza?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview5",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview5.txt",
+    "total_chunks": 37,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 6,
+  "parent_record_id": "70f85520-c679-4467-82c3-f02b7ab569c2"
+}

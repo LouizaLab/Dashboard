@@ -1,0 +1,23 @@
+{
+  "record_id": "d1222d57-011f-4836-b297-a62685968256",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.866204",
+  "raw_text": "ings, schedule, budget, health goals, social plans, or convenience? User: There is nothing that changed Agent: Understood, so there was no change compared to your last fast-food order. What \"mode\" are you in today? For example, are you in a budget, health, treat, convenience, explore, or stressed mode? User: I'm a balance between treat and health. Agent: Okay, a balance between treat and health. What's the first thing that changes in your order when you're in that particular mode? User: Whether or not I ate healthy through the week. Agent: That makes sense. So, if you've eaten healthy throughout the week, it influences your decision. Now, what triggered this order today? Please be specific. Was it a craving, a deal, an ad, someone suggested it, you were nearby, time pressure, you wanted something lighter, or you wanted a treat? User: Just basic cravings. Agent: Okay, so basic cravings were the trigger today. Was this order planned or spontaneous? User: Spontaneous. Agent: Understood",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview13.txt",
+    "total_chunks": 12
+  },
+  "client_id": null,
+  "chunk_index": 6,
+  "parent_record_id": "fbb27c4a-b6d1-47bb-9e12-15bb07aa4fc0"
+}

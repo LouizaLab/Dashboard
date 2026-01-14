@@ -1,0 +1,24 @@
+{
+  "record_id": "0687e26b-181c-4c33-bf23-f7d7909c169c",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.669073",
+  "raw_text": "User: with five students, sorry, hold on a second. It's five CEA 73210B20970001ACE, all lowercase and then five and the letter F, lowercase. And that is it.\nAgent: Thank you for providing...",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview22",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview22.txt",
+    "total_chunks": 23,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 1,
+  "parent_record_id": "deed2ad4-16c9-4967-b168-fdfd906b9174"
+}

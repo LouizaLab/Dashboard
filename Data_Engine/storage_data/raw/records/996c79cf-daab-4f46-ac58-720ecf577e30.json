@@ -1,0 +1,24 @@
+{
+  "record_id": "996c79cf-daab-4f46-ac58-720ecf577e30",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.751425",
+  "raw_text": "User: I mean, yeah, sure. So, you know, I do order, like, a chicken burger from McDonald's or sometimes I go to Chick-fil-A and stuff. To be honest for me, I think that when it comes to, you know, non bone in chicken, I would probably usually go with either chicken strips or chicken sandwich. The chicken sandwich I prefer if it has some vegetables such as tomato and lettuce. So honestly, for chicken sandwich, I think a McChicken I prefer over a over Chick-fil-A because Chick-fil-A doesn't have any vegetables and stuff. It's just kind of like a plain chicken piece and then maybe a pickle. In terms of my chicken strips, to be honest, I don't know if fast food restaurants have that amazing chicken strips. Chicken strips, honestly, is more something I get from the hot food aisle of a grocery store or even a cafeteria or like, yeah, something like that, I think. Although, I mean, Popeye's has good chicken strips, I think. Is it Popeye's? It might be Popeye's.\nAgent: Thank you for those examples, William. So you mentioned the McDonald's McChicken, Chick-fil-A's chicken sandwich, and chicken strips, possibly from Popeye's or a grocery store.\n\nCould you elaborate on what's better or worse about these items compared to your favorite Church's fried chicken? For instance, with the McChicken, you mentioned the vegetables, but how does it compare in terms of flavor, texture, or overall satisfaction to Church's?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview9",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview9.txt",
+    "total_chunks": 15,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 8,
+  "parent_record_id": "1bc8a08c-2dc5-435d-be32-44c66ef19022"
+}

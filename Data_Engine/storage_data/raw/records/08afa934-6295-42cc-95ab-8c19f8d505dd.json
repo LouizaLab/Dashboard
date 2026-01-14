@@ -1,0 +1,23 @@
+{
+  "record_id": "08afa934-6295-42cc-95ab-8c19f8d505dd",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.866360",
+  "raw_text": "Call Transcript: User: ... Agent: I'm here to collect information about your food preferences to complete the onboarding so you can get rewarded. To start, please say your name or Prolific ID. User: ... Agent: Please tell me your name or Prolific ID so we can begin. User: 35E63C40867949CA66 Agent: Thank you. What is your favorite fast-food item, including the chain and the exact item? And why do you like it? User: . I'm probably a McDonald's Big Mac and I just like the Big Mac sauce and it's the perfect amount of vegetables to meat and cheese ratio. Agent: That's great to hear. What are the top two or three things that make the Big Mac \"perfect\" for you? User: The Big Mac sauce, the sesame seed bun, and the amount of cheese. Agent: Okay, that makes sense. On the flip side, what are the top two or three things that would make a Big Mac \"bad\" for you? User: If it wasn't seasoned correctly, if there wasn't enough cheese, Agent: And what would be the third thing that would make it bad? Us",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview14.txt",
+    "total_chunks": 9
+  },
+  "client_id": null,
+  "chunk_index": 0,
+  "parent_record_id": null
+}

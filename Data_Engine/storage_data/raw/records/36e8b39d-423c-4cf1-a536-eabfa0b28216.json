@@ -1,0 +1,23 @@
+{
+  "record_id": "36e8b39d-423c-4cf1-a536-eabfa0b28216",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.868049",
+  "raw_text": "ull meal that I'm getting from there. And I half the time order by myself half the time ordered with my partner. Agent: Thank you. How does price change your choice? For example, if it cost two dollars more, what would you do? User: Depends on my budget if I could afford the two dollars but so sometimes I would just get the higher priced one or sometimes I would just have to switch it with something else. Agent: Understood. If there was a deal, what would you do differently? User: Probably switch to the deal and follow whatever the parameters are. Agent: Okay. Over the past two weeks, what are your most common fast-food patterns? This includes when you eat it, what you usually order, and what typically triggers it. User: It's usually I order when I'm hungry and I'm on the go in between like going to work or going to running errands or something. So it could be any time of day, honestly, but it's definitely something like when I get hungry. Agent: Thank you. What does \"good value\" mean",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview21.txt",
+    "total_chunks": 10
+  },
+  "client_id": null,
+  "chunk_index": 6,
+  "parent_record_id": "08071a2d-f19f-4ddf-8b32-c6b6250cf6ad"
+}

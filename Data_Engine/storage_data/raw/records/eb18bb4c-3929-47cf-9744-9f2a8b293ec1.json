@@ -1,0 +1,24 @@
+{
+  "record_id": "eb18bb4c-3929-47cf-9744-9f2a8b293ec1",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.755116",
+  "raw_text": "User: If it's from McDonald's, it's worth it to me. If it's a Big Mac, it's worth it. McDonald's is Big Macs to me. McDonald's is value.\nAgent: I understand that McDonald's and the Big Mac represent good value to you. When you think about why they are good value, which of these factors are most important: taste, portion...",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "41",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/41.txt",
+    "total_chunks": 39,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 18,
+  "parent_record_id": "3a86faee-b265-401f-89c3-2956bf68e535"
+}

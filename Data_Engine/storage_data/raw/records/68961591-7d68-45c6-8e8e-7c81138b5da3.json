@@ -1,0 +1,23 @@
+{
+  "record_id": "68961591-7d68-45c6-8e8e-7c81138b5da3",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.866503",
+  "raw_text": "gonna keep eating Big Macs. Agent: I understand you're happy with your Big Mac choices. When do you usually try new items versus sticking to your usual Big Mac? Could you give one recent example... User: I don't usually try new items. Today was just super special. Agent: Okay, so today was a rare exception. If a new item, like the McGriddle today, were to become repeat-worthy for you, what would usually be the reason? For example, would it be because it... User: It was four for four. Agent: So, a \"four for four\" deal would make a new item repeat-worthy for you. What is your \"autopilot\" order and why is it your default? Is it taste, consistency, speed, price,... User: That's all I eat is just Big Macs man. Agent: I understand your autopilot order is the Big Mac. If you were to get bored of your usual Big Mac, what would you switch to? Would it be a new flavor, a new chain, a different format like a wrap versus a... User: If I get tired of eating Big Macs I'm going to just not eat fas",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview15.txt",
+    "total_chunks": 13
+  },
+  "client_id": null,
+  "chunk_index": 11,
+  "parent_record_id": "f1fd0055-5ec4-40f3-bc6a-48afb005f6d4"
+}

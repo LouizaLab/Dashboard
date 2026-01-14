@@ -1,0 +1,39 @@
+{
+  "record_id": "60e3c443-f564-4794-8c32-61d832d3e0e5",
+  "bucket_id": 1,
+  "source_name": "wendys_menu",
+  "source_type": "csv",
+  "brand": "Grilled Chicken Wrap",
+  "timestamp": null,
+  "ingestion_time": "2025-12-27T02:16:07.077731",
+  "raw_text": "Grilled Chicken Wrap Chicken",
+  "structured_fields": {
+    "Item": "Grilled Chicken Wrap"
+  },
+  "numerical_fields": {
+    "Calories": 270.0,
+    "Fat (g)": 10.0,
+    "Sat Fat (g)": 3.5,
+    "Trans Fat (g)": 0.0,
+    "Cholesterol (mg)": 55.0,
+    "Sodium (mg)": 640.0,
+    "Total Carb (g)": 24.0,
+    "Dietary Fiber (g)": 2.0,
+    "Sugars (g)": 3.0,
+    "Protein (g)": 20.0,
+    "Weight Watchers": 257.0
+  },
+  "categorical_fields": {
+    "Category": "Chicken"
+  },
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "dataset_name": "wendys_menu",
+    "row_index": 19,
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Phase_1_Taste_Embedding_Model/data/raw/wendys-menu.csv"
+  },
+  "client_id": null,
+  "chunk_index": null,
+  "parent_record_id": null
+}

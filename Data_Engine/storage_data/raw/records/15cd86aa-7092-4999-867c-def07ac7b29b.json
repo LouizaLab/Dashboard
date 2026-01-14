@@ -1,0 +1,23 @@
+{
+  "record_id": "15cd86aa-7092-4999-867c-def07ac7b29b",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.870726",
+  "raw_text": "ou tell me a bit more about the texture of the chicken, the temperature of the sandwich, its smell, and the aftertaste? Also, what are the top two or three things that make this Popeye's chicken sandwich \"perfect\" for you, and what are the top two or three things that would make it \"bad\"? User: So it's a fried chicken sandwich. It's served pretty hot. The things that make it great are when it's served hot and I like fewer pickles on it personally. What would make it really bad is if they put too much mayo. I feel like that kind of makes me feel bad. But yeah, that's about it. Agent: Thanks for those details, Sean. It sounds like the perfect temperature and just the right amount of pickles are key for you, and too much mayo can really spoil it. If the Popeye's chicken sandwich was unavailable, what would you order instead, and from which chain? And what makes that your closest replacement? User: I like McDonald's chicken nuggets. I think they're also fried chicken. And I like that they",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview8.txt",
+    "total_chunks": 11
+  },
+  "client_id": null,
+  "chunk_index": 1,
+  "parent_record_id": "a3318d9c-f9af-4c79-a599-3db343b1df93"
+}

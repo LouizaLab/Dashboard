@@ -1,0 +1,24 @@
+{
+  "record_id": "472e4022-f35a-4424-9b11-ea49ada45bd9",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.815936",
+  "raw_text": "User: I'd say spontaneous. An advertisement triggered it.\nAgent: Thank you. So, it was a spontaneous order triggered by an advertisement.\n\nDid you switch from your usual chain or usual item today? If yes, what exactly caused the switch? Was it a deal, a new item, boredom, a bad experience, health, price, convenience, social reasons, or limited options?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview17",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview17.txt",
+    "total_chunks": 33,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 22,
+  "parent_record_id": "88d4a69e-5a62-47c8-8b20-22b88f242475"
+}

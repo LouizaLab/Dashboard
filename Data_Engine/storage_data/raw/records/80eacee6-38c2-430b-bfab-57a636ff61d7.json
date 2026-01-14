@@ -1,0 +1,24 @@
+{
+  "record_id": "80eacee6-38c2-430b-bfab-57a636ff61d7",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.747645",
+  "raw_text": "User: Sean.\nAgent: Thanks, Sean. It's great to meet you.\n\nNow, let's dive into your food preferences. What is your favorite fast-food item, including the chain and the exact item? And could you tell me why you like it, specifically touching on its flavor, texture, temperature, smell, and aftertaste?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview8",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview8.txt",
+    "total_chunks": 19,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 2,
+  "parent_record_id": "1f511bb6-4266-4aca-8ca1-8692fc9731e7"
+}

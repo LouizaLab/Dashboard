@@ -1,0 +1,65 @@
+Call Transcript:
+
+User: ...
+Agent: I'm here to collect information about your food preferences to complete the onboarding so you can get rewarded. To start, please say your name or Prolific ID.
+User: Marilyn Malone.
+Agent: Thank you, Marilyn. What is your favorite fast-food item, including the chain and the exact item? And could you tell me why you like it?
+User: I like the brisket from Arby's. It's just the way they cook it is just good. I like it.
+Agent: That sounds delicious. Could you tell me a bit more about what you like about it? For example, what do you enjoy about its flavor, texture, temperature, smell, and aftertaste?
+User: I like the way it's roasted. They roast it and then they slice it really thin so that it's almost not shredded but in slices. The seasoning that they use and it just tastes good.
+Agent: That's very descriptive. What are the top two or three things that make that Arby's brisket sandwich "perfect" for you?
+User: The way they slice it really thin and the seasoning that they use to cook with it.
+Agent: Okay, I understand. On the flip side, what are the top two or three things that would make that brisket sandwich "bad" for you? For example, if it were soggy, dry, or cold?
+User: If it was overcooked.
+Agent: Understood. What else would make it bad, besides being overcooked?
+User: If they put too much seasoning on it and if they slice it, could they slice it really thin? If they sliced it too thick, I think that would take away from the texture of it.
+Agent: Thank you for...
+User: don't...
+Agent: Thank you for clarifying. If the Arby's brisket sandwich was unavailable, what would you order instead, including the chain and the specific item?
+User: Probably the roast beef.
+Agent: And why is the roast beef the closest replacement for you?
+User: Because of the way it is cooked, slow roasted and it is also sliced thin.
+Agent: That makes sense. Can you name two or three similar items you also like from any chain? And for each one, what's better or worse compared to your favorite brisket sandwich?
+User: I like... Is this from any place?
+Agent: Yes, from any chain.
+User: I like the... I like McDonald's Double Cheeseburger.
+Agent: Okay, you like the...
+User: like it. Mm-hmm.
+Agent: Okay, you like the McDonald's Double Cheeseburger. What's better or worse about that compared to your favorite Arby's brisket sandwich?
+User: It is...
+Agent: It is...
+User: It's good. I still like the brisket better because, like I say, it's sliced really thin, and the Double Cheeseburger is a burger. So I like that they don't put any mayo on it. So I like that.
+Agent: Thank you for that comparison. Do you have another similar item you like from any chain?
+User: Compared to what? The roast beef?
+Agent: Yes, another item you like from any chain. And then, how does it compare, better or worse, to your favorite Arby's brisket sandwich?
+User: Um...
+Agent: No problem, take your time.
+User: I like, okay. I'm trying to see, because I love to, I'm not a foodie, but I'm close. So I like a different variety, too. I like the seafood. I like, you know what I like? Longhorn has a barbecue rib, and I like that.
+Agent: That's a great choice. How does the Longhorn barbecue rib compare to your favorite Arby's brisket sandwich? What's better or worse about it?
+User: I like the way it's cooked. It has a little sauce on it. I'm not a big on sauce on my meat. I like to add sauce as I need it when I'm eating. I don't really care for it to be on my meat, but the way they cook the ribs are very tender, and it's just the way they cook it.
+Agent: That sounds delicious. Do you have one more similar item you like from any chain, and how does it compare to your favorite Arby's brisket sandwich?
+User: Let me see. I like...
+Agent: No problem, take your time.
+User: Okay. I'm trying to decide because, like I said, I have... I like chicken nuggets or McDonald's. I like their chicken nuggets. And what I like about it is that it's individual pieces and they taste like real meat. So I like them compared to the brisket. It's not better than the brisket for me, but if I had to have a choice, I would choose the brisket over the McDonald's chicken nuggets.
+Agent: Thank you for sharing those. What do you usually pair with your Arby's brisket sandwich? This could include drinks, sides, or sauces.
+User: I like the potato wedges that they have. The hash brown wedges, I like those and I'll usually get a Coke or water. I'm a tea drinker, so I'm definitely gonna get some tea
+Agent: And what would you never pair your Arby's brisket sandwich with, and why?
+User: ...
+Agent: Please speak up, or let me know...
+User: Okay, okay. I'm ready. I'm thinking about what I would not want on it. Like I said, I don't, I prefer not to have any sauce on it. So if they were to add sauce to it, I don't, I wouldn't like that.
+Agent: ...
+User: Is that, is that answering?
+Agent: Yes, that answers the question perfectly. Thank you.
+
+Now, moving on to the next section. In what situations do you choose this Arby's brisket sandwich most often? Please include details like time pressure, location, ordering channel, and who you're with.
+User: It's not too far from my house. So I, and I usually have it around dinner time, evening, if I'm going to, if I'm out or even have it ordered in. Mostly I have it for dinner.
+Agent: Thank you. How does price change your choice? For example, if it cost two dollars more, what would you do?
+User: I would still get it. It's worth $2 more.
+Agent: And if there was a deal, what would you do differently?
+User: Nothing, because the way they do it, it's perfect for me. So I wouldn't do anything differently.
+Agent: Understood. So, a deal wouldn't necessarily change your order for that specific item.
+...
+User: No, it wouldn't.
+Agent: Thank you for clarifying. Over the past two weeks, what are your most common fast-food patterns? This includes when you eat it, what you usually order, and what typically triggers it.
+User: Usually I will order, uh, I have two grown children that I'm in the house with. And usually if they're going to work and I'm not in a cooking mode, but I'm, I don't do a lot of cooking now. So if it's something quick, that's convenient for my dinner time, I'll get that.
+Agent: Thank you. What does "good value" mean to you in fast food? Could you pick your top two or three factors, such as taste, portion size, speed, nutrition, consistency, or price, and explain how you judge if something is "worth it"?

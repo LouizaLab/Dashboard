@@ -1,0 +1,24 @@
+{
+  "record_id": "9aba53a1-9c6b-4ec8-8f3d-d548b847fc4e",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.706924",
+  "raw_text": "User: Probably the sauce and then the sesame seed bun.\nAgent: Understood. The sauce and the sesame seed bun are key to its perfection for you.\n\nNow, on the flip side, what are the top two or three things that would make a Big Mac \"bad\" for you? For instance, if it were soggy, dry, or cold?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview2",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview2.txt",
+    "total_chunks": 31,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 4,
+  "parent_record_id": "89414df8-139e-4b72-9450-a29a8a41b846"
+}

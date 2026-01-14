@@ -1,0 +1,24 @@
+{
+  "record_id": "23a41a83-dbed-4a5b-8581-ff6606b56b22",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.763025",
+  "raw_text": "User: You say two more items from what chain? From who?\nAgent: I'm asking for two or three other items that you like, similar to your favorite Wingstop Buffalo wings. These can be from any fast-food chain. For each of those items, please tell me what you think is better or worse about them compared to your Wingstop Buffalo wings.",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "45",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/45.txt",
+    "total_chunks": 22,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 10,
+  "parent_record_id": "94dc8ad1-54d4-42c6-baca-2b6d6e488033"
+}

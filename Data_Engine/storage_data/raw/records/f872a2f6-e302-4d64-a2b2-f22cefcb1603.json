@@ -1,0 +1,24 @@
+{
+  "record_id": "f872a2f6-e302-4d64-a2b2-f22cefcb1603",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.667483",
+  "raw_text": "User: I think price and I think also portion size. How I judge it is just really measuring the price to the portion size of what I'm getting. So if I'm getting more and I'm getting a deal for more portion, then that's usually a deal for me.\nAgent: So, for you, good value in fast food comes down to price and portion size, and you judge it by the ratio of what you pay to the amount of food you receive.\n\nNow, let's move on to your most recent fast-food experience. Compared to your last fast-food order, what changed today, if anything? Could you pick the biggest driver and explain if it was your mood, cravings, schedule, budget, health goals, social plans, or convenience?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview23",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview23.txt",
+    "total_chunks": 22,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 13,
+  "parent_record_id": "9226c320-dfb2-47d8-87a1-ed9e447a8705"
+}

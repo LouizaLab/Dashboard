@@ -1,0 +1,24 @@
+{
+  "record_id": "a6dd7615-15b1-405d-87a8-2bcb5bb13b3e",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.811224",
+  "raw_text": "User: Well, the chicken sandwich is very good, but it's not beef, so you can't really compare them. Although you can compare them for being sandwiches. Popeye's makes chicken, so the fact that they make a chicken sandwich is impressive. But I still may prefer a Wendy's chicken sandwich on the right day. And with the McDonald's hamburger, McDonald's makes good cheeseburgers, but they're not on the same level as Wendy's cheeseburgers. But it's worse because it's just not a Wendy's burger, but it's a solid choice.\nAgent: I understand. What do you usually pair with your Wendy's Classic Triple, such as drinks, sides, or sauces? And what would you never pair it with, and why?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview16",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview16.txt",
+    "total_chunks": 24,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 9,
+  "parent_record_id": "073b5ea8-26dc-4e34-ab4d-47aa68550d3c"
+}

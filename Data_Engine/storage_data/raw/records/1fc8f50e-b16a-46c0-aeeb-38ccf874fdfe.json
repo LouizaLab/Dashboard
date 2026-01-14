@@ -1,0 +1,24 @@
+{
+  "record_id": "1fc8f50e-b16a-46c0-aeeb-38ccf874fdfe",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.705846",
+  "raw_text": "User: Mostly just eating or cooking at home more.\nAgent: That's a clear goal. What recent change affected your eating, and what did it change in your fast-food choices? For example, a new gym routine, a diet plan, travel, stress, or a change in your schedule.",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "39",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/39.txt",
+    "total_chunks": 33,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 29,
+  "parent_record_id": "95c43eb4-c8d6-4cf1-a795-e16d4e88afc0"
+}

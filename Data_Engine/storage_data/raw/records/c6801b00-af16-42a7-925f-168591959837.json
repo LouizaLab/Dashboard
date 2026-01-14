@@ -1,0 +1,24 @@
+{
+  "record_id": "c6801b00-af16-42a7-925f-168591959837",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.784539",
+  "raw_text": "User: I don't usually try new items. Today was just super special.\nAgent: Okay, so today was a rare exception. If a new item, like the McGriddle today, were to become repeat-worthy for you, what would usually be the reason? For example, would it be because it...",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview15",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview15.txt",
+    "total_chunks": 39,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 34,
+  "parent_record_id": "d8dbb6de-ad03-467b-8826-23382ceb27d5"
+}

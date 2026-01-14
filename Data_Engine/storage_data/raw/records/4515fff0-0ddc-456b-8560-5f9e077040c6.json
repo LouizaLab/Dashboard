@@ -1,0 +1,24 @@
+{
+  "record_id": "4515fff0-0ddc-456b-8560-5f9e077040c6",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.674502",
+  "raw_text": "User: I would probably order like a double cheeseburger and then have them add the sauce.\nAgent: Okay, so a double cheeseburger with the Big Mac sauce. Why do you consider that the closest replacement for your favorite Big Mac?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview27",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview27.txt",
+    "total_chunks": 14,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 6,
+  "parent_record_id": "99278a16-fe01-4968-b4c4-38b0d04049cc"
+}

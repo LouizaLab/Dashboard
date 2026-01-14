@@ -1,0 +1,24 @@
+{
+  "record_id": "f83244f1-42c6-439b-87ba-dfb0ddd289af",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.768415",
+  "raw_text": "User: Two other items from a fast food chain, we can go with a burger probably from, let's see, my favorite burger joint. We can say something simple like a quarter pounder with cheese from McDonald's. That's fast food down the line. Plus they even have their fries are pretty much iconic. Outside of that, we're talking fast food. I mean, I could always go for Taco Bell. I'm old school and get a taco from Taco Bell or a chicken quesadilla. It's not a big deal.\nAgent: Thank you for those examples. Let's start with the Quarter Pounder with Cheese from McDonald's. What do you find is better or worse about that item compared to your favorite Wingstop Buffalo wings?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "45",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/45.txt",
+    "total_chunks": 22,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 11,
+  "parent_record_id": "94dc8ad1-54d4-42c6-baca-2b6d6e488033"
+}

@@ -1,0 +1,23 @@
+{
+  "record_id": "05f8061d-f312-485c-ab99-c48cab508fea",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.866897",
+  "raw_text": "I can Agent: I see, so loyalty to Wendy's is a significant trigger for you. Was this particular order planned or spontaneous? User: . Spontaneous. Spontaneous. Agent: Okay, spontaneous. What would have had to change for you to not get fast food today? User: Probably would have had to die. Agent: I understand. Did you switch from your usual chain or usual item today? User: Everything was normal Agent: Okay, so no switch today. What would make you permanently change your \"default\" order? User: . If they released a new menu item, Agent: So, if a new menu item was released, what would you need to see happen repeatedly, such as taste, consistency, price, or convenience, for it to...",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview16.txt",
+    "total_chunks": 10
+  },
+  "client_id": null,
+  "chunk_index": 9,
+  "parent_record_id": "e39fd593-0fd9-4d1e-91c2-82ea896e8fe1"
+}

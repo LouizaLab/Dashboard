@@ -1,0 +1,42 @@
+{
+  "record_id": "c6c65e98-3d0a-4ac3-add9-da50f23a2614",
+  "bucket_id": 1,
+  "source_name": "mcd_menu_alt",
+  "source_type": "csv",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2025-12-27T02:25:07.224512",
+  "raw_text": null,
+  "structured_fields": {
+    "name": "Sundae (Chocolate)\u00ae",
+    "serving_size": "91.79g ",
+    "ingredients": "Soft serve mix (100% diary), Hot fudge topping",
+    "tag": "Much more than ice-cream.",
+    "description": "Creamy vanilla soft-serve topped with thick and rich hot fudge."
+  },
+  "numerical_fields": {
+    "energy": 121.64,
+    "protein": 2.25,
+    "total_fat": 4.02,
+    "sat_fat": 3.01,
+    "trans_fat": 0.08,
+    "chol": 5.85,
+    "carbs": 19.11,
+    "total_sugar": 17.07,
+    "added_sugar": 10.78,
+    "sodium": 65.56
+  },
+  "categorical_fields": {
+    "allergy": "Milk"
+  },
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "dataset_name": "mcd_menu_alt",
+    "row_index": 37,
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Phase_1_Taste_Embedding_Model/data/raw/mcd.csv"
+  },
+  "client_id": null,
+  "chunk_index": null,
+  "parent_record_id": null
+}

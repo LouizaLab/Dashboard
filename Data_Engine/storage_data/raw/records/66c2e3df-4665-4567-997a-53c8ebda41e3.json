@@ -1,0 +1,24 @@
+{
+  "record_id": "66c2e3df-4665-4567-997a-53c8ebda41e3",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.723510",
+  "raw_text": "User: Well I'm on a vacation so something close to the hotel that I'm staying at and it's a nightly outing so social.\nAgent: I understand. Being on vacation, close to the hotel, and a nightly outing definitely makes sense for social plans and convenience.\n\nWhat \"mode\" are you in today? For example, are you in a budget, health, treat, convenience, explore, or stressed mode?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview4",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview4.txt",
+    "total_chunks": 33,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 30,
+  "parent_record_id": "2bf06f63-1970-4fb8-9751-bc4c59483394"
+}

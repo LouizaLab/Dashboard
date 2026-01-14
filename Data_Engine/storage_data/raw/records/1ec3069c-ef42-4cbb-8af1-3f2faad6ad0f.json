@@ -1,0 +1,23 @@
+{
+  "record_id": "1ec3069c-ef42-4cbb-8af1-3f2faad6ad0f",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.870074",
+  "raw_text": "time definitely adds to the value. Now, let's move on to some other aspects. Compared to your last fast-food order, what changed today, if anything? User: Just location Agent: Okay, so the location changed. Thinking about that change, what was the biggest driver for it? Was it your mood, cravings, schedule, budget, health goals, social plans, or convenience? Please explain. User: Social plans and convenience. Agent: Could you explain how social plans and convenience specifically influenced the change in location for your fast-food order today? User: Well I'm on a vacation so something close to the hotel that I'm staying at and it's a nightly outing so social. Agent: I understand. Being on vacation, close to the hotel, and a nightly outing definitely makes sense for social plans and convenience. What \"mode\" are you in today? For example, are you in a budget, health, treat, convenience, explore, or stressed mode? User: Explore. Agent: Okay, you're in \"explore\" mode. What's the first t",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview4.txt",
+    "total_chunks": 10
+  },
+  "client_id": null,
+  "chunk_index": 8,
+  "parent_record_id": "a8a3a49c-aace-4ba8-a37f-209b4e4dfac4"
+}

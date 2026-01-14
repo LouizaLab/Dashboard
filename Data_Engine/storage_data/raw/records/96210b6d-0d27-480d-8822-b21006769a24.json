@@ -1,0 +1,24 @@
+{
+  "record_id": "96210b6d-0d27-480d-8822-b21006769a24",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.841161",
+  "raw_text": "User: ...I don't know...um maybe meat? I'm not sure um...I would probably pair it with anything\nAgent: No worries at all. Let's move on to the next question. In what situations do you choose your Chick-fil-A chicken sandwich most often? Please include details like time pressure, location such as home, work, or commute, the ordering channel like drive-thru or delivery, and who you're with.",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview10",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview10.txt",
+    "total_chunks": 43,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 10,
+  "parent_record_id": "7855d946-010e-4b12-b478-072329d70cb1"
+}

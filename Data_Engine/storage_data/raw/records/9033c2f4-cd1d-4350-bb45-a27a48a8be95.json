@@ -1,0 +1,24 @@
+{
+  "record_id": "9033c2f4-cd1d-4350-bb45-a27a48a8be95",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.677629",
+  "raw_text": "User: I probably would still get it every now and then, but it would definitely lessen my... It would definitely make me not buy it as much because that would make it, you know, it might make it out of my price range.\nAgent: And if there was a deal on the Mexican Pizza, what would you do differently?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "38",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/38.txt",
+    "total_chunks": 19,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 14,
+  "parent_record_id": "04f316d3-be87-4e71-bf48-81915dfb54b0"
+}

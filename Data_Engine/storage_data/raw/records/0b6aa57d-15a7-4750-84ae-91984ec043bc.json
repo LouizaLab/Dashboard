@@ -1,0 +1,23 @@
+{
+  "record_id": "0b6aa57d-15a7-4750-84ae-91984ec043bc",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.867931",
+  "raw_text": "e single in terms of what you like about it? User: Same as the burger with the fresh bun, fresh lettuce and tomato and condiments. And I really like Wendy's chicken breast. It doesn't taste processed and it's always fresh and crispy. Agent: That makes sense. The consistent quality of the fresh ingredients and the chicken breast itself are important to you. Now, could you name two or three similar items you also like from any chain? And for each one, please tell me what's better or worse compared to your favorite Wendy's single. User: Second most frequently visited chain would have to be McDonald's. The McDonald's meat does not really taste fresh and the assembly and the service at McDonald's is usually less than Wendy's. Agent: Thank you for sharing your thoughts on McDonald's, Nicole. It sounds like you find the quality there to be less consistent than at Wendy's. Could you name a specific item you like from McDonald's or another chain that is similar to the Wendy's single? And for t",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview20.txt",
+    "total_chunks": 11
+  },
+  "client_id": null,
+  "chunk_index": 3,
+  "parent_record_id": "2b6b0470-bd75-4f9b-98bd-8b5aed0e9f50"
+}

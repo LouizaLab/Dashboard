@@ -1,0 +1,24 @@
+{
+  "record_id": "0fb9b902-d776-426c-9848-d499bc57983e",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.708467",
+  "raw_text": "User: Definitely budget mode.\nAgent: Understood, you're definitely in budget mode.\n\nWhat's the first thing that changes in your order when you're in that mode?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview2",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview2.txt",
+    "total_chunks": 31,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 15,
+  "parent_record_id": "89414df8-139e-4b72-9450-a29a8a41b846"
+}

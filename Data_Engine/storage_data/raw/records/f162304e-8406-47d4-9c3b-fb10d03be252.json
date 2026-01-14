@@ -1,0 +1,24 @@
+{
+  "record_id": "f162304e-8406-47d4-9c3b-fb10d03be252",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.748605",
+  "raw_text": "User: Yeah, I think generally fast food is pretty inexpensive and given that I'm not having it super regularly, I kind of just optimize for what I like the most even if it's $1 or $2 more. And that's kind of why I choose Popeye's irrespective of price.\nAgent: That's a clear perspective, Sean. So, if there was a deal available for your Popeye's chicken sandwich or another item, would that influence your decision or change what you order at all?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview8",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview8.txt",
+    "total_chunks": 19,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 10,
+  "parent_record_id": "1f511bb6-4266-4aca-8ca1-8692fc9731e7"
+}

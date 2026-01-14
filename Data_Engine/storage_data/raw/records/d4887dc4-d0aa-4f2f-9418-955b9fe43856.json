@@ -1,0 +1,23 @@
+{
+  "record_id": "d4887dc4-d0aa-4f2f-9418-955b9fe43856",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.866055",
+  "raw_text": "texture is nice. And then the orange tang, I like orange. So then that kind of works. And then with the side of rice, that helps to kind of offset too much tang and gives it a little bit of a different kind of texture with it. I don't know how to describe the texture exactly. It's kind of like a crunch, like it's like a soggy crunch with a little bit of cushion, I guess. And then the crab rangoon, it's like soft, smushy cheese with a fried outside. So that's really nice. Agent: That's a great description, Carl. It sounds like you really enjoy the combination of flavors and textures. What are the top two to three things that make that Panda Express orange chicken meal \"perfect\" for you? User: If it's fresh, that's one thing. I don't like the, like when they let it sit, which is very rare because usually they sell out pretty quick. So as long as it's fresh, that's really good. And if the rice isn't like stale and sat around for a while. And then the other thing too is I don't mind the fr",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview12.txt",
+    "total_chunks": 8
+  },
+  "client_id": null,
+  "chunk_index": 1,
+  "parent_record_id": "e7318291-9171-4cc3-913e-6ab9feff74f9"
+}

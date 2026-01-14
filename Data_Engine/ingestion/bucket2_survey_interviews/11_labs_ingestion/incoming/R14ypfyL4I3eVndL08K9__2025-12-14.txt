@@ -1,0 +1,58 @@
+Voice: Rachel
+Model: eleven_multilingual_v2
+Date: 2025-12-14 04:56:18
+History Item ID: R14ypfyL4I3eVndL08K9
+
+======================================================================
+Transcript:
+======================================================================
+
+ask these questions in an interview with a user:
+
+Phase 1 — Taste Embedding Model (TEM)
+A) Product metadata → z_product
+Describe your favorite item like you’re convincing a friend to order it: what exactly makes it hit (flavor, texture, smell, temperature, aftertaste), and what “ruins it” when it’s off.
+If that exact item disappeared tomorrow, what would you replace it with and why: name the closest substitutes and what each replacement gets right/wrong compared to your favorite.
+Sensory + quality/consistency (embedding + switching signal)
+Tell me what “a perfect version” of this item is vs a “bad version”: how you can tell immediately, and which specific failure modes bother you most (soggy, dry, cold, under-seasoned, etc.).
+Explain what you mean when you say something tastes “fresh” or “greasy” or “heavy”: what sensations you feel, how long it lingers, and what foods/items give you that same feeling.
+Similarity / substitutes / complements (embedding gold)
+What other items (even from other chains) live in the same “taste neighborhood” as this: and what tiny differences push you toward one vs the other.
+What do you always pair with this (or refuse to pair with it), and why: talk about the combo logic (balance, texture contrast, sweetness/salt, “needs a sauce,” etc.).
+B) Context-at-intent → z_context
+Tell the story of how this order happened from start to finish: where you were, what you were doing, what you felt like, what options you considered, and what finally tipped the decision.
+Describe the “decision environment” that matters most to you: time pressure, who you were with, delivery vs drive-thru, deals/points, and how price or fees change what you choose.
+C) User/segment traits → z_segment
+If I followed you for 2 weeks, what patterns would I notice: your routines, your impulse moments, your “health mode,” your “treat mode,” and what reliably predicts each.
+What’s your personal definition of “good value” in fast food: is it portion size, taste satisfaction, macros, speed, consistency, or something else—and how do you decide it was “worth it”?
+
+Phase 2 — Behavioral Dynamic Engine (Intent Model)
+1) What changed since last time (change detector)
+What’s different about today compared to your last order: tell me what shifted internally (mood/cravings/goals) and externally (schedule/location/people/price).
+When you say you’re in a certain “mode” (budget/health/treat/etc.), what are the telltale signs: what choices change first, and what still stays the same.
+2) Trigger event (causal hook)
+What was the spark that made fast food feel like the right call today: walk through the moment it became the plan (or the fallback).
+How planned vs spontaneous was it really: and what would’ve had to change for you to choose something else.
+3) Switching attribution (deviating from default)
+Explain the last time you switched from your usual: what pushed you away, what pulled you to the new option, and what you were hoping would be different.
+What would need to happen for you to permanently switch your “default”: what evidence convinces you over multiple orders.
+4) Deal dependence + price pressure
+Talk through how deals actually influence you: what kinds of deals feel irresistible vs irrelevant, and how you behave when there are no deals anywhere.
+If your price sensitivity has changed recently, tell me the story: what happened in your life (or in prices/fees) and how it shows up in your ordering decisions.
+5) Health drift + tradeoffs
+Describe what “eating healthier” means for you in practice: what you cut, what you substitute, what you still keep, and what you refuse to give up.
+What recent change (routine, travel, gym, meds, stress) shifted your eating: and how it specifically changed your fast-food choices.
+6) Novelty vs routine dynamics
+What makes you try something new vs stick to the same thing: describe the emotional logic (boredom, comfort, hype, risk of disappointment).
+When a new item becomes repeat-worthy, why: what exact box it checks that your default doesn’t.
+7) Habit formation + decay
+Describe your “autopilot order”: why it became autopilot, and what conditions make you deviate from it.
+If you’re bored of your usual, what does that boredom feel like: and what kind of alternative scratches the itch (new flavor, new texture, new chain, new format).
+8) Experience-driven change (churn even if taste stable)
+Tell me about a time a bad experience changed your behavior: what happened, what rule you adopted afterward, and how long it lasted.
+How much does consistency matter vs one-off mistakes: what it takes for you to forgive a chain/item vs avoid it.
+9) Social influence + norms
+Describe how other people shape your choice in real life: group dynamics, not wanting judgment, convenience for others, “everyone’s getting it,” etc.
+How do trends (friends/social media) actually affect you: what makes you try the trending thing vs ignore it.
+12) Persistent “mode” across days (state persistence)
+Describe the last 7 days as a “mode

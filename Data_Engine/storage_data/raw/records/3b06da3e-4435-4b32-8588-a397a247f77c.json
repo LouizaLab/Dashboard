@@ -1,0 +1,24 @@
+{
+  "record_id": "3b06da3e-4435-4b32-8588-a397a247f77c",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.747759",
+  "raw_text": "User: Popeye's chicken sandwich. I like the spicy mayo. I like the bun. I like the pickles and it tastes great. And there's a spicy kick. That's about it.\nAgent: Thanks, Sean. You mentioned the spicy mayo, the bun, the pickles, and the spicy kick. Could you tell me a bit more about the texture of the chicken, the temperature of the sandwich, its smell, and the aftertaste? Also, what are the top two or three things that make this Popeye's chicken sandwich \"perfect\" for you, and what are the top two or three things that would make it \"bad\"?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview8",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview8.txt",
+    "total_chunks": 19,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 3,
+  "parent_record_id": "1f511bb6-4266-4aca-8ca1-8692fc9731e7"
+}

@@ -1,0 +1,24 @@
+{
+  "record_id": "86b3693b-2013-4cf0-909c-cdb9d83435ae",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.676762",
+  "raw_text": "User: The variety of options. You can get it made up many different ways with many different flavors and like condiments and you can get like beef or beans, cheese, tomatoes, the spices, and the sauces.\nAgent: That's great to know about the customization options. On the flip side, what are the top two or three things that would make the Mexican Pizza \"bad\" for you? For example, if it were soggy, dry, or cold.",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "38",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/38.txt",
+    "total_chunks": 19,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 6,
+  "parent_record_id": "04f316d3-be87-4e71-bf48-81915dfb54b0"
+}

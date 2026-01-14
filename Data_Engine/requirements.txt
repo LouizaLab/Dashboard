@@ -1,0 +1,32 @@
+# Data Engine Requirements
+
+# Core dependencies
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Vector storage
+faiss-cpu>=1.7.4
+
+# Embeddings (optional, for semantic search)
+sentence-transformers>=2.2.0
+transformers>=4.30.0
+
+# Text processing (optional, for enrichment)
+# textblob>=0.17.1  # For sentiment analysis
+# vaderSentiment>=3.3.2  # For social media sentiment
+
+# Scraping (optional, for Bucket 4)
+# praw>=7.7.0  # For Reddit scraping
+# googlemaps>=4.10.0  # For Google Places API
+
+# Storage backends (optional)
+# psycopg2-binary>=2.9.0  # For PostgreSQL
+# pymongo>=4.5.0  # For MongoDB
+# boto3>=1.28.0  # For S3
+
+# Utilities
+tqdm>=4.65.0  # For progress bars
+
+# LangGraph (for intelligent retrieval system)
+langgraph>=0.0.20  # For multi-step reasoning retrieval
+

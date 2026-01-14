@@ -1,0 +1,23 @@
+{
+  "record_id": "5385d0d0-118c-40b2-a524-d1cad9c29575",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.870756",
+  "raw_text": "hree factors from taste, portion size, speed, nutrition, consistency, and price, and explain how you judge if something is \"worth it\"? User: I think it's taste above all else. And I would say convenience is second. Yeah, if it's not like in a location or delivery app that's very accessible, I probably just won't get it at all. And I particularly like if it's, you know, on my walk home from work or somewhere nearby my apartment, which Popeyes is. Agent: Thanks for clarifying that taste and convenience are your top factors for good value, Sean. It makes sense that accessibility plays a big role. Now, thinking about your last fast-food order before your recent travels, or if you were to order fast food today, what would be the biggest driver for that choice? Would it be your mood, cravings, schedule, budget, health goals, social plans, or convenience? And what \"mode\" would you say you're in today\u2014like budget, health, treat, convenience, explore, or stressed? User: ... Agent: Are you stil",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview8.txt",
+    "total_chunks": 11
+  },
+  "client_id": null,
+  "chunk_index": 7,
+  "parent_record_id": "a3318d9c-f9af-4c79-a599-3db343b1df93"
+}

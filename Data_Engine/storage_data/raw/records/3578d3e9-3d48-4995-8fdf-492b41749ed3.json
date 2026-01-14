@@ -1,0 +1,24 @@
+{
+  "record_id": "3578d3e9-3d48-4995-8fdf-492b41749ed3",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.846699",
+  "raw_text": "User: Onion rings. I hate onion rings. I hate the taste of them. Just the, like when the, when, and I can even like visualize it, like when that onion juice crunchy hits the back of my tongue, it's like, I just, it's almost like the taste of blood, like that kind of taste, like that, like metallic taste, but sour. And so to me, it just tastes awful. I do not like onions whatsoever. That's why I cannot eat one if they put the onions on it, because that's how it's made. Usually",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview11",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview11.txt",
+    "total_chunks": 14,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 13,
+  "parent_record_id": "4d36d5b4-cfbd-45d5-b60e-c0beaeaa52ce"
+}

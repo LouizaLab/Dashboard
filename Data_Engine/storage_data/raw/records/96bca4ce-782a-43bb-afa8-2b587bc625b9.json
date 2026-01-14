@@ -1,0 +1,24 @@
+{
+  "record_id": "96bca4ce-782a-43bb-afa8-2b587bc625b9",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.718824",
+  "raw_text": "User: Okay, okay. I'm ready. I'm thinking about what I would not want on it. Like I said, I don't, I prefer not to have any sauce on it. So if they were to add sauce to it, I don't, I wouldn't like that.\nAgent: ...",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview1",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview1.txt",
+    "total_chunks": 28,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 21,
+  "parent_record_id": "24c315c5-82df-4a16-b34d-f6b42b080750"
+}

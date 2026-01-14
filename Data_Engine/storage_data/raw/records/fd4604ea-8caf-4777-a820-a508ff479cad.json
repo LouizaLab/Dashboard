@@ -1,0 +1,24 @@
+{
+  "record_id": "fd4604ea-8caf-4777-a820-a508ff479cad",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.725494",
+  "raw_text": "User: Sometimes they're very greasy. Usually they're good.\nAgent: Thank you. What do you usually pair with your Papa John's pepperoni pizza? This could include drinks, sides, or sauces.",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview5",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview5.txt",
+    "total_chunks": 37,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 10,
+  "parent_record_id": "70f85520-c679-4467-82c3-f02b7ab569c2"
+}

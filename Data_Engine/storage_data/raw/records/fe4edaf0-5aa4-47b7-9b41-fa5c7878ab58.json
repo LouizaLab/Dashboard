@@ -1,0 +1,24 @@
+{
+  "record_id": "fe4edaf0-5aa4-47b7-9b41-fa5c7878ab58",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.751306",
+  "raw_text": "User: Some replacement items?\nAgent: Yes, that's right. Besides your favorite Church's fried chicken and the replacements you mentioned, can you name two or three other similar fried chicken items you enjoy from any chain? And for each one, please tell me what you find better or worse...",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview9",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview9.txt",
+    "total_chunks": 15,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 7,
+  "parent_record_id": "1bc8a08c-2dc5-435d-be32-44c66ef19022"
+}

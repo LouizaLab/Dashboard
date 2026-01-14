@@ -1,0 +1,24 @@
+{
+  "record_id": "9e27059d-2ffe-44df-b896-bcde4674516e",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.725007",
+  "raw_text": "User: It's not really a replacement but it's just something I also like.\nAgent: I see. So it's another favorite of yours. Can you name two or three other similar items you also like, from any chain?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview5",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview5.txt",
+    "total_chunks": 37,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 7,
+  "parent_record_id": "70f85520-c679-4467-82c3-f02b7ab569c2"
+}

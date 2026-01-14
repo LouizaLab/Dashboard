@@ -1,0 +1,24 @@
+{
+  "record_id": "69f78def-a783-46f7-bc80-24ab5460bba0",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.722666",
+  "raw_text": "User: We usually eat around lunch. Triggers is hunger obviously.\nAgent: Okay, so usually around lunch, and hunger is the trigger. What do you usually order during these times?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview4",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview4.txt",
+    "total_chunks": 33,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 23,
+  "parent_record_id": "2bf06f63-1970-4fb8-9751-bc4c59483394"
+}

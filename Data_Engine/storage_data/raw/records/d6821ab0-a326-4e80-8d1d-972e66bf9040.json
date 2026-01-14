@@ -1,0 +1,24 @@
+{
+  "record_id": "d6821ab0-a326-4e80-8d1d-972e66bf9040",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.674030",
+  "raw_text": "User: My favorite fast food item would probably be the Big Mac from McDonald's.\nAgent: Okay, the Big Mac from McDonald's. Could you tell me more about why you like it? I'm interested in details like its flavor, texture, temperature, smell, and aftertaste.",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview27",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview27.txt",
+    "total_chunks": 14,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 2,
+  "parent_record_id": "99278a16-fe01-4968-b4c4-38b0d04049cc"
+}

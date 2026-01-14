@@ -1,0 +1,24 @@
+{
+  "record_id": "7c57cefa-4d32-4520-9e48-d8b5557b2a49",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.710942",
+  "raw_text": "User: Um...it has a lot of different textures...a soft bun and the cheese...it doesn't really have much of a smell. It has a very salty taste mixed with the lettuce which is kind of fresh and then the secret sauce which is kind of tangy. All those flavor combinations combined make it really good. The cheese is probably my favorite part. It smells like McDonald's.\nAgent: That's a great description. It sounds like the combination of textures and flavors, especially the tangy sauce and salty taste, really stands out for you.\n\nWhat are the top two or three things that make a Big Mac \"perfect\" in your opinion? For example, is it a crunchy coating, a specific sauce balance, the heat level, or the bun texture?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview3",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview3.txt",
+    "total_chunks": 22,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 4,
+  "parent_record_id": "fc77d1e2-9777-4dca-a844-42568cda327f"
+}

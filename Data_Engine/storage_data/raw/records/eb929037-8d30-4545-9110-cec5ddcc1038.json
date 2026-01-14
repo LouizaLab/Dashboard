@@ -1,0 +1,23 @@
+{
+  "record_id": "eb929037-8d30-4545-9110-cec5ddcc1038",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.869801",
+  "raw_text": "urger King and get a Whopper. Agent: Okay, a Whopper from Burger King. Why do you consider that the closest replacement for a Big Mac? User: It's kind of like the Big Mac sister, it's the competitor burger. I really like the Whopper too. It's nice and fresh, it has the tomato which the Big Mac doesn't. I would say it's my second favorite fast food item. Agent: That's a clear connection, being the competitor burger and your second favorite. Can you name two or three other similar items you also like from any chain? And for each one, what's better or worse compared to your favorite Big Mac? User: ... Agent: Please let me know if you're... User: I like, I like the Wendy's mushroom and Swiss burger a lot. The only thing that is worse is that the price Wendy's is really expensive. And I also like the Taco Bell grilled cheese burrito. Agent: Thank you for those examples. You mentioned the Wendy's Mushroom and Swiss burger is good, but the price is worse compared to the Big Mac. For the Tac",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview3.txt",
+    "total_chunks": 11
+  },
+  "client_id": null,
+  "chunk_index": 3,
+  "parent_record_id": "763b6b14-78e3-4d1d-9738-7fff2af6b166"
+}

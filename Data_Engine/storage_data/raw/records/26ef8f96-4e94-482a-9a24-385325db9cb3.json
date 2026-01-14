@@ -1,0 +1,23 @@
+{
+  "record_id": "26ef8f96-4e94-482a-9a24-385325db9cb3",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.870404",
+  "raw_text": "ing up a ton of, you know, stuff to... I'm not compromising a ton just to get the asada bowl instead of the burrito. Agent: That's a clear explanation of why it's a good alternative. Can you name two or three similar items you also like from any chain? And for each one, what's better or worse compared to your favorite Chipotle burrito? User: Probably a taco truck. Um... Agent: Okay, so a taco truck. What specific item from a taco truck do you like, and what's better or worse about it compared to your Chipotle burrito? User: Um, they're pretty comparable in size. Um, I would say... the length of time that it takes to get the burrito from the taco truck is sometimes frustrating. Um... Agent: So, the time it... User: So yeah. Agent: So, the time it takes can be a downside. What about the flavor, texture, or other aspects of the taco truck burrito compared to your Chipotle burrito? Is anything better or worse? User: I think one tastes more authentic than the other. I feel like Chipotle is",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview6.txt",
+    "total_chunks": 11
+  },
+  "client_id": null,
+  "chunk_index": 4,
+  "parent_record_id": "7bbdd4cb-ea9f-41c4-ad88-c8cc6f12ea7d"
+}

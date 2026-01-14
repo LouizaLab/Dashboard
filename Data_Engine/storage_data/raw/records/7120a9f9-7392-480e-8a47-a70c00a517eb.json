@@ -1,0 +1,42 @@
+{
+  "record_id": "7120a9f9-7392-480e-8a47-a70c00a517eb",
+  "bucket_id": 1,
+  "source_name": "mcd_menu_alt",
+  "source_type": "csv",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2025-12-27T02:25:07.220641",
+  "raw_text": null,
+  "structured_fields": {
+    "name": "Chicken McNuggets\u00ae",
+    "serving_size": " 320g",
+    "ingredients": "Chicken bites",
+    "tag": "Each bite is better than the last.",
+    "description": "Bite-sized pieces of breaded, boneless chicken formed in various shapes (Ball, Boot, Bell & Bone) fried and served hot with smoky Barbeque Sauce or Mustard Sauce."
+  },
+  "numerical_fields": {
+    "energy": 806.1,
+    "protein": 47.6,
+    "total_fat": 46.9,
+    "sat_fat": 21.11,
+    "trans_fat": 0.3,
+    "chol": 115.0,
+    "carbs": 49.88,
+    "total_sugar": 1.7,
+    "added_sugar": 0.0,
+    "sodium": 1490.0
+  },
+  "categorical_fields": {
+    "allergy": "Cereal containing gluten"
+  },
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "dataset_name": "mcd_menu_alt",
+    "row_index": 7,
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Phase_1_Taste_Embedding_Model/data/raw/mcd.csv"
+  },
+  "client_id": null,
+  "chunk_index": null,
+  "parent_record_id": null
+}

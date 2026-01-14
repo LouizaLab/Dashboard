@@ -1,0 +1,24 @@
+{
+  "record_id": "bc1219cd-9e3e-4126-9a0c-ab72409c3fb2",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.721959",
+  "raw_text": "User: I better have actual carne asada and salsa and toppings. Worse is sometimes the consistency of the guacamole or the cheese is not good.\nAgent: Thank you for that detailed comparison.\n\nWhat do you usually pair with your favorite chili cheese fries from Tams, such as drinks, sides, or sauces?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview4",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview4.txt",
+    "total_chunks": 33,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 17,
+  "parent_record_id": "2bf06f63-1970-4fb8-9751-bc4c59483394"
+}

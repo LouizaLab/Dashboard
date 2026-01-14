@@ -1,0 +1,39 @@
+{
+  "record_id": "caad05e6-2354-4125-860b-661e70521817",
+  "bucket_id": 1,
+  "source_name": "burger_king_menu",
+  "source_type": "csv",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2025-12-27T02:16:07.064862",
+  "raw_text": null,
+  "structured_fields": {
+    "Item": "BK Cafe Coffee- 12 fl oz"
+  },
+  "numerical_fields": {
+    "Calories": 0.0,
+    "Fat Calories": 0.0,
+    "Fat (g)": 0.0,
+    "Saturated Fat (g)": 0.0,
+    "Trans Fat (g)": 0.0,
+    "Cholesterol (mg)": 0.0,
+    "Sodium (mg)": 0.0,
+    "Total Carb (g)": 0.0,
+    "Dietary Fiber (g)": 0.0,
+    "Sugars (g)": 0.0,
+    "Protein (g)": 0.0
+  },
+  "categorical_fields": {
+    "Category": "BK Cafe"
+  },
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "dataset_name": "burger_king_menu",
+    "row_index": 57,
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Phase_1_Taste_Embedding_Model/data/raw/burger-king-menu.csv"
+  },
+  "client_id": null,
+  "chunk_index": null,
+  "parent_record_id": null
+}

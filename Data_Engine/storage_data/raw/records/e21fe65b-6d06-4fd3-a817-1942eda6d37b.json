@@ -1,0 +1,24 @@
+{
+  "record_id": "e21fe65b-6d06-4fd3-a817-1942eda6d37b",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.817142",
+  "raw_text": "User: If I'm really hungry I usually stick to my usual if I'm somewhere new or if I want something else I might try a new item.\nAgent: That makes sense. Could you give me one recent example of when you tried a new item and explain why, and then one recent example of when you stuck to your usual and explain why?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview17",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview17.txt",
+    "total_chunks": 33,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 31,
+  "parent_record_id": "88d4a69e-5a62-47c8-8b20-22b88f242475"
+}

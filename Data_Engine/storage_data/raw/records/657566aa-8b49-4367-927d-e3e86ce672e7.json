@@ -1,0 +1,24 @@
+{
+  "record_id": "657566aa-8b49-4367-927d-e3e86ce672e7",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.774695",
+  "raw_text": "User: I already went through this already. For some reason, you got disconnected and they asked me what I thought about the quality of this call. I left off with, I believe it was asking me to compare the double-double what I would pair it with and what I would not pair it with.\nAgent: Got it, thanks for letting me know. Let's pick up from there. What do you usually pair with a double-double, like drinks, sides, sauces, or dessert? And is there anything you would never pair it with? Why?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "46",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/46.txt",
+    "total_chunks": 19,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 2,
+  "parent_record_id": "42485974-cee0-43b1-bfcd-159fb131da89"
+}

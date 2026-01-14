@@ -1,0 +1,24 @@
+{
+  "record_id": "94410ee6-1a8f-4d18-8391-0d30e3100aeb",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.833858",
+  "raw_text": "User: I think I would still maybe I might go somewhere else if it costs a little more.\nAgent: Understood. So a two-dollar price increase might make you consider other options.\n\nWhat if there was a deal on the Double Quarter Pounder with Cheese? What would you do differently then?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "33",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/33.txt",
+    "total_chunks": 22,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 11,
+  "parent_record_id": "aa98a079-d75e-4bbe-84c1-8fdbe78a1de3"
+}

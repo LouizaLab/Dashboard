@@ -1,0 +1,24 @@
+{
+  "record_id": "a2fdae88-b1c9-40db-85d4-ab3f59a60b42",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.726639",
+  "raw_text": "User: Just that I'm able to get a lot of food or what I pay that I can maybe eat two meals of it.\nAgent: Thank you. From the factors of taste, portion size, speed, nutrition, consistency, and price, which are your top two or three for judging \"worth it\" in fast food, and how do you judge them?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview5",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview5.txt",
+    "total_chunks": 37,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 18,
+  "parent_record_id": "70f85520-c679-4467-82c3-f02b7ab569c2"
+}

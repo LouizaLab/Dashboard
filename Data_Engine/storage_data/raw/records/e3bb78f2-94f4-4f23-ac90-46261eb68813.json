@@ -1,0 +1,24 @@
+{
+  "record_id": "e3bb78f2-94f4-4f23-ac90-46261eb68813",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.792717",
+  "raw_text": "User: I don't know, stressed.\nAgent: Understood. When you're in a stressed mode, what's the first thing that changes in your fast-food order?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview28",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview28.txt",
+    "total_chunks": 43,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 20,
+  "parent_record_id": "1940e73c-7457-4f0e-96e6-ebd8700cb728"
+}

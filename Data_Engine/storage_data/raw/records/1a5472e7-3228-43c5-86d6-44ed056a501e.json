@@ -1,0 +1,24 @@
+{
+  "record_id": "1a5472e7-3228-43c5-86d6-44ed056a501e",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.844808",
+  "raw_text": "User: It doesn't really ever influence my order unless maybe I'm with someone who specifically doesn't like Chick-fil-A.\nAgent: Understood. How does social media or hype influence you? What makes you try a trending item versus ignore it?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview10",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview10.txt",
+    "total_chunks": 43,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 41,
+  "parent_record_id": "7855d946-010e-4b12-b478-072329d70cb1"
+}

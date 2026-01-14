@@ -1,0 +1,23 @@
+{
+  "record_id": "c60706c4-eb3b-40ff-8a0f-ccf2e4afeb52",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.870415",
+  "raw_text": "makes the Whopper appealing. Now, what do you usually pair with your Chipotle burrito? This could include drinks, sides, or sauces. User: Usually just a Sprite. Agent: Just a Sprite, got it. And what would you never pair with your Chipotle burrito, and why? User: Nothing that I can think of. Agent: Okay, that's fair. Moving on to the next section, in what situations do you choose your Chipotle burrito most often? Please include details like time pressure, location such as home, work, or commute, the ordering channel like drive-thru or delivery, and who you're with. User: Um usually with friends um so it's usually like a social thing um every once in a while if I have a craving for it um convenience if I'm in the area I'll pick some up. Agent: That's helpful. So, it's often a social choice with friends, or when you have a craving, or for convenience if you're nearby. Could you also tell me about time pressure, the specific location like home, work, or commute, and the ordering channe",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview6.txt",
+    "total_chunks": 11
+  },
+  "client_id": null,
+  "chunk_index": 7,
+  "parent_record_id": "7bbdd4cb-ea9f-41c4-ad88-c8cc6f12ea7d"
+}

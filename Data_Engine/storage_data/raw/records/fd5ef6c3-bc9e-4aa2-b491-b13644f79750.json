@@ -1,0 +1,24 @@
+{
+  "record_id": "fd5ef6c3-bc9e-4aa2-b491-b13644f79750",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.768918",
+  "raw_text": "User: I would prefer Buffalo wingstop.\nAgent: Understood, you prefer the Buffalo wings. Now, let's talk about the Taco Bell item you mentioned, either a taco or a chicken quesadilla. What do you find is better or worse about that compared to your favorite Wingstop Buffalo wings?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "45",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/45.txt",
+    "total_chunks": 22,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 14,
+  "parent_record_id": "94dc8ad1-54d4-42c6-baca-2b6d6e488033"
+}

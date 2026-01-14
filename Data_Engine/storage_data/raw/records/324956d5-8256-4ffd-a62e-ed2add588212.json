@@ -1,0 +1,39 @@
+{
+  "record_id": "324956d5-8256-4ffd-a62e-ed2add588212",
+  "bucket_id": 1,
+  "source_name": "wendys_menu",
+  "source_type": "csv",
+  "brand": "Gravy and Sausage Bowl",
+  "timestamp": null,
+  "ingestion_time": "2025-12-27T02:25:07.246992",
+  "raw_text": "Gravy and Sausage Bowl Breakfast",
+  "structured_fields": {
+    "Item": "Gravy and Sausage Bowl"
+  },
+  "numerical_fields": {
+    "Calories": 450.0,
+    "Fat (g)": 22.0,
+    "Sat Fat (g)": 6.0,
+    "Trans Fat (g)": 0.0,
+    "Cholesterol (mg)": 220.0,
+    "Sodium (mg)": 1260.0,
+    "Total Carb (g)": 50.0,
+    "Dietary Fiber (g)": 4.0,
+    "Sugars (g)": 2.0,
+    "Protein (g)": 12.0,
+    "Weight Watchers": 446.0
+  },
+  "categorical_fields": {
+    "Category": "Breakfast"
+  },
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "dataset_name": "wendys_menu",
+    "row_index": 32,
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Phase_1_Taste_Embedding_Model/data/raw/wendys-menu.csv"
+  },
+  "client_id": null,
+  "chunk_index": null,
+  "parent_record_id": null
+}

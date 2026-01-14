@@ -1,0 +1,24 @@
+{
+  "record_id": "d078170d-ec02-4356-a31f-dfbba4bcda09",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.732882",
+  "raw_text": "User: If it was just messy and just overly just leaky out everywhere, I think that would be that would upset me.\nAgent: I understand. A messy or leaky burrito would certainly be frustrating.\n\nNow, if your favorite Chipotle burrito was unavailable, what would you order instead, including the chain and the specific item?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview6",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview6.txt",
+    "total_chunks": 31,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 11,
+  "parent_record_id": "a48d5c67-b799-4d11-942f-3b6236827fe4"
+}

@@ -1,0 +1,23 @@
+{
+  "record_id": "da59ca40-b27d-4d7d-a363-26ca4370f2a1",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.868788",
+  "raw_text": "for you? User: Yeah, sometimes. And I don't know if it has to do with where they get the chicken or how they fry it, but sometimes with the chicken, since it's little small pieces, and I don't ask. I'm thinking they're pieces of breast meat, but they might be other pieces. But there's like this, sometimes I get a piece that's like really chewy and almost like I can't chew through it at all and I have to spit it back out. And that kind of makes me like kind of nauseous because then I started thinking, well, where'd it come from? Was it made wrong? Is it even chicken? You know, what was that all about? So there's that. And then sometimes they'll overdo the sauce and it's like super tangy, almost like vinegar. And so that's where they have to redo it again, too. Agent: I understand, those are definitely things that would make the experience less enjoyable. If your favorite Panda Express orange chicken meal was unavailable, what would you order instead, and from which chain? User: Um... Ag",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview26.txt",
+    "total_chunks": 8
+  },
+  "client_id": null,
+  "chunk_index": 3,
+  "parent_record_id": "f3c3f8d3-8e42-4e49-b88a-95fc2a854582"
+}

@@ -1,0 +1,24 @@
+{
+  "record_id": "8204e6f0-bb8b-4f02-bb4c-b4fa0e03e9f9",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.752094",
+  "raw_text": "User: I'm honestly not too sure what I would never pair with my fried chicken because I think that, you know, I sort of sometimes do all sorts of things. I might add a sandwich. Might add a salad. I mean, I suppose that, you know, I'm not going to have fried chicken with a fancier meal like, I don't know, some sort of nice pasta or ribs or something like that. So, yeah, if it's fried chicken, then I usually go full out in a fast food kind of style.\nAgent: That makes sense; you tend to stick to a fast-food style when enjoying fried chicken and wouldn't pair it with a more elaborate meal.\n\nMoving on, in what situations do you choose your favorite fried chicken most often? Could you tell me about factors like time pressure, your location such as home, work, or during a commute, how you order it like drive-thru or delivery, and who you're usually with?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview9",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview9.txt",
+    "total_chunks": 15,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 13,
+  "parent_record_id": "1bc8a08c-2dc5-435d-be32-44c66ef19022"
+}

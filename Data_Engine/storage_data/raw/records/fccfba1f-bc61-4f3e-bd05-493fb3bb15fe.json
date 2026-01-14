@@ -1,0 +1,24 @@
+{
+  "record_id": "fccfba1f-bc61-4f3e-bd05-493fb3bb15fe",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.754052",
+  "raw_text": "User: I don't eat McDonald's. I do not eat any other fast food, just McDonald's.\nAgent: Understood, you only eat McDonald's. So, sticking with McDonald's, what do you usually pair with your Big Mac? This could be drinks, sides,...",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "41",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/41.txt",
+    "total_chunks": 39,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 10,
+  "parent_record_id": "3a86faee-b265-401f-89c3-2956bf68e535"
+}

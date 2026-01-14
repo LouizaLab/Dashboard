@@ -1,0 +1,23 @@
+{
+  "record_id": "c4018529-39a6-4dd1-82a4-21a4e912adbb",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.865846",
+  "raw_text": "similar items you also like from any chain? For each one, please tell me what's better or worse compared to your favorite Big Mac. User: It wouldn't be similar but one other one, one other fast food chain that I go to that I like is Panda Express and usually I get the orange chicken with white rice with the side of the cheese rangoon. Agent: Thank you for sharing your preference for Panda Express. While orange chicken is a great choice, I was hoping you could tell me about two or three similar items to the Big Mac that you also enjoy, perhaps other burgers or sandwiches from different fast-food chains. For each, what do you find... User: Yeah, yeah, actually, they, and I haven't been to Burger King for a couple months, but they used to sell, basically, it was really similar to the Big Mac. It was kind of their version. The sauce wasn't quite as tangy, but it kind of had its own taste to it that was still good. So it was really close to the original Big Mac, although I do have to admit",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview11.txt",
+    "total_chunks": 11
+  },
+  "client_id": null,
+  "chunk_index": 4,
+  "parent_record_id": "44b252ef-4792-43c3-9a3f-f1c78eb31a4e"
+}

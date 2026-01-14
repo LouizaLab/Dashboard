@@ -1,0 +1,24 @@
+{
+  "record_id": "3a47afef-cdc4-4555-a314-355d55806efc",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.670026",
+  "raw_text": "User: It's just another thing that I like to eat. I don't press food.\nAgent: Okay, I understand.\n\nNow, could you name two or three similar items you also like from any chain? And for each one, what's better or worse compared to your favorite McDonald's cheeseburger?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview22",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview22.txt",
+    "total_chunks": 23,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 9,
+  "parent_record_id": "deed2ad4-16c9-4967-b168-fdfd906b9174"
+}

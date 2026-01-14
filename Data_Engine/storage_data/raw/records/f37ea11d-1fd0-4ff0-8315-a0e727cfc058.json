@@ -1,0 +1,39 @@
+{
+  "record_id": "f37ea11d-1fd0-4ff0-8315-a0e727cfc058",
+  "bucket_id": 1,
+  "source_name": "wendys_menu",
+  "source_type": "csv",
+  "brand": "Homestyle Chicken Sandwich",
+  "timestamp": null,
+  "ingestion_time": "2025-12-27T02:16:07.077872",
+  "raw_text": "Homestyle Chicken Sandwich Chicken",
+  "structured_fields": {
+    "Item": "Homestyle Chicken Sandwich"
+  },
+  "numerical_fields": {
+    "Calories": 510.0,
+    "Fat (g)": 22.0,
+    "Sat Fat (g)": 4.0,
+    "Trans Fat (g)": 0.0,
+    "Cholesterol (mg)": 70.0,
+    "Sodium (mg)": 1150.0,
+    "Total Carb (g)": 51.0,
+    "Dietary Fiber (g)": 3.0,
+    "Sugars (g)": 6.0,
+    "Protein (g)": 28.0,
+    "Weight Watchers": 492.0
+  },
+  "categorical_fields": {
+    "Category": "Chicken"
+  },
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "dataset_name": "wendys_menu",
+    "row_index": 21,
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Phase_1_Taste_Embedding_Model/data/raw/wendys-menu.csv"
+  },
+  "client_id": null,
+  "chunk_index": null,
+  "parent_record_id": null
+}

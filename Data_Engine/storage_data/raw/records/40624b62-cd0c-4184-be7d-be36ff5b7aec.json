@@ -1,0 +1,24 @@
+{
+  "record_id": "40624b62-cd0c-4184-be7d-be36ff5b7aec",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.674373",
+  "raw_text": "User: If it was cold, for sure. That's really yucky. And then stale is really bad because I've had some where the bun was stale and it was quite nasty. And also if they don't make it to order because I don't like it the way they sell it, I have to order it. I'm special without pickles or onions. And then usually I add extra cheese.\nAgent: I understand that coldness, a stale bun, and not being made to your specific order can really impact your enjoyment. If the Big Mac was unavailable, what would you order instead, including the chain and the specific item? And why would that be the closest replacement for you?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview27",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview27.txt",
+    "total_chunks": 14,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 5,
+  "parent_record_id": "99278a16-fe01-4968-b4c4-38b0d04049cc"
+}

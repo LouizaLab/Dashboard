@@ -1,0 +1,23 @@
+{
+  "record_id": "4f950295-e573-4bb8-96de-fbe6c4ec888f",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.867669",
+  "raw_text": "s coupon was a nice bonus. What would make you permanently change your \"default\" order? What would you need to see happen repeatedly, such as taste, consistency, price, or convenience? User: If the price continued to rise. Agent: So, a continued rise in price would be the main factor that would make you permanently change your default order. That's very clear. How much did a deal influence this choice today? User: It influenced it quite a bit. Agent: Okay, it influenced it quite a bit. Could you explain what kind of deal actually changes your behavior? For example, is it buy-one-get-one, a percentage off, app points, or free delivery? User: Usually app points if I can get a free item with my food. Agent: So, getting a free item through app points is what really changes your behavior. That's good to know. Has your price sensitivity changed in the last two to four weeks? Why or why not? User: Yes, we have less money and things keep getting more expensive so we are on a tight budget. A",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview2.txt",
+    "total_chunks": 12
+  },
+  "client_id": null,
+  "chunk_index": 8,
+  "parent_record_id": "6cb1c839-9316-444a-b7a9-1e6f04a47cad"
+}

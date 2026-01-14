@@ -1,0 +1,24 @@
+{
+  "record_id": "b592133d-df70-49d3-90a0-3a9f24a1cedd",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.832605",
+  "raw_text": "User: My name, my prolific ID is 664-63E4EFB99FBA5A67A010A. My name is Justin.\nAgent: Okay, Justin. Thank you for that.\n\nNow, let's talk about your food preferences. What is your favorite fast-food item, including the chain and the exact item, and why do you like it? Please tell me about its flavor, texture, temperature, smell, and aftertaste.",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "33",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/33.txt",
+    "total_chunks": 22,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 1,
+  "parent_record_id": "aa98a079-d75e-4bbe-84c1-8fdbe78a1de3"
+}

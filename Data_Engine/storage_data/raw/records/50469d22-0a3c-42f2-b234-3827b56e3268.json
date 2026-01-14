@@ -1,0 +1,23 @@
+{
+  "record_id": "50469d22-0a3c-42f2-b234-3827b56e3268",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.869521",
+  "raw_text": "s, or not wanting judgment play a role? Could you give one example? User: It doesn't really ever influence my order unless maybe I'm with someone who specifically doesn't like Chick-fil-A. Agent: Understood. How does social media or hype influence you? What makes you try a trending item versus ignore it? User: I always ignore it because I literally couldn't care less. Agent: Okay, I understand. Your interview is now complete. Thank you for participating!",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview28.txt",
+    "total_chunks": 12
+  },
+  "client_id": null,
+  "chunk_index": 11,
+  "parent_record_id": "28bd9b1c-9686-4e84-8a5f-49c46c8084fd"
+}

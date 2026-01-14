@@ -1,0 +1,54 @@
+Call Transcript:
+
+User: Hello?
+Agent: I'm here to collect information about your food preferences to complete the onboarding so you can get rewarded. To start, please say your name or Prolific ID.
+User: ...
+Agent: Please tell me your name or Prolific ID so we can begin.
+User: 6-3-D-7-B-7-7-6-A-9-9-2-3-F-E-2-A 6 9 D 3 6 B D
+Agent: ...
+User: Hello?
+Agent: Thank you. Now, what is your favorite fast-food item, including the chain and the exact item? Could you also tell me why you like it, focusing on its flavor, texture, temperature, smell, and aftertaste?
+User: Wendy's classic triple has the best meat patties in the game paired with the mayonnaise and the crispy lettuce fresh tomatoes and onions that are always out of this world the textures fuse together with the squared meat it creates happiness I can only explain the taste of a Wendy's classic triple as happiness texture is very firm reminds you that you're eating a piece of meat the buns are very soft the lettuce is crispy the tomatoes aren't soggy and the onions taste like onion
+Agent: That sounds delicious. What are the top two or three things that make the Wendy's Classic Triple "perfect" for you?
+User: The size of the sandwich is a very hearty sandwich. If I eat one sandwich, I won't need to eat another one. Also, the ability to add mustard to the sandwich. I like mustard on my hamburgers, so it makes it better. And if you get the combo, the burger pairs well with the fries, and a small order of spicy chicken nuggets won't hurt either.
+Agent: Okay, I understand. On the flip side, what are the top two or three things that would make the Wendy's Classic Triple "bad" for you? For example, if it were soggy, dry, cold, under-salted, too greasy, or stale?
+User: Stale buns. Tomatoes that are old. Wilted lettuce. But I don't expect these things to happen because Wendy's uses fresh ingredients. If the ingredients weren't fresh and the bread was stale, it would not be a good sandwich.
+Agent: I see. If the Wendy's Classic Triple was unavailable, what would you order instead, including the chain and the specific item? And why would that be the closest replacement for you?
+User: I would probably get a double Whopper from Burger King. The Whopper is also a very hearty sandwich. It packs a punch. Flame broiling from Burger King is very distinct. Gives it a very crispy taste.
+Agent: That's a good alternative. Can you name two or three similar items you also like from any chain? For each one, please tell me what's better or worse compared to your favorite Wendy's Classic Triple.
+User: McDonald's cheeseburger, single cheeseburger, worse, but it's a very solid sandwich. I eat those frequently. Popeye's ghost pepper chicken sandwich, it's not as good as Wendy's, but it's a very solid choice. Good amount of meat, quality dressings, good bun.
+Agent: Thank you for those examples. For the McDonald's cheeseburger and the Popeye's Ghost Pepper Chicken Sandwich, could you tell me a bit more about what's better or worse about them specifically when compared to your favorite Wendy's Classic Triple?
+User: Well, the chicken sandwich is very good, but it's not beef, so you can't really compare them. Although you can compare them for being sandwiches. Popeye's makes chicken, so the fact that they make a chicken sandwich is impressive. But I still may prefer a Wendy's chicken sandwich on the right day. And with the McDonald's hamburger, McDonald's makes good cheeseburgers, but they're not on the same level as Wendy's cheeseburgers. But it's worse because it's just not a Wendy's burger, but it's a solid choice.
+Agent: I understand. What do you usually pair with your Wendy's Classic Triple, such as drinks, sides, or sauces? And what would you never pair it with, and why?
+User: I usually pair it with a strawberry Fanta, uh, spicy chicken nuggets, uh, chocolate chip cookie, uh, medium fries. I probably wouldn't go the route of drinking milk with the burger. Although I cannot say that I never will try it.
+Agent: That's a clear picture. In what situations do you choose the Wendy's Classic Triple most often? Please include details like time pressure, location such as home, work, or commute, the ordering channel like drive-thru or delivery, and who you're with.
+User: I use the app. I'm usually alone. I eat Wendy's Sunday through Sunday. I usually go during the evening. I eat before bed. But I've had ordered for breakfast before. Breakfast is also good
+Agent: Thank you for sharing your routine. How does price change your choice? For example, if the Wendy's Classic Triple cost two dollars more, what would you do? And if there was a deal, what would you do differently?
+User: Wendy's increased their prices probably wouldn't shop there anymore because they would be like the rest of the restaurant industry. I purchased from Wendy's because Wendy's has the best deals and offers and they give you a great amount of money for the food that you buy, a great amount of food for the money that you spend.
+Agent: I understand that value is very important to you when choosing Wendy's. Over the past two weeks, what have been your most common fast-food patterns? This includes when you eat it, what you usually order, and what typically triggers these choices.
+User: I order sandwiches. Sometimes the sandwiches have hamburger meat on them. Sometimes they have deli meat. But I like sandwiches, so I usually order sandwiches for dinner, and I'll eat the sandwich.
+Agent: Thank you for sharing that. Focusing on fast food specifically, what does "good value" mean to you? Could you pick your top two or three factors, such as taste, portion size, speed, nutrition, consistency, or price, and explain how you judge if something is "worth it"?
+User: Portion size. It's all about portion size when it comes to fast food. I want to be able to get a quality amount of food because I know that your restaurant produces quality food. Besides quantity, if I get rewards for purchasing at the restaurant, I consider that value.
+Agent: That's very clear. Now, compared to your last fast-food order, what changed today, if anything? Please pick the biggest driver and explain it, whether it was your mood, cravings, schedule, budget, health goals, social plans, or convenience.
+User: No change. If I can get a bunch of food for $20, I'm there.
+Agent: Okay, I understand that consistency in value is a key driver for you. So, what "mode" are you in today? Are you in a budget, health, treat, convenience, explore, or stressed mode?
+User: Normal mode trying to fill up my stomach without breaking the bank.
+Agent: Understood. When you're in that "normal mode" of trying to fill up your stomach without breaking the bank, what's the first thing that changes in your order?
+User: I try to get a sandwich that's
+Agent: Could you please complete that...
+User: going to sustain me a sandwich that's going to sustain me
+Agent: Thank you for clarifying.
+
+Now, what triggered this order today? Please be specific. Was it a craving, a deal, an ad, someone suggested it, you were nearby, time pressure, you wanted something lighter, or you wanted a treat?
+User: Well, I'm a loyal customer so I try to throw Wendy's business whenever I can
+Agent: I see, so loyalty to Wendy's is a significant trigger for you. Was this particular order planned or spontaneous?
+User: . Spontaneous. Spontaneous.
+Agent: Okay, spontaneous. What would have had to change for you to not get fast food today?
+User: Probably would have had to die.
+Agent: I understand.
+
+Did you switch from your usual chain or usual item today?
+User: Everything was normal
+Agent: Okay, so no switch today. What would make you permanently change your "default" order?
+User: . If they released a new menu item,
+Agent: So, if a new menu item was released, what would you need to see happen repeatedly, such as taste, consistency, price, or convenience, for it to...

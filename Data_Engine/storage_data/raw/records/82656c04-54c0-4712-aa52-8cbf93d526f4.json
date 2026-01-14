@@ -1,0 +1,24 @@
+{
+  "record_id": "82656c04-54c0-4712-aa52-8cbf93d526f4",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.704552",
+  "raw_text": "User: Let's say quality to price ratio.\nAgent: So, for you, good value in fast food comes down to the quality you receive for the price you pay.\n\nNow, let's move on to some other aspects of your fast-food choices. Compared to your last fast-food order, what changed today, if anything? Please pick the biggest driver and explain if it was your mood, cravings, schedule, budget, health goals, social plans, or convenience.",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "39",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/39.txt",
+    "total_chunks": 33,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 17,
+  "parent_record_id": "95c43eb4-c8d6-4cf1-a795-e16d4e88afc0"
+}

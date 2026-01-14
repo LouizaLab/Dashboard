@@ -1,0 +1,24 @@
+{
+  "record_id": "5f11afde-3915-4d00-a73e-f432f1cb7250",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.776746",
+  "raw_text": "User: I think compared to my last fast food order, not really much has changed today and I think the situation was similar it was short on time already out and needed something quick and reliable or the same kind of meal and because I knew exactly what I was getting. The main difference today was just the timing fit into my schedule a little better so decision felt a lot easier when the conditions stay the same at order usually does too.\nAgent: That's helpful to know. So, what \"mode\" are you in today? Are you in a budget, health, treat, convenience, explore, or stressed mode? And what's the first thing that changes in your order when you're in that particular mode?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "46",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/46.txt",
+    "total_chunks": 19,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 14,
+  "parent_record_id": "42485974-cee0-43b1-bfcd-159fb131da89"
+}

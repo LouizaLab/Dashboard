@@ -1,0 +1,24 @@
+{
+  "record_id": "5e5b5d25-6b62-4cc8-b926-632a28b0698a",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.827259",
+  "raw_text": "User: No, it's pretty the same throughout.\nAgent: Understood, so your choice of the In-N-Out cheeseburger is consistent across different situations.\n\nHow does price change your choice? For example, if it cost two dollars more, what would you do? And if there was a deal, what would you do differently?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview13",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview13.txt",
+    "total_chunks": 36,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 10,
+  "parent_record_id": "5a72e79a-a0c4-42b9-8b20-54e1486b68fc"
+}

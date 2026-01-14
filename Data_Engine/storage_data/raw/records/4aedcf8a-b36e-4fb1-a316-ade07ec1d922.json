@@ -1,0 +1,39 @@
+{
+  "record_id": "4aedcf8a-b36e-4fb1-a316-ade07ec1d922",
+  "bucket_id": 1,
+  "source_name": "burger_king_menu",
+  "source_type": "csv",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2025-12-27T02:16:07.066634",
+  "raw_text": null,
+  "structured_fields": {
+    "Item": "Double CROISSAN'WICH with Sausage"
+  },
+  "numerical_fields": {
+    "Calories": 720.0,
+    "Fat Calories": 480.0,
+    "Fat (g)": 54.0,
+    "Saturated Fat (g)": 23.0,
+    "Trans Fat (g)": 1.0,
+    "Cholesterol (mg)": 320.0,
+    "Sodium (mg)": 1620.0,
+    "Total Carb (g)": 31.0,
+    "Dietary Fiber (g)": 0.5,
+    "Sugars (g)": 4.0,
+    "Protein (g)": 29.0
+  },
+  "categorical_fields": {
+    "Category": "Breakfast"
+  },
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "dataset_name": "burger_king_menu",
+    "row_index": 75,
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Phase_1_Taste_Embedding_Model/data/raw/burger-king-menu.csv"
+  },
+  "client_id": null,
+  "chunk_index": null,
+  "parent_record_id": null
+}

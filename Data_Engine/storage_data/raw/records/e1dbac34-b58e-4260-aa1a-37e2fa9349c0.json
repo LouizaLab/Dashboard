@@ -1,0 +1,24 @@
+{
+  "record_id": "e1dbac34-b58e-4260-aa1a-37e2fa9349c0",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.825410",
+  "raw_text": "User: an increase of $1.50 or more would automatically make me change to something else. Taste, probably three strikes and you're out. If I've got it three different times and it's tasted all three different times, I'm done.\nAgent: That's very clear. How much did a deal influence this choice today?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "32",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/32.txt",
+    "total_chunks": 32,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 29,
+  "parent_record_id": "67c11aa1-d698-4af6-bfc4-5f5b3dd28134"
+}

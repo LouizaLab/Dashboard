@@ -1,0 +1,24 @@
+{
+  "record_id": "1b961fcb-cf0e-4011-87e7-0a23053d7502",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.802524",
+  "raw_text": "User: Information about your food preferences.\nAgent: Yes, that's right. To start, could you please tell me...",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "37",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/37.txt",
+    "total_chunks": 60,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 1,
+  "parent_record_id": "bd9a4494-3a92-4fcb-bb36-575404a64316"
+}

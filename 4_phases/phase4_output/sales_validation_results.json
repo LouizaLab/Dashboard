@@ -1,0 +1,103 @@
+{
+  "lead_lag_analysis": {
+    "lag_1d": {
+      "correlation": 0.08775656931271353,
+      "n_observations": 71,
+      "p_value": 0.4667785811785598
+    },
+    "lag_2d": {
+      "correlation": 0.13498130460096922,
+      "n_observations": 64,
+      "p_value": 0.28758084301741926
+    },
+    "lag_3d": {
+      "correlation": -0.010019106308906461,
+      "n_observations": 58,
+      "p_value": 0.9404979240442888
+    },
+    "lag_4d": {
+      "correlation": 0.21424454543620977,
+      "n_observations": 52,
+      "p_value": 0.12722071822399386
+    },
+    "lag_5d": {
+      "correlation": 0.03649460291220388,
+      "n_observations": 46,
+      "p_value": 0.8097204047510782
+    },
+    "lag_6d": {
+      "correlation": 0.018393898826362033,
+      "n_observations": 41,
+      "p_value": 0.9091223526795681
+    },
+    "lag_7d": {
+      "correlation": 0.11104918681149917,
+      "n_observations": 36,
+      "p_value": 0.519070145998535
+    },
+    "lag_8d": {
+      "correlation": -0.09397164353008558,
+      "n_observations": 31,
+      "p_value": 0.6150865658600955
+    },
+    "lag_9d": {
+      "correlation": 0.2606583057238665,
+      "n_observations": 27,
+      "p_value": 0.18912633662608735
+    },
+    "lag_10d": {
+      "correlation": -0.14067287968498382,
+      "n_observations": 23,
+      "p_value": 0.5220316418702333
+    },
+    "lag_11d": {
+      "correlation": -0.33703933289796734,
+      "n_observations": 20,
+      "p_value": 0.14618185215559298
+    },
+    "lag_12d": {
+      "correlation": -0.07029283398168178,
+      "n_observations": 17,
+      "p_value": 0.7886377301132512
+    },
+    "lag_13d": {
+      "correlation": 0.07799881633304075,
+      "n_observations": 14,
+      "p_value": 0.7909801520138264
+    },
+    "lag_14d": {
+      "correlation": -0.17914905931475902,
+      "n_observations": 11,
+      "p_value": 0.5981493687818008
+    },
+    "best_lag": 9,
+    "best_correlation": 0.2606583057238665,
+    "meets_threshold": "False"
+  },
+  "variance_explained": {
+    "lag_days": 9,
+    "r2_overall": 0.06794275234283675,
+    "r2_by_category": {
+      "coffee_drink": -0.5762683266633115,
+      "energy_drink": 0.22833186239056902,
+      "water_enhanced": -0.4268075657042454
+    },
+    "coefficient": 1075.403157790877,
+    "intercept": -49.15696338181465,
+    "n_observations": 27,
+    "meets_threshold": false
+  },
+  "rank_correlation": {
+    "lag_days": 7,
+    "spearman_correlation": 0.16422136422136424,
+    "p_value": 0.3385303243991573,
+    "n_observations": 36,
+    "meets_threshold": "False"
+  },
+  "validation_passed": false,
+  "summary": {
+    "variance_explained_ok": false,
+    "lead_lag_ok": "False",
+    "rank_correlation_ok": "False"
+  }
+}

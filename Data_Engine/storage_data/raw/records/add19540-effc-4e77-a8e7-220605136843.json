@@ -1,0 +1,24 @@
+{
+  "record_id": "add19540-effc-4e77-a8e7-220605136843",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.674142",
+  "raw_text": "User: I would say definitely its flavor. The texture is part of it too. The smell doesn't really make a difference. What else? I like the tang from the sauce that they put on it, so sometimes what I've meant to do actually was try to order a double cheeseburger with that sauce on it, because I guess you get more meat, but either way it's still a Big Mac. I like just kind of how it all mushes together too.\nAgent: That's interesting about the sauce and how it all comes together. What are the top two or three things that make the Big Mac \"perfect\" for you? For example, is it a crunchy coating, a specific sauce balance, the heat level, or the bun texture?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview27",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview27.txt",
+    "total_chunks": 14,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 3,
+  "parent_record_id": "99278a16-fe01-4968-b4c4-38b0d04049cc"
+}

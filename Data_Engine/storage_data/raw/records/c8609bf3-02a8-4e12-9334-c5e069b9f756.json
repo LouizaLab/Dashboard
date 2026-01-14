@@ -1,0 +1,23 @@
+{
+  "record_id": "c8609bf3-02a8-4e12-9334-c5e069b9f756",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.868258",
+  "raw_text": "to say. So like one of those wraps, chicken wraps. Agent: Okay, so a Chick-fil-A crispy or spicy chicken sandwich is one. You appreciate its consistent chicken taste, though you sometimes prefer McDonald's sides and fries. And for the Chick-fil-A chicken wrap, how does that compare to your favorite Double Quarter Pounder with Cheese, in terms of what's better or worse? User: I think it compares to, from what's better from worse, it compares really just, I think if anything better probably because I do like the breakfast the best. Maybe that might even be my top really. Okay. Agent: That's interesting that the Chick-fil-A breakfast wrap might even be your top choice. Moving on, what do you usually pair with your Double Quarter Pounder with Cheese? This could include drinks, sides, or sauces. And what would you never pair it with, and why? User: It usually fries and then drink like a Pepsi and a large fry. Maybe get some honey mustard sauce or creamy, some creamy sriracha sauce. What",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview23.txt",
+    "total_chunks": 12
+  },
+  "client_id": null,
+  "chunk_index": 4,
+  "parent_record_id": "77b85ac2-dbd2-465a-8dcb-6362a88d094f"
+}

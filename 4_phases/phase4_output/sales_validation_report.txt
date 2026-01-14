@@ -1,0 +1,44 @@
+============================================================
+Phase 4.2: Sales/POS Validation Report
+============================================================
+
+Generated: 2026-01-07 07:08:43
+
+## Lead-Lag Correlation Analysis
+
+  Best Lag: 9 days
+  Best Correlation: 0.2607
+  Meets Threshold: ❌
+
+  Top 5 Lags:
+    9 days: 0.2607
+    4 days: 0.2142
+    2 days: 0.1350
+    7 days: 0.1110
+    1 days: 0.0878
+
+## Variance Explained
+
+  Overall R²: 0.0679
+  Coefficient: 1075.4032
+  Meets Threshold (R² >= 0.2): ❌
+
+  R² by Category:
+    coffee_drink: -0.5763
+    energy_drink: 0.2283
+    water_enhanced: -0.4268
+
+## Rank Correlation
+
+  Spearman Correlation: 0.1642
+  P-value: 0.3385
+  Meets Threshold: ❌
+
+## Overall Validation
+
+  Validation Passed: ❌ NO
+
+  Summary:
+    Variance Explained OK: ❌
+    Lead-Lag Correlation OK: ❌
+    Rank Correlation OK: ❌

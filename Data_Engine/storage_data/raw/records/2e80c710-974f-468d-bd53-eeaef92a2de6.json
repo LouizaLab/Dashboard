@@ -1,0 +1,23 @@
+{
+  "record_id": "2e80c710-974f-468d-bd53-eeaef92a2de6",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.870303",
+  "raw_text": "ing really changes, what \"mode\" would you say you are in today? For example, budget, health, treat, convenience, explore, or stressed? And what's the first thing that changes in your order when you are in that particular mode? User: Repeat the question. Agent: Certainly. What \"mode\" are you in today? For example, are you in a budget, health, treat, convenience, explore, or stressed mode? And what's the first thing that changes in your order when you are in that particular mode? User: I think today I'm just kind of in convenience mode it's just something that I didn't feel like cooking and it's just easy to order a pizza. Agent: Okay, so convenience is the mode today. When you're in convenience mode, what's the first thing that changes in your order? User: Really nothing it's just the standard order. Agent: I understand. What triggered this order today? Please be specific. Was it a craving, a deal, an ad, someone suggested it, you were nearby, time pressure, you wanted something lighter",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview5.txt",
+    "total_chunks": 10
+  },
+  "client_id": null,
+  "chunk_index": 6,
+  "parent_record_id": "9d0a0a1b-b297-4a62-8430-2af72da9793c"
+}

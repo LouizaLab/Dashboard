@@ -1,0 +1,23 @@
+{
+  "record_id": "fbb27c4a-b6d1-47bb-9e12-15bb07aa4fc0",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.866174",
+  "raw_text": "Call Transcript: User: I'm going to go to the mall and take a picture. Agent: I am here to collect information about your food preferences to complete the onboarding so you can get rewarded. To start, please say your name and/or Prolific ID. User: Jay. Agent: Thank you, Jay. What is your favorite fast-food item, including the chain and the exact item? And could you tell me why you like it? User: In-N-Out Burger, cheeseburgers because they are good. Agent: Okay, In-N-Out Burger cheeseburgers. Could you tell me a bit more about what makes them good for you? I'm interested in details like the flavor, texture, temperature, smell, and even the aftertaste. User: I enjoy the flavor of the Thousand Island sauce that is put on the burgers Agent: That's interesting. So the Thousand Island sauce is a big part of the appeal. What are the top two or three things that make that In-N-Out cheeseburger \"perfect\" for you? For example, is it a crunchy coating, a specific sauce balance, the heat level, o",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview13.txt",
+    "total_chunks": 12
+  },
+  "client_id": null,
+  "chunk_index": 0,
+  "parent_record_id": null
+}

@@ -1,0 +1,23 @@
+{
+  "record_id": "3c2dcaf4-9d6e-4e8b-a61a-c9146ff2d735",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.868596",
+  "raw_text": "er: Not at the moment Agent: Okay, I understand you don't have an example at the moment. If a new item were to become repeat-worthy for you, what would usually be the reason? For example, would it taste... User: How much longer is it? Agent: We are nearing the end, thank you for your patience. If a new item were to become repeat-worthy for you, what would usually be the reason? For example, would it taste better than your default, feel like a treat, fit... User: It would taste better. Agent: Thank you for that. So, if a new item tasted better, that would make it repeat-worthy for you. What is your \"autopilot\" order and why is it your default? Is it because of taste, consistency, speed, price, location, or ease of ordering? User: Because of taste and ease of order. Agent: Okay, taste and ease of order make it your autopilot. If you get bored of your usual, what do you switch to? Is it a new flavor, a new chain, a different format like a wrap versus a burger, or a different side or d",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview25.txt",
+    "total_chunks": 12
+  },
+  "client_id": null,
+  "chunk_index": 10,
+  "parent_record_id": "930845f1-0918-42cc-a70f-caea6918e705"
+}

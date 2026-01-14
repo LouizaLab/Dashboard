@@ -1,0 +1,42 @@
+{
+  "record_id": "69288198-70fd-4502-8493-1c831912354e",
+  "bucket_id": 1,
+  "source_name": "mcd_menu_alt",
+  "source_type": "csv",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2025-12-27T02:25:07.222886",
+  "raw_text": null,
+  "structured_fields": {
+    "name": "McSpicy Paneer\u00ae",
+    "serving_size": "199g",
+    "ingredients": "Quarter pounder bun crown, Shredded lettuce, Tandoori mayo, Spicy paneer patty, Quarter pounder bun heel",
+    "tag": "Let paneer surprise you.",
+    "description": "Crispy and spicy paneer patty with creamy tandoori sauce and crispy lettuce topping."
+  },
+  "numerical_fields": {
+    "energy": 652.76,
+    "protein": 20.29,
+    "total_fat": 39.45,
+    "sat_fat": 17.12,
+    "trans_fat": 0.18,
+    "chol": 21.85,
+    "carbs": 52.33,
+    "total_sugar": 8.35,
+    "added_sugar": 5.27,
+    "sodium": 1074.58
+  },
+  "categorical_fields": {
+    "allergy": "Cereal containing gluten, Milk, Soya"
+  },
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "dataset_name": "mcd_menu_alt",
+    "row_index": 24,
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Phase_1_Taste_Embedding_Model/data/raw/mcd.csv"
+  },
+  "client_id": null,
+  "chunk_index": null,
+  "parent_record_id": null
+}

@@ -1,0 +1,23 @@
+{
+  "record_id": "ac718530-f933-4825-8bb0-fbd75c5c56eb",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.865862",
+  "raw_text": "oing to be in my bag or something like that, I didn't see any of them. So I'm not sure if they were going to sell anything but they were selling some things. So when you eat it, you kind of have to take your time because if you go at it too fast, you might choke on it. That and plus is if it's not made right, it can be really dry and when you have that much of a sandwich that's dry, it's kind of hard to eat. And then if it sits in the wrapper too long, it's like all the cheese ends up on the wrapper and it's kind of a letdown. Agent: Thank you for those detailed comparisons. It sounds like consistency and preparation are very important to you. What do you usually pair with your Big Mac, such as drinks, sides, or sauces? And what would you never pair it with, and why? User: Usually I will pair it with typically I'll order a drink like a Coke, which their Coke on ice is pretty good. And then and then I don't like sometimes I'll get their fries. I'm not really a their fries aren't bad. I",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview11.txt",
+    "total_chunks": 11
+  },
+  "client_id": null,
+  "chunk_index": 8,
+  "parent_record_id": "44b252ef-4792-43c3-9a3f-f1c78eb31a4e"
+}

@@ -1,0 +1,23 @@
+{
+  "record_id": "015cb076-40ba-4aa4-889b-a4b0fc543d29",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.866496",
+  "raw_text": "at would have had to change for you... User: That's it nothing would have changed I would have got a Big Mac if they didn't have breakfast time. Agent: So, if Big Macs were available, you would have gotten one. Did you switch... User: Yes. Agent: Okay, you switched. What exactly caused that switch today? Was it a deal, a new item, boredom, a bad experience, health, price,... User: None of that. I just couldn't get a Big Mac that's all. Agent: I understand the switch was solely because the Big Mac wasn't available during breakfast hours. What would make you permanently change your \"default\" order, which is the Big Mac? What would you need to see... User: If I could get like four McGriddles for four dollars Agent: So, a deal like four McGriddles for four dollars would make you consider a permanent change. How much did a deal influence your choice today, specifically for the McGriddle? User: None. None at all. Agent: Understood, no deal influenced your choice today. What kind of deal ac",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview15.txt",
+    "total_chunks": 13
+  },
+  "client_id": null,
+  "chunk_index": 9,
+  "parent_record_id": "f1fd0055-5ec4-40f3-bc6a-48afb005f6d4"
+}

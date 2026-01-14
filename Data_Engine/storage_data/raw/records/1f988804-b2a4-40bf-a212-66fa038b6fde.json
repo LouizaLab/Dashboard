@@ -1,0 +1,23 @@
+{
+  "record_id": "1f988804-b2a4-40bf-a212-66fa038b6fde",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.867370",
+  "raw_text": "Call Transcript: User: ... Agent: I'm here to collect information about your food... User: Information about your food preferences. Agent: Yes, that's right. To start, could you please tell me... User: To start, could you please tell me... Sorry, you're cutting up. Agent: Oh, I apologize for that. I'll try to speak more clearly... User: Try to speak more clearly. Agent: Thank you for letting me know. To start, could you please say your name and/or Prolific ID? User: Could you please say your name and or prolific ID? Agent: I apologize if there was a misunderstanding. I was asking for your name and/or... User: I apologize if there was a misunderstanding. I was asking for your name and or... Wellio Agent: Thank you, Wellio. It's nice to meet you. Now,... User: It's nice to meet you. Now, let... Agent: Now, let's move on to your food preferences. What is your favorite fast-food item, including the chain and the exact item? And could you tell me why you like it? User: My favorite fast fo",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview19.txt",
+    "total_chunks": 14
+  },
+  "client_id": null,
+  "chunk_index": 0,
+  "parent_record_id": null
+}

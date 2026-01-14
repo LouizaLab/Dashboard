@@ -1,0 +1,23 @@
+{
+  "record_id": "5160d33c-d514-45a2-a9c0-a8587d644f48",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.870884",
+  "raw_text": "one-in fried chicken. Now, what do you usually pair with your favorite fried chicken from Church's? This could include drinks, sides, sauces, or even dessert. And on the flip side, what would you absolutely never pair it with, and why? User: Sorry, can you repeat that? Agent: Certainly. What do you usually pair with your favorite fried chicken from Church's? Think about drinks, sides, sauces, or even dessert. And what would you never pair it with, and why? User: I would usually pair it with something like if it's spicy, then I don't really need any sauce. If it's not spicy, to be honest, if it's just fried chicken like bone-in chicken, I don't oftentimes have a sauce. Maybe occasionally some buffalo sauce or so. I do like having fries, although fries adds additional calories. So sometimes I might opt just for more chicken as opposed to having fries. And I usually do get a soft drink. And soft drink, I would get like a Diet Coke or a Diet Pepsi. Agent: Thank you for sharing your usual",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview9.txt",
+    "total_chunks": 11
+  },
+  "client_id": null,
+  "chunk_index": 7,
+  "parent_record_id": "b6abb3dc-02c0-4403-832f-3101e8d6267b"
+}

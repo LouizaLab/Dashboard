@@ -1,0 +1,39 @@
+{
+  "record_id": "c8f446d6-729f-48a4-9edb-3ba05f37edfc",
+  "bucket_id": 1,
+  "source_name": "burger_king_menu",
+  "source_type": "csv",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2025-12-27T02:16:07.066458",
+  "raw_text": null,
+  "structured_fields": {
+    "Item": "Fully Loaded CROISSAN'WICH"
+  },
+  "numerical_fields": {
+    "Calories": 630.0,
+    "Fat Calories": 370.0,
+    "Fat (g)": 42.0,
+    "Saturated Fat (g)": 18.0,
+    "Trans Fat (g)": 1.0,
+    "Cholesterol (mg)": 310.0,
+    "Sodium (mg)": 1810.0,
+    "Total Carb (g)": 32.0,
+    "Dietary Fiber (g)": 0.5,
+    "Sugars (g)": 5.0,
+    "Protein (g)": 31.0
+  },
+  "categorical_fields": {
+    "Category": "Breakfast"
+  },
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "dataset_name": "burger_king_menu",
+    "row_index": 73,
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Phase_1_Taste_Embedding_Model/data/raw/burger-king-menu.csv"
+  },
+  "client_id": null,
+  "chunk_index": null,
+  "parent_record_id": null
+}

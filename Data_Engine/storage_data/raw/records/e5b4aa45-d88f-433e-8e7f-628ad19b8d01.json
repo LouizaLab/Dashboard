@@ -1,0 +1,24 @@
+{
+  "record_id": "e5b4aa45-d88f-433e-8e7f-628ad19b8d01",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.709906",
+  "raw_text": "User: The only thing that's changed is less money so I don't eat fast food as often.\nAgent: Understood. So, the main change affecting your fast-food choices is having less money, which means you're eating it less frequently.\n\nNow, let's talk about novelty versus routine. When do you try new items versus sticking to your usual?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview2",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview2.txt",
+    "total_chunks": 31,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 28,
+  "parent_record_id": "89414df8-139e-4b72-9450-a29a8a41b846"
+}

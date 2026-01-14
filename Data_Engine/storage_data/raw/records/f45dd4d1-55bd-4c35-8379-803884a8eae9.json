@@ -1,0 +1,42 @@
+{
+  "record_id": "f45dd4d1-55bd-4c35-8379-803884a8eae9",
+  "bucket_id": 1,
+  "source_name": "mcd_menu_alt",
+  "source_type": "csv",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2025-12-27T02:25:07.221329",
+  "raw_text": null,
+  "structured_fields": {
+    "name": "Fillet-O-Fish\u00ae",
+    "serving_size": "136g",
+    "ingredients": "Steamed regular bun, Chunky tartar mayo, Fish fillet patty, Cheese",
+    "tag": "This one's a great catch.",
+    "description": "Made with Alaskan Pollock sourced from sustainable fisheries; topped with a melty American cheese slice and creamy tartar sauce; and served on a soft, steamed bun."
+  },
+  "numerical_fields": {
+    "energy": 348.11,
+    "protein": 15.44,
+    "total_fat": 14.16,
+    "sat_fat": 5.79,
+    "trans_fat": 0.21,
+    "chol": 32.83,
+    "carbs": 38.85,
+    "total_sugar": 5.58,
+    "added_sugar": 3.54,
+    "sodium": 530.54
+  },
+  "categorical_fields": {
+    "allergy": "Cereal containing gluten, Milk, Egg, Fish, Soya"
+  },
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "dataset_name": "mcd_menu_alt",
+    "row_index": 12,
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Phase_1_Taste_Embedding_Model/data/raw/mcd.csv"
+  },
+  "client_id": null,
+  "chunk_index": null,
+  "parent_record_id": null
+}

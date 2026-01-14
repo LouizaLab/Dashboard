@@ -1,0 +1,39 @@
+{
+  "record_id": "b8c8525e-688b-4167-8175-9fe02734247b",
+  "bucket_id": 1,
+  "source_name": "burger_king_menu",
+  "source_type": "csv",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2025-12-27T02:25:07.242390",
+  "raw_text": null,
+  "structured_fields": {
+    "Item": "Chicken Club Salad w/o dressing"
+  },
+  "numerical_fields": {
+    "Calories": 670.0,
+    "Fat Calories": 350.0,
+    "Fat (g)": 40.0,
+    "Saturated Fat (g)": 13.0,
+    "Trans Fat (g)": 0.0,
+    "Cholesterol (mg)": 105.0,
+    "Sodium (mg)": 1610.0,
+    "Total Carb (g)": 82.0,
+    "Dietary Fiber (g)": 2.0,
+    "Sugars (g)": 3.0,
+    "Protein (g)": 45.0
+  },
+  "categorical_fields": {
+    "Category": "Salads & Sides"
+  },
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "dataset_name": "burger_king_menu",
+    "row_index": 140,
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Phase_1_Taste_Embedding_Model/data/raw/burger-king-menu.csv"
+  },
+  "client_id": null,
+  "chunk_index": null,
+  "parent_record_id": null
+}

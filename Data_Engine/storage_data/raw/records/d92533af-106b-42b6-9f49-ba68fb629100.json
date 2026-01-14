@@ -1,0 +1,24 @@
+{
+  "record_id": "d92533af-106b-42b6-9f49-ba68fb629100",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.675125",
+  "raw_text": "User: Okay. On the Burger King one, I think it's kind of better because you get more sandwich for your dollar. And plus, it's still really pretty good. The drawback, though, that I've noticed is that they don't always keep it on the menu because I remember I got it not too long ago but then before that I asked about it and they said they didn't have it. So I guess it's not a consistent thing that they have on the menu or maybe it's just at certain restaurants. I don't know. But that's a big problem because, I mean, if you're not going to keep it on the menu all the time, how am I supposed to order it? Other than that, I mean, it's great. So that's the only really, like, drawback. For Wendy's, besides the price, first of all, it's really good because, I mean, you do get a big sandwich. You know? Yeah. It's expensive. But you can't just go and buy one at a time. Right? And so we're going to have to make sure that we're getting as many people as possible. But you do kind of get your money's worth. However, on the other hand, though, to be honest with you, it is pretty big and so when I was looking for something that was going to be in my bag or something like that, I didn't see any of them. So I'm not sure if they were going to sell anything but they were selling some things. So when you eat it, you kind of have to take your time because if you go at it too fast, you might choke on it. That and plus is if it's not made right, it can be really dry and when you have that much of a sandwich that's dry, it's kind of hard to eat. And then if it sits in the wrapper too long, it's like all the cheese ends up on the wrapper and it's kind of a letdown.\nAgent: Thank you for those detailed comparisons. It sounds like consistency and preparation are very important to you.\n\nWhat do you usually pair with your Big Mac, such as drinks, sides, or sauces? And what would you never pair it with, and why?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview27",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview27.txt",
+    "total_chunks": 14,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 11,
+  "parent_record_id": "99278a16-fe01-4968-b4c4-38b0d04049cc"
+}

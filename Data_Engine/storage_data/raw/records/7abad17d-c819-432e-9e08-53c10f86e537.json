@@ -1,0 +1,23 @@
+{
+  "record_id": "7abad17d-c819-432e-9e08-53c10f86e537",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.867124",
+  "raw_text": "u order a large pizza, it's going to be much bigger than the Mexican pizza from Taco Bell. What's worse is, I guess, it doesn't hit the spot as much as a Mexican pizza for me. They're good, but not my favorite. Agent: That makes sense. Now, what do you usually pair with your Mexican Pizza? This could include drinks, sides, or sauces. And what would you never pair it with, and why? User: I usually pair it with a soda or a sweet tea. I think something that I would never pair it with is maybe a juice because I don't think the flavors would meld together really well. Agent: Thank you. In what situations do you choose the Mexican Pizza most often? Please include details like time pressure, location such as home, work, or commute, the ordering channel like drive-thru or delivery, and who you're with. User: Typically, I go with my family and I'll pick it up or they'll bring it home or maybe someone in my family will bring it home. And I choose it because it's a store that's close to where we",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview18.txt",
+    "total_chunks": 10
+  },
+  "client_id": null,
+  "chunk_index": 5,
+  "parent_record_id": "cc9495dc-30ce-4277-b912-e84e4662cd15"
+}

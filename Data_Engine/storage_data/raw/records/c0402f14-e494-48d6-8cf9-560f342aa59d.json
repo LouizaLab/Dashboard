@@ -1,0 +1,24 @@
+{
+  "record_id": "c0402f14-e494-48d6-8cf9-560f342aa59d",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.681641",
+  "raw_text": "User: How much longer is it?\nAgent: We are nearing the end, thank you for your patience.\n\nIf a new item were to become repeat-worthy for you, what would usually be the reason? For example, would it taste better than your default, feel like a treat, fit...",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview25",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview25.txt",
+    "total_chunks": 36,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 29,
+  "parent_record_id": "a063913f-2f38-4288-8391-282e73daa401"
+}

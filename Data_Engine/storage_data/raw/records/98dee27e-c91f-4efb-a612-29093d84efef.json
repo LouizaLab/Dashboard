@@ -1,0 +1,23 @@
+{
+  "record_id": "98dee27e-c91f-4efb-a612-29093d84efef",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.870765",
+  "raw_text": "if I were to get fast food, it would probably be kind of just at an odd hour kind of between lunch and dinner at like four or five p.m. Or kind of late night, as I mentioned, when food isn't easily accessible. Agent: Thanks for clarifying, Sean. So, you're in a health mode right now, and fast food would typically be for those odd hours when other options aren't available. When you're in this \"health mode,\" what's the first thing that changes in your fast-food order? User: ... Agent: Are you still there, Sean? User: Yep Agent: Great, thanks for letting me know, Sean. When you're in this \"health mode,\" what's the first thing that changes in your fast-food order? User: I don't order fast food at all. Agent: Understood, Sean. So, when you're in a health mode, fast food is off the table entirely. That's a clear change. Now, let's think about a time when you do order fast food. What typically triggers that order? Could you be specific, like a craving, a deal, an ad, someone suggested it,",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview8.txt",
+    "total_chunks": 11
+  },
+  "client_id": null,
+  "chunk_index": 9,
+  "parent_record_id": "a3318d9c-f9af-4c79-a599-3db343b1df93"
+}

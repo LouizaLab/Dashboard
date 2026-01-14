@@ -1,0 +1,24 @@
+{
+  "record_id": "b26ace1a-e263-4e08-ad86-e1ee18cf7499",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.830082",
+  "raw_text": "User: Because of taste and ease of order.\nAgent: Okay, taste and ease of order make it your autopilot.\n\nIf you get bored of your usual, what do you switch to? Is it a new flavor, a new chain, a different format like a wrap versus a burger, or a different side or drink? What scratches that itch for something different?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview13",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview13.txt",
+    "total_chunks": 36,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 31,
+  "parent_record_id": "5a72e79a-a0c4-42b9-8b20-54e1486b68fc"
+}

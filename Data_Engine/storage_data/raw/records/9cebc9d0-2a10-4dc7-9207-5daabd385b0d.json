@@ -1,0 +1,23 @@
+{
+  "record_id": "9cebc9d0-2a10-4dc7-9207-5daabd385b0d",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.870393",
+  "raw_text": "very flavorful and satisfying. The texture is nice as well. Like it has a good mouthfeel and there's no aftertaste to it. It's just an overall satisfying burrito, I would say. Agent: That sounds wonderful. What are the top two or three things that make this Chipotle burrito \"perfect\" for you? User: How filling it is and the fact that it's so big that I can have two meals out of it. Agent: Those are excellent points. Is there anything else that makes it perfect for you, perhaps related to the customization options you mentioned earlier? User: I do like the customization options being able to add guacamole, pico, sour cream all the add-ons. There are several add-ons to choose from so I do like the ability to be able to choose those. Agent: That's very helpful to know. Now, on the flip side, what are the top two or three things that would make your Chipotle burrito \"bad\"? For example, if it were soggy, dry, or cold? User: Absolutely if it were soggy I would not want to eat it. I feel lik",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview6.txt",
+    "total_chunks": 11
+  },
+  "client_id": null,
+  "chunk_index": 1,
+  "parent_record_id": "7bbdd4cb-ea9f-41c4-ad88-c8cc6f12ea7d"
+}

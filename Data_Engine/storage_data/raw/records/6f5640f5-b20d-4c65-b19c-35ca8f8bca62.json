@@ -1,0 +1,24 @@
+{
+  "record_id": "6f5640f5-b20d-4c65-b19c-35ca8f8bca62",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.708112",
+  "raw_text": "User: I don't eat it as much lately because we're on a budget and I'm trying not to spend money. If I get a craving, usually during the lunchtime, I'll go once every two weeks.\nAgent: Thank you for sharing that, Sarah. It's helpful to understand how your budget influences your choices.\n\nNow, what does \"good value\" mean to you in fast food? Please pick your top two or three factors from taste, portion size, speed, nutrition, consistency, or price, and explain how you judge if something is \"worth it.\"",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview2",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview2.txt",
+    "total_chunks": 31,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 12,
+  "parent_record_id": "89414df8-139e-4b72-9450-a29a8a41b846"
+}

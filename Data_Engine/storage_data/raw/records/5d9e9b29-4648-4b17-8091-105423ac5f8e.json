@@ -1,0 +1,23 @@
+{
+  "record_id": "5d9e9b29-4648-4b17-8091-105423ac5f8e",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.869816",
+  "raw_text": "you can like, you know, save up points and get free product. So that's kind of how I justify it. Agent: That's very insightful. It sounds like you're already quite price-sensitive with fast food. If there was a deal on the Big Mac, what would you do differently? User: If there was a deal, I would probably get it a little bit more expensive Agent: Could you clarify what you mean by \"a little bit more expensive\" in that context? Do you mean you would be more likely to buy it, or perhaps buy more of it, if there was a deal? User: . I would probably buy it more often if there was a deal and they lowered prices. Agent: Thank you for clarifying. So, a deal or lower prices would encourage you to buy it more often. Now, let's shift to what \"good value\" means to you in fast food. Could you pick your top two or three factors, such as taste, portion size, speed, nutrition, consistency, or price, and explain how you judge if something is \"worth it\"? User: I would say if it fills me up and it's a",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview3.txt",
+    "total_chunks": 11
+  },
+  "client_id": null,
+  "chunk_index": 7,
+  "parent_record_id": "763b6b14-78e3-4d1d-9738-7fff2af6b166"
+}

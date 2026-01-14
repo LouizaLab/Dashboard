@@ -1,0 +1,24 @@
+{
+  "record_id": "56685a64-d601-4f09-8e46-48139dc0a979",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.735614",
+  "raw_text": "User: Actually, actually that's incorrect. Let me give you the correct prolific ID. That ID is 64 lowercase d 6 3 lowercase b 117 lowercase d 0 lowercase f lowercase c lowercase f lowercase c 1 lowercase c lowercase d 8 lowercase d 69 34.\nAgent: Thank you for providing the corrected Prolific ID. I have noted that down.\n\nNow, moving on, could you please tell me what your favorite fast-food item is, including the chain and the exact item? And what makes you like it so much?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "43",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/43.txt",
+    "total_chunks": 21,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 3,
+  "parent_record_id": "62ea0a62-30c7-451c-a40e-12d65a3a1963"
+}

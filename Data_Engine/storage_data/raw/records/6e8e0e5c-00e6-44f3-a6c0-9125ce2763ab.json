@@ -1,0 +1,24 @@
+{
+  "record_id": "6e8e0e5c-00e6-44f3-a6c0-9125ce2763ab",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.836304",
+  "raw_text": "User: I don't have another preference.\nAgent: Okay, I understand you don't have another preference if your favorite is unavailable.\n\nMoving on, can you name two or three similar items you also like from any chain? For each one, could you tell me what's better or worse compared to your favorite In-N-Out cheeseburger?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "31",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/31.txt",
+    "total_chunks": 36,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 6,
+  "parent_record_id": "b8eed46d-a364-478a-a2e3-13621c355a9d"
+}

@@ -1,0 +1,24 @@
+{
+  "record_id": "c8879ebf-81e9-4cb8-9afe-6ad5aed63502",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.774804",
+  "raw_text": "User: So basically I would pair it with the fries. You know, I think fries add that warm, salty crunch and the milkshake balances everything out with something cold and sweet. And let's see what else. I wouldn't pair it with soda just because I find their soda to be overly sweet. It fights the burger instead of complimenting it. Definitely too much sugar and too much fizz. I would maybe take the lemonade. The lemonade is pretty good.\nAgent: That's very clear, thank you. Moving on, in what situations do you choose this double-double most often? Could you tell me about the circumstances, like if it's due to time pressure, your location, how you order it, or who you're with?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "46",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/46.txt",
+    "total_chunks": 19,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 3,
+  "parent_record_id": "42485974-cee0-43b1-bfcd-159fb131da89"
+}

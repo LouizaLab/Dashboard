@@ -1,0 +1,24 @@
+{
+  "record_id": "ba2d0f24-7c51-4622-84e3-0b0252cad1be",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.733902",
+  "raw_text": "User: The fresh crisp lettuce, the mayo and ketchup, the pickles. It's pretty big in size so it's pretty filling just like the burrito at Chipotle.\nAgent: That's a good description of what makes the Whopper appealing.\n\nNow, what do you usually pair with your Chipotle burrito? This could include drinks, sides, or sauces.",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview6",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview6.txt",
+    "total_chunks": 31,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 21,
+  "parent_record_id": "a48d5c67-b799-4d11-942f-3b6236827fe4"
+}

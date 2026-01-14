@@ -1,0 +1,23 @@
+{
+  "record_id": "3154668e-55ca-49bb-89f4-4b327488f0a9",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.870314",
+  "raw_text": "n two to four weeks ago? Why or why not? User: I am sometimes. I tried. Not always, but I try Agent: When you are trying to eat healthier, what specific rule are you following? For example, less fried food, fewer calories, more protein, or no soda? User: Less fried food, more protein, less sugar, less oil. Agent: What recent change affected your eating, such as a gym routine, diet plan, travel, stress, or schedule, and what did it change in your fast-food choices? User: I'd say probably maybe stress. I'm not sure.",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview5.txt",
+    "total_chunks": 10
+  },
+  "client_id": null,
+  "chunk_index": 9,
+  "parent_record_id": "9d0a0a1b-b297-4a62-8430-2af72da9793c"
+}

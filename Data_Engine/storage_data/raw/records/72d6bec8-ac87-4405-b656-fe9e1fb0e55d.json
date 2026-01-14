@@ -1,0 +1,24 @@
+{
+  "record_id": "72d6bec8-ac87-4405-b656-fe9e1fb0e55d",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.838556",
+  "raw_text": "User: No I am not.\nAgent: Understood, you are not trying to eat healthier than two to four weeks ago.\n\nWhat specific rule are you following, if any, regarding your food choices? For example, less fried food, fewer calories,...",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "31",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/31.txt",
+    "total_chunks": 36,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 25,
+  "parent_record_id": "b8eed46d-a364-478a-a2e3-13621c355a9d"
+}

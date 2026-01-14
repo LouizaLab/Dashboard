@@ -1,0 +1,24 @@
+{
+  "record_id": "00803478-3776-439e-aa69-2a9dbf800e32",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.797174",
+  "raw_text": "User: Because it's really good and it's always fairly fresh and I know what it tastes like and it's ready quickly.\nAgent: Thank you. If you get bored of your usual Chick-fil-A chicken sandwich, what do you switch to? Is it a new flavor, a new chain, a different format like a wrap versus a burger, or a different side or drink? What scratches that itch for something different?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview28",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview28.txt",
+    "total_chunks": 43,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 39,
+  "parent_record_id": "1940e73c-7457-4f0e-96e6-ebd8700cb728"
+}

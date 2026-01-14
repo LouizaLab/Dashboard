@@ -1,0 +1,23 @@
+{
+  "record_id": "01c72539-1b75-4dae-983a-c40b87dd4684",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.865627",
+  "raw_text": "No worries at all. Let's move on to the next question. In what situations do you choose your Chick-fil-A chicken sandwich most often? Please include details like time pressure, location such as home, work, or commute, the ordering channel like drive-thru or delivery, and who you're with. User: Um I'm usually either by myself or with my boyfriend and I always use the app to order um and I get it through the drive thru and it's usually when we're on the go somewhere. Agent: Thank you for sharing that. How does price change your choice? For example, if your favorite item cost two dollars more, what would you do? User: I probably wouldn't buy it anymore because it's already pretty expensive. Agent: Understood. And if there was a deal on the Chick-fil-A chicken sandwich, what would you do differently? User: Sorry can you repeat that? Agent: Certainly. If there was a deal on the Chick-fil-A chicken sandwich, what would you do differently? User: Um if there was a deal that made it the same p",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview10.txt",
+    "total_chunks": 12
+  },
+  "client_id": null,
+  "chunk_index": 3,
+  "parent_record_id": "7a5e9228-50a7-40b1-9372-4affd4e9d5b6"
+}

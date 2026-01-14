@@ -1,0 +1,24 @@
+{
+  "record_id": "bb420199-9aee-40b4-97bb-26b051f47010",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.721052",
+  "raw_text": "User: Yeah, so if the fries were cold and soggy it would make it terrible.\nAgent: I understand. So, cold and soggy fries would definitely make them bad. Are there any other things that would make them less than perfect for you?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview4",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview4.txt",
+    "total_chunks": 33,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 10,
+  "parent_record_id": "2bf06f63-1970-4fb8-9751-bc4c59483394"
+}

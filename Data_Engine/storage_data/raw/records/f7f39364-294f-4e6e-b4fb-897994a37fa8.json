@@ -1,0 +1,24 @@
+{
+  "record_id": "f7f39364-294f-4e6e-b4fb-897994a37fa8",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.670892",
+  "raw_text": "User: For the Jack in the Box burger, they've had lettuce and tomato and I'm not a fan of the lettuce and tomato. They just put too much on. And then for Carl's Jr burgers, they just add extras of all kinds of stuff to their burgers that are almost like too big to eat.\nAgent: Thank you for clarifying. So, the extra lettuce and tomato on the Jack in the Box burger, and the excessive size and toppings on the Carl's Jr. burgers, make them less ideal than your McDonald's cheeseburger.\n\nWhat do you usually pair with your McDonald's cheeseburger, such as drinks, sides, or sauces? And what would you never pair it with, and why?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview22",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview22.txt",
+    "total_chunks": 23,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 16,
+  "parent_record_id": "deed2ad4-16c9-4967-b168-fdfd906b9174"
+}

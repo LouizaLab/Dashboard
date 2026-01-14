@@ -1,0 +1,24 @@
+{
+  "record_id": "bd3c30e4-6ea6-4283-9d68-468891fd73f6",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.757269",
+  "raw_text": "User: That's all I eat is just Big Macs man.\nAgent: I understand your autopilot order is the Big Mac. If you were to get bored of your usual Big Mac, what would you switch to? Would it be a new flavor, a new chain, a different format like a wrap versus a...",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "41",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/41.txt",
+    "total_chunks": 39,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 36,
+  "parent_record_id": "3a86faee-b265-401f-89c3-2956bf68e535"
+}

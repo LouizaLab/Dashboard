@@ -1,0 +1,24 @@
+{
+  "record_id": "c9ae6edf-2539-4e70-914d-aee97f108a29",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.721506",
+  "raw_text": "User: In-N-Out animal style fries. They use grilled onions, no chili though. And their fries are a little different. And also, let's see. Carne asada fries from Alberto's. They're okay, but that's not the best toppings.\nAgent: Thank you. For the In-N-Out animal style fries, what aspects are better or worse compared to your favorite chili cheese fries from Tams?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview4",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview4.txt",
+    "total_chunks": 33,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 14,
+  "parent_record_id": "2bf06f63-1970-4fb8-9751-bc4c59483394"
+}

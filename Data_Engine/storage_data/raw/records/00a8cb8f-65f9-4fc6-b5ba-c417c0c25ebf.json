@@ -1,0 +1,24 @@
+{
+  "record_id": "00a8cb8f-65f9-4fc6-b5ba-c417c0c25ebf",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.667909",
+  "raw_text": "User: Wanting to do delivery in comparison to driving there.\nAgent: Understood. So, opting for delivery instead of driving is the primary change when you're in convenience mode.\n\nNow, thinking about your most recent fast-food order, what triggered it today? Was it a craving, a deal, an ad, someone suggested it, you were nearby, time pressure, you wanted something lighter, or you wanted a treat? Also, was it planned or spontaneous, and what would have had to change for you to not get fast food today?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview23",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview23.txt",
+    "total_chunks": 22,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 16,
+  "parent_record_id": "9226c320-dfb2-47d8-87a1-ed9e447a8705"
+}

@@ -1,0 +1,24 @@
+{
+  "record_id": "6d32fc90-41bd-4176-9f7d-eb6bd96df298",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.770508",
+  "raw_text": "User: McDonald's Big Mac. I like it because it's delicious.\nAgent: Okay, Heather. Could you tell me a bit more about what makes the Big Mac delicious to you? For example, what do you enjoy about its flavor, texture, temperature, smell, or even the aftertaste?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "44",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/44.txt",
+    "total_chunks": 33,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 2,
+  "parent_record_id": "694c9af7-c584-49a2-a404-743a61005dd2"
+}

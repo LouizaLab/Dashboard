@@ -1,0 +1,23 @@
+{
+  "record_id": "b2056527-f6c9-4143-8ff7-32afa0768b70",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.867679",
+  "raw_text": "you're eating it less frequently. Now, let's talk about novelty versus routine. When do you try new items versus sticking to your usual? User: I'm a creature of habit I usually stick to my usual. Agent: I understand you're a creature of habit. When do you try new items versus stick to your usual? Could you give one recent example of each and explain why? User: Usually it's because there's a promotion where you get a really good price and then sometimes I'll switch it up. Agent: Okay, so a good promotion might entice you to try something new. Could you give me one recent example of when you stuck to your usual and why, and one recent example of when you tried something new and why? User: Most of the time I stick to my usual",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview2.txt",
+    "total_chunks": 12
+  },
+  "client_id": null,
+  "chunk_index": 11,
+  "parent_record_id": "6cb1c839-9316-444a-b7a9-1e6f04a47cad"
+}

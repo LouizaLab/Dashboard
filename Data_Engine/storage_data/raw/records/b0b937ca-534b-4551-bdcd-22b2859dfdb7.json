@@ -1,0 +1,24 @@
+{
+  "record_id": "b0b937ca-534b-4551-bdcd-22b2859dfdb7",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.839462",
+  "raw_text": "User: They don't.\nAgent: Okay, so other people don't influence your order.\n\nHow does social media or hype influence you? What makes you try a...",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "31",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/31.txt",
+    "total_chunks": 36,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 33,
+  "parent_record_id": "b8eed46d-a364-478a-a2e3-13621c355a9d"
+}

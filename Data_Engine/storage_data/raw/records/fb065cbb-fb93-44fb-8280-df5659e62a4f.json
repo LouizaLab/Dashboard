@@ -1,0 +1,42 @@
+{
+  "record_id": "fb065cbb-fb93-44fb-8280-df5659e62a4f",
+  "bucket_id": 1,
+  "source_name": "mcd_menu_alt",
+  "source_type": "csv",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2025-12-27T02:25:07.219746",
+  "raw_text": null,
+  "structured_fields": {
+    "name": "Butter Paneer Grilled Burger",
+    "serving_size": "142g",
+    "ingredients": "Mildly spiced grilled paneer patty, Shredded onion, Sesame seeded buns",
+    "tag": "Dil se makhani burger.",
+    "description": "Mildly spiced grilled paneer patty topped with makhani sauce and shredded onions placed between freshly toasted sesame seeded buns."
+  },
+  "numerical_fields": {
+    "energy": 382.26,
+    "protein": 12.85,
+    "total_fat": 17.15,
+    "sat_fat": 8.29,
+    "trans_fat": 0.0,
+    "chol": 6.62,
+    "carbs": 44.12,
+    "total_sugar": 8.78,
+    "added_sugar": 5.08,
+    "sodium": 900.37
+  },
+  "categorical_fields": {
+    "allergy": "Cereal containing gluten, Milk, Soya"
+  },
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "dataset_name": "mcd_menu_alt",
+    "row_index": 2,
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Phase_1_Taste_Embedding_Model/data/raw/mcd.csv"
+  },
+  "client_id": null,
+  "chunk_index": null,
+  "parent_record_id": null
+}

@@ -1,0 +1,23 @@
+{
+  "record_id": "a8dcdd3d-bfe7-4f23-8754-56ea12014d5f",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.870730",
+  "raw_text": "ble, what would you order instead, and from which chain? And what makes that your closest replacement? User: I like McDonald's chicken nuggets. I think they're also fried chicken. And I like that they're smaller, they're bite-sized, and I can have a lot of them with barbecue sauce. Agent: That's a great alternative, Sean, especially with the barbecue sauce. Now, thinking beyond just replacements, can you name two or three other similar items you also like from any chain? And for each of those, what's better or worse about them compared to your favorite Popeye's chicken sandwich? User: I have tried Raisin Cane's before and they have a really interesting concept where they give you two fried chicken tenders, but they also give you toast and this kind of spicy sauce as well. And usually you make a sandwich with the toast and fried chicken. So on occasion that can be great, but I would say accessibility of canes can be a little tough. They're not that many stores. And usually the lines ar",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview8.txt",
+    "total_chunks": 11
+  },
+  "client_id": null,
+  "chunk_index": 2,
+  "parent_record_id": "a3318d9c-f9af-4c79-a599-3db343b1df93"
+}

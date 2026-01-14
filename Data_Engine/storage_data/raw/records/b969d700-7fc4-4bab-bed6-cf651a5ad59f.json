@@ -1,0 +1,24 @@
+{
+  "record_id": "b969d700-7fc4-4bab-bed6-cf651a5ad59f",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.676645",
+  "raw_text": "User: It smells pretty much like a taco. It smells pretty good.\nAgent: Thank you. Now, what are the top two or three things that make the Mexican Pizza \"perfect\" for you?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "38",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/38.txt",
+    "total_chunks": 19,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 5,
+  "parent_record_id": "04f316d3-be87-4e71-bf48-81915dfb54b0"
+}

@@ -1,0 +1,39 @@
+{
+  "record_id": "376565f0-0c58-4876-b371-d774433c9fe6",
+  "bucket_id": 1,
+  "source_name": "burger_king_menu",
+  "source_type": "csv",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2025-12-27T02:16:07.062148",
+  "raw_text": null,
+  "structured_fields": {
+    "Item": "Sprite- 38 fl oz"
+  },
+  "numerical_fields": {
+    "Calories": 440.0,
+    "Fat Calories": 0.0,
+    "Fat (g)": 0.0,
+    "Saturated Fat (g)": 0.0,
+    "Trans Fat (g)": 0.0,
+    "Cholesterol (mg)": 0.0,
+    "Sodium (mg)": 230.0,
+    "Total Carb (g)": 133.0,
+    "Dietary Fiber (g)": 0.0,
+    "Sugars (g)": 133.0,
+    "Protein (g)": 0.0
+  },
+  "categorical_fields": {
+    "Category": "Beverage"
+  },
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "dataset_name": "burger_king_menu",
+    "row_index": 24,
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Phase_1_Taste_Embedding_Model/data/raw/burger-king-menu.csv"
+  },
+  "client_id": null,
+  "chunk_index": null,
+  "parent_record_id": null
+}

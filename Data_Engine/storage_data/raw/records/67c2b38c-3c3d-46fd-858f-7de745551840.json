@@ -1,0 +1,24 @@
+{
+  "record_id": "67c2b38c-3c3d-46fd-858f-7de745551840",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.707560",
+  "raw_text": "User: I usually pair it with a Diet Coke and some fries. I'd probably not pair it with a salad because if you're eating a Big Mac, you're not going to want to have it with a salad.\nAgent: That's a very clear distinction, Sarah. It makes sense that a salad wouldn't fit with the Big Mac experience.\n\nNow, let's talk about when you choose this item. In what situations do you choose the Big Mac most often? Please include details like if you're under time pressure, your location like home or work, how you order it such as drive-thru or delivery, and who you're with.",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview2",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview2.txt",
+    "total_chunks": 31,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 8,
+  "parent_record_id": "89414df8-139e-4b72-9450-a29a8a41b846"
+}

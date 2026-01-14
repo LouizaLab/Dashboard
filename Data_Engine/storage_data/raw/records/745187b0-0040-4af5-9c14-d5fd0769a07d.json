@@ -1,0 +1,24 @@
+{
+  "record_id": "745187b0-0040-4af5-9c14-d5fd0769a07d",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.842036",
+  "raw_text": "User: Taste is definitely the top one because if I don't like how it tastes I'm not going to get it. And price is the second. Typically I'm not looking to spend more than $10 on a meal.\nAgent: Thank you for explaining that. Now, compared to your last fast-food order, what changed today, if anything?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview10",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview10.txt",
+    "total_chunks": 43,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 17,
+  "parent_record_id": "7855d946-010e-4b12-b478-072329d70cb1"
+}

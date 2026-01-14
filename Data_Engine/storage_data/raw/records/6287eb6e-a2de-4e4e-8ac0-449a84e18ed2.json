@@ -1,0 +1,24 @@
+{
+  "record_id": "6287eb6e-a2de-4e4e-8ac0-449a84e18ed2",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.777098",
+  "raw_text": "User: It was spontaneous, not planned. What would have changed? That decision is time and access. If I definitely had more time or if I had been closer to home with food already prepared, I wouldn't have gotten fast food. Even a short pause in the day to reset would have shifted the choice. Fast food for me fills the gap when the day moves faster than I really expected.\nAgent: That's very insightful. Did you switch from your usual chain or usual item today? If so, what exactly caused that switch?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "46",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/46.txt",
+    "total_chunks": 19,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 17,
+  "parent_record_id": "42485974-cee0-43b1-bfcd-159fb131da89"
+}

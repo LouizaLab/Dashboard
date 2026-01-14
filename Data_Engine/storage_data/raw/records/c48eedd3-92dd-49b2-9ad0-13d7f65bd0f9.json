@@ -1,0 +1,23 @@
+{
+  "record_id": "c48eedd3-92dd-49b2-9ad0-13d7f65bd0f9",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.867434",
+  "raw_text": "se mcdonald's from Agent: What are the top two or three things that would make these McDonald's... User: things that would make these mcdonald's fries i mean more condiments and you know just um just more like seasoning Agent: Thank you. I was actually asking what would make them bad... User: what would make them bad? Agent: Yes, what are the top two or three things that would make these McDonald's fries \"bad\" for you? For example, if they were soggy, dry, cold,... User: What would make these McDonald's fries bad for you? For example, if they were soggy, dry, cold, Yeah, definitely if they were like soggy or like not that many and like number. Agent: Okay, so soggy fries and a small portion size would definitely make them bad for you. If these McDonald's fries were... User: These McDonald's fries were unavailable Agent: If these McDonald's fries were unavailable, what would you order instead, including the chain and the specific item? And why would that be the closest replacement for",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview19.txt",
+    "total_chunks": 14
+  },
+  "client_id": null,
+  "chunk_index": 8,
+  "parent_record_id": "1f988804-b2a4-40bf-a212-66fa038b6fde"
+}

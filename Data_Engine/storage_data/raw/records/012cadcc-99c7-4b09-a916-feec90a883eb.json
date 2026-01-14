@@ -1,0 +1,42 @@
+{
+  "record_id": "012cadcc-99c7-4b09-a916-feec90a883eb",
+  "bucket_id": 1,
+  "source_name": "mcd_menu_alt",
+  "source_type": "csv",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2025-12-27T02:25:07.224015",
+  "raw_text": null,
+  "structured_fields": {
+    "name": "Spicy Paneer Wrap\u00ae",
+    "serving_size": "250g",
+    "ingredients": "Whole wheat flat bread, Spicy paneer patty, Veg mayo, Lettuce, Onion, Tomato, Mustard sauce, Cheese",
+    "tag": "Unwrap deliciousness.",
+    "description": "Tender paneer patty with a fiery, crunchy batter coating; dressed with fresh veggies and seasonings; topped with creamy sauce; and a dash of mustard and melted cheese."
+  },
+  "numerical_fields": {
+    "energy": 674.68,
+    "protein": 20.96,
+    "total_fat": 39.1,
+    "sat_fat": 19.73,
+    "trans_fat": 0.26,
+    "chol": 40.93,
+    "carbs": 59.278,
+    "total_sugar": 3.5,
+    "added_sugar": 1.08,
+    "sodium": 1087.46
+  },
+  "categorical_fields": {
+    "allergy": "Cereal containing gluten, Milk, Soya"
+  },
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "dataset_name": "mcd_menu_alt",
+    "row_index": 33,
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Phase_1_Taste_Embedding_Model/data/raw/mcd.csv"
+  },
+  "client_id": null,
+  "chunk_index": null,
+  "parent_record_id": null
+}

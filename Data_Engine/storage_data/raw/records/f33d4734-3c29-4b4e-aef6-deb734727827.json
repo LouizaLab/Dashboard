@@ -1,0 +1,24 @@
+{
+  "record_id": "f33d4734-3c29-4b4e-aef6-deb734727827",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.706168",
+  "raw_text": "User: I tried the McDonald's I think they had a hot buffalo sandwich which I didn't like too much it just looked good on the ad and I just decided to get it.\nAgent: Thank you for that example of trying the McDonald's hot buffalo sandwich because it looked good in the ad.\n\nNow, could you give me a recent example of when you stuck to your usual order and explain why you chose to do so?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "39",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/39.txt",
+    "total_chunks": 33,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 32,
+  "parent_record_id": "95c43eb4-c8d6-4cf1-a795-e16d4e88afc0"
+}

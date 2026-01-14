@@ -1,0 +1,23 @@
+{
+  "record_id": "4b200f33-7182-4639-823c-75b7a031213e",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.868141",
+  "raw_text": "at would be gross. Agent: Understood, soggy or greasy would definitely make it less enjoyable. If your favorite McDonald's cheeseburger was unavailable, what would you order instead, including the chain and item? User: ... Agent: Please let me know... User: I would probably get a chalupa from Taco Bell. Agent: A Chalupa from Taco Bell, interesting... User: I don't know. Agent: No problem at all. Why is the Chalupa from Taco Bell the closest replacement for your McDonald's cheeseburger? User: It's just another thing that I like to eat. I don't press food. Agent: Okay, I understand. Now, could you name two or three similar items you also like from any chain? And for each one, what's better or worse compared to your favorite McDonald's cheeseburger? User: Oh God, I guess like compared to like the a burger from like Jack in the Box maybe or Agent: ... User: burger from... Agent: Please continue. User: It's just not as good because they add a lot of extra stuff to it that I don't like. Bu",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview22.txt",
+    "total_chunks": 9
+  },
+  "client_id": null,
+  "chunk_index": 2,
+  "parent_record_id": "b95dda0c-75c4-494a-a620-a8fecb1eb5e0"
+}

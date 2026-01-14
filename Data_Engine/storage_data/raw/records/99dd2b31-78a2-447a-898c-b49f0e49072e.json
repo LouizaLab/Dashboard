@@ -1,0 +1,24 @@
+{
+  "record_id": "99dd2b31-78a2-447a-898c-b49f0e49072e",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.709582",
+  "raw_text": "User: My husband got a different job where he makes less money so we have less money and things are more expensive.\nAgent: Thank you for sharing that, Sarah. It's clear that your husband's job change and the increased cost of living have significantly impacted your budget and, consequently, your fast-food choices.\n\nAre you trying to eat healthier than two to four weeks ago? Why or why not?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview2",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview2.txt",
+    "total_chunks": 31,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 25,
+  "parent_record_id": "89414df8-139e-4b72-9450-a29a8a41b846"
+}

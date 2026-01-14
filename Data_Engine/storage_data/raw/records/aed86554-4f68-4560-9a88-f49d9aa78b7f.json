@@ -1,0 +1,24 @@
+{
+  "record_id": "aed86554-4f68-4560-9a88-f49d9aa78b7f",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.773154",
+  "raw_text": "User: And we usually go... And we go through the drop-thru.\nAgent: Thank you for that detailed explanation. So, it's often a dinner choice when you don't feel like cooking, a family outing with your daughter and grandchildren, and typically through the drive-thru.\n\nNow, let's talk about price. How does the price of a Big Mac change your choice to order it?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "44",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/44.txt",
+    "total_chunks": 33,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 24,
+  "parent_record_id": "694c9af7-c584-49a2-a404-743a61005dd2"
+}

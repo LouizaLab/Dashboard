@@ -1,0 +1,24 @@
+{
+  "record_id": "1109fd9a-d03c-434a-8a56-a732f7145c32",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.770635",
+  "raw_text": "User: I like the smell and I like how the Thousand Island Big Mac sauce blends with the meat and the cheese and the lettuce.\nAgent: That's interesting, Heather. So the unique smell and the way the Big Mac sauce combines with the other ingredients are key for you. What are the top two or three things that make a Big Mac \"perfect\" in your opinion?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "44",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/44.txt",
+    "total_chunks": 33,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 3,
+  "parent_record_id": "694c9af7-c584-49a2-a404-743a61005dd2"
+}

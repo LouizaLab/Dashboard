@@ -1,0 +1,23 @@
+{
+  "record_id": "9f18a574-84cf-4d87-b00f-348898737670",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.866386",
+  "raw_text": "em. Agent: Okay, since you switched from your usual item, what exactly caused that switch? Was it a deal, a new item, boredom, a bad experience, health, price, convenience, social reasons, or limited options? User: New item. Specialty item. Limited edition Agent: What would make you permanently change your \"default\" order? User: . Recipe change or significant price increase. Agent: And what would you need to see happen repeatedly, such as taste, consistency, price, or convenience, for you to permanently change your default order? User: an increase of $1.50 or more would automatically make me change to something else. Taste, probably three strikes and you're out. If I've got it three different times and it's tasted all three different times, I'm done. Agent: That's very clear. How much did a deal influence this choice today? User: Extremely. Agent: Please explain what kind of deal actually changes your behavior. For example, is it buy one get one free, a percentage off, app points, or f",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview14.txt",
+    "total_chunks": 9
+  },
+  "client_id": null,
+  "chunk_index": 7,
+  "parent_record_id": "08afa934-6295-42cc-95ab-8c19f8d505dd"
+}

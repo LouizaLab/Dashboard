@@ -1,0 +1,24 @@
+{
+  "record_id": "ea71d1bd-198b-4321-9028-ba26d131d61d",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.817913",
+  "raw_text": "User: My favorite fast food item is a single from Wendy's. Wendy's has great burgers. They taste more fresh, like restaurant quality than other fast food restaurants.\nAgent: That's great to hear, Nicole. Could you tell me more about what you like about the Wendy's single? Specifically, what do you enjoy about its flavor, texture, temperature, smell, and aftertaste?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "36",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/36.txt",
+    "total_chunks": 29,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 2,
+  "parent_record_id": "4c0b766b-108c-463c-ac1b-84504ef7b9d6"
+}

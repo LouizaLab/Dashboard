@@ -1,0 +1,23 @@
+{
+  "record_id": "2e9f598a-04a8-4a21-83ba-0c1a2beeae11",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.867654",
+  "raw_text": "ose details, Sarah. It sounds like a convenient and solo lunch ritual. How does price change your choice? For example, if the Big Mac cost two dollars more, what would you do? User: I would order something cheaper. The Big Mac's already getting more expensive. It's at the maximum I'm willing to spend. Agent: I understand. So, if the price increased by two dollars, you'd opt for a cheaper alternative. What if there was a deal on the Big Mac? What would you do differently then? User: I'd probably buy the Big Mac more if there was a deal. Agent: That makes sense. A good deal can definitely influence how often you choose an item. Moving on, over the past two weeks, what have been your most common fast-food patterns? This includes when you eat it, what you usually order, and what typically triggers it. User: I don't eat it as much lately because we're on a budget and I'm trying not to spend money. If I get a craving, usually during the lunchtime, I'll go once every two weeks. Agent: Than",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview2.txt",
+    "total_chunks": 12
+  },
+  "client_id": null,
+  "chunk_index": 4,
+  "parent_record_id": "6cb1c839-9316-444a-b7a9-1e6f04a47cad"
+}

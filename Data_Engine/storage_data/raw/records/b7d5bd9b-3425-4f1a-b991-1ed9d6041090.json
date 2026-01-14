@@ -1,0 +1,24 @@
+{
+  "record_id": "b7d5bd9b-3425-4f1a-b991-1ed9d6041090",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.838090",
+  "raw_text": "User: The quality of the food would have to be really bad.\nAgent: So, a significant and consistent drop in food quality would be the main reason for you to change your default order.\n\nHow much did a deal influence this choice today? Could you explain what kind of deal actually changes your behavior, such as buy one get one free, a percentage off, app points, or free delivery?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "31",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/31.txt",
+    "total_chunks": 36,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 22,
+  "parent_record_id": "b8eed46d-a364-478a-a2e3-13621c355a9d"
+}

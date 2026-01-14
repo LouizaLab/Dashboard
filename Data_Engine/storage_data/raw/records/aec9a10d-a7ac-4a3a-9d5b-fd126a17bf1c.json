@@ -1,0 +1,24 @@
+{
+  "record_id": "aec9a10d-a7ac-4a3a-9d5b-fd126a17bf1c",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.840272",
+  "raw_text": "User: Probably a Chick-fil-A chicken sandwich because I just really like how it tastes.\nAgent: Okay, that's a great choice. Could you tell me a bit more about what you like about the taste? For example, what about its flavor, texture, temperature, smell, or even the aftertaste makes it your favorite?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview10",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview10.txt",
+    "total_chunks": 43,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 2,
+  "parent_record_id": "7855d946-010e-4b12-b478-072329d70cb1"
+}

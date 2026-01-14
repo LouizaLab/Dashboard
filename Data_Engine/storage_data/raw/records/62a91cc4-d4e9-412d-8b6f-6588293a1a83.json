@@ -1,0 +1,24 @@
+{
+  "record_id": "62a91cc4-d4e9-412d-8b6f-6588293a1a83",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.710589",
+  "raw_text": "User: Which would you prefer?\nAgent: Either is perfectly fine. I just need one of them to get started with the onboarding process.",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview3",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview3.txt",
+    "total_chunks": 22,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 1,
+  "parent_record_id": "fc77d1e2-9777-4dca-a844-42568cda327f"
+}

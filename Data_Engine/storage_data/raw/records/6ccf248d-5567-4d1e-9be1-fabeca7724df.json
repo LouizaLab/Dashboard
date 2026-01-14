@@ -1,0 +1,24 @@
+{
+  "record_id": "6ccf248d-5567-4d1e-9be1-fabeca7724df",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.822905",
+  "raw_text": "User: the price is about equivalent. Similar, the meat is better. Wendy's has better meat than McDonald's and it's similar in the type of vegetables that you get on the burger.\nAgent: That's good to know about the Wendy's burger. Do you have another similar item you like, and what's better or worse about it compared to your Big Mac?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "32",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/32.txt",
+    "total_chunks": 32,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 10,
+  "parent_record_id": "67c11aa1-d698-4af6-bfc4-5f5b3dd28134"
+}

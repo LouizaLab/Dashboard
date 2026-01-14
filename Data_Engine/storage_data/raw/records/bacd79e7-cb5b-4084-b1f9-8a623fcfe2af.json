@@ -1,0 +1,24 @@
+{
+  "record_id": "bacd79e7-cb5b-4084-b1f9-8a623fcfe2af",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.695228",
+  "raw_text": "User: At the moment, my favorite would be the Mexican pizza from Taco Bell. It's because one thing, it's a little bit less expensive than a bunch of the other stuff you can get. And I just really love how you can get it made up almost any way you want to. And it's very flavorful.\nAgent: That sounds delicious. Could you describe the flavor, texture, temperature, smell, and aftertaste of the Mexican Pizza?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview18",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview18.txt",
+    "total_chunks": 19,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 2,
+  "parent_record_id": "68950778-79ab-467c-ba48-e8d70a851473"
+}

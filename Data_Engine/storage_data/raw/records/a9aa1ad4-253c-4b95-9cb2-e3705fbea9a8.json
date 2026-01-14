@@ -1,0 +1,23 @@
+{
+  "record_id": "a9aa1ad4-253c-4b95-9cb2-e3705fbea9a8",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.866187",
+  "raw_text": "n't have another preference. Agent: Okay, I understand you don't have another preference if your favorite is unavailable. Moving on, can you name two or three similar items you also like from any chain? For each one, could you tell me what's better or worse compared to your favorite In-N-Out cheeseburger? User: I don't have any other options. The cheeseburgers are typically the only options they have available at in-and-out. Agent: Thank you for clarifying that you're focused on the In-N-Out cheeseburger. My apologies, I might not have been clear. I was actually asking if there are any other similar items you like from other fast-food chains, not just In-N-Out. For example, another type of cheeseburger from a different restaurant. User: No, there is not. Agent: Understood. So, the In-N-Out cheeseburger truly stands alone for you. What do you usually pair with your In-N-Out cheeseburger? This could include drinks, sides, or sauces. And what would you never pair it with, and why? User:",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview13.txt",
+    "total_chunks": 12
+  },
+  "client_id": null,
+  "chunk_index": 2,
+  "parent_record_id": "fbb27c4a-b6d1-47bb-9e12-15bb07aa4fc0"
+}

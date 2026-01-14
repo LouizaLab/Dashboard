@@ -1,0 +1,24 @@
+{
+  "record_id": "589f139c-4851-47ac-960e-97f1b6bf4fa8",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.753328",
+  "raw_text": "User: The Big Mac sauce and the pickles.\nAgent: Great, the Big Mac sauce and the pickles. On the flip side, what are the top two or three things that could make a Big Mac \"bad\" for you? For instance, if it were soggy, dry, or cold?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "41",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/41.txt",
+    "total_chunks": 39,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 5,
+  "parent_record_id": "3a86faee-b265-401f-89c3-2956bf68e535"
+}

@@ -1,0 +1,24 @@
+{
+  "record_id": "c50edd18-e419-496e-bbc3-dd74479de46c",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.784886",
+  "raw_text": "User: If I get tired of eating Big Macs I'm going to just not eat fast food no more.\nAgent: I understand that your loyalty to the Big Mac is very strong.\n\nHow do other people influence your order, if at all? For example, does a group choice,...",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview15",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview15.txt",
+    "total_chunks": 39,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 37,
+  "parent_record_id": "d8dbb6de-ad03-467b-8826-23382ceb27d5"
+}

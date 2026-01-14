@@ -1,0 +1,24 @@
+{
+  "record_id": "8a25f919-a667-46c1-b789-a16ebabd195c",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.676875",
+  "raw_text": "User: Yes, I think if it was dry, it would not be very good because everyone I've ever got has been pretty moist and juicy even sometimes. So I definitely wouldn't want to eat one if it was dry. Cold, I don't think I'd want to eat it cold either. You definitely want it warm or hot.\nAgent: Understood, so dry and cold would definitely make it less enjoyable. If the Mexican Pizza was unavailable, what would you order instead, including the chain and the specific item?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "38",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/38.txt",
+    "total_chunks": 19,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 7,
+  "parent_record_id": "04f316d3-be87-4e71-bf48-81915dfb54b0"
+}

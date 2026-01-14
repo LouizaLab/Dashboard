@@ -1,0 +1,23 @@
+{
+  "record_id": "e6c55f17-9478-4931-b91b-b92ced28fa69",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.866484",
+  "raw_text": "peed, nutrition, consistency, and price, could you pick your top two or three factors that define \"good value\" for you, and explain how you judge if something is \"worth it\" based on those? User: If it's from McDonald's, it's worth it to me. If it's a Big Mac, it's worth it. McDonald's is Big Macs to me. McDonald's is value. Agent: I understand that McDonald's and the Big Mac represent good value to you. When you think about why they are good value, which of these factors are most important: taste, portion... User: Taste, quality, portion size. Agent: Thank you. So, taste, quality, and portion size are your top factors for good value. Could you explain how you judge if something is \"worth it\" based on those three things? User: If it is a Big Mac, it's worth it. I compare all the items to a Big Mac. That's why I get the Big Mac because it's the best. Agent: I understand that the Big Mac is your benchmark for worth and value. Now, let's move on to some other aspects of your fast-food cho",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview15.txt",
+    "total_chunks": 13
+  },
+  "client_id": null,
+  "chunk_index": 6,
+  "parent_record_id": "f1fd0055-5ec4-40f3-bc6a-48afb005f6d4"
+}

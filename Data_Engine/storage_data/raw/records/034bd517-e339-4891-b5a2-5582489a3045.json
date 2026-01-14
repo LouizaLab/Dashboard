@@ -1,0 +1,24 @@
+{
+  "record_id": "034bd517-e339-4891-b5a2-5582489a3045",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.781752",
+  "raw_text": "User: . I can't say never because I like all McDonald's items. So I would get a Big Mac with anything.\nAgent: I understand you enjoy all McDonald's items and would pair a Big Mac with anything on their menu.\n\nMoving on, in what situations do you choose the Big Mac most often? Please consider factors like time...",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview15",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview15.txt",
+    "total_chunks": 39,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 12,
+  "parent_record_id": "d8dbb6de-ad03-467b-8826-23382ceb27d5"
+}

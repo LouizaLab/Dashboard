@@ -1,0 +1,23 @@
+{
+  "record_id": "3c785159-fd97-414f-9654-122274201f4e",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.867127",
+  "raw_text": "with. User: Typically, I go with my family and I'll pick it up or they'll bring it home or maybe someone in my family will bring it home. And I choose it because it's a store that's close to where we live. You know, a restaurant that's close to where we live. And usually, I don't have to buy a lot of, I wouldn't have to buy extras. Like when you buy a burger, you have to get fries and everything. But the Mexican pizza is enough for me. That and a drink is all I need. So that's typically why I would choose that most often. Agent: That's very helpful. How does price change your choice? For example, if the Mexican Pizza cost two dollars more, what would you do? User: I probably would still get it every now and then, but it would definitely lessen my... It would definitely make me not buy it as much because that would make it, you know, it might make it out of my price range. Agent: And if there was a deal on the Mexican Pizza, what would you do differently? User: I probably wouldn't do an",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview18.txt",
+    "total_chunks": 10
+  },
+  "client_id": null,
+  "chunk_index": 6,
+  "parent_record_id": "cc9495dc-30ce-4277-b912-e84e4662cd15"
+}

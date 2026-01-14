@@ -1,0 +1,24 @@
+{
+  "record_id": "0cde328c-cedd-44a7-8ca3-b07f1c3496e6",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.691815",
+  "raw_text": "User: ... I usually pair like a burger or um what else just some you know a drink a burger like some Sprite.\nAgent: Okay, so a burger and a Sprite are your usual pairings.\n\nAnd what would you never pair your McDonald's fries with? Why would you never pair it with that?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview19",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview19.txt",
+    "total_chunks": 60,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 46,
+  "parent_record_id": "a3e1d684-9ae6-4af5-abed-bbda00d0d1d0"
+}

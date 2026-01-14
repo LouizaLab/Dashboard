@@ -1,0 +1,24 @@
+{
+  "record_id": "b7b751de-60a8-44d2-9797-0a43a14dd6f0",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.676513",
+  "raw_text": "User: It's very warm as soon as you get it, and then maybe if you don't eat at all, you can take it home and warm it up, and then it's hot then too, so you want to eat it hot. But I'm sure it would taste fine cold. What was the second part of the question?\nAgent: You're right, I also asked about the smell. What does the Mexican Pizza typically smell like to you?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "38",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/38.txt",
+    "total_chunks": 19,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 4,
+  "parent_record_id": "04f316d3-be87-4e71-bf48-81915dfb54b0"
+}

@@ -1,0 +1,24 @@
+{
+  "record_id": "81553d00-e555-496f-acdb-380d454cec9a",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.730095",
+  "raw_text": "User: McDonald's, the 40-piece nuggets meal. I like it because you get 40 nuggets for $15 and they're huge. They're fried to the crisp, awesome extent where you kind of taste the oil inside of them. They put them in these cool little boxes. There are 20 in each box, so each box is always filled to your delight.\nAgent: That sounds like a very satisfying meal. What are the top two to three things that make those forty-piece nuggets \"perfect\" for you?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview7",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview7.txt",
+    "total_chunks": 11,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 3,
+  "parent_record_id": "3a954e63-b718-482c-b02d-9509cae55cd7"
+}

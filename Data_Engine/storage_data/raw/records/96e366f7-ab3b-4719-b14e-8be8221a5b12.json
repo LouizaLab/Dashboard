@@ -1,0 +1,23 @@
+{
+  "record_id": "96e366f7-ab3b-4719-b14e-8be8221a5b12",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.868600",
+  "raw_text": "ease of order make it your autopilot. If you get bored of your usual, what do you switch to? Is it a new flavor, a new chain, a different format like a wrap versus a burger, or a different side or drink? What scratches that itch for something different? User: Home cooked meal. Agent: Understood, so if you get bored of your usual fast food, you switch to a home-cooked meal. How do other people influence your order, if at all? For example, group choice, recommendations, convenience for others, or... User: They don't. Agent: Okay, so other people don't influence your order. How does social media or hype influence you? What makes you try a... User: It doesn't. Agent: Understood, so social media or hype does not influence your choices. Jay, your interview is now complete. Thank you for participating! User: Thank you. Agent: You're welcome, Jay. User: How do I end? Agent: You can simply hang up the call...",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview25.txt",
+    "total_chunks": 12
+  },
+  "client_id": null,
+  "chunk_index": 11,
+  "parent_record_id": "930845f1-0918-42cc-a70f-caea6918e705"
+}

@@ -1,0 +1,39 @@
+{
+  "record_id": "e8f3fc78-a981-4623-a4ed-3036e838f8df",
+  "bucket_id": 1,
+  "source_name": "burger_king_menu",
+  "source_type": "csv",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2025-12-27T02:16:07.071945",
+  "raw_text": null,
+  "structured_fields": {
+    "Item": "Chicken Jr."
+  },
+  "numerical_fields": {
+    "Calories": 440.0,
+    "Fat Calories": 240.0,
+    "Fat (g)": 27.0,
+    "Saturated Fat (g)": 5.0,
+    "Trans Fat (g)": 0.0,
+    "Cholesterol (mg)": 40.0,
+    "Sodium (mg)": 700.0,
+    "Total Carb (g)": 39.0,
+    "Dietary Fiber (g)": 2.0,
+    "Sugars (g)": 5.0,
+    "Protein (g)": 13.0
+  },
+  "categorical_fields": {
+    "Category": "Chicken & More"
+  },
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "dataset_name": "burger_king_menu",
+    "row_index": 117,
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Phase_1_Taste_Embedding_Model/data/raw/burger-king-menu.csv"
+  },
+  "client_id": null,
+  "chunk_index": null,
+  "parent_record_id": null
+}

@@ -1,0 +1,24 @@
+{
+  "record_id": "4ba66f77-0b1d-493b-ab2f-156d820d2d07",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.726776",
+  "raw_text": "User: I think price because I need to make sure that it's something I can afford. Taste because if it doesn't taste good it's not worth eating.\nAgent: Thank you. So price and taste are your top two factors.\n\nNow, compared to your last fast-food order, what changed today, if anything? Please pick the biggest driver and explain it, considering factors like mood, cravings, schedule, budget, health goals, social plans, or convenience.",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview5",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview5.txt",
+    "total_chunks": 37,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 19,
+  "parent_record_id": "70f85520-c679-4467-82c3-f02b7ab569c2"
+}

@@ -1,0 +1,23 @@
+{
+  "record_id": "79d60881-444c-4c86-8e8b-f37a274019cb",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.870895",
+  "raw_text": "church's chicken is more common in some cities than others. I will order it if I'm at home because I'm familiar with the different locations. And so when I return home, which is only a couple of times a year because I live pretty far away from where I currently work, that's when I'll go once or twice. And then some other times include if I, you know, am on a trip in a new place, I'm very hungry and I'm just trying to get a quick meal. I don't want to pay a lot of money. That's when I'll oftentimes opt for fried chicken for dinner or something like that. But it's not always the same thing. It can be different from what you're used to eating at home or your family's.",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview9.txt",
+    "total_chunks": 11
+  },
+  "client_id": null,
+  "chunk_index": 10,
+  "parent_record_id": "b6abb3dc-02c0-4403-832f-3101e8d6267b"
+}

@@ -1,0 +1,23 @@
+{
+  "record_id": "09fcd490-6f9e-4ec3-96e9-5a52e1b124d9",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.870300",
+  "raw_text": "what I pay that I can maybe eat two meals of it. Agent: Thank you. From the factors of taste, portion size, speed, nutrition, consistency, and price, which are your top two or three for judging \"worth it\" in fast food, and how do you judge them? User: I think price because I need to make sure that it's something I can afford. Taste because if it doesn't taste good it's not worth eating. Agent: Thank you. So price and taste are your top two factors. Now, compared to your last fast-food order, what changed today, if anything? Please pick the biggest driver and explain it, considering factors like mood, cravings, schedule, budget, health goals, social plans, or convenience. User: I don't think anything would really change. It's just kind of our standard order. Agent: Understood. So, if nothing really changes, what \"mode\" would you say you are in today? For example, budget, health, treat, convenience, explore, or stressed? And what's the first thing that changes in your order when you ar",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview5.txt",
+    "total_chunks": 10
+  },
+  "client_id": null,
+  "chunk_index": 5,
+  "parent_record_id": "9d0a0a1b-b297-4a62-8430-2af72da9793c"
+}

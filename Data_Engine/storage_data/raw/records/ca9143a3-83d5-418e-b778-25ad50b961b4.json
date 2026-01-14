@@ -1,0 +1,24 @@
+{
+  "record_id": "ca9143a3-83d5-418e-b778-25ad50b961b4",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.712962",
+  "raw_text": "User: I would say it was probably my budget. I just don't have the budget to eat it as much as I used to.\nAgent: Thank you for clarifying that budget is the biggest driver for you right now.\n\nWhat \"mode\" are you in today when it comes to fast food? Are you in a budget, health, treat, convenience, explore, or stressed mode?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview3",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview3.txt",
+    "total_chunks": 22,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 19,
+  "parent_record_id": "fc77d1e2-9777-4dca-a844-42568cda327f"
+}

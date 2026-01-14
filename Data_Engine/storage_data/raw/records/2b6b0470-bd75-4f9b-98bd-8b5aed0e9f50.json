@@ -1,0 +1,23 @@
+{
+  "record_id": "2b6b0470-bd75-4f9b-98bd-8b5aed0e9f50",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.867918",
+  "raw_text": "Call Transcript: User: Hi, my name is Nicole. Agent: Hello Nicole, I am here to collect information about your food preferences to complete the onboarding so you can get rewarded. To start, could you please confirm your name or provide your Prolific ID? User: Hi, my name is Nicole. Agent: Thank you, Nicole. Let's begin. What is your favorite fast-food item, including the chain and the exact item? And could you tell me why you like it? User: My favorite fast food item is a single from Wendy's. Wendy's has great burgers. They taste more fresh, like restaurant quality than other fast food restaurants. Agent: That's great to hear, Nicole. Could you tell me more about what you like about the Wendy's single? Specifically, what do you enjoy about its flavor, texture, temperature, smell, and aftertaste? User: I like the taste of the beef used in Wendy's singles. I've heard they do not freeze their meat. I like the lettuce and tomato. It's always fresh and the cheese is real cheese. It's not p",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview20.txt",
+    "total_chunks": 11
+  },
+  "client_id": null,
+  "chunk_index": 0,
+  "parent_record_id": null
+}

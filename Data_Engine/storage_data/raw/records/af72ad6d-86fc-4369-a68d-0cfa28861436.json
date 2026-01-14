@@ -1,0 +1,24 @@
+{
+  "record_id": "af72ad6d-86fc-4369-a68d-0cfa28861436",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.656103",
+  "raw_text": "User: Usually I will pair it with typically I'll order a drink like a Coke, which their Coke on ice is pretty good. And then and then I don't like sometimes I'll get their fries. I'm not really a their fries aren't bad. It's not a have to thing. But I mean, I don't mind if there's some kind of deal with them. To be really honest, usually my order, I'll just order like two Big Macs because they have like a deal with them. So it's kind of like a Big Mac with a side of Big Mac. But yeah, that's that. I mean, there's no other really have to besides that. Yeah.\nAgent: Okay, so two Big Macs and a Coke. What would you never pair with your Big Mac, and why?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "29",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/29.txt",
+    "total_chunks": 14,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 12,
+  "parent_record_id": "90958b40-24bb-4961-a5cf-e72deaac312d"
+}

@@ -1,0 +1,24 @@
+{
+  "record_id": "10bfc421-c7d0-4daa-ad96-24a221adb03f",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.744801",
+  "raw_text": "User: I would probably get a double Whopper from Burger King. The Whopper is also a very hearty sandwich. It packs a punch. Flame broiling from Burger King is very distinct. Gives it a very crispy taste.\nAgent: That's a good alternative. Can you name two or three similar items you also like from any chain? For each one, please tell me what's better or worse compared to your favorite Wendy's Classic Triple.",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "40",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/40.txt",
+    "total_chunks": 24,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 7,
+  "parent_record_id": "692d79ab-a3ba-476a-990b-bf66f61e7646"
+}

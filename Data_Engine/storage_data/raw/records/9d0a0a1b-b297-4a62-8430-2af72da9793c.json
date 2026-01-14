@@ -1,0 +1,23 @@
+{
+  "record_id": "9d0a0a1b-b297-4a62-8430-2af72da9793c",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.870278",
+  "raw_text": "Call Transcript: User: ... Agent: I'm here to collect information about your food preferences to complete the onboarding so you can get rewarded. To start, please say your name or Prolific ID. User: Prolific ID is 677-22-F8E3A4F08A288A1F640. Agent: Okay, thank you. What is your favorite fast-food item, including the chain and the exact item? And could you tell me why you like it? User: I like Papa John's pepperoni pizza and I just like it because I like having the garlic sauce to dip with. Agent: That's interesting. Could you describe the flavor, texture, temperature, smell, and aftertaste of that Papa John's pepperoni pizza for me? User: The smell is just kind of, um... It's kind of a savory smell. It smells like pepperoni. It tastes really good. It's spicy. The pizza crust is soft and the cheese is gooey. Agent: Thank you for that detailed description. What are the top two or three things that make that Papa John's pepperoni pizza \"perfect\" for you? User: Just that it's cooked well,",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview5.txt",
+    "total_chunks": 10
+  },
+  "client_id": null,
+  "chunk_index": 0,
+  "parent_record_id": null
+}

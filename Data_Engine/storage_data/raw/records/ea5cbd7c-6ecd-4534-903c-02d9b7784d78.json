@@ -1,0 +1,23 @@
+{
+  "record_id": "ea5cbd7c-6ecd-4534-903c-02d9b7784d78",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.867015",
+  "raw_text": "th, treat, convenience, explore, or stressed mode? User: Explore Agent: Okay, you're in \"Explore\" mode. What's the first thing that changes in your order when you're in that mode? User: . Um... Agent: Please take your time. User: wanting to try something new. Being curious. Agent: Thank you. So, when you're in \"Explore\" mode, you're looking to try something new and are driven by curiosity. Now, what triggered this order today? Please be specific. Was it a craving, a deal, an ad, did someone suggest it, were you nearby, was there time pressure, did you want something lighter, or did you want a treat? Also, was it planned or spontaneous? And what would have had to change for you to not get fast food today? User: I think if it was very inconvenient like late, I probably wouldn't get it. Agent: I understand that inconvenience, like a late delivery, would deter you. Could you also tell me what specifically triggered this order today? Was it a craving, a deal, an ad, someone's suggestion,",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview17.txt",
+    "total_chunks": 11
+  },
+  "client_id": null,
+  "chunk_index": 6,
+  "parent_record_id": "f5c69c84-f91a-4dd6-8cf5-c2c95cae4a75"
+}

@@ -1,0 +1,23 @@
+{
+  "record_id": "edffe986-88c4-4c13-9607-545c48585296",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.868144",
+  "raw_text": "ke the a burger from like Jack in the Box maybe or Agent: ... User: burger from... Agent: Please continue. User: It's just not as good because they add a lot of extra stuff to it that I don't like. But I will eat it if that's my only alternative. And another thing would be maybe a burger from Carl's Jr., but those ones are too much over the top usually. Agent: Thank you for sharing those. So, burgers from... User: I don't know if I'm Agent: Thank you for sharing those. So, burgers from Jack in the Box and Carl's Jr. are similar. Could you tell me what's better or worse about the Jack in the Box burger compared to your McDonald's cheeseburger? And then the same for the Carl's Jr. burger? User: It's basically the same answer, but they just add too much extra stuff to their burgers that make it, like, almost unedible or at least you can't eat it all in one bite or not, you know, like all the items that they put on their burgers and it's just not what I'm into, I guess. Agent: I understan",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview22.txt",
+    "total_chunks": 9
+  },
+  "client_id": null,
+  "chunk_index": 3,
+  "parent_record_id": "b95dda0c-75c4-494a-a620-a8fecb1eb5e0"
+}

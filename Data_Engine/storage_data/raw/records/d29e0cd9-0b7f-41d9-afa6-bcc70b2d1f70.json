@@ -1,0 +1,24 @@
+{
+  "record_id": "d29e0cd9-0b7f-41d9-afa6-bcc70b2d1f70",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.732033",
+  "raw_text": "User: The temperature is always on point. The taste is really good. I feel like it's very flavorful and satisfying. The texture is nice as well. Like it has a good mouthfeel and there's no aftertaste to it. It's just an overall satisfying burrito, I would say.\nAgent: That sounds wonderful. What are the top two or three things that make this Chipotle burrito \"perfect\" for you?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview6",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview6.txt",
+    "total_chunks": 31,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 4,
+  "parent_record_id": "a48d5c67-b799-4d11-942f-3b6236827fe4"
+}

@@ -1,0 +1,23 @@
+{
+  "record_id": "fd954ad5-4855-4097-8c93-4bb8c9c50377",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.868278",
+  "raw_text": "Agent: Understood. So, opting for delivery instead of driving is the primary change when you're in convenience mode. Now, thinking about your most recent fast-food order, what triggered it today? Was it a craving, a deal, an ad, someone suggested it, you were nearby, time pressure, you wanted something lighter, or you wanted a treat? Also, was it planned or spontaneous, and what would have had to change for you to not get fast food today? User: Spontaneous. I think I also had a deal on the app I was using and what would change is just already having food prepared or having leftovers from yesterday Agent: So, it was spontaneous, triggered by a deal on the app, and having food prepared or leftovers would have prevented it. Did you switch from your usual chain or usual item today? If yes, what exactly caused the switch? Was it a deal, a new item, boredom, a bad experience, health, price, convenience, social reasons, or limited options? User: No I stuck to the same stuff I usually do. Ag",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview23.txt",
+    "total_chunks": 12
+  },
+  "client_id": null,
+  "chunk_index": 9,
+  "parent_record_id": "77b85ac2-dbd2-465a-8dcb-6362a88d094f"
+}

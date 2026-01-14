@@ -1,0 +1,39 @@
+{
+  "record_id": "97915858-7064-4bd6-a987-bf6dfdfae57b",
+  "bucket_id": 1,
+  "source_name": "burger_king_menu",
+  "source_type": "csv",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2025-12-27T02:25:07.240459",
+  "raw_text": null,
+  "structured_fields": {
+    "Item": "Bacon & Swiss Royal Crispy Chicken Sandwich"
+  },
+  "numerical_fields": {
+    "Calories": 740.0,
+    "Fat Calories": 390.0,
+    "Fat (g)": 43.0,
+    "Saturated Fat (g)": 11.0,
+    "Trans Fat (g)": 0.0,
+    "Cholesterol (mg)": 110.0,
+    "Sodium (mg)": 1920.0,
+    "Total Carb (g)": 56.0,
+    "Dietary Fiber (g)": 9.0,
+    "Sugars (g)": 10.0,
+    "Protein (g)": 39.0
+  },
+  "categorical_fields": {
+    "Category": "Chicken & More"
+  },
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "dataset_name": "burger_king_menu",
+    "row_index": 115,
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Phase_1_Taste_Embedding_Model/data/raw/burger-king-menu.csv"
+  },
+  "client_id": null,
+  "chunk_index": null,
+  "parent_record_id": null
+}

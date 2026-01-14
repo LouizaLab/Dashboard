@@ -1,0 +1,24 @@
+{
+  "record_id": "582183ae-1689-4b84-be63-da358e9b9b42",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.773734",
+  "raw_text": "User: Um in the past two weeks I've only eaten Little Caesars. I haven't ate any other fast food. But if I do want fast food, um it's usually if it's not McDonald's it's Taco Bell. And I usually get them if I'm just passing by going through town.\nAgent: Thank you for that insight. So, Little Caesar's was the main fast food recently, and otherwise, it's McDonald's or Taco Bell, often triggered by being in town.\n\nNow, what does \"good value\" mean to you in fast food? Could you pick your top two or three factors from taste, portion size, speed, nutrition, consistency, or price, and explain how you judge if something is \"worth it\"?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "44",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/44.txt",
+    "total_chunks": 33,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 29,
+  "parent_record_id": "694c9af7-c584-49a2-a404-743a61005dd2"
+}

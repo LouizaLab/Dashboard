@@ -1,0 +1,24 @@
+{
+  "record_id": "84df4310-f752-4842-a5f3-1399a26ff738",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.809269",
+  "raw_text": "User: What situations do you choose these McDonald's fries? How long do we have left in this interview?\nAgent: We have about five to seven minutes left in the interview.\n\nTo continue,...",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "37",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/37.txt",
+    "total_chunks": 60,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 54,
+  "parent_record_id": "bd9a4494-3a92-4fcb-bb36-575404a64316"
+}

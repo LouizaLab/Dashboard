@@ -1,0 +1,24 @@
+{
+  "record_id": "47354e91-7cd7-4865-9093-c2899670ce40",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.776982",
+  "raw_text": "User: I think it was mostly time pressure being nearby. I was already out. The location was convenient and I didn't have the time or energy to think through other options. There wasn't necessarily craving or an ad pushing me and no one suggested it. It was really about efficiency, wanting something dependable that wouldn't slow me down.\nAgent: Thank you for clarifying that. Was this order planned or spontaneous? And what would have had to change for you to not get fast food today?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "46",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/46.txt",
+    "total_chunks": 19,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 16,
+  "parent_record_id": "42485974-cee0-43b1-bfcd-159fb131da89"
+}

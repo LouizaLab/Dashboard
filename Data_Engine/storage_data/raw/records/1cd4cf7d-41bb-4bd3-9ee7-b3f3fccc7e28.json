@@ -1,0 +1,24 @@
+{
+  "record_id": "1cd4cf7d-41bb-4bd3-9ee7-b3f3fccc7e28",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.754746",
+  "raw_text": "User: Whenever they have deals on Big Macs, I definitely buy the deal. But if they got a deal on another thing, I may not get it. But any deals on Big Macs, I'm there.\nAgent: Thank you for that insight. Over the past two weeks, what have been your most common fast-food patterns? This includes when you eat it, what you usually order, and what...",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "41",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/41.txt",
+    "total_chunks": 39,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 15,
+  "parent_record_id": "3a86faee-b265-401f-89c3-2956bf68e535"
+}

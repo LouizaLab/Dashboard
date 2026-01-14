@@ -1,0 +1,23 @@
+{
+  "record_id": "4bbe8c42-06d6-4c5e-98eb-6b89c6b7bcff",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.867672",
+  "raw_text": "t's good to know. Has your price sensitivity changed in the last two to four weeks? Why or why not? User: Yes, we have less money and things keep getting more expensive so we are on a tight budget. Agent: I understand. It sounds like your price sensitivity has definitely increased due to your current budget and the rising cost of living. What changed in your life or in prices or fees, and how did it change what you order? User: My husband got a different job where he makes less money so we have less money and things are more expensive. Agent: Thank you for sharing that, Sarah. It's clear that your husband's job change and the increased cost of living have significantly impacted your budget and, consequently, your fast-food choices. Are you trying to eat healthier than two to four weeks ago? Why or why not? User: I'm not really trying. It's just kind of, you know, a byproduct of not being able to go out. Agent: I understand. So, while not a conscious effort, eating less fast food due",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview2.txt",
+    "total_chunks": 12
+  },
+  "client_id": null,
+  "chunk_index": 9,
+  "parent_record_id": "6cb1c839-9316-444a-b7a9-1e6f04a47cad"
+}

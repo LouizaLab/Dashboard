@@ -1,0 +1,24 @@
+{
+  "record_id": "a74b6d33-b600-4282-a3e6-8ca872b7c081",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.755681",
+  "raw_text": "User: I was in a McDonald's mode. I wanted McDonald's so I went and got McDonald's.\nAgent: Okay, you were in a McDonald's mode. When you're in that specific mode, what's the first thing that typically changes in your order?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "41",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/41.txt",
+    "total_chunks": 39,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 23,
+  "parent_record_id": "3a86faee-b265-401f-89c3-2956bf68e535"
+}

@@ -1,0 +1,24 @@
+{
+  "record_id": "2360ea9e-31f1-4dfb-9c11-f8c011cd80fa",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.708823",
+  "raw_text": "User: Spontaneous.\nAgent: Understood. It was a spontaneous decision driven by a craving.\n\nWhat would have had to change for you to not get fast food today?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview2",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview2.txt",
+    "total_chunks": 31,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 18,
+  "parent_record_id": "89414df8-139e-4b72-9450-a29a8a41b846"
+}

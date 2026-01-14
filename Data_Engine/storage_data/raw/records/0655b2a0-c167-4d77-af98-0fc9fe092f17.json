@@ -1,0 +1,24 @@
+{
+  "record_id": "0655b2a0-c167-4d77-af98-0fc9fe092f17",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.795972",
+  "raw_text": "User: A buy one get one free for sure.\nAgent: Has your price sensitivity changed in the last two to four weeks? And if...",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview28",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview28.txt",
+    "total_chunks": 43,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 30,
+  "parent_record_id": "1940e73c-7457-4f0e-96e6-ebd8700cb728"
+}

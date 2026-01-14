@@ -1,0 +1,24 @@
+{
+  "record_id": "768ac874-781e-473a-a826-b53c94ab2a4d",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.721779",
+  "raw_text": "User: no chili taste.\nAgent: I understand. So the grilled onions and spread are better, but the fries themselves and the lack of chili are worse.\n\nAnd how about the Carne Asada fries from Alberto's? What's better or worse about them compared to your favorite chili cheese fries?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview4",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview4.txt",
+    "total_chunks": 33,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 16,
+  "parent_record_id": "2bf06f63-1970-4fb8-9751-bc4c59483394"
+}

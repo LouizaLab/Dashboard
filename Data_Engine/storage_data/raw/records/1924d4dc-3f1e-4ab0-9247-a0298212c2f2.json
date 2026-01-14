@@ -1,0 +1,24 @@
+{
+  "record_id": "1924d4dc-3f1e-4ab0-9247-a0298212c2f2",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.777207",
+  "raw_text": "User: no, I didn't switch today. I stayed with my usual chain and my usual item. That's because the conditions didn't change. Same time pressure, same location, same expectations.\nAgent: Okay, thank you for clarifying that. What would make you permanently change your \"default\" order? What would you need to see happen repeatedly, such as taste, consistency, price, or convenience, for you to make that...",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "46",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/46.txt",
+    "total_chunks": 19,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 18,
+  "parent_record_id": "42485974-cee0-43b1-bfcd-159fb131da89"
+}

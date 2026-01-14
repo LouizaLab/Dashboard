@@ -1,0 +1,24 @@
+{
+  "record_id": "68c8fe2b-cc78-492e-8f90-19cfbe0c775c",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.835172",
+  "raw_text": "User: Buy one get one and the percent off are usually the main things especially like half off.\nAgent: So, buy-one-get-one offers and percentage-off deals, especially half-off, are what truly influence your behavior.\n\nHas your price sensitivity changed in the last two to four weeks? If so, why? What changed in your life or in prices or fees, and how did it change what you order?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "33",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/33.txt",
+    "total_chunks": 22,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 20,
+  "parent_record_id": "aa98a079-d75e-4bbe-84c1-8fdbe78a1de3"
+}

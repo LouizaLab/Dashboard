@@ -1,0 +1,23 @@
+{
+  "record_id": "1c5c5e00-85b1-45fb-a26f-4d00110582bd",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T17:31:02.868802",
+  "raw_text": "urgers a lot but I get kind of sick of them since a lot of places that's what they sell so I do like to have some different alternatives Agent: Okay, so a chicken sandwich with lettuce and mayo is another item you like. What are one or two more similar items you enjoy? And for each of these, including the chicken sandwich, could you tell me what's better or worse compared to your favorite Panda Express orange chicken? User: Okay, let me think. Well, I mean, I would eat a Big Mac from McDonald's, and I would say it's worse than my orange chicken.",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "11_labs_interviews",
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview26.txt",
+    "total_chunks": 8
+  },
+  "client_id": null,
+  "chunk_index": 7,
+  "parent_record_id": "f3c3f8d3-8e42-4e49-b88a-95fc2a854582"
+}

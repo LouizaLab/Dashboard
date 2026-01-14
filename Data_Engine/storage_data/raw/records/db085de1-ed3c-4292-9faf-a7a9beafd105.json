@@ -1,0 +1,24 @@
+{
+  "record_id": "db085de1-ed3c-4292-9faf-a7a9beafd105",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.666290",
+  "raw_text": "User: I think I'd probably rather go to Taco Bell if that happened get maybe a chalupa meal\nAgent: Okay, a Chalupa meal from Taco Bell. Why do you consider that the closest replacement for your Double Quarter Pounder with Cheese?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview23",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview23.txt",
+    "total_chunks": 22,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 5,
+  "parent_record_id": "9226c320-dfb2-47d8-87a1-ed9e447a8705"
+}

@@ -1,0 +1,24 @@
+{
+  "record_id": "4b4c727c-b79c-4f0e-b0a1-299593a02259",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.731227",
+  "raw_text": "User: All right, so I'll pair the nuggets with everything. I got the last question out of the way. I'll pair the nuggets with everything. I'll eat it with everything. It just tastes great with everything. I'm a big guy. I love the nuggets. Nuggets taste awesome. Give them a triple gold star, three star rating, triple gold star, all three of them, five out of five star and 10 out of 10 star. So it goes well with everything. McFurry thing, I love it McFurry with nuggets? Love it! Soda with McFurry? Love it! Milk with nugget? Love it! Early morning with coffee? Nuggets? Love it! Late night, by the fog pass out? Nuggets? I love it! Taking notes, doing something...nuggets...love it! What would I pair this with? Always pair this with BBQ and Sour. I always try to make sure that I always get at least 15 or at least 10 sweet and sours and BBQ. I want 10 of each. That's so that I can dip pretty much the whole nugget into the BBQ sauce, which is a really awesome because when you dip the nugget and you put that much BBQ sauce in it, you still taste the nugget like if it didn't have BBQ sauce. So it's a constant drenching thirst going through your mouth. For the drink, my favorite drink I would love to match your wish is The Sprite but it would not be the number one winner. I love to match it with The Sprite but the number one winner to match it with would probably be a Frappe. A Frappe, Mocha, Caramel, any flavor would be the winner because that milk just does something with that oil that comes I guess from the nuggets and it tends to break it up more and you need to have, oh also with The Frappe a bottle of water or some type of water or Hawaiian Punch or any other type of drink with it because it's quenching, it's good but you just need that last kicker to kick it off. You know you got the football right there in the middle, you got the player, you got the football in the middle which is a good thing. But I think that's what we're going to be looking at. And I think that's what we're going to be looking at. And then you just need the energy or the activation device to activate the whole game and the whole scenery or like universe universe universe would be water juice soda anything with that mix.\nAgent: That's a very comprehensive list of pairings, and it sounds like you truly enjoy your nuggets with a wide variety of things, especially with plenty of sauces and a Frappe.\n\nNow, let's move on to the context of your choices. In what situations do you choose these forty-piece nuggets most often? Please include details like time pressure, location, ordering channel, and who you're with.",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview7",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview7.txt",
+    "total_chunks": 11,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 10,
+  "parent_record_id": "3a954e63-b718-482c-b02d-9509cae55cd7"
+}

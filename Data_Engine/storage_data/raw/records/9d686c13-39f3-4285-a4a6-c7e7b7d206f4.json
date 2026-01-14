@@ -1,0 +1,24 @@
+{
+  "record_id": "9d686c13-39f3-4285-a4a6-c7e7b7d206f4",
+  "bucket_id": 2,
+  "source_name": "11_labs_interviews",
+  "source_type": "txt",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2026-01-07T21:38:47.748212",
+  "raw_text": "User: I usually pair it with fries because that's usually easy and it comes in a combo. I'm not usually one for like soft drinks and sodas just because I find them pretty sugary and fattening. And yeah, I try and avoid that. Yeah, I would say fries is what I would normally go with.\nAgent: Okay, so fries are your go-to pairing. That makes sense, as they often come in a combo.\n\nYou mentioned avoiding sodas. Is there anything else you would absolutely never pair with your Popeye's chicken sandwich, and if so, why not?",
+  "structured_fields": {},
+  "numerical_fields": {},
+  "categorical_fields": {},
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "survey_name": "Interview8",
+    "file_path": "/Users/rohitganti/Desktop/Dashboard/Data_Engine/ingestion/bucket2_survey_interviews/11_labs_interviews/Interview8.txt",
+    "total_chunks": 19,
+    "chunked_by": "user_responses"
+  },
+  "client_id": null,
+  "chunk_index": 7,
+  "parent_record_id": "1f511bb6-4266-4aca-8ca1-8692fc9731e7"
+}

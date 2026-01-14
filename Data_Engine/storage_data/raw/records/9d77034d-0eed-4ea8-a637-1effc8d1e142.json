@@ -1,0 +1,39 @@
+{
+  "record_id": "9d77034d-0eed-4ea8-a637-1effc8d1e142",
+  "bucket_id": 1,
+  "source_name": "burger_king_menu",
+  "source_type": "csv",
+  "brand": null,
+  "timestamp": null,
+  "ingestion_time": "2025-12-27T02:25:07.242466",
+  "raw_text": null,
+  "structured_fields": {
+    "Item": "Garden Side Salad w/o dressing"
+  },
+  "numerical_fields": {
+    "Calories": 110.0,
+    "Fat Calories": 70.0,
+    "Fat (g)": 8.0,
+    "Saturated Fat (g)": 5.0,
+    "Trans Fat (g)": 0.0,
+    "Cholesterol (mg)": 15.0,
+    "Sodium (mg)": 190.0,
+    "Total Carb (g)": 3.0,
+    "Dietary Fiber (g)": 0.5,
+    "Sugars (g)": 1.0,
+    "Protein (g)": 9.0
+  },
+  "categorical_fields": {
+    "Category": "Salads & Sides"
+  },
+  "sentiment": null,
+  "embedding": null,
+  "metadata": {
+    "dataset_name": "burger_king_menu",
+    "row_index": 141,
+    "file_path": "/Users/rohitganti/Desktop/Consumer_Engine/Phase_1_Taste_Embedding_Model/data/raw/burger-king-menu.csv"
+  },
+  "client_id": null,
+  "chunk_index": null,
+  "parent_record_id": null
+}
