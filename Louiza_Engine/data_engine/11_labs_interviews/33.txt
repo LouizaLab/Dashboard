@@ -1,0 +1,80 @@
+Call Transcript:
+
+User: Starting the interview.
+Agent: I'm here to collect information about your food preferences to complete the onboarding so you can get rewarded. To start, could you please tell me your name or Prolific ID?
+User: My name, my prolific ID is 664-63E4EFB99FBA5A67A010A. My name is Justin.
+Agent: Okay, Justin. Thank you for that.
+
+Now, let's talk about your food preferences. What is your favorite fast-food item, including the chain and the exact item, and why do you like it? Please tell me about its flavor, texture, temperature, smell, and aftertaste.
+User: My favorite fast food item is probably maybe a quarter pounder, double quarter pounder from McDonald's. Just because with cheese is just because I like the kind of char grilled taste to it. I like how it's full with the sauces and the mayonnaise. And I'm also like when I get a lot of cheese on it.
+Agent: That's a great choice. What are the top two or three things that make that Double Quarter Pounder with Cheese "perfect" for you? For example, is it a crunchy coating, a specific sauce balance, the heat level, or the bun texture?
+User: I think the bun texture and also the sauce balance really make for it, but also the mix with the cheese and the meat is just a good combination.
+Agent: Understood. So, the bun texture, sauce balance, and the combination of cheese and meat are key to its perfection.
+
+On the flip side, what are the top two or three things that would make that Double Quarter Pounder with Cheese "bad" for you? For instance, if it were soggy, dry, cold, under-salted, too greasy, or stale?
+User: Cold definitely if it was um stale or undercooked. Maybe a little too soggy on the bun would definitely ruin it
+Agent: I see. Cold, stale, undercooked, or a soggy bun would definitely make it a bad experience.
+
+If your Double Quarter Pounder with Cheese was unavailable, what would you order instead, including the chain and the specific item?
+User: I think I'd probably rather go to Taco Bell if that happened get maybe a chalupa meal
+Agent: Okay, a Chalupa meal from Taco Bell. Why do you consider that the closest replacement for your Double Quarter Pounder with Cheese?
+User: I really like the taco taste. I like being able to have, you know, that sort of Mexican but fast food feel. Really something I like being able to choose between the chicken and steak, things like that.
+Agent: That makes sense. You enjoy the Mexican fast-food feel and the choice of fillings.
+
+Now, could you name two or three similar items you also like from any chain? For each one, please tell me what's better or worse compared to your favorite Double Quarter Pounder with Cheese.
+User: I think I would say Chick-fil-A sandwich, chicken sandwich, crispy or spicy Chick-fil-A sandwich. I like how it's chicken. I like how it just has a really consistent taste. The only thing I don't like better is I like the sides and stuff you might get from the McDonald's, sometimes a little better. Sometimes I'd rather have the fries, but even though I do really like Chick-fil-A fries, it's kind of really almost a tie. And my second one would have to be maybe like something, maybe like breakfast from Chick-fil-A, I would have to say. So like one of those wraps, chicken wraps.
+Agent: Okay, so a Chick-fil-A crispy or spicy chicken sandwich is one. You appreciate its consistent chicken taste, though you sometimes prefer McDonald's sides and fries.
+
+And for the Chick-fil-A chicken wrap, how does that compare to your favorite Double Quarter Pounder with Cheese, in terms of what's better or worse?
+User: I think it compares to, from what's better from worse, it compares really just, I think if anything better probably because I do like the breakfast the best. Maybe that might even be my top really. Okay.
+Agent: That's interesting that the Chick-fil-A breakfast wrap might even be your top choice.
+
+Moving on, what do you usually pair with your Double Quarter Pounder with Cheese? This could include drinks, sides, or sauces. And what would you never pair it with, and why?
+User: It usually fries and then drink like a Pepsi and a large fry. Maybe get some honey mustard sauce or creamy, some creamy sriracha sauce. What I wouldn't pair it with is anything like a fruit drink or anything of that nature.
+Agent: Okay, so you usually pair it with large fries and a Pepsi, perhaps with honey mustard or creamy sriracha sauce. And you'd never pair it with a fruit drink.
+
+Now, let's talk about when you choose this item. In what situations do you choose your Double Quarter Pounder with Cheese most often? Please consider factors like time pressure, your location such as home, work, or during a commute, the ordering channel like drive-thru or delivery, and who you're with.
+User: Usually at night, probably by myself, maybe after all my work's done. No time pressure usually, just kind of after relaxing after the work's over.
+Agent: That's helpful to know. So, typically at night, by yourself, after work, and without time pressure.
+
+How does price change your choice? For example, if your Double Quarter Pounder with Cheese cost two dollars more, what would you do?
+User: I think I would still maybe I might go somewhere else if it costs a little more.
+Agent: Understood. So a two-dollar price increase might make you consider other options.
+
+What if there was a deal on the Double Quarter Pounder with Cheese? What would you do differently then?
+User: If there was a deal, then yeah, I'd still consider it depending on what I'm getting extra out of it.
+Agent: Okay, so a deal would definitely influence your choice, depending on what extra you'd get from it.
+
+Let's shift gears a bit. What does "good value" mean to you in fast food? Could you pick your top two or three factors, such as taste, portion size, speed, nutrition, consistency, or price, and explain how you judge whether something is "worth it"?
+User: I think price and I think also portion size. How I judge it is just really measuring the price to the portion size of what I'm getting. So if I'm getting more and I'm getting a deal for more portion, then that's usually a deal for me.
+Agent: So, for you, good value in fast food comes down to price and portion size, and you judge it by the ratio of what you pay to the amount of food you receive.
+
+Now, let's move on to your most recent fast-food experience. Compared to your last fast-food order, what changed today, if anything? Could you pick the biggest driver and explain if it was your mood, cravings, schedule, budget, health goals, social plans, or convenience?
+User: I think the biggest thing would have to be convenience, delivery, probably was what it was Chick-fil-A I think. Just being able to sit there and have it come.
+Agent: So convenience was the biggest driver for your last order, specifically delivery from Chick-fil-A.
+
+What "mode" would you say you are in today? For example, are you in a budget, health, treat, convenience, explore, or stressed mode?
+User: I'd say I'm in convenience mode today.
+Agent: Okay, you're in convenience mode today. What's the first thing that changes in your order when you're in that mode?
+User: Wanting to do delivery in comparison to driving there.
+Agent: Understood. So, opting for delivery instead of driving is the primary change when you're in convenience mode.
+
+Now, thinking about your most recent fast-food order, what triggered it today? Was it a craving, a deal, an ad, someone suggested it, you were nearby, time pressure, you wanted something lighter, or you wanted a treat? Also, was it planned or spontaneous, and what would have had to change for you to not get fast food today?
+User: Spontaneous. I think I also had a deal on the app I was using and what would change is just already having food prepared or having leftovers from yesterday
+Agent: So, it was spontaneous, triggered by a deal on the app, and having food prepared or leftovers would have prevented it.
+
+Did you switch from your usual chain or usual item today? If yes, what exactly caused the switch? Was it a deal, a new item, boredom, a bad experience, health, price, convenience, social reasons, or limited options?
+User: No I stuck to the same stuff I usually do.
+Agent: Okay, you stuck to your usual.
+
+What would make you permanently change your "default" order? What would you need to see happen repeatedly, such as taste, consistency, price, or convenience?
+User: Something new I dislike will make me change it but probably not for too long unless it was just a new like flagship product.
+Agent: So, a new dislike of your current default, or a compelling new flagship product, would be the main reasons for a permanent change.
+
+How much did a deal influence your choice today? Could you explain what kind of deal actually changes your behavior, such as buy-one-get-one, a percentage off, app points, or free delivery?
+User: Buy one get one and the percent off are usually the main things especially like half off.
+Agent: So, buy-one-get-one offers and percentage-off deals, especially half-off, are what truly influence your behavior.
+
+Has your price sensitivity changed in the last two to four weeks? If so, why? What changed in your life or in prices or fees, and how did it change what you order?
+User: Not too much now I wouldn't say that.
+Agent: ...

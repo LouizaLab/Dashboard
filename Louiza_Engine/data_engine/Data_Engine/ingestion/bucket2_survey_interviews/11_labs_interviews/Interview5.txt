@@ -1,0 +1,79 @@
+Call Transcript:
+
+User: ...
+Agent: I'm here to collect information about your food preferences to complete the onboarding so you can get rewarded. To start, please say your name or Prolific ID.
+User: Prolific ID is 677-22-F8E3A4F08A288A1F640.
+Agent: Okay, thank you. What is your favorite fast-food item, including the chain and the exact item? And could you tell me why you like it?
+User: I like Papa John's pepperoni pizza and I just like it because I like having the garlic sauce to dip with.
+Agent: That's interesting. Could you describe the flavor, texture, temperature, smell, and aftertaste of that Papa John's pepperoni pizza for me?
+User: The smell is just kind of, um... It's kind of a savory smell. It smells like pepperoni. It tastes really good. It's spicy. The pizza crust is soft and the cheese is gooey.
+Agent: Thank you for that detailed description. What are the top two or three things that make that Papa John's pepperoni pizza "perfect" for you?
+User: Just that it's cooked well, the dough's not soggy, there's the right amount of sauce, the right amount of cheese.
+Agent: I understand. And what are the top two or three things that would make that same pizza "bad" for you? For example, if it were soggy, dry, or cold.
+User: If it was cold, if it was undercooked and the bottom was not cooked well enough, if the cheese was, if there was not enough cheese or if there was too much cheese, if there was too much pepperoni.
+Agent: Thank you for sharing that. If your favorite Papa John's pepperoni pizza was unavailable, what would you order instead, including the chain and item?
+User: I would order a McDonald's Big Mac.
+Agent: And why do you consider the McDonald's Big Mac to be the closest replacement for your favorite pizza?
+User: It's not really a replacement but it's just something I also like.
+Agent: I see. So it's another favorite of yours. Can you name two or three other similar items you also like, from any chain?
+User: Uh, I like Italian subs from Papa John's, uh Jimmy John's. I like garlic wings from Wingstop.
+Agent: Okay, you mentioned Italian subs from Jimmy John's. Compared to your favorite Papa John's pepperoni pizza, what's better or worse about the Italian sub?
+User: Um, it's not really better or worse. The sub is cold, the pizza's hot. They taste a little bit different.
+Agent: Understood. And how about the garlic wings from Wingstop? What's better or worse about them compared to your favorite pizza?
+User: Sometimes they're very greasy. Usually they're good.
+Agent: Thank you. What do you usually pair with your Papa John's pepperoni pizza? This could include drinks, sides, or sauces.
+User: Usually cheese sticks, breadsticks.
+Agent: And what would you never pair your pizza with, and why?
+User: I'd probably never pair it with fruit salad because when I have pizza, I want pizza. I don't want healthy food.
+Agent: That makes sense. Moving on, in what situations do you choose your Papa John's pepperoni pizza most often? Please consider factors like time pressure, location such as home or work, the ordering channel like drive-thru or delivery, and who you're with.
+User: Usually it's just when I'm with my family and we just have it delivered.
+Agent: Okay, so it's typically a family meal delivered. How does price change your choice? For example, if it cost two dollars more, what would you do?
+User: I would probably pay it because we like the pizza
+Agent: And if there was a deal, what would you do differently?
+User: . I would probably buy an extra pizza depending on what the deal was.
+Agent: That's good to know. Over the past two weeks, what have been your most common fast-food patterns? This includes when you eat it, what you usually order, and what typically triggers those choices.
+User: Usually it's just whenever I am
+Agent: Please continue.
+User: working late.
+Agent: Okay, so working late often triggers your fast-food choices. What does "good value" mean to you in fast food?
+User: Just that I'm able to get a lot of food or what I pay that I can maybe eat two meals of it.
+Agent: Thank you. From the factors of taste, portion size, speed, nutrition, consistency, and price, which are your top two or three for judging "worth it" in fast food, and how do you judge them?
+User: I think price because I need to make sure that it's something I can afford. Taste because if it doesn't taste good it's not worth eating.
+Agent: Thank you. So price and taste are your top two factors.
+
+Now, compared to your last fast-food order, what changed today, if anything? Please pick the biggest driver and explain it, considering factors like mood, cravings, schedule, budget, health goals, social plans, or convenience.
+User: I don't think anything would really change. It's just kind of our standard order.
+Agent: Understood. So, if nothing really changes, what "mode" would you say you are in today? For example, budget, health, treat, convenience, explore, or stressed? And what's the first thing that changes in your order when you are in that particular mode?
+User: Repeat the question.
+Agent: Certainly. What "mode" are you in today? For example, are you in a budget, health, treat, convenience, explore, or stressed mode? And what's the first thing that changes in your order when you are in that particular mode?
+User: I think today I'm just kind of in convenience mode it's just something that I didn't feel like cooking and it's just easy to order a pizza.
+Agent: Okay, so convenience is the mode today. When you're in convenience mode, what's the first thing that changes in your order?
+User: Really nothing it's just the standard order.
+Agent: I understand. What triggered this order today? Please be specific. Was it a craving, a deal, an ad, someone suggested it, you were nearby, time pressure, you wanted something lighter, or you wanted a treat?
+User: It was a craving and I wanted a treat.
+Agent: Was this order planned or spontaneous?
+User: It was spontaneous.
+Agent: What would have had to change for you to not get fast food today?
+User: If I had felt like cooking or if I had gone out to eat, to my family's house to eat,
+Agent: Thank you. Did you switch from your usual chain or usual item today?
+User: no.
+Agent: Okay. What would make you permanently change your "default" order?
+User: Nothing would
+Agent: Understood. What would you need to see happen repeatedly, such as taste, consistency, price, or convenience, for you to consider changing your default order?
+User: If the price went up really high, or if the food quality went down,
+Agent: Thank you for clarifying that.
+
+How much did a deal influence this choice today?
+User: it didn't influence it.
+Agent: Okay. Could you explain what kind of deal actually changes your behavior? For example, is it buy one get one free, a percentage off, app points, or free delivery?
+User: Usually it's some of all of those, but generally buy one, get one free.
+Agent: Has your price sensitivity changed in the last two to four weeks? And if so, why?
+User: No, not really.
+Agent: What changed in your life or in prices or fees, and how did it change what you order?
+User: Nothing really. We just order the same thing every time.
+Agent: Are you trying to eat healthier than two to four weeks ago? Why or why not?
+User: I am sometimes. I tried. Not always, but I try
+Agent: When you are trying to eat healthier, what specific rule are you following? For example, less fried food, fewer calories, more protein, or no soda?
+User: Less fried food, more protein, less sugar, less oil.
+Agent: What recent change affected your eating, such as a gym routine, diet plan, travel, stress, or schedule, and what did it change in your fast-food choices?
+User: I'd say probably maybe stress. I'm not sure.

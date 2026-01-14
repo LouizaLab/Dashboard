@@ -1,0 +1,121 @@
+Call Transcript:
+
+User: Hello.
+Agent: I'm here to collect information about your food preferences to complete the onboarding so you can get rewarded. To start, please tell me your name or Prolific ID.
+User: My name is Sarah.
+Agent: Okay, Sarah. It's nice to meet you.
+
+To begin, could you please tell me what your favorite fast-food item is, including the chain and the exact item? And why do you like it?
+User: It's probably McDonald's, the Big Mac. I like it because I've been eating Big Macs all my life and they're my favorite burger.
+Agent: That's a classic choice, Sarah. The Big Mac is definitely popular. Could you tell me a bit more about what you like about it, specifically regarding its flavor, texture, temperature, smell, and aftertaste?
+User: Um, I like the sauce, the tangy sauce on it. I like the salty cheese, the fresh lettuce, um, the sesame seed bun, and it smells like McDonald's.
+Agent: That's a great description, Sarah. It sounds like you really enjoy the combination of flavors and textures.
+
+What are the top two or three things that make the Big Mac "perfect" for you? For example,...
+User: Probably the sauce and then the sesame seed bun.
+Agent: Understood. The sauce and the sesame seed bun are key to its perfection for you.
+
+Now, on the flip side, what are the top two or three things that would make a Big Mac "bad" for you? For instance, if it were soggy, dry, or cold?
+User: Probably if it were too saucy and if the bun was smashed.
+Agent: I see, so too much sauce or a smashed bun would definitely detract from the experience.
+
+If a Big Mac were unavailable, what would you order instead, including the chain and the specific item? And why would that be the closest replacement for you?
+User: Probably Burger King's Whopper because that's my second favorite burger.
+Agent: Okay, the Burger King Whopper. That makes sense as a second choice.
+
+Could you name two or three similar items you also like from any chain? And for each one, what's better or worse compared to your favorite Big Mac?
+User: I like Wendy's Mushroom Swiss Burger and I like Taco Bell's Grilled Cheese Burrito. I like them. They're, you know, they're just a little bit more expensive.
+Agent: Thank you for sharing those, Sarah. It's interesting to hear your preferences across different chains.
+
+What do you usually pair with your favorite Big Mac, such as drinks, sides, sauces, or dessert? And what would you never pair it with, and why?
+User: I usually pair it with a Diet Coke and some fries. I'd probably not pair it with a salad because if you're eating a Big Mac, you're not going to want to have it with a salad.
+Agent: That's a very clear distinction, Sarah. It makes sense that a salad wouldn't fit with the Big Mac experience.
+
+Now, let's talk about when you choose this item. In what situations do you choose the Big Mac most often? Please include details like if you're under time pressure, your location like home or work, how you order it such as drive-thru or delivery, and who you're with.
+User: I'm usually by myself when my kids are at school and it's during lunchtime and I go through the drive-thru. I use my app to order and they bring it out to me.
+Agent: Thank you for those details, Sarah. It sounds like a convenient and solo lunch ritual.
+
+How does price change your choice? For example, if the Big Mac cost two dollars more, what would you do?
+User: I would order something cheaper. The Big Mac's already getting more expensive. It's at the maximum I'm willing to spend.
+Agent: I understand. So, if the price increased by two dollars, you'd opt for a cheaper alternative.
+
+What if there was a deal on the Big Mac? What would you do differently then?
+User: I'd probably buy the Big Mac more if there was a deal.
+Agent: That makes sense. A good deal can definitely influence how often you choose an item.
+
+Moving on, over the past two weeks, what have been your most common fast-food patterns? This includes when you eat it, what you usually order, and what typically triggers it.
+User: I don't eat it as much lately because we're on a budget and I'm trying not to spend money. If I get a craving, usually during the lunchtime, I'll go once every two weeks.
+Agent: Thank you for sharing that, Sarah. It's helpful to understand how your budget influences your choices.
+
+Now, what does "good value" mean to you in fast food? Please pick your top two or three factors from taste, portion size, speed, nutrition, consistency, or price, and explain how you judge if something is "worth it."
+User: Usually if it fills you up and it's under $10
+Agent: So, for you, good value means a satisfying portion size that fills you up, and a price point under ten dollars. That's very clear.
+
+Now, let's shift a bit. Compared to your last fast-food order, what changed today, if anything? And if something did change, what was the biggest driver? Was it your mood, cravings, schedule, budget, health goals, social plans, or convenience?
+User: I'm going to go with budget. I have less money now.
+Agent: Thank you for clarifying that budget is the biggest driver for you right now.
+
+What "mode" are you in today? For example, are you in a budget, health, treat, convenience, explore, or...
+User: Definitely budget mode.
+Agent: Understood, you're definitely in budget mode.
+
+What's the first thing that changes in your order when you're in that mode?
+User: I usually order less or if I'm going I'll order a smaller meal.
+Agent: Okay, so in budget mode, you tend to order less or a smaller meal.
+
+Now, what triggered this order today? Please be specific. Was it a craving, a deal, an ad, someone suggested it, you were nearby, time pressure, you wanted something lighter, or you wanted a treat?
+User: I'm gonna say it was a craving for sure.
+Agent: So, a craving was the trigger today.
+
+Was this order planned or spontaneous?
+User: Spontaneous.
+Agent: Understood. It was a spontaneous decision driven by a craving.
+
+What would have had to change for you to not get fast food today?
+User: I would have um the only thing that would have changed is if I didn't have the extra cash.
+Agent: So, if you hadn't had the extra cash, you wouldn't have gotten fast food today. That makes sense.
+
+Did you switch from your usual chain or usual item today?
+User: No, I didn't. I had a coupon for free fries so I got a Big Mac with it.
+Agent: Okay, so you stuck with your usual Big Mac, and the free fries coupon was a nice bonus.
+
+What would make you permanently change your "default" order? What would you need to see happen repeatedly, such as taste, consistency, price, or convenience?
+User: If the price continued to rise.
+Agent: So, a continued rise in price would be the main factor that would make you permanently change your default order. That's very clear.
+
+How much did a deal influence this choice today?
+User: It influenced it quite a bit.
+Agent: Okay, it influenced it quite a bit. Could you explain what kind of deal actually changes your behavior? For example, is it buy-one-get-one, a percentage off, app points, or free delivery?
+User: Usually app points if I can get a free item with my food.
+Agent: So, getting a free item through app points is what really changes your behavior. That's good to know.
+
+Has your price sensitivity changed in the last two to four weeks? Why or why not?
+User: Yes, we have less money and things keep getting more expensive so we are on a tight budget.
+Agent: I understand. It sounds like your price sensitivity has definitely increased due to your current budget and the rising cost of living.
+
+What changed in your life or in prices or fees, and how did it change what you order?
+User: My husband got a different job where he makes less money so we have less money and things are more expensive.
+Agent: Thank you for sharing that, Sarah. It's clear that your husband's job change and the increased cost of living have significantly impacted your budget and, consequently, your fast-food choices.
+
+Are you trying to eat healthier than two to four weeks ago? Why or why not?
+User: I'm not really trying. It's just kind of, you know, a byproduct of not being able to go out.
+Agent: I understand. So, while not a conscious effort, eating less fast food due to budget constraints has naturally led to a change.
+
+Are there any specific rules you find yourself following, even unintentionally, such as less fried food, fewer calories, more protein, or no soda?
+User: Not really, no.
+Agent: Okay, thank you.
+
+What recent change affected your eating? For example, a gym routine, a diet plan, travel, stress, or schedule, and what did it change in your fast-food choices?
+User: The only thing that's changed is less money so I don't eat fast food as often.
+Agent: Understood. So, the main change affecting your fast-food choices is having less money, which means you're eating it less frequently.
+
+Now, let's talk about novelty versus routine. When do you try new items versus sticking to your usual?
+User: I'm a creature of habit I usually stick to my usual.
+Agent: I understand you're a creature of habit.
+
+When do you try new items versus stick to your usual? Could you give one recent example of each and explain why?
+User: Usually it's because there's a promotion where you get a really good price and then sometimes I'll switch it up.
+Agent: Okay, so a good promotion might entice you to try something new.
+
+Could you give me one recent example of when you stuck to your usual and why, and one recent example of when you tried something new and why?
+User: Most of the time I stick to my usual

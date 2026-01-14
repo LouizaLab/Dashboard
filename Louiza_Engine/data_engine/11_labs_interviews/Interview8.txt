@@ -1,0 +1,74 @@
+Call Transcript:
+
+User: Hello?
+Agent: I'm here to collect information about your food preferences to complete the onboarding so you can get...
+User: Thank you.
+Agent: You're welcome. To start, could you please tell me your name or Prolific ID?
+User: Sean.
+Agent: Thanks, Sean. It's great to meet you.
+
+Now, let's dive into your food preferences. What is your favorite fast-food item, including the chain and the exact item? And could you tell me why you like it, specifically touching on its flavor, texture, temperature, smell, and aftertaste?
+User: Popeye's chicken sandwich. I like the spicy mayo. I like the bun. I like the pickles and it tastes great. And there's a spicy kick. That's about it.
+Agent: Thanks, Sean. You mentioned the spicy mayo, the bun, the pickles, and the spicy kick. Could you tell me a bit more about the texture of the chicken, the temperature of the sandwich, its smell, and the aftertaste? Also, what are the top two or three things that make this Popeye's chicken sandwich "perfect" for you, and what are the top two or three things that would make it "bad"?
+User: So it's a fried chicken sandwich. It's served pretty hot. The things that make it great are when it's served hot and I like fewer pickles on it personally. What would make it really bad is if they put too much mayo. I feel like that kind of makes me feel bad. But yeah, that's about it.
+Agent: Thanks for those details, Sean. It sounds like the perfect temperature and just the right amount of pickles are key for you, and too much mayo can really spoil it.
+
+If the Popeye's chicken sandwich was unavailable, what would you order instead, and from which chain? And what makes that your closest replacement?
+User: I like McDonald's chicken nuggets. I think they're also fried chicken. And I like that they're smaller, they're bite-sized, and I can have a lot of them with barbecue sauce.
+Agent: That's a great alternative, Sean, especially with the barbecue sauce.
+
+Now, thinking beyond just replacements, can you name two or three other similar items you also like from any chain? And for each of those, what's better or worse about them compared to your favorite Popeye's chicken sandwich?
+User: I have tried Raisin Cane's before and they have a really interesting concept where they give you two fried chicken tenders, but they also give you toast and this kind of spicy sauce as well. And usually you make a sandwich with the toast and fried chicken. So on occasion that can be great, but I would say accessibility of canes can be a little tough. They're not that many stores. And usually the lines are pretty long, at least where I go. So that's the only obstacle.
+Agent: That's interesting how you create a sandwich with the toast and tenders at Raising Cane's, Sean. It sounds like a unique experience, even with the accessibility challenges.
+
+Moving on, what do you usually pair with your favorite Popeye's chicken sandwich, such as drinks, sides, or sauces? And on the flip side, what would you absolutely never pair it with, and why?
+User: I usually pair it with fries because that's usually easy and it comes in a combo. I'm not usually one for like soft drinks and sodas just because I find them pretty sugary and fattening. And yeah, I try and avoid that. Yeah, I would say fries is what I would normally go with.
+Agent: Okay, so fries are your go-to pairing. That makes sense, as they often come in a combo.
+
+You mentioned avoiding sodas. Is there anything else you would absolutely never pair with your Popeye's chicken sandwich, and if so, why not?
+User: That's probably it.
+Agent: Understood. Thanks for clarifying, Sean.
+
+Now, let's talk about when you choose your favorite Popeye's chicken sandwich. In what situations do you find yourself ordering it most often? Please consider things like if you're under time pressure, your location like home, work, or during a commute, how you order it—whether it's drive-thru or delivery—and who you might be with at the time.
+User: Usually it's late night delivery after I go out to a party or whatever. Then I come home at 2, 3 a.m. and I'm starving and then I just have to get it
+Agent: Thanks for sharing that, Sean. It sounds like a perfect late-night, post-party craving solution.
+
+Now, let's consider price. How does price influence your choice when ordering fast food? For example, if your Popeye's chicken sandwich cost two dollars more, what would you do? And if there was a deal available, what might you do differently?
+User: Yeah, I think generally fast food is pretty inexpensive and given that I'm not having it super regularly, I kind of just optimize for what I like the most even if it's $1 or $2 more. And that's kind of why I choose Popeye's irrespective of price.
+Agent: That's a clear perspective, Sean. So, if there was a deal available for your Popeye's chicken sandwich or another item, would that influence your decision or change what you order at all?
+User: Not really, no.
+Agent: Understood. It sounds like your preference for the Popeye's chicken sandwich is quite strong, regardless of deals.
+
+Let's shift gears a bit. Over the past two weeks, what have been your most common fast-food patterns? When you eat it, what do you usually order, and what typically triggers those fast-food occasions?
+User: I have been traveling, so I actually have not had fast food in the last two weeks. Yeah.
+Agent: Thanks for letting me know, Sean. Traveling can definitely change eating habits.
+
+Since you haven't had fast food recently, let's talk about what "good value" means to you in fast food. Could you pick your top two or three factors from taste, portion size, speed, nutrition, consistency, and price, and explain how you judge if something is "worth it"?
+User: I think it's taste above all else. And I would say convenience is second. Yeah, if it's not like in a location or delivery app that's very accessible, I probably just won't get it at all. And I particularly like if it's, you know, on my walk home from work or somewhere nearby my apartment, which Popeyes is.
+Agent: Thanks for clarifying that taste and convenience are your top factors for good value, Sean. It makes sense that accessibility plays a big role.
+
+Now, thinking about your last fast-food order before your recent travels, or if you were to order fast food today, what would be the biggest driver for that choice? Would it be your mood, cravings, schedule, budget, health goals, social plans, or convenience? And what "mode" would you say you're in today—like budget, health, treat, convenience, explore, or stressed?
+User: ...
+Agent: Are you still there, Sean?
+User: ...
+Agent: Are you still there, Sean? Please let me know if you're still with me.
+User: Yep.
+Agent: ...
+User: Yep. I'm
+Agent: Great, thanks for letting me know, Sean.
+
+To recap, I was asking about what would be the biggest driver for your fast-food choice today, or for your last order before your travels. Would it be your mood, cravings, schedule, budget, health goals, social plans, or convenience? And what "mode" would you say you're in today—like budget, health, treat, convenience, explore, or stressed?
+User: I'm in the health. I'm in a health mode currently. Um, I think if I were to get fast food, it would probably be kind of just at an odd hour kind of between lunch and dinner at like four or five p.m. Or kind of late night, as I mentioned, when food isn't easily accessible.
+Agent: Thanks for clarifying, Sean. So, you're in a health mode right now, and fast food would typically be for those odd hours when other options aren't available.
+
+When you're in this "health mode," what's the first thing that changes in your fast-food order?
+User: ...
+Agent: Are you still there, Sean?
+User: Yep
+Agent: Great, thanks for letting me know, Sean.
+
+When you're in this "health mode," what's the first thing that changes in your fast-food order?
+User: I don't order fast food at all.
+Agent: Understood, Sean. So, when you're in a health mode, fast food is off the table entirely. That's a clear change.
+
+Now, let's think about a time when you do order fast food. What typically triggers that order? Could you be specific, like a craving, a deal, an ad, someone suggested it, you were nearby, time pressure, wanting something lighter, or...

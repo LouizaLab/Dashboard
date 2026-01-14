@@ -1,0 +1,2 @@
+"""Reddit trend scraper package."""
+

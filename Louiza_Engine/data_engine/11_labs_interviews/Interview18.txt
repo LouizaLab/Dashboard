@@ -1,0 +1,42 @@
+Call Transcript:
+
+User: ...
+Agent: I'm here to collect information about your food preferences to complete the onboarding so you can get rewarded. To start, please say your name or Prolific ID.
+User: My prolific ID is 5-D-C-1-E-B-8-3-8-A-8-4-4-6-1-5-1-1 B3CD73.
+Agent: Thank you for that. Now, could you please tell me what your favorite fast-food item is, including the chain and the exact item? And why do you like it?
+User: At the moment, my favorite would be the Mexican pizza from Taco Bell. It's because one thing, it's a little bit less expensive than a bunch of the other stuff you can get. And I just really love how you can get it made up almost any way you want to. And it's very flavorful.
+Agent: That sounds delicious. Could you describe the flavor, texture, temperature, smell, and aftertaste of the Mexican Pizza?
+User: It's, I guess however you, it kind of just tastes like a regular taco, but in a pizza form. And it depends on how you get it made up. It could be spicy or it can be mild. It could be salty. You can get all kinds of different textures on it. I don't really know about an aftertaste. I don't think it leaves much of an aftertaste, but it's very delicious.
+Agent: Thank you for that detailed description. You mentioned the flavor and texture, and that it doesn't leave much of an aftertaste. Could you also tell me about its typical temperature and smell?
+User: It's very warm as soon as you get it, and then maybe if you don't eat at all, you can take it home and warm it up, and then it's hot then too, so you want to eat it hot. But I'm sure it would taste fine cold. What was the second part of the question?
+Agent: You're right, I also asked about the smell. What does the Mexican Pizza typically smell like to you?
+User: It smells pretty much like a taco. It smells pretty good.
+Agent: Thank you. Now, what are the top two or three things that make the Mexican Pizza "perfect" for you?
+User: The variety of options. You can get it made up many different ways with many different flavors and like condiments and you can get like beef or beans, cheese, tomatoes, the spices, and the sauces.
+Agent: That's great to know about the customization options. On the flip side, what are the top two or three things that would make the Mexican Pizza "bad" for you? For example, if it were soggy, dry, or cold.
+User: Yes, I think if it was dry, it would not be very good because everyone I've ever got has been pretty moist and juicy even sometimes. So I definitely wouldn't want to eat one if it was dry. Cold, I don't think I'd want to eat it cold either. You definitely want it warm or hot.
+Agent: Understood, so dry and cold would definitely make it less enjoyable. If the Mexican Pizza was unavailable, what would you order instead, including the chain and the specific item?
+User: If I was ordering from Taco Bell, I would probably just get one of their soft-shell tacos or maybe like one of their rice and bean burritos.
+Agent: And why would a soft-shell taco or a rice and bean burrito be the closest replacement for the Mexican Pizza for you?
+User: To me, it wouldn't be a replacement because it's not close. I don't think it's very close to those items, to the pizza, but it would be my second favorite option.
+Agent: I understand that they aren't close replacements, but rather your next preferred options. Thank you for clarifying.
+
+Now, could you name two or three similar items you also like from any chain? And for each one, what's better or worse compared to your favorite Mexican Pizza?
+User: I can't really think of anything that's similar. Maybe just a typical regular type of pizza would be similar, like a cheese pizza. And maybe if you had a little bit of sausage on it or some type of meat, that could be a good second.
+Agent: Okay, so a regular cheese pizza, perhaps with sausage. What aspects of a regular pizza are better or worse compared to your favorite Mexican Pizza from Taco Bell?
+User: It's better, I guess, because you get more of it. If you order a large pizza, it's going to be much bigger than the Mexican pizza from Taco Bell. What's worse is, I guess, it doesn't hit the spot as much as a Mexican pizza for me. They're good, but not my favorite.
+Agent: That makes sense. Now, what do you usually pair with your Mexican Pizza? This could include drinks, sides, or sauces. And what would you never pair it with, and why?
+User: I usually pair it with a soda or a sweet tea. I think something that I would never pair it with is maybe a juice because I don't think the flavors would meld together really well.
+Agent: Thank you. In what situations do you choose the Mexican Pizza most often? Please include details like time pressure, location such as home, work, or commute, the ordering channel like drive-thru or delivery, and who you're with.
+User: Typically, I go with my family and I'll pick it up or they'll bring it home or maybe someone in my family will bring it home. And I choose it because it's a store that's close to where we live. You know, a restaurant that's close to where we live. And usually, I don't have to buy a lot of, I wouldn't have to buy extras. Like when you buy a burger, you have to get fries and everything. But the Mexican pizza is enough for me. That and a drink is all I need. So that's typically why I would choose that most often.
+Agent: That's very helpful. How does price change your choice? For example, if the Mexican Pizza cost two dollars more, what would you do?
+User: I probably would still get it every now and then, but it would definitely lessen my... It would definitely make me not buy it as much because that would make it, you know, it might make it out of my price range.
+Agent: And if there was a deal on the Mexican Pizza, what would you do differently?
+User: I probably wouldn't do anything differently. If it was... If there was a deal, maybe I would buy two so I could have one and then have another for a snack later or like the next day I could have it again if I wanted. So I guess the only thing it would change is I might buy an extra one.
+Agent: That's a good strategy. Now, thinking about the past two weeks, what have been your most common fast-food patterns? This includes when you eat it, what you usually order, and what typically triggers it.
+User: I usually just get, I use, I stick to what I, you know, my favorites mostly. I don't really go out and try a lot of different things. And I usually get something that is not very expensive. So I stick to things that I've always liked usually.
+Agent: Thank you for sharing that. What does "good value" mean to you in fast food? Could you pick your top two or three factors, such as taste, portion size, speed, nutrition, consistency, or price, and explain how you judge if something is "worth it"?
+User: I like if you go and you get to the fast food restaurant and you get something that is a whole meal. You get the main meal and you get a drink. That's good value. And so that's important. And if you look for set deals, it's like they have buy one, get the other free. That might be something that you look for as well.
+Agent: That's a clear definition of good value. Now, compared to your last fast-food order, what changed today, if anything?
+User: Nothing changed that I can think of. The last time I got something, I got the same thing that I usually get and it was good and I paid about the same price, I believe.
+Agent: Okay, so nothing significant...

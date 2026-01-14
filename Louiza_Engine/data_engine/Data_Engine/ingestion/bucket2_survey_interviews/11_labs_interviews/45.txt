@@ -1,0 +1,50 @@
+Call Transcript:
+
+User: ...
+Agent: I'm here to collect information about your food preferences to complete the onboarding so you can get rewarded. To start, please say your name or Prolific ID.
+User: Cedric Vickers.
+Agent: Thank you, Cedric. What is your favorite fast-food item, including the chain and the exact item? And could you tell me why you like it?
+User: Favorite fast food item? Buffalo wings from Wingstop. I like them because they taste very good and they're spicy and juicy.
+Agent: That sounds delicious. Could you tell me more about the flavor, texture, temperature, smell, and aftertaste of those Buffalo wings from Wingstop?
+User: Texture tend to be deep fried, so I like them crispy. The flavor is traditional, usually buffalo sauce, which is tangy with a little spicy and a little bit heat to it. What else did you say you'd like to know about it?
+Agent: Thank you for those details on the texture and flavor. Could you also describe the ideal temperature, smell, and aftertaste of those Buffalo wings for me?
+User: Okay, temp is usually hot. I like them fresh and hot. Aftertaste, like I said, it gives a little kick, you know, with the spice to it. As far as the smell, the aroma is lovely. One of my favorites.
+Agent: That's a great description. Now, what are the top two or three things that make those Wingstop Buffalo wings "perfect" for you?
+User: Well, their wings are usually a good proportion size. And they're very crispy even though they have, you know, they're sauced very well. They're very crispy. And that usually sets it apart from most wings that aren't as crispy or that are deep fried or oven baked and what have you.
+Agent: That's very helpful. On the flip side, what are the top two or three things that would make those Wingstop Buffalo wings "bad" for you?
+User: A, if they were cold, left sitting out. If they were soggy or if they were not crispy.
+Agent: Understood. If those Wingstop Buffalo wings were unavailable, what would you order instead, including the chain and the specific item?
+User: Does pizza count?
+Agent: Yes, pizza certainly counts. If Wingstop Buffalo wings were unavailable, what specific pizza item from which chain would you order instead, and why is that the closest replacement for you?
+User: Well, it'll probably be pizza because pizza is one of my favorite things to eat in conjunction. It'll probably be, typically, I like a Domino's pizza from Domino's.
+Agent: Okay, so Domino's pizza. Why do you consider Domino's pizza the closest replacement for your favorite Wingstop Buffalo wings?
+User: Like I said, I like to eat, a lot of times I like to eat pizza and wings in conjunction. Pizza is one of my top favorite foods. So yeah, that's why it would be on the top of my list. As far as Domino's, Domino's, I guess, has improved over the years. You know, they're in competition with Little Caesars, Pizza Hut, Papa John's, you know, main chains. But they've done pretty well in their pizza in the last several years and improvement. So I tend to go to them more often.
+Agent: That's interesting to hear about Domino's improvements. Can you name two or three similar items you also like, from any chain? For each one, please tell me what's better or worse compared to your favorite Wingstop Buffalo wings.
+User: You say two more items from what chain? From who?
+Agent: I'm asking for two or three other items that you like, similar to your favorite Wingstop Buffalo wings. These can be from any fast-food chain. For each of those items, please tell me what you think is better or worse about them compared to your Wingstop Buffalo wings.
+User: Two other items from a fast food chain, we can go with a burger probably from, let's see, my favorite burger joint. We can say something simple like a quarter pounder with cheese from McDonald's. That's fast food down the line. Plus they even have their fries are pretty much iconic. Outside of that, we're talking fast food. I mean, I could always go for Taco Bell. I'm old school and get a taco from Taco Bell or a chicken quesadilla. It's not a big deal.
+Agent: Thank you for those examples. Let's start with the Quarter Pounder with Cheese from McDonald's. What do you find is better or worse about that item compared to your favorite Wingstop Buffalo wings?
+User: Better or worse? Well, I mean, I prefer wings over anything, but, you know, a good fast food burger can all, you can always go for long as it's hot fresh. You know, the quarter pounder is always, you know, halfway decent size with the cheese, ketchup, mustard, lettuce. I mean, he's not lettuce, but pickle and onion. You can always go for that.
+Agent: Okay, so you enjoy a hot and fresh Quarter Pounder. When you compare it to your favorite Wingstop Buffalo wings, what aspects of the Quarter Pounder are better, and what aspects are worse?
+User: Nothing is better than the Buffalo wings. And I wouldn't say anything is worse, but I mean, I just prefer wings over a burger, a quarter pounder with cheese. I would prefer wings
+Agent: ...
+User: I would prefer Buffalo wingstop.
+Agent: Understood, you prefer the Buffalo wings. Now, let's talk about the Taco Bell item you mentioned, either a taco or a chicken quesadilla. What do you find is better or worse about that compared to your favorite Wingstop Buffalo wings?
+User: Well, when you go to Taco Bell, they're either here to miss whether it's hot or fresh or how well it's prepared, that kind of thing. It's fast food.
+Agent: So, when you compare a Taco Bell taco or chicken quesadilla to your Wingstop Buffalo wings, what aspects of the Taco Bell items are better, and what aspects are worse for you?
+User: I can't say anything from Taco Bell is better than Wingstop Wings. Worse, I mean, they just don't taste as good.
+Agent: Understood. You've made it clear that Wingstop Buffalo wings are your top choice.
+
+What do you usually pair with your favorite Wingstop Buffalo wings, such as drinks, sides, or sauces? And what would you never pair them with, and why?
+User: Drink, for me, drink, it could be any type of soft drink or sweet tea or whatever they have available. Sides is usually always with fries. They have a variation of seasonings but not necessarily one in particular. Sauces, I can always go with ranch and or blue cheese. Either or works for me.
+Agent: ...
+User: Something that would never pair with? I'm trying to think what it offers. I don't know as far as what Wingstop. Oh, they have this, I don't know, these just like fried or seasoned corn type of thing over there. Wingstop, I'm not a corn fan to add with my wings or any other item there. So you can scratch that off the list as far as what I would not have with it.
+Agent: Thank you for sharing your pairing preferences.
+
+Now, moving on to the next section, in what situations do you choose your favorite Wingstop Buffalo wings most often? Please include details like time pressure, location such as home, work, or commute, the ordering channel like drive-thru or delivery, and who you're with.
+User: Usually myself is either going to be delivered to me through one of the channels either DoorDash or Uber Eats or I will go pick it up. And it's typically a lot of times I like to have it when I'm getting off work, headed into the weekend or if it's game day on the weekends.
+Agent: That's helpful to know. How does price change your choice? For example, if your favorite item cost two dollars more, what would you do?
+User: I enjoy it enough. If it costs $2 more, that's not enough to deter me from getting what I want.
+Agent: Okay, so a two-dollar increase wouldn't deter you. What if there was a deal available? How would that change what you do or what you order?
+User: Oh, well, obviously if there is a deal, then, you know, if it caters to taking price off of something that I want, obviously I'm game for it.
+Agent: Understood. Now, let's talk about your fast-food patterns. Over the past two weeks, what are your most common fast-food patterns? This includes when you eat it, what you usually order, and what typically triggers it.

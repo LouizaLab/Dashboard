@@ -1,0 +1,76 @@
+Call Transcript:
+
+User: Okay.
+Agent: I'm here to collect information about your food preferences to complete the onboarding so you can get rewarded. To start, please say your name or Prolific ID.
+User: 5CEA73210B209700001ACEE5F
+Agent: Thank you. What is your favorite fast-food item, including the chain and the exact item? And could you tell me why you like it?
+User: Chicken Chalupa Supreme at Taco Bell.
+Agent: ...
+User: I like it because it's got...
+Agent: Please continue. What is it about the Chicken Chalupa Supreme that you like?
+User: I like the ingredients because they're fresh and that it has the same flavor and hasn't changed. And I really like the shell of the chalupa.
+Agent: That's great. Could you tell me a bit more about the flavor, texture, and temperature of the Chicken Chalupa Supreme?
+User: Yeah, it has to be... Well, you have to eat the shell, especially the shell. It gets soggy if you don't eat it fairly quickly so you can't have that leftover or something. You have to eat it when it's prepared otherwise it's not really as good. But, yeah, you don't want it to be warm because it would be kind of weird, but you want the chicken to be cooked obviously, so it just tastes fresh. The ingredients should be fresh and the chalaza should be fresh. So
+Agent: Thank you for that detailed description. Based on what you've said, what are the top two or three things that make the Chicken Chalupa Supreme "perfect" for you?
+User: I really like the chicken that they use. I get weird about the texture of meat sometimes, but I like their chicken. It's good. And I like that it just is fresh. I like the tomatoes and the lettuce and the sour cream and stuff. It's just a good blend of flavors.
+Agent: That's helpful. On the flip side, what are the top two or three things that would make the Chicken...
+User: It would be dry.
+Agent: You mentioned it would be dry. What are the top two or three things that would make the Chicken Chalupa Supreme "bad" for you?
+User: Oh, if it was... If I waited too long to eat it and it got soggy, Michelle. And then... Yeah, if I tried to do it like leftover or whatever, if I tried to eat it the next day or something. Same thing basically, I guess. But it would be two different sogginess levels.
+Agent: I understand. If the Chicken Chalupa Supreme was unavailable, what would you order instead, including the chain and item?
+User: I would get...
+Agent: Please take your time.
+User: the Doritos Locos Tacos.
+Agent: Okay, the Doritos Locos...
+User: I would get the Doritos Locos Tacos at Taco Bell.
+Agent: Thank you. Why is the Doritos Locos Tacos the closest replacement for you?
+User: I'm just going to go back to the pen time. It's just another thing that I really like to eat from Taco Bell.
+Agent: Understood. Can you name two or three similar items you also like from any chain? For each one, please tell me what's better or worse compared to your favorite Chicken Chalupa Supreme.
+User: I like the cheeseburger from McDonald's.
+Agent: Okay, you like the cheeseburger from McDonald's. What's better or worse about it compared to your favorite Chicken Chalupa Supreme?
+User: Maybe not as fresh tasting and it's just a lot more simple, I guess, so it doesn't have a lot of flavor as opposed to the Chalupa which has more flavor especially if I put hot sauce in it.
+Agent: Thank you. Do you have another similar item you like?
+User: Not really.
+Agent: No problem. What do you usually pair with your Chicken...
+User: Okay.
+Agent: What do you usually pair with your Chicken Chalupa Supreme, such as drinks, sides, or sauces?
+User: Sometimes I get their box thing and so it comes with like the option like the spicy potatoes and carrots or whatever. I always get the spicy potatoes and I think it comes with like a burrito option which I usually go with the bean and cheese and rice one and I can't think of what else that one comes with but yeah I like the box the build your own box option because it's just a way to save money.
+Agent: That's a good way to get a full meal. And what would you never pair your Chicken...
+User: I want to get Dr. Pepper if they have it.
+Agent: Okay, Dr. Pepper. And what would you...
+User: I would never pair it with the...
+Agent: What would you never pair your Chicken Chalupa Supreme with, and why?
+User: Donatos? Donatos because it would be too much food.
+Agent: Thank you. So, you would never pair it with Donatos because it would be too much food.
+
+Now, moving on to the next section. In what situations do you choose the Chicken Chalupa Supreme most often? Please include details like time pressure, location, ordering channel, and who you're with.
+User: I usually order it, sometimes I order it from home, sometimes I order it when I'm on the go. Usually for like lunch or dinner and so it's usually a full meal that I'm getting from there. And I half the time order by myself half the time ordered with my partner.
+Agent: Thank you. How does price change your choice? For example, if it cost two dollars more, what would you do?
+User: Depends on my budget if I could afford the two dollars but so sometimes I would just get the higher priced one or sometimes I would just have to switch it with something else.
+Agent: Understood. If there was a deal, what would you do differently?
+User: Probably switch to the deal and follow whatever the parameters are.
+Agent: Okay. Over the past two weeks, what are your most common fast-food patterns? This includes when you eat it, what you usually order, and what typically triggers it.
+User: It's usually I order when I'm hungry and I'm on the go in between like going to work or going to running errands or something. So it could be any time of day, honestly, but it's definitely something like when I get hungry.
+Agent: Thank you. What does "good value" mean to you in fast food?
+User: A good price for the right amount of food, I guess, or like, you know, you're getting a lot of bang for your buck, we'll call it.
+Agent: That's a clear definition. Could you pick your top two or three factors from taste, portion size, speed, nutrition, consistency, and price, and explain how you judge if something is "worth it"?
+User: The price like if it's a reasonable price for what you're getting and the quality you're going to pay higher price for or pay more for you expect to pay more for a higher quality of food so but you should be able to taste that and like see the difference and
+Agent: You've mentioned...
+User: those are like the most
+Agent: So price and quality are important. Do you have a third factor, or are those your top two?
+User: I'm going to talk to you.
+Agent: Okay, those are your top two.
+
+Now, let's move on to the next section. Compared to your last fast-food order, what changed today, if anything?
+User: Nothing. That's the same thing I ordered.
+Agent: Understood, so no changes today. What "mode" are you in today? For example, are you in a budget, health, treat, convenience, explore, or stressed mode?
+User: ...
+Agent: Are you still there?
+User: Yes, convenience.
+Agent: Okay, convenience mode. What's the first thing that changes in your order when you're in that mode?
+User: The item, I guess because it depends on how much time I have to eat it
+Agent: Thank you. What triggered this order today? Please be specific, for example, was it a craving, a deal, an ad, someone suggested it, you were nearby, time pressure, or did you want something lighter or a treat?
+User: I was nearby
+Agent: You were nearby. Was it planned or...
+User: . I don't know
+Agent: You were nearby. Was it planned or spontaneous?

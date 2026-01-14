@@ -1,0 +1,86 @@
+Call Transcript:
+
+User: ...
+Agent: I'm here to collect information about your food preferences to complete the onboarding so you can get rewarded. To start, please say your name or Prolific ID.
+User: ...
+Agent: Please tell me your name or Prolific ID so we can begin.
+User: 65E41E88A96A10F5F38D608E
+Agent: Thank you. What is your favorite fast-food item, including the chain and the exact item? And why do you like it?
+User: Chipotle burrito because it's filling. It's basically like having two meals and you can customize it however you want.
+Agent: That's great. Could you tell me more about what you like about the Chipotle burrito, specifically regarding its flavor, texture, temperature, smell, and aftertaste?
+User: The temperature is always on point. The taste is really good. I feel like it's very flavorful and satisfying. The texture is nice as well. Like it has a good mouthfeel and there's no aftertaste to it. It's just an overall satisfying burrito, I would say.
+Agent: That sounds wonderful. What are the top two or three things that make this Chipotle burrito "perfect" for you?
+User: How filling it is and the fact that it's so big that I can have two meals out of it.
+Agent: Those are excellent points. Is there anything else that makes it perfect for you, perhaps related to the customization options you mentioned earlier?
+User: I do like the customization options being able to add guacamole, pico, sour cream all the add-ons. There are several add-ons to choose from so I do like the ability to be able to choose those.
+Agent: That's very helpful to know. Now, on the flip side, what are the top two or three things that would make your Chipotle burrito "bad"? For example, if it were soggy, dry, or cold?
+User: Absolutely if it were soggy I would not want to eat it. I feel like once a tortilla shall get soggy it's absolutely disgusting so that would make me not want to eat it.
+Agent: Sogginess is definitely a common issue. Are there one or two other things that would make your Chipotle burrito bad, like if it were...
+User: The temperature.
+Agent: So,...
+User: If it wasn't
+Agent: Please continue. What about the temperature would make it bad?
+User: if it was like cold I wouldn't want to eat it just because I feel like some of the ingredients in there need to be at a certain temperature for it to taste good in combination with all the other things that are inside of the burrito.
+Agent: That makes perfect sense. So, sogginess and a cold temperature are definitely deal-breakers. Is there one more thing that would make your...
+User: Yes.
+Agent: Okay, what would be that one more thing?
+User: If it was just messy and just overly just leaky out everywhere, I think that would be that would upset me.
+Agent: I understand. A messy or leaky burrito would certainly be frustrating.
+
+Now, if your favorite Chipotle burrito was unavailable, what would you order instead, including the chain and the specific item?
+User: The Chipotle asada bowl.
+Agent: And why is the Chipotle asada bowl the closest replacement for your favorite burrito?
+User: It's pretty much like the burrito, except for it's like in a bowl. I can still customize it like I would a burrito. So I'm not giving up a ton of, you know, stuff to... I'm not compromising a ton just to get the asada bowl instead of the burrito.
+Agent: That's a clear explanation of why it's a good alternative.
+
+Can you name two or three similar items you also like from any chain? And for each one, what's better or worse compared to your favorite Chipotle burrito?
+User: Probably a taco truck. Um...
+Agent: Okay, so a taco truck. What specific item from a taco truck do you like, and what's better or worse about it compared to your Chipotle burrito?
+User: Um, they're pretty comparable in size. Um, I would say... the length of time that it takes to get the burrito from the taco truck is sometimes frustrating. Um...
+Agent: So, the time it...
+User: So yeah.
+Agent: So, the time it takes can be a downside. What about the flavor, texture, or other aspects of the taco truck burrito compared to your Chipotle burrito? Is anything better or worse?
+User: I think one tastes more authentic than the other. I feel like Chipotle is pretty on point with their ingredients and it tastes pretty fresh to me.
+Agent: So, you feel Chipotle offers a fresher and more authentic taste compared to some taco trucks. That's interesting.
+
+Do you have another similar item you like from any chain, and what's better or worse about it compared to your favorite Chipotle...
+User: Yes.
+Agent: Please tell me about it.
+User: Burger King Whoppers, definitely.
+Agent: Okay, a Burger King Whopper. What's better or worse about a Whopper compared to your favorite Chipotle burrito?
+User: It's a burger, so it's going to have different tastes and texture.
+Agent: That's true, they are very different items. Could you tell me what you find better or worse about the Whopper's flavor, texture, or overall experience when you compare it to your Chipotle burrito?
+User: I feel like the Chipotle burrito is better than the Whopper, but if I do opt for a burger, then I kind of want to go to Burger King because I feel like they taste good.
+Agent: I understand that the Chipotle burrito is your top choice. When you choose a Whopper, what specifically do you like about its taste or texture that makes it your preferred burger, even if it's not as good as your burrito?
+User: The fresh crisp lettuce, the mayo and ketchup, the pickles. It's pretty big in size so it's pretty filling just like the burrito at Chipotle.
+Agent: That's a good description of what makes the Whopper appealing.
+
+Now, what do you usually pair with your Chipotle burrito? This could include drinks, sides, or sauces.
+User: Usually just a Sprite.
+Agent: Just a Sprite, got it. And what would you never pair with your Chipotle burrito, and why?
+User: Nothing that I can think of.
+Agent: Okay, that's fair.
+
+Moving on to the next section, in what situations do you choose your Chipotle burrito most often? Please include details like time pressure, location such as home, work, or commute, the ordering channel like drive-thru or delivery, and who you're with.
+User: Um usually with friends um so it's usually like a social thing um every once in a while if I have a craving for it um convenience if I'm in the area I'll pick some up.
+Agent: That's helpful. So, it's often a social choice with friends, or when you have a craving, or for convenience if you're nearby.
+
+Could you also tell me about time pressure, the specific location like home, work, or commute, and the ordering channel you typically use, such as drive-thru or delivery, when you choose this item?
+User: Time pressure is never really an issue. Ordering would be through DoorDash. So, if I need it quick, then I will do DoorDash. So it will be delivered
+Agent: So, DoorDash for quick delivery. And what about the location? Do you usually order it to your home, work, or perhaps when you're commuting? And do you ever use the drive-thru or order inside the restaurant?
+User: Home, I have it delivered to home and then if I do pick it up then I do the drive-through.
+Agent: Thank you for clarifying. So, typically delivered to your home via DoorDash, or picked up via drive-thru, often with friends, and time pressure isn't usually a factor.
+
+Now, how does price change your choice? For example, if your Chipotle burrito cost two dollars more, what...
+User: Yes.
+Agent: Okay, if it cost two dollars more, what would you do?
+User: Pay the extra $2.
+Agent: So, a two-dollar increase wouldn't deter you.
+
+What if there was a deal, like a special offer or discount? How would that change what you do or influence your choice?
+User: That would be helpful because they are kind of pricey. Coupons help.
+Agent: So, if there was a deal, would you be more likely to order it more often, or perhaps order additional items, or something else?
+User: I would definitely order more often if there was a deal.
+Agent: That makes sense. A good deal would definitely increase your frequency of ordering.
+
+Now, thinking about the past two weeks, what are your most common fast-food patterns? This includes when you eat it, what you usually order, and what typically triggers it.

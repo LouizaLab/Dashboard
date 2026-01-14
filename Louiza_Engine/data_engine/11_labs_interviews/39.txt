@@ -1,0 +1,98 @@
+Call Transcript:
+
+User: ...
+Agent: I'm here to collect information about your food preferences to complete the onboarding so you can get rewarded. To start, please say your name or Prolific ID.
+User: Juan Bueno.
+Agent: Thank you, Juan. Now, could you please tell me what your favorite fast-food item is, including the chain and the exact item? Also, why do you like it?
+User: I would say the Chick-fil-A Spicy Deluxe. I just feel like it's a pretty savory meal. It's delicious. It goes very well with the sides
+Agent: That sounds delicious. Could you tell me a bit more about what makes the Chick-fil-A Spicy Deluxe so good to you? I'm interested in details like its flavor, texture, temperature, smell, and aftertaste.
+User: I'd say the flavor is the best. It's a little bit spicy, but it's also salty.
+Agent: That's great to hear about the flavor. What are the top two or three things that make the Chick-fil-A Spicy Deluxe "perfect" for you? For example, is it a crunchy coating, a specific sauce balance, or the bun texture?
+User: I'd say pairing it with Chick-fil-A sauce, the way that it's fried and all of other stuff on a sandwich.
+Agent: Thank you for sharing those details. On the flip side, what are the top two...
+User: It looks terrible.
+Agent: Okay, I understand. What are the top two or three things that would make the Chick-fil-A Spicy Deluxe "bad" for you? For instance, if it were soggy, dry, cold, or too greasy?
+User: Any of those. They needed to be fresh.
+Agent: I see, so freshness is key, and things like being soggy, dry, or cold would definitely make it a bad experience.
+
+If the Chick-fil-A Spicy Deluxe was unavailable, what would you order instead, including the chain and the specific item?
+User: Probably the chicken strips
+Agent: And why do you consider the chicken strips to be the closest replacement for your favorite Spicy Deluxe?
+User: . I just don't really like the other sandwiches so I prefer to get strips if I was unable to get that.
+Agent: I understand. Now, could you name two or three similar items you also like from any chain? For each one, please tell me what's better or worse compared to your favorite Chick-fil-A Spicy Deluxe.
+User: The quarter pounder with cheese, it's a little bit more filling but not as good. The McChicken which is a little bit more affordable but not as good either.
+Agent: Thank you for sharing those comparisons. What do you usually pair with your Chick-fil-A Spicy Deluxe, such as drinks, sides, or sauces? And what would you never pair it with, and why?
+User: Sprite and Chick-fil-A sauce.
+Agent: Okay, Sprite and Chick-fil-A sauce. And what would you never pair the Spicy Deluxe with, and why?
+User: Barbecue sauce, I don't really want it to be sweet.
+Agent: Understood, so no barbecue sauce because you prefer not to have it sweet.
+
+Moving on, in what situations do you choose the Chick-fil-A Spicy Deluxe most often? Please include details like time pressure, location such as home, work, or commute, the ordering channel like drive-thru or delivery, and who you are with.
+User: Usually for dinner with my kids on the way home.
+Agent: That's helpful to know. How does price change your choice? For example, if the Chick-fil-A Spicy Deluxe cost two dollars more, what would you do?
+User: I would still buy it.
+Agent: Okay, so a two-dollar increase wouldn't deter you. What if there was a deal available? How would that change what you do or what you order?
+User: I would consider it depending on the deal and what the deal is for.
+Agent: Understood. Now, let's talk about your fast-food patterns. Over the past two weeks, what have been your most common fast-food patterns? This includes when you eat it, what you usually order, and what typically triggers it.
+User: Usually a sandwich with fries for lunch,
+Agent: Thank you. What does...
+User: I'd say just wanting something salty
+Agent: Okay, so a salty craving often triggers your lunch orders.
+
+Now, what does "good value" mean to you in fast food? Please pick your top two or three factors, such as taste, portion size, speed, nutrition, consistency, or price, and explain how you judge whether something is "worth it."
+User: Let's say quality to price ratio.
+Agent: So, for you, good value in fast food comes down to the quality you receive for the price you pay.
+
+Now, let's move on to some other aspects of your fast-food choices. Compared to your last fast-food order, what changed today, if anything? Please pick the biggest driver and explain if it was your mood, cravings, schedule, budget, health goals, social plans, or convenience.
+User: I didn't have a Chick-fil-A near me, so I got an alternative.
+Agent: I see, so convenience was the biggest driver for getting an alternative today.
+
+What "mode" are you in today? For example, are you in a budget, health, treat, convenience, explore, or stressed mode?
+User: Explore
+Agent: Okay, you're in "Explore" mode. What's the first thing that changes in your order when you're in that mode?
+User: . Um...
+Agent: Please take your time.
+User: wanting to try something new. Being curious.
+Agent: Thank you. So, when you're in "Explore" mode, you're looking to try something new and are driven by curiosity.
+
+Now, what triggered this order today? Please be specific. Was it a craving, a deal, an ad, did someone suggest it, were you nearby, was there time pressure, did you want something lighter, or did you want a treat? Also, was it planned or spontaneous? And what would have had to change for you to not get fast food today?
+User: I think if it was very inconvenient like late, I probably wouldn't get it.
+Agent: I understand that inconvenience, like a late delivery, would deter you.
+
+Could you also tell me what specifically triggered this order today? Was it a craving, a deal, an ad, someone's suggestion, being nearby, time pressure, wanting something lighter, or a treat? And was this order planned or spontaneous?
+User: I'd say spontaneous. An advertisement triggered it.
+Agent: Thank you. So, it was a spontaneous order triggered by an advertisement.
+
+Did you switch from your usual chain or usual item today? If yes, what exactly caused the switch? Was it a deal, a new item, boredom, a bad experience, health, price, convenience, social reasons, or limited options?
+User: Yeah, just wanting to try something new.
+Agent: Okay, so wanting to try something new caused the switch today.
+
+What would make you permanently change your "default" order? What would you need to see happen repeatedly, such as taste, consistency, price, or convenience?
+User: I'd say price.
+Agent: So, price would be the main factor that would make you permanently change your default order.
+
+Now, let's talk about deals. How much did a deal influence this choice today?
+User: Very much.
+Agent: That's good to know. Could you explain what kind of deal actually changes your behavior? For example, is it a buy one get one free offer, a percentage off, app points, or free delivery?
+User: Depends usually a certain amount of discount buy one get one it depends
+Agent: So, it varies depending on the type of discount or if it's a buy one get one offer.
+
+Has your price sensitivity changed in the last two to four weeks? If so, why?
+User: Not really
+Agent: Okay, so your price sensitivity hasn't really changed.
+
+Are you trying to eat healthier than two to four weeks ago? Why or why not?
+User: Yeah because New Year's coming up and I'd like to consider that
+Agent: I understand. Since you're looking ahead to the New Year, what specific rule are you following to eat healthier? For example, are you focusing on less fried food, fewer calories, more protein, or no soda?
+User: Mostly just eating or cooking at home more.
+Agent: That's a clear goal. What recent change affected your eating, and what did it change in your fast-food choices? For example, a new gym routine, a diet plan, travel, stress, or a change in your schedule.
+User: Nothing.
+Agent: Okay, so no recent changes have affected your eating habits or fast-food choices.
+
+Now, let's talk about novelty versus routine. When do you try new items versus sticking to your usual?
+User: If I'm really hungry I usually stick to my usual if I'm somewhere new or if I want something else I might try a new item.
+Agent: That makes sense. Could you give me one recent example of when you tried a new item and explain why, and then one recent example of when you stuck to your usual and explain why?
+User: I tried the McDonald's I think they had a hot buffalo sandwich which I didn't like too much it just looked good on the ad and I just decided to get it.
+Agent: Thank you for that example of trying the McDonald's hot buffalo sandwich because it looked good in the ad.
+
+Now, could you give me a recent example of when you stuck to your usual order and explain why you chose to do so?

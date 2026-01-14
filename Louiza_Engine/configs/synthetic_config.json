@@ -1,0 +1,19 @@
+{
+  "start_week": 1,
+  "num_weeks": 52,
+  "num_brands": 5,
+  "num_regions": 3,
+  "num_channels": 2,
+  "num_respondents": 1000,
+  "price_base": 1.0,
+  "price_volatility": 0.1,
+  "promo_base_intensity": 0.3,
+  "availability_base": 0.9,
+  "seasonality_strength": 0.2,
+  "transaction_noise_level": 0.15,
+  "revenue_noise_level": 0.2,
+  "confidence_weight_base": 0.8,
+  "confidence_weight_noise": 0.1,
+  "interventions": []
+}
+

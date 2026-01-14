@@ -1,0 +1,102 @@
+Call Transcript:
+
+User: Thank you.
+Agent: I'm here to collect information about your food preferences to complete the onboarding so you can get rewarded. To start, please tell me your name or Prolific ID.
+User: Danielle Gutierrez.
+Agent: Okay, Danielle. Thank you.
+
+What is your favorite fast-food item, including the chain and the exact item? And could you tell me why you like it?
+User: Uh-huh.
+Agent: Could you please tell me your favorite fast-food item, including the chain and the exact item, and why you like it?
+User: Uh, Tams, burgers, chili cheese fries, because they're good.
+Agent: Thank you, Danielle. Could you describe the flavor, texture, temperature, smell, and aftertaste of the chili cheese fries from Tams?
+User: Um, temperature is hot. The flavor is chili topped with cheese. And it's just very savory with the salty french fries.
+Agent: That sounds delicious. And what about the smell and aftertaste of those chili cheese fries?
+User: Smells like beef chili. And aftertaste is savory. Mm-hmm.
+Agent: Thank you for sharing that. What are the top two or three things that make those chili cheese fries "perfect" for you?
+User: They are easily accessible and have my favorite items, french fries, cheese, and chili.
+Agent: Okay, that makes sense. Is there anything else that makes them perfect for you?
+User: Now...
+Agent: Okay, I understand. So, the accessibility and the combination of french fries, cheese, and chili are what make them perfect. Is there anything else that comes to mind that contributes to their perfection?
+User: Um...
+Agent: Please feel free to share if anything else comes to mind.
+User: Just feels very comforting, like a comfort food.
+Agent: That's a great point, comfort food is definitely a strong factor.
+
+Now, on the flip side, what are the top two or three things that would make those chili cheese fries "bad" for you? For example, if they were soggy, dry, cold, or too greasy?
+User: Yeah, so if the fries were cold and soggy it would make it terrible.
+Agent: I understand. So, cold and soggy fries would definitely make them bad. Are there any other things that would make them less than perfect for you?
+User: No.
+Agent: Okay, thank you.
+
+If the chili cheese fries from Tams were unavailable, what would you order instead, and from which chain?
+User: Just regular French fries from the same Tam's Burgers.
+Agent: Okay, so just regular French fries from Tams. Why would that be the closest replacement for you?
+User: Just because it's still a salty snack.
+Agent: I see, so the salty snack aspect is key.
+
+Now, could you name two or three similar items you also like, from any chain? And for each one, what's better or worse compared to your favorite chili cheese fries?
+User: In-N-Out animal style fries. They use grilled onions, no chili though. And their fries are a little different. And also, let's see. Carne asada fries from Alberto's. They're okay, but that's not the best toppings.
+Agent: Thank you. For the In-N-Out animal style fries, what aspects are better or worse compared to your favorite chili cheese fries from Tams?
+User: Better the grilled onions with the spread. Worse, the fries are not as good.
+Agent: Okay, I...
+User: no chili taste.
+Agent: I understand. So the grilled onions and spread are better, but the fries themselves and the lack of chili are worse.
+
+And how about the Carne Asada fries from Alberto's? What's better or worse about them compared to your favorite chili cheese fries?
+User: I better have actual carne asada and salsa and toppings. Worse is sometimes the consistency of the guacamole or the cheese is not good.
+Agent: Thank you for that detailed comparison.
+
+What do you usually pair with your favorite chili cheese fries from Tams, such as drinks, sides, or sauces?
+User: Usually a regular hamburger and a Pepsi.
+Agent: Okay, a regular hamburger and a Pepsi.
+
+And what would you never pair your chili cheese fries with? And why not?
+User: Coffee, because that's just a bad decision.
+Agent: I agree, coffee might not be the best pairing.
+
+Moving on, in what situations do you choose these chili cheese fries most often? Please include details like time pressure, location such as home, work, or commute, the ordering channel like drive-thru or delivery, and who you are with.
+User: I usually go drive-thru with my husband. It's not that far from our house so location is good. Typically around dinner time is when I order.
+Agent: Thank you. So, drive-thru with your husband, close to home, usually around dinner time.
+
+How does price change your choice? For example, if it cost two dollars more, what would you do?
+User: I would still buy the product.
+Agent: Okay, you would still buy it.
+
+And if there was a deal, what would you do differently?
+User: Hmm.
+Agent: No problem, take your time.
+User: Probably nothing differently honestly.
+Agent: Okay, I understand. So a deal wouldn't necessarily change your behavior.
+
+Now, over the past two weeks, what are your most common fast-food patterns? This includes when you eat it, what you usually order, and what typically triggers it.
+User: We usually eat around lunch. Triggers is hunger obviously.
+Agent: Okay, so usually around lunch, and hunger is the trigger. What do you usually order during these times?
+User: Usually hamburgers, fries.
+Agent: Thank you.
+
+What does "good value" mean to you in fast food? Please pick your top two or three factors from taste, portion size, speed, nutrition, consistency, or price, and explain how you judge if something is "worth it."
+User: Repeat
+Agent: Certainly. What does "good value" mean to you in fast food? Please pick your top two or three factors from taste, portion size, speed, nutrition, consistency, or price, and explain how you judge if something is "worth it."
+User: Portion size and consistency... if it's worth... It's good if it's worth it. I mean, it's worth it if it's good.
+Agent: Thank you. So, portion size and consistency are your top factors. Could you explain a bit more about how you judge if something is "worth it" based on those two factors?
+User: If a portion size is large, I feel like I'm getting a better deal so I could have like a second question for another time and consistency if it's made right the same every time it's more worth my time
+Agent: That's very clear, thank you. Getting a larger portion for a potential second meal and knowing it will be consistently good every time definitely adds to the value.
+
+Now, let's move on to some other aspects. Compared to your last fast-food order, what changed today, if anything?
+User: Just location
+Agent: Okay, so the location changed.
+
+Thinking about that change, what was the biggest driver for it? Was it your mood, cravings, schedule, budget, health goals, social plans, or convenience? Please explain.
+User: Social plans and convenience.
+Agent: Could you explain how social plans and convenience specifically influenced the change in location for your fast-food order today?
+User: Well I'm on a vacation so something close to the hotel that I'm staying at and it's a nightly outing so social.
+Agent: I understand. Being on vacation, close to the hotel, and a nightly outing definitely makes sense for social plans and convenience.
+
+What "mode" are you in today? For example, are you in a budget, health, treat, convenience, explore, or stressed mode?
+User: Explore.
+Agent: Okay, you're in "explore" mode. What's the first thing that changes in your order when you're in that mode?
+User: Variety. Choose something different.
+Agent: Okay, so you look for variety and choose something different when you're in explore mode.
+
+What triggered this order today? Please be specific...

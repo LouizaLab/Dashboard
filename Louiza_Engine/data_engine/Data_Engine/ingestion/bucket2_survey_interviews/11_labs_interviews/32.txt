@@ -1,0 +1,66 @@
+Call Transcript:
+
+User: ...
+Agent: I'm here to collect information about your food preferences to complete the onboarding so you can get rewarded. To start, please say your name or Prolific ID.
+User: ...
+Agent: Please tell me your name or Prolific ID so we can begin.
+User: 35E63C40867949CA66
+Agent: Thank you. What is your favorite fast-food item, including the chain and the exact item? And why do you like it?
+User: . I'm probably a McDonald's Big Mac and I just like the Big Mac sauce and it's the perfect amount of vegetables to meat and cheese ratio.
+Agent: That's great to hear. What are the top two or three things that make the Big Mac "perfect" for you?
+User: The Big Mac sauce, the sesame seed bun, and the amount of cheese.
+Agent: Okay, that makes sense. On the flip side, what are the top two or three things that would make a Big Mac "bad" for you?
+User: If it wasn't seasoned correctly, if there wasn't enough cheese,
+Agent: And what would be the third thing that would make it bad?
+User: or just a regular bun, not sesame seed.
+Agent: Understood. If a Big Mac was unavailable, what would you order instead, including the chain and the specific item?
+User: Probably a McDonald's Daily Double.
+Agent: And why do you consider the Daily Double to be the closest replacement for your favorite Big Mac?
+User: I like the amount of vegetables.
+Agent: That's interesting. Can you name two or three similar items you also like from any chain? For each one, please tell me what's better or worse compared to your favorite Big Mac.
+User: Go to many other burger places. Maybe the regular Wendy's burger and
+Agent: Okay, so a regular Wendy's burger. What's better or worse about that compared to your Big Mac?
+User: the price is about equivalent. Similar, the meat is better. Wendy's has better meat than McDonald's and it's similar in the type of vegetables that you get on the burger.
+Agent: That's good to know about the Wendy's burger. Do you have another similar item you like, and what's better or worse about it compared to your Big Mac?
+User: Not that I can think of.
+Agent: No problem at all. What do you usually pair with your Big Mac, such as drinks, sides, or sauces?
+User: a small fry and a Dr. Pepper
+Agent: And what would you never pair it with, and why?
+User: root beer because I don't like root beer and any size fry larger than a small because I don't eat a lot of fries.
+Agent: Thank you for sharing that. In what situations do you choose your Big Mac most often? Please include details like time pressure, location, ordering channel, and who you're with.
+User: My son typically has to have McDonald's when we go out to eat, so if he's in the vehicle, then we're usually in McDonald's. We have a McDonald's like two minutes down the road, so we can eat it pretty much any time we want fast food. And if we're out or we're running low on cash, McDonald's is usually the choice too because it's more cost efficient most times.
+Agent: That's very helpful context. How does price change your choice? For example, if your Big Mac cost two dollars more, what would you do?
+User: I would probably order something cheaper but similar.
+Agent: And if there was a deal, what would you do differently?
+User: Maybe get an extra item or a dessert.
+Agent: Over the past two weeks, what are your most common fast-food patterns? This includes when you eat it, what you usually order, and what typically triggers it.
+User: We haven't had fast food in the past two weeks.
+Agent: Okay, thank you for letting me know. Then, what does "good value" mean to you in fast food?
+User: I want to be able to pay under $10 for a meal for myself and not be hungry an hour after eating.
+Agent: That's a clear definition of good value. From factors like taste, portion size, speed, nutrition, consistency, and price, which two or three are your top factors, and how do you judge if something is "worth it" based on those?
+User: Price and taste. And if it's not cheap, I'm probably not going to get it anyways, because I can cook it at the house for around the same amount, then I'm probably just going to do that because I make a better burger anyways. And if it doesn't taste good, I'm not going to buy it.
+Agent: Understood. Thinking about the last time you did have a fast-food order, what changed that day, if anything, compared to a typical order? Please pick the biggest driver and explain if it was mood, cravings, schedule, budget, health goals, social plans, or convenience.
+User: The last time we went, I wanted to order the Grinch meal, but they had already sold out and there was none anywhere in my local area. So I had to change what I wanted to eat due to it just not being available.
+Agent: That's a clear example of availability influencing your choice. What "mode" are you in today? For example, are you in a budget, health, treat, convenience, explore, or stressed mode?
+User: Budget.
+Agent: When you're in a budget mode, what's the first thing that changes in your order?
+User: Typically dessert. If we can't afford it at the time, we typically don't get a dessert or a coffee.
+Agent: Okay, that makes sense. What triggered this order today? Please be specific, for example, was it a craving, a deal, an ad, someone suggested it, you were nearby, time pressure, or did you want something lighter or a treat?
+User: An ad
+Agent: Was this order planned or spontaneous?
+User: . Spontaneous.
+Agent: What would have had to change for you to not get fast food today?
+User: Nothing. It was just spontaneous.
+Agent: Understood. Did you switch from your usual chain or usual item today?
+User: Usual item.
+Agent: Okay, since you switched from your usual item, what exactly caused that switch? Was it a deal, a new item, boredom, a bad experience, health, price, convenience, social reasons, or limited options?
+User: New item. Specialty item. Limited edition
+Agent: What would make you permanently change your "default" order?
+User: . Recipe change or significant price increase.
+Agent: And what would you need to see happen repeatedly, such as taste, consistency, price, or convenience, for you to permanently change your default order?
+User: an increase of $1.50 or more would automatically make me change to something else. Taste, probably three strikes and you're out. If I've got it three different times and it's tasted all three different times, I'm done.
+Agent: That's very clear. How much did a deal influence this choice today?
+User: Extremely.
+Agent: Please explain what kind of deal actually changes your behavior. For example, is it buy one get one free, a percentage off, app points, or free delivery?
+User: Probably all the above except for free delivery because I don't order delivery.
+Agent: Has your price sensitivity...

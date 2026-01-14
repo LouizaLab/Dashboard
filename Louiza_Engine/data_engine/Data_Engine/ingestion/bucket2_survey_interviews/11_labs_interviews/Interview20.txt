@@ -1,0 +1,90 @@
+Call Transcript:
+
+User: Hi, my name is Nicole.
+Agent: Hello Nicole, I am here to collect information about your food preferences to complete the onboarding so you can get rewarded. To start, could you please confirm your name or provide your Prolific ID?
+User: Hi, my name is Nicole.
+Agent: Thank you, Nicole. Let's begin. What is your favorite fast-food item, including the chain and the exact item? And could you tell me why you like it?
+User: My favorite fast food item is a single from Wendy's. Wendy's has great burgers. They taste more fresh, like restaurant quality than other fast food restaurants.
+Agent: That's great to hear, Nicole. Could you tell me more about what you like about the Wendy's single? Specifically, what do you enjoy about its flavor, texture, temperature, smell, and aftertaste?
+User: I like the taste of the beef used in Wendy's singles. I've heard they do not freeze their meat. I like the lettuce and tomato. It's always fresh and the cheese is real cheese. It's not processed. I believe the assembly of the burger is always good and the attention to quality is always high.
+Agent: Thank you for sharing those details, Nicole. It sounds like the freshness and quality of the ingredients are very important to you. What are the top two or three things that make the Wendy's single "perfect" for you?
+User: Nice soft bun, fresh hot burger,
+Agent: ...
+User: and crispy lettuce. Crispy lettuce.
+Agent: Thank you, Nicole. A nice soft bun, a fresh hot burger, and crispy lettuce are key for you. Now, what are the top two or three things that would make a Wendy's single "bad" for you?
+User: If the burger was assembled messy or flattened, if it was too greasy, or if the lettuce and tomato or the produce was not fresh.
+Agent: I understand. Messy assembly, being too greasy, or having un-fresh produce would definitely make it a bad experience. If the Wendy's single was unavailable, what would you order instead, including the chain and the specific item? And why would that be the closest replacement for you?
+User: I would order a Wendy's chicken sandwich.
+Agent: Okay, Nicole. You would order a Wendy's chicken sandwich instead. Could you tell me why that would be the closest replacement for you?
+User: That's my second best choice to the Wendy's single.
+Agent: Thank you. So, it's your second best choice. Could you explain what makes it the closest replacement to the single in terms of what you like about it?
+User: Same as the burger with the fresh bun, fresh lettuce and tomato and condiments. And I really like Wendy's chicken breast. It doesn't taste processed and it's always fresh and crispy.
+Agent: That makes sense. The consistent quality of the fresh ingredients and the chicken breast itself are important to you. Now, could you name two or three similar items you also like from any chain? And for each one, please tell me what's better or worse compared to your favorite Wendy's single.
+User: Second most frequently visited chain would have to be McDonald's. The McDonald's meat does not really taste fresh and the assembly and the service at McDonald's is usually less than Wendy's.
+Agent: Thank you for sharing your thoughts on McDonald's, Nicole. It sounds like you find the quality there to be less consistent than at Wendy's.
+
+Could you name a specific item you like from McDonald's or another chain that is similar to the Wendy's single? And for that item, what's better or worse about it compared to your favorite Wendy's single?
+User: McDonald's crispy chicken sandwich is similar.
+Agent: Okay, the McDonald's crispy chicken sandwich. What's better or worse about that item compared to your favorite Wendy's single?
+User: The meat has an aftertaste and the produce is not as much. They don't have the quantity, good quantity like Wendy's.
+Agent: I see. So, with the McDonald's crispy chicken sandwich, you find the meat has an aftertaste and the produce quantity isn't as generous as Wendy's.
+
+What do you usually pair with your favorite Wendy's single? This could include drinks, sides, or sauces. And what would you never pair it with, and why?
+User: Wendy's fries are great. They taste really fresh and I usually pair it with an iced tea.
+Agent: That sounds like a classic pairing. Now, what would you never pair your Wendy's single with, and why?
+User: I don't know of anything that I would not pair it with.
+Agent: Okay, that's perfectly fine.
+
+Moving on, in what situations do you choose your favorite Wendy's single most often? Please include details like time pressure, location (home, work, commute), ordering channel (drive-thru, delivery), and who you're with.
+User: I usually do drive-through for convenience when I have time restraints and I'm usually alone.
+Agent: Thank you, Nicole. So, it's often a drive-thru for convenience when you have time constraints and are usually alone.
+
+How does price change your choice? For example, if your Wendy's single cost two dollars more, what would you do?
+User: I would pay the two dollars more because that is worth it.
+Agent: Understood. You would pay the two dollars more because you feel it's worth it.
+
+Now, if there was a deal, what would you do differently?
+User: If there was a deal I would probably order it to save money.
+Agent: Okay, you'd order it to save money if there was a deal.
+
+Let's shift gears a bit. Over the past two weeks, what are your most common fast-food patterns? This includes when you eat it, what you usually order, and what typically triggers it.
+User: I usually drive through for breakfast, it's convenient on the way to work and sometimes if I have a short lunch and a fast food restaurant is convenient to running errands I will use that.
+Agent: Thank you for sharing your typical fast-food patterns, Nicole.
+
+Now, what does "good value" mean to you in fast food? Could you pick your top two or three factors, such as taste, portion size, speed, nutrition, consistency, or price, and explain how you judge what is "worth it"?
+User: Size is often a good deal for me because I like smaller portions. Cost savings would be the second choice. And healthy food with lower saturated fat would be my third choice.
+Agent: Thank you, Nicole. So, for you, good value means smaller portions, cost savings, and healthier food with lower saturated fat.
+
+Now, let's move on to some other aspects. Compared to your last fast-food order, what changed today, if anything? Could you pick the biggest driver and explain if it was your mood, cravings, schedule, budget, health goals, social plans, or convenience?
+User: My last fast-food visit was in another location I wasn't familiar with. It was McDonald's. The food was terrible. It was location driven.
+Agent: Thank you for explaining that your last experience was location-driven and not positive.
+
+Considering today, what "mode" are you in? For example, are you in a budget, health, treat, convenience, explore, or stressed mode?
+User: treat and convenience
+Agent: Okay, "treat and convenience" mode. What's the first thing that changes in your order when you're in that mode?
+User: I would probably order a shake or a dessert
+Agent: Ordering a shake or dessert definitely fits the "treat" aspect.
+
+Now, what triggered this order today? Please be specific, for example, was it a craving, a deal, an ad, someone suggested it, you were nearby, time pressure, you wanted something lighter, or you wanted a treat?
+User: Time pressure and convenience.
+Agent: Thank you. So, time pressure and convenience were the triggers. Was this order planned or spontaneous?
+User: Spontaneous.
+Agent: Okay, spontaneous. What would have had to change for you to not get fast food today?
+User: I would have had to have already planned a meal at home or with at some with someone else.
+Agent: I see. So, having a planned meal at home or with someone else would have changed your decision.
+
+Now, did you switch from your usual chain or usual item today?
+User: No
+Agent: Understood. You stuck with your usual.
+
+What would make you permanently change your "default" order?
+User: if a new fast food restaurant was built by me
+Agent: So, if a new fast-food restaurant was built near you, that could change your default. What would you need to see happen repeatedly, such as taste, consistency, price, or convenience, for you to permanently change your default order?
+User: quality better taste probably
+Agent: So, better taste and quality would be the main reasons for you to switch your default order.
+
+Let's talk about deals. How much did a deal influence this choice today?
+User: Not at all.
+Agent: Understood, so a deal did not influence your choice today.
+
+What kind of deal actually changes your behavior? For example, is it buy one get one free, a...

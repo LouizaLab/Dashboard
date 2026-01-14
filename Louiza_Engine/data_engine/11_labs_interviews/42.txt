@@ -1,0 +1,69 @@
+Call Transcript:
+
+User: Okay, I'm ready to start.
+Agent: I'm here to collect information about your food preferences to complete the onboarding so you can get rewarded. To start, please say your name and/or Prolific ID.
+User: Okay, my prolific ID is 66463E4EFB99FBA5A67A010A.
+Agent: Thank you. Now, what is your favorite fast-food item, including the chain and the exact item? And could you tell me why you like it?
+User: I'd say my favorite is probably the McDonald's Quarter Pounder with cheese. It's a classic for me.
+Agent: That's a great choice. Could you tell me more about what you like about the McDonald's Quarter Pounder with cheese? Specifically, what do you enjoy about its flavor, texture, temperature, smell, and aftertaste?
+User: I think really what I enjoy is just that charcoal kind of taste, that nice cheesy melt sort of aspect to it. And also the onion kind of aftertaste is really appealing to me.
+Agent: That's interesting. What are the top two or three things that make the McDonald's Quarter Pounder with cheese "perfect" for you? For example, is it a specific sauce balance, the heat level, or the bun texture?
+User: I think the heat level is perfect. I also think the fact that you have the mix of actual toppings with the meat in a perfect succession with the sauce is good. So it's all good because of that balance.
+Agent: That makes sense. On the flip side, what are the top two or three things that would make a McDonald's Quarter Pounder with cheese "bad" for you? For instance, if it were soggy, dry, cold, under-salted, too greasy, or stale?
+User: I think if it's kind of stale and the salt and the actual buns are soggy, that really ruins it for me.
+Agent: Understood. If the McDonald's Quarter Pounder with cheese was unavailable, what would you order instead, including the chain and the specific item? And why would that be the closest replacement for you?
+User: I'd probably do Taco Bell and get probably a Chalupa meal instead.
+Agent: Okay, a Taco Bell Chalupa meal. Why do you consider that the closest replacement for your favorite Quarter Pounder with cheese?
+User: I think it just kind of goes into that Mexican fast food realm for me, which I really like when I'm not having something like McDonald's.
+Agent: I see. Can you name two or three similar items you also like from any chain? And for each one, could you tell me what's better or worse compared to your favorite Quarter Pounder with cheese?
+User: I think two or three similar items I'll name too would probably be the Chick-fil-A sandwich from Chick-fil-A, and even just the burrito from Chick-fil-A. I think Chick-fil-A would be fully my next two options.
+Agent: Okay, so the Chick-fil-A sandwich and the Chick-fil-A burrito. For each of those, could you tell me what's better or worse about them compared to your favorite McDonald's Quarter Pounder with cheese?
+User: I think what's better as far as the Chick-fil-A sandwich is the fact that it's just chicken and it's nice. It's basic, it's clean, but always has a consistent taste. I also think that when you're talking about the burrito, it's more of that breakfast option. So that's really the same way. It's just a nice, perfect breakfast meal.
+Agent: That's helpful. What do you usually pair with your McDonald's Quarter Pounder with cheese? This could include drinks, sides, or sauces. And what would you never pair it with, and why?
+User: I always usually have something like a Coke or Pepsi with it. That's usually my taste when it comes to it. I wouldn't pair with any juice drinks. I like to have nice, nice soda with it
+Agent: Understood. In what situations do you choose the McDonald's Quarter Pounder with cheese most often? Please include details like time pressure, location such as home, work, or commute, the ordering channel like drive-thru or delivery, and who you're with.
+User: I think usually it'll be at late nighttime. I'm usually by myself when I do something like McDonald's or that sort of fast food.
+Agent: Thank you. How does price change your choice for this item? For example, if it cost two dollars more, what would you do?
+User: I think if it cost $2 more, I wouldn't necessarily. I'd probably go for a cheaper option unless it was paired with something else. It was like a deal.
+Agent: And if there was a deal, what would you do differently?
+User: If it was a deal, I would still probably get it depending on what it's paired with.
+Agent: Okay, that makes sense. Over the past two weeks, what are your most common fast-food patterns? When you eat it, what you usually order, and what typically triggers it?
+User: I think what I usually order in the past two weeks is probably like Chick-fil-A. What usually would trigger it is just me. I'm just wanting something that's not... Maybe I don't have anything left over or something like that.
+Agent: What does "good value" mean to you in fast food? Could you pick your top two or three factors, such as taste, portion size, speed, nutrition, consistency, or price, and explain how you judge if something is "worth it"?
+User: I think good value has most to do with portion size in connection with the price. If I'm getting a low price for a big portion size, that's usually a good day.
+Agent: That's a clear definition of good value. Now, compared to your last fast-food order, what changed today, if anything? Could you pick the biggest driver and explain if it was your mood, cravings, schedule, budget, health goals, social plans, or convenience?
+User: I think convenience is the big thing that's going to change on me wanting to kind of just sit at home, maybe get it delivered to me.
+Agent: Given that convenience is a big factor, what "mode" would you say you are in today? For example, are you in a budget, health, treat, convenience, explore, or stressed mode?
+User: Today I'll be in a convenience mode.
+Agent: When you're in convenience mode, what's the first thing that changes in your order?
+User: Just really the fact that I'm getting delivery rather than pickup is the change.
+Agent: Understood. What triggered this order today? Please be specific, for example, was it a craving, a deal, an ad, someone suggested it, you were nearby, time pressure, you wanted something lighter, or you wanted a treat?
+User: Most likely it was just the BOGO deal or something 50% off something like that if I triggered it.
+Agent: So, a BOGO deal or fifty percent off would be the trigger. Was it planned or spontaneous?
+User: Spontaneous.
+Agent: What would have had to change for you to not get fast food today?
+User: What had to change is possibly me maybe having leftovers from last night or something
+Agent: Did you switch from your usual chain or usual item today?
+User: . No, I didn't.
+Agent: Okay. What would make you permanently change your "default" order?
+User: If some new thing came out properly.
+Agent: What would you need to see happen repeatedly, such as taste, consistency, price, or convenience, for that new item to become your permanent default?
+User: It'd have to stay on the menu, it'd have to be consistent and also consistent price.
+Agent: How much did a deal influence this choice today?
+User: 100% defluxed it.
+Agent: Could you explain what kind of deal actually changes your behavior? For example, is it a buy one get one free offer, a percentage off, app points, or free delivery?
+User: Usually the buy one get more free or percentage off is what's going to change it for me.
+Agent: Has your price sensitivity changed in the last two to four weeks? Why or why not?
+User: Last few weeks I would say that it probably stayed the same.
+Agent: What changed in your life or in prices or fees, and how did it change what you order?
+User: I think nothing changed so everything probably just stays the same right now but if I ever see new things like new meals I usually try to try them.
+Agent: Are you trying to eat healthier than two to four weeks ago? Why or why not?
+User: Yeah I feel like I'm getting a little belly so I want to start getting more healthy.
+Agent: That's a common goal. What specific rule are you following to eat healthier? For example, are you focusing on less fried food, fewer calories, more protein, or no soda?
+User: Fewer calories, less sodas, less fast food in general.
+Agent: What recent change affected your eating? For example, a gym routine, a diet plan, travel, stress, schedule, or medication. And what did it change in your fast-food choices?
+User: Changed very thing the frequency and I would say what you know just the new diet new workout plan stuff like that.
+Agent: When do you try new items versus sticking to your usual? Could you give one recent example of each and explain why?
+User: I would say what can you ask that question one more time?
+Agent: Certainly. When do you try new items versus sticking to your usual? Could you give one recent example of each and explain why?
+User: I think when I try new items is usually when I'm going to sit here and like do stuff like maybe try new things that are coming out and they're you know similar to what I already would like and contrary to maybe just something new that's just something I wouldn't really taste or really care for so also that's recently usually like the chicken and waffles from Chick-fil-a I want to try that

@@ -1,0 +1,83 @@
+Call Transcript:
+
+User: ...
+Agent: I'm here to collect information about your food preferences to complete the onboarding so you can get rewarded. To start, please say your name or Prolific ID.
+User: Heather.
+Agent: Thank you, Heather. What is your favorite fast-food item, including the chain and the exact item? And could you tell me why you like it?
+User: McDonald's Big Mac. I like it because it's delicious.
+Agent: Okay, Heather. Could you tell me a bit more about what makes the Big Mac delicious to you? For example, what do you enjoy about its flavor, texture, temperature, smell, or even the aftertaste?
+User: I like the smell and I like how the Thousand Island Big Mac sauce blends with the meat and the cheese and the lettuce.
+Agent: That's interesting, Heather. So the unique smell and the way the Big Mac sauce combines with the other ingredients are key for you. What are the top two or three things that make a Big Mac "perfect" in your opinion?
+User: The right amount of lettuce,
+Agent: That's a great detail. What else contributes to making it perfect for you, besides the right amount of lettuce?
+User: The right amount of Big Mac sauce spread out across the hamburger.
+Agent: Understood. So, the right amount of lettuce and the sauce distribution are important. Is there anything else that makes it perfect for you, or are those the main two?
+User: Those are the main two.
+Agent: Thank you for clarifying. Now, on the flip side, what are the top two or three things that would make a Big Mac "bad" for you? For example, if it were soggy, dry, cold, or too greasy?
+User: If it was cold and if it was too greasy.
+Agent: I see, so temperature and greasiness are definite deal-breakers. If a Big Mac was unavailable, what would you order instead, including the chain and the specific item?
+User: A five-layer burrito from Taco Bell.
+Agent: Okay, a five-layer burrito from Taco Bell. Why do you consider that the closest replacement for a Big Mac?
+User: Because it's one of my top favorite fast food items.
+Agent: I understand it's a favorite. Could you tell me what makes it the closest replacement for a Big Mac specifically? What similarities do they share that make it your go-to alternative?
+User: ...
+Agent: Please speak up, or let me know if you're still there.
+User: The meat, the cheese...
+Agent: Thank you. So, the presence of meat and cheese makes it a close replacement. Is there anything else that makes the five-layer burrito the closest replacement for you?
+User: No.
+Agent: Understood. Now, could you name two or three other similar items you also like from any chain? And for each one, what's better or worse compared to your favorite Big Mac?
+User: Burger King's Whopper with Cheese. It's a close second to the Big Mac.
+Agent: Okay, the Whopper with Cheese from Burger King. Is there another similar item you also like?
+User: A Quarter Pounder with Cheese from McDonald's.
+Agent: Thank you. So, a Quarter Pounder with Cheese from McDonald's. Compared to your favorite Big Mac, what do you find better or worse about the Quarter Pounder with Cheese?
+User: I don't like all of the onions on the Quarter Pounder with Cheese. The Big Mac is just a better hamburger all the way around.
+Agent: I understand. And how about the Burger King Whopper with Cheese? What's better or worse about it compared to your Big Mac?
+User: Um... I wouldn't say it's better. Uh... But it's a close second.
+Agent: Understood. So the Big Mac remains your top choice. What do you usually pair with your Big Mac? This could be drinks, sides, or sauces.
+User: Um, a Coke and french fries?
+Agent: A Coke and french fries, got it. And what would you never pair with a Big Mac, and why?
+User: ...
+Agent: Please speak up, or let me know if you're still there.
+User: I'm here. I'm thinking... Um...
+Agent: No problem, take your time.
+User: Probably ice cream because it just wouldn't go good together.
+Agent: That makes sense; ice cream and a Big Mac might not be the best combination.
+
+Now, moving on to the next section. In what situations do you choose a Big Mac most often? Please include details like time pressure, location such as home, work, or commute, the ordering channel like drive-thru or delivery, and who you're with.
+User: Um...
+Agent: Take your time.
+User: If I don't feel like cooking dinner that night.
+Agent: Okay, so when you don't...
+User: Man, my
+Agent: Please continue when you're ready.
+User: Um... If I don't feel like cooking dinner, I'll go to town and get it. Um... I usually go with my daughter and my grandchildren.
+Agent: Thank you for...
+User: And we usually go... And we go through the drop-thru.
+Agent: Thank you for that detailed explanation. So, it's often a dinner choice when you don't feel like cooking, a family outing with your daughter and grandchildren, and typically through the drive-thru.
+
+Now, let's talk about price. How does the price of a Big Mac change your choice to order it?
+User: Um... It's less than $10, so I don't mind.
+Agent: Okay, so the price being less than ten dollars is a comfortable range for you. If a Big Mac cost two dollars more, what would you do?
+User: Honestly I would probably still get it
+Agent: Understood. So a slight price increase wouldn't deter you. What if there was a deal on the Big Mac? Would that change what you do differently, and if so, how?
+User: If there was a deal I would still get it.
+Agent: Okay, so a deal wouldn't necessarily change your decision to get it.
+
+Moving on, over the past two weeks, what have been your most common fast-food patterns? This includes when you eat it, what you usually order, and what typically triggers it.
+User: Um I've had Little Caesar's pizza my daughter and her family got it for dinner one night so I ate dinner with them
+Agent: Thank you for sharing that instance. Besides that, what are your most common fast-food patterns over the past two weeks? For example, when do you typically eat fast food, what do you usually order, and what generally triggers those choices?
+User: Um in the past two weeks I've only eaten Little Caesars. I haven't ate any other fast food. But if I do want fast food, um it's usually if it's not McDonald's it's Taco Bell. And I usually get them if I'm just passing by going through town.
+Agent: Thank you for that insight. So, Little Caesar's was the main fast food recently, and otherwise, it's McDonald's or Taco Bell, often triggered by being in town.
+
+Now, what does "good value" mean to you in fast food? Could you pick your top two or three factors from taste, portion size, speed, nutrition, consistency, or price, and explain how you judge if something is "worth it"?
+User: To be honest if I'm craving something or if my go-to order has increased in price I'd probably still get it. I like, but if I ever go through the drive-thru and the food is nasty I probably won't go back through that drive-thru again.
+Agent: Thank you for sharing that perspective. It sounds like taste and satisfying a craving are very important to you, and consistency in quality prevents you from returning.
+
+From the list of factors: taste, portion size, speed, nutrition, consistency, and price, which two or three are your absolute top factors for what "good value" means to you in fast food, and how do you judge if something is "worth it" based on those?
+User: Price.
+Agent: Okay, so price is one of your top factors. What are one or two other factors from the list—taste, portion size, speed, nutrition, or consistency—that are most important to you for "good value" in fast food?
+User: Taste.
+Agent: Thank you. So, price and taste are your top two factors for good value. How do you judge if something is "worth it" based on these two factors?
+User: Uh...
+Agent: Take your time.
+User: If I've had the food before and I liked it
