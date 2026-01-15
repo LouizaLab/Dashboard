@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import Plot from 'react-plotly.js';
 
 // Static Beauty Market Clusters with Fixed Positions
@@ -198,7 +198,7 @@ function getSegmentMetrics(clusterId, consumerFilters) {
   return { relevance, confidence };
 }
 
-function MarketManifold3D({ vertical = 'beauty', region = 'US', onVerticalChange, onRegionChange, onNodeClick, selectedNodes = [], scenarioResults = null }) {
+function MarketManifold3D({ vertical = 'beauty', region = 'US', onVerticalChange, onRegionChange, onNodeClick, selectedNodes = [], scenarioResults = null, onFiltersChange }) {
   const [loading, setLoading] = useState(false);
   const [filters, setFilters] = useState({
     age_group: '',
@@ -210,6 +210,13 @@ function MarketManifold3D({ vertical = 'beauty', region = 'US', onVerticalChange
   });
   const [hoveredCluster, setHoveredCluster] = useState(null);
   const [pinnedClusters, setPinnedClusters] = useState([]);
+
+  // Notify parent when filters change
+  useEffect(() => {
+    if (onFiltersChange) {
+      onFiltersChange(filters);
+    }
+  }, [filters, onFiltersChange]);
 
   // Calculate metrics for each cluster based on current filters
   const clusterMetrics = useMemo(() => {

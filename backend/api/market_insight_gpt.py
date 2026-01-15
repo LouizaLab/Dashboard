@@ -28,15 +28,16 @@ def generate_insight_from_simulation(
     region: str,
     pinned_nodes: List[str],
     scenario_params: Dict,
+    filters: Dict = None,
     force_gpt: bool = False,
     manifold_data: Optional[Dict] = None
 ) -> Dict:
     """
     Generate consultant-grade insight from simulation result using GPT-4.
-    
+
     Args:
         force_gpt: If True, bypass cache and use GPT even if mode is mock
-    
+
     Returns strict JSON schema matching the required format.
     """
     # Check cache (unless bypassed)
@@ -46,22 +47,22 @@ def generate_insight_from_simulation(
         if cached_result:
             print(f"[Market Insight] Using cached result for key: {cache_key[:20]}...")
             return cached_result
-    
+
     # Determine if we should use GPT
     use_gpt = force_gpt or (MARKET_INSIGHT_MODE == 'gpt' and OPENAI_AVAILABLE and OPENAI_API_KEY and client)
-    
+
     if not use_gpt:
         print(f"[Market Insight] Using mock mode (MARKET_INSIGHT_MODE={MARKET_INSIGHT_MODE}, OPENAI_AVAILABLE={OPENAI_AVAILABLE}, client={client is not None})")
         return _generate_mock_insight(sim_result, question, vertical, scenario_params)
-    
+
     print(f"[Market Insight] Using GPT-4 API (model: gpt-4o)")
-    
+
     # Build prompt
     system_prompt = _build_system_prompt()
     user_prompt = _build_user_prompt(
-        sim_result, question, vertical, region, pinned_nodes, scenario_params, manifold_data
+        sim_result, question, vertical, region, pinned_nodes, scenario_params, filters or {}, manifold_data
     )
-    
+
     # Call GPT-4
     try:
         response = client.chat.completions.create(
@@ -74,22 +75,22 @@ def generate_insight_from_simulation(
             response_format={"type": "json_object"},
             max_tokens=3000,  # Increased for more comprehensive responses
         )
-        
+
         content = response.choices[0].message.content
         tokens_used = response.usage.total_tokens if hasattr(response, 'usage') else None
-        
+
         # Parse JSON
         try:
             result = json.loads(content)
         except json.JSONDecodeError:
             # Fallback to mock if JSON parsing fails
             result = _generate_mock_insight(sim_result, question, vertical, scenario_params)
-        
+
         # Cache result (unless bypassed)
         if not BYPASS_CACHE:
             cache_key = _get_cache_key(sim_result, question, scenario_params)
             cache.set(cache_key, result, timeout=3600 * 24)  # Cache for 24 hours
-        
+
         # Store in DB
         try:
             MarketInsightAnswer.objects.create(
@@ -101,10 +102,10 @@ def generate_insight_from_simulation(
             )
         except Exception as db_error:
             print(f"[Market Insight] Warning: Could not save to DB: {db_error}")
-        
+
         print(f"[Market Insight] GPT-4 response generated successfully (tokens: {tokens_used})")
         return result
-        
+
     except Exception as e:
         print(f"[Market Insight] GPT-4 error: {e}")
         import traceback
@@ -122,44 +123,57 @@ def _get_cache_key(sim_result: MarketSimResult, question: str, scenario_params: 
 
 def _build_system_prompt() -> str:
     """Build system prompt for GPT."""
-    return """You are Louiza Market Insight, a consultant-grade strategist. You convert market manifold data and simulation outputs into clear strategic recommendations.
+    return """You are Louiza Market Insight, a consultant-grade strategist specializing in consumer segment analysis. You convert market manifold data and simulation outputs into direct, actionable answers to consultant questions.
 
 Your role:
-- Analyze market manifold structure (clusters, spatial relationships, cluster characteristics)
-- Convert simulation data AND manifold cluster data into consultant-grade insights
-- Reference specific clusters by name and their characteristics (claims, tiers, channels, categories)
-- Explain spatial relationships between clusters and what they mean strategically
+- **Answer the question directly** - The user's question is the primary focus. Structure your response to directly address what they asked.
+- **Use consumer segment context** - When consumer segment filters are provided, tailor your answer to that specific segment, but still answer the question asked.
+- **Map to categories/sub-categories** - When questions ask about categories, sub-categories, or product types, explicitly identify which ones are gaining/losing importance, not just market segments.
+- **Be specific** - Name specific categories (e.g., "face skincare", "serums", "eye products", "lip products", "fragrance") and sub-categories when relevant.
+- **Reference market segments (clusters) as supporting evidence** - Use cluster data to support your answer about categories, but don't make clusters the primary answer.
+- **Quantify changes** - When asked about "gaining" or "losing" importance, provide directional indicators (↑ gaining, ↓ losing, → stable) and explain why.
 - Be explicit about assumptions and uncertainty
 - Do NOT invent data outside the provided manifold and simulation payload
-- Ground all recommendations in the actual cluster structure and characteristics
 - Output STRICT JSON that matches the given schema—no markdown, no commentary
 
 Output format (strict JSON schema):
 {
   "title": "string",
-  "executive_summary": ["bullet 1", "bullet 2", ...],
+  "executive_summary": ["bullet 1 focused on consumer segment behavior", "bullet 2 mapping segments to markets", ...],
+  "consumer_segment_insights": {
+    "segment_name": {
+      "description": "description of this consumer segment's behavior",
+      "preferred_markets": ["market segment 1", "market segment 2"],
+      "avoided_markets": ["market segment 3"],
+      "engagement_percentages": {
+        "market_segment_1": 65,
+        "market_segment_2": 45
+      },
+      "key_drivers": ["driver 1", "driver 2"]
+    }
+  },
   "direct_answers": {
-    "sub_question_1": "comprehensive answer referencing specific clusters",
-    "sub_question_2": "comprehensive answer referencing specific clusters"
+    "sub_question_1": "comprehensive answer focused on consumer segment behavior and market mapping",
+    "sub_question_2": "comprehensive answer referencing how consumer segments interact with clusters"
   },
   "market_map_takeaways": {
     "clusters_impacted": ["specific cluster name 1", "specific cluster name 2"],
-    "cluster_relationships": "explanation of spatial relationships between clusters",
-    "cluster_characteristics": "summary of key cluster attributes (claims, tiers, channels)",
-    "rationale": "why these clusters matter based on manifold structure"
+    "consumer_segment_to_market_mapping": "explanation of which consumer segments engage with which market segments and why",
+    "cluster_relationships": "explanation of spatial relationships between clusters from consumer segment perspective",
+    "rationale": "why these clusters matter for the target consumer segment"
   },
   "recommended_actions": {
-    "now": ["action 1", "action 2"],
+    "now": ["action 1 tailored to consumer segment", "action 2"],
     "next": ["action 3", "action 4"],
     "long_term": ["action 5"]
   },
   "whitespace_opportunities": {
-    "opportunity_1": {"description": "...", "sizing": "..."}
+    "opportunity_1": {"description": "...", "sizing": "...", "target_segment": "consumer segment name"}
   },
   "risks_and_watchouts": ["risk 1", "risk 2"],
   "assumptions": ["assumption 1", "assumption 2"],
   "evidence": [
-    {"type": "cluster", "id": "...", "label": "..."}
+    {"type": "cluster", "id": "...", "label": "...", "consumer_relevance": "why this matters to consumer segment"}
   ],
   "confidence": {
     "score": 4,
@@ -177,6 +191,7 @@ def _build_user_prompt(
     region: str,
     pinned_nodes: List[str],
     scenario_params: Dict,
+    filters: Dict = None,
     manifold_data: Optional[Dict] = None
 ) -> str:
     """Build user prompt with simulation context and manifold data."""
@@ -186,13 +201,13 @@ def _build_user_prompt(
         f"- {c['cluster_label']}: impact {c['impact_score']:.2f} ({', '.join(c.get('drivers', []))})"
         for c in top_clusters
     ])
-    
+
     # Add manifold data context
     manifold_context = ""
     if manifold_data:
         clusters = manifold_data.get('clusters', [])
         points = manifold_data.get('points', [])
-        
+
         if clusters:
             manifold_context += "\n\n=== MARKET MANIFOLD STRUCTURE ===\n"
             manifold_context += f"Total clusters identified: {len(clusters)}\n"
@@ -203,14 +218,14 @@ def _build_user_prompt(
                 tier = drivers.get('tier', 'unknown')
                 category = drivers.get('category', 'unknown')
                 channel = drivers.get('channel', 'unknown')
-                
+
                 manifold_context += f"\n• {cluster.get('label', 'Unknown')} ({cluster.get('count', 0)} points):\n"
                 manifold_context += f"  - Category: {category}\n"
                 manifold_context += f"  - Price Tier: {tier}\n"
                 if claims:
                     manifold_context += f"  - Key Claims: {', '.join(claims[:3])}\n"
                 manifold_context += f"  - Primary Channel: {channel}\n"
-        
+
         # Analyze pinned nodes if any
         if pinned_nodes and points:
             pinned_info = []
@@ -221,7 +236,7 @@ def _build_user_prompt(
             if pinned_info:
                 manifold_context += f"\n\nPinned Context Nodes:\n"
                 manifold_context += "\n".join([f"- {info}" for info in pinned_info])
-        
+
         # Spatial relationships
         if clusters and len(clusters) > 1:
             manifold_context += "\n\n=== SPATIAL RELATIONSHIPS ===\n"
@@ -229,21 +244,21 @@ def _build_user_prompt(
             manifold_context += "- Clusters represent distinct preference-based market segments\n"
             manifold_context += "- Proximity indicates similar consumer preferences or competitive dynamics\n"
             manifold_context += "- Cluster boundaries show clear market separation\n"
-    
+
     # Category/tier shifts summary
     shifts_summary = ""
     if sim_result.category_tier_shifts:
         shifts_summary = "\nCategory/Tier Shifts:\n"
         for key, shift in list(sim_result.category_tier_shifts.items())[:5]:
             shifts_summary += f"- {shift['category']} / {shift['tier']}: {shift['trend']} (impact {shift['impact']:.2f})\n"
-    
+
     # Competitor positioning summary
     comp_summary = ""
     if sim_result.competitor_positioning and sim_result.competitor_positioning.get('grid'):
         comp_summary = "\nCompetitor Positioning:\n"
         for key, brands in list(sim_result.competitor_positioning['grid'].items())[:3]:
             comp_summary += f"- {key}: {len(brands)} competitors\n"
-    
+
     # Innovation patterns summary
     innovation_summary = ""
     if sim_result.innovation_patterns:
@@ -251,11 +266,73 @@ def _build_user_prompt(
         for brand_type, patterns in sim_result.innovation_patterns.items():
             if patterns.get('launches', 0) > 0:
                 innovation_summary += f"- {brand_type.title()}: {patterns['launches']} launches, claims: {', '.join(patterns.get('claims', [])[:2])}\n"
-    
+
+    # Build consumer segment context from filters
+    consumer_segment_context = ""
+    if filters and isinstance(filters, dict):
+        segment_parts = []
+        if filters.get('age_group'):
+            age_labels = {
+                'gen_z': 'Gen Z (16-24)',
+                'young_millennials': 'Young Millennials (25-34)',
+                'mid_millennials': 'Mid Millennials (35-44)',
+                'gen_x': 'Gen X (45-54)',
+                '55_plus': '55+'
+            }
+            segment_parts.append(f"Age: {age_labels.get(filters['age_group'], filters['age_group'])}")
+        if filters.get('gender'):
+            segment_parts.append(f"Gender: {filters['gender'].title()}")
+        if filters.get('income_tier'):
+            income_labels = {
+                'budget_constrained': 'Budget-constrained',
+                'middle_income': 'Middle income',
+                'upper_middle_income': 'Upper-middle income',
+                'high_income': 'High income / Affluent'
+            }
+            segment_parts.append(f"Income: {income_labels.get(filters['income_tier'], filters['income_tier'])}")
+        if filters.get('area_type'):
+            area_labels = {
+                'urban': 'Urban',
+                'suburban': 'Suburban',
+                'rural': 'Rural',
+                'coastal_metro': 'Coastal Metro',
+                'secondary_cities': 'Secondary Cities'
+            }
+            segment_parts.append(f"Area Type: {area_labels.get(filters['area_type'], filters['area_type'])}")
+        if filters.get('beauty_archetype'):
+            archetype_labels = {
+                'minimalist': 'Minimalist / Low-Routine',
+                'beauty_enthusiast': 'Beauty Enthusiast',
+                'ingredient_obsessed': 'Ingredient-Obsessed',
+                'trend_follower': 'Trend-Follower (TikTok-led)',
+                'prestige_luxury': 'Prestige / Luxury Buyer',
+                'value_driven': 'Value-Driven Shopper',
+                'problem_solution': 'Problem-Solution Seeker'
+            }
+            segment_parts.append(f"Archetype: {archetype_labels.get(filters['beauty_archetype'], filters['beauty_archetype'])}")
+        if filters.get('primary_motivation'):
+            motivation_labels = {
+                'appearance': 'Appearance / Aesthetics',
+                'skin_health': 'Skin Health / Repair',
+                'anti_aging': 'Anti-aging / Prevention',
+                'confidence': 'Confidence / Identity',
+                'experimentation': 'Experimentation / Fun',
+                'value': 'Value / Price'
+            }
+            segment_parts.append(f"Motivation: {motivation_labels.get(filters['primary_motivation'], filters['primary_motivation'])}")
+
+        if segment_parts:
+            consumer_segment_context = f"""
+=== CONSUMER SEGMENT CONTEXT ===
+Target Consumer Profile: {', '.join(segment_parts)}
+
+IMPORTANT: Use this consumer segment context to tailor your answer, but still directly answer the question asked. If the question is about categories/sub-categories, answer with specific categories/sub-categories and explain how this consumer segment's preferences affect which categories are gaining/losing importance.
+"""
+
     prompt = f"""Context: {region} {vertical.title()} Market Analysis
 
 Client Question: {question}
-
+{consumer_segment_context}
 Scenario Parameters:
 - Price Tier Shift: {scenario_params.get('price_tier_shift', 'None')}
 - Channel Shift: {scenario_params.get('channel_shift', 'None')}
@@ -268,7 +345,7 @@ Pinned Markets/Brands: {len(pinned_nodes)} nodes selected
 
 Simulation Results Summary:
 
-Top Impacted Clusters:
+Top Impacted Market Segments (Clusters):
 {cluster_summary}
 {shifts_summary}
 {comp_summary}
@@ -280,16 +357,29 @@ Entropy: {sim_result.entropy_score:.2f}
 === INSTRUCTIONS ===
 You must provide a comprehensive consultant-grade strategic answer that:
 
-1. **Directly answers the question** using the manifold cluster data and simulation results
-2. **References specific clusters** by name (e.g., "Clean Indie Skincare cluster", "Clinical Derm Skincare cluster")
-3. **Explains spatial relationships** - which clusters are adjacent, which are distant, and what that means strategically
-4. **Uses cluster drivers** - reference the claims, tiers, channels, and categories from the manifold clusters
-5. **Provides actionable recommendations** grounded in the actual cluster structure
-6. **Explains market dynamics** - how clusters interact, where whitespace exists between clusters
-7. **Quantifies opportunities** - use cluster sizes and counts to size opportunities
-8. **Addresses uncertainty** - be explicit about what the manifold data tells us vs. what requires more research
+1. **ANSWER THE QUESTION DIRECTLY** - The user's question is your PRIMARY FOCUS. Read the question carefully and structure your entire response to directly answer what was asked.
 
-CRITICAL: Your answer must be grounded in the manifold cluster data provided above. Reference specific cluster names, their characteristics (claims, tiers, channels), and their relationships to each other.
+2. **If the question asks about categories/sub-categories:**
+   - List specific categories and sub-categories (e.g., "face skincare", "serums", "eye products", "lip products", "fragrance", "foundation", "concealer", etc.)
+   - Clearly indicate which are GAINING ↑ strategic importance and which are LOSING ↓ strategic importance
+   - Explain WHY each category is gaining/losing importance
+   - Use market segments (clusters) as SUPPORTING EVIDENCE - explain which clusters represent which categories
+   - Tailor to consumer segment if provided - explain how this segment's preferences affect category trends
+
+3. **If the question asks about consumer segments:**
+   - Focus on consumer behavior, preferences, and decision-making
+   - Map consumer segments to market segments (clusters)
+   - Explain engagement patterns
+
+4. **Structure your answer by the question type:**
+   - Executive Summary: High-level direct answer to the question
+   - Direct Answers: Specific, detailed answers addressing each part of the question
+   - Market Map Takeaways: Use clusters as evidence to support your answer
+   - Recommended Actions: Actionable steps based on your answer
+
+5. **Use market segments (clusters) as supporting evidence, not the primary answer** - Reference clusters to support category/consumer insights, but don't make clusters the main focus unless the question specifically asks about market segments.
+
+CRITICAL: Answer the question asked. If asked "Which categories are gaining/losing importance?", answer with specific categories and sub-categories with ↑/↓ indicators. Use consumer segment context and market clusters to enrich and support your answer, but make the question the primary focus.
 
 Follow the JSON schema exactly."""
 
@@ -306,10 +396,10 @@ def _generate_mock_insight(
     # Extract key info
     top_clusters = sim_result.impacted_clusters[:3]
     cluster_labels = [c['cluster_label'] for c in top_clusters]
-    
+
     # Generate mock answer based on question type
     question_lower = question.lower()
-    
+
     if 'whitespace' in question_lower or 'opportunity' in question_lower:
         return _generate_whitespace_mock(sim_result, vertical, cluster_labels)
     elif 'portfolio' in question_lower or 'strategy' in question_lower:

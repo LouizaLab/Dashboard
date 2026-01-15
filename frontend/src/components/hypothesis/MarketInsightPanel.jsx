@@ -9,6 +9,7 @@ function MarketInsightPanel({ filters = {} }) {
   const [vertical, setVertical] = useState('beauty');
   const [region, setRegion] = useState('US');
   const [scenarioResults, setScenarioResults] = useState(null);
+  const [consumerFilters, setConsumerFilters] = useState({});
 
   const handleNodeClick = async (node) => {
     setSelectedNode(node);
@@ -50,6 +51,7 @@ function MarketInsightPanel({ filters = {} }) {
             onNodeClick={handleNodeClick}
             selectedNodes={selectedNode ? [selectedNode.id] : []}
             scenarioResults={scenarioResults}
+            onFiltersChange={setConsumerFilters}
           />
         </div>
 
@@ -107,6 +109,7 @@ function MarketInsightPanel({ filters = {} }) {
       <div className="w-[42%] flex flex-col bg-dark-bg">
         <InsightWorkspace
           pinnedNodes={pinnedNodes}
+          consumerFilters={consumerFilters} // Pass consumer segment filters from MarketManifold3D
           onAsk={(results) => {
             console.log('Insight results:', results);
           }}

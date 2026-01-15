@@ -66,7 +66,7 @@ const CASE_TEMPLATES = {
   },
 };
 
-function InsightWorkspace({ pinnedNodes = [], onAsk, onScenarioResults }) {
+function InsightWorkspace({ pinnedNodes = [], onAsk, onScenarioResults, consumerFilters = {} }) {
   const [question, setQuestion] = useState('');
   const [results, setResults] = useState(null);
   const [loading, setLoading] = useState(false);
@@ -100,18 +100,31 @@ function InsightWorkspace({ pinnedNodes = [], onAsk, onScenarioResults }) {
           region: 'US',
           question: question,
           pinned_nodes: pinnedNodes.map(n => n.id),
-          filters: {},
+          filters: consumerFilters || {}, // Use consumer segment filters
           scenario_params: scenarioParams,
           force_gpt: true, // Force GPT API usage instead of cached/mock
         }),
       });
 
       if (!response.ok) {
-        throw new Error(`HTTP ${response.status}`);
+        let errorMessage = `HTTP ${response.status}`;
+        try {
+          const errorText = await response.text();
+          try {
+            const errorJson = JSON.parse(errorText);
+            errorMessage = errorJson.error || errorJson.detail || errorMessage;
+          } catch (e) {
+            errorMessage = errorText || errorMessage;
+          }
+        } catch (e) {
+          // If we can't parse the error, use the status
+        }
+        throw new Error(errorMessage);
       }
 
       const data = await response.json();
       console.log('Ask response:', data);
+      console.log('Consumer filters sent:', consumerFilters);
 
       // Extract insight (GPT-generated answer)
       // Handle both formats: {insight: {...}} or direct insight object
@@ -223,12 +236,10 @@ function InsightWorkspace({ pinnedNodes = [], onAsk, onScenarioResults }) {
         </div>
       </div>
 
-      {/* Question Input - Compact */}
+      {/* Question Input */}
       <div className="p-3 border-b border-dark-border bg-dark-surface">
         <div className="flex items-start gap-2">
-          <label className="text-xs text-gray-400 flex-shrink-0 pt-2">
-            Ask:
-          </label>
+          <label className="text-xs text-gray-400 flex-shrink-0 pt-2">Ask:</label>
           <div className="flex-1 flex flex-col gap-2">
             <textarea
               className="w-full bg-dark-bg border border-dark-border rounded px-3 py-2 text-sm text-gray-300 min-h-[50px] max-h-[80px] resize-none"
@@ -241,7 +252,6 @@ function InsightWorkspace({ pinnedNodes = [], onAsk, onScenarioResults }) {
               }}
               placeholder="What categories should we prioritize?"
             />
-            {/* Context Chips - Compact inline */}
             {pinnedNodes.length > 0 && (
               <div className="flex flex-wrap gap-1">
                 {pinnedNodes.map((node, index) => (
@@ -302,10 +312,10 @@ function InsightWorkspace({ pinnedNodes = [], onAsk, onScenarioResults }) {
                     value={scenarioParams.price_tier_shift}
                     onChange={(e) => setScenarioParams({ ...scenarioParams, price_tier_shift: e.target.value })}
                   >
-                  <option value="">No change</option>
-                  <option value="premium">Shift to Premium</option>
-                  <option value="super_premium">Shift to Super-Premium</option>
-                  <option value="ultra_luxury">Shift to Ultra-Luxury</option>
+                    <option value="">No change</option>
+                    <option value="premium">Shift to Premium</option>
+                    <option value="super_premium">Shift to Super-Premium</option>
+                    <option value="ultra_luxury">Shift to Ultra-Luxury</option>
                   </select>
                   <div className="absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none">
                     <svg className="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
