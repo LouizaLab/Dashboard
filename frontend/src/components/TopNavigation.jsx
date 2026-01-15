@@ -1,11 +1,7 @@
 const tabs = [
   'TEST HYPOTHESIS',
+  'MARKET INSIGHT',
   'NETWORK GRAPH',
-  'TASTE SNAPSHOT',
-  'BEHAVIORAL DYNAMICS',
-  'INSIGHTS',
-  'WHAT-IF SIMULATION',
-  'RECIPE & LAUNCH SIMULATION',
 ];
 
 function TopNavigation({ activeTab, setActiveTab }) {

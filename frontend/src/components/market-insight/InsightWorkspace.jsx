@@ -87,7 +87,7 @@ function InsightWorkspace({ pinnedNodes = [], onAsk, onScenarioResults }) {
     setLoading(true);
     setResults(null); // Clear previous results
     setScenarioResults(null); // Clear scenario results
-    
+
     try {
       // Call the new /ask endpoint which runs simulation → GPT insight
       const response = await fetch('http://localhost:8000/api/market-insight-new/ask/', {
@@ -112,7 +112,7 @@ function InsightWorkspace({ pinnedNodes = [], onAsk, onScenarioResults }) {
 
       const data = await response.json();
       console.log('Ask response:', data);
-      
+
       // Extract insight (GPT-generated answer)
       // Handle both formats: {insight: {...}} or direct insight object
       let insightData;
@@ -129,10 +129,10 @@ function InsightWorkspace({ pinnedNodes = [], onAsk, onScenarioResults }) {
         // Old format or direct insight
         insightData = data;
       }
-      
+
       console.log('Setting results with insightData:', insightData);
       setResults(insightData);
-      
+
       if (onAsk) {
         onAsk(insightData);
       }
@@ -181,7 +181,7 @@ function InsightWorkspace({ pinnedNodes = [], onAsk, onScenarioResults }) {
 
       const data = await response.json();
       setScenarioResults(data);
-      
+
       if (onScenarioResults) {
         onScenarioResults(data);
       }
@@ -197,22 +197,29 @@ function InsightWorkspace({ pinnedNodes = [], onAsk, onScenarioResults }) {
       {/* Header */}
       <div className="p-4 border-b border-dark-border bg-dark-surface">
         <h2 className="text-xl font-bold text-gray-200 mb-4">Insight Workspace</h2>
-        
+
         {/* Vertical Selector */}
         <div className="mb-4">
           <label className="text-sm text-gray-400 mb-2 block">Vertical</label>
-          <select
-            className="w-full bg-dark-bg border border-dark-border rounded px-3 py-2 text-sm text-gray-300"
-            value={vertical}
-            onChange={(e) => {
-              setVertical(e.target.value);
-              setResults(null);
-              setScenarioResults(null);
-            }}
-          >
-            <option value="beauty">Beauty</option>
-            <option value="food">Food</option>
-          </select>
+          <div className="relative">
+            <select
+              className="w-full bg-dark-hover border border-dark-border rounded-lg px-3 py-2 pr-8 text-sm text-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-500 appearance-none"
+              value={vertical}
+              onChange={(e) => {
+                setVertical(e.target.value);
+                setResults(null);
+                setScenarioResults(null);
+              }}
+            >
+              <option value="beauty">Beauty</option>
+              <option value="food">Food</option>
+            </select>
+            <div className="absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none">
+              <svg className="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+              </svg>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -252,7 +259,7 @@ function InsightWorkspace({ pinnedNodes = [], onAsk, onScenarioResults }) {
             <button
               onClick={handleAsk}
               disabled={loading || !question.trim()}
-              className="bg-accent-primary hover:bg-accent-primary/80 text-white px-3 py-2 rounded disabled:opacity-50 disabled:cursor-not-allowed text-sm font-medium"
+              className="bg-gray-600/40 text-white px-3 py-2 rounded-lg hover:bg-gray-500/50 backdrop-blur-sm disabled:opacity-50 disabled:cursor-not-allowed text-sm font-medium transition-colors border border-dark-border"
             >
               {loading ? '...' : 'Ask'}
             </button>
@@ -263,7 +270,7 @@ function InsightWorkspace({ pinnedNodes = [], onAsk, onScenarioResults }) {
                   setResults(null);
                   setScenarioResults(null);
                 }}
-                className="px-2 py-2 text-gray-400 hover:text-gray-200 text-sm"
+                className="px-2 py-2 text-gray-400 hover:text-gray-200 text-sm transition-colors"
                 title="Clear"
               >
                 ✕
@@ -278,79 +285,107 @@ function InsightWorkspace({ pinnedNodes = [], onAsk, onScenarioResults }) {
         <div className="p-4 border-b border-dark-border bg-dark-surface">
           <button
             onClick={() => setScenarioOpen(!scenarioOpen)}
-            className="w-full flex items-center justify-between text-left text-sm font-semibold text-gray-200 hover:text-accent-primary"
+            className="w-full flex items-center justify-between text-left text-sm font-semibold text-gray-200 hover:text-gray-300 bg-gray-600/40 hover:bg-gray-500/50 backdrop-blur-sm px-3 py-2 rounded-lg border border-dark-border transition-colors"
           >
             <span>Scenario Analysis</span>
             <span>{scenarioOpen ? '▼' : '▶'}</span>
           </button>
-          
+
           {scenarioOpen && (
             <div className="mt-4 space-y-4">
               {/* Price Tier Shift */}
               <div>
                 <label className="text-xs text-gray-400 mb-1 block">Price Tier Shift</label>
-                <select
-                  className="w-full bg-dark-bg border border-dark-border rounded px-2 py-1 text-sm text-gray-300"
-                  value={scenarioParams.price_tier_shift}
-                  onChange={(e) => setScenarioParams({ ...scenarioParams, price_tier_shift: e.target.value })}
-                >
+                <div className="relative">
+                  <select
+                    className="w-full bg-dark-hover border border-dark-border rounded-lg px-3 py-2 pr-8 text-sm text-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-500 appearance-none"
+                    value={scenarioParams.price_tier_shift}
+                    onChange={(e) => setScenarioParams({ ...scenarioParams, price_tier_shift: e.target.value })}
+                  >
                   <option value="">No change</option>
                   <option value="premium">Shift to Premium</option>
                   <option value="super_premium">Shift to Super-Premium</option>
                   <option value="ultra_luxury">Shift to Ultra-Luxury</option>
-                </select>
+                  </select>
+                  <div className="absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none">
+                    <svg className="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </div>
+                </div>
               </div>
 
               {/* Channel Shift */}
               <div>
                 <label className="text-xs text-gray-400 mb-1 block">Channel Mix Shift</label>
-                <select
-                  className="w-full bg-dark-bg border border-dark-border rounded px-2 py-1 text-sm text-gray-300"
-                  value={scenarioParams.channel_shift}
-                  onChange={(e) => setScenarioParams({ ...scenarioParams, channel_shift: e.target.value })}
-                >
-                  <option value="">No change</option>
-                  <option value="sephora_heavy">Sephora-Heavy (60%+)</option>
-                  <option value="ulta_heavy">Ulta-Heavy (40%+)</option>
-                  <option value="dtc_heavy">DTC-Heavy (50%+)</option>
-                  <option value="amazon_heavy">Amazon-Heavy (40%+)</option>
-                </select>
+                <div className="relative">
+                  <select
+                    className="w-full bg-dark-hover border border-dark-border rounded-lg px-3 py-2 pr-8 text-sm text-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-500 appearance-none"
+                    value={scenarioParams.channel_shift}
+                    onChange={(e) => setScenarioParams({ ...scenarioParams, channel_shift: e.target.value })}
+                  >
+                    <option value="">No change</option>
+                    <option value="sephora_heavy">Sephora-Heavy (60%+)</option>
+                    <option value="ulta_heavy">Ulta-Heavy (40%+)</option>
+                    <option value="dtc_heavy">DTC-Heavy (50%+)</option>
+                    <option value="amazon_heavy">Amazon-Heavy (40%+)</option>
+                  </select>
+                  <div className="absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none">
+                    <svg className="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </div>
+                </div>
               </div>
 
               {/* Claim Emphasis */}
               <div>
                 <label className="text-xs text-gray-400 mb-1 block">Claim Emphasis</label>
-                <select
-                  className="w-full bg-dark-bg border border-dark-border rounded px-2 py-1 text-sm text-gray-300"
-                  value={scenarioParams.claim_emphasis}
-                  onChange={(e) => setScenarioParams({ ...scenarioParams, claim_emphasis: e.target.value })}
-                >
-                  <option value="">No change</option>
-                  <option value="clean">Clean Beauty</option>
-                  <option value="clinical">Clinical/Performance</option>
-                  <option value="luxury_heritage">Luxury Heritage</option>
-                  <option value="indie_trendy">Indie/Trendy</option>
-                </select>
+                <div className="relative">
+                  <select
+                    className="w-full bg-dark-hover border border-dark-border rounded-lg px-3 py-2 pr-8 text-sm text-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-500 appearance-none"
+                    value={scenarioParams.claim_emphasis}
+                    onChange={(e) => setScenarioParams({ ...scenarioParams, claim_emphasis: e.target.value })}
+                  >
+                    <option value="">No change</option>
+                    <option value="clean">Clean Beauty</option>
+                    <option value="clinical">Clinical/Performance</option>
+                    <option value="luxury_heritage">Luxury Heritage</option>
+                    <option value="indie_trendy">Indie/Trendy</option>
+                  </select>
+                  <div className="absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none">
+                    <svg className="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </div>
+                </div>
               </div>
 
               {/* Bundle vs Single */}
               <div>
                 <label className="text-xs text-gray-400 mb-1 block">Product Strategy</label>
-                <select
-                  className="w-full bg-dark-bg border border-dark-border rounded px-2 py-1 text-sm text-gray-300"
-                  value={scenarioParams.bundle_vs_single}
-                  onChange={(e) => setScenarioParams({ ...scenarioParams, bundle_vs_single: e.target.value })}
-                >
-                  <option value="">No change</option>
-                  <option value="bundle">Focus on Bundles/Kits</option>
-                  <option value="single">Focus on Single Hero Products</option>
-                </select>
+                <div className="relative">
+                  <select
+                    className="w-full bg-dark-hover border border-dark-border rounded-lg px-3 py-2 pr-8 text-sm text-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-500 appearance-none"
+                    value={scenarioParams.bundle_vs_single}
+                    onChange={(e) => setScenarioParams({ ...scenarioParams, bundle_vs_single: e.target.value })}
+                  >
+                    <option value="">No change</option>
+                    <option value="bundle">Focus on Bundles/Kits</option>
+                    <option value="single">Focus on Single Hero Products</option>
+                  </select>
+                  <div className="absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none">
+                    <svg className="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </div>
+                </div>
               </div>
 
               <button
                 onClick={handleRunScenario}
                 disabled={scenarioLoading}
-                className="w-full bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded text-sm disabled:opacity-50 disabled:cursor-not-allowed"
+                className="w-full bg-gray-600/40 text-white px-4 py-2 rounded-lg hover:bg-gray-500/50 backdrop-blur-sm text-sm disabled:opacity-50 disabled:cursor-not-allowed transition-colors border border-dark-border"
               >
                 {scenarioLoading ? 'Running Scenario...' : 'Run Scenario'}
               </button>
@@ -363,28 +398,14 @@ function InsightWorkspace({ pinnedNodes = [], onAsk, onScenarioResults }) {
       {results && (
         <div className="flex-1 overflow-y-auto p-4">
           <ErrorBoundary>
-            <ResultsDisplay 
-              results={results} 
+            <ResultsDisplay
+              results={results}
               scenarioResults={scenarioResults}
             />
           </ErrorBoundary>
         </div>
       )}
 
-      {!results && !loading && (
-        <div className="flex-1 flex items-center justify-center text-gray-500 p-8">
-          <div className="text-center max-w-md">
-            <div className="text-lg mb-2 text-gray-400">Ask a strategic question</div>
-            <div className="text-sm text-gray-500 mb-4">
-              The Insight Engine will analyze markets, brands, and trends to provide structured answers with evidence and confidence scores.
-            </div>
-            <div className="text-xs text-gray-600 space-y-1">
-              <div>💡 Tip: Pin nodes on the map to add context</div>
-              <div>💡 Tip: Use specific questions for better results</div>
-            </div>
-          </div>
-        </div>
-      )}
     </div>
   );
 }
@@ -397,10 +418,10 @@ function ResultsDisplay({ results, scenarioResults }) {
       </div>
     );
   }
-  
+
   // Handle both old format (direct results) and new format (results.insight)
   const insightData = results.insight || results;
-  
+
   // Safety check - ensure insightData is an object
   if (!insightData || typeof insightData !== 'object') {
     console.error('Invalid insight data:', insightData, 'Full results:', results);
@@ -416,14 +437,14 @@ function ResultsDisplay({ results, scenarioResults }) {
       </div>
     );
   }
-  
+
   return (
     <div className="space-y-6">
       {/* Scenario Results */}
       {scenarioResults && scenarioResults.impacted_clusters && (
         <div className="bg-blue-900/20 rounded-lg p-4 border border-blue-500/30">
           <h3 className="text-lg font-semibold text-blue-300 mb-3">Scenario Impact</h3>
-          
+
           {/* Impact Summary */}
           {scenarioResults.expected_outcomes && (
             <div className="mb-4 space-y-2">
@@ -457,13 +478,13 @@ function ResultsDisplay({ results, scenarioResults }) {
               <div className="flex flex-wrap gap-2">
                 {scenarioResults.impacted_clusters.map((cluster, index) => {
                   // Handle both string and object formats
-                  const clusterLabel = typeof cluster === 'string' 
-                    ? cluster 
+                  const clusterLabel = typeof cluster === 'string'
+                    ? cluster
                     : (cluster.cluster_label || cluster.label || `Cluster ${cluster.cluster_id || index}`);
-                  const impactScore = typeof cluster === 'object' && cluster.impact_score 
+                  const impactScore = typeof cluster === 'object' && cluster.impact_score
                     ? ` (${(cluster.impact_score * 100).toFixed(0)}%)`
                     : '';
-                  
+
                   return (
                     <span
                       key={index}
@@ -538,7 +559,7 @@ function ResultsDisplay({ results, scenarioResults }) {
           </ul>
         </div>
       )}
-      
+
       {/* Fallback if no executive summary but we have results */}
       {(!insightData.executive_summary || !Array.isArray(insightData.executive_summary)) && (
         <div className="bg-dark-surface rounded-lg p-4 border border-dark-border">
@@ -570,15 +591,15 @@ function ResultsDisplay({ results, scenarioResults }) {
       {insightData.market_map_takeaways && (
         <div className="bg-dark-surface rounded-lg p-4 border border-dark-border">
           <h3 className="text-lg font-semibold text-gray-200 mb-3">Market Map Takeaways</h3>
-          
+
           {insightData.market_map_takeaways.clusters_impacted && (
             <div className="mb-4">
               <h4 className="text-sm font-semibold text-gray-400 mb-2">Impacted Clusters:</h4>
               <ul className="space-y-1">
                 {insightData.market_map_takeaways.clusters_impacted.map((cluster, index) => {
                   // Handle both string and object formats
-                  const clusterLabel = typeof cluster === 'string' 
-                    ? cluster 
+                  const clusterLabel = typeof cluster === 'string'
+                    ? cluster
                     : (cluster.cluster_label || cluster.label || `Cluster ${cluster.cluster_id || index}`);
                   return (
                     <li key={index} className="text-gray-300 text-sm">• {clusterLabel}</li>
@@ -587,21 +608,21 @@ function ResultsDisplay({ results, scenarioResults }) {
               </ul>
             </div>
           )}
-          
+
           {insightData.market_map_takeaways.cluster_relationships && (
             <div className="mb-4">
               <h4 className="text-sm font-semibold text-gray-400 mb-2">Cluster Relationships:</h4>
               <p className="text-gray-300 text-sm">{insightData.market_map_takeaways.cluster_relationships}</p>
             </div>
           )}
-          
+
           {insightData.market_map_takeaways.cluster_characteristics && (
             <div className="mb-4">
               <h4 className="text-sm font-semibold text-gray-400 mb-2">Key Cluster Characteristics:</h4>
               <p className="text-gray-300 text-sm">{insightData.market_map_takeaways.cluster_characteristics}</p>
             </div>
           )}
-          
+
           {insightData.market_map_takeaways.rationale && (
             <div className="mb-2">
               <h4 className="text-sm font-semibold text-gray-400 mb-2">Strategic Rationale:</h4>

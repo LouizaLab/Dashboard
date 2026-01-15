@@ -5,11 +5,11 @@ import NetworkGraph from './components/NetworkGraph';
 import DetailDrawer from './components/DetailDrawer';
 import SimulationPanel from './components/SimulationPanel';
 import HypothesisPage from './components/HypothesisPage';
-import RecipeSimulationPage from './components/RecipeSimulationPage';
+import MarketInsightPanel from './components/hypothesis/MarketInsightPanel';
 import { getNetwork, getCompany, getEdge } from './api';
 
 function App() {
-  const [activeTab, setActiveTab] = useState('NETWORK GRAPH');
+  const [activeTab, setActiveTab] = useState('TEST HYPOTHESIS');
   const [viewType, setViewType] = useState('Market Insight');
   const [filters, setFilters] = useState({
     age_bucket: '',
@@ -23,8 +23,10 @@ function App() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    loadNetworkData();
-  }, [viewType, filters]);
+    if (activeTab === 'NETWORK GRAPH') {
+      loadNetworkData();
+    }
+  }, [viewType, filters, activeTab]);
 
   const loadNetworkData = async () => {
     try {
@@ -77,7 +79,7 @@ function App() {
   return (
     <div className="flex flex-col h-screen bg-dark-bg text-gray-200">
       <TopNavigation activeTab={activeTab} setActiveTab={setActiveTab} />
-      
+
       <div className="flex flex-1 overflow-hidden">
         {activeTab === 'NETWORK GRAPH' && (
           <>
@@ -87,7 +89,7 @@ function App() {
               filters={filters}
               setFilters={setFilters}
             />
-            
+
             <div className="flex-1 flex flex-col relative">
               <div className="flex-1 relative" style={{ minHeight: 0 }}>
                 {loading ? (
@@ -104,10 +106,10 @@ function App() {
                   />
                 )}
               </div>
-              
+
               <SimulationPanel />
             </div>
-            
+
             <DetailDrawer
               isOpen={drawerOpen}
               onClose={handleCloseDrawer}
@@ -117,49 +119,13 @@ function App() {
             />
           </>
         )}
-        
+
         {activeTab === 'TEST HYPOTHESIS' && (
           <HypothesisPage />
         )}
-        
-        {activeTab === 'TASTE SNAPSHOT' && (
-          <div className="flex-1 flex items-center justify-center p-8">
-            <div className="text-center">
-              <h2 className="text-2xl font-bold mb-4">Taste Snapshot</h2>
-              <p className="text-gray-400">Taste analysis dashboard coming soon...</p>
-            </div>
-          </div>
-        )}
-        
-        {activeTab === 'BEHAVIORAL DYNAMICS' && (
-          <div className="flex-1 flex items-center justify-center p-8">
-            <div className="text-center">
-              <h2 className="text-2xl font-bold mb-4">Behavioral Dynamics</h2>
-              <p className="text-gray-400">Behavioral dynamics visualization coming soon...</p>
-            </div>
-          </div>
-        )}
-        
-        {activeTab === 'INSIGHTS' && (
-          <div className="flex-1 flex items-center justify-center p-8">
-            <div className="text-center">
-              <h2 className="text-2xl font-bold mb-4">Insights</h2>
-              <p className="text-gray-400">Insights dashboard coming soon...</p>
-            </div>
-          </div>
-        )}
-        
-        {activeTab === 'WHAT-IF SIMULATION' && (
-          <div className="flex-1 flex items-center justify-center p-8">
-            <div className="text-center">
-              <h2 className="text-2xl font-bold mb-4">What-If Simulation</h2>
-              <p className="text-gray-400">Simulation interface coming soon...</p>
-            </div>
-          </div>
-        )}
-        
-        {activeTab === 'RECIPE & LAUNCH SIMULATION' && (
-          <RecipeSimulationPage />
+
+        {activeTab === 'MARKET INSIGHT' && (
+          <MarketInsightPanel filters={{}} />
         )}
       </div>
     </div>

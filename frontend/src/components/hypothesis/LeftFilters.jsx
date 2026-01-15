@@ -28,30 +28,6 @@ function LeftFilters({ filters, setFilters }) {
           </div>
         </div>
 
-        <div>
-          <label className="block text-xs font-semibold text-gray-400 uppercase tracking-wider mb-2">
-            VIEW
-          </label>
-          <div className="relative">
-            <select
-              value={filters.view}
-              onChange={(e) => updateFilter('view', e.target.value)}
-              className="w-full bg-dark-hover border border-dark-border rounded-lg px-3 py-2 pr-8 text-sm text-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-500 appearance-none"
-            >
-              <option value="Market Insight">Market Insight</option>
-              <option value="Taste Test">Taste Test</option>
-              <option value="Survey">Survey</option>
-              <option value="Hypothesis Test">Hypothesis Test</option>
-              <option value="Persona Chat">Persona Chat</option>
-            </select>
-            <div className="absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none">
-              <svg className="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-              </svg>
-            </div>
-          </div>
-        </div>
-
         <div className="space-y-4">
           <h3 className="text-xs font-semibold text-gray-400 uppercase tracking-wider">
             Demographics
@@ -166,13 +142,21 @@ function LeftFilters({ filters, setFilters }) {
               className="w-full bg-dark-hover border border-dark-border rounded-lg px-3 py-2 pr-8 text-sm text-gray-200 focus:outline-none focus:ring-2 focus:ring-accent-primary appearance-none"
             >
               <option value="">All Archetypes</option>
-              <option value="value_seeker">Value Seeker</option>
-              <option value="health_optimizer">Health Optimizer</option>
-              <option value="convenience_loyalist">Convenience Loyalist</option>
-              <option value="late_night_craver">Late-night Craver</option>
-              <option value="trend_chaser">Trend Chaser</option>
-              <option value="family_bundle_buyer">Family Bundle Buyer</option>
-              <option value="protein_maximizer">Protein Maximizer</option>
+              <option value="ingredient_purist">Ingredient Purist</option>
+              <option value="clean_beauty_believer">Clean Beauty Believer</option>
+              <option value="clinical_results_seeker">Clinical Results Seeker</option>
+              <option value="luxury_ritualist">Luxury Ritualist</option>
+              <option value="trend_driven_experimenter">Trend-Driven Experimenter</option>
+              <option value="problem_solution_buyer">Problem-Solution Buyer</option>
+              <option value="sensitive_skin_minimalist">Sensitive-Skin Minimalist</option>
+              <option value="makeup_maximalist">Makeup Maximalist</option>
+              <option value="skinimalist">Skinimalist</option>
+              <option value="ethical_buyer">Ethical Buyer</option>
+              <option value="deal_hunter">Deal Hunter</option>
+              <option value="pro_guided_buyer">Pro-Guided Buyer</option>
+              <option value="age_preventive_optimizer">Age-Preventive Optimizer</option>
+              <option value="routine_loyalist">Routine Loyalist</option>
+              <option value="fragrance_identity_buyer">Fragrance Identity Buyer</option>
             </select>
             <div className="absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none">
               <svg className="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">

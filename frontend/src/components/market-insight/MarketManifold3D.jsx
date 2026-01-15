@@ -1,435 +1,338 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 import Plot from 'react-plotly.js';
 
-function MarketManifold3D({ vertical = 'beauty', region = 'US', onNodeClick, selectedNodes = [], scenarioResults = null }) {
-  const [points, setPoints] = useState([]);
-  const [clusters, setClusters] = useState([]);
-  const [hulls, setHulls] = useState({});
-  const [loading, setLoading] = useState(true);
-  const [filters, setFilters] = useState({
-    category: '',
-    price_tier: '',
-    brand_type: '',
-    momentum_range: [0, 1],
-    view: 'markets', // markets, brands, products
-    cluster: '', // Filter by cluster
-  });
-  const [hoveredNode, setHoveredNode] = useState(null);
-  const [pinnedNodes, setPinnedNodes] = useState([]);
+// Static Beauty Market Clusters with Fixed Positions
+const BEAUTY_MARKET_CLUSTERS = [
+  // Skincare
+  { id: 'clean_skincare', label: 'Clean Skincare', category: 'skincare', baseX: -3.5, baseY: 3.0, color: '#10b981', baseMarketSize: 0.15 },
+  { id: 'clinical_skincare', label: 'Clinical Derm-Backed Skincare', category: 'skincare', baseX: -1.5, baseY: 3.5, color: '#3b82f6', baseMarketSize: 0.20 },
+  { id: 'barrier_repair', label: 'Barrier Repair Sensitive Skin', category: 'skincare', baseX: -0.8, baseY: 2.2, color: '#06b6d4', baseMarketSize: 0.12 },
+  { id: 'acne_solution', label: 'Acne Problem-Solution Skincare', category: 'skincare', baseX: 0.8, baseY: 2.6, color: '#ef4444', baseMarketSize: 0.18 },
+  { id: 'anti_aging', label: 'Anti-Aging Preventative Skincare', category: 'skincare', baseX: 2.2, baseY: 3.2, color: '#8b5cf6', baseMarketSize: 0.25 },
 
-  useEffect(() => {
-    loadManifoldData();
-  }, [vertical, region]);
+  // Makeup
+  { id: 'minimal_makeup', label: 'Minimal Skin-First Makeup', category: 'makeup', baseX: -3.0, baseY: -0.8, color: '#84cc16', baseMarketSize: 0.10 },
+  { id: 'premium_makeup', label: 'Premium Performance Makeup', category: 'makeup', baseX: -0.8, baseY: -1.5, color: '#f59e0b', baseMarketSize: 0.15 },
+  { id: 'trend_makeup', label: 'Trend-Led Social Makeup', category: 'makeup', baseX: 1.5, baseY: -2.2, color: '#ec4899', baseMarketSize: 0.20 },
+  { id: 'luxury_makeup', label: 'Luxury Full-Coverage Makeup', category: 'makeup', baseX: 3.5, baseY: -1.2, color: '#a855f7', baseMarketSize: 0.12 },
 
-  useEffect(() => {
-    // Update reactivity scores from scenario results
-    if (scenarioResults && scenarioResults.impacted_points) {
-      const reactivityMap = {};
-      scenarioResults.impacted_points.forEach(p => {
-        reactivityMap[p.node_id] = p.reactivity_score;
-      });
-      
-      setPoints(prevPoints => 
-        prevPoints.map(p => ({
-          ...p,
-          reactivity_score: reactivityMap[p.id] || p.reactivity_score || null,
-        }))
-      );
-    }
-  }, [scenarioResults]);
+  // Fragrance
+  { id: 'mass_fragrance', label: 'Mass Accessible Fragrance', category: 'fragrance', baseX: -2.2, baseY: -3.8, color: '#64748b', baseMarketSize: 0.08 },
+  { id: 'prestige_fragrance', label: 'Prestige Fragrance', category: 'fragrance', baseX: 0.0, baseY: -4.2, color: '#6366f1', baseMarketSize: 0.12 },
+  { id: 'ultra_luxury_fragrance', label: 'Ultra-Luxury Niche Fragrance', category: 'fragrance', baseX: 2.5, baseY: -3.5, color: '#d946ef', baseMarketSize: 0.05 },
+];
 
-  const loadManifoldData = async () => {
-    setLoading(true);
-    try {
-      const url = `http://localhost:8000/api/market-insight-new/manifold/?vertical=${vertical}&region=${region}&organic=true`;
-      console.log('Loading manifold from:', url);
-      const response = await fetch(url);
-      if (!response.ok) {
-        const errorText = await response.text();
-        console.error('API error:', response.status, errorText);
-        throw new Error(`HTTP ${response.status}: ${errorText.substring(0, 200)}`);
-      }
-      const data = await response.json();
-      console.log('Manifold data loaded:', {
-        points: data.points?.length || 0,
-        clusters: data.clusters?.length || 0,
-        hulls: Object.keys(data.hulls || {}).length
-      });
-      setPoints(data.points || []);
-      setClusters(data.clusters || []);
-      setHulls(data.hulls || {});
-      
-      if (!data.points || data.points.length === 0) {
-        console.warn('No points returned from API. Manifold may need to be rebuilt.');
-      }
-    } catch (error) {
-      console.error('Failed to load manifold data:', error);
-      setPoints([]);
-      setClusters([]);
-      setHulls({});
-    } finally {
-      setLoading(false);
-    }
-  };
+// Cluster-specific motivations (static)
+const CLUSTER_MOTIVATIONS = {
+  clean_skincare: ['Clean ingredients', 'Non-toxic', 'Natural'],
+  clinical_skincare: ['Dermatologist-recommended', 'Proven efficacy', 'Science-backed'],
+  barrier_repair: ['Sensitive skin', 'Gentle formulas', 'Repair'],
+  acne_solution: ['Problem-solving', 'Targeted treatment', 'Results'],
+  anti_aging: ['Prevention', 'Anti-aging', 'Long-term care'],
+  minimal_makeup: ['Natural look', 'Skin-first', 'Minimal routine'],
+  premium_makeup: ['Performance', 'Long-wear', 'Quality'],
+  trend_makeup: ['Social media', 'Trends', 'Experimentation'],
+  luxury_makeup: ['Full coverage', 'Luxury', 'Status'],
+  mass_fragrance: ['Accessibility', 'Value', 'Everyday'],
+  prestige_fragrance: ['Quality', 'Brand', 'Occasion'],
+  ultra_luxury_fragrance: ['Exclusivity', 'Niche', 'Luxury'],
+};
 
-  // Filter points
-  let filteredPoints = points;
-  if (filters.view === 'markets') {
-    filteredPoints = filteredPoints.filter(p => p.type === 'market');
-  } else if (filters.view === 'brands') {
-    filteredPoints = filteredPoints.filter(p => p.type === 'brand');
-  } else if (filters.view === 'products') {
-    filteredPoints = filteredPoints.filter(p => p.type === 'product');
-  }
+/**
+ * Calculate segment metrics for a cluster based on consumer filters
+ * Returns relevance (0-1) and confidence (0-1)
+ */
+function getSegmentMetrics(clusterId, consumerFilters) {
+  const cluster = BEAUTY_MARKET_CLUSTERS.find(c => c.id === clusterId);
+  if (!cluster) return { relevance: 0.5, confidence: 0.5 };
 
-  if (filters.category) {
-    filteredPoints = filteredPoints.filter(p => p.category === filters.category);
-  }
-  if (filters.price_tier) {
-    filteredPoints = filteredPoints.filter(p => p.tier === filters.price_tier);
-  }
-  if (filters.brand_type && filteredPoints.some(p => p.brand_type)) {
-    filteredPoints = filteredPoints.filter(p => p.brand_type === filters.brand_type);
-  }
-  if (filters.momentum_range) {
-    filteredPoints = filteredPoints.filter(
-      p => (p.momentum || 0) >= filters.momentum_range[0] && (p.momentum || 0) <= filters.momentum_range[1]
-    );
-  }
-  if (filters.cluster) {
-    filteredPoints = filteredPoints.filter(
-      p => p.cluster_id !== null && p.cluster_id.toString() === filters.cluster
-    );
-  }
+  let relevance = cluster.baseMarketSize; // Start with base market size
+  let confidence = 0.7; // Base confidence
 
-  // Prepare data for Plotly with enhanced color scheme
-  const getColorForPoint = (point) => {
-    const isSelected = Array.isArray(selectedNodes) ? selectedNodes.includes(point.id) : selectedNodes === point.id;
-    const isPinned = Array.isArray(pinnedNodes) ? pinnedNodes.includes(point.id) : pinnedNodes === point.id;
-    
-    if (isSelected) return '#a855f7'; // Purple for selected
-    if (isPinned) return '#f59e0b'; // Orange for pinned
-    
-    // Color by reactivity if available
-    if (point.reactivity_score !== null && point.reactivity_score !== undefined) {
-      // Red gradient based on reactivity
-      const intensity = Math.floor(point.reactivity_score * 255);
-      return `rgb(${intensity}, ${Math.floor(intensity * 0.3)}, ${Math.floor(intensity * 0.1)})`;
-    }
-    
-    // Color by cluster with a more vibrant palette
-    if (point.cluster_id !== null && point.cluster_id !== undefined) {
-      const colors = [
-        '#3b82f6', // Blue
-        '#10b981', // Emerald
-        '#f59e0b', // Amber
-        '#ef4444', // Red
-        '#8b5cf6', // Violet
-        '#ec4899', // Pink
-        '#06b6d4', // Cyan
-        '#84cc16', // Lime
-        '#f97316', // Orange
-        '#6366f1', // Indigo
-        '#14b8a6', // Teal
-        '#a855f7', // Purple
-        '#f43f5e', // Rose
-        '#0ea5e9', // Sky
-        '#22c55e', // Green
-        '#eab308', // Yellow
-        '#d946ef', // Fuchsia
-        '#64748b', // Slate
-      ];
-      return colors[Math.abs(point.cluster_id) % colors.length];
-    }
-    
-    return '#64748b'; // Slate gray default
-  };
-
-  const getSizeForPoint = (point) => {
-    const isSelected = Array.isArray(selectedNodes) ? selectedNodes.includes(point.id) : selectedNodes === point.id;
-    const isPinned = Array.isArray(pinnedNodes) ? pinnedNodes.includes(point.id) : pinnedNodes === point.id;
-    
-    // Base bubble size - make them larger and more bubble-like
-    let baseSize = 12; // Larger base size for bubbles
-    
-    if (isSelected) return baseSize * 1.8; // 21.6
-    if (isPinned) return baseSize * 1.5; // 18
-    
-    // Vary size based on cluster (makes bubbles more interesting)
-    if (point.cluster_id !== null && point.cluster_id !== undefined) {
-      // Add some variation based on cluster ID for visual interest
-      const clusterVariation = 1 + (point.cluster_id % 3) * 0.2; // 1.0, 1.2, or 1.4
-      baseSize = baseSize * clusterVariation;
-    }
-    
-    if (point.reactivity_score !== null && point.reactivity_score !== undefined) {
-      return baseSize + (point.reactivity_score * baseSize * 0.5); // Scale with reactivity
-    }
-    
-    return baseSize;
-  };
-
-  // Early return if no points
-  if (filteredPoints.length === 0 && !loading) {
-    return (
-      <div className="h-full flex flex-col">
-        <div className="p-4 border-b border-dark-border bg-dark-surface">
-          <h2 className="text-xl font-bold text-gray-200">Market Manifold</h2>
-        </div>
-        <div className="flex-1 flex items-center justify-center text-gray-400 p-8">
-          <div className="text-center">
-            <div className="text-lg mb-2">No manifold data available</div>
-            <div className="text-sm mb-4">
-              {points.length === 0 
-                ? "The manifold needs to be built. Run this command in the backend:"
-                : "No points match the current filters. Try adjusting filters."}
-            </div>
-            {points.length === 0 && (
-              <code className="block bg-dark-surface p-3 rounded text-xs text-left max-w-md">
-                python3 manage.py rebuild_market_manifold --vertical beauty --region US --organic
-              </code>
-            )}
-          </div>
-        </div>
-      </div>
-    );
-  }
-
-  const x = filteredPoints.map(p => p.x);
-  const y = filteredPoints.map(p => p.y);
-  const z = filteredPoints.map(p => p.z || 0);
-  const colors = filteredPoints.map(p => getColorForPoint(p));
-  const sizes = filteredPoints.map(p => getSizeForPoint(p));
-  const labels = filteredPoints.map(p => 
-    `${p.label || 'Point'}\n${p.cluster_label || 'No cluster'}\n${p.type || 'market'} | ${p.tier || p.brand_type || ''}`
-  );
-    const hoverText = filteredPoints.map(p => {
-    let text = `<b>${p.label || `Point ${p.id?.substring(0, 8) || 'unknown'}`}</b><br>`;
-    text += `Type: ${p.type || 'market'}<br>`;
-    if (p.category) text += `Category: ${p.category}<br>`;
-    if (p.tier) text += `Tier: ${p.tier}<br>`;
-    if (p.cluster_label) {
-      text += `Cluster: ${p.cluster_label}<br>`;
-      // Add cluster drivers if available
-      const cluster = clusters.find(c => c.cluster_id === p.cluster_id);
-      if (cluster && cluster.drivers) {
-        if (cluster.drivers.claims && cluster.drivers.claims.length > 0) {
-          text += `Claims: ${cluster.drivers.claims.join(', ')}<br>`;
-        }
-        if (cluster.drivers.channel) {
-          text += `Channel: ${cluster.drivers.channel}<br>`;
-        }
-      }
-    }
-    if (p.momentum !== null && p.momentum !== undefined) text += `Momentum: ${p.momentum.toFixed(2)}<br>`;
-    if (p.reactivity_score !== null && p.reactivity_score !== undefined) {
-      text += `Reactivity: ${(p.reactivity_score * 100).toFixed(1)}%<br>`;
-    }
-    return text;
-  });
-
-  // Add cluster hull boundaries (2D projection on x-y plane)
-  const hullTraces = [];
-  Object.entries(hulls).forEach(([clusterId, hullPoints]) => {
-    if (hullPoints && hullPoints.length > 0 && Array.isArray(hullPoints)) {
-      // Close the hull by adding first point at the end
-      const closedHull = [...hullPoints, hullPoints[0]];
-      const hullX = closedHull.map(p => Array.isArray(p) ? p[0] : p.x || 0);
-      const hullY = closedHull.map(p => Array.isArray(p) ? p[1] : p.y || 0);
-      // Use average z for the hull
-      const clusterPoints = filteredPoints.filter(p => p.cluster_id !== null && p.cluster_id.toString() === clusterId);
-      const avgZ = clusterPoints.length > 0 
-        ? clusterPoints.reduce((sum, p) => sum + (p.z || 0), 0) / clusterPoints.length 
-        : 0;
-      const hullZ = closedHull.map(() => avgZ);
-      
-      const clusterColor = getColorForPoint({ cluster_id: parseInt(clusterId) });
-      
-      hullTraces.push({
-        x: hullX,
-        y: hullY,
-        z: hullZ,
-        mode: 'lines',
-        type: 'scatter3d',
-        line: {
-          color: clusterColor,
-          width: 2,
-          dash: 'dash',
-        },
-        opacity: 0.3,
-        showlegend: false,
-        hoverinfo: 'skip',
-      });
-    }
-  });
-
-  // Group points by cluster for distinct colors
-  const clusterGroups = {};
-  filteredPoints.forEach((p, idx) => {
-    const cid = p.cluster_id !== null && p.cluster_id !== undefined ? p.cluster_id : -1;
-    if (!clusterGroups[cid]) {
-      clusterGroups[cid] = {
-        points: [],
-        indices: [],
-        label: p.cluster_label || `Cluster ${cid}`,
-      };
-    }
-    clusterGroups[cid].points.push(p);
-    clusterGroups[cid].indices.push(idx);
-  });
-
-  // Create a trace for each cluster with distinct colors
-  const clusterTraces = Object.entries(clusterGroups).map(([cid, group]) => {
-    const clusterX = group.indices.map(i => x[i]);
-    const clusterY = group.indices.map(i => y[i]);
-    const clusterZ = group.indices.map(i => z[i]);
-    const clusterColors = group.indices.map(i => colors[i]);
-    const clusterSizes = group.indices.map(i => sizes[i]);
-    const clusterHoverText = group.indices.map(i => hoverText[i]);
-    
-    // Use distinct color per cluster (not from individual points)
-    const distinctColors = [
-      '#3b82f6', '#10b981', '#f59e0b', '#ef4444', '#8b5cf6',
-      '#ec4899', '#06b6d4', '#84cc16', '#f97316', '#6366f1',
-      '#14b8a6', '#a855f7', '#f43f5e', '#0ea5e9', '#22c55e',
-      '#eab308', '#d946ef', '#64748b'
-    ];
-    const clusterColor = distinctColors[Math.abs(parseInt(cid)) % distinctColors.length];
-    
-    return {
-      x: clusterX,
-      y: clusterY,
-      z: clusterZ,
-      mode: 'markers',
-      type: 'scatter3d',
-      name: group.label,
-      marker: {
-        size: clusterSizes,
-        color: clusterColor,
-        opacity: 0.75, // Slightly more transparent for bubble effect
-        line: {
-          color: group.points.map(p => {
-            const isSelected = Array.isArray(selectedNodes) ? selectedNodes.includes(p.id) : selectedNodes === p.id;
-            return isSelected ? '#fff' : clusterColor; // Use cluster color for bubble border
-          }),
-          width: group.points.map(p => {
-            const isSelected = Array.isArray(selectedNodes) ? selectedNodes.includes(p.id) : selectedNodes === p.id;
-            return isSelected ? 3 : 1.5; // Thicker borders for bubble effect
-          }),
-        },
-        sizemode: 'diameter', // Use diameter instead of area for more bubble-like appearance
+  // Age Group Rules
+  if (consumerFilters.age_group) {
+    const ageRules = {
+      gen_z: {
+        trend_makeup: 0.3, minimal_makeup: 0.2, acne_solution: 0.25, mass_fragrance: 0.15,
+        clean_skincare: 0.2, anti_aging: -0.1,
       },
-      hovertext: clusterHoverText,
+      young_millennials: {
+        premium_makeup: 0.25, clinical_skincare: 0.2, anti_aging: 0.2, prestige_fragrance: 0.15,
+        barrier_repair: 0.15,
+      },
+      mid_millennials: {
+        anti_aging: 0.3, clinical_skincare: 0.25, premium_makeup: 0.2, prestige_fragrance: 0.2,
+      },
+      gen_x: {
+        anti_aging: 0.25, clinical_skincare: 0.2, luxury_makeup: 0.15, ultra_luxury_fragrance: 0.1,
+      },
+      '55_plus': {
+        anti_aging: 0.3, clinical_skincare: 0.25, barrier_repair: 0.2, luxury_makeup: 0.15,
+      },
+    };
+    const modifier = ageRules[consumerFilters.age_group]?.[clusterId] || 0;
+    relevance += modifier;
+    confidence += 0.1;
+  }
+
+  // Income Tier Rules
+  if (consumerFilters.income_tier) {
+    const incomeRules = {
+      budget_constrained: {
+        mass_fragrance: 0.2, minimal_makeup: 0.15, clean_skincare: 0.1, acne_solution: 0.1,
+        ultra_luxury_fragrance: -0.2, luxury_makeup: -0.15,
+      },
+      middle_income: {
+        premium_makeup: 0.15, prestige_fragrance: 0.1, clinical_skincare: 0.1,
+      },
+      upper_middle_income: {
+        premium_makeup: 0.2, prestige_fragrance: 0.15, clinical_skincare: 0.15, anti_aging: 0.15,
+      },
+      high_income: {
+        ultra_luxury_fragrance: 0.25, luxury_makeup: 0.2, clinical_skincare: 0.15, anti_aging: 0.2,
+        prestige_fragrance: 0.15,
+      },
+    };
+    const modifier = incomeRules[consumerFilters.income_tier]?.[clusterId] || 0;
+    relevance += modifier;
+    confidence += 0.1;
+  }
+
+  // Beauty Archetype Rules
+  if (consumerFilters.beauty_archetype) {
+    const archetypeRules = {
+      minimalist: {
+        minimal_makeup: 0.3, barrier_repair: 0.2, clean_skincare: 0.15, mass_fragrance: 0.1,
+        trend_makeup: -0.2, luxury_makeup: -0.15,
+      },
+      beauty_enthusiast: {
+        premium_makeup: 0.25, trend_makeup: 0.2, prestige_fragrance: 0.15, clinical_skincare: 0.15,
+      },
+      ingredient_obsessed: {
+        clean_skincare: 0.3, clinical_skincare: 0.25, barrier_repair: 0.2, anti_aging: 0.15,
+      },
+      trend_follower: {
+        trend_makeup: 0.35, minimal_makeup: 0.15, mass_fragrance: 0.1, clean_skincare: 0.1,
+        anti_aging: -0.15,
+      },
+      prestige_luxury: {
+        ultra_luxury_fragrance: 0.3, luxury_makeup: 0.25, prestige_fragrance: 0.2, clinical_skincare: 0.15,
+        anti_aging: 0.15,
+      },
+      value_driven: {
+        mass_fragrance: 0.2, minimal_makeup: 0.15, clean_skincare: 0.1, acne_solution: 0.1,
+        ultra_luxury_fragrance: -0.25,
+      },
+      problem_solution: {
+        acne_solution: 0.3, barrier_repair: 0.25, clinical_skincare: 0.2, anti_aging: 0.15,
+      },
+    };
+    const modifier = archetypeRules[consumerFilters.beauty_archetype]?.[clusterId] || 0;
+    relevance += modifier;
+    confidence += 0.15;
+  }
+
+  // Primary Motivation Rules
+  if (consumerFilters.primary_motivation) {
+    const motivationRules = {
+      appearance: {
+        premium_makeup: 0.2, luxury_makeup: 0.15, trend_makeup: 0.15, prestige_fragrance: 0.1,
+      },
+      skin_health: {
+        clinical_skincare: 0.25, barrier_repair: 0.2, clean_skincare: 0.15, acne_solution: 0.2,
+      },
+      anti_aging: {
+        anti_aging: 0.35, clinical_skincare: 0.2, premium_makeup: 0.1,
+      },
+      confidence: {
+        premium_makeup: 0.2, luxury_makeup: 0.15, prestige_fragrance: 0.15, ultra_luxury_fragrance: 0.1,
+      },
+      experimentation: {
+        trend_makeup: 0.25, minimal_makeup: 0.15, mass_fragrance: 0.1,
+      },
+      value: {
+        mass_fragrance: 0.2, minimal_makeup: 0.15, clean_skincare: 0.1, acne_solution: 0.1,
+      },
+    };
+    const modifier = motivationRules[consumerFilters.primary_motivation]?.[clusterId] || 0;
+    relevance += modifier;
+    confidence += 0.1;
+  }
+
+  // Gender Rules
+  if (consumerFilters.gender) {
+    // Generally, makeup and fragrance are more gender-neutral in modern markets
+    // Skincare tends to be slightly more female-leaning
+    if (consumerFilters.gender === 'female') {
+      if (cluster.category === 'skincare') relevance += 0.05;
+      if (cluster.category === 'makeup') relevance += 0.03;
+    }
+    confidence += 0.05;
+  }
+
+  // Area Type Rules
+  if (consumerFilters.area_type) {
+    const areaRules = {
+      urban: {
+        trend_makeup: 0.1, premium_makeup: 0.1, prestige_fragrance: 0.1, ultra_luxury_fragrance: 0.05,
+      },
+      coastal_metro: {
+        ultra_luxury_fragrance: 0.15, luxury_makeup: 0.1, prestige_fragrance: 0.1, clinical_skincare: 0.1,
+      },
+      suburban: {
+        premium_makeup: 0.1, prestige_fragrance: 0.1, clinical_skincare: 0.1, anti_aging: 0.1,
+      },
+      rural: {
+        mass_fragrance: 0.1, minimal_makeup: 0.1, clean_skincare: 0.1,
+      },
+    };
+    const modifier = areaRules[consumerFilters.area_type]?.[clusterId] || 0;
+    relevance += modifier;
+    confidence += 0.05;
+  }
+
+  // Clamp values
+  relevance = Math.max(0.05, Math.min(1.0, relevance)); // Never completely invisible
+  confidence = Math.max(0.3, Math.min(1.0, confidence));
+
+  return { relevance, confidence };
+}
+
+function MarketManifold3D({ vertical = 'beauty', region = 'US', onVerticalChange, onRegionChange, onNodeClick, selectedNodes = [], scenarioResults = null }) {
+  const [loading, setLoading] = useState(false);
+  const [filters, setFilters] = useState({
+    age_group: '',
+    gender: '',
+    income_tier: '',
+    area_type: '',
+    beauty_archetype: '',
+    primary_motivation: '',
+  });
+  const [hoveredCluster, setHoveredCluster] = useState(null);
+  const [pinnedClusters, setPinnedClusters] = useState([]);
+
+  // Calculate metrics for each cluster based on current filters
+  const clusterMetrics = useMemo(() => {
+    return BEAUTY_MARKET_CLUSTERS.map(cluster => {
+      const metrics = getSegmentMetrics(cluster.id, filters);
+      return {
+        ...cluster,
+        ...metrics,
+      };
+    });
+  }, [filters]);
+
+  // Check if any filters are active
+  const hasActiveFilters = Object.values(filters).some(v => v !== '');
+
+  // Prepare data for Plotly
+  const plotData = useMemo(() => {
+    const traces = clusterMetrics.map(cluster => {
+      const isSelected = selectedNodes.includes(cluster.id);
+      const isPinned = pinnedClusters.includes(cluster.id);
+      const isHovered = hoveredCluster === cluster.id;
+
+      // Size based on relevance (0.05 to 1.0 maps to 10px to 50px) - scaled up for larger panel
+      const baseSize = 10;
+      const maxSize = 50;
+      const size = baseSize + (cluster.relevance * (maxSize - baseSize));
+
+      // Opacity based on confidence (0.3 to 1.0 maps to 0.3 to 1.0)
+      let opacity = cluster.confidence;
+      if (isSelected) opacity = 1.0;
+      if (isPinned) opacity = Math.max(opacity, 0.9);
+      if (isHovered) opacity = Math.min(opacity + 0.2, 1.0);
+
+      // Color
+      let color = cluster.color;
+      if (isSelected) color = '#a855f7'; // Purple for selected
+      if (isPinned) color = '#f59e0b'; // Orange for pinned
+
+      // Calculate percentage of segment
+      const segmentPercent = (cluster.relevance * 100).toFixed(1);
+
+      // Hover text
+      const hoverText = `
+        <b>${cluster.label}</b><br>
+        Segment Relevance: ${segmentPercent}%<br>
+        Confidence: ${(cluster.confidence * 100).toFixed(0)}%<br>
+        Category: ${cluster.category}<br>
+        Top Motivations: ${CLUSTER_MOTIVATIONS[cluster.id]?.join(', ') || 'N/A'}
+      `;
+
+    return {
+        x: [cluster.baseX],
+        y: [cluster.baseY],
+        z: [0], // 2D projection
+        mode: 'markers+text',
+      type: 'scatter3d',
+        name: cluster.label,
+      marker: {
+          size: size,
+          color: color,
+          opacity: opacity,
+        line: {
+            color: isSelected ? '#fff' : color,
+            width: isSelected ? 3 : isPinned ? 2 : 1.5,
+          },
+          sizemode: 'diameter',
+        },
+        text: [cluster.label],
+        textposition: 'top center',
+        textfont: {
+          size: 14,
+          color: '#ffffff',
+          family: 'Inter, sans-serif',
+        },
+        hovertext: [hoverText],
       hoverinfo: 'text',
-      customdata: group.points.map(p => p.id),
+        customdata: [cluster.id],
       showlegend: false,
     };
   });
 
-  // Create cluster label annotations (centroid labels)
-  const distinctColors = [
-    '#3b82f6', '#10b981', '#f59e0b', '#ef4444', '#8b5cf6',
-    '#ec4899', '#06b6d4', '#84cc16', '#f97316', '#6366f1',
-    '#14b8a6', '#a855f7', '#f43f5e', '#0ea5e9', '#22c55e',
-    '#eab308', '#d946ef', '#64748b'
-  ];
-  
-  const labelAnnotations = Object.entries(clusterGroups).map(([cid, group]) => {
-    const clusterX = group.indices.map(i => x[i]);
-    const clusterY = group.indices.map(i => y[i]);
-    const clusterZ = group.indices.map(i => z[i]);
-    
-    const centroidX = clusterX.reduce((a, b) => a + b, 0) / clusterX.length;
-    const centroidY = clusterY.reduce((a, b) => a + b, 0) / clusterY.length;
-    const centroidZ = clusterZ.reduce((a, b) => a + b, 0) / clusterZ.length;
-    
-    const clusterColor = distinctColors[Math.abs(parseInt(cid)) % distinctColors.length];
-    
-    return {
-      x: centroidX,
-      y: centroidY,
-      z: centroidZ,
-      text: group.label,
-      showarrow: false,
-      font: {
-        size: 14,
-        color: '#ffffff',
-        family: 'Inter, sans-serif',
-      },
-      bgcolor: clusterColor,
-      bordercolor: '#ffffff',
-      borderwidth: 1,
-      borderpad: 4,
-      opacity: 0.9,
-    };
-  });
-
-  // Create label trace (separate trace for labels)
-  const labelTrace = {
-    x: labelAnnotations.map(a => a.x),
-    y: labelAnnotations.map(a => a.y),
-    z: labelAnnotations.map(a => a.z),
-    mode: 'text',
-    type: 'scatter3d',
-    text: labelAnnotations.map(a => a.text),
-    textfont: {
-      size: 14,
-      color: '#ffffff',
-      family: 'Inter, sans-serif',
-    },
-    textposition: 'middle center',
-    hoverinfo: 'skip',
-    showlegend: false,
-  };
-
-  const plotData = [
-    ...hullTraces, // Draw hulls first (behind points)
-    ...clusterTraces, // Draw clusters with distinct colors
-    labelTrace, // Draw cluster labels
-  ];
+    return traces;
+  }, [clusterMetrics, selectedNodes, pinnedClusters, hoveredCluster]);
 
   const layout = {
-    title: {
-      text: 'Market Manifold',
-      font: { color: '#e5e7eb', size: 20, family: 'Inter, sans-serif' },
-      x: 0.5,
-      xanchor: 'center',
-    },
-    annotations: labelAnnotations,
     scene: {
-      xaxis: { 
+      xaxis: {
         visible: false,
         showgrid: false,
         showticklabels: false,
         showbackground: false,
         zeroline: false,
+        range: [-5, 5],
       },
-      yaxis: { 
+      yaxis: {
         visible: false,
         showgrid: false,
         showticklabels: false,
         showbackground: false,
         zeroline: false,
+        range: [-5, 5],
       },
-      zaxis: { 
+      zaxis: {
         visible: false,
         showgrid: false,
         showticklabels: false,
         showbackground: false,
         zeroline: false,
+        range: [-1, 1],
       },
       bgcolor: '#0a0e1a',
       camera: {
-        eye: { x: 1.8, y: 1.8, z: 1.8 },
+        eye: { x: 0, y: 0, z: 1.5 },
         center: { x: 0, y: 0, z: 0 },
-        up: { x: 0, y: 0, z: 1 },
+        up: { x: 0, y: 1, z: 0 },
       },
-      aspectmode: 'data',
+      aspectmode: 'manual',
+      aspectratio: { x: 1, y: 1, z: 0.1 },
     },
     paper_bgcolor: '#0f172a',
     plot_bgcolor: '#0f172a',
     font: { color: '#9ca3af', family: 'Inter, sans-serif' },
-    margin: { l: 0, r: 0, t: 60, b: 0 },
+    margin: { l: 0, r: 0, t: 0, b: 0 },
     showlegend: false,
   };
 
@@ -439,119 +342,187 @@ function MarketManifold3D({ vertical = 'beauty', region = 'US', onNodeClick, sel
     modeBarButtonsToRemove: ['lasso2d', 'select2d'],
     toImageButtonOptions: {
       format: 'png',
-      filename: 'market-manifold-3d',
+      filename: 'market-clusters',
     },
   };
 
   const handlePlotClick = (data) => {
     if (data.points && data.points.length > 0) {
-      const point = data.points[0];
-      const nodeId = point.customdata;
-      const node = filteredPoints.find(p => p.id === nodeId);
-      
-      if (node && onNodeClick) {
-        // Check for shift+click (would need to track mouse events)
-        onNodeClick(node);
+      const clusterId = data.points[0].customdata;
+      if (clusterId) {
+        // Toggle pinning
+        if (pinnedClusters.includes(clusterId)) {
+          setPinnedClusters(pinnedClusters.filter(id => id !== clusterId));
+        } else {
+          setPinnedClusters([...pinnedClusters, clusterId]);
+        }
+
+        // Also call onNodeClick for parent component
+        if (onNodeClick) {
+          const cluster = BEAUTY_MARKET_CLUSTERS.find(c => c.id === clusterId);
+          if (cluster) {
+            onNodeClick({
+              id: clusterId,
+              label: cluster.label,
+              type: 'cluster',
+              category: cluster.category,
+            });
+          }
+        }
       }
     }
   };
 
-  if (loading) {
-    return (
-      <div className="flex items-center justify-center h-full">
-        <div className="text-gray-400">Loading 3D manifold...</div>
-      </div>
-    );
-  }
+  const handlePlotHover = (data) => {
+    if (data.points && data.points.length > 0) {
+      const clusterId = data.points[0].customdata;
+      setHoveredCluster(clusterId);
+    } else {
+      setHoveredCluster(null);
+    }
+  };
 
   return (
     <div className="h-full flex flex-col">
       {/* Filters */}
       <div className="p-4 border-b border-dark-border bg-dark-surface">
-        <div className="grid grid-cols-6 gap-4">
-          <div>
-            <label className="text-xs text-gray-400 mb-1 block">View</label>
+        {/* Row 1 */}
+        <div className="flex flex-wrap gap-4 mb-4 justify-center">
+          <div className="w-[200px]">
+            <label className="text-xs text-gray-400 mb-1 block">Age Group</label>
+            <div className="relative">
             <select
-              className="w-full bg-dark-bg border border-dark-border rounded px-2 py-1 text-sm text-gray-300"
-              value={filters.view}
-              onChange={(e) => setFilters({ ...filters, view: e.target.value })}
-            >
-              <option value="markets">Markets</option>
-              <option value="brands">Brands</option>
-              <option value="products">Products</option>
+                className="w-full bg-dark-hover border border-dark-border rounded-lg px-3 py-2 pr-8 text-sm text-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-500 appearance-none"
+                value={filters.age_group}
+                onChange={(e) => setFilters({ ...filters, age_group: e.target.value })}
+              >
+                <option value="">All</option>
+                <option value="gen_z">Gen Z (16–24)</option>
+                <option value="young_millennials">Young Millennials (25–34)</option>
+                <option value="mid_millennials">Mid Millennials (35–44)</option>
+                <option value="gen_x">Gen X (45–54)</option>
+                <option value="55_plus">55+</option>
             </select>
+              <div className="absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none">
+                <svg className="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </div>
+            </div>
           </div>
-          <div>
-            <label className="text-xs text-gray-400 mb-1 block">Category</label>
+          <div className="w-[200px]">
+            <label className="text-xs text-gray-400 mb-1 block">Gender</label>
+            <div className="relative">
             <select
-              className="w-full bg-dark-bg border border-dark-border rounded px-2 py-1 text-sm text-gray-300"
-              value={filters.category}
-              onChange={(e) => setFilters({ ...filters, category: e.target.value })}
-            >
-              <option value="">All</option>
-              <option value="Skincare">Skincare</option>
-              <option value="Makeup">Makeup</option>
-              <option value="Fragrance">Fragrance</option>
-            </select>
-          </div>
-          <div>
-            <label className="text-xs text-gray-400 mb-1 block">Price Tier</label>
-            <select
-              className="w-full bg-dark-bg border border-dark-border rounded px-2 py-1 text-sm text-gray-300"
-              value={filters.price_tier}
-              onChange={(e) => setFilters({ ...filters, price_tier: e.target.value })}
-            >
-              <option value="">All</option>
-              <option value="premium">Premium</option>
-              <option value="super_premium">Super-Premium</option>
-              <option value="ultra_luxury">Ultra-Luxury</option>
-            </select>
-          </div>
-          <div>
-            <label className="text-xs text-gray-400 mb-1 block">Brand Type</label>
-            <select
-              className="w-full bg-dark-bg border border-dark-border rounded px-2 py-1 text-sm text-gray-300"
-              value={filters.brand_type}
-              onChange={(e) => setFilters({ ...filters, brand_type: e.target.value })}
+                className="w-full bg-dark-hover border border-dark-border rounded-lg px-3 py-2 pr-8 text-sm text-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-500 appearance-none"
+                value={filters.gender}
+                onChange={(e) => setFilters({ ...filters, gender: e.target.value })}
             >
               <option value="">All</option>
-              <option value="heritage">Heritage</option>
-              <option value="indie">Indie</option>
-              <option value="luxury">Luxury</option>
+                <option value="female">Female</option>
+                <option value="male">Male</option>
+                <option value="non_binary">Non-binary / Gender-fluid</option>
             </select>
+              <div className="absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none">
+                <svg className="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </div>
+            </div>
           </div>
-          <div className="col-span-2">
-            <label className="text-xs text-gray-400 mb-1 block">
-              Momentum: {filters.momentum_range[0].toFixed(2)} - {filters.momentum_range[1].toFixed(2)}
-            </label>
-            <input
-              type="range"
-              min="-0.5"
-              max="1"
-              step="0.1"
-              value={filters.momentum_range[1]}
-              onChange={(e) => setFilters({
-                ...filters,
-                momentum_range: [filters.momentum_range[0], parseFloat(e.target.value)]
-              })}
-              className="w-full"
-            />
+          <div className="w-[200px]">
+            <label className="text-xs text-gray-400 mb-1 block">Income Tier</label>
+            <div className="relative">
+            <select
+                className="w-full bg-dark-hover border border-dark-border rounded-lg px-3 py-2 pr-8 text-sm text-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-500 appearance-none"
+                value={filters.income_tier}
+                onChange={(e) => setFilters({ ...filters, income_tier: e.target.value })}
+            >
+              <option value="">All</option>
+                <option value="budget_constrained">Budget-constrained</option>
+                <option value="middle_income">Middle income</option>
+                <option value="upper_middle_income">Upper-middle income</option>
+                <option value="high_income">High income / Affluent</option>
+            </select>
+              <div className="absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none">
+                <svg className="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </div>
+            </div>
           </div>
         </div>
-        <div className="mt-4">
-          <label className="text-xs text-gray-400 mb-1 block">Cluster</label>
+        {/* Row 2 */}
+        <div className="flex flex-wrap gap-4 justify-center">
+          <div className="w-[200px]">
+            <label className="text-xs text-gray-400 mb-1 block">Area Type</label>
+            <div className="relative">
+            <select
+                className="w-full bg-dark-hover border border-dark-border rounded-lg px-3 py-2 pr-8 text-sm text-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-500 appearance-none"
+                value={filters.area_type}
+                onChange={(e) => setFilters({ ...filters, area_type: e.target.value })}
+            >
+              <option value="">All</option>
+                <option value="urban">Urban</option>
+                <option value="suburban">Suburban</option>
+                <option value="rural">Rural</option>
+                <option value="coastal_metro">Coastal Metro</option>
+                <option value="secondary_cities">Secondary Cities</option>
+            </select>
+              <div className="absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none">
+                <svg className="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div className="w-[200px]">
+            <label className="text-xs text-gray-400 mb-1 block">Beauty Consumer Archetype</label>
+            <div className="relative">
+              <select
+                className="w-full bg-dark-hover border border-dark-border rounded-lg px-3 py-2 pr-8 text-sm text-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-500 appearance-none"
+                value={filters.beauty_archetype}
+                onChange={(e) => setFilters({ ...filters, beauty_archetype: e.target.value })}
+              >
+                <option value="">All</option>
+                <option value="minimalist">Minimalist / Low-Routine</option>
+                <option value="beauty_enthusiast">Beauty Enthusiast</option>
+                <option value="ingredient_obsessed">Ingredient-Obsessed</option>
+                <option value="trend_follower">Trend-Follower (TikTok-led)</option>
+                <option value="prestige_luxury">Prestige / Luxury Buyer</option>
+                <option value="value_driven">Value-Driven Shopper</option>
+                <option value="problem_solution">Problem-Solution Seeker</option>
+              </select>
+              <div className="absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none">
+                <svg className="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div className="w-[200px]">
+            <label className="text-xs text-gray-400 mb-1 block">Primary Motivation</label>
+            <div className="relative">
           <select
-            className="w-full bg-dark-bg border border-dark-border rounded px-2 py-1 text-sm text-gray-300"
-            value={filters.cluster}
-            onChange={(e) => setFilters({ ...filters, cluster: e.target.value })}
-          >
-            <option value="">All Clusters</option>
-            {clusters.map(cluster => (
-              <option key={cluster.cluster_id} value={cluster.cluster_id.toString()}>
-                {cluster.label} ({cluster.count} points)
-              </option>
-            ))}
+                className="w-full bg-dark-hover border border-dark-border rounded-lg px-3 py-2 pr-8 text-sm text-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-500 appearance-none"
+                value={filters.primary_motivation}
+                onChange={(e) => setFilters({ ...filters, primary_motivation: e.target.value })}
+              >
+                <option value="">All</option>
+                <option value="appearance">Appearance / Aesthetics</option>
+                <option value="skin_health">Skin Health / Repair</option>
+                <option value="anti_aging">Anti-aging / Prevention</option>
+                <option value="confidence">Confidence / Identity</option>
+                <option value="experimentation">Experimentation / Fun</option>
+                <option value="value">Value / Price</option>
           </select>
+              <div className="absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none">
+                <svg className="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -564,46 +535,35 @@ function MarketManifold3D({ vertical = 'beauty', region = 'US', onNodeClick, sel
             config={config}
             style={{ width: '100%', height: '100%' }}
             onClick={handlePlotClick}
-            onHover={(data) => {
-              if (data.points && data.points.length > 0) {
-                const nodeId = data.points[0].customdata;
-                const node = filteredPoints.find(p => p.id === nodeId);
-                setHoveredNode(node);
-              }
-            }}
+            onHover={handlePlotHover}
+            onUnhover={() => setHoveredCluster(null)}
+            useResizeHandler={true}
           />
         ) : (
-          <div className="flex items-center justify-center h-full text-gray-500">
-            <div className="text-center">
-              <div className="text-lg mb-2">Plotly.js not loaded</div>
-              <div className="text-sm">Install with: npm install plotly.js react-plotly.js</div>
-              <div className="text-xs mt-4 text-gray-600">
-                Points loaded: {filteredPoints.length}
-              </div>
-            </div>
+          <div className="flex items-center justify-center h-full text-gray-400">
+            Loading visualization...
           </div>
         )}
       </div>
 
       {/* Legend */}
       <div className="p-4 border-t border-dark-border bg-dark-surface">
-        <div className="flex flex-wrap items-center gap-4 text-xs text-gray-400">
+        <div className="flex items-center justify-between text-xs text-gray-400">
+          <div className="flex items-center gap-4">
           <div className="flex items-center gap-2">
             <div className="w-3 h-3 rounded-full bg-purple-500"></div>
             <span>Selected</span>
           </div>
           <div className="flex items-center gap-2">
-            <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
+              <div className="w-3 h-3 rounded-full bg-orange-500"></div>
             <span>Pinned</span>
           </div>
-          {scenarioResults && (
-            <div className="flex items-center gap-2">
-              <div className="w-3 h-3 rounded-full bg-red-500"></div>
-              <span>Impacted (red gradient = reactivity)</span>
+            <div className="text-gray-500">
+              {hasActiveFilters ? 'Dot size = Segment Relevance | Opacity = Confidence' : 'All clusters shown at base size'}
             </div>
-          )}
+          </div>
           <div className="text-gray-500">
-            {filteredPoints.length} points | {pinnedNodes.length} pinned
+            {BEAUTY_MARKET_CLUSTERS.length} clusters | {pinnedClusters.length} pinned
           </div>
         </div>
       </div>

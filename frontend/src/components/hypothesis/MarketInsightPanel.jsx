@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import MarketManifold3D from '../market-insight/MarketManifold3D';
 import InsightWorkspace from '../market-insight/InsightWorkspace';
 
-function MarketInsightPanel({ filters }) {
+function MarketInsightPanel({ filters = {} }) {
   const [selectedNode, setSelectedNode] = useState(null);
   const [pinnedNodes, setPinnedNodes] = useState([]);
   const [nodeDetails, setNodeDetails] = useState(null);
@@ -12,7 +12,7 @@ function MarketInsightPanel({ filters }) {
 
   const handleNodeClick = async (node) => {
     setSelectedNode(node);
-    
+
     // Load node details
     try {
       const response = await fetch(
@@ -35,35 +35,18 @@ function MarketInsightPanel({ filters }) {
 
   return (
     <div className="flex flex-1 overflow-hidden">
-      {/* Left Panel: Market Manifold Map (40%) */}
-      <div className="w-[40%] flex flex-col border-r border-dark-border bg-dark-bg">
+      {/* Left Panel: Market Manifold Map (58%) */}
+      <div className="w-[58%] flex flex-col border-r border-dark-border bg-dark-bg">
         <div className="p-4 border-b border-dark-border bg-dark-surface">
-          <div className="flex items-center justify-between mb-2">
-            <h2 className="text-xl font-bold text-gray-200">Market Manifold</h2>
-            <div className="flex items-center gap-4">
-              <select
-                className="bg-dark-bg border border-dark-border rounded px-2 py-1 text-sm text-gray-300"
-                value={vertical}
-                onChange={(e) => setVertical(e.target.value)}
-              >
-                <option value="beauty">Beauty</option>
-                <option value="food">Food</option>
-              </select>
-              <select
-                className="bg-dark-bg border border-dark-border rounded px-2 py-1 text-sm text-gray-300"
-                value={region}
-                onChange={(e) => setRegion(e.target.value)}
-              >
-                <option value="US">US</option>
-              </select>
-            </div>
-          </div>
+          <h2 className="text-xl font-bold text-gray-200">Market Insights</h2>
         </div>
-        
+
         <div className="flex-1 overflow-hidden">
           <MarketManifold3D
             vertical={vertical}
             region={region}
+            onVerticalChange={setVertical}
+            onRegionChange={setRegion}
             onNodeClick={handleNodeClick}
             selectedNodes={selectedNode ? [selectedNode.id] : []}
             scenarioResults={scenarioResults}
@@ -85,7 +68,7 @@ function MarketInsightPanel({ filters }) {
                 ✕
               </button>
             </div>
-            
+
             <div className="space-y-2 text-sm text-gray-300">
               {nodeDetails.category && (
                 <div>
@@ -120,8 +103,8 @@ function MarketInsightPanel({ filters }) {
         )}
       </div>
 
-      {/* Right Panel: Insight Workspace (60%) */}
-      <div className="w-[60%] flex flex-col bg-dark-bg">
+      {/* Right Panel: Insight Workspace (42%) */}
+      <div className="w-[42%] flex flex-col bg-dark-bg">
         <InsightWorkspace
           pinnedNodes={pinnedNodes}
           onAsk={(results) => {

@@ -1,13 +1,39 @@
 import { useState, useEffect } from 'react';
 
 const archetypeColors = {
-  'value_seeker': '#f59e0b',      // orange
-  'health_optimizer': '#3b82f6',  // blue
-  'convenience_loyalist': '#10b981', // green
-  'late_night_craver': '#8b5cf6',   // purple
-  'trend_chaser': '#ec4899',        // pink
-  'family_bundle_buyer': '#06b6d4', // cyan
-  'protein_maximizer': '#ef4444',   // red
+  'ingredient_purist': '#10b981',  // green
+  'clean_beauty_believer': '#3b82f6',  // blue
+  'clinical_results_seeker': '#f59e0b',  // yellow
+  'luxury_ritualist': '#8b5cf6',  // purple
+  'trend_driven_experimenter': '#ec4899',  // pink
+  'problem_solution_buyer': '#06b6d4',  // cyan
+  'sensitive_skin_minimalist': '#ef4444',  // red
+  'makeup_maximalist': '#f97316',  // orange
+  'skinimalist': '#84cc16',  // lime
+  'ethical_buyer': '#14b8a6',  // teal
+  'deal_hunter': '#eab308',  // amber
+  'pro_guided_buyer': '#a855f7',  // violet
+  'age_preventive_optimizer': '#f43f5e',  // rose
+  'routine_loyalist': '#06b6d4',  // cyan
+  'fragrance_identity_buyer': '#8b5cf6',  // purple
+};
+
+const archetypeDescriptions = {
+  'ingredient_purist': 'Shops by actives, percentages, formulations',
+  'clean_beauty_believer': 'Prioritizes non-toxic, "clean" labels',
+  'clinical_results_seeker': 'Derm-backed, proven efficacy only',
+  'luxury_ritualist': 'Premium beauty as self-care',
+  'trend_driven_experimenter': 'Viral products, fast churn',
+  'problem_solution_buyer': 'Fixes specific skin or hair issues',
+  'sensitive_skin_minimalist': 'Low-irritation, few trusted products',
+  'makeup_maximalist': 'Bold looks, frequent launches',
+  'skinimalist': 'Sheer, minimal, multi-use products',
+  'ethical_buyer': 'Sustainability and values-led',
+  'deal_hunter': 'Sales-driven, price sensitive',
+  'pro_guided_buyer': 'Follows artists, derms, experts',
+  'age_preventive_optimizer': 'Early anti-aging focus',
+  'routine_loyalist': 'Repeats same regimen long-term',
+  'fragrance_identity_buyer': 'Scent as personal signature',
 };
 
 function AgentGrid({ agents, onAgentClick, selectedAgentIds = [], onClearSelection }) {
@@ -75,20 +101,27 @@ function AgentGrid({ agents, onAgentClick, selectedAgentIds = [], onClearSelecti
 
           return Object.entries(groupedAgents).map(([archetype, archetypeAgents]) => (
             <div key={archetype} className="mb-8">
-              <div className="flex items-center gap-3 mb-4">
+              <div className="flex items-start gap-3 mb-4">
                 <div
-                  className="w-1 h-6 rounded-full"
+                  className="w-1 h-6 rounded-full flex-shrink-0 mt-1"
                   style={{ backgroundColor: getAgentColor(archetype) }}
                 />
-                <h3 className="text-sm font-semibold text-gray-300 uppercase tracking-wider">
-                  {archetypeAgents[0]?.archetype_display || archetype} ({archetypeAgents.length})
-                </h3>
+                <div className="flex-1">
+                  <h3 className="text-sm font-semibold text-gray-300 uppercase tracking-wider mb-1">
+                    {archetypeAgents[0]?.archetype_display || archetype} ({archetypeAgents.length})
+                  </h3>
+                  {archetypeDescriptions[archetype] && (
+                    <p className="text-xs text-gray-400 italic">
+                      {archetypeDescriptions[archetype]}
+                    </p>
+                  )}
+                </div>
               </div>
               <div className="grid grid-cols-6 gap-4">
                 {archetypeAgents.map((agent) => {
                   const color = getAgentColor(agent.archetype);
                   const isSelected = selectedAgentIds.includes(agent.id);
-                  
+
                   return (
                     <button
                       key={agent.id}
@@ -123,12 +156,12 @@ function AgentGrid({ agents, onAgentClick, selectedAgentIds = [], onClearSelecti
                           </div>
                         )}
                       </div>
-                      
+
                       {/* Agent Name */}
                       <div className="text-sm font-medium text-gray-200 text-center mb-1">
                         {agent.display_name}
                       </div>
-                      
+
                       {/* Archetype Badge */}
                       <div
                         className="text-xs px-2 py-1 rounded-full text-white font-medium"
@@ -136,7 +169,7 @@ function AgentGrid({ agents, onAgentClick, selectedAgentIds = [], onClearSelecti
                       >
                         {agent.archetype_display}
                       </div>
-                      
+
                       {/* Quick Info */}
                       <div className="mt-2 text-xs text-gray-400 text-center">
                         <div>{agent.age_bucket} • {agent.region}</div>
@@ -148,7 +181,7 @@ function AgentGrid({ agents, onAgentClick, selectedAgentIds = [], onClearSelecti
             </div>
           ));
         })()}
-        
+
         {filteredAgents.length === 0 && (
           <div className="flex items-center justify-center h-64 text-gray-400">
             <div className="text-center">
@@ -158,7 +191,7 @@ function AgentGrid({ agents, onAgentClick, selectedAgentIds = [], onClearSelecti
           </div>
         )}
       </div>
-      
+
       {/* Selected Agents Summary */}
       {selectedAgentIds.length > 0 && (
         <div className="mt-4 pt-4 border-t border-dark-border">
@@ -182,4 +215,3 @@ function AgentGrid({ agents, onAgentClick, selectedAgentIds = [], onClearSelecti
 }
 
 export default AgentGrid;
-

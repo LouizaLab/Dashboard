@@ -12,13 +12,21 @@ function SimulationControls({ onRunSimulation, loading, disabled }) {
 
   const ageBuckets = ['18-24', '25-34', '35-44', '45-54', '55+'];
   const archetypes = [
-    'value_seeker',
-    'health_optimizer',
-    'convenience_loyalist',
-    'late_night_craver',
-    'trend_chaser',
-    'family_bundle_buyer',
-    'protein_maximizer',
+    'ingredient_purist',
+    'clean_beauty_believer',
+    'clinical_results_seeker',
+    'luxury_ritualist',
+    'trend_driven_experimenter',
+    'problem_solution_buyer',
+    'sensitive_skin_minimalist',
+    'makeup_maximalist',
+    'skinimalist',
+    'ethical_buyer',
+    'deal_hunter',
+    'pro_guided_buyer',
+    'age_preventive_optimizer',
+    'routine_loyalist',
+    'fragrance_identity_buyer',
   ];
   const regions = ['West', 'Midwest', 'South', 'Northeast'];
 
@@ -91,8 +99,8 @@ function SimulationControls({ onRunSimulation, loading, disabled }) {
             />
           </div>
           <div className="text-xs text-gray-400 mt-1">
-            {agentCount >= 5000 ? 'Large Population (5k+)' : 
-             agentCount >= 1000 ? 'Medium Population (1k-5k)' : 
+            {agentCount >= 5000 ? 'Large Population (5k+)' :
+             agentCount >= 1000 ? 'Medium Population (1k-5k)' :
              'Small Population (<1k)'}
           </div>
         </div>
@@ -212,7 +220,7 @@ function SimulationControls({ onRunSimulation, loading, disabled }) {
           '🚀 Run LPM Simulation'
         )}
       </button>
-      
+
       {!disabled && (
         <div className="mt-3 text-xs text-gray-400 text-center">
           Simulating {agentCount.toLocaleString()} agents over {timeHorizon} weeks using Phase 3-4 LPM engine

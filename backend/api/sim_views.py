@@ -24,11 +24,11 @@ def _get_agent_tron_service_safe():
     """
     from django.conf import settings
     agent_tron_enabled = getattr(settings, 'AGENT_TRON_ENABLED', True)
-    
+
     if not agent_tron_enabled:
         logger.info("Agent-Tron is disabled in settings")
         return None
-    
+
     try:
         agent_tron_service = get_agent_tron_service()
         logger.info(f"✓ Agent-Tron service initialized (Django integration)")
@@ -45,11 +45,11 @@ def _get_agent_tron_decision(agent_tron_service, agent, input_text):
     """
     if not agent_tron_service:
         return None
-    
+
     try:
         # Convert Django PersonaAgent to Agent-Tron format
         persona = persona_agent_to_agent_tron_persona(agent)
-        
+
         # Extract context from hypothesis (e.g., brands mentioned)
         context = {}
         hypothesis_lower = input_text.lower()
@@ -57,9 +57,9 @@ def _get_agent_tron_decision(agent_tron_service, agent, input_text):
             context['location'] = 'fast_food'
         if 'burger king' in hypothesis_lower or 'bk' in hypothesis_lower:
             context['location'] = 'fast_food'
-        
+
         logger.info(f"Calling Agent-Tron for agent {agent.display_name} (ID: {agent.id})")
-        
+
         # Call Agent-Tron FastAPI to sample from LPM
         agent_tron_response = agent_tron_service.get_persona_decision(
             agent_id=str(agent.id),
@@ -69,15 +69,15 @@ def _get_agent_tron_decision(agent_tron_service, agent, input_text):
             question_type="preference",
             num_samples=1
         )
-        
+
         logger.info(
             f"✓ Agent {agent.display_name}: Agent-Tron sampled decision: "
             f"{agent_tron_response.get('sampled_decision', {}).get('choice', 'N/A')} "
             f"(confidence: {agent_tron_response.get('uncertainty', {}).get('confidence', 0):.2f})"
         )
-        
+
         return agent_tron_response
-        
+
     except Exception as e:
         logger.error(f"Agent-Tron failed for agent {agent.id}: {e}", exc_info=True)
         logger.warning(
@@ -91,10 +91,10 @@ class PersonaAgentViewSet(viewsets.ReadOnlyModelViewSet):
     """ViewSet for PersonaAgent model."""
     queryset = PersonaAgent.objects.all()
     serializer_class = PersonaAgentSerializer
-    
+
     def get_queryset(self):
         queryset = PersonaAgent.objects.all()
-        
+
         # Filter by demographics
         age_bucket = self.request.query_params.get('age_bucket')
         gender = self.request.query_params.get('gender')
@@ -102,7 +102,7 @@ class PersonaAgentViewSet(viewsets.ReadOnlyModelViewSet):
         income = self.request.query_params.get('income')
         archetype = self.request.query_params.get('archetype')
         limit = int(self.request.query_params.get('limit', 100))
-        
+
         if age_bucket:
             queryset = queryset.filter(age_bucket=age_bucket)
         if gender:
@@ -113,9 +113,9 @@ class PersonaAgentViewSet(viewsets.ReadOnlyModelViewSet):
             queryset = queryset.filter(income=income)
         if archetype:
             queryset = queryset.filter(archetype=archetype)
-        
+
         return queryset[:limit]
-    
+
     @action(detail=False, methods=['get'])
     def network(self, request):
         """Get agent network data for visualization."""
@@ -126,7 +126,7 @@ class PersonaAgentViewSet(viewsets.ReadOnlyModelViewSet):
         income = request.query_params.get('income')
         archetype = request.query_params.get('archetype')
         limit = int(request.query_params.get('limit', 50))
-        
+
         # Filter agents
         agents_query = PersonaAgent.objects.all()
         if age_bucket:
@@ -139,24 +139,32 @@ class PersonaAgentViewSet(viewsets.ReadOnlyModelViewSet):
             agents_query = agents_query.filter(income=income)
         if archetype:
             agents_query = agents_query.filter(archetype=archetype)
-        
+
         agents = list(agents_query[:limit])
-        
+
         # Create nodes
         nodes = []
         for agent in agents:
             # Determine node color based on archetype
             archetype_colors = {
-                'value_seeker': '#10b981',  # green
-                'health_optimizer': '#3b82f6',  # blue
-                'convenience_loyalist': '#f59e0b',  # yellow
-                'late_night_craver': '#8b5cf6',  # purple
-                'trend_chaser': '#ec4899',  # pink
-                'family_bundle_buyer': '#06b6d4',  # cyan
-                'protein_maximizer': '#ef4444',  # red
+                'ingredient_purist': '#10b981',  # green
+                'clean_beauty_believer': '#3b82f6',  # blue
+                'clinical_results_seeker': '#f59e0b',  # yellow
+                'luxury_ritualist': '#8b5cf6',  # purple
+                'trend_driven_experimenter': '#ec4899',  # pink
+                'problem_solution_buyer': '#06b6d4',  # cyan
+                'sensitive_skin_minimalist': '#ef4444',  # red
+                'makeup_maximalist': '#f97316',  # orange
+                'skinimalist': '#84cc16',  # lime
+                'ethical_buyer': '#14b8a6',  # teal
+                'deal_hunter': '#eab308',  # amber
+                'pro_guided_buyer': '#a855f7',  # violet
+                'age_preventive_optimizer': '#f43f5e',  # rose
+                'routine_loyalist': '#06b6d4',  # cyan
+                'fragrance_identity_buyer': '#8b5cf6',  # purple
             }
             color = archetype_colors.get(agent.archetype, '#6b7280')
-            
+
             nodes.append({
                 'data': {
                     'id': str(agent.id),
@@ -170,7 +178,7 @@ class PersonaAgentViewSet(viewsets.ReadOnlyModelViewSet):
                     'color': color,
                 }
             })
-        
+
         # Create edges based on similarity
         edges = []
         for i, agent1 in enumerate(agents):
@@ -185,7 +193,7 @@ class PersonaAgentViewSet(viewsets.ReadOnlyModelViewSet):
                             'weight': similarity,
                         }
                     })
-        
+
         return Response({
             'nodes': nodes,
             'edges': edges,
@@ -197,7 +205,7 @@ def calculate_agent_similarity(agent1, agent2):
     """Calculate similarity score between two agents."""
     similarity = 0.0
     factors = 0
-    
+
     # Demographics similarity
     if agent1.age_bucket == agent2.age_bucket:
         similarity += 0.2
@@ -208,12 +216,12 @@ def calculate_agent_similarity(agent1, agent2):
     if agent1.income == agent2.income:
         similarity += 0.15
     factors += 4
-    
+
     # Archetype similarity
     if agent1.archetype == agent2.archetype:
         similarity += 0.3
     factors += 1
-    
+
     # Taste profile similarity
     taste1 = set(agent1.taste_profile_json or [])
     taste2 = set(agent2.taste_profile_json or [])
@@ -221,7 +229,7 @@ def calculate_agent_similarity(agent1, agent2):
         taste_overlap = len(taste1 & taste2) / len(taste1 | taste2)
         similarity += taste_overlap * 0.2
         factors += 1
-    
+
     # Behavior params similarity
     params1 = agent1.behavior_params_json or {}
     params2 = agent2.behavior_params_json or {}
@@ -234,19 +242,19 @@ def calculate_agent_similarity(agent1, agent2):
             ) / len(param_keys)
             similarity += (1 - min(param_sim, 1.0)) * 0.15
             factors += 1
-    
+
     return similarity / max(factors, 1)
 
 
 class HypothesisViewSet(viewsets.ViewSet):
     """ViewSet for hypothesis testing."""
-    
+
     def list(self, request):
         """List all hypothesis runs."""
         runs = HypothesisRun.objects.all()[:50]  # Limit to 50 most recent
         serializer = HypothesisRunSerializer(runs, many=True)
         return Response(serializer.data)
-    
+
     def retrieve(self, request, pk=None):
         """Retrieve a specific hypothesis run."""
         try:
@@ -258,7 +266,7 @@ class HypothesisViewSet(viewsets.ViewSet):
                 {'error': 'Hypothesis run not found'},
                 status=status.HTTP_404_NOT_FOUND
             )
-    
+
     @action(detail=True, methods=['post'])
     def generate_report(self, request, pk=None):
         """Generate or regenerate a report for an existing hypothesis run."""
@@ -269,16 +277,16 @@ class HypothesisViewSet(viewsets.ViewSet):
                 {'error': 'Hypothesis run not found'},
                 status=status.HTTP_404_NOT_FOUND
             )
-        
+
         # Re-run the hypothesis to get fresh responses
         input_text = run.input_text
         filters = run.filters_json
         agent_count = run.agent_count
         mode = run.mode
-        
+
         # Filter agents
         agents_query = PersonaAgent.objects.all()
-        
+
         if filters.get('age_bucket'):
             agents_query = agents_query.filter(age_bucket=filters['age_bucket'])
         if filters.get('gender'):
@@ -289,16 +297,16 @@ class HypothesisViewSet(viewsets.ViewSet):
             agents_query = agents_query.filter(income=filters['income'])
         if filters.get('archetype'):
             agents_query = agents_query.filter(archetype=filters['archetype'])
-        
+
         # Sample agents
         agents_list = list(agents_query)
         if len(agents_list) > agent_count:
             agents_list = random.sample(agents_list, agent_count)
-        
+
         # Generate responses with direct GPT-4 (Agent-Tron/LPM/Data Engine unhooked)
         responses = []
         agents_info = []
-        
+
         for agent in agents_list:
             # Generate GPT-4 response directly without Agent-Tron
             response = generate_persona_response(
@@ -308,14 +316,14 @@ class HypothesisViewSet(viewsets.ViewSet):
                 mode,
                 agent_tron_context=None  # No Agent-Tron context
             )
-            
+
             response_data = {
                 'agent_id': str(agent.id),
                 'agent_name': agent.display_name,
                 'archetype': agent.archetype,
                 **response
             }
-            
+
             responses.append(response_data)
             agents_info.append({
                 'name': agent.display_name,
@@ -325,34 +333,46 @@ class HypothesisViewSet(viewsets.ViewSet):
                 'gender': agent.gender,
                 'income': agent.income,
             })
-        
+
         # Generate comprehensive GPT-4 report
         gpt_report = generate_gpt4_report(input_text, responses, agents_info)
-        
+
         # Always calculate preference breakdown from actual responses
         aggregated = aggregate_agent_responses(responses, 'hypothesis')
-        
+
+        # Calculate segment insights from actual responses (more accurate than GPT)
+        from .segment_calculator import calculate_segment_insights
+        calculated_segments = calculate_segment_insights(responses, agents_info)
+
         # Merge GPT-4 report with aggregated results
         if 'error' not in gpt_report:
             # Merge GPT-4 report, but ensure preference_breakdown from aggregation takes precedence
             aggregated.update(gpt_report)
+            # COMPLETELY REPLACE segment_insights with calculated values (don't merge with GPT)
+            aggregated['segment_insights'] = {
+                'archetype': calculated_segments
+            }
             # Ensure preference_breakdown is always present and correct
             if 'preference_breakdown' not in aggregated or not aggregated['preference_breakdown']:
                 # Use aggregated preference_breakdown if GPT-4 didn't provide it
                 pass  # Already set from aggregate_agent_responses
         else:
             aggregated['error'] = gpt_report['error']
-        
+            # Still add calculated segments even if GPT fails
+            if 'segment_insights' not in aggregated:
+                aggregated['segment_insights'] = {}
+            aggregated['segment_insights']['archetype'] = calculated_segments
+
         # Update the run with merged report
         run.aggregated_result_json = aggregated
         run.save()
-        
+
         # Get evidence from Agent-Tron (collect from all agent responses)
         evidence = self._get_evidence(input_text, filters, agent_responses=responses)
-        
+
         # Generate segments breakdown
         segments = self._generate_segments(responses)
-        
+
         return Response({
             'run_id': str(run.id),
             'aggregated_result': aggregated,
@@ -361,7 +381,7 @@ class HypothesisViewSet(viewsets.ViewSet):
             'agent_count': len(agents_list),
             'gpt_report': gpt_report if 'error' not in gpt_report else None,
         })
-    
+
     @action(detail=False, methods=['post'])
     def generate_standalone_report(self, request):
         """Generate a standalone report using backend hypothesis generation."""
@@ -370,16 +390,16 @@ class HypothesisViewSet(viewsets.ViewSet):
         agent_ids = request.data.get('agent_ids', [])
         agent_count = int(request.data.get('agent_count', 100))
         mode = request.data.get('mode', 'gpt')
-        
+
         if not input_text:
             return Response(
                 {'error': 'input_text is required'},
                 status=status.HTTP_400_BAD_REQUEST
             )
-        
+
         # Filter agents
         agents_query = PersonaAgent.objects.all()
-        
+
         if filters.get('age_bucket'):
             agents_query = agents_query.filter(age_bucket=filters['age_bucket'])
         if filters.get('gender'):
@@ -390,20 +410,20 @@ class HypothesisViewSet(viewsets.ViewSet):
             agents_query = agents_query.filter(income=filters['income'])
         if filters.get('archetype'):
             agents_query = agents_query.filter(archetype=filters['archetype'])
-        
+
         # If specific agent IDs provided, use those
         if agent_ids:
             agents_query = agents_query.filter(id__in=agent_ids)
-        
+
         # Sample agents
         agents_list = list(agents_query)
         if len(agents_list) > agent_count:
             agents_list = random.sample(agents_list, agent_count)
-        
+
         # Generate responses with direct GPT-4 (Agent-Tron/LPM/Data Engine unhooked)
         responses = []
         agents_info = []
-        
+
         for agent in agents_list:
             # Generate GPT-4 response directly without Agent-Tron
             response = generate_persona_response(
@@ -413,14 +433,14 @@ class HypothesisViewSet(viewsets.ViewSet):
                 mode,
                 agent_tron_context=None  # No Agent-Tron context
             )
-            
+
             response_data = {
                 'agent_id': str(agent.id),
                 'agent_name': agent.display_name,
                 'archetype': agent.archetype,
                 **response
             }
-            
+
             responses.append(response_data)
             agents_info.append({
                 'name': agent.display_name,
@@ -430,13 +450,13 @@ class HypothesisViewSet(viewsets.ViewSet):
                 'gender': agent.gender,
                 'income': agent.income,
             })
-        
+
         # Generate comprehensive GPT-4 report using backend service
         gpt_report = generate_gpt4_report(input_text, responses, agents_info)
-        
+
         # Always calculate preference breakdown from actual responses
         aggregated = aggregate_agent_responses(responses, 'hypothesis')
-        
+
         # Merge GPT-4 report with aggregated results
         if 'error' not in gpt_report:
             # Merge GPT-4 report, but ensure preference_breakdown from aggregation takes precedence
@@ -447,13 +467,13 @@ class HypothesisViewSet(viewsets.ViewSet):
                 pass  # Already set from aggregate_agent_responses
         else:
             aggregated['error'] = gpt_report['error']
-        
+
         # Get synthetic evidence (Data Engine unhooked)
         evidence = self._get_evidence(input_text, filters, agent_responses=responses)
-        
+
         # Generate segments breakdown
         segments = self._generate_segments(responses)
-        
+
         return Response({
             'aggregated_result': aggregated,
             'evidence': evidence,
@@ -461,7 +481,7 @@ class HypothesisViewSet(viewsets.ViewSet):
             'agent_count': len(agents_list),
             'gpt_report': gpt_report if 'error' not in gpt_report else None,
         })
-    
+
     @action(detail=False, methods=['post'])
     def run(self, request):
         """Run a hypothesis test."""
@@ -470,16 +490,16 @@ class HypothesisViewSet(viewsets.ViewSet):
         agent_ids = request.data.get('agent_ids', [])  # Optional: specific agents
         agent_count = int(request.data.get('agent_count', 100))
         mode = request.data.get('mode', 'gpt')  # Default to GPT, not mock
-        
+
         if not input_text:
             return Response(
                 {'error': 'input_text is required'},
                 status=status.HTTP_400_BAD_REQUEST
             )
-        
+
         # Filter agents
         agents_query = PersonaAgent.objects.all()
-        
+
         if filters.get('age_bucket'):
             agents_query = agents_query.filter(age_bucket=filters['age_bucket'])
         if filters.get('gender'):
@@ -490,20 +510,20 @@ class HypothesisViewSet(viewsets.ViewSet):
             agents_query = agents_query.filter(income=filters['income'])
         if filters.get('archetype'):
             agents_query = agents_query.filter(archetype=filters['archetype'])
-        
+
         # If specific agent IDs provided, use those
         if agent_ids:
             agents_query = agents_query.filter(id__in=agent_ids)
-        
+
         # Sample agents
         agents_list = list(agents_query)
         if len(agents_list) > agent_count:
             agents_list = random.sample(agents_list, agent_count)
-        
+
         # Generate responses with direct GPT-4 (Agent-Tron/LPM/Data Engine unhooked)
         responses = []
         agents_info = []
-        
+
         for agent in agents_list:
             # Generate GPT-4 response directly without Agent-Tron
             response = generate_persona_response(
@@ -513,14 +533,14 @@ class HypothesisViewSet(viewsets.ViewSet):
                 mode,
                 agent_tron_context=None  # No Agent-Tron context
             )
-            
+
             response_data = {
                 'agent_id': str(agent.id),
                 'agent_name': agent.display_name,
                 'archetype': agent.archetype,
                 **response
             }
-            
+
             responses.append(response_data)
             agents_info.append({
                 'name': agent.display_name,
@@ -530,13 +550,13 @@ class HypothesisViewSet(viewsets.ViewSet):
                 'gender': agent.gender,
                 'income': agent.income,
             })
-        
+
         # Generate comprehensive GPT-4 report
         gpt_report = generate_gpt4_report(input_text, responses, agents_info)
-        
+
         # Always calculate preference breakdown from actual responses
         aggregated = aggregate_agent_responses(responses, 'hypothesis')
-        
+
         # Merge GPT-4 report with aggregated results
         if 'error' not in gpt_report:
             # Merge GPT-4 report, but ensure preference_breakdown from aggregation takes precedence
@@ -547,7 +567,7 @@ class HypothesisViewSet(viewsets.ViewSet):
                 pass  # Already set from aggregate_agent_responses
         else:
             aggregated['error'] = gpt_report['error']
-        
+
         # Ensure required fields exist
         if 'overall_sentiment' not in aggregated:
             aggregated['overall_sentiment'] = 0.5
@@ -555,10 +575,10 @@ class HypothesisViewSet(viewsets.ViewSet):
             aggregated['confidence'] = 0.7
         if 'top_themes' not in aggregated:
             aggregated['top_themes'] = {d['theme']: d['mentions'] for d in aggregated.get('top_drivers', [])} if aggregated.get('top_drivers') else {}
-        
+
         # Get synthetic evidence (Data Engine unhooked)
         evidence = self._get_evidence(input_text, filters, agent_responses=responses)
-        
+
         # Create run record
         run = HypothesisRun.objects.create(
             input_text=input_text,
@@ -567,10 +587,10 @@ class HypothesisViewSet(viewsets.ViewSet):
             mode=mode,
             aggregated_result_json=aggregated
         )
-        
+
         # Generate segments breakdown (enhanced with GPT report data if available)
         segments = self._generate_segments(responses)
-        
+
         return Response({
             'run_id': str(run.id),
             'aggregated_result': aggregated,
@@ -581,29 +601,29 @@ class HypothesisViewSet(viewsets.ViewSet):
             'agent_ids': [str(a.id) for a in agents_list],
             'gpt_report': gpt_report if 'error' not in gpt_report else None,  # Include full GPT report
         })
-    
+
     def _get_evidence(self, input_text, filters, agent_responses=None):
         """
         Generate synthetic evidence based on the hypothesis/question.
         Data Engine and Agent-Tron are unhooked - generating convincing synthetic evidence.
-        
+
         Args:
             input_text: The hypothesis/question
             filters: Filter dict
             agent_responses: List of agent responses (optional, for context)
-            
+
         Returns:
             List of evidence items formatted for frontend
         """
         from datetime import datetime, timedelta
         import random
-        
+
         # Categorize question to generate appropriate evidence
         question_type = self._categorize_question(input_text)
-        
+
         # Generate synthetic evidence based on question type
         evidence_items = []
-        
+
         if question_type == 'beauty_sephora':
             evidence_items = [
                 {
@@ -739,14 +759,14 @@ class HypothesisViewSet(viewsets.ViewSet):
                     'tags': ['general']
                 }
             ]
-        
+
         # Return top 5-8 evidence items
         return evidence_items[:8]
-    
+
     def _categorize_question(self, input_text):
         """Categorize the question to generate appropriate evidence."""
         text_lower = input_text.lower()
-        
+
         # Beauty questions
         if 'sephora' in text_lower or ('discover' in text_lower and 'beauty' in text_lower):
             return 'beauty_sephora'
@@ -754,7 +774,7 @@ class HypothesisViewSet(viewsets.ViewSet):
             return 'beauty_virtual'
         if 'fashion' in text_lower and ('cash back' in text_lower or 'app' in text_lower):
             return 'beauty_virtual'  # Similar to virtual beauty
-        
+
         # Food questions
         if 'pricing' in text_lower and ('fast food' in text_lower or 'menu' in text_lower):
             return 'food_pricing'
@@ -762,19 +782,19 @@ class HypothesisViewSet(viewsets.ViewSet):
             return 'food_sensitivity'
         if 'cookie' in text_lower or ('cookie' in text_lower and 'preference' in text_lower):
             return 'food_cookie'
-        
+
         # AITANA questions
         if 'functional' in text_lower and ('food' in text_lower or 'snack' in text_lower):
             return 'aitana_food'
         if 'beauty' in text_lower and ('category' in text_lower or 'portfolio' in text_lower):
             return 'aitana_beauty'
-        
+
         return 'generic'
-    
+
     def _extract_question_from_evidence(self, evidence_item, hypothesis):
         """
         Extract or infer question from evidence item.
-        
+
         Checks multiple possible fields where questions might be stored,
         extracts from verbatim quote if it contains questions,
         then infers from hypothesis if not found.
@@ -784,13 +804,13 @@ class HypothesisViewSet(viewsets.ViewSet):
         for field in question_fields:
             if field in evidence_item and evidence_item[field]:
                 return str(evidence_item[field])
-        
+
         # Try to extract question from verbatim quote (interviews often start with questions)
         verbatim = evidence_item.get('verbatim_quote', '')
         if verbatim:
             # Look for question patterns in the quote
             import re
-            # Find sentences ending with "?" 
+            # Find sentences ending with "?"
             questions = re.findall(r'[^.!?]*\?', verbatim[:300])  # First 300 chars
             if questions:
                 # Return the first question found, cleaned up
@@ -800,14 +820,14 @@ class HypothesisViewSet(viewsets.ViewSet):
                 question = re.sub(r'^User:\s*', '', question, flags=re.IGNORECASE)
                 if len(question) > 20:  # Only use if substantial
                     return question[:150]  # Limit length
-        
+
         # Check tags for question hints
         tags = evidence_item.get('tags', [])
         for tag in tags:
             if 'question' in tag.lower() or 'q:' in tag.lower():
                 # Try to extract question from tag
                 return tag.replace('q:', '').strip()
-        
+
         # Infer question from hypothesis context
         hypothesis_lower = hypothesis.lower()
         if 'prefer' in hypothesis_lower or 'preference' in hypothesis_lower or 'mcdonalds' in hypothesis_lower or 'burger king' in hypothesis_lower:
@@ -825,41 +845,41 @@ class HypothesisViewSet(viewsets.ViewSet):
         else:
             # Use hypothesis as question
             return hypothesis[:100] + "..." if len(hypothesis) > 100 else hypothesis
-    
+
     def _generate_segments(self, responses):
         """Generate segment breakdown."""
         segments = {}
-        
+
         for resp in responses:
             agent_id = resp['agent_id']
             try:
                 agent = PersonaAgent.objects.get(id=agent_id)
                 segment_key = f"{agent.age_bucket}_{agent.region}_{agent.archetype}"
-                
+
                 if segment_key not in segments:
                     segments[segment_key] = {
                         'name': f"{agent.get_archetype_display()} - {agent.age_bucket} - {agent.region}",
                         'count': 0,
                         'responses': [],
                     }
-                
+
                 segments[segment_key]['count'] += 1
                 segments[segment_key]['responses'].append(resp.get('text', ''))
             except PersonaAgent.DoesNotExist:
                 continue
-        
+
         # Calculate segment insights
         for key, segment in segments.items():
             texts = segment['responses']
             positive = sum(1 for t in texts if any(w in t.lower() for w in ['yes', 'would', 'like', 'good', 'great']))
             segment['sentiment'] = positive / len(texts) if texts else 0.5
-        
+
         return list(segments.values())[:5]  # Top 5 segments
 
 
 class SurveyViewSet(viewsets.ViewSet):
     """ViewSet for survey testing."""
-    
+
     @action(detail=False, methods=['post'])
     def run(self, request):
         """Run a survey on agents."""
@@ -868,19 +888,19 @@ class SurveyViewSet(viewsets.ViewSet):
         agent_count = int(request.data.get('agent_count', 100))
         questions = request.data.get('questions', [])
         mode = request.data.get('mode', 'gpt')  # Default to GPT, not mock
-        
+
         if not questions:
             return Response(
                 {'error': 'questions array is required'},
                 status=status.HTTP_400_BAD_REQUEST
             )
-        
+
         # Get agents
         if agent_id:
             agents = [PersonaAgent.objects.get(id=agent_id)]
         else:
             agents_query = PersonaAgent.objects.all()
-            
+
             if filters.get('age_bucket'):
                 agents_query = agents_query.filter(age_bucket=filters['age_bucket'])
             if filters.get('gender'):
@@ -891,15 +911,15 @@ class SurveyViewSet(viewsets.ViewSet):
                 agents_query = agents_query.filter(income=filters['income'])
             if filters.get('archetype'):
                 agents_query = agents_query.filter(archetype=filters['archetype'])
-            
+
             agents_list = list(agents_query)
             if len(agents_list) > agent_count:
                 agents_list = random.sample(agents_list, agent_count)
             agents = agents_list
-        
+
         run_id = uuid.uuid4()
         results = []
-        
+
         # Get question objects
         question_objs = {}
         for q_id in questions:
@@ -908,7 +928,7 @@ class SurveyViewSet(viewsets.ViewSet):
                 question_objs[q_id] = q_obj
             except SurveyQuestion.DoesNotExist:
                 continue
-        
+
         # Run survey for each agent
         for agent in agents:
             agent_responses = []
@@ -922,7 +942,7 @@ class SurveyViewSet(viewsets.ViewSet):
                     },
                     mode
                 )
-                
+
                 # Save response
                 SurveyResponse.objects.create(
                     run_id=run_id,
@@ -930,19 +950,19 @@ class SurveyViewSet(viewsets.ViewSet):
                     question=q_obj,
                     response_json=response
                 )
-                
+
                 agent_responses.append({
                     'question_id': q_id,
                     'question_text': q_obj.question_text,
                     'response': response,
                 })
-            
+
             results.append({
                 'agent_id': str(agent.id),
                 'agent_name': agent.display_name,
                 'responses': agent_responses,
             })
-        
+
         # Aggregate by question
         aggregated = {}
         for q_id, q_obj in question_objs.items():
@@ -951,10 +971,10 @@ class SurveyViewSet(viewsets.ViewSet):
                 for resp in result['responses']:
                     if resp['question_id'] == q_id:
                         question_responses.append(resp['response'])
-            
+
             aggregated[q_id] = aggregate_agent_responses(question_responses, 'survey')
             aggregated[q_id]['question_text'] = q_obj.question_text
-        
+
         return Response({
             'run_id': str(run_id),
             'aggregated_results': aggregated,
@@ -964,7 +984,7 @@ class SurveyViewSet(viewsets.ViewSet):
 
 class TasteTestViewSet(viewsets.ViewSet):
     """ViewSet for taste testing."""
-    
+
     @action(detail=False, methods=['post'])
     def run(self, request):
         """Run a taste test."""
@@ -973,19 +993,19 @@ class TasteTestViewSet(viewsets.ViewSet):
         agent_count = int(request.data.get('agent_count', 100))
         items = request.data.get('items', [])
         mode = request.data.get('mode', 'gpt')  # Default to GPT, not mock
-        
+
         if not items:
             return Response(
                 {'error': 'items array is required'},
                 status=status.HTTP_400_BAD_REQUEST
             )
-        
+
         # Get agents
         if agent_id:
             agents = [PersonaAgent.objects.get(id=agent_id)]
         else:
             agents_query = PersonaAgent.objects.all()
-            
+
             if filters.get('age_bucket'):
                 agents_query = agents_query.filter(age_bucket=filters['age_bucket'])
             if filters.get('gender'):
@@ -996,12 +1016,12 @@ class TasteTestViewSet(viewsets.ViewSet):
                 agents_query = agents_query.filter(income=filters['income'])
             if filters.get('archetype'):
                 agents_query = agents_query.filter(archetype=filters['archetype'])
-            
+
             agents_list = list(agents_query)
             if len(agents_list) > agent_count:
                 agents_list = random.sample(agents_list, agent_count)
             agents = agents_list
-        
+
         results = []
         for agent in agents:
             response = generate_persona_response(
@@ -1016,13 +1036,13 @@ class TasteTestViewSet(viewsets.ViewSet):
                 'archetype': agent.archetype,
                 **response
             })
-        
+
         # Aggregate rankings
         all_rankings = []
         for result in results:
             if 'structured' in result and 'rankings' in result['structured']:
                 all_rankings.extend(result['structured']['rankings'])
-        
+
         # Calculate average scores per item
         item_scores = {}
         for ranking in all_rankings:
@@ -1031,7 +1051,7 @@ class TasteTestViewSet(viewsets.ViewSet):
             if item not in item_scores:
                 item_scores[item] = []
             item_scores[item].append(score)
-        
+
         aggregated_rankings = [
             {
                 'item': item,
@@ -1041,7 +1061,7 @@ class TasteTestViewSet(viewsets.ViewSet):
             for item, scores in item_scores.items()
         ]
         aggregated_rankings.sort(key=lambda x: x['average_score'], reverse=True)
-        
+
         return Response({
             'rankings': aggregated_rankings,
             'agent_count': len(agents),
@@ -1051,20 +1071,20 @@ class TasteTestViewSet(viewsets.ViewSet):
 
 class ChatViewSet(viewsets.ViewSet):
     """ViewSet for persona chat."""
-    
+
     @action(detail=False, methods=['post'])
     def chat(self, request):
         """Chat with a persona agent."""
         agent_id = request.data.get('agent_id')
         messages = request.data.get('messages', [])
         mode = request.data.get('mode', 'gpt')  # Default to GPT, not mock
-        
+
         if not agent_id:
             return Response(
                 {'error': 'agent_id is required'},
                 status=status.HTTP_400_BAD_REQUEST
             )
-        
+
         try:
             agent = PersonaAgent.objects.get(id=agent_id)
         except PersonaAgent.DoesNotExist:
@@ -1072,7 +1092,7 @@ class ChatViewSet(viewsets.ViewSet):
                 {'error': 'Agent not found'},
                 status=status.HTTP_404_NOT_FOUND
             )
-        
+
         try:
             print(f"[ChatViewSet] Mode received: {mode}, Agent: {agent.display_name}, Messages: {len(messages)}")
             response = generate_persona_response(
@@ -1082,13 +1102,13 @@ class ChatViewSet(viewsets.ViewSet):
                 mode
             )
             print(f"[ChatViewSet] Response received: {response.get('text', '')[:100]}...")
-            
+
             if not response or 'text' not in response:
                 return Response(
                     {'error': 'Invalid response from persona service'},
                     status=status.HTTP_500_INTERNAL_SERVER_ERROR
                 )
-            
+
             return Response({
                 'agent_id': str(agent.id),
                 'agent_name': agent.display_name,
@@ -1105,29 +1125,29 @@ class ChatViewSet(viewsets.ViewSet):
 
 class MarketInsightViewSet(viewsets.ViewSet):
     """ViewSet for generating market insights from consultant questions (hypothesis runs)."""
-    
+
     @action(detail=False, methods=['post'])
     def generate(self, request):
         """Generate market insights and graphs based on recent consultant questions."""
         from datetime import datetime, timedelta
-        
+
         # Get parameters
         days_back = int(request.data.get('days_back', 30))
         limit = int(request.data.get('limit', 20))
         filters = request.data.get('filters', {})
-        
+
         # Get recent hypothesis runs (consultant questions)
         cutoff_date = datetime.now() - timedelta(days=days_back)
         runs_query = HypothesisRun.objects.filter(created_at__gte=cutoff_date)
-        
+
         # Apply filters if provided
         if filters.get('region'):
             runs_query = runs_query.filter(filters_json__region=filters['region'])
         if filters.get('archetype'):
             runs_query = runs_query.filter(filters_json__archetype=filters['archetype'])
-        
+
         runs = list(runs_query.order_by('-created_at')[:limit])
-        
+
         if not runs:
             return Response({
                 'insights': [],
@@ -1135,12 +1155,12 @@ class MarketInsightViewSet(viewsets.ViewSet):
                 'summary': 'No consultant questions found in the specified time period.',
                 'total_questions': 0
             })
-        
+
         # Generate insights and graphs
         insights = self._generate_insights(runs)
         graphs = self._generate_graphs(runs)
         summary = self._generate_summary(runs, insights)
-        
+
         return Response({
             'insights': insights,
             'graphs': graphs,
@@ -1152,11 +1172,11 @@ class MarketInsightViewSet(viewsets.ViewSet):
                 'to_date': datetime.now().isoformat()
             }
         })
-    
+
     def _generate_insights(self, runs):
         """Generate key insights from hypothesis runs."""
         insights = []
-        
+
         # Categorize questions
         categories = {
             'beauty': [],
@@ -1165,7 +1185,7 @@ class MarketInsightViewSet(viewsets.ViewSet):
             'preferences': [],
             'other': []
         }
-        
+
         for run in runs:
             text_lower = run.input_text.lower()
             if any(word in text_lower for word in ['beauty', 'sephora', 'makeup', 'skincare', 'cosmetic']):
@@ -1179,47 +1199,47 @@ class MarketInsightViewSet(viewsets.ViewSet):
                 categories['preferences'].append(run)
             else:
                 categories['other'].append(run)
-        
+
         # Generate insights for each category
         for category, category_runs in categories.items():
             if category_runs:
                 insight = self._analyze_category(category, category_runs)
                 if insight:
                     insights.append(insight)
-        
+
         # Generate cross-category insights
         cross_insights = self._generate_cross_category_insights(categories)
         insights.extend(cross_insights)
-        
+
         return insights
-    
+
     def _analyze_category(self, category, runs):
         """Analyze a category of questions and generate insights."""
         if not runs:
             return None
-        
+
         # Extract aggregated results
         aggregated_results = []
         for run in runs:
             if run.aggregated_result_json:
                 aggregated_results.append(run.aggregated_result_json)
-        
+
         if not aggregated_results:
             return None
-        
+
         # Calculate category-specific metrics
         total_sentiment = sum(r.get('overall_sentiment', 0.5) for r in aggregated_results)
         avg_sentiment = total_sentiment / len(aggregated_results)
-        
+
         # Collect themes
         all_themes = {}
         for result in aggregated_results:
             themes = result.get('top_themes', {})
             for theme, count in themes.items():
                 all_themes[theme] = all_themes.get(theme, 0) + count
-        
+
         top_themes = sorted(all_themes.items(), key=lambda x: x[1], reverse=True)[:3]
-        
+
         insight = {
             'category': category,
             'question_count': len(runs),
@@ -1228,19 +1248,19 @@ class MarketInsightViewSet(viewsets.ViewSet):
             'key_findings': self._extract_key_findings(category, runs, aggregated_results),
             'sample_questions': [run.input_text[:100] + '...' for run in runs[:3]]
         }
-        
+
         return insight
-    
+
     def _extract_key_findings(self, category, runs, aggregated_results):
         """Extract key findings from aggregated results."""
         findings = []
-        
+
         if category == 'pricing':
             # Analyze pricing sensitivity
             price_mentions = sum(1 for r in aggregated_results if 'price' in str(r).lower())
             if price_mentions > len(runs) * 0.5:
                 findings.append(f"{price_mentions} out of {len(runs)} questions focused on pricing concerns")
-        
+
         # Extract preference breakdowns
         for result in aggregated_results:
             preference_breakdown = result.get('preference_breakdown', {})
@@ -1248,17 +1268,17 @@ class MarketInsightViewSet(viewsets.ViewSet):
                 top_preference = max(preference_breakdown.items(), key=lambda x: x[1].get('percentage', 0))
                 if top_preference:
                     findings.append(f"Strong preference for {top_preference[0]} ({top_preference[1].get('percentage', 0)}%)")
-        
+
         return findings[:3]  # Top 3 findings
-    
+
     def _generate_cross_category_insights(self, categories):
         """Generate insights across categories."""
         insights = []
-        
+
         total_runs = sum(len(runs) for runs in categories.values())
         if total_runs == 0:
             return insights
-        
+
         # Most active category
         most_active = max(categories.items(), key=lambda x: len(x[1]))
         if most_active[1]:
@@ -1268,51 +1288,51 @@ class MarketInsightViewSet(viewsets.ViewSet):
                 'category': most_active[0],
                 'count': len(most_active[1])
             })
-        
+
         return insights
-    
+
     def _generate_graphs(self, runs):
         """Generate graph data structures for visualization."""
         graphs = []
-        
+
         # Graph 1: Question volume over time
         time_series = self._generate_time_series_graph(runs)
         if time_series:
             graphs.append(time_series)
-        
+
         # Graph 2: Category distribution
         category_dist = self._generate_category_distribution_graph(runs)
         if category_dist:
             graphs.append(category_dist)
-        
+
         # Graph 3: Sentiment trends
         sentiment_trends = self._generate_sentiment_trends_graph(runs)
         if sentiment_trends:
             graphs.append(sentiment_trends)
-        
+
         # Graph 4: Theme word cloud data
         theme_data = self._generate_theme_data(runs)
         if theme_data:
             graphs.append(theme_data)
-        
+
         # Graph 5: Archetype response patterns
         archetype_patterns = self._generate_archetype_patterns_graph(runs)
         if archetype_patterns:
             graphs.append(archetype_patterns)
-        
+
         return graphs
-    
+
     def _generate_time_series_graph(self, runs):
         """Generate time series graph of question volume."""
         from collections import defaultdict
-        
+
         daily_counts = defaultdict(int)
         for run in runs:
             date_key = run.created_at.date().isoformat()
             daily_counts[date_key] += 1
-        
+
         sorted_dates = sorted(daily_counts.keys())
-        
+
         return {
             'type': 'line',
             'title': 'Consultant Questions Over Time',
@@ -1329,7 +1349,7 @@ class MarketInsightViewSet(viewsets.ViewSet):
                 }]
             }
         }
-    
+
     def _generate_category_distribution_graph(self, runs):
         """Generate pie chart of question categories."""
         categories = {
@@ -1339,7 +1359,7 @@ class MarketInsightViewSet(viewsets.ViewSet):
             'Preferences': 0,
             'Other': 0
         }
-        
+
         for run in runs:
             text_lower = run.input_text.lower()
             if any(word in text_lower for word in ['beauty', 'sephora', 'makeup', 'skincare']):
@@ -1353,15 +1373,15 @@ class MarketInsightViewSet(viewsets.ViewSet):
                 categories['Preferences'] += 1
             else:
                 categories['Other'] += 1
-        
+
         # Filter out zero categories
         filtered_categories = {k: v for k, v in categories.items() if v > 0}
-        
+
         if not filtered_categories:
             return None
-        
+
         colors = ['#a855f7', '#3b82f6', '#10b981', '#f59e0b', '#ef4444']
-        
+
         return {
             'type': 'pie',
             'title': 'Question Category Distribution',
@@ -1373,25 +1393,25 @@ class MarketInsightViewSet(viewsets.ViewSet):
                 }]
             }
         }
-    
+
     def _generate_sentiment_trends_graph(self, runs):
         """Generate sentiment trends over time."""
         from collections import defaultdict
-        
+
         daily_sentiments = defaultdict(list)
         for run in runs:
             if run.aggregated_result_json:
                 sentiment = run.aggregated_result_json.get('overall_sentiment', 0.5)
                 date_key = run.created_at.date().isoformat()
                 daily_sentiments[date_key].append(sentiment)
-        
+
         sorted_dates = sorted(daily_sentiments.keys())
-        avg_sentiments = [sum(daily_sentiments[date]) / len(daily_sentiments[date]) 
+        avg_sentiments = [sum(daily_sentiments[date]) / len(daily_sentiments[date])
                          for date in sorted_dates]
-        
+
         if not sorted_dates:
             return None
-        
+
         return {
             'type': 'line',
             'title': 'Average Sentiment Trends',
@@ -1409,22 +1429,22 @@ class MarketInsightViewSet(viewsets.ViewSet):
                 }]
             }
         }
-    
+
     def _generate_theme_data(self, runs):
         """Generate theme frequency data for word cloud or bar chart."""
         theme_counts = {}
-        
+
         for run in runs:
             if run.aggregated_result_json:
                 themes = run.aggregated_result_json.get('top_themes', {})
                 for theme, count in themes.items():
                     theme_counts[theme] = theme_counts.get(theme, 0) + count
-        
+
         if not theme_counts:
             return None
-        
+
         sorted_themes = sorted(theme_counts.items(), key=lambda x: x[1], reverse=True)[:10]
-        
+
         return {
             'type': 'bar',
             'title': 'Top Themes Across Questions',
@@ -1439,33 +1459,33 @@ class MarketInsightViewSet(viewsets.ViewSet):
                 }]
             }
         }
-    
+
     def _generate_archetype_patterns_graph(self, runs):
         """Generate archetype response patterns."""
         archetype_responses = {}
-        
+
         for run in runs:
             filters = run.filters_json or {}
             archetype = filters.get('archetype', 'all')
-            
+
             if run.aggregated_result_json:
                 sentiment = run.aggregated_result_json.get('overall_sentiment', 0.5)
                 if archetype not in archetype_responses:
                     archetype_responses[archetype] = []
                 archetype_responses[archetype].append(sentiment)
-        
+
         if not archetype_responses:
             return None
-        
+
         # Calculate average sentiment per archetype
         archetype_avgs = {}
         for archetype, sentiments in archetype_responses.items():
             if sentiments:
                 archetype_avgs[archetype or 'all'] = sum(sentiments) / len(sentiments)
-        
+
         if not archetype_avgs:
             return None
-        
+
         return {
             'type': 'bar',
             'title': 'Average Sentiment by Archetype',
@@ -1480,14 +1500,14 @@ class MarketInsightViewSet(viewsets.ViewSet):
                 }]
             }
         }
-    
+
     def _generate_summary(self, runs, insights):
         """Generate executive summary."""
         total_questions = len(runs)
-        
+
         if total_questions == 0:
             return "No consultant questions found in the specified period."
-        
+
         # Calculate overall metrics
         total_sentiment = 0
         sentiment_count = 0
@@ -1497,22 +1517,22 @@ class MarketInsightViewSet(viewsets.ViewSet):
                 if sentiment is not None:
                     total_sentiment += sentiment
                     sentiment_count += 1
-        
+
         avg_sentiment = total_sentiment / sentiment_count if sentiment_count > 0 else 0.5
-        
+
         summary = f"""
         Market Insight Summary
-        
+
         Analyzed {total_questions} consultant questions over the past period.
         Average sentiment across all questions: {avg_sentiment:.2f} (on a 0-1 scale).
-        
+
         Key Insights:
         """
-        
+
         for insight in insights[:3]:
             if isinstance(insight, dict):
                 category = insight.get('category', 'Unknown')
                 question_count = insight.get('question_count', 0)
                 summary += f"\n- {category.capitalize()} category: {question_count} questions"
-        
+
         return summary.strip()

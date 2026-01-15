@@ -12,12 +12,12 @@ function AgentDrawer({ isOpen, onClose, agent, filters }) {
       setAgentData(null);
       return;
     }
-    
+
     if (agent) {
       // Always set agentData immediately to show data right away
       console.log('Setting agentData from agent prop:', agent);
       setAgentData(agent);
-      
+
       // If agent has id but might be missing some fields, try to fetch full data
       // But don't wait for it - show what we have immediately
       if (agent.id && (!agent.archetype || !agent.biography)) {
@@ -32,17 +32,17 @@ function AgentDrawer({ isOpen, onClose, agent, filters }) {
       console.warn('Cannot load agent data: agent is missing');
       return;
     }
-    
+
     if (!agent.id) {
       console.warn('Agent missing id, using agent directly:', agent);
       setAgentData(agent);
       return;
     }
-    
+
     try {
       console.log('Fetching agent data for ID:', agent.id);
       const response = await fetch(`http://localhost:8000/api/agents/${agent.id}/`);
-      
+
       if (!response.ok) {
         if (response.status === 404) {
           console.warn(`Agent ${agent.id} not found (404), using provided agent data`);
@@ -52,15 +52,15 @@ function AgentDrawer({ isOpen, onClose, agent, filters }) {
         }
         throw new Error(`HTTP ${response.status}: ${response.statusText}`);
       }
-      
+
       const data = await response.json();
       console.log('Successfully loaded agent data:', data);
-      
+
       // Ensure id is set
       if (!data.id) {
         data.id = agent.id;
       }
-      
+
       setAgentData(data);
     } catch (error) {
       console.error('Failed to load agent:', error);
@@ -83,13 +83,21 @@ function AgentDrawer({ isOpen, onClose, agent, filters }) {
 
   const getArchetypeColor = (archetype) => {
     const colors = {
-      'value_seeker': '#f59e0b',
-      'health_optimizer': '#3b82f6',
-      'convenience_loyalist': '#10b981',
-      'late_night_craver': '#8b5cf6',
-      'trend_chaser': '#ec4899',
-      'family_bundle_buyer': '#06b6d4',
-      'protein_maximizer': '#ef4444',
+      'ingredient_purist': '#10b981',
+      'clean_beauty_believer': '#3b82f6',
+      'clinical_results_seeker': '#f59e0b',
+      'luxury_ritualist': '#8b5cf6',
+      'trend_driven_experimenter': '#ec4899',
+      'problem_solution_buyer': '#06b6d4',
+      'sensitive_skin_minimalist': '#ef4444',
+      'makeup_maximalist': '#f97316',
+      'skinimalist': '#84cc16',
+      'ethical_buyer': '#14b8a6',
+      'deal_hunter': '#eab308',
+      'pro_guided_buyer': '#a855f7',
+      'age_preventive_optimizer': '#f43f5e',
+      'routine_loyalist': '#06b6d4',
+      'fragrance_identity_buyer': '#8b5cf6',
     };
     return colors[archetype] || '#6b7280';
   };
@@ -204,10 +212,10 @@ function AgentDrawer({ isOpen, onClose, agent, filters }) {
 
         {activeTab === 'chat' && (() => {
           const chatAgent = agentData || agent;
-          
+
           // If we have agent but no agentData yet, and agent has id, we're loading
           const isLoading = agent && agent.id && !agentData && isOpen;
-          
+
           if (isLoading) {
             return (
               <div className="flex items-center justify-center h-full text-gray-400">
@@ -218,7 +226,7 @@ function AgentDrawer({ isOpen, onClose, agent, filters }) {
               </div>
             );
           }
-          
+
           if (!chatAgent) {
             return (
               <div className="flex items-center justify-center h-full text-gray-400">
@@ -229,7 +237,7 @@ function AgentDrawer({ isOpen, onClose, agent, filters }) {
               </div>
             );
           }
-          
+
           if (!chatAgent.id) {
             console.error('ChatAgent missing ID:', chatAgent);
             return (
@@ -241,10 +249,10 @@ function AgentDrawer({ isOpen, onClose, agent, filters }) {
               </div>
             );
           }
-          
+
           return (
-            <ChatPanel 
-              agent={chatAgent} 
+            <ChatPanel
+              agent={chatAgent}
               filters={filters}
               key={chatAgent.id}
             />
@@ -264,4 +272,3 @@ function AgentDrawer({ isOpen, onClose, agent, filters }) {
 }
 
 export default AgentDrawer;
-

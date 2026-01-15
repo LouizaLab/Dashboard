@@ -8,7 +8,6 @@ import AgentGrid from './hypothesis/AgentGrid';
 function HypothesisPage() {
   const [filters, setFilters] = useState({
     year: 2025,
-    view: 'Hypothesis Test',
     age_bucket: '',
     gender: '',
     region: '',

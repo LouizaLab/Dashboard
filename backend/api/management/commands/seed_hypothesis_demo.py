@@ -22,16 +22,16 @@ class Command(BaseCommand):
     def handle(self, *args, **options):
         random.seed(42)  # Deterministic seed
         num_agents = options['agents']
-        
+
         self.stdout.write('Creating persona agents...')
         self._create_agents(num_agents)
-        
+
         self.stdout.write('Creating survey questions...')
         self._create_survey_questions()
-        
+
         self.stdout.write('Creating evidence survey data...')
         self._create_evidence_data()
-        
+
         self.stdout.write(self.style.SUCCESS(f'\nSuccessfully seeded hypothesis demo data!'))
         self.stdout.write(f'  Agents: {num_agents}')
         self.stdout.write(f'  Survey questions: 20')
@@ -40,14 +40,17 @@ class Command(BaseCommand):
     def _create_agents(self, count):
         """Create persona agents."""
         archetypes = [
-            'value_seeker', 'health_optimizer', 'convenience_loyalist',
-            'late_night_craver', 'trend_chaser', 'family_bundle_buyer', 'protein_maximizer'
+            'ingredient_purist', 'clean_beauty_believer', 'clinical_results_seeker',
+            'luxury_ritualist', 'trend_driven_experimenter', 'problem_solution_buyer',
+            'sensitive_skin_minimalist', 'makeup_maximalist', 'skinimalist',
+            'ethical_buyer', 'deal_hunter', 'pro_guided_buyer',
+            'age_preventive_optimizer', 'routine_loyalist', 'fragrance_identity_buyer'
         ]
         age_buckets = ['18-24', '25-34', '35-44', '45-54', '55+']
         genders = ['Male', 'Female', 'Nonbinary', 'Prefer not to say']
         regions = ['West', 'Midwest', 'South', 'Northeast']
         incomes = ['$0-50k', '$50-100k', '$100-150k', '$150k+']
-        
+
         first_names = [
             'Alex', 'Jordan', 'Taylor', 'Morgan', 'Casey', 'Riley', 'Avery', 'Quinn',
             'Sam', 'Dakota', 'Blake', 'Cameron', 'Drew', 'Emery', 'Finley', 'Hayden',
@@ -57,12 +60,12 @@ class Command(BaseCommand):
             'Smith', 'Johnson', 'Williams', 'Brown', 'Jones', 'Garcia', 'Miller', 'Davis',
             'Rodriguez', 'Martinez', 'Hernandez', 'Lopez', 'Wilson', 'Anderson', 'Thomas', 'Taylor'
         ]
-        
+
         taste_tags = [
             'spicy', 'sweet', 'savory', 'crispy', 'fresh', 'bold', 'mild', 'rich',
             'light', 'hearty', 'tangy', 'smoky', 'creamy', 'crunchy'
         ]
-        
+
         created = 0
         for i in range(count):
             archetype = random.choice(archetypes)
@@ -70,22 +73,22 @@ class Command(BaseCommand):
             gender = random.choice(genders)
             region = random.choice(regions)
             income = random.choice(incomes)
-            
+
             display_name = f"{random.choice(first_names)} {random.choice(last_names)}"
-            
+
             # Generate behavior params based on archetype
             behavior_params = self._generate_behavior_params(archetype)
-            
+
             # Generate taste profile (3-5 tags)
             num_tags = random.randint(3, 5)
             taste_profile = random.sample(taste_tags, num_tags)
-            
+
             # Generate system prompt
             system_prompt = self._generate_system_prompt(display_name, archetype, age_bucket, gender, region, income, behavior_params)
-            
+
             # Generate biography
             biography = self._generate_biography(display_name, archetype, age_bucket, region)
-            
+
             agent, was_created = PersonaAgent.objects.get_or_create(
                 display_name=display_name,
                 defaults={
@@ -100,10 +103,10 @@ class Command(BaseCommand):
                     'biography': biography,
                 }
             )
-            
+
             if was_created:
                 created += 1
-        
+
         self.stdout.write(f'  Created {created} agents')
 
     def _generate_behavior_params(self, archetype):
@@ -116,44 +119,76 @@ class Command(BaseCommand):
             'convenience_priority': random.uniform(0.3, 0.7),
             'sentiment_bias': random.uniform(0.4, 0.6),
         }
-        
+
         # Adjust based on archetype
-        if archetype == 'value_seeker':
-            base_params['price_sensitivity'] = random.uniform(0.7, 0.95)
-            base_params['brand_loyalty'] = random.uniform(0.2, 0.5)
-        elif archetype == 'health_optimizer':
-            base_params['health_bias'] = random.uniform(0.7, 0.95)
+        if archetype == 'ingredient_purist':
+            base_params['health_bias'] = random.uniform(0.8, 0.95)
+            base_params['brand_loyalty'] = random.uniform(0.3, 0.6)
+        elif archetype == 'clean_beauty_believer':
+            base_params['health_bias'] = random.uniform(0.7, 0.9)
             base_params['price_sensitivity'] = random.uniform(0.4, 0.6)
-        elif archetype == 'convenience_loyalist':
-            base_params['convenience_priority'] = random.uniform(0.7, 0.95)
+        elif archetype == 'clinical_results_seeker':
+            base_params['health_bias'] = random.uniform(0.8, 0.95)
             base_params['brand_loyalty'] = random.uniform(0.6, 0.9)
-        elif archetype == 'late_night_craver':
-            base_params['convenience_priority'] = random.uniform(0.7, 0.9)
-            base_params['novelty_seeking'] = random.uniform(0.5, 0.7)
-        elif archetype == 'trend_chaser':
-            base_params['novelty_seeking'] = random.uniform(0.7, 0.95)
-            base_params['brand_loyalty'] = random.uniform(0.3, 0.5)
-        elif archetype == 'family_bundle_buyer':
-            base_params['price_sensitivity'] = random.uniform(0.6, 0.8)
-            base_params['convenience_priority'] = random.uniform(0.6, 0.8)
-        elif archetype == 'protein_maximizer':
+        elif archetype == 'luxury_ritualist':
+            base_params['price_sensitivity'] = random.uniform(0.2, 0.4)
+            base_params['brand_loyalty'] = random.uniform(0.7, 0.9)
+        elif archetype == 'trend_driven_experimenter':
+            base_params['novelty_seeking'] = random.uniform(0.8, 0.95)
+            base_params['brand_loyalty'] = random.uniform(0.2, 0.5)
+        elif archetype == 'problem_solution_buyer':
             base_params['health_bias'] = random.uniform(0.6, 0.8)
             base_params['novelty_seeking'] = random.uniform(0.4, 0.6)
-        
+        elif archetype == 'sensitive_skin_minimalist':
+            base_params['health_bias'] = random.uniform(0.7, 0.9)
+            base_params['brand_loyalty'] = random.uniform(0.7, 0.9)
+        elif archetype == 'makeup_maximalist':
+            base_params['novelty_seeking'] = random.uniform(0.7, 0.9)
+            base_params['brand_loyalty'] = random.uniform(0.4, 0.7)
+        elif archetype == 'skinimalist':
+            base_params['convenience_priority'] = random.uniform(0.7, 0.9)
+            base_params['novelty_seeking'] = random.uniform(0.3, 0.5)
+        elif archetype == 'ethical_buyer':
+            base_params['health_bias'] = random.uniform(0.6, 0.8)
+            base_params['brand_loyalty'] = random.uniform(0.5, 0.8)
+        elif archetype == 'deal_hunter':
+            base_params['price_sensitivity'] = random.uniform(0.8, 0.95)
+            base_params['brand_loyalty'] = random.uniform(0.2, 0.5)
+        elif archetype == 'pro_guided_buyer':
+            base_params['brand_loyalty'] = random.uniform(0.7, 0.9)
+            base_params['health_bias'] = random.uniform(0.6, 0.8)
+        elif archetype == 'age_preventive_optimizer':
+            base_params['health_bias'] = random.uniform(0.7, 0.9)
+            base_params['brand_loyalty'] = random.uniform(0.5, 0.8)
+        elif archetype == 'routine_loyalist':
+            base_params['brand_loyalty'] = random.uniform(0.8, 0.95)
+            base_params['novelty_seeking'] = random.uniform(0.2, 0.4)
+        elif archetype == 'fragrance_identity_buyer':
+            base_params['brand_loyalty'] = random.uniform(0.7, 0.9)
+            base_params['price_sensitivity'] = random.uniform(0.3, 0.6)
+
         return base_params
 
     def _generate_system_prompt(self, name, archetype, age, gender, region, income, params):
         """Generate GPT system prompt."""
         archetype_desc = {
-            'value_seeker': 'You prioritize getting the best value and deals. Price is your main concern, and you always look for promotions, discounts, and combo meals. You compare prices across brands and are willing to switch if you find a better deal. You know which days have specials and which apps offer the best coupons.',
-            'health_optimizer': 'You focus on nutrition and healthy options. Ingredients, nutritional value, and freshness matter most to you. You read nutrition labels carefully and prefer options with whole ingredients, lower calories, and better macro balance. You might choose salads, grilled options, or plant-based items even if they cost more.',
-            'convenience_loyalist': 'You value speed, reliability, and consistency. You stick with brands you know work well and can deliver quickly. Convenience and predictability are more important than trying new things. You have your go-to orders and rarely deviate. Drive-thru speed and app ordering efficiency matter to you.',
-            'late_night_craver': 'You often order food late at night or during off-hours. Quick, satisfying, and available options are key. You know which places are open late and which items hit the spot when you\'re craving something. Comfort food and indulgent options appeal to you during these times.',
-            'trend_chaser': 'You like trying new things and keeping up with food trends. You\'re among the first to try limited-time offers, new menu items, and viral food trends. Novelty and social media buzz influence your choices. You enjoy sharing your food experiences online and discovering the next big thing.',
-            'family_bundle_buyer': 'You buy for a family, so value, variety, and family-friendly options matter. You look for deals that feed multiple people, kid-friendly options, and meals that everyone will enjoy. You consider dietary restrictions, picky eaters, and need options that travel well. Family meal deals and combo packs are your go-to.',
-            'protein_maximizer': 'You focus on protein content and fitness goals. High-protein options are your priority, and you often choose items based on protein-to-calorie ratios. You might be into fitness, bodybuilding, or just want to feel full longer. You look for items with 20g+ protein and prefer grilled over fried options.',
+            'ingredient_purist': 'You shop by actives, percentages, and formulations. You read ingredient lists carefully and prioritize products with specific active ingredients at effective concentrations. Transparency and scientific formulation matter most to you.',
+            'clean_beauty_believer': 'You prioritize non-toxic, "clean" labels and avoid ingredients you perceive as harmful. You trust brands that align with clean beauty standards and are willing to pay more for products that meet your safety criteria.',
+            'clinical_results_seeker': 'You only trust derm-backed, proven efficacy. Clinical studies, dermatologist recommendations, and evidence-based results are essential. You avoid unproven claims and prefer products with scientific backing.',
+            'luxury_ritualist': 'You view premium beauty as self-care. High-end products are part of your wellness routine. You invest in quality, enjoy the experience, and see beauty products as a form of self-indulgence and care.',
+            'trend_driven_experimenter': 'You chase viral products and have fast churn. Social media trends, influencer recommendations, and new launches excite you. You\'re always trying the latest thing and move on quickly to the next trend.',
+            'problem_solution_buyer': 'You buy to fix specific skin or hair issues. You target products that address your particular concerns - acne, dryness, fine lines, etc. Results-oriented and problem-focused in your purchasing decisions.',
+            'sensitive_skin_minimalist': 'You prefer low-irritation products and stick to a few trusted items. You avoid fragrances, harsh actives, and complex formulations. Simplicity and gentleness are your priorities.',
+            'makeup_maximalist': 'You love bold looks and frequent launches. You experiment with color, technique, and new products regularly. Makeup is creative expression and you enjoy trying new trends and collections.',
+            'skinimalist': 'You prefer sheer, minimal, multi-use products. Less is more - you want products that do multiple things and keep your routine simple. Natural finishes and versatile formulations appeal to you.',
+            'ethical_buyer': 'You prioritize sustainability and values-led purchasing. Cruelty-free, eco-friendly packaging, ethical sourcing, and brand values matter as much as product performance. You support brands that align with your ethics.',
+            'deal_hunter': 'You\'re sales-driven and price sensitive. You wait for discounts, use coupons, buy during sales, and compare prices across retailers. Value matters more than brand loyalty or premium positioning.',
+            'pro_guided_buyer': 'You follow artists, dermatologists, and experts. Professional recommendations guide your purchases. You trust licensed professionals and their product suggestions over marketing or trends.',
+            'age_preventive_optimizer': 'You focus on early anti-aging prevention. You start early with preventative skincare, invest in proven anti-aging ingredients, and take a proactive approach to maintaining youthful skin.',
+            'routine_loyalist': 'You repeat the same regimen long-term. Once you find products that work, you stick with them. You\'re resistant to change and prefer consistency over experimentation.',
+            'fragrance_identity_buyer': 'You see scent as your personal signature. Fragrance is deeply personal and you invest in scents that reflect your identity. You may have signature scents and view fragrance as essential self-expression.',
         }
-        
+
         # Build persona traits from behavior params
         persona_traits = []
         if params.get('price_sensitivity', 0.5) > 0.7:
@@ -164,9 +199,9 @@ class Command(BaseCommand):
             persona_traits.append('loyal to favorite brands')
         if params.get('novelty_seeking', 0.5) > 0.7:
             persona_traits.append('enjoys trying new things')
-        
+
         traits_text = f" You are also {', '.join(persona_traits)}." if persona_traits else ""
-        
+
         return f"""You are {name}, a {age}-year-old {gender.lower()} from {region} with {income} income.
 
 **Your Behavioral Profile:**
@@ -181,20 +216,28 @@ class Command(BaseCommand):
 - Reference your region, income level, and lifestyle when relevant
 
 **Context:**
-You're participating in conversations about fast-food preferences, behaviors, and choices. Answer questions authentically from your persona's perspective, drawing on your archetype traits and personal background."""
+You're participating in conversations about beauty and skincare preferences, behaviors, and choices. Answer questions authentically from your persona's perspective, drawing on your archetype traits and personal background."""
 
     def _generate_biography(self, name, archetype, age, region):
         """Generate short biography."""
         archetype_bios = {
-            'value_seeker': f"{name} is always hunting for deals and comparing prices. They know every promotion and coupon.",
-            'health_optimizer': f"{name} reads nutrition labels carefully and prioritizes fresh, wholesome ingredients.",
-            'convenience_loyalist': f"{name} values speed and consistency. They stick with what works.",
-            'late_night_craver': f"{name} often orders food after 9pm. Quick, satisfying options are essential.",
-            'trend_chaser': f"{name} loves trying new menu items and keeping up with food trends.",
-            'family_bundle_buyer': f"{name} shops for a family, looking for value and variety.",
-            'protein_maximizer': f"{name} focuses on protein content and looks for high-protein options.",
+            'ingredient_purist': f"{name} shops by actives and formulations, reading ingredient lists carefully.",
+            'clean_beauty_believer': f"{name} prioritizes clean, non-toxic beauty products and avoids harmful ingredients.",
+            'clinical_results_seeker': f"{name} only trusts derm-backed products with proven clinical results.",
+            'luxury_ritualist': f"{name} views premium beauty as essential self-care and wellness.",
+            'trend_driven_experimenter': f"{name} chases viral products and loves trying new launches.",
+            'problem_solution_buyer': f"{name} buys products to fix specific skin or hair concerns.",
+            'sensitive_skin_minimalist': f"{name} prefers gentle, minimal products for sensitive skin.",
+            'makeup_maximalist': f"{name} loves bold looks and experimenting with new makeup trends.",
+            'skinimalist': f"{name} prefers simple, multi-use products and keeps routines minimal.",
+            'ethical_buyer': f"{name} prioritizes sustainability and values-led beauty purchases.",
+            'deal_hunter': f"{name} is sales-driven and always looks for the best beauty deals.",
+            'pro_guided_buyer': f"{name} follows dermatologists and makeup artists for recommendations.",
+            'age_preventive_optimizer': f"{name} focuses on early anti-aging prevention and proactive skincare.",
+            'routine_loyalist': f"{name} sticks with the same beauty regimen long-term.",
+            'fragrance_identity_buyer': f"{name} sees fragrance as a personal signature and invests in signature scents.",
         }
-        return archetype_bios.get(archetype, f"{name} is a typical fast-food consumer from {region}.")
+        return archetype_bios.get(archetype, f"{name} is a typical beauty consumer from {region}.")
 
     def _create_survey_questions(self):
         """Create survey questions."""
@@ -300,7 +343,7 @@ You're participating in conversations about fast-food preferences, behaviors, an
                 'choices': []
             },
         ]
-        
+
         created = 0
         for q_data in questions_data:
             question, was_created = SurveyQuestion.objects.get_or_create(
@@ -312,7 +355,7 @@ You're participating in conversations about fast-food preferences, behaviors, an
             )
             if was_created:
                 created += 1
-        
+
         self.stdout.write(f'  Created {created} survey questions')
 
     def _create_evidence_data(self):
@@ -322,7 +365,7 @@ You're participating in conversations about fast-food preferences, behaviors, an
             'value_seeker', 'health_optimizer', 'convenience_loyalist',
             'late_night_craver', 'trend_chaser', 'family_bundle_buyer', 'protein_maximizer'
         ]
-        
+
         snippets = [
             "I always check for deals before ordering. Price is everything.",
             "I look for fresh ingredients and nutritional info. Health matters to me.",
@@ -335,7 +378,7 @@ You're participating in conversations about fast-food preferences, behaviors, an
             "I read ingredient lists carefully. No artificial stuff for me.",
             "Speed matters when I'm in a rush. Drive-thru is essential.",
         ]
-        
+
         questions = [
             "How important is price when choosing fast food?",
             "What influences your fast-food choices most?",
@@ -346,16 +389,16 @@ You're participating in conversations about fast-food preferences, behaviors, an
             "What makes you choose one brand over another?",
             "How do you discover new fast-food options?",
         ]
-        
+
         created = 0
         start_date = date.today() - timedelta(days=180)
-        
+
         for i in range(200):
             region = random.choice(regions)
             archetype = random.choice(archetypes) if random.random() > 0.3 else ''
             question_text = random.choice(questions)
             snippet = random.choice(snippets)
-            
+
             # Generate distribution
             distribution = {
                 'strongly_agree': random.randint(10, 30),
@@ -364,11 +407,11 @@ You're participating in conversations about fast-food preferences, behaviors, an
                 'disagree': random.randint(5, 20),
                 'strongly_disagree': random.randint(5, 15),
             }
-            
+
             # Generate date
             days_ago = random.randint(0, 180)
             evidence_date = start_date + timedelta(days=days_ago)
-            
+
             # Generate metadata
             sample_size = random.randint(150, 500)
             metadata = {
@@ -376,7 +419,7 @@ You're participating in conversations about fast-food preferences, behaviors, an
                 'confidence_level': random.choice([0.90, 0.95, 0.99]),
                 'margin_of_error': round(random.uniform(3.0, 5.0), 1),
             }
-            
+
             datum, was_created = EvidenceSurveyDatum.objects.get_or_create(
                 question_text=question_text,
                 region=region,
@@ -388,9 +431,8 @@ You're participating in conversations about fast-food preferences, behaviors, an
                     'metadata_json': metadata,
                 }
             )
-            
+
             if was_created:
                 created += 1
-        
-        self.stdout.write(f'  Created {created} evidence snippets')
 
+        self.stdout.write(f'  Created {created} evidence snippets')
