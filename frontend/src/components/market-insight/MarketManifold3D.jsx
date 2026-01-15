@@ -1,25 +1,25 @@
-import { useState, useEffect, useMemo } from 'react';
+import { useMemo, useState } from 'react';
 import Plot from 'react-plotly.js';
 
 // Static Beauty Market Clusters with Fixed Positions
 const BEAUTY_MARKET_CLUSTERS = [
-  // Skincare
-  { id: 'clean_skincare', label: 'Clean Skincare', category: 'skincare', baseX: -3.5, baseY: 3.0, color: '#10b981', baseMarketSize: 0.15 },
-  { id: 'clinical_skincare', label: 'Clinical Derm-Backed Skincare', category: 'skincare', baseX: -1.5, baseY: 3.5, color: '#3b82f6', baseMarketSize: 0.20 },
-  { id: 'barrier_repair', label: 'Barrier Repair Sensitive Skin', category: 'skincare', baseX: -0.8, baseY: 2.2, color: '#06b6d4', baseMarketSize: 0.12 },
-  { id: 'acne_solution', label: 'Acne Problem-Solution Skincare', category: 'skincare', baseX: 0.8, baseY: 2.6, color: '#ef4444', baseMarketSize: 0.18 },
-  { id: 'anti_aging', label: 'Anti-Aging Preventative Skincare', category: 'skincare', baseX: 2.2, baseY: 3.2, color: '#8b5cf6', baseMarketSize: 0.25 },
+  // Skincare - spread out more horizontally
+  { id: 'clean_indie_skincare', label: 'Clean Indie Skincare', category: 'skincare', baseX: -4.5, baseY: 3.5, color: '#10b981', baseMarketSize: 0.15 },
+  { id: 'clinical_derm_skincare', label: 'Clinical Derm Skincare', category: 'skincare', baseX: -2.0, baseY: 4.0, color: '#3b82f6', baseMarketSize: 0.20 },
+  { id: 'barrier_repair', label: 'Barrier Repair Sensitive Skin', category: 'skincare', baseX: 0.0, baseY: 3.0, color: '#06b6d4', baseMarketSize: 0.12 },
+  { id: 'acne_solution', label: 'Acne Problem-Solution Skincare', category: 'skincare', baseX: 2.0, baseY: 3.5, color: '#ef4444', baseMarketSize: 0.18 },
+  { id: 'anti_aging', label: 'Anti-Aging Preventative Skincare', category: 'skincare', baseX: 4.0, baseY: 4.0, color: '#8b5cf6', baseMarketSize: 0.25 },
 
-  // Makeup
-  { id: 'minimal_makeup', label: 'Minimal Skin-First Makeup', category: 'makeup', baseX: -3.0, baseY: -0.8, color: '#84cc16', baseMarketSize: 0.10 },
-  { id: 'premium_makeup', label: 'Premium Performance Makeup', category: 'makeup', baseX: -0.8, baseY: -1.5, color: '#f59e0b', baseMarketSize: 0.15 },
-  { id: 'trend_makeup', label: 'Trend-Led Social Makeup', category: 'makeup', baseX: 1.5, baseY: -2.2, color: '#ec4899', baseMarketSize: 0.20 },
-  { id: 'luxury_makeup', label: 'Luxury Full-Coverage Makeup', category: 'makeup', baseX: 3.5, baseY: -1.2, color: '#a855f7', baseMarketSize: 0.12 },
+  // Makeup - spread out more horizontally
+  { id: 'minimal_makeup', label: 'Minimal Skin-First Makeup', category: 'makeup', baseX: -4.0, baseY: 0.0, color: '#84cc16', baseMarketSize: 0.10 },
+  { id: 'premium_makeup_trend', label: 'Premium Makeup - Trend-led', category: 'makeup', baseX: -1.5, baseY: -0.5, color: '#f59e0b', baseMarketSize: 0.15 },
+  { id: 'trend_makeup', label: 'Trend-Led Social Makeup', category: 'makeup', baseX: 1.5, baseY: -1.0, color: '#ec4899', baseMarketSize: 0.20 },
+  { id: 'luxury_makeup_full_coverage', label: 'Luxury Makeup - Full Coverage', category: 'makeup', baseX: 4.0, baseY: 0.0, color: '#a855f7', baseMarketSize: 0.12 },
 
-  // Fragrance
-  { id: 'mass_fragrance', label: 'Mass Accessible Fragrance', category: 'fragrance', baseX: -2.2, baseY: -3.8, color: '#64748b', baseMarketSize: 0.08 },
-  { id: 'prestige_fragrance', label: 'Prestige Fragrance', category: 'fragrance', baseX: 0.0, baseY: -4.2, color: '#6366f1', baseMarketSize: 0.12 },
-  { id: 'ultra_luxury_fragrance', label: 'Ultra-Luxury Niche Fragrance', category: 'fragrance', baseX: 2.5, baseY: -3.5, color: '#d946ef', baseMarketSize: 0.05 },
+  // Fragrance - spread out more horizontally
+  { id: 'mass_fragrance', label: 'Mass Accessible Fragrance', category: 'fragrance', baseX: -3.5, baseY: -4.0, color: '#64748b', baseMarketSize: 0.08 },
+  { id: 'prestige_fragrance', label: 'Prestige Fragrance', category: 'fragrance', baseX: 0.0, baseY: -4.5, color: '#6366f1', baseMarketSize: 0.12 },
+  { id: 'ultra_luxury_fragrance', label: 'Ultra-Luxury Fragrance', category: 'fragrance', baseX: 3.5, baseY: -4.0, color: '#d946ef', baseMarketSize: 0.05 },
 ];
 
 // Cluster-specific motivations (static)
@@ -54,20 +54,20 @@ function getSegmentMetrics(clusterId, consumerFilters) {
     const ageRules = {
       gen_z: {
         trend_makeup: 0.3, minimal_makeup: 0.2, acne_solution: 0.25, mass_fragrance: 0.15,
-        clean_skincare: 0.2, anti_aging: -0.1,
+        clean_indie_skincare: 0.2, anti_aging: -0.1,
       },
       young_millennials: {
-        premium_makeup: 0.25, clinical_skincare: 0.2, anti_aging: 0.2, prestige_fragrance: 0.15,
+        premium_makeup_trend: 0.25, clinical_derm_skincare: 0.2, anti_aging: 0.2, prestige_fragrance: 0.15,
         barrier_repair: 0.15,
       },
       mid_millennials: {
-        anti_aging: 0.3, clinical_skincare: 0.25, premium_makeup: 0.2, prestige_fragrance: 0.2,
+        anti_aging: 0.3, clinical_derm_skincare: 0.25, premium_makeup_trend: 0.2, prestige_fragrance: 0.2,
       },
       gen_x: {
-        anti_aging: 0.25, clinical_skincare: 0.2, luxury_makeup: 0.15, ultra_luxury_fragrance: 0.1,
+        anti_aging: 0.25, clinical_derm_skincare: 0.2, luxury_makeup_full_coverage: 0.15, ultra_luxury_fragrance: 0.1,
       },
       '55_plus': {
-        anti_aging: 0.3, clinical_skincare: 0.25, barrier_repair: 0.2, luxury_makeup: 0.15,
+        anti_aging: 0.3, clinical_derm_skincare: 0.25, barrier_repair: 0.2, luxury_makeup_full_coverage: 0.15,
       },
     };
     const modifier = ageRules[consumerFilters.age_group]?.[clusterId] || 0;
@@ -79,17 +79,17 @@ function getSegmentMetrics(clusterId, consumerFilters) {
   if (consumerFilters.income_tier) {
     const incomeRules = {
       budget_constrained: {
-        mass_fragrance: 0.2, minimal_makeup: 0.15, clean_skincare: 0.1, acne_solution: 0.1,
-        ultra_luxury_fragrance: -0.2, luxury_makeup: -0.15,
+        mass_fragrance: 0.2, minimal_makeup: 0.15, clean_indie_skincare: 0.1, acne_solution: 0.1,
+        ultra_luxury_fragrance: -0.2, luxury_makeup_full_coverage: -0.15,
       },
       middle_income: {
-        premium_makeup: 0.15, prestige_fragrance: 0.1, clinical_skincare: 0.1,
+        premium_makeup_trend: 0.15, prestige_fragrance: 0.1, clinical_derm_skincare: 0.1,
       },
       upper_middle_income: {
-        premium_makeup: 0.2, prestige_fragrance: 0.15, clinical_skincare: 0.15, anti_aging: 0.15,
+        premium_makeup_trend: 0.2, prestige_fragrance: 0.15, clinical_derm_skincare: 0.15, anti_aging: 0.15,
       },
       high_income: {
-        ultra_luxury_fragrance: 0.25, luxury_makeup: 0.2, clinical_skincare: 0.15, anti_aging: 0.2,
+        ultra_luxury_fragrance: 0.25, luxury_makeup_full_coverage: 0.2, clinical_derm_skincare: 0.15, anti_aging: 0.2,
         prestige_fragrance: 0.15,
       },
     };
@@ -102,29 +102,29 @@ function getSegmentMetrics(clusterId, consumerFilters) {
   if (consumerFilters.beauty_archetype) {
     const archetypeRules = {
       minimalist: {
-        minimal_makeup: 0.3, barrier_repair: 0.2, clean_skincare: 0.15, mass_fragrance: 0.1,
-        trend_makeup: -0.2, luxury_makeup: -0.15,
+        minimal_makeup: 0.3, barrier_repair: 0.2, clean_indie_skincare: 0.15, mass_fragrance: 0.1,
+        trend_makeup: -0.2, luxury_makeup_full_coverage: -0.15,
       },
       beauty_enthusiast: {
-        premium_makeup: 0.25, trend_makeup: 0.2, prestige_fragrance: 0.15, clinical_skincare: 0.15,
+        premium_makeup_trend: 0.25, trend_makeup: 0.2, prestige_fragrance: 0.15, clinical_derm_skincare: 0.15,
       },
       ingredient_obsessed: {
-        clean_skincare: 0.3, clinical_skincare: 0.25, barrier_repair: 0.2, anti_aging: 0.15,
+        clean_indie_skincare: 0.3, clinical_derm_skincare: 0.25, barrier_repair: 0.2, anti_aging: 0.15,
       },
       trend_follower: {
-        trend_makeup: 0.35, minimal_makeup: 0.15, mass_fragrance: 0.1, clean_skincare: 0.1,
+        trend_makeup: 0.35, minimal_makeup: 0.15, mass_fragrance: 0.1, clean_indie_skincare: 0.1,
         anti_aging: -0.15,
       },
       prestige_luxury: {
-        ultra_luxury_fragrance: 0.3, luxury_makeup: 0.25, prestige_fragrance: 0.2, clinical_skincare: 0.15,
+        ultra_luxury_fragrance: 0.3, luxury_makeup_full_coverage: 0.25, prestige_fragrance: 0.2, clinical_derm_skincare: 0.15,
         anti_aging: 0.15,
       },
       value_driven: {
-        mass_fragrance: 0.2, minimal_makeup: 0.15, clean_skincare: 0.1, acne_solution: 0.1,
+        mass_fragrance: 0.2, minimal_makeup: 0.15, clean_indie_skincare: 0.1, acne_solution: 0.1,
         ultra_luxury_fragrance: -0.25,
       },
       problem_solution: {
-        acne_solution: 0.3, barrier_repair: 0.25, clinical_skincare: 0.2, anti_aging: 0.15,
+        acne_solution: 0.3, barrier_repair: 0.25, clinical_derm_skincare: 0.2, anti_aging: 0.15,
       },
     };
     const modifier = archetypeRules[consumerFilters.beauty_archetype]?.[clusterId] || 0;
@@ -136,22 +136,22 @@ function getSegmentMetrics(clusterId, consumerFilters) {
   if (consumerFilters.primary_motivation) {
     const motivationRules = {
       appearance: {
-        premium_makeup: 0.2, luxury_makeup: 0.15, trend_makeup: 0.15, prestige_fragrance: 0.1,
+        premium_makeup_trend: 0.2, luxury_makeup_full_coverage: 0.15, trend_makeup: 0.15, prestige_fragrance: 0.1,
       },
       skin_health: {
-        clinical_skincare: 0.25, barrier_repair: 0.2, clean_skincare: 0.15, acne_solution: 0.2,
+        clinical_derm_skincare: 0.25, barrier_repair: 0.2, clean_indie_skincare: 0.15, acne_solution: 0.2,
       },
       anti_aging: {
-        anti_aging: 0.35, clinical_skincare: 0.2, premium_makeup: 0.1,
+        anti_aging: 0.35, clinical_derm_skincare: 0.2, premium_makeup_trend: 0.1,
       },
       confidence: {
-        premium_makeup: 0.2, luxury_makeup: 0.15, prestige_fragrance: 0.15, ultra_luxury_fragrance: 0.1,
+        premium_makeup_trend: 0.2, luxury_makeup_full_coverage: 0.15, prestige_fragrance: 0.15, ultra_luxury_fragrance: 0.1,
       },
       experimentation: {
         trend_makeup: 0.25, minimal_makeup: 0.15, mass_fragrance: 0.1,
       },
       value: {
-        mass_fragrance: 0.2, minimal_makeup: 0.15, clean_skincare: 0.1, acne_solution: 0.1,
+        mass_fragrance: 0.2, minimal_makeup: 0.15, clean_indie_skincare: 0.1, acne_solution: 0.1,
       },
     };
     const modifier = motivationRules[consumerFilters.primary_motivation]?.[clusterId] || 0;
@@ -174,16 +174,16 @@ function getSegmentMetrics(clusterId, consumerFilters) {
   if (consumerFilters.area_type) {
     const areaRules = {
       urban: {
-        trend_makeup: 0.1, premium_makeup: 0.1, prestige_fragrance: 0.1, ultra_luxury_fragrance: 0.05,
+        trend_makeup: 0.1, premium_makeup_trend: 0.1, prestige_fragrance: 0.1, ultra_luxury_fragrance: 0.05,
       },
       coastal_metro: {
-        ultra_luxury_fragrance: 0.15, luxury_makeup: 0.1, prestige_fragrance: 0.1, clinical_skincare: 0.1,
+        ultra_luxury_fragrance: 0.15, luxury_makeup_full_coverage: 0.1, prestige_fragrance: 0.1, clinical_derm_skincare: 0.1,
       },
       suburban: {
-        premium_makeup: 0.1, prestige_fragrance: 0.1, clinical_skincare: 0.1, anti_aging: 0.1,
+        premium_makeup_trend: 0.1, prestige_fragrance: 0.1, clinical_derm_skincare: 0.1, anti_aging: 0.1,
       },
       rural: {
-        mass_fragrance: 0.1, minimal_makeup: 0.1, clean_skincare: 0.1,
+        mass_fragrance: 0.1, minimal_makeup: 0.1, clean_indie_skincare: 0.1,
       },
     };
     const modifier = areaRules[consumerFilters.area_type]?.[clusterId] || 0;
@@ -280,10 +280,11 @@ function MarketManifold3D({ vertical = 'beauty', region = 'US', onVerticalChange
         text: [cluster.label],
         textposition: 'top center',
         textfont: {
-          size: 14,
+          size: 13,
           color: '#ffffff',
           family: 'Inter, sans-serif',
         },
+        textangle: 0, // Keep text horizontal but adjust positioning
         hovertext: [hoverText],
       hoverinfo: 'text',
         customdata: [cluster.id],
@@ -302,7 +303,7 @@ function MarketManifold3D({ vertical = 'beauty', region = 'US', onVerticalChange
         showticklabels: false,
         showbackground: false,
         zeroline: false,
-        range: [-5, 5],
+        range: [-6, 6],
       },
       yaxis: {
         visible: false,
@@ -310,7 +311,7 @@ function MarketManifold3D({ vertical = 'beauty', region = 'US', onVerticalChange
         showticklabels: false,
         showbackground: false,
         zeroline: false,
-        range: [-5, 5],
+        range: [-6, 6],
       },
       zaxis: {
         visible: false,
@@ -386,6 +387,11 @@ function MarketManifold3D({ vertical = 'beauty', region = 'US', onVerticalChange
     <div className="h-full flex flex-col">
       {/* Filters */}
       <div className="p-4 border-b border-dark-border bg-dark-surface">
+        <div className="mb-4">
+          <label className="block text-sm font-semibold text-gray-300 uppercase tracking-wider mb-2">
+            Consumer Segment
+          </label>
+        </div>
         {/* Row 1 */}
         <div className="flex flex-wrap gap-4 mb-4 justify-center">
           <div className="w-[200px]">
@@ -527,7 +533,16 @@ function MarketManifold3D({ vertical = 'beauty', region = 'US', onVerticalChange
       </div>
 
       {/* 3D Plot */}
-      <div className="flex-1 p-4 overflow-hidden">
+      <div className="flex-1 flex flex-col overflow-hidden">
+        <div className="px-4 pt-4 pb-2">
+          <label className="block text-sm font-semibold text-gray-300 uppercase tracking-wider mb-1">
+            Market Segments
+          </label>
+          <p className="text-xs text-gray-500 italic">
+          Click a market to explore how different consumers behave
+          </p>
+        </div>
+        <div className="flex-1 p-4 pt-2 overflow-hidden">
         {Plot ? (
           <Plot
             data={plotData}
@@ -535,15 +550,16 @@ function MarketManifold3D({ vertical = 'beauty', region = 'US', onVerticalChange
             config={config}
             style={{ width: '100%', height: '100%' }}
             onClick={handlePlotClick}
-            onHover={handlePlotHover}
-            onUnhover={() => setHoveredCluster(null)}
-            useResizeHandler={true}
+              onHover={handlePlotHover}
+              onUnhover={() => setHoveredCluster(null)}
+              useResizeHandler={true}
           />
         ) : (
           <div className="flex items-center justify-center h-full text-gray-400">
             Loading visualization...
           </div>
         )}
+        </div>
       </div>
 
       {/* Legend */}
