@@ -10,7 +10,7 @@ function ChatPanel({ agent, filters }) {
     console.log('ChatPanel agent prop:', agent);
     console.log('ChatPanel agent.id:', agent?.id);
   }, [agent]);
-  
+
   // Reset messages when agent changes
   useEffect(() => {
     setMessages([]);
@@ -19,22 +19,22 @@ function ChatPanel({ agent, filters }) {
   const handleSend = async (e) => {
     e.preventDefault();
     if (!inputMessage.trim() || loading) return;
-    
+
     // Check if agent and agent.id exist
     if (!agent) {
-      setMessages([...messages, { 
-        role: 'assistant', 
-        content: 'Error: Agent information is missing. Please select an agent first.' 
+      setMessages([...messages, {
+        role: 'assistant',
+        content: 'Error: Agent information is missing. Please select an agent first.'
       }]);
       return;
     }
-    
+
     const agentId = agent.id || agent.uuid || agent.agent_id;
     if (!agentId) {
       console.error('Agent object:', agent);
-      setMessages([...messages, { 
-        role: 'assistant', 
-        content: `Error: Agent ID not found. Agent object: ${JSON.stringify(agent)}` 
+      setMessages([...messages, {
+        role: 'assistant',
+        content: `Error: Agent ID not found. Agent object: ${JSON.stringify(agent)}`
       }]);
       return;
     }
@@ -64,12 +64,12 @@ function ChatPanel({ agent, filters }) {
       }
 
       const data = await response.json();
-      
+
       if (!data.response) {
         console.error('No response in data:', data);
         throw new Error('No response received from server');
       }
-      
+
       setMessages([...newMessages, { role: 'assistant', content: data.response }]);
     } catch (error) {
       console.error('Chat error:', error);
@@ -100,7 +100,7 @@ function ChatPanel({ agent, filters }) {
             <div
               className={`max-w-[85%] rounded-lg px-4 py-2.5 text-sm ${
                 msg.role === 'user'
-                  ? 'bg-accent-primary text-white shadow-lg shadow-accent-primary/30'
+                  ? 'bg-gray-600/40 text-white backdrop-blur-sm'
                   : 'bg-dark-hover text-gray-200 border border-dark-border'
               }`}
             >
@@ -142,4 +142,3 @@ function ChatPanel({ agent, filters }) {
 }
 
 export default ChatPanel;
-

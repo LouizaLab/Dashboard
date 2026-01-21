@@ -19,10 +19,10 @@ function LeftFilters({ filters, setFilters }) {
               onChange={(e) => updateFilter('year', parseInt(e.target.value))}
               className="w-full h-2 bg-dark-hover rounded-lg appearance-none cursor-pointer"
               style={{
-                background: `linear-gradient(to right, #a855f7 0%, #a855f7 ${((filters.year - 2020) / 5) * 100}%, #374151 ${((filters.year - 2020) / 5) * 100}%, #374151 100%)`
+                background: `linear-gradient(to right, #9ca3af 0%, #9ca3af ${((filters.year - 2020) / 5) * 100}%, #374151 ${((filters.year - 2020) / 5) * 100}%, #374151 100%)`
               }}
             />
-            <div className="text-center mt-2 text-xl font-bold" style={{ color: '#a855f7' }}>
+            <div className="text-center mt-2 text-xl font-bold text-gray-300">
               {filters.year}
             </div>
           </div>
@@ -36,8 +36,7 @@ function LeftFilters({ filters, setFilters }) {
             <select
               value={filters.view}
               onChange={(e) => updateFilter('view', e.target.value)}
-              className="w-full bg-dark-hover border rounded-lg px-3 py-2 pr-8 text-sm text-gray-200 focus:outline-none focus:ring-2 focus:ring-accent-primary appearance-none"
-              style={{ borderColor: '#a855f7' }}
+              className="w-full bg-dark-hover border border-dark-border rounded-lg px-3 py-2 pr-8 text-sm text-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-500 appearance-none"
             >
               <option value="Market Insight">Market Insight</option>
               <option value="Taste Test">Taste Test</option>
@@ -66,7 +65,7 @@ function LeftFilters({ filters, setFilters }) {
               <select
                 value={filters.age_bucket}
                 onChange={(e) => updateFilter('age_bucket', e.target.value)}
-                className="w-full bg-dark-hover border border-dark-border rounded-lg px-3 py-2 pr-8 text-sm text-gray-200 focus:outline-none focus:ring-2 focus:ring-accent-primary appearance-none"
+                className="w-full bg-dark-hover border border-dark-border rounded-lg px-3 py-2 pr-8 text-sm text-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-500 appearance-none"
               >
                 <option value="">All Ages</option>
                 <option value="18-24">18-24</option>
@@ -91,7 +90,7 @@ function LeftFilters({ filters, setFilters }) {
               <select
                 value={filters.gender}
                 onChange={(e) => updateFilter('gender', e.target.value)}
-                className="w-full bg-dark-hover border border-dark-border rounded-lg px-3 py-2 pr-8 text-sm text-gray-200 focus:outline-none focus:ring-2 focus:ring-accent-primary appearance-none"
+                className="w-full bg-dark-hover border border-dark-border rounded-lg px-3 py-2 pr-8 text-sm text-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-500 appearance-none"
               >
                 <option value="">All Genders</option>
                 <option value="Male">Male</option>
@@ -115,7 +114,7 @@ function LeftFilters({ filters, setFilters }) {
               <select
                 value={filters.region}
                 onChange={(e) => updateFilter('region', e.target.value)}
-                className="w-full bg-dark-hover border border-dark-border rounded-lg px-3 py-2 pr-8 text-sm text-gray-200 focus:outline-none focus:ring-2 focus:ring-accent-primary appearance-none"
+                className="w-full bg-dark-hover border border-dark-border rounded-lg px-3 py-2 pr-8 text-sm text-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-500 appearance-none"
               >
                 <option value="">All Regions</option>
                 <option value="West">West</option>
@@ -139,7 +138,7 @@ function LeftFilters({ filters, setFilters }) {
               <select
                 value={filters.income}
                 onChange={(e) => updateFilter('income', e.target.value)}
-                className="w-full bg-dark-hover border border-dark-border rounded-lg px-3 py-2 pr-8 text-sm text-gray-200 focus:outline-none focus:ring-2 focus:ring-accent-primary appearance-none"
+                className="w-full bg-dark-hover border border-dark-border rounded-lg px-3 py-2 pr-8 text-sm text-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-500 appearance-none"
               >
                 <option value="">All Income Levels</option>
                 <option value="$0-50k">$0-50k</option>
@@ -195,7 +194,7 @@ function LeftFilters({ filters, setFilters }) {
             onChange={(e) => updateFilter('agent_count', parseInt(e.target.value))}
             className="w-full h-2 bg-dark-hover rounded-lg appearance-none cursor-pointer"
             style={{
-              background: `linear-gradient(to right, #3b82f6 0%, #3b82f6 ${((filters.agent_count - 10) / 140) * 100}%, #ffffff ${((filters.agent_count - 10) / 140) * 100}%, #ffffff 100%)`
+              background: `linear-gradient(to right, #9ca3af 0%, #9ca3af ${((filters.agent_count - 10) / 140) * 100}%, #374151 ${((filters.agent_count - 10) / 140) * 100}%, #374151 100%)`
             }}
           />
         </div>
@@ -206,4 +205,3 @@ function LeftFilters({ filters, setFilters }) {
 }
 
 export default LeftFilters;
-

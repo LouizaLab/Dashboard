@@ -3,13 +3,12 @@ import TopNavigation from './components/TopNavigation';
 import Sidebar from './components/Sidebar';
 import NetworkGraph from './components/NetworkGraph';
 import DetailDrawer from './components/DetailDrawer';
-import SimulationPanel from './components/SimulationPanel';
 import HypothesisPage from './components/HypothesisPage';
 import RecipeSimulationPage from './components/RecipeSimulationPage';
 import { getNetwork, getCompany, getEdge } from './api';
 
 function App() {
-  const [activeTab, setActiveTab] = useState('NETWORK GRAPH');
+  const [activeTab, setActiveTab] = useState('TEST HYPOTHESIS');
   const [viewType, setViewType] = useState('Market Insight');
   const [filters, setFilters] = useState({
     age_bucket: '',
@@ -77,7 +76,7 @@ function App() {
   return (
     <div className="flex flex-col h-screen bg-dark-bg text-gray-200">
       <TopNavigation activeTab={activeTab} setActiveTab={setActiveTab} />
-      
+
       <div className="flex flex-1 overflow-hidden">
         {activeTab === 'NETWORK GRAPH' && (
           <>
@@ -87,12 +86,12 @@ function App() {
               filters={filters}
               setFilters={setFilters}
             />
-            
+
             <div className="flex-1 flex flex-col relative">
               <div className="flex-1 relative" style={{ minHeight: 0 }}>
                 {loading ? (
                   <div className="absolute inset-0 flex items-center justify-center z-20">
-                    <div className="text-accent-glow">Loading network...</div>
+                    <div className="text-gray-300">Loading network...</div>
                   </div>
                 ) : (
                   <NetworkGraph
@@ -104,10 +103,8 @@ function App() {
                   />
                 )}
               </div>
-              
-              <SimulationPanel />
             </div>
-            
+
             <DetailDrawer
               isOpen={drawerOpen}
               onClose={handleCloseDrawer}
@@ -117,11 +114,11 @@ function App() {
             />
           </>
         )}
-        
+
         {activeTab === 'TEST HYPOTHESIS' && (
           <HypothesisPage />
         )}
-        
+
         {activeTab === 'TASTE SNAPSHOT' && (
           <div className="flex-1 flex items-center justify-center p-8">
             <div className="text-center">
@@ -130,7 +127,7 @@ function App() {
             </div>
           </div>
         )}
-        
+
         {activeTab === 'BEHAVIORAL DYNAMICS' && (
           <div className="flex-1 flex items-center justify-center p-8">
             <div className="text-center">
@@ -139,7 +136,7 @@ function App() {
             </div>
           </div>
         )}
-        
+
         {activeTab === 'INSIGHTS' && (
           <div className="flex-1 flex items-center justify-center p-8">
             <div className="text-center">
@@ -148,7 +145,7 @@ function App() {
             </div>
           </div>
         )}
-        
+
         {activeTab === 'WHAT-IF SIMULATION' && (
           <div className="flex-1 flex items-center justify-center p-8">
             <div className="text-center">
@@ -157,7 +154,7 @@ function App() {
             </div>
           </div>
         )}
-        
+
         {activeTab === 'RECIPE & LAUNCH SIMULATION' && (
           <RecipeSimulationPage />
         )}

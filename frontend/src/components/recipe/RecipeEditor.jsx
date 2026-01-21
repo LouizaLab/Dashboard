@@ -77,7 +77,7 @@ function RecipeEditor({ variant, onVariantChange, onDelete, onCreateNew }) {
 
   const handleIngredientAdd = (type, value) => {
     if (!value.trim()) return;
-    
+
     const changes = { ...formData.ingredient_changes };
     if (type === 'added') {
       changes.added = [...(changes.added || []), value.trim()];
@@ -208,7 +208,7 @@ function RecipeEditor({ variant, onVariantChange, onDelete, onCreateNew }) {
             <>
               <button
                 onClick={handleCancel}
-                className="px-3 py-1 text-sm bg-gray-600 rounded hover:bg-gray-700"
+                className="px-3 py-1 text-sm bg-gray-600/40 rounded hover:bg-gray-700/50 backdrop-blur-sm"
                 disabled={saving}
               >
                 Cancel

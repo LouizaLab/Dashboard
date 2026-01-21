@@ -18,7 +18,7 @@ function TopNavigation({ activeTab, setActiveTab }) {
             onClick={() => setActiveTab(tab)}
             className={`px-4 py-2 rounded-lg text-sm font-medium transition-all ${
               activeTab === tab
-                ? 'bg-accent-primary text-white shadow-lg shadow-accent-primary/50'
+                ? 'bg-gray-600/40 text-white backdrop-blur-sm'
                 : 'text-gray-400 hover:text-gray-200 hover:bg-dark-hover'
             }`}
           >
@@ -31,4 +31,3 @@ function TopNavigation({ activeTab, setActiveTab }) {
 }
 
 export default TopNavigation;
-

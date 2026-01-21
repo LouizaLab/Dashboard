@@ -91,8 +91,8 @@ function SimulationControls({ onRunSimulation, loading, disabled }) {
             />
           </div>
           <div className="text-xs text-gray-400 mt-1">
-            {agentCount >= 5000 ? 'Large Population (5k+)' : 
-             agentCount >= 1000 ? 'Medium Population (1k-5k)' : 
+            {agentCount >= 5000 ? 'Large Population (5k+)' :
+             agentCount >= 1000 ? 'Medium Population (1k-5k)' :
              'Small Population (<1k)'}
           </div>
         </div>
@@ -199,8 +199,8 @@ function SimulationControls({ onRunSimulation, loading, disabled }) {
         disabled={disabled || loading}
         className={`w-full py-4 rounded-lg font-semibold text-lg transition-all ${
           disabled || loading
-            ? 'bg-gray-600 cursor-not-allowed'
-            : 'bg-accent-primary hover:bg-accent-primary/80 shadow-lg shadow-accent-primary/50'
+            ? 'bg-gray-600/40 cursor-not-allowed backdrop-blur-sm'
+            : 'bg-gray-600/40 text-white hover:bg-gray-500/50 backdrop-blur-sm'
         }`}
       >
         {loading ? (
@@ -212,7 +212,7 @@ function SimulationControls({ onRunSimulation, loading, disabled }) {
           '🚀 Run LPM Simulation'
         )}
       </button>
-      
+
       {!disabled && (
         <div className="mt-3 text-xs text-gray-400 text-center">
           Simulating {agentCount.toLocaleString()} agents over {timeHorizon} weeks using Phase 3-4 LPM engine

@@ -32,7 +32,7 @@ function SimulationPanel() {
               <button
                 key={type.id}
                 onClick={() => handleSimulationClick(type.id)}
-                className="px-4 py-2 bg-dark-hover border border-dark-border rounded-lg text-sm font-medium text-gray-300 hover:bg-accent-primary hover:text-white hover:border-accent-primary transition-all flex items-center gap-2"
+                className="px-4 py-2 bg-dark-hover border border-dark-border rounded-lg text-sm font-medium text-gray-300 hover:bg-gray-600/40 hover:text-white hover:border-gray-500/50 backdrop-blur-sm transition-all flex items-center gap-2"
               >
                 <span>{type.icon}</span>
                 <span>{type.label}</span>
@@ -41,14 +41,14 @@ function SimulationPanel() {
           </div>
           {scenario && (
             <div className="mt-3 text-xs text-gray-400">
-              Active scenario: <span className="text-accent-primary font-semibold">{scenario}</span>
+              Active scenario: <span className="text-gray-300 font-semibold">{scenario}</span>
             </div>
           )}
         </div>
       </div>
 
       {showToast && (
-        <div className="fixed bottom-4 right-4 bg-accent-primary text-white px-6 py-3 rounded-lg shadow-lg z-50 animate-fade-in">
+        <div className="fixed bottom-4 right-4 bg-gray-700/60 text-white px-6 py-3 rounded-lg backdrop-blur-sm z-50 animate-fade-in border border-gray-600/30">
           <div className="flex items-center gap-2">
             <span>✓</span>
             <span>Simulation scenario activated: {scenario}</span>
@@ -60,4 +60,3 @@ function SimulationPanel() {
 }
 
 export default SimulationPanel;
-

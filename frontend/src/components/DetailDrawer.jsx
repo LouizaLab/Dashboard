@@ -24,7 +24,7 @@ function DetailDrawer({ isOpen, onClose, node, edge, networkData }) {
     if (!node || !networkData) return;
     const edges = networkData.edges || [];
     // Find edges connected to this node
-    const connected = edges.filter(e => 
+    const connected = edges.filter(e =>
       e.data.source === String(node.id) || e.data.target === String(node.id)
     );
     setConnectedEdges(connected);
@@ -83,7 +83,7 @@ function DetailDrawer({ isOpen, onClose, node, edge, networkData }) {
 
     const dates = timeseriesData.map((d) => d.date);
     const quantValues = timeseriesData.map((d) => d.value);
-    
+
     // Generate behavioral index (synthetic overlay)
     const behavioralValues = quantValues.map((val, idx) => {
       const trend = Math.sin(idx / 10) * 0.1;
@@ -158,6 +158,16 @@ function DetailDrawer({ isOpen, onClose, node, edge, networkData }) {
     };
   };
 
+  const getMetricLabel = (metric) => {
+    const labels = {
+      'foot_traffic': 'Foot Traffic',
+      'revenue': 'Revenue ($)',
+      'intent_index': 'Intent Index',
+      'taste_index': 'Taste Index',
+    };
+    return labels[metric] || metric;
+  };
+
   const getComparisonChartOption = () => {
     if (!comparisonData || !comparisonData.data || comparisonData.data.length === 0) {
       return {
@@ -183,17 +193,18 @@ function DetailDrawer({ isOpen, onClose, node, edge, networkData }) {
         data: [
           comparisonData.company_a?.name || 'Company A',
           comparisonData.company_b?.name || 'Company B',
-          ...(comparisonData.edge_metric !== null && comparisonData.edge_metric !== undefined 
-            ? ['Edge Metric'] 
+          ...(comparisonData.edge_metric !== null && comparisonData.edge_metric !== undefined
+            ? ['Edge Metric']
             : [])
         ],
         textStyle: { color: '#e0e0e0' },
         top: 10,
       },
       grid: {
-        left: '3%',
-        right: '4%',
-        bottom: '3%',
+        left: '12%',
+        right: '6%',
+        bottom: '18%',
+        top: '18%',
         containLabel: true,
       },
       xAxis: {
@@ -201,10 +212,22 @@ function DetailDrawer({ isOpen, onClose, node, edge, networkData }) {
         boundaryGap: false,
         data: dates,
         axisLine: { lineStyle: { color: '#2a2a3a' } },
-        axisLabel: { color: '#a0a0a0' },
+        axisLabel: {
+          color: '#a0a0a0',
+          rotate: 45,
+          interval: 'auto',
+        },
       },
       yAxis: {
         type: 'value',
+        name: getMetricLabel(selectedMetric),
+        nameLocation: 'middle',
+        nameGap: 50,
+        nameTextStyle: {
+          color: '#e0e0e0',
+          fontSize: 14,
+          fontWeight: 'bold',
+        },
         axisLine: { lineStyle: { color: '#2a2a3a' } },
         axisLabel: { color: '#a0a0a0' },
         splitLine: { lineStyle: { color: '#1a1a2a' } },
@@ -270,19 +293,48 @@ function DetailDrawer({ isOpen, onClose, node, edge, networkData }) {
 
   const renderMatrix = (matrix) => {
     if (!matrix || !Array.isArray(matrix)) return null;
-    
+
+    // Calculate average value for color coding
+    const allValues = matrix.flat().filter(v => typeof v === 'number');
+    const avgValue = allValues.length > 0 ? allValues.reduce((a, b) => a + b, 0) / allValues.length : 0.5;
+
     return (
       <div className="mt-4">
-        <h4 className="text-sm font-semibold mb-2">Edge Weight Matrix</h4>
-        <div className="grid grid-cols-3 gap-2">
-          {matrix.flat().map((val, idx) => (
-            <div
-              key={idx}
-              className="bg-dark-hover border border-dark-border rounded p-2 text-center text-xs"
-            >
-              {typeof val === 'number' ? val.toFixed(2) : val}
-            </div>
-          ))}
+        <h4 className="text-sm font-semibold text-gray-400 mb-1">Edge Weight Matrix</h4>
+        <p className="text-xs text-gray-500 mb-3">
+          Multi-dimensional relationship factors across different contexts (0-1 scale)
+        </p>
+        <div className="bg-dark-hover rounded-lg p-3 border border-dark-border">
+          <div className="grid grid-cols-3 gap-2">
+            {matrix.map((row, rowIdx) =>
+              row.map((val, colIdx) => {
+                const numVal = typeof val === 'number' ? val : 0;
+                const intensity = Math.min(255, Math.max(0, Math.round(numVal * 255)));
+                const bgOpacity = 0.2 + (numVal * 0.3); // 0.2 to 0.5 opacity based on value
+
+                return (
+                  <div
+                    key={`${rowIdx}-${colIdx}`}
+                    className="bg-gray-700/40 border border-gray-600/50 rounded p-3 text-center relative"
+                    style={{
+                      backgroundColor: `rgba(156, 163, 175, ${bgOpacity})`,
+                    }}
+                  >
+                    <div className="text-sm font-semibold text-white">
+                      {typeof val === 'number' ? val.toFixed(2) : val}
+                    </div>
+                    {numVal > avgValue && (
+                      <div className="absolute top-1 right-1 w-1.5 h-1.5 bg-green-400 rounded-full"></div>
+                    )}
+                  </div>
+                );
+              })
+            )}
+          </div>
+          <div className="mt-3 flex items-center justify-between text-xs text-gray-500">
+            <span>Higher values = stronger relationship</span>
+            <span>Average: {avgValue.toFixed(2)}</span>
+          </div>
         </div>
       </div>
     );
@@ -291,7 +343,7 @@ function DetailDrawer({ isOpen, onClose, node, edge, networkData }) {
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-y-0 right-0 w-96 bg-dark-surface border-l border-dark-border shadow-2xl z-50 flex flex-col">
+    <div className="fixed inset-y-0 right-0 w-[800px] bg-dark-surface border-l border-dark-border shadow-2xl z-50 flex flex-col">
       <div className="p-4 border-b border-dark-border flex items-center justify-between">
         <h2 className="text-lg font-bold">
           {node ? node.name : edge ? 'Edge Details' : 'Details'}
@@ -338,13 +390,13 @@ function DetailDrawer({ isOpen, onClose, node, edge, networkData }) {
                 <option value="intent_index">Intent Index</option>
                 <option value="taste_index">Taste Index</option>
               </select>
-              
+
               {loading ? (
                 <div className="text-center py-8 text-gray-400">Loading...</div>
               ) : (
                 <ReactECharts
                   option={getChartOption()}
-                  style={{ height: '300px', width: '100%' }}
+                  style={{ height: '500px', width: '100%' }}
                 />
               )}
             </div>
@@ -356,8 +408,8 @@ function DetailDrawer({ isOpen, onClose, node, edge, networkData }) {
                 </h3>
                 <div className="space-y-2 max-h-40 overflow-y-auto">
                   {connectedEdges.map((e, idx) => {
-                    const connectedCompanyId = e.data.source === String(node.id) 
-                      ? e.data.target 
+                    const connectedCompanyId = e.data.source === String(node.id)
+                      ? e.data.target
                       : e.data.source;
                     // Find the connected company name from nodes
                     const connectedNode = networkData?.nodes?.find(
@@ -365,7 +417,7 @@ function DetailDrawer({ isOpen, onClose, node, edge, networkData }) {
                     );
                     const connectedCompanyName = connectedNode?.data?.name || connectedNode?.data?.label || `Company ${connectedCompanyId}`;
                     const edgeWeight = e.data.weight || e.data.edge_weight || 0;
-                    
+
                     return (
                       <button
                         key={idx}
@@ -390,10 +442,12 @@ function DetailDrawer({ isOpen, onClose, node, edge, networkData }) {
                 <h3 className="text-sm font-semibold text-gray-400 mb-2">
                   Comparison: {node.name} vs {comparingWith || comparisonData.company_b?.name}
                 </h3>
-                <ReactECharts
-                  option={getComparisonChartOption()}
-                  style={{ height: '300px', width: '100%' }}
-                />
+                <div className="overflow-x-auto">
+                  <ReactECharts
+                    option={getComparisonChartOption()}
+                    style={{ height: '550px', minWidth: '1200px', width: '100%' }}
+                  />
+                </div>
               </div>
             )}
           </div>
@@ -413,15 +467,21 @@ function DetailDrawer({ isOpen, onClose, node, edge, networkData }) {
                   <span className="font-semibold">{edge.target_name}</span>
                 </div>
                 <div className="text-sm mt-2">
-                  <span className="text-gray-400">Weight:</span>{' '}
-                  <span className="font-bold text-accent-primary">{edge.weight?.toFixed(3)}</span>
+                  <div className="flex items-baseline gap-2">
+                    <span className="text-gray-400">Weight:</span>
+                    <span className="font-bold text-accent-primary">{edge.weight?.toFixed(3)}</span>
+                  </div>
+                  <div className="text-xs text-gray-500 mt-1 ml-0">
+                    Overall relationship strength (0-1 scale)
+                  </div>
                 </div>
               </div>
             </div>
 
             {edge.top_factors && (
               <div>
-                <h3 className="text-sm font-semibold text-gray-400 mb-2">Top Factors</h3>
+                <h3 className="text-sm font-semibold text-gray-400 mb-1">Top Factors</h3>
+                <p className="text-xs text-gray-500 mb-2">Key metrics driving the relationship</p>
                 <div className="space-y-1">
                   {Object.entries(edge.top_factors).map(([key, value]) => (
                     <div key={key} className="flex justify-between text-sm bg-dark-hover rounded px-2 py-1">
@@ -435,30 +495,37 @@ function DetailDrawer({ isOpen, onClose, node, edge, networkData }) {
               </div>
             )}
 
-            {renderMatrix(edge.matrix_json)}
-
             {edge && (
               <div className="mt-4">
                 <h3 className="text-sm font-semibold text-gray-400 mb-2">
                   Comparison Chart: {edge.source_name} vs {edge.target_name}
                 </h3>
-                <select
-                  value={selectedMetric}
-                  onChange={(e) => setSelectedMetric(e.target.value)}
-                  className="w-full bg-dark-hover border border-dark-border rounded px-3 py-2 text-sm mb-3"
-                >
-                  <option value="foot_traffic">Foot Traffic</option>
-                  <option value="revenue">Revenue</option>
-                  <option value="intent_index">Intent Index</option>
-                  <option value="taste_index">Taste Index</option>
-                </select>
+                <div className="relative mb-3">
+                  <select
+                    value={selectedMetric}
+                    onChange={(e) => setSelectedMetric(e.target.value)}
+                    className="w-full bg-dark-hover border border-dark-border rounded-lg px-3 py-2 pr-8 text-sm text-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-500 appearance-none"
+                  >
+                    <option value="foot_traffic">Foot Traffic</option>
+                    <option value="revenue">Revenue</option>
+                    <option value="intent_index">Intent Index</option>
+                    <option value="taste_index">Taste Index</option>
+                  </select>
+                  <div className="absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none">
+                    <svg className="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </div>
+                </div>
                 {loading ? (
                   <div className="text-center py-8 text-gray-400">Loading...</div>
                 ) : comparisonData ? (
-                  <ReactECharts
-                    option={getComparisonChartOption()}
-                    style={{ height: '300px', width: '100%' }}
-                  />
+                  <div className="overflow-x-auto">
+                    <ReactECharts
+                      option={getComparisonChartOption()}
+                      style={{ height: '550px', minWidth: '1200px', width: '100%' }}
+                    />
+                  </div>
                 ) : (
                   <div className="text-center py-8 text-gray-400">Loading comparison...</div>
                 )}
@@ -483,4 +550,3 @@ function DetailDrawer({ isOpen, onClose, node, edge, networkData }) {
 }
 
 export default DetailDrawer;
-
