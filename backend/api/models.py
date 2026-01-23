@@ -87,4 +87,25 @@ class Edge(models.Model):
             reverse=True
         )
         return dict(sorted_factors[:n])
+    
+    def recalculate(self, lookback_days=90, min_data_points=10):
+        """
+        Recalculate edge weight and factors based on actual metrics.
+        
+        Args:
+            lookback_days: Number of days to look back for calculations
+            min_data_points: Minimum data points required
+            
+        Returns:
+            Self (for chaining)
+        """
+        from api.edge_calculator import EdgeWeightCalculator
+        
+        calculator = EdgeWeightCalculator(
+            lookback_days=lookback_days,
+            min_data_points=min_data_points
+        )
+        
+        calculator.recalculate_edge(self)
+        return self
 

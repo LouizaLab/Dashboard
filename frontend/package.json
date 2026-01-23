@@ -9,6 +9,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@react-three/drei": "^9.122.0",
+    "@react-three/fiber": "^8.18.0",
+    "@react-three/postprocessing": "^2.19.1",
     "axios": "^1.6.2",
     "chart.js": "^4.4.0",
     "cytoscape": "^3.27.0",
@@ -19,7 +22,8 @@
     "react": "^18.2.0",
     "react-chartjs-2": "^5.2.0",
     "react-dom": "^18.2.0",
-    "react-plotly.js": "^2.6.0"
+    "react-plotly.js": "^2.6.0",
+    "three": "^0.160.1"
   },
   "devDependencies": {
     "@types/react": "^18.2.43",

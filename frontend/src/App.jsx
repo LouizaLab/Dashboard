@@ -5,6 +5,7 @@ import NetworkGraph from './components/NetworkGraph';
 import DetailDrawer from './components/DetailDrawer';
 import HypothesisPage from './components/HypothesisPage';
 import RecipeSimulationPage from './components/RecipeSimulationPage';
+import MarketInsightManifoldPage from './pages/MarketInsightManifoldPage';
 import { getNetwork, getCompany, getEdge } from './api';
 
 function App() {
@@ -138,12 +139,7 @@ function App() {
         )}
 
         {activeTab === 'INSIGHTS' && (
-          <div className="flex-1 flex items-center justify-center p-8">
-            <div className="text-center">
-              <h2 className="text-2xl font-bold mb-4">Insights</h2>
-              <p className="text-gray-400">Insights dashboard coming soon...</p>
-            </div>
-          </div>
+          <MarketInsightManifoldPage />
         )}
 
         {activeTab === 'WHAT-IF SIMULATION' && (
